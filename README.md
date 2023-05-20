@@ -11,8 +11,28 @@ ________________________________________________________________________________
 
 # About Our Project
 
-**Name** - GameSphere 
+<div align="center">
+<img src="https://forthebadge.com/images/badges/built-with-love.svg" />
+<img src="https://forthebadge.com/images/badges/uses-brains.svg" />
+<img src="https://forthebadge.com/images/badges/powered-by-responsibility.svg" />
+  <br>
+<img src="https://img.shields.io/github/repo-size/Aman1-coder/GameSphere?style=for-the-badge" />
+   <img src="https://img.shields.io/github/issues-pr/Aman1-coder/GameSphere?style=for-the-badge" />
 
+  <img src="https://img.shields.io/github/issues/Aman1-coder/GameSphere?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues-closed-raw/Aman1-coder/GameSphere?style=for-the-badge" />
+   <img src="https://img.shields.io/github/issues-pr-closed-raw/Aman1-coder/GameSphere?style=for-the-badge" />
+  <img src="https://img.shields.io/github/license/Aman1-coder/GameSphere?style=for-the-badge" />
+  <img src="https://img.shields.io/github/forks/Aman1-coder/GameSphere?style=for-the-badge" />
+  <img src="https://img.shields.io/github/stars/Aman1-coder/GameSphere?style=for-the-badge" />
+  <img src="https://img.shields.io/github/contributors/Aman1-coder/GameSphere?style=for-the-badge" />
+  <img src="https://img.shields.io/github/last-commit/Aman1-coder/GameSphere?style=for-the-badge" />
+  
+  </div>
+  <br>
+  
+**Name** - GameSphere 
+  
 **Technologies Used** - HTML, CSS, JavaScript, Bootstrap, WebSocket, jQuery, PHP, MySQL, Laravel etc..
 
 **Our Aim** - Our primary goal is to create a website where two or more friends can gather and play games online (such as multiplayer) without having to download any software or tools to their computers or mobile devices.
