@@ -61,7 +61,7 @@ Refrence of designe:
 https://snowflaketest.my.canva.site/gamesphere
                
                 
- **Note** - You are also free to show you degines at (XYZ@gmail.com) currently email is not added
+ **Note** - You are also free to show you degines at durgeshkumar4993@gmail.com
  ***********************************************************************************************************************************************************
                 
 ### Second Step - 
@@ -75,7 +75,7 @@ Also builds game main page Reference of designe page is given below:
 https://snowflaketest.my.canva.site/game-detail
                  
                  
- **Note** - You are also free to show you degines at (XYZ@gmail.com) currently email is not added
+ **Note** - You are also free to show you degines at durgeshkumar4993@gmail.com
                 
 ***********************************************************************************************************************************************************
 
