@@ -192,8 +192,8 @@ ________________________________________________________________________________
 <table align='center'>
 <td align="center"><a href="https://github.com/Durgesh4993"><img src="https://avatars.githubusercontent.com/u/98798977?v=4" width="100px;" alt=""/><br /><sub><b> Durgesh Kumar Prajapati</b></sub></a></td>
 
-<td align="center"><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzscsu9oWkZQcQeYWeNyHonLaXFMxjbZdROEFnyxod7g&usqp=CAU&ec=48600113" width="100px;" alt=""/><br /><sub><b> Comming Soon </b></sub></a></td>
+<td align="center"><a href="https://github.com/mahamat-abdelkerim-abakar"><img src="https://avatars.githubusercontent.com/u/65360822?v=4" width="100px;" alt=""/><br /><sub><b>Mahamat Abdelkerim Abakar</b></sub></a></td>
 
-<td align="center"><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO7Ip3EVgCV1vmNzE_T8YI9Pn5RbIUN4IK1xylK979Aw&usqp=CAU&ec=48600113" width="100px;" alt=""/><br /><sub><b> Comming Soon </b></sub></a></td>
+<td align="center"><a href="https://github.com/pranjay-poddar"><img src="https://media.licdn.com/dms/image/D4D03AQH2NpsSW66gFg/profile-displayphoto-shrink_400_400/0/1680854214165?e=1690416000&v=beta&t=ChA2RUw_Os30xewunFOTI5zk74Bpn-2dSfmXshaq7po" width="100px;" alt=""/><br /><sub><b> Pranjay Poddar </b></sub></a></td>
 </table>
 
