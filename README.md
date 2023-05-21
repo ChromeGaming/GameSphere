@@ -190,7 +190,7 @@ ________________________________________________________________________________
 
 <h2 align='center'> Project Mentors </h2>
 <table align='center'>
-<td align="center"><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRROqd-XYednEBgFqYwzxQXkBrWBBL0wWMkYfbLpIWofxeMIXVN9gEEyk38CKSIwRhIyh7K9Va6J7s&usqp=CAU&ec=48600113" width="100px;" alt=""/><br /><sub><b> Comming Soon </b></sub></a></td>
+<td align="center"><a href="https://github.com/Durgesh4993"><img src="https://avatars.githubusercontent.com/u/98798977?v=4" width="100px;" alt=""/><br /><sub><b> Durgesh Kumar Prajapati</b></sub></a></td>
 
 <td align="center"><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzscsu9oWkZQcQeYWeNyHonLaXFMxjbZdROEFnyxod7g&usqp=CAU&ec=48600113" width="100px;" alt=""/><br /><sub><b> Comming Soon </b></sub></a></td>
 
