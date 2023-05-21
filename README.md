@@ -1,6 +1,6 @@
 <img style="width:100%" src="https://user-images.githubusercontent.com/98798977/236624352-6f5440bb-1b5a-41e3-a2d2-97b5ef2b7387.png">
 
-# GSSOC'23 Welcom To All Contributers
+# GSSOC'23 Welcome To All Contributers
 ### About GSSoC
 GirlScript Summer Of Code is a three-month-long Open-Source Program conducted every summer by the Girlscript Foundation. With constant efforts, participants contribute to numerous projects under the extreme guidance of skilled mentors over these months. With such exposure, students begin to contribute to real-world projects from the comfort of their homes. GirlScript Summer Of Code has witnessed active participation over the years, and the 2023 edition aims to carry the legacy with a promising impact.
 
@@ -37,70 +37,70 @@ ________________________________________________________________________________
 
 **Our Aim** - Our primary goal is to create a website where two or more friends can gather and play games online (such as multiplayer) without having to download any software or tools to their computers or mobile devices.
 
-**Who are able to work with Us** - UI/UX Design, Front-end developer, Backend developer, *Know about WebSocket etc.. and also if you want to contribute in different fields we wellocm you 
+**Who are able to work with Us** - UI/UX Design, Front-end developer, Back-end developer, *Know about WebSocket etc.. and also if you want to contribute in different fields we welcome you 
 ______________________________________________________________________________________________________________________________________________________________
 
 # How to start to contribute in project step by step
 
-I have distribute this project into three main parts for contributers :
+I have distributed this project into three main parts for contributers :
 | steps         | About         | Time  |
 | ------------- |:-------------:| -----:|
-| First step    | Creat a home page of a wrbsite | 10 - 15 days |
-| second step   | buit an game and add on the website  |  15 - 20 days |
-| Third Step    | Implementation for multipalyer & Rooms | 30 - 40 days |
+| First step    | Create a home page of a website | 10 - 15 days |
+| second step   | Build a game and add on the website  |  15 - 20 days |
+| Third Step    | Implementation for Multiplayer & Rooms | 30 - 40 days |
 | Final step    | Debugging and basic change if needed | 10 - 15 days |
 
-### Firts Step -
+### First Step -
 
-Creat a landing page (Home Page) by using frontend development
+Create a landing page (Home Page) by using frontend development
 
 _Detail:_ The first phase of a project is the most straightforward because all that is required of the contributor is to copy our designs (this is especially important if their designs are better than our designs) and create a landing page (or home page), which serves as a direct conduit between the user's browser and our website. The initial phase of the project is crucial because if users don't feel at ease using our website, they may quit using it completely, which is negative for our website. All contributions would have been utterly useless if this happened. in order to improve the responsiveness and dynamic experience of our users.
 
-Refrence of designe:
+Reference of design:
                 
 https://snowflaketest.my.canva.site/gamesphere
                
                 
- **Note** - You are also free to show you degines at durgeshkumar4993@gmail.com
+ **Note** - You are also free to show your designs at durgeshkumar4993@gmail.com
  ***********************************************************************************************************************************************************
                 
 ### Second Step - 
 
-Add different types of game be like Snake, Ludo, Carrom, Bubbel shoot etc.
+Add different types of game be like Snake, Ludo, Carrom, Bubble shoot etc.
 
-_Detail:_ In a second step the developer just be need develop multiple game(be like Ludo, Carrom, Bubble shooter, snake games etc..) and list into the website and also create an special page for a particular game where all instruction are presnt how to play that game and also collect the users review and ther experience with our website if you want to be check out the reference of designe just copy the link and paste into browser and also if you have any other ideads related to designes please discuss with us.
+_Detail:_ In a second step the developer just be need develop multiple game(be like Ludo, Carrom, Bubble shooter, snake games etc..) and list into the website and also create an special page for a particular game where all instruction are present how to play that game and also collect the users review and their experience with our website if you want to check out the reference of design just copy the link and paste into browser and also if you have any other ideas related to designs please discuss with us.
 
-Also builds game main page Reference of designe page is given below:
+Also builds game main page Reference of design page is given below:
                  
 https://snowflaketest.my.canva.site/game-detail
                  
                  
- **Note** - You are also free to show you degines at durgeshkumar4993@gmail.com
+ **Note** - You are also free to show your designs at durgeshkumar4993@gmail.com
                 
 ***********************************************************************************************************************************************************
 
 ### Third Step - 
 
-Here you are creat a room for players where the meat with different players
+Here you are create a room for players where the meat with different players
 
-_Detail:_ Thiird step is hardest part of project acording to me. I have to find one random online user and transfer real -time data netween both of them . you all are familar with whatsapp when we are chatting with our friends under the hood whatsapp will transmit messege from one socket to anotner but when it comes to group chatting transmitting message from socket to sockot is not efficient so whatsapp creats a room it has a unique ID and inside that all socket will be there here messege transmit from socket to rom i am going to use this room's conapt to build this game 
-let's take an example user clicks on play we redirut into game main page where we give two options. 
+_Detail:_ Third step is hardest part of project according to me. I have to find one random online user and transfer real -time data between both of them . you all are familiar with whatsapp when we are chatting with our friends under the hood whatsapp will transmit message from one socket to another but when it comes to group chatting transmitting message from socket to socket is not efficient so whatsapp creates a room it has a unique ID and inside that all socket will be there here message transmit from socket to rom I am going to use this room's concept to build this game 
+let's take an example user clicks on play we redirect into game main page where we give two options. 
 
 **play with stranger.** 
 
 **play with friends.** 
 
-when users click on play with stranger button i will sand a room creat even from the frontend on the backend i will creat a room with a unique ID and join the user in that room to join another player in this room  i need room ID so i have to save room detail somewhere.I will save room ID in a array called room if another user clicks on that button first i will checj there any room available from that array if the room is available i will make this user to join the room is an issue here.
+when users click on play with stranger button I will send a room create even from the frontend on the backend i will create a room with a unique ID and join the user in that room to join another player in this room  i need room ID so i have to save room detail somewhere.I will save room ID in a array called room if another user clicks on that button first i will check there any room available from that array if the room is available i will make this user to join the room is an issue here.
 
-I only ewent towi player to join ths room to fix this i will add avariable calledvaccent to check if the roon is avariable or not to have a track of player info like socket ID option ,option scora and option lock will savr data  in player object now i need to sand this detail to the frontend we rea sending a room gate even from the backend  i hope you undrestood what i said now talk to play with friend button , sharing a link i will take the room ID from that link and check if is there any room available with a given ID if there a room exit then i will check if its availableand vacant then user can join the else i will redirect him to the home page currently any user can join the room if"s awakend .To save this i will current a prive rooms for those who click on a play with the friend button .                  
+I only want two player to join this room to fix this i will add a variable called vacant to check if the room is available or not to have a track of player info like socket ID option ,option scora and option lock will save data  in player object now i need to send this detail to the front-end we rea sending a room gate even from the back-end. I hope you understood what i said now talk to play with friend button , sharing a link i will take the room ID from that link and check if is there any room available with a given ID if there a room exit then i will check if its available and vacant then user can join the else i will redirect him to the home page currently any user can join the room if"s awakend .To save this i will current a private room for those who click on a play with the friend button .                  
 
- **Note** - You are also free to talk if you have any batter idea
+ **Note** - You are also free to talk if you have any better idea
  
  ______________________________________________________________________________________________________________________________________________________________
  
 # How to make a PR in a Project
 
-If you are intrested to contribute in this project how to start contribute
+If you are interested to contribute in this project how to start contribute
 <!-- in detail -->
 
 1. Fork the repo.
@@ -152,7 +152,7 @@ To push your changes, run the following command in your terminal:
 
 __________________________________________________________________________________________________________________________________________________________________
 
-## Alternatively Using GitHub Deslktop:
+## Alternatively Using GitHub Desktop:
 1. Open GitHub Desktop and log in to your GitHub account.
 
 2. Make sure you are on the "Current Repository" view. If not, go to "File" and select "Add Local Repository" to add your repository.
