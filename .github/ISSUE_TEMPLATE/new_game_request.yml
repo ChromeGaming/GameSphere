@@ -37,7 +37,7 @@ body:
     id: terms
     attributes:
       label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [CODE OF CONDUCT](https://github.com/kunjgit/GameZone/blob/main/.github/CODE_OF_CONDUCT.md)
+      description: By submitting this issue, you agree to follow our [CODE OF CONDUCT](https://github.com/Aman1-coder/GameSphere/blob/main/CODE_OF_CONDUCT.md)
       options:
-        - label: I follow [CONTRIBUTING GUIDELINE](https://github.com/kunjgit/GameZone/blob/main/.github/CONTRIBUTING_GUIDELINE.md) of this project.
+        - label: I follow [CONTRIBUTING GUIDELINE](https://github.com/Aman1-coder/GameSphere/blob/main/CODE_OF_CONDUCT.md) of this project.
           required: true
