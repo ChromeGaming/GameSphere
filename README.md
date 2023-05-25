@@ -1,6 +1,20 @@
 <img style="width:100%" src="https://user-images.githubusercontent.com/98798977/236624352-6f5440bb-1b5a-41e3-a2d2-97b5ef2b7387.png">
 
-# GSSOC'23 Welcome To All Contributers
+## Table of Contents
+
+- [GSSOC'23 Welcome To All Contributers 🌻](#gssoc23-welcome-to-all-contributers-)
+    + [About GSSoC](#about-gssoc)
+    + [About Girlscript Foundation](#about-girlscript-foundation)
+- [About Our Project 💻](#about-our-project-)
+- [How to start contributing 🤝](#how-to-start-contributing-)
+    + [First Step 🌱](#first-step-)
+    + [Second Step 🌲](#second-step-)
+    + [Third Step 🌳](#third-step-)
+- [How to make a PR in a Project 🟢](#how-to-make-a-pr-in-a-project-)
+    + [Alternatively Using GitHub Desktop](#alternatively-using-github-desktop)
+
+# GSSOC'23 Welcome To All Contributers 🌻
+
 ### About GSSoC
 GirlScript Summer Of Code is a three-month-long Open-Source Program conducted every summer by the Girlscript Foundation. With constant efforts, participants contribute to numerous projects under the extreme guidance of skilled mentors over these months. With such exposure, students begin to contribute to real-world projects from the comfort of their homes. GirlScript Summer Of Code has witnessed active participation over the years, and the 2023 edition aims to carry the legacy with a promising impact.
 
@@ -9,7 +23,7 @@ The GirlScript Foundation is one of the leading foundations in India. It has suc
 
 ______________________________________________________________________________________________________________________________________________________________
 
-# About Our Project
+# About Our Project 💻
 
 <div align="center">
 <img src="https://forthebadge.com/images/badges/built-with-love.svg" />
@@ -40,7 +54,7 @@ ________________________________________________________________________________
 **Who are able to work with Us** - UI/UX Design, Front-end developer, Back-end developer, *Know about WebSocket etc.. and also if you want to contribute in different fields we welcome you 
 ______________________________________________________________________________________________________________________________________________________________
 
-# How to start to contribute in project step by step
+# How to start contributing 🤝
 
 I have distributed this project into three main parts for contributers :
 | steps         | About         | Time  |
@@ -50,7 +64,7 @@ I have distributed this project into three main parts for contributers :
 | Third Step    | Implementation for Multiplayer & Rooms | 30 - 40 days |
 | Final step    | Debugging and basic change if needed | 10 - 15 days |
 
-### First Step -
+### First Step 🌱
 
 Create a landing page (Home Page) by using frontend development
 
@@ -64,7 +78,7 @@ https://snowflaketest.my.canva.site/gamesphere
  **Note** - You are also free to show your designs at durgeshkumar4993@gmail.com
  ***********************************************************************************************************************************************************
                 
-### Second Step - 
+### Second Step 🌲 
 
 Add different types of game be like Snake, Ludo, Carrom, Bubble shoot etc.
 
@@ -79,7 +93,7 @@ https://snowflaketest.my.canva.site/game-detail
                 
 ***********************************************************************************************************************************************************
 
-### Third Step - 
+### Third Step 🌳 
 
 Here you are create a room for players where the meat with different players
 
@@ -98,7 +112,7 @@ I only want two player to join this room to fix this i will add a variable calle
  
  ______________________________________________________________________________________________________________________________________________________________
  
-# How to make a PR in a Project
+# How to make a PR in a Project 🟢
 
 If you are interested to contribute in this project how to start contribute
 <!-- in detail -->
@@ -152,7 +166,8 @@ To push your changes, run the following command in your terminal:
 
 __________________________________________________________________________________________________________________________________________________________________
 
-## Alternatively Using GitHub Desktop:
+## Alternatively Using GitHub Desktop
+
 1. Open GitHub Desktop and log in to your GitHub account.
 
 2. Make sure you are on the "Current Repository" view. If not, go to "File" and select "Add Local Repository" to add your repository.
