@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GameSphere.</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- slick slider css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- custom css (tailwind) -->
+        <link rel="stylesheet" href="dist/main.css">
+    </head>
+    <body>
+    
+        <header  class = "header">
+            <nav style="background-color: black;" class = "navbar flex items-center shadow-nav">
+                <div class = "container w-full">
+                    <div class = "navbar-content">
+                        <div class = "brand-and-toggler flex items-center justify-between">
+                            <a href = "#" class = "navbar-brand">Game<span class = "text-green-normal">Sphere</span></a>
+                            <button type = "button" class = "lg:hidden text-white text-2xl" id = "navbar-show-btn">
+                                <i class = "fas fa-bars"></i>
+                            </button>
+                        </div>
+
+                        <div  class = "navbar-collapse fixed right-0 top-0 w-full sm:w-[280px] h-full bg-white shadow-nav-collapse pt-[60px] px-5 pb-4 text-center transition ease-in-out duration-300 transform lg:relative lg:p-0 lg:flex lg:items-center lg:justify-end lg:w-full lg:bg-transparent lg:shadow-none translate-x-full lg:translate-x-0">
+                            <button type = "button" class = "lg:hidden" id = "navbar-hide-btn">
+                                <i class = "fa-solid fa-xmark text-2xl"></i>
+                            </button>
+
+                            <ul class = "navbar-nav">
+                                <li class = "nav-item">
+                                    <a href = "#" class = "nav-link">home</a>
+                                </li>
+                                <li class = "nav-item">
+                                    <a href = "#" class = "nav-link">Games</a>
+                                </li>
+                                <li class = "nav-item">
+                                    <a href = "#" class = "nav-link">Tournament</a>
+                                </li>
+                                <li class = "nav-item">
+                                    <a href = "#" class = "nav-link">Join community</a>
+                                </li>
+                                <li class = "nav-item">
+                                    <a href = "#" class = "nav-link">Blogs</a>
+                                </li>
+                                <li class = "nav-item">
+                                    <a href = "#" class = "nav-link">Contact Us</a>
+                                </li>
+                            </ul>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class = "banner-content" >
+                <div class = "banner-badge">Hello Gamers</div>
+                <h1 class = "banner-title">Play Games With Your Friends</h1>
+                <p class = "lead-text">In this platform we are  here to play games with our friends at a same time without any interuption Our primary goal is to create a plateform where two or more friends can gather and play games online (such as multiplayer) without having to download any software or tools to their computers or mobile devices.</p>
+                <button type = "button" class = "banner-btn">
+                    <span class = "me-4">
+                        <img src = "../assets/icons/console.svg" alt = "">
+                    </span>
+                    <span>play now</span>
+                </button>
+            </div>
+        </header>
+
+        <section class = "py-16 sc-popular bg-violet-dark-active">
+            <div class = "container">
+                <div class = "sc-title">
+                    <h3>top popular <span>games</span></h3>
+                    <div class="line"></div>
+                </div>
+
+                <div class="game-card-list grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    <div class = "game-card">
+                        <div class = "game-card-top img-fit-cover">
+                            <img src = "../assets/images/game-1.png" alt = "">
+                            <div class = "ratings-count">
+                                241
+                                <img src = "../assets/icons/star-black.svg" alt = "" class = "ms-2">
+                            </div>
+                        </div>
+                        <div class = "game-card-bottom">
+                            <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
+                                <div class = "py-1">
+                                    <h4 class = "text-white uppercase game-card-title">Ludo King</h4>
+                                    <p class = "para-text">Roll the Dice and Let the Fun Begin ...</p>
+                                </div>
+                                <div class = "star-rating mt-2 sm:mt-0 py-1">
+                                    <img src = "../assets/icons/star-green.svg">
+                                    <img src = "../assets/icons/star-green.svg">
+                                    <img src = "../assets/icons/star-green.svg">
+                                    <img src = "../assets/icons/star-green.svg">
+                                    <img src = "../assets/icons/star-green-half.svg">
+                                </div>
+                            </div>
+
+                            <div class = "block-wrap flex justify-between items-end">
+                                <div class = "details-group">
+                                    <div class = "flex items-center">
+                                        <p class = "font-semibold">Release Date: &nbsp;</p>
+                                        <p>07.12.2015</p>
+                                    </div>
+                                    <div class = "flex items-center">
+                                        <p class = "font-semibold">Updated: &nbsp;</p>
+                                        <p>Action | Desktop</p>
+                                    </div>
+                                </div>
+
+                                <div class = "flex flex-col items-end justify-between">
+                                    <a href = "#" class = "btn-primary uppercase">Play Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "game-card">
+                        <div class = "game-card-top img-fit-cover">
+                            <img src = "../assets/images/game-2.png" alt = "">
+                            <div class = "ratings-count">
+                                241
+                                <img src = "../assets/icons/star-black.svg" alt = "" class = "ms-2">
+                            </div>
+                        </div>
+                        <div class = "game-card-bottom">
+                            <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
+                                <div class = "py-1">
+                                    <h4 class = "text-white uppercase game-card-title">carrom </h4>
+                                    <p class = "para-text">No boredom on our board games ....</p>
+                                </div>
+                                <div class = "star-rating mt-2 sm:mt-0 py-1">
+                                    <img src = "../assets/icons/star-green.svg">
+                                    <img src = "../assets/icons/star-green.svg">
+                                    <img src = "../assets/icons/star-green.svg">
+                                    <img src = "../assets/icons/star-green.svg">
+                                    <img src = "../assets/icons/star-green-half.svg">
+                                </div>
+                            </div>
+
+                            <div class = "block-wrap flex justify-between items-end">
+                                <div class = "details-group">
+                                    <div class = "flex items-center">
+                                        <p class = "font-semibold">Release Date: &nbsp;</p>
+                                        <p>07.12.2015</p>
+                                    </div>
+                                    <div class = "flex items-center">
+                                        <p class = "font-semibold">Updated: &nbsp;</p>
+                                        <p>Action | Desktop</p>
+                                    </div>
+                                </div>
+
+                                <div class = "flex flex-col items-end justify-between">
+                                    <a href = "#" class = "btn-primary uppercase">play now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "game-card">
+                        <div class = "game-card-top img-fit-cover">
+                            <img src = "../assets/images/game-3.png" alt = "">
+                            <div class = "ratings-count">
+                                241
+                                <img src = "../assets/icons/star-black.svg" alt = "" class = "ms-2">
+                            </div>
+                        </div>
+                        <div class = "game-card-bottom">
+                            <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
+                                <div class = "py-1">
+                                    <h4 class = "text-white uppercase game-card-title">tic tac toe</h4>
+                                    <p class = "para-text">Unleash your strategic prowess in the ultimate game of Tic Tac Toe!...</p>
+                                </div>
+                                <div class = "star-rating mt-2 sm:mt-0 py-1">
+                                    <img src = "../assets/icons/star-green.svg">
+                                    <img src = "../assets/icons/star-green.svg">
+                                    <img src = "../assets/icons/star-green.svg">
+                                    <img src = "../assets/icons/star-green.svg">
+                                    <img src = "../assets/icons/star-green-half.svg">
+                                </div>
+                            </div>
+
+                            <div class = "block-wrap flex justify-between items-end">
+                                <div class = "details-group">
+                                    <div class = "flex items-center">
+                                        <p class = "font-semibold">Release Date: &nbsp;</p>
+                                        <p>07.12.2015</p>
+                                    </div>
+                                    <div class = "flex items-center">
+                                        <p class = "font-semibold">Updated: &nbsp;</p>
+                                        <p>Action | Desktop</p>
+                                    </div>
+                                </div>
+
+                                <div class = "flex flex-col items-end justify-between">
+                                    <a href = "#" class = "btn-primary uppercase">Play Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "game-card">
+                        <div class = "game-card-top img-fit-cover">
+                            <img src = "../assets/images/game-4.png" alt = "">
+                            <div class = "ratings-count">
+                                241
+                                <img src = "../assets/icons/star-black.svg" alt = "" class = "ms-2">
+                            </div>
+                        </div>
+                        <div class = "game-card-bottom">
+                            <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
+                                <div class = "py-1">
+                                    <h4 class = "text-white uppercase game-card-title">Rock, Paper, Scissors</h4>
+                                    <p class = "para-text">Unleash your hand's destiny in the ultimate battle of wits!...</p>
+                                </div>
+                                <div class = "star-rating mt-2 sm:mt-0 py-1">
+                                    <img src = "../assets/icons/star-green.svg">
+                                    <img src = "../assets/icons/star-green.svg">
+                                    <img src = "../assets/icons/star-green.svg">
+                                    <img src = "../assets/icons/star-green.svg">
+                                    <img src = "../assets/icons/star-green-half.svg">
+                                </div>
+                            </div>
+
+                            <div class = "block-wrap flex justify-between items-end">
+                                <div class = "details-group">
+                                    <div class = "flex items-center">
+                                        <p class = "font-semibold">Release Date: &nbsp;</p>
+                                        <p>07.12.2015</p>
+                                    </div>
+                                    <div class = "flex items-center">
+                                        <p class = "font-semibold">Updated: &nbsp;</p>
+                                        <p>Action | Desktop</p>
+                                    </div>
+                                </div>
+
+                                <div class = "flex flex-col items-end justify-between">
+                                    <a href = "#" class = "btn-primary uppercase">play now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "game-card">
+                        <div class = "game-card-top img-fit-cover">
+                            <img src = "../assets/images/game-5.png" alt = "">
+                            <div class = "ratings-count">
+                                241
+                                <img src = "../assets/icons/star-black.svg" alt = "" class = "ms-2">
+                            </div>
+                        </div>
+                        <div class = "game-card-bottom">
+                            <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
+                                <div class = "py-1">
+                                    <h4 class = "text-white uppercase game-card-title">snake and Ladders</h4>
+                                    <p class = "para-text"> Embark on an unpredictable journey with Snake and Ladders!...</p>
+                                </div>
+                                <div class = "star-rating mt-2 sm:mt-0 py-1">
+                                    <img src = "../assets/icons/star-green.svg">
+                                    <img src = "../assets/icons/star-green.svg">
+                                    <img src = "../assets/icons/star-green.svg">
+                                    <img src = "../assets/icons/star-green.svg">
+                                    <img src = "../assets/icons/star-green-half.svg">
+                                </div>
+                            </div>
+
+                            <div class = "block-wrap flex justify-between items-end">
+                                <div class = "details-group">
+                                    <div class = "flex items-center">
+                                        <p class = "font-semibold">Release Date: &nbsp;</p>
+                                        <p>07.12.2015</p>
+                                    </div>
+                                    <div class = "flex items-center">
+                                        <p class = "font-semibold">Updated: &nbsp;</p>
+                                        <p>Action | Desktop</p>
+                                    </div>
+                                </div>
+
+                                <div class = "flex flex-col items-end justify-between">
+                                    <a href = "#" class = "btn-primary uppercase">Play now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "game-card">
+                        <div class = "game-card-top img-fit-cover">
+                            <img src = "../assets/images/game-6.png" alt = "">
+                            <div class = "ratings-count">
+                                241
+                                <img src = "../assets/icons/star-black.svg" alt = "" class = "ms-2">
+                            </div>
+                        </div>
+                        <div class = "game-card-bottom">
+                            <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
+                                <div class = "py-1">
+                                    <h4 class = "text-white uppercase game-card-title">Air Hockey</h4>
+                                    <p class = "para-text">Glide, Strike, and Dominate! Experience the thrill of airborne competition!...</p>
+                                </div>
+                                <div class = "star-rating mt-2 sm:mt-0 py-1">
+                                    <img src = "../assets/icons/star-green.svg">
+                                    <img src = "../assets/icons/star-green.svg">
+                                    <img src = "../assets/icons/star-green.svg">
+                                    <img src = "../assets/icons/star-green.svg">
+                                    <img src = "../assets/icons/star-green-half.svg">
+                                </div>
+                            </div>
+
+                            <div class = "block-wrap flex justify-between items-end">
+                                <div class = "details-group">
+                                    <div class = "flex items-center">
+                                        <p class = "font-semibold">Release Date: &nbsp;</p>
+                                        <p>07.12.2015</p>
+                                    </div>
+                                    <div class = "flex items-center">
+                                        <p class = "font-semibold">Updated: &nbsp;</p>
+                                        <p>Action | Desktop</p>
+                                    </div>
+                                </div>
+
+                                <div class = "flex flex-col items-end justify-between">
+                                    <a href = "#" class = "btn-primary uppercase">play now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "flex justify-center mt-[60px]">
+                    <a href = "#" class = "section-btn">see more games</a>
+                </div>
+            </div>
+        </section>
+
+        <div class = "py-16 bg-violet-darker overflow-hidden">
+            <div class = "game-slider">
+                <div class = "slider-item img-fit-cover">
+                    <img src = "../assets/images/slider_img_1.png" class = "slider-item-img">
+                </div>
+                <div class = "slider-item img-fit-cover">
+                    <img src = "../assets/images/slider_img_2.png" class = "slider-item-img">
+                </div>
+                <div class = "slider-item img-fit-cover">
+                    <img src = "../assets/images/slider_img_3.png" class = "slider-item-img">
+                </div>
+                <div class = "slider-item img-fit-cover">
+                    <img src = "../assets/images/slider_img_4.png" class = "slider-item-img">
+                </div>
+                <div class = "slider-item img-fit-cover">
+                    <img src = "../assets/images/slider_img_5.png" class = "slider-item-img">
+                </div>
+                <div class = "slider-item img-fit-cover">
+                    <img src = "../assets/images/slider_img_6.png" class = "slider-item-img">
+                </div>
+                <div class = "slider-item img-fit-cover">
+                    <img src = "../assets/images/slider_img_7.png" class = "slider-item-img">
+                </div>
+            </div>
+        </div>
+
+        <section class = "py-16 sc-join flex items-center bg-join-image relative after:absolute after:content-[''] after:bg-gradient-to-b after:from-black/50 after:to-black/50 after:bg-center after:bg-cover after:bg-no-repeat">
+            <div class = "container w-full">
+                <div class = "join-content">
+                    <h2 class = "join-title uppercase">join the <span>community</span></h2>
+                    <p class = "lead-text py-2">Join our Discord community which is in the making and made by gamers for gamers. All are welcome to join no matter the game you play, we're here to have a good.</p>
+                    <button type = "button" class = "section-btn mt-4">join discord</button>
+                </div>
+            </div>
+        </section>
+
+        <section class = "py-16 sc-posts bg-violet-dark-active">
+            <div class = "container">
+                <div class = "sc-title">
+                    <h3>latest <span>posts</span></h3>
+                    <div class="line"></div>
+                </div>
+
+                <div class = "grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    <div class = "game-post">
+                        <div class = "game-post-img">
+                            <img src = "../assets/images/game-7.png" alt = "">
+                        </div>
+                        <div class = "game-post-body py-4 px-7">
+                            <h3 class = "game-post-title pb-3 border-b-[1px] border-b-violet-dark-hover">My Time At Sandrock Knives Out Update Release Date Revealed.</h3>
+
+                            <div class = "flex justify-between items-center mt-[10px]">
+                                <span class = "font-normal text-[13px]">March 31, 2023 7:46 AM</span>
+                                <p class = "text-[13px]">By: <span class = "text-green-normal font-semibold">Joseph Allen</span> </p>
+                            </div>
+                            <p class = "para-text">The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system, new story content, and lots more, is scheduled to arrive ...</p>
+
+                            <div class = "flex items-center justify-between">
+                                <a href = "#" class = "btn-secondary uppercase">read more</a>
+                                <div class = "flex items-center">
+                                    <span class = "font-bold text-[13px] flex me-[25px]">
+                                        <img src = "../assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 23
+                                    </span>
+                                    <span class = "font-bold text-[13px] flex">
+                                        <img src = "../assets/icons/message.svg" alt = "" class = "w-[17px] me-2"> 45
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "game-post">
+                        <div class = "game-post-img">
+                            <img src = "../assets/images/game-8.png" alt = "">
+                        </div>
+                        <div class = "game-post-body py-4 px-7">
+                            <h3 class = "game-post-title pb-3 border-b-[1px] border-b-violet-dark-hover">Tekken 8 Ling Xiaoyu Trailer Lets The Dancing Phoenix Loose</h3>
+
+                            <div class = "flex justify-between items-center mt-[10px]">
+                                <span class = "font-normal text-[13px]">March 31, 2023 7:46 AM</span>
+                                <p class = "text-[13px]">By: <span class = "text-green-normal font-semibold">Joseph Allen</span> </p>
+                            </div>
+                            <p class = "para-text">The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system, new story content, and lots more, is scheduled to arrive ...</p>
+
+                            <div class = "flex items-center justify-between">
+                                <a href = "#" class = "btn-secondary uppercase">read more</a>
+                                <div class = "flex items-center">
+                                    <span class = "font-bold text-[13px] flex me-[25px]">
+                                        <img src = "../assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 23
+                                    </span>
+                                    <span class = "font-bold text-[13px] flex">
+                                        <img src = "../assets/icons/message.svg" alt = "" class = "w-[17px] me-2"> 45
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "game-post">
+                        <div class = "game-post-img">
+                            <img src = "../assets/images/game-9.png" alt = "">
+                        </div>
+                        <div class = "game-post-body py-4 px-7">
+                            <h3 class = "game-post-title pb-3 border-b-[1px] border-b-violet-dark-hover">Promising Action RPG Rise of Rebellion Getting Playable Demo</h3>
+
+                            <div class = "flex justify-between items-center mt-[10px]">
+                                <span class = "font-normal text-[13px]">March 31, 2023 7:46 AM</span>
+                                <p class = "text-[13px]">By: <span class = "text-green-normal font-semibold">Joseph Allen</span> </p>
+                            </div>
+                            <p class = "para-text">The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system, new story content, and lots more, is scheduled to arrive ...</p>
+
+                            <div class = "flex items-center justify-between">
+                                <a href = "#" class = "btn-secondary uppercase">read more</a>
+                                <div class = "flex items-center">
+                                    <span class = "font-bold text-[13px] flex me-[25px]">
+                                        <img src = "../assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 23
+                                    </span>
+                                    <span class = "font-bold text-[13px] flex">
+                                        <img src = "../assets/icons/message.svg" alt = "" class = "w-[17px] me-2"> 45
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "game-post">
+                        <div class = "game-post-img">
+                            <img src = "../assets/images/game-10.png" alt = "">
+                        </div>
+                        <div class = "game-post-body py-4 px-7">
+                            <h3 class = "game-post-title pb-3 border-b-[1px] border-b-violet-dark-hover">Total War: Warhammer 3 Chaos Dwarfs DLC Shows Zhatan's ...</h3>
+
+                            <div class = "flex justify-between items-center mt-[10px]">
+                                <span class = "font-normal text-[13px]">March 31, 2023 7:46 AM</span>
+                                <p class = "text-[13px]">By: <span class = "text-green-normal font-semibold">Joseph Allen</span> </p>
+                            </div>
+                            <p class = "para-text">The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system, new story content, and lots more, is scheduled to arrive ...</p>
+
+                            <div class = "flex items-center justify-between">
+                                <a href = "#" class = "btn-secondary uppercase">read more</a>
+                                <div class = "flex items-center">
+                                    <span class = "font-bold text-[13px] flex me-[25px]">
+                                        <img src = "../assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 23
+                                    </span>
+                                    <span class = "font-bold text-[13px] flex">
+                                        <img src = "../assets/icons/message.svg" alt = "" class = "w-[17px] me-2"> 45
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "game-post">
+                        <div class = "game-post-img">
+                            <img src = "../assets/images/game-11.png" alt = "">
+                        </div>
+                        <div class = "game-post-body py-4 px-7">
+                            <h3 class = "game-post-title pb-3 border-b-[1px] border-b-violet-dark-hover">Nobunaga's Ambition: Awakening Is Heading West In July</h3>
+
+                            <div class = "flex justify-between items-center mt-[10px]">
+                                <span class = "font-normal text-[13px]">March 31, 2023 7:46 AM</span>
+                                <p class = "text-[13px]">By: <span class = "text-green-normal font-semibold">Joseph Allen</span> </p>
+                            </div>
+                            <p class = "para-text">The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system, new story content, and lots more, is scheduled to arrive ...</p>
+
+                            <div class = "flex items-center justify-between">
+                                <a href = "#" class = "btn-secondary uppercase">read more</a>
+                                <div class = "flex items-center">
+                                    <span class = "font-bold text-[13px] flex me-[25px]">
+                                        <img src = "../assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 23
+                                    </span>
+                                    <span class = "font-bold text-[13px] flex">
+                                        <img src = "../assets/icons/message.svg" alt = "" class = "w-[17px] me-2"> 45
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "game-post">
+                        <div class = "game-post-img">
+                            <img src = "../assets/images/game-12.png" alt = "">
+                        </div>
+                        <div class = "game-post-body py-4 px-7">
+                            <h3 class = "game-post-title pb-3 border-b-[1px] border-b-violet-dark-hover">Cyberpunk 2077 Phantom Liberty Promotion Starts in June as CD</h3>
+
+                            <div class = "flex justify-between items-center mt-[10px]">
+                                <span class = "font-normal text-[13px]">March 31, 2023 7:46 AM</span>
+                                <p class = "text-[13px]">By: <span class = "text-green-normal font-semibold">Joseph Allen</span> </p>
+                            </div>
+                            <p class = "para-text">The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system, new story content, and lots more, is scheduled to arrive ...</p>
+
+                            <div class = "flex items-center justify-between">
+                                <a href = "#" class = "btn-secondary uppercase">read more</a>
+                                <div class = "flex items-center">
+                                    <span class = "font-bold text-[13px] flex me-[25px]">
+                                        <img src = "../assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 23
+                                    </span>
+                                    <span class = "font-bold text-[13px] flex">
+                                        <img src = "../assets/icons/message.svg" alt = "" class = "w-[17px] me-2"> 45
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "flex justify-center mt-[60px]">
+                    <a href = "#" class = "section-btn">see more blogs</a>
+                </div>
+            </div>
+        </section>
+
+        <section class = "py-16 sc-category">
+            <div class = "container">
+                <div class = "sc-title">
+                    <h3>game <span>category</span></h3>
+                    <div class = "line"></div>
+                </div>
+
+                <div class = "button-group mx-auto filter-button-group flex items-center justify-center flex-wrap">
+                    <button data-filter = "action">action</button>
+                    <button data-filter = "shooter">shooter</button>
+                    <button data-filter = "strategy">strategy</button>
+                    <button data-filter = "arcade">arcade</button>
+                    <button data-filter = "adventure">adventure</button>
+                </div>
+
+                <div class = "mt-16 grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                    <div class = "category-item img-fit-cover shadow-category-item overflow-hidden action shooter">
+                        <img src = "../assets/images/action-1.jpg" alt = "">
+                        <div class = "category-item-info">
+                            <div class = "bg-green-normal text-white py-[2px] px-[6px] inline-block uppercase text-xs tracking-widest mb-[6px]">action</div>
+                            <h3 class = "font-medium text-[18px] tracking-[.03em] uppercase text-white mb-2">Grand Theft Auto V</h3>
+                            <ul class = "flex mb-[14px]">
+                                <div class = "flex flex-col items-end justify-between">
+                                    <a href = "#" class = "btn-primary uppercase">play now</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class = "category-item img-fit-cover shadow-category-item overflow-hidden action adventure">
+                        <img src = "../assets/images/action-2.jpg" alt = "">
+                        <div class = "category-item-info">
+                            <div class = "bg-green-normal text-white py-[2px] px-[6px] inline-block uppercase text-xs tracking-widest mb-[6px]">action</div>
+                            <h3 class = "font-medium text-[18px] tracking-[.03em] uppercase text-white mb-2">The Witcher 3: Wild Hunt</h3>
+                            <ul class = "flex mb-[14px]">
+                                 <div class = "flex flex-col items-end justify-between">
+                                    <a href = "#" class = "btn-primary uppercase">play now</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class = "category-item img-fit-cover shadow-category-item overflow-hidden action strategy adventure">
+                        <img src = "../assets/images/action-3.jpg" alt = "">
+                        <div class = "category-item-info">
+                            <div class = "bg-green-normal text-white py-[2px] px-[6px] inline-block uppercase text-xs tracking-widest mb-[6px]">action</div>
+                            <h3 class = "font-medium text-[18px] tracking-[.03em] uppercase text-white mb-2">Tomb Raider (2013)</h3>
+                            <ul class = "flex mb-[14px]">
+                                 <div class = "flex flex-col items-end justify-between">
+                                    <a href = "#" class = "btn-primary uppercase">play now</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class = "category-item img-fit-cover shadow-category-item overflow-hidden shooter strategy arcade">
+                        <img src = "../assets/images/action-4.jpg" alt = "">
+                        <div class = "category-item-info">
+                            <div class = "bg-green-normal text-white py-[2px] px-[6px] inline-block uppercase text-xs tracking-widest mb-[6px]">action</div>
+                            <h3 class = "font-medium text-[18px] tracking-[.03em] uppercase text-white mb-2">Counter-Strike: Global Offensive</h3>
+                            <ul class = "flex mb-[14px]">
+                                 <div class = "flex flex-col items-end justify-between">
+                                    <a href = "#" class = "btn-primary uppercase">play now</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class = "category-item img-fit-cover shadow-category-item overflow-hidden action">
+                        <img src = "../assets/images/action-5.jpg" alt = "">
+                        <div class = "category-item-info">
+                            <div class = "bg-green-normal text-white py-[2px] px-[6px] inline-block uppercase text-xs tracking-widest mb-[6px]">action</div>
+                            <h3 class = "font-medium text-[18px] tracking-[.03em] uppercase text-white mb-2">The Elder Scrolls V: Skyrim</h3>
+                            <ul class = "flex mb-[14px]">
+                                 <div class = "flex flex-col items-end justify-between">
+                                    <a href = "#" class = "btn-primary uppercase">play now</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class = "category-item img-fit-cover shadow-category-item overflow-hidden arcade adventure">
+                        <img src = "../assets/images/action-6.jpg" alt = "">
+                        <div class = "category-item-info">
+                            <div class = "bg-green-normal text-white py-[2px] px-[6px] inline-block uppercase text-xs tracking-widest mb-[6px]">action</div>
+                            <h3 class = "font-medium text-[18px] tracking-[.03em] uppercase text-white mb-2">Sid Meier's Civilization</h3>
+                            <ul class = "flex mb-[14px]">
+                                 <div class = "flex flex-col items-end justify-between">
+                                    <a href = "#" class = "btn-primary uppercase">play now</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class = "category-item img-fit-cover shadow-category-item overflow-hidden strategy">
+                        <img src = "../assets/images/action-7.jpg" alt = "">
+                        <div class = "category-item-info">
+                            <div class = "bg-green-normal text-white py-[2px] px-[6px] inline-block uppercase text-xs tracking-widest mb-[6px]">action</div>
+                            <h3 class = "font-medium text-[18px] tracking-[.03em] uppercase text-white mb-2">Cities: Skylines</h3>
+                            <ul class = "flex mb-[14px]">
+                                 <div class = "flex flex-col items-end justify-between">
+                                    <a href = "#" class = "btn-primary uppercase">play now</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class = "category-item img-fit-cover shadow-category-item overflow-hidden action adventure">
+                        <img src = "../assets/images/action-6.jpg" alt = "">
+                        <div class = "category-item-info">
+                            <div class = "bg-green-normal text-white py-[2px] px-[6px] inline-block uppercase text-xs tracking-widest mb-[6px]">action</div>
+                            <h3 class = "font-medium text-[18px] tracking-[.03em] uppercase text-white mb-2">Left 4 Dead 2</h3>
+                            <ul class = "flex mb-[14px]">
+                                 <div class = "flex flex-col items-end justify-between">
+                                    <a href = "#" class = "btn-primary uppercase">play now</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class = "category-item img-fit-cover shadow-category-item overflow-hidden shooter arcade adventure">
+                        <img src = "../assets/images/action-9.jpg" alt = "">
+                        <div class = "category-item-info">
+                            <div class = "bg-green-normal text-white py-[2px] px-[6px] inline-block uppercase text-xs tracking-widest mb-[6px]">action</div>
+                            <h3 class = "font-medium text-[18px] tracking-[.03em] uppercase text-white mb-2">Dead Men's Army</h3>
+                            <ul class = "flex mb-[14px]">
+                                 <div class = "flex flex-col items-end justify-between">
+                                    <a href = "#" class = "btn-primary uppercase">play now</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class = "category-item img-fit-cover shadow-category-item overflow-hidden action adventure">
+                        <img src = "../assets/images/action-10.jpg" alt = "">
+                        <div class = "category-item-info">
+                            <div class = "bg-green-normal text-white py-[2px] px-[6px] inline-block uppercase text-xs tracking-widest mb-[6px]">action</div>
+                            <h3 class = "font-medium text-[18px] tracking-[.03em] uppercase text-white mb-2">Brutal Legend</h3>
+                            <ul class = "flex mb-[14px]">
+                                 <div class = "flex flex-col items-end justify-between">
+                                    <a href = "#" class = "btn-primary uppercase">play now</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class = "category-item img-fit-cover shadow-category-item overflow-hidden strategy arcade">
+                        <img src = "../assets/images/action-11.jpg" alt = "">
+                        <div class = "category-item-info">
+                            <div class = "bg-green-normal text-white py-[2px] px-[6px] inline-block uppercase text-xs tracking-widest mb-[6px]">action</div>
+                            <h3 class = "font-medium text-[18px] tracking-[.03em] uppercase text-white mb-2">Injustice: Gods Among Us Ultimate Edition</h3>
+                            <ul class = "flex mb-[14px]">
+                                 <div class = "flex flex-col items-end justify-between">
+                                    <a href = "#" class = "btn-primary uppercase">play now</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class = "category-item img-fit-cover shadow-category-item overflow-hidden strategy">
+                        <img src = "../assets/images/action-12.jpg" alt = "">
+                        <div class = "category-item-info">
+                            <div class = "bg-green-normal text-white py-[2px] px-[6px] inline-block uppercase text-xs tracking-widest mb-[6px]">action</div>
+                            <h3 class = "font-medium text-[18px] tracking-[.03em] uppercase text-white mb-2">Minecraft</h3>
+                            <ul class = "flex mb-[14px]">
+                                 <div class = "flex flex-col items-end justify-between">
+                                    <a href = "#" class = "btn-primary uppercase">play now</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        
+        <footer class = "footer">
+            <div class = "footer-top">
+                <div class = "container grid gap-6 lg:grid-cols-[2fr_repeat(3,1fr)] text-center lg:text-start">
+                    <div class = "footer-item">
+                        <a href = "#" class = "navbar-brand">Game<span>Sphere</span></a>
+                        <p class = "para-text">Lorem ipsum dolor sitamet consectur adipiscing Duis esollici tudin augue euismod. Nulla ullam dolor sitamet consectetur.</p>
+                    </div>
+
+                    <div class = "footer-item">
+                        <h5 class = "footer-item-title">quick link</h5>
+                        <ul class = "footer-item-links">
+                            <li><a href = "#">Gaming</a></li>
+                            <li><a href = "#">Product</a></li>
+                            <li><a href = "#">About Us</a></li>
+                            <li><a href = "#">Community</a></li>
+                        </ul>
+                    </div>
+
+                    <div class = "footer-item">
+                        <h5 class = "footer-item-title">supports</h5>
+                        <ul class = "footer-item-links">
+                            <li><a href = "#">Settings & Privacy</a></li>
+                            <li><a href = "#">Help & Support</a></li>
+                            <li><a href = "#">Report</a></li>
+                            <li><a href = "#">Our News</a></li>
+                        </ul>
+                    </div>
+
+                    <div class = "footer-item">
+                        <h5 class = "footer-item-title">newsletter</h5>
+                        <p class = "para-text">Subscribe our newsletter to get our latest update & news consectetur</p>
+
+                        <form class = "newsletter-form mt-4">
+                            <div class = "input-group">
+                                <input type = "text" class = "input-group-field outline-none" placeholder="Your email address" />
+                                <button class = "input-group-btn" type = "button">
+                                    <i class = "fa-solid fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- jquery cdn -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- slick slider js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- custom script js -->
+        <script src="src/script.js"></script>
+    </body>
+</html>
