@@ -1,7 +1,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    overflow: hidden;
+    /* overflow: hidden; */
+    min-height: 110vh;
     background-image: linear-gradient(to right top, #d5bc3d, #ff9539, #ff6364, #ff37a4, #da4ced);
 }
 
@@ -56,11 +57,11 @@ body {
 
 #opponent-score{
     position: relative;
-    top: 90px;
+    top: 10px;
     color:aliceblue;
+    margin-bottom: -42px;
 }
 
 #your-score{
     color: aliceblue;
-   
 }
