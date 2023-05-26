@@ -6,6 +6,7 @@ var modalbody = document.getElementsByClassName('modal-body');
 var instructions = document.getElementsByClassName('instructions'); 
 
 let enabler=0;
+let starter=0;
 
 const storeName = "PPName";
 const storeScore = "PPMaxScore";
@@ -35,7 +36,7 @@ let windowWidth = window.innerWidth,
         alert("This is the first time you are playing this game. LET'S START");
         maxScore = 0;
         rod = "Rod1"
-    } 
+    }
     // else {
     //     alert(rod + " has maximum score of " + maxScore * 100);
     // }
@@ -83,6 +84,7 @@ function storeWin(rod, score) {
 
     modal[0].style.display="block";
     modalbody[0].innerText=rod + " wins with a score of " + (score * 100) + ". Max score is: " + (maxScore * 100);
+    starter=0;
     // alert(rod + " wins with a score of " + (score * 100) + ". Max score is: " + (maxScore * 100));
 
 }
@@ -94,6 +96,10 @@ window.addEventListener('keypress', function (event) {
 
     let rodRect = rod1.getBoundingClientRect();
 
+    console.log(modal[0].style.display);
+    if(modal[0].style.display!="block"){
+        starter=1;
+    }
 
     if (event.code === "KeyD" && ((rodRect.x + rodRect.width) < window.innerWidth) && enabler===1) {
         rod1.style.left = (rodRect.x) + rodSpeed + 'px';
@@ -109,7 +115,7 @@ window.addEventListener('keypress', function (event) {
     }
 
 
-    if (event.code === "Enter") {
+    if (event.code === "Enter" && starter===1) {
         enabler=1;
         instructions[0].style.display="none";
         if (!gameOn) {

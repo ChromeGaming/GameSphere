@@ -3,8 +3,8 @@
 }
 
 #ball {
-    width: 20px;
-    height: 20px;
+    width: 2%;
+    height: 4%;
     background-color: red;
     position: fixed;
     top: 20px;
@@ -13,8 +13,8 @@
 }
 
 #rod1, #rod2 {
-    width: 200px;
-    height: 20px;
+    width: 20%;
+    height: 4%;
     position: fixed;
     left: 50%;
     border-radius: 25px;
@@ -41,11 +41,43 @@
 .instructions{
     margin: auto;
     margin-top: 10%;
-    font-size: 20px;
+    font-size: 110%;
     background-color: rgb(154, 255, 196);
     box-shadow: 5px 5px rgb(102, 102, 89);
     border: 2px solid black;
     border-radius:20px;
-    width: 30%;
+    width: 48%;
     overflow-wrap: break-word;
+}
+
+@media only screen and (min-width:420px) and (max-width:800px){
+    #rod1, #rod2{
+        width: 26%;
+        font-size: 75%;
+        height: 3%;
+    }
+    #ball{
+        width: 2.5%;
+        height: 3%;
+    }
+    .instructions{
+        font-size: 85%;
+        width: 43%;
+    }
+}
+
+@media only screen and (max-width:420px) {
+    #rod1, #rod2{
+        width: 28%;
+        font-size: 75%;
+        height: 3.5%;
+    }
+    #ball{
+        width: 3.5%;
+        height: 3.5%;
+    }
+    .instructions{
+        font-size: 85%;
+        width: 55%;
+    }
 }
