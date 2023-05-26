@@ -1,0 +1,51 @@
+#container {
+    position: relative;
+}
+
+#ball {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: fixed;
+    top: 20px;
+    left: 52.5%;
+    border-radius: 50%;
+}
+
+#rod1, #rod2 {
+    width: 200px;
+    height: 20px;
+    position: fixed;
+    left: 50%;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+#rod1 {
+    background-color: blue;
+    top: 0px;    
+}
+
+#rod2 {
+    background-color: blueviolet;
+    bottom: 0px;
+}
+
+.modal-footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.instructions{
+    margin: auto;
+    margin-top: 10%;
+    font-size: 20px;
+    background-color: rgb(154, 255, 196);
+    box-shadow: 5px 5px rgb(102, 102, 89);
+    border: 2px solid black;
+    border-radius:20px;
+    width: 30%;
+    overflow-wrap: break-word;
+}
