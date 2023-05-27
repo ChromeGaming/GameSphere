@@ -28,14 +28,11 @@ body:
   - type: dropdown
     id: contribution
     attributes:
-      label: Select program in which you are contributing
+      label: Select Game Type
       multiple: true
       options:
-        - GSSoC23
-        - Other
-      options:
-        - Multi Player
-        - Single player
+        - Multoiplayer
+        - Single Player
   - type: checkboxes
     id: terms
     attributes:
