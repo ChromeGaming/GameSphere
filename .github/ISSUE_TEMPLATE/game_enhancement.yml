@@ -28,10 +28,10 @@ body:
   - type: dropdown
     id: contribution
     attributes:
-      label: Select program in which you are contributing
+      label: Select The Game Type
       multiple: true
       options:
-        - Multoiplayer
+        - Multiplayer
         - Single Player
   - type: checkboxes
     id: terms
