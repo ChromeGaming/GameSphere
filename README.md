@@ -193,7 +193,7 @@ ________________________________________________________________________________
 <tr>
     <td align="center">
         <a href="https://www.linkedin.com/in/aman-singh-026141222/">
-            <img src="https://media.licdn.com/dms/image/D4D03AQHLFMc05n4axw/profile-displayphoto-shrink_400_400/0/1680535398297?e=1689206400&v=beta&t=wNTaH-noSJARU_HF-FO60P-ipOMY6EcbjkpJnqe4HuM" width="100;" alt="Aman Kumar Singh"/>
+            <img src="https://media.licdn.com/dms/image/D4D03AQEACXAgCyGEgg/profile-displayphoto-shrink_400_400/0/1685189218997?e=1690416000&v=beta&t=80_I8RpWzwV3EPYU6E-R8CbX_f7V7QGMFKkSQeQe1Kk" width="100;" alt="Aman Kumar Singh"/>
             <br />
             <sub><b>Aman Kr. Singh</b></sub>
         </a>
