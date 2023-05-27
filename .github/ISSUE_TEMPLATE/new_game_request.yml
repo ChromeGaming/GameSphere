@@ -31,7 +31,7 @@ body:
       label: Select The Game Type
       multiple: true
       options:
-        - Multoiplayer
+        - Multiplayer
         - Single Player
   - type: checkboxes
     id: terms
