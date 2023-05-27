@@ -30,7 +30,7 @@ body:
     attributes:
       label: Select program in which you are contributing
       multiple: true
-        options:
+      options:
         - Multoiplayer
         - Single Player
   - type: checkboxes
