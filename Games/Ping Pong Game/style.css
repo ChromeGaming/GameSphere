@@ -1,0 +1,83 @@
+#container {
+    position: relative;
+}
+
+#ball {
+    width: 2%;
+    height: 4%;
+    background-color: red;
+    position: fixed;
+    top: 20px;
+    left: 52.5%;
+    border-radius: 50%;
+}
+
+#rod1, #rod2 {
+    width: 20%;
+    height: 4%;
+    position: fixed;
+    left: 50%;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+#rod1 {
+    background-color: blue;
+    top: 0px;    
+}
+
+#rod2 {
+    background-color: blueviolet;
+    bottom: 0px;
+}
+
+.modal-footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.instructions{
+    margin: auto;
+    margin-top: 10%;
+    font-size: 110%;
+    background-color: rgb(154, 255, 196);
+    box-shadow: 5px 5px rgb(102, 102, 89);
+    border: 2px solid black;
+    border-radius:20px;
+    width: 48%;
+    overflow-wrap: break-word;
+}
+
+@media only screen and (min-width:420px) and (max-width:800px){
+    #rod1, #rod2{
+        width: 26%;
+        font-size: 75%;
+        height: 3%;
+    }
+    #ball{
+        width: 2.5%;
+        height: 3%;
+    }
+    .instructions{
+        font-size: 85%;
+        width: 43%;
+    }
+}
+
+@media only screen and (max-width:420px) {
+    #rod1, #rod2{
+        width: 28%;
+        font-size: 75%;
+        height: 3.5%;
+    }
+    #ball{
+        width: 3.5%;
+        height: 3.5%;
+    }
+    .instructions{
+        font-size: 85%;
+        width: 55%;
+    }
+}
