@@ -212,3 +212,9 @@ ________________________________________________________________________________
 <td align="center"><a href="https://github.com/pranjay-poddar"><img src="https://media.licdn.com/dms/image/D4D03AQH2NpsSW66gFg/profile-displayphoto-shrink_400_400/0/1680854214165?e=1690416000&v=beta&t=ChA2RUw_Os30xewunFOTI5zk74Bpn-2dSfmXshaq7po" width="100px;" alt=""/><br /><sub><b> Pranjay Poddar </b></sub></a></td>
 </table>
 
+<h2 align='center'>Contributors</h2>
+<table align='center'>
+<td align='center'><a href="https://github.com/Aman1-coder/GameSphere/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Aman1-coder/GameSphere" />
+</a>
+</td>
