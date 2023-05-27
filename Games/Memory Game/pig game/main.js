@@ -26,13 +26,13 @@ document.querySelector(".btn-roll").addEventListener("click", function() {
     //displaying dice1 result
     var diceDOM1 = document.querySelector(".dice1");
     diceDOM1.style.display = "block";
-    diceDOM1.src = "dice-" + dice1 + ".png";
+    diceDOM1.src = "./images/dice-" + dice1 + ".png";
 
     var dice2 = diceValue();
     //displaying dice2 result
     var diceDOM2 = document.querySelector(".dice2");
     diceDOM2.style.display = "block";
-    diceDOM2.src = "dice-" + dice2 + ".png";
+    diceDOM2.src = "./images/dice-" + dice2 + ".png";
     // Update round score if rolled two 6 in a row
     if ((dice1 === 6 && diceP1 === 6) || (dice2 === 6 && diceP2 === 6)) {
       scores[activePlayer] = 0;
