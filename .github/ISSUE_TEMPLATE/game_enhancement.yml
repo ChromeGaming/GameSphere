@@ -30,9 +30,9 @@ body:
     attributes:
       label: Select program in which you are contributing
       multiple: true
-      options:
-        - GSSoC23
-        - Other
+        options:
+        - Multoiplayer
+        - Single Player
   - type: checkboxes
     id: terms
     attributes:
