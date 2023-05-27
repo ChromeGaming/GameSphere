@@ -33,6 +33,9 @@ body:
       options:
         - GSSoC23
         - Other
+        options:
+        - Multi Player
+        - Single player
   - type: checkboxes
     id: terms
     attributes:
