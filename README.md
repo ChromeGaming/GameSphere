@@ -13,7 +13,7 @@
 - [How to make a PR in a Project 🟢](#how-to-make-a-pr-in-a-project-)
     + [Alternatively Using GitHub Desktop](#alternatively-using-github-desktop)
 
-# GSSOC'23 Welcome To All Contributors 🌻
+# GSSOC'23 Welcome To All Contributers 🌻
 
 ### About GSSoC
 GirlScript Summer Of Code is a three-month-long Open-Source Program conducted every summer by the Girlscript Foundation. With constant efforts, participants contribute to numerous projects under the extreme guidance of skilled mentors over these months. With such exposure, students begin to contribute to real-world projects from the comfort of their homes. GirlScript Summer Of Code has witnessed active participation over the years, and the 2023 edition aims to carry the legacy with a promising impact.
@@ -212,3 +212,11 @@ ________________________________________________________________________________
 <td align="center"><a href="https://github.com/pranjay-poddar"><img src="https://media.licdn.com/dms/image/D4D03AQH2NpsSW66gFg/profile-displayphoto-shrink_400_400/0/1680854214165?e=1690416000&v=beta&t=ChA2RUw_Os30xewunFOTI5zk74Bpn-2dSfmXshaq7po" width="100px;" alt=""/><br /><sub><b> Pranjay Poddar </b></sub></a></td>
 </table>
 
+___________________________________________________________________________________________________________________________________________________________________
+
+<h2 align='center'>Contributors</h2>
+<table align='center'>
+<td align='center'><a href="https://github.com/Aman1-coder/GameSphere/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Aman1-coder/GameSphere" />
+</a>
+</td>
