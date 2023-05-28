@@ -34,7 +34,8 @@
       line-height: 50px;
       font-size: 22px;
       text-align:center ;
-      display: inline-block;
+      display: inline-flex;
+     flex-direction: column;
       align-items: center;
       box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
       cursor: pointer;
@@ -49,8 +50,8 @@
       font-size: 14px;
       background-color: #ffffff;
       color: #ffffff;
-      padding: 5px 8px;
-      border-radius: 5px;
+     padding: 10px 18px;
+      border-radius: 25px;
       box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
       opacity: 0;
       pointer-events: none;
