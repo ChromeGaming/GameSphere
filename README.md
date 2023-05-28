@@ -70,9 +70,6 @@ Create a landing page (Home Page) by using frontend development
 
 _Detail:_ The first phase of a project is the most straightforward because all that is required of the contributor is to copy our designs (this is especially important if their designs are better than our designs) and create a landing page (or home page), which serves as a direct conduit between the user's browser and our website. The initial phase of the project is crucial because if users don't feel at ease using our website, they may quit using it completely, which is negative for our website. All contributions would have been utterly useless if this happened. in order to improve the responsiveness and dynamic experience of our users.
 
-Reference of design:
-                
-https://snowflaketest.my.canva.site/gamesphere
                
                 
  **Note** - You are also free to show your designs at durgeshkumar4993@gmail.com
@@ -84,9 +81,6 @@ Add different types of game be like Snake, Ludo, Carrom, Bubble shoot etc.
 
 _Detail:_ In a second step the developer just be need develop multiple game(be like Ludo, Carrom, Bubble shooter, snake games etc..) and list into the website and also create an special page for a particular game where all instruction are present how to play that game and also collect the users review and their experience with our website if you want to check out the reference of design just copy the link and paste into browser and also if you have any other ideas related to designs please discuss with us.
 
-Also builds game main page Reference of design page is given below:
-                 
-https://snowflaketest.my.canva.site/game-detail
                  
                  
  **Note** - You are also free to show your designs at durgeshkumar4993@gmail.com
