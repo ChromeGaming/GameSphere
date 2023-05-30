@@ -110,6 +110,11 @@ body {
     font-size: 3rem;
 }
 
+#main-page h2 {
+    margin-top: 22%;
+    font-size: 1.2rem;
+}
+
 /* CSS end of Main Page */
 
 h1 {
@@ -196,6 +201,12 @@ body:focus {
 
 .show-bingo {
     display: inline;
+}
+
+#game-page h2 {
+    display: grid;
+    justify-content: center;
+    font-size: 1rem;
 }
 
 /* Song Styling */
