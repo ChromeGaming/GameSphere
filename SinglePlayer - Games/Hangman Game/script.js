@@ -118,7 +118,7 @@ const initializer = () => {
                         dashes[index].innerText = char;
                         winCount += 1;
                         if (winCount == charArray.length) {
-                            resultText.innerHTML = `<h2 class='win-msg'> Congrats!! You Win</h2><p>The word was <span>${chosenWord}</span></p>`;
+                            resultText.innerHTML = `<h2 class='win-msg'> Congrats!! You Win</h2><p>You guess the correct word <span>${chosenWord}</span></p>`;
                             blocker();
                         }
                     }
@@ -225,6 +225,6 @@ const drawMan = (count) => {
     }
 };
 
-//New Game
+// For new game
 newGameButton.addEventListener("click", initializer);
 window.onload = initializer;
