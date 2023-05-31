@@ -10,6 +10,9 @@
     + [First Step 🌱](#first-step-)
     + [Second Step 🌲](#second-step-)
     + [Third Step 🌳](#third-step-)
+- [Available Games](#available-games)
+    + [Single Player Games 🟢](#list-of-single-player-games)
+    + [Multi Player Games 🟢](#list-of-multi-player-games)
 - [How to make a PR in a Project 🟢](#how-to-make-a-pr-in-a-project-)
     + [Alternatively Using GitHub Desktop](#alternatively-using-github-desktop)
 
@@ -106,7 +109,8 @@ I only want two player to join this room to fix this i will add a variable calle
  
  ______________________________________________________________________________________________________________________________________________________________
  
-# List of Single Player Games 
+# Available Games
+## List of Single Player Games 
 
 | SNo. | Game | 
 |------|------|
@@ -118,7 +122,7 @@ I only want two player to join this room to fix this i will add a variable calle
 
 ________________________________________________________________________________________________________________________________________________________________ 
 
-# List of Multi Player Games
+## List of Multi Player Games
 | SNo. | Game | 
 |------|------|
 |  1   |      |
