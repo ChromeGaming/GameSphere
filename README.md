@@ -107,27 +107,15 @@ I only want two player to join this room to fix this i will add a variable calle
  ______________________________________________________________________________________________________________________________________________________________
  
 # List of Single Player Games 
---------------------------------------------------------------------------------
+
 | SNo. | Game | 
 |------|------|
 |  1   |[Memory Card Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Memory%20Game)      |
-|  2   |Ping Pong  |
-|  3   |Rock Paper Scissor |
-|  4   |Rock Paper           |
-|      |           |
-|      |           |
-|      |           |
-|      |           |
-|      |           |
-|      |           |
-|      |           |
-|      |           |
-|      |           |
-|      |           |
-|      |           |
-|      |           |
-|      |           |
-|      |           |
+|  2   |[Ping Pong](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Ping%20Pong%20Game)  |
+|  3   |[Rock Paper Scissor](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Rock-Paper-Scissors) |
+|  4   |[Bingo Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Bingo%20Game)           |
+|  5   |[Tower](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/tower)           |
+
 ________________________________________________________________________________________________________________________________________________________________
 # How to make a PR in a Project 🟢
 
