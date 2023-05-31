@@ -130,3 +130,26 @@
   cursor: pointer;
   box-shadow: 0px 0px 10px 1px #2980b9;
 } 
+
+.join-content .discord-btn{
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  border: 2px solid rgb(0 159 157);
+  color: rgb(0 159 157);
+  z-index: 10;
+  width: 300px;
+  height: 34px;
+ padding: 10px 18px;
+ font-size: large;
+ letter-spacing: .1em;
+ line-height: 1.75rem;
+ 
+}
+
+.join-content .discord-btn:hover{
+  background-color: rgb(0 159 157);
+    color:white;
+    transition: ease-in-out;
+    animation-duration: 300;
+}
