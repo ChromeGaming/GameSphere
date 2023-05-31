@@ -8,7 +8,12 @@
     @apply max-w-[1280px] mx-auto px-4;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
+    scroll-behavior: smooth;
     @apply text-base leading-[1.6] font-barlow text-black;
 }
 
