@@ -116,6 +116,17 @@ I only want two player to join this room to fix this i will add a variable calle
 |  4   |[Bingo Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Bingo%20Game)           |
 |  5   |[Tower](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/tower)           |
 
+________________________________________________________________________________________________________________________________________________________________ 
+
+# List of Multi Player Games
+| SNo. | Game | 
+|------|------|
+|  1   |      |
+|  2   |      |
+|  3   |      |
+|  4   |      |
+|  5   |      |
+
 ________________________________________________________________________________________________________________________________________________________________
 # How to make a PR in a Project 🟢
 
