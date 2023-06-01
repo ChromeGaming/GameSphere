@@ -14,6 +14,7 @@ html {
 }
 .controls {
     display: flex;
+    flex-direction:row;
     gap: 20px;
     margin-bottom: 20px;
 }
