@@ -10,6 +10,8 @@
     + [First Step 🌱](#first-step-)
     + [Second Step 🌲](#second-step-)
     + [Third Step 🌳](#third-step-)
+- [Available Games 🎮](#available-games)
+    + [Single Player Games 🎮](#list-of-single-player-games)
 - [How to make a PR in a Project 🟢](#how-to-make-a-pr-in-a-project-)
     + [Alternatively Using GitHub Desktop](#alternatively-using-github-desktop)
 
@@ -106,6 +108,19 @@ I only want two player to join this room to fix this i will add a variable calle
  
  ______________________________________________________________________________________________________________________________________________________________
  
+# Available Games 🎮
+### List of Single Player Games 
+
+| SNo. | Game | 
+|------|------|
+|  1   |[Memory Card Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Memory%20Game)      |
+|  2   |[Ping Pong](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Ping%20Pong%20Game)  |
+|  3   |[Rock Paper Scissor](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Rock-Paper-Scissors) |
+|  4   |[Bingo Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Bingo%20Game)           |
+|  5   |[Tower](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/tower)           |
+
+
+________________________________________________________________________________________________________________________________________________________________
 # How to make a PR in a Project 🟢
 
 If you are interested to contribute in this project how to start contribute
