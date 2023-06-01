@@ -102,3 +102,22 @@ document.getElementById("scrollToButton").addEventListener("click", () => {
   });
 });
 
+//smooth scroll feature upon navigation
+const navLinks = document.querySelectorAll('.navbar-nav li a');
+navLinks.forEach(function (eachLink) {
+    eachLink.addEventListener('click', smoothScroll);
+})
+function smoothScroll(event) {
+    event.preventDefault();
+    const targetID = event.target.getAttribute('href');
+    if (targetID.startsWith("#")) {
+        const targetSection = document.querySelector(targetID);
+        const originalTop = Math.floor(targetSection.getBoundingClientRect().top);
+        window.scrollBy({ top: originalTop, left: 0, behavior: "smooth" });
+    }
+    else {
+        window.location.href = targetID;
+    }
+}
+
+
