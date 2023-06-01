@@ -10,9 +10,8 @@
     + [First Step 🌱](#first-step-)
     + [Second Step 🌲](#second-step-)
     + [Third Step 🌳](#third-step-)
-- [Available Games](#available-games)
-    + [Single Player Games 🟢](#list-of-single-player-games)
-    + [Multi Player Games 🟢](#list-of-multi-player-games)
+- [Available Games 🎮](#available-games)
+    + [Single Player Games 🎮](#list-of-single-player-games)
 - [How to make a PR in a Project 🟢](#how-to-make-a-pr-in-a-project-)
     + [Alternatively Using GitHub Desktop](#alternatively-using-github-desktop)
 
@@ -109,7 +108,7 @@ I only want two player to join this room to fix this i will add a variable calle
  
  ______________________________________________________________________________________________________________________________________________________________
  
-# Available Games
+# Available Games 🎮
 ## List of Single Player Games 
 
 | SNo. | Game | 
@@ -120,16 +119,6 @@ I only want two player to join this room to fix this i will add a variable calle
 |  4   |[Bingo Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Bingo%20Game)           |
 |  5   |[Tower](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/tower)           |
 
-________________________________________________________________________________________________________________________________________________________________ 
-
-## List of Multi Player Games
-| SNo. | Game | 
-|------|------|
-|  1   |      |
-|  2   |      |
-|  3   |      |
-|  4   |      |
-|  5   |      |
 
 ________________________________________________________________________________________________________________________________________________________________
 # How to make a PR in a Project 🟢
