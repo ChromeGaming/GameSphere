@@ -53,7 +53,33 @@
 
       
       //# sourceURL=pen.js
-    </script>
+
+  // Add a custom reset function
+  function resetGame() {
+    // Reset game variables
+    let time = 0;
+    let score = 0;
+    let lap = "0'00\"000";
+    let tacho = 0;
+
+    // Reset game elements
+    document.getElementById("time").textContent = time;
+    document.getElementById("score").textContent = score;
+    document.getElementById("lap").textContent = lap;
+    document.getElementById("tacho").textContent = tacho;
+
+    // Reset additional game logic and elements
+    // ...
+
+    // Show a message or perform any other necessary actions after resetting
+    console.log("Game reset");
+  }
+
+  // Add functionality to the reset button
+  const resetButton = document.getElementById("reset-button");
+  resetButton.addEventListener("click", resetGame);
+</script>
+
     <!-- <script src="javascript/null.js"></script> -->
   </body>
 </html>

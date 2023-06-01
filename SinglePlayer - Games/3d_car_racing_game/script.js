@@ -104,6 +104,61 @@ const ASSETS = {
       setTimeout((_) => resolve(), ms);
     });
   }
+
+
+
+  // Global variables
+var isCarMoving = true;
+var collisionTimer;
+var secondsRemaining = 0;
+
+// Function to simulate car movement
+function moveCar() {
+  if (isCarMoving) {
+    console.log("Car is moving...");
+    // Your code to move the car here
+  }
+}
+
+// Function to handle collision
+function handleCollision() {
+  if (isCarMoving) {
+    console.log("Car collided!");
+
+    // Stop the car
+    isCarMoving = false;
+
+    // Set collision timer for 2 seconds
+    secondsRemaining = 2;
+    collisionTimer = setInterval(updateTimer, 1000);
+
+    // Wait for 2 seconds
+    setTimeout(function() {
+      console.log("Car can move again.");
+      isCarMoving = true;
+    }, 2000);
+  }
+}
+
+// Function to update the timer on the screen
+function updateTimer() {
+  if (secondsRemaining > 0) {
+    console.log("Seconds Remaining: " + secondsRemaining);
+    // Update the timer on the screen with the seconds remaining
+    // Replace this with your code to update the timer element on the screen
+    secondsRemaining--;
+  } else {
+    clearInterval(collisionTimer);
+    console.log("Timer ended.");
+  }
+}
+
+// Call moveCar function to start car movement
+moveCar();
+
+// Example collision event
+setTimeout(handleCollision, 5000); // Simulating collision after 5 seconds
+
   
   // ------------------------------------------------------------
   // objects
