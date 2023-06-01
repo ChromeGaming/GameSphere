@@ -109,7 +109,7 @@ I only want two player to join this room to fix this i will add a variable calle
  ______________________________________________________________________________________________________________________________________________________________
  
 # Available Games 🎮
-## List of Single Player Games 
+### List of Single Player Games 
 
 | SNo. | Game | 
 |------|------|
