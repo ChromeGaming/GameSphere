@@ -1,0 +1,21 @@
+{
+  "name": "NecroCommander",
+  "version": "1.0",
+  "description": "",
+  "main": "electron.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "",
+  "keywords": [
+    "game",
+    "javascript",
+    "littlejs"
+  ],
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "electron": "^20.1.3",
+    "electron-packager": "^16.0.0"
+  }
+}

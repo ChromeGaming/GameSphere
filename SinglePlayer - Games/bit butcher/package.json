@@ -1,0 +1,44 @@
+{
+  "name": "bit-butcher",
+  "version": "1.0.0",
+  "description": "A game made for js13k games 2022 - including LittleJS (Tiny and Fast HTML5 Game Engine) v1.3.8",
+  "main": "src/game.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deathraygames/bit-butcher"
+  },
+  "keywords": [
+    "HTML5",
+    "JavaScript",
+    "game",
+    "engine",
+    "library",
+    "JS13K",
+    "webgl"
+  ],
+  "authors": [
+    "Luke Nickerson",
+    "Frank Force"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deathraygames/bit-butcher/issues"
+  },
+  "homepage": "https://github.com/KilledByAPixel/LittleJS",
+  "dependencies": {
+    "ect-bin": "^1.4.1",
+    "google-closure-compiler": "^20220803.0.0",
+    "littlejsengine": "^1.4.0",
+    "roadroller": "^2.1.0",
+    "typescript": "^4.7.4",
+    "uglify-js": "^3.16.3"
+  },
+  "scripts": {
+    "serve": "npx http-server",
+    "rollup": "rollup ./src/game.js --file game_bundle.js --format iife",
+    "build": "npm run rollup && build.bat && filesize.bat game.zip"
+  },
+  "devDependencies": {
+    "rollup": "^2.78.1"
+  }
+}
