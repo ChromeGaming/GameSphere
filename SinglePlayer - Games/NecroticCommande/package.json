@@ -1,0 +1,56 @@
+{
+  "name": "littlejsengine",
+  "version": "1.3.8",
+  "description": "LittleJS - Tiny and Fast HTML5 Game Engine",
+  "main": "engine/engine.all.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KilledByAPixel/LittleJS.git"
+  },
+  "keywords": [
+    "HTML5",
+    "JavaScript",
+    "game",
+    "engine",
+    "library",
+    "JS13K",
+    "webgl"
+  ],
+  "author": "Frank Force",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KilledByAPixel/LittleJS/issues"
+  },
+  "homepage": "https://github.com/KilledByAPixel/LittleJS",
+  "dependencies": {
+    "ect-bin": "^1.4.1",
+    "google-closure-compiler": "^20220803.0.0",
+    "roadroller": "^2.1.0",
+    "typescript": "^4.7.4",
+    "uglify-js": "^3.16.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.22.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "2.7.1"
+  },
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
