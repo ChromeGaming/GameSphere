@@ -218,7 +218,6 @@ ________________________________________________________________________________
 
 <td align="center"><a href="https://github.com/mahamat-abdelkerim-abakar"><img src="https://avatars.githubusercontent.com/u/65360822?v=4" width="100px;" alt=""/><br /><sub><b>Mahamat Abdelkerim Abakar</b></sub></a></td>
 
-<td align="center"><a href="https://github.com/pranjay-poddar"><img src="https://media.licdn.com/dms/image/D4D03AQH2NpsSW66gFg/profile-displayphoto-shrink_400_400/0/1680854214165?e=1690416000&v=beta&t=ChA2RUw_Os30xewunFOTI5zk74Bpn-2dSfmXshaq7po" width="100px;" alt=""/><br /><sub><b> Pranjay Poddar </b></sub></a></td>
 </table>
 
 ___________________________________________________________________________________________________________________________________________________________________
