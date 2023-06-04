@@ -1,0 +1,16 @@
+{
+  "name": "Space Menace",
+  "short_name": "Space Menace",
+  "description": "js13kGames 2021 competition attempt.",
+  "icons": [
+    {
+      "src": "/icon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }],
+  "start_url": "/index.html",
+  "display": "fullscreen",
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF"
+}
+
