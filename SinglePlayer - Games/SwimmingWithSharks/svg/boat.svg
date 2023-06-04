@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient gradientUnits="userSpaceOnUse" x1="1573" y1="-722" x2="1573" y2="-115" id="sky" gradientTransform="matrix(-0.262139, 0, 0, 0.262139, 409.172849, 83.528654)">
+<stop offset="0" style="stop-color: rgba(113, 182, 255, 1)"/>
+<stop offset="1" style="stop-color: rgba(11, 129, 255, 1)"/>
+</linearGradient>
+<linearGradient gradientUnits="userSpaceOnUse" x1="1573" y1="722" x2="1573" y2="1553" id="sea" gradientTransform="matrix(0.345419, 0, 0, 0.070454, -546.513885, 52.72599)">
+<stop offset="0" style="stop-color: rgba(43, 41, 170, 1)"/>
+<stop offset="1" style="stop-color: rgba(22, 21, 88, 1)"/>
+</linearGradient>
+</defs>
+<rect x="-2000" y="-2000" width="4000" height="2104" style="fill: url(#sky);"/>
+<rect x="-2000" y="104" width="3995" height="335" style="fill: url(#sea);"/>
+<path style="fill: rgb(255, 255, 255);" d="M -213 134 L -241 142 C -241 142 -242 174 -242 174 L -180 174 C -180 174 -167 154 -167 154"/>
+<path style="fill: rgb(255, 255, 255);" d="M -265 54 L -108 48 L -65 -29 L 46 -29 L 54 -62 L 74 -69 L 98 -29 L 243 33 L 346 29 C 217 229 -272 218 -265 54 Z"/>
+<rect x="-2000" y="104" width="3995" height="335" style="fill: rgba(43, 41, 170, 0.5);"/>
+<path style="fill: rgb(13, 130, 255);" d="M 104 -13 L 189 25 L 64 30 L 59 -12 L 104 -13 Z"/>
+<path style="fill: rgb(13, 130, 255);" d="M -48 -11 L -68 35 L 56 31 L 51 -12 L -48 -11 Z"/>
+<path style="fill: none; stroke: rgb(255, 255, 255); stroke-width: 4px; stroke-linejoin: round; stroke-linecap: round;" d="M 343 31 L 365 2 L 152 38"/>
+<path style="fill: rgb(216, 216, 216); stroke: rgb(255, 255, 255); stroke-width: 4px; stroke-linecap: round; stroke-linejoin: round;" d="M 312 32 L 318 11"/>
+<path style="fill: rgb(216, 216, 216); stroke: rgb(255, 255, 255); stroke-width: 4px; stroke-linecap: round; stroke-linejoin: round;" d="M 270 34 L 274 18"/>
+<g id="Cockpit">
+<path style="fill: rgb(217, 176, 105);" d="M -257 53 C -259 56 -252 81 -251 79 L -100 79 L -63 -11 L -75 -11 L -108 48 L -257 53 Z"/>
+<path style="fill: rgb(183, 148, 88);" d="M -255 68 L -251 79 L -100 79 L -95 66 L -255 68 Z"/>
+<path style="stroke-width: 2px; stroke-linejoin: round; fill: none; stroke-linecap: round; stroke: rgb(0, 0, 0);" d="M -257 54 C -258 59 -254 76 -251 79 L -100 79 L -63 -11 L -75 -11"/>
+<g transform="matrix(1, 0, 0, 1, -340, 15)">
+<path style="fill: rgba(255, 255, 255, 0.2);" d="M 45 32 L 45 48 L 35 48 L 51 68 L 66 48 C 66 48 56 48 56 48 L 56 32 C 56 32 45 32 45 32 Z" id="CockpitUnderwater"/>
+</g>
+<g transform="matrix(0.5, -0.866, 0.866, 0.5, -190, 50)">
+<path style="fill: rgba(255, 255, 255, 0.2);" d="M 45 32 L 45 48 L 35 48 L 51 68 L 66 48 C 66 48 56 48 56 48 L 56 32 C 56 32 45 32 45 32 Z" id="CockpitCabin"/>
+</g>
+<g transform="matrix(-0.5, -0.866, 0.866, -0.5, -100, 25)">
+<path style="fill: rgba(255, 255, 255, 0.2);" d="M 45 32 L 45 48 L 35 48 L 51 68 L 66 48 C 66 48 56 48 56 48 L 56 32 C 56 32 45 32 45 32 Z" id="CockpitBridge"/>
+</g>
+<g transform="matrix(0, -1, 1, 0, -152, 50)">
+<path style="fill: rgba(255, 255, 255, 0.2);" d="M 45 32 L 45 48 L 35 48 L 51 68 L 66 48 C 66 48 56 48 56 48 L 56 32 C 56 32 45 32 45 32 Z" id="CockpitDeck"/>
+</g>
+</g>
+<g id="Bridge">
+<path style="fill: rgb(183, 148, 88);" d="M -65 -29 C -65 -29 -69 -22 -69 -22 L 45 -22 L 47 -29 L -65 -29 Z"/>
+<path style="stroke-width: 2px; stroke-linejoin: round; fill: none; stroke-linecap: round; stroke: rgb(0, 0, 0);" d="M -69 -22 L 45 -22 L 54 -62"/>
+<g transform="matrix(0.707, 0.707, -0.707, 0.707, -95, -110)">
+<path style="fill: rgba(255, 255, 255, 0.2);" d="M 45 32 L 45 48 L 35 48 L 51 68 L 66 48 C 66 48 56 48 56 48 L 56 32 C 56 32 45 32 45 32 Z" id="BridgeCockpit"/>
+</g>
+</g>
+<path style="fill: rgb(255, 255, 255);" d="M -26 -71 L -19 -26 L 10 -26 L 7 -45 L -11 -40 C -11 -40 -19 -79 -19 -79 L -26 -71 Z"/>
+<g id="Deck">
+<path style="fill: rgb(183, 148, 88);" d="M 234 29 L 226 39 L 328 35 L 334 29"/>
+<path style="stroke-width: 2px; stroke-linejoin: round; stroke-linecap: round; fill: none; stroke: rgb(0, 0, 0);" d="M 234 29 L 226 39 L 328 35 L 334 29"/>
+<g transform="matrix(0, 1, -1, 0, 210, -80)">
+<path style="fill: rgba(255, 255, 255, 0.2);" d="M 45 32 L 45 48 L 35 48 L 51 68 L 66 48 C 66 48 56 48 56 48 L 56 32 C 56 32 45 32 45 32 Z" id="DeckCockpit"/>
+</g>
+</g>
+<g id="Cabin">
+<path style="fill: rgb(217, 176, 105);" d="M -53 -15 L -93 81 L -28 132 L 152 128 L 222 33 L 106 -17 L -53 -15 Z"/>
+<path style="fill: rgb(183, 148, 88);" d="M -34 93 L -93 81 L -28 132 L 152 128 L 178 93 L -34 93 Z"/>
+<path style="fill: rgb(183, 148, 88);" d="M 104 -13 L 189 25 L 64 30 L 59 -12 L 104 -13 Z"/>
+<path style="fill: rgb(183, 148, 88);" d="M -48 -11 L -68 35 L 56 31 L 51 -12 L -48 -11 Z"/>
+<path style="fill: rgb(145, 117, 70);" d="M -19 64 L -33 54 L 178 54 L 198 64 L -19 64 Z"/>
+<path style="fill: rgb(116, 94, 56);" d="M -19 64 L -20 105 L 177 93 L 198 64 L -19 64 Z"/>
+<path style="fill: rgb(85, 67, 41);" d="M -19 64 L -20 105 L -34 93 L -33 54 L -19 64 Z"/>
+<path style="fill: rgb(85, 68, 41);" d="M 198 64 L 216 40 L 178 54 L 198 64 Z"/>
+<path style="stroke-width: 2px; stroke-linejoin: round; stroke-linecap: round; fill: none; stroke: rgb(0, 0, 0);" d="M -53 -15 L -93 81 L -28 132 L 152 128 L 222 33 L 106 -17 L -53 -15 Z"/>
+<g transform="matrix(0, 1, -1, 0, -10, -100)">
+<path style="fill: rgba(255, 255, 255, 0.2);" d="M 45 32 L 45 48 L 35 48 L 51 68 L 66 48 C 66 48 56 48 56 48 L 56 32 C 56 32 45 32 45 32 Z" id="CabinCockpit"/>
+</g>
+<g transform="matrix(0.5, -0.866, 0.866, 0.5, 120, 5)">
+<path style="fill: rgba(255, 255, 255, 0.2);" d="M 45 32 L 45 48 L 35 48 L 51 68 L 66 48 C 66 48 56 48 56 48 L 56 32 C 56 32 45 32 45 32 Z" id="CabinStore"/>
+</g>
+</g>
+<g id="Store">
+<path style="fill: rgb(217, 176, 105);" d="M 325 41 C 287 82 259 103 200 126 L 159 128 L 221 46 L 325 41 Z"/>
+<path style="fill: rgb(183, 148, 88);" d="M 185 94 L 246 105 C 246 105 218 119 200 126 L 159 128 L 185 94 Z"/>
+<path style="stroke-width: 2px; stroke-linejoin: round; stroke-linecap: round; fill: none; stroke: rgb(0, 0, 0);" d="M 325 41 C 287 82 259 103 200 126 L 159 128 L 221 46 L 325 41 Z"/>
+<g transform="matrix(0, 1, -1, 0, 250, -60)">
+<path style="fill: rgba(255, 255, 255, 0.2);" d="M 45 32 L 45 48 L 35 48 L 51 68 L 66 48 C 66 48 56 48 56 48 L 56 32 C 56 32 45 32 45 32 Z" id="StoreCabin"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, -1, -360, 230)" id="Underwater">
+<path style="fill: rgba(255, 255, 255, 0.2);" d="M 45 32 L 45 48 L 35 48 L 51 68 L 66 48 C 66 48 56 48 56 48 L 56 32 C 56 32 45 32 45 32 Z" id="UnderwaterCockpit"/>
+</g>
+<path style="fill: rgb(11, 11, 46);" d="M -389 438 L -264 411 C -264 411 -134 425 -134 425 L 11 407 L 170 427 L 300 408 L 561 439 L 2000 439 L 2000 2000 L -2000 2000 L -2000 439 L -389 439 L -389 438 Z"/>
+</svg>

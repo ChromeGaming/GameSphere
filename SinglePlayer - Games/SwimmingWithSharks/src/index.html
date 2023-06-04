@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, user-scalable=0"/>
+<title>Swimming With Sharks</title>
+<style>
+html {
+	background: #000;
+}
+body {
+	margin: 0; padding: 0;
+	font: bold min(3vw, 3vh) sans-serif; color: #fff;
+	line-height: 150%;
+	overflow: hidden;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-ms-touch-action: none;
+	user-select: none;
+}
+svg {
+	display: none;
+}
+#B {
+	position: fixed;
+	padding: .5em .75em;
+	max-width: 90vw;
+	background: #111; color: #fff;
+	border-radius: .75em;
+	display: none;
+}
+#BP {
+	position: absolute;
+	left: calc(50% - .5em); bottom: -.9em;
+	width: 0; height: 0;
+	border-left: .5em solid transparent;
+	border-right: .5em solid transparent;
+	border-top: 1em solid #111;
+}
+#FX {
+	display: none;
+	position: fixed;
+	left: 0; top: 0;
+	right: 0; bottom: 0;
+	text-align: center;
+	padding: 20vh 2em;
+}
+ol {
+	margin: 0; padding: 0 0 0 1em;
+}
+a {
+	color: #fff;
+}
+</style>
+</head>
+<body>
+<svg id="S">
+<defs>
+	<linearGradient gradientUnits="userSpaceOnUse" x1="1573" y1="-722" x2="1573" y2="-115" id="sky" gradientTransform="matrix(-0.262139, 0, 0, 0.262139, 409.172849, 83.528654)">
+		<stop offset="0" style="stop-color: rgba(113, 182, 255, 1)"></stop>
+		<stop offset="1" style="stop-color: rgba(11, 129, 255, 1)"></stop>
+	</linearGradient>
+	<linearGradient gradientUnits="userSpaceOnUse" x1="1573" y1="722" x2="1573" y2="1553" id="sea" gradientTransform="matrix(0.345419, 0, 0, 0.070454, -546.513885, 52.72599)">
+		<stop offset="0" style="stop-color: rgba(43, 41, 170, 1)"></stop>
+		<stop offset="1" style="stop-color: rgba(22, 21, 88, 1)"></stop>
+	</linearGradient>
+</defs>
+<g id="Sea">
+	<rect x="-2000" y="-2000" width="4000" height="4000" style="fill: rgb(25, 75, 223);"></rect>
+	<path style="fill: rgb(19, 61, 182);" d="M 91 8 C 127 27 155 126 63 123 C 44 120 -1 118 -10 83 C -12 62 -14 21 2 10 C 45 -15 38 -29 91 8 Z M 7 19 C -12 29 -7 67 -5 85 C -1 105 42 116 55 118 C 142 126 131 47 90 14 C 28 -20 44 -2 7 19 Z M 5 35 C 16 3 84 -21 92 47 C 92 64 134 93 92 108 C 75 113 42 119 30 107 C 2 76 -17 86 5 35 Z M 37 101 C 49 116 70 107 84 102 C 100 96 88 64 88 52 C 87 -6 23 8 10 35 C -8 93 13 74 37 101 Z M 23 27 C 39 8 93 11 81 60 C 77 72 100 100 67 99 C 54 98 37 94 29 84 C 12 63 -5 57 23 27 Z M 37 82 C 42 95 51 92 62 94 C 90 98 75 70 77 62 C 90 21 45 14 29 29 C -3 65 28 57 37 82 Z M 47 82 L 52 83 L 64 78 L 67 81 C 69 81 56 97 45 86 L 47 82 Z M 42 73 C -21 32 104 -2 63 68 L 66 73 L 63 78 L 54 77 L 48 81 L 43 78 L 42 73 Z M 52 48 C 46 56 56 66 62 58 C 66 52 56 45 52 48 Z M 38 63 C 48 68 52 55 43 49 C 38 49 32 59 38 63 Z M 57 70 C 52 67 52 67 50 72 C 50 74 57 72 57 70 Z"></path>
+	<path style="fill: rgb(25, 75, 223);" d="M 59 22 C 68 15 86 9 106 12 C 83 12 72 17 59 22 Z M -4 4 C 6 6 13 5 38 -4 C 17 8 6 12 -4 4 Z M 7 17 C 30 10 28 2 55 4 C 29 7 33 15 7 17 Z M -8 27 C 21 26 50 3 77 3 C 44 10 18 32 -8 27 Z M 8 39 C 45 38 48 5 93 7 C 37 13 52 50 8 39 Z M 4 53 C 45 61 52 16 79 21 C 44 27 46 70 4 53 Z M 16 65 C 57 68 65 22 93 23 C 61 37 61 73 16 65 Z M 9 70 C 55 74 65 54 90 41 C 72 54 55 79 9 70 Z M 5 85 C 51 81 74 60 96 43 C 81 59 52 88 5 85 Z M 30 94 C 65 93 68 67 99 56 C 76 67 76 93 30 94 Z M 105 64 C 87 75 81 102 25 102 C 60 102 91 70 105 64 Z M 65 106 C 74 94 89 92 97 83 C 93 98 78 94 65 106 Z M 77 42 C 86 30 93 27 110 27 C 94 30 89 33 77 42 Z M -7 43 C 0 46 6 47 16 46 C 9 48 0 50 -7 43 Z M -4 76 C 3 78 5 81 29 77 C 7 83 2 81 -4 76 Z M -6 87 C 3 90 26 91 38 87 C 20 94 8 95 -6 87 Z"></path>
+</g>
+<g id="BoatTop">
+	<path style="fill: rgb(255, 255, 255);" d="M 35 41 C 35 55 38 87 50 87 C 62 87 65 55 65 41 C 65 4 35 4 35 41 Z"></path>
+	<path style="fill: rgb(217, 176, 105);" d="M 37 36 C 39 9 61 9 63 36 C 63 34 37 34 37 36 Z"></path>
+	<path style="fill: rgb(217, 176, 105);" d="M 50 85 C 45 85 41 77 40 68 C 40 70 60 70 60 68 C 59 77 55 85 50 85 Z"></path>
+	<path style="fill: rgb(217, 176, 105);" d="M 63 39 C 63 42 63 46 62 50 C 62 53 38 53 38 50 C 37 46 37 42 37 39 C 37 37 63 37 63 39 Z"></path>
+	<path style="fill: rgb(113, 183, 255);" d="M 43 66 L 39 56 L 49 57 L 49 67 L 43 66 Z"></path>
+	<path style="fill: rgb(113, 183, 255);" d="M 57 66 L 61 56 L 51 57 L 51 67 L 57 66 Z"></path>
+	<path style="fill: rgb(255, 255, 255);" d="M 41 47 L 40 41 L 46 41 L 45 47 L 41 47 Z"></path>
+	<path style="fill: rgb(255, 255, 255);" d="M 55 47 L 54 41 L 60 41 L 59 47 L 55 47 Z"></path>
+</g>
+<g id="Boat">
+	<rect x="-2000" y="-2000" width="4000" height="2104" style="fill: url(#sky);"></rect>
+	<rect x="-2000" y="104" width="3995" height="335" style="fill: url(#sea);"></rect>
+	<path style="fill: rgb(255, 255, 255);" d="M -213 134 L -241 142 C -241 142 -242 174 -242 174 L -180 174 C -180 174 -167 154 -167 154"></path>
+	<path style="fill: rgb(255, 255, 255);" d="M -265 54 L -108 48 L -65 -29 L 46 -29 L 54 -62 L 74 -69 L 98 -29 L 243 33 L 346 29 C 217 229 -272 218 -265 54 Z"></path>
+	<rect x="-2000" y="104" width="3995" height="335" style="fill: rgba(43, 41, 170, 0.5);"></rect>
+	<path style="fill: rgb(13, 130, 255);" d="M 104 -13 L 189 25 L 64 30 L 59 -12 L 104 -13 Z"></path>
+	<path style="fill: rgb(13, 130, 255);" d="M -48 -11 L -68 35 L 56 31 L 51 -12 L -48 -11 Z"></path>
+	<path style="fill: none; stroke: rgb(255, 255, 255); stroke-width: 4px; stroke-linejoin: round; stroke-linecap: round;" d="M 343 31 L 365 2 L 152 38"></path>
+	<path style="fill: rgb(216, 216, 216); stroke: rgb(255, 255, 255); stroke-width: 4px; stroke-linecap: round; stroke-linejoin: round;" d="M 312 32 L 318 11"></path>
+	<path style="fill: rgb(216, 216, 216); stroke: rgb(255, 255, 255); stroke-width: 4px; stroke-linecap: round; stroke-linejoin: round;" d="M 270 34 L 274 18"></path>
+	<g id="Cockpit">
+		<path style="fill: rgb(217, 176, 105);" d="M -257 53 C -259 56 -252 81 -251 79 L -100 79 L -63 -11 L -75 -11 L -108 48 L -257 53 Z"></path>
+		<path style="fill: rgb(183, 148, 88);" d="M -255 68 L -251 79 L -100 79 L -95 66 L -255 68 Z"></path>
+		<path style="stroke-width: 2px; stroke-linejoin: round; fill: none; stroke-linecap: round; stroke: rgb(0, 0, 0);" d="M -257 54 C -258 59 -254 76 -251 79 L -100 79 L -63 -11 L -75 -11"></path>
+		<path style="fill: rgba(255, 255, 255, 0.5);" d="M 45 32 L 45 48 L 35 48 L 51 68 L 66 48 C 66 48 56 48 56 48 L 56 32 C 56 32 45 32 45 32 Z" id="CockpitUnderwater" transform="matrix(1, 0, 0, 1, -340, 15)"></path>
+		<path style="fill: rgba(255, 255, 255, 0.5);" d="M 45 32 L 45 48 L 35 48 L 51 68 L 66 48 C 66 48 56 48 56 48 L 56 32 C 56 32 45 32 45 32 Z" id="CockpitCabin" transform="matrix(0.5, -0.866, 0.866, 0.5, -192, 50)"></path>
+		<path style="fill: rgba(255, 255, 255, 0.5);" d="M 45 32 L 45 48 L 35 48 L 51 68 L 66 48 C 66 48 56 48 56 48 L 56 32 C 56 32 45 32 45 32 Z" id="CockpitBridge" transform="matrix(-0.5, -0.866, 0.866, -0.5, -100, 25)"></path>
+		<path style="fill: rgba(255, 255, 255, 0.5);" d="M 45 32 L 45 48 L 35 48 L 51 68 L 66 48 C 66 48 56 48 56 48 L 56 32 C 56 32 45 32 45 32 Z" id="CockpitDeck" transform="matrix(0, -1, 1, 0, -152, 50)"></path>
+	</g>
+	<g id="Bridge">
+		<path style="fill: rgb(183, 148, 88);" d="M -65 -29 C -65 -29 -69 -22 -69 -22 L 45 -22 L 47 -29 L -65 -29 Z"></path>
+		<path style="stroke-width: 2px; stroke-linejoin: round; fill: none; stroke-linecap: round; stroke: rgb(0, 0, 0);" d="M -69 -22 L 45 -22 L 54 -62"></path>
+		<path style="fill: rgba(255, 255, 255, 0.5);" d="M 45 32 L 45 48 L 35 48 L 51 68 L 66 48 C 66 48 56 48 56 48 L 56 32 C 56 32 45 32 45 32 Z" id="BridgeCockpit" transform="matrix(0.707, 0.707, -0.707, 0.707, -95, -110)"></path>
+	</g>
+	<path style="fill: rgb(255, 255, 255);" d="M -26 -71 L -19 -26 L 10 -26 L 7 -45 L -11 -40 C -11 -40 -19 -79 -19 -79 L -26 -71 Z"></path>
+	<g id="Deck">
+		<path style="fill: rgb(183, 148, 88);" d="M 234 29 L 226 39 L 328 35 L 334 29"></path>
+		<path style="stroke-width: 2px; stroke-linejoin: round; stroke-linecap: round; fill: none; stroke: rgb(0, 0, 0);" d="M 234 29 L 226 39 L 328 35 L 334 29"></path>
+		<path style="fill: rgba(255, 255, 255, 0.5);" d="M 45 32 L 45 48 L 35 48 L 51 68 L 66 48 C 66 48 56 48 56 48 L 56 32 C 56 32 45 32 45 32 Z" id="DeckCockpit" transform="matrix(0, 1, -1, 0, 210, -80)"></path>
+	</g>
+	<g id="Cabin">
+		<path style="fill: rgb(217, 176, 105);" d="M -53 -15 L -93 81 L -28 132 L 152 128 L 222 33 L 106 -17 L -53 -15 Z"></path>
+		<path style="fill: rgb(183, 148, 88);" d="M -34 93 L -93 81 L -28 132 L 152 128 L 178 93 L -34 93 Z"></path>
+		<path style="fill: rgb(183, 148, 88);" d="M 104 -13 L 189 25 L 64 30 L 59 -12 L 104 -13 Z"></path>
+		<path style="fill: rgb(183, 148, 88);" d="M -48 -11 L -68 35 L 56 31 L 51 -12 L -48 -11 Z"></path>
+		<path style="fill: rgb(145, 117, 70);" d="M -19 64 L -33 54 L 178 54 L 198 64 L -19 64 Z"></path>
+		<path style="fill: rgb(116, 94, 56);" d="M -19 64 L -20 105 L 177 93 L 198 64 L -19 64 Z"></path>
+		<path style="fill: rgb(85, 67, 41);" d="M -19 64 L -20 105 L -34 93 L -33 54 L -19 64 Z"></path>
+		<path style="fill: rgb(85, 68, 41);" d="M 198 64 L 216 40 L 178 54 L 198 64 Z"></path>
+		<path style="stroke-width: 2px; stroke-linejoin: round; stroke-linecap: round; fill: none; stroke: rgb(0, 0, 0);" d="M -53 -15 L -93 81 L -28 132 L 152 128 L 222 33 L 106 -17 L -53 -15 Z"></path>
+		<path style="fill: rgba(255, 255, 255, 0.5);" d="M 45 32 L 45 48 L 35 48 L 51 68 L 66 48 C 66 48 56 48 56 48 L 56 32 C 56 32 45 32 45 32 Z" id="CabinCockpit" transform="matrix(0, 1, -1, 0, -10, -100)"></path>
+		<path style="fill: rgba(255, 255, 255, 0.5);" d="M 45 32 L 45 48 L 35 48 L 51 68 L 66 48 C 66 48 56 48 56 48 L 56 32 C 56 32 45 32 45 32 Z" id="CabinStore" transform="matrix(0.5, -0.866, 0.866, 0.5, 120, 5)"></path>
+	</g>
+	<g id="Store">
+		<path style="fill: rgb(217, 176, 105);" d="M 325 41 C 287 82 259 103 200 126 L 159 128 L 221 46 L 325 41 Z"></path>
+		<path style="fill: rgb(183, 148, 88);" d="M 185 94 L 246 105 C 246 105 218 119 200 126 L 159 128 L 185 94 Z"></path>
+		<path style="stroke-width: 2px; stroke-linejoin: round; stroke-linecap: round; fill: none; stroke: rgb(0, 0, 0);" d="M 325 41 C 287 82 259 103 200 126 L 159 128 L 221 46 L 325 41 Z"></path>
+		<path style="fill: rgba(255, 255, 255, 0.5);" d="M 45 32 L 45 48 L 35 48 L 51 68 L 66 48 C 66 48 56 48 56 48 L 56 32 C 56 32 45 32 45 32 Z" id="StoreCabin" transform="matrix(0, 1, -1, 0, 250, -60)"></path>
+	</g>
+	<g id="Underwater">
+		<path style="fill: rgba(255, 255, 255, 0.5);" d="M 45 32 L 45 48 L 35 48 L 51 68 L 66 48 C 66 48 56 48 56 48 L 56 32 C 56 32 45 32 45 32 Z" id="UnderwaterCockpit" transform="matrix(1, 0, 0, -1, -360, 230)"></path>
+	</g>
+	<path style="fill: rgb(11, 11, 46);" d="M -389 438 L -264 411 C -264 411 -134 425 -134 425 L 11 407 L 170 427 L 300 408 L 561 439 L 2000 439 L 2000 2000 L -2000 2000 L -2000 439 L -389 439 L -389 438 Z"></path>
+</g>
+<g id="Dave">
+	<path style="fill: rgb(17, 17, 17);" d="M 45 26 L 45 24 L 44 23 L 44 19 L 42 14 L 44 13 L 44 8 L 52 4 L 55 10 L 55 13 L 57 14 L 55 19 L 54 24 L 53 25 L 53 26 L 62 32 L 66 48 L 63 65 L 61 71 L 59 73 L 60 67 L 58 68 L 60 63 L 61 49 L 58 38 L 57 57 L 57 92 L 62 98 L 59 99 L 53 94 L 50 63 L 48 94 L 41 99 L 38 98 L 44 92 L 42 57 L 41 38 L 39 49 L 39 63 L 42 68 L 40 67 L 40 73 L 38 72 L 36 65 L 34 48 L 36 32 L 45 26 Z"></path>
+	<path style="fill: rgb(255, 255, 255);" d="M 42 57 L 57 57 L 58 74 L 51 75 L 50 67 L 50 75 L 42 74 L 42 57 Z"></path>
+</g>
+<g id="DaveLeaning">
+	<path style="fill: rgb(17, 17, 17);" d="M 53 36 L 55 35 L 55 33 L 58 30 L 60 25 L 62 26 L 66 22 L 74 25 L 72 32 L 70 34 L 70 36 L 65 38 L 61 41 L 60 41 L 59 42 L 61 52 L 53 66 L 39 76 L 33 79 L 30 79 L 35 76 L 33 75 L 38 73 L 49 64 L 54 54 L 27 64 L 49 35 L 53 36 Z"></path>
+</g>
+<g id="DaveDiving">
+	<path style="fill: rgb(255, 255, 255);" d="M 39 50 L 45 47 L 44 46 L 44 42 L 42 37 L 44 36 L 44 31 L 52 27 L 55 33 L 55 36 L 57 37 L 55 42 L 54 47 L 53 48 L 59 49 L 71 55 L 84 57 L 93 56 L 86 59 L 86 62 L 82 59 L 70 59 L 58 55 L 57 62 L 60 68 L 68 65 L 72 70 L 70 72 L 66 68 L 60 73 L 48 69 L 35 74 L 28 68 L 24 72 L 21 72 L 26 64 L 33 68 L 41 62 L 40 55 L 28 57 L 16 55 L 11 56 L 13 54 L 8 50 L 16 53 L 28 53 L 39 50 Z"></path>
+	<path style="fill: rgb(17, 17, 17);" d="M 41 62 C 41 65 57 65 57 62 L 60 67 L 55 72 L 48 69 L 41 72 L 35 66 L 41 62 Z"></path>
+	<path d="M 80 47 C 80 54 75 60 66 60 C 58 60 58 60 53 47 C 47 35 58 35 66 35 C 75 35 80 40 80 47 Z M 47 47 C 42 60 42 60 34 60 C 25 60 20 54 20 47 C 20 40 25 35 34 35 C 42 35 53 35 47 47 Z" style="fill: rgb(255, 255, 255); stroke: rgb(17, 17, 17); stroke-width: 4px;" transform="matrix(.3, 0, 0, .3, 35, 23)"></path>
+	<path style="fill: rgb(17, 17, 17);" d="M 50 42 L 40 60 C 46 66 54 66 58 60 L 50 42 Z" transform="matrix(.3, 0, 0, .3, 35, 23)"></path>
+</g>
+<g id="Sheryl">
+	<path style="fill: rgb(17, 17, 17);" d="M 41 24 C 41 3 64 11 58 19 C 58 27 54 36 51 36 C 46 34 41 30 41 24 Z"></path>
+	<path style="fill: rgb(255, 255, 255);" d="M 55 16 C 56 16 58 23 52 29 L 52 33 C 55 34 58 35 59 37 C 62 42 60 49 61 53 L 61 68 L 59 74 L 59 69 L 57 71 L 59 67 L 58 53 L 57 41 C 56 42 53 52 55 55 C 60 63 56 72 55 80 L 54 93 C 57 96 61 98 57 98 C 55 98 51 97 52 93 C 52 86 50 83 52 79 C 51 75 50 70 50 63 L 49 63 C 49 66 49 72 47 79 C 49 84 47 86 47 93 C 47 95 45 98 43 98 C 38 98 43 95 45 93 L 44 80 C 42 71 40 62 44 55 C 46 52 44 42 43 41 L 41 53 L 40 66 L 42 71 L 40 69 L 40 74 L 38 67 L 38 53 C 39 50 38 41 41 37 C 43 34 45 34 48 33 L 48 29 L 45 25 C 43 25 41 19 45 19 C 48 11 51 20 55 16 Z"></path>
+	<path style="fill: rgb(17, 17, 17);" d="M 55 35 C 55 35 57 41 57 44 C 57 48 52 50 50 47 C 48 50 43 48 43 44 C 43 40 45 35 45 35 L 44 41 C 44 44 48 41 50 43 C 52 41 56 44 56 41 L 55 35 Z"></path>
+	<path style="fill: rgb(17, 17, 17);" d="M 55 56 C 55 56 56 57 56 58 C 54 58 52 64 50 64 L 49 64 C 48 62 45 59 43 58 C 43 57 44 56 44 56 C 44 58 55 58 55 56 Z"></path>
+</g>
+<g id="Amanda">
+	<path d="M 58 23 C 58 29 56 33 52 33 C 48 33 45 29 45 23 C 45 16 42 16 51 12 C 60 8 58 17 58 23 Z" style="fill: rgb(17, 17, 17);"></path>
+	<path style="fill: rgb(255, 255, 255);" d="M 57 23 C 59 22 60 26 57 26 L 54 31 L 54 36 C 63 38 63 49 64 55 L 65 69 L 62 75 L 62 71 L 60 71 L 63 68 L 61 55 L 58 45 C 56 49 56 54 57 56 C 60 62 60 71 59 79 L 58 92 L 64 97 L 61 98 L 55 95 L 56 92 L 54 78 L 51 65 L 50 65 L 47 78 L 44 92 L 45 95 L 39 99 L 37 98 L 42 93 L 42 79 C 41 70 42 61 45 56 C 46 54 46 49 44 45 L 40 55 L 38 67 L 40 71 L 38 70 L 38 74 L 36 68 L 37 55 C 39 49 39 38 49 36 L 49 31 L 46 26 C 43 26 44 22 46 23 C 47 11 57 13 57 23 Z"></path>
+	<path style="fill: rgb(17, 17, 17);" d="M 44 58 L 50 65 L 51 65 L 58 58 L 57 56 L 57 49 L 60 45 L 54 36 L 51 44 L 49 36 L 43 45 L 45 48 L 45 56 L 44 58 Z"></path>
+	<ellipse style="fill: none; stroke: rgb(17, 17, 17);" cx="49" cy="23" rx="2" ry="2"></ellipse>
+	<ellipse style="fill: none; stroke: rgb(17, 17, 17);" cx="54" cy="23" rx="2" ry="2"></ellipse>
+</g>
+<g id="Bruce">
+	<path style="fill: rgb(17, 17, 17);" d="M 56 33 L 57 28 C 59 26 58 22 57 23 C 57 13 44 13 44 23 C 43 22 42 26 44 28 L 45 33 L 35 41 L 31 56 L 34 70 L 36 75 L 39 77 L 37 72 L 39 73 L 37 68 L 36 57 L 39 46 L 40 61 L 41 93 L 36 97 L 39 99 L 46 95 L 50 68 L 55 96 L 61 99 L 65 98 L 60 94 L 61 61 L 61 46 L 64 57 L 64 68 L 62 73 L 64 72 L 62 77 L 64 76 L 67 70 L 69 56 L 66 41 L 56 33 Z"></path>
+	<path style="fill: rgb(255, 255, 255);" d="M 44 28 L 45 34 L 51 38 L 56 33 L 57 27 L 55 33 L 52 31 L 49 31 L 46 33 L 44 28 Z"></path>
+	<path style="fill: rgb(255, 255, 255);" d="M 44 34 C 44 34 42 31 42 31 L 41 36 L 35 41 L 32 48 L 38 52 L 39 48 L 39 62 L 62 65 L 61 48 L 62 52 L 69 49 L 66 41 L 59 35 C 59 35 59 32 59 32 L 56 35 L 50 45 L 44 34 Z"></path>
+</g>
+<g id="DeadBruce">
+	<path style="fill: rgb(17, 17, 17);" d="M 71 58 L 70 54 C 72 53 73 49 72 49 C 76 40 64 35 60 44 C 59 42 57 46 58 48 L 57 53 L 49 56 L 43 66 L 32 72 L 32 77 L 34 80 L 35 74 L 36 77 L 38 73 L 47 70 L 50 64 L 45 77 L 30 84 L 29 78 L 26 81 L 25 89 L 48 85 L 46 92 L 41 89 L 43 98 L 46 99 L 64 85 L 68 74 L 69 81 L 68 89 L 64 89 L 66 92 L 65 95 L 68 96 L 72 91 L 73 80 L 75 70 L 71 58 Z"></path>
+	<path style="fill: rgb(255, 255, 255);" d="M 58 48 L 57 53 L 60 58 L 68 57 L 70 54 L 67 56 L 64 54 L 61 53 L 58 53 L 58 48 Z"></path>
+	<path style="fill: rgb(255, 255, 255);" d="M 56 53 L 56 50 L 54 53 L 48 55 L 43 65 L 48 68 L 44 77 L 65 86 L 68 77 L 75 75 L 76 70 L 72 58 L 72 54 L 70 56 L 60 65 L 56 53 Z"></path>
+	<path style="stroke: rgb(255, 0, 0); stroke-linecap: round; fill: none;" d="M 72 80 L 70 85"></path>
+</g>
+<g id="Skipper">
+	<path style="fill: rgb(17, 17, 17);" d="M 24 76 L 22 76 C 23 75 16 71 16 71 C 2 76 6 87 20 83 C 22 83 23 83 23 83 L 26 91 L 35 98 L 50 98 L 55 99 L 56 98 L 52 96 L 53 94 L 49 95 L 38 95 L 32 88 L 82 92 L 87 97 L 88 94 L 84 88 L 60 82 L 91 82 L 95 74 L 94 72 L 88 78 L 39 73 L 49 71 L 59 71 L 63 74 L 62 72 L 66 70 L 66 68 L 60 68 L 49 66 L 33 70 L 24 76 Z"></path>
+	<path style="fill: rgb(255, 255, 255);" d="M 10 74 C 4 74 3 87 13 84 C 10 83 9 79 10 74 Z"></path>
+	<path style="fill: rgb(17, 17, 17);" d="M 11 74 C 7 61 5 78 12 83 C 10 79 10 79 11 74 Z"></path>
+	<path style="fill: rgb(255, 255, 255);" d="M 23 80 L 20 84 L 23 85 C 23 85 26 91 26 91 L 31 96 L 37 91 L 34 89 L 47 93 L 53 87 L 52 78 L 57 73 L 42 73 L 44 66 L 33 69 L 25 75 L 34 78 C 34 78 23 80 23 80 Z"></path>
+	<path style="stroke: rgb(255, 0, 0); stroke-linecap: round; fill: none;" d="M 51 68 L 53 70"></path>
+	<g id="Blood">
+		<path style="fill: rgb(255, 2, 0);" d="M 12 76 C 13 76 13 76 13 76 C 13 80 15 83 16 84 C 16 84 12 82 12 76 Z"></path>
+	</g>
+	<g id="KnifeInHead">
+		<path style="fill: rgb(17, 17, 17);" d="M 14 66 L 12 66 L 12 60 L 14 60 L 14 66 Z"></path>
+		<path style="fill: rgb(255, 255, 255);" d="M 14 66 L 12 66 L 12 76 L 13 76 L 14 66 Z"></path>
+	</g>
+</g>
+<g id="Shark">
+	<path style="fill: rgb(255, 255, 255);" d="M 35 57 C 32 55 25 57 22 57 C 3 51 21 45 38 42 C 39 38 44 29 49 30 C 49 34 52 42 52 42 L 77 47 C 77 39 85 28 85 29 C 82 40 83 54 89 61 C 89 62 81 59 78 52 L 67 55 L 68 59 L 64 56 L 51 60 L 53 70 C 49 71 39 66 38 62 L 26 59 C 28 55 40 59 35 57 Z"></path>
+	<circle style="fill: rgb(17, 17, 17);" cx="25" cy="53" r="1"></circle>
+</g>
+<g id="Book">
+	<path style="fill: rgb(255, 255, 255);" d="M 35 69 C 32 69 32 72 32 72 C 32 74 35 74 35 74 L 67 74 C 64 74 64 69 67 69 L 35 69 Z"></path>
+	<path style="fill: rgb(17, 17, 17);" d="M 35 29 C 32 29 32 31 32 31 C 32 31 32 69 32 72 C 32 72 32 69 35 69 L 35 29 Z"></path>
+	<path style="fill: rgb(17, 17, 17);" d="M 35 29 L 35 69 L 67 69 L 67 29 L 35 29 Z"></path>
+	<path style="fill: none; stroke: rgb(255, 255, 255); stroke-width: 3px;" d="M 43 56 L 59 56 L 51 39 L 43 56 Z"></path>
+</g>
+<g id="Can">
+	<path style="fill: rgb(255, 255, 255);" d="M 41 39 L 41 67 C 41 73 65 73 65 67 L 65 39 C 65 45 41 45 41 39 Z"></path>
+	<path style="fill: rgb(17, 17, 17);" d="M 41 39 C 41 45 65 45 65 39 C 65 33 41 33 41 39 Z"></path>
+	<path style="fill: rgb(17, 17, 17);" d="M 23 21 C 20 25 37 42 41 39 C 44 34 28 18 23 21 Z"></path>
+	<path style="fill: rgb(17, 17, 17);" d="M 44 45 L 44 65 C 44 68 62 68 62 65 L 62 45 C 62 48 44 48 44 45 Z"></path>
+</g>
+<g id="Plate">
+	<ellipse style="fill: rgb(255, 255, 255);" cx="50" cy="50" rx="31" ry="11"></ellipse>
+	<ellipse style="fill: rgb(255, 255, 255);" cx="50" cy="58" rx="21" ry="6"></ellipse>
+	<ellipse style="fill: rgb(221, 221, 221);" cx="50" cy="51" rx="21" ry="6"></ellipse>
+	<g id="Mousse">
+		<path style="fill: rgb(216, 107, 90);" d="M 64 51 C 64 39 37 39 37 51 C 35 53 58 56 64 51 Z"></path>
+	</g>
+</g>
+<g id="Knife">
+	<path style="fill: rgb(17, 17, 17);" d="M 62 43 L 57 39 L 78 18 L 85 24 L 62 43 Z"></path>
+	<path style="fill: rgb(255, 255, 255);" d="M 65 46 L 57 39 L 17 80 L 35 77 L 65 46 Z"></path>
+	<g id="BloodOnKnife">
+		<path style="fill: rgb(255, 0, 0);" d="M 42 70 L 29 68 L 17 80 L 35 77 L 42 70 Z"></path>
+	</g>
+</g>
+<g id="Bra">
+	<path style="fill: rgb(255, 255, 255);" d="M 21 69 C 21 69 13 58 21 48 C 19 44 30 25 45 43 C 45 30 68 24 67 42 C 70 47 74 59 83 61 C 70 63 70 47 65 45 C 61 51 46 48 45 45 C 45 52 25 57 23 51 C 16 56 21 69 21 69 Z"></path>
+</g>
+<g id="Bottle">
+	<path d="M 38 40 C 38 35 47 31 47 25 L 46 22 C 46 20 55 20 55 22 L 54 25 C 54 31 63 35 63 40 L 63 76 C 63 80 38 80 38 76 L 38 40 Z" style="fill: rgb(255, 255, 255);"></path>
+	<path d="M 40 45 C 40 47 61 47 61 45 L 61 72 C 61 75 40 75 40 72 L 40 45 Z" style="fill: rgb(17, 17, 17);"></path>
+	<path d="M 53 22 C 53 23 48 23 48 22 L 47 19 C 47 18 54 18 54 19 L 53 22 Z" style="fill: rgb(17, 17, 17);"></path>
+</g>
+<g id="Aid">
+	<path d="M 18 52 L 83 52 L 81 68 L 20 68 L 18 52 Z" style="fill: rgb(17, 17, 17);"></path>
+	<path d="M 18 52 L 83 52 L 65 33 L 34 33 L 18 52 Z" style="fill: rgb(255, 255, 255);"></path>
+	<path d="M 49 36 L 51 36 L 53 47 L 47 47 L 49 36 Z" style="fill: rgb(17, 17, 17);"></path>
+	<path d="M 42 40 L 58 40 L 59 42 L 41 42 L 42 40 Z" style="fill: rgb(17, 17, 17);"></path>
+</g>
+<g id="Laxative">
+	<path style="fill: rgb(255, 255, 255);" d="M 22 65 L 28 26 L 74 33 L 68 73 L 22 65 Z"></path>
+	<path style="fill: rgb(237, 237, 237);" d="M 22 65 L 27 72 L 72 79 L 78 40 L 74 33 L 68 73 L 22 65 Z"></path>
+	<path style="stroke: rgb(0, 0, 0); fill: none; stroke-width: 4px;" d="M 48 34 C 47 36 44 39 47 40 C 52 43 55 41 59 43 C 61 44 62 49 58 49 C 52 49 45 45 38 45 C 36 45 36 50 38 51 C 41 53 47 51 50 53 C 52 55 48 61 48 61"></path>
+	<path style="stroke: rgb(0, 0, 0); fill: none; stroke-width: 3px;" d="M 55 58 L 48 63 L 44 57"></path>
+</g>
+<g id="Watch">
+	<path d="M 28 42 L 72 42 L 72 58 L 28 58 L 28 42 Z" style="fill: rgb(17, 17, 17);"></path>
+	<ellipse style="fill: rgb(255, 255, 255); stroke-width: 4px; stroke: rgb(17, 17, 17);" cx="50" cy="50" rx="14" ry="14"></ellipse>
+</g>
+<g id="Goggles">
+	<path d="M 80 47 C 80 54 75 60 66 60 C 58 60 58 60 53 47 C 47 35 58 35 66 35 C 75 35 80 40 80 47 Z M 47 47 C 42 60 42 60 34 60 C 25 60 20 54 20 47 C 20 40 25 35 34 35 C 42 35 53 35 47 47 Z" style="fill: rgb(255, 255, 255); stroke: rgb(17, 17, 17); stroke-width: 4px;"></path>
+	<path style="fill: rgb(17, 17, 17);" d="M 50 42 L 40 60 C 46 66 54 66 58 60 L 50 42 Z"></path>
+</g>
+<g id="Gold">
+	<path style="fill: rgb(78, 78, 78);" d="M 20 44 L 32 30 L 77 49 L 65 68 L 20 44 Z"></path>
+	<path style="fill: rgb(17, 17, 17);" d="M 20 44 L 24 61 L 66 83 L 76 64 L 77 49 L 65 68 L 20 44 Z"></path>
+	<path style="fill: rgb(17, 17, 17);" d="M 23 43 L 32 32 L 75 50 L 65 66 L 23 43 Z"></path>
+	<path style="fill: rgb(17, 17, 17);" d="M 34 17 L 32 30 L 77 49 C 85 50 87 34 81 33 L 34 17 Z"></path>
+	<path style="fill: rgb(243, 215, 40);" d="M 28 46 L 31 40 L 35 39 L 42 43 L 50 44 L 56 49 L 65 50 L 72 55 L 65 66 L 28 46 Z"></path>
+	<path style="fill: rgb(78, 78, 78);" d="M 35 18 L 81 34 L 77 49 L 32 30 C 36 29 37 21 35 18 Z"></path>
+	<circle style="fill: rgb(243, 215, 40);" cx="18" cy="67" r="2"></circle>
+	<circle style="fill: rgb(243, 215, 40);" cx="21" cy="72" r="2"></circle>
+	<circle style="fill: rgb(243, 215, 40);" cx="29" cy="72" r="2"></circle>
+</g>
+<g id="Keys">
+	<path style="fill: rgb(212, 212, 212);" d="M 38 45 L 26 81 L 18 76 L 25 75 L 20 70 L 24 69 L 21 64 L 29 63 L 27 58 L 32 42 C 22 36 28 20 41 25 C 56 30 48 43 38 45 Z"></path>
+	<path style="fill: rgb(237, 237, 237);" d="M 50 46 L 58 83 L 48 83 L 54 78 L 47 76 L 50 73 L 45 71 L 51 66 L 47 62 L 43 46 C 32 46 29 29 43 27 C 58 24 58 39 50 46 Z"></path>
+	<path style="fill: rgb(255, 255, 255);" d="M 57 35 L 82 63 L 73 68 L 76 61 L 69 63 L 70 59 L 65 59 L 67 52 L 62 51 L 51 39 C 41 44 30 31 41 22 C 52 12 60 25 57 35 Z"></path>
+	<circle style="fill: rgb(17, 17, 17);" cx="44" cy="26" r="3"></circle>
+	<path style="fill: none; stroke-width: 2px; stroke: rgb(255, 255, 255); stroke-linecap: round;" d="M 44 26 C 45 15 35 13 34 24"></path>
+</g>
+</svg>
+<div id="B"><div id="BM"></div><div id="BP"></div></div>
+<div id="FX"></div>
+</body>
+<script src="src.js"></script>
+</html>
