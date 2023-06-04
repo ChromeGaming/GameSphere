@@ -12,6 +12,16 @@
     <div class="game">
         <div class="controls">
             <button>Start</button>
+            <button id="backButton">Back</button>
+            <div id="confirmationPopup">
+                <div class="popupContent">
+                  <p>Are you sure you want to quit?</p>
+                  <div class="popupButtons">
+                    <button id="confirmButton">Confirm</button>
+                    <button id="cancelButton">Cancel</button>
+                  </div>
+                </div>
+              </div>          
             <div class="stats">
                 <div class="moves">0 moves</div>
                 <div class="timer">Time: 0 sec</div>
@@ -21,6 +31,7 @@
             <div class="board" data-dimension="4"></div>
             <div class="win">You won!</div>
         </div>
+          
     </div>
 </body>
 </html>
