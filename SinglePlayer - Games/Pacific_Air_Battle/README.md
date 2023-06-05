@@ -28,5 +28,8 @@
 - Be careful not to get shot down yourself.
 - Repeat steps 3-5 until all of the enemy jets are destroyed.
 
-
 <br>
+
+## _Screenshots 📸_
+
+![](../Banner%20-%20image/Pacific_Air_Battle.jpg)
