@@ -198,7 +198,7 @@ engineInit(
     }
 
     mainContext.font = '.5in impact';
-    p > 0 && mainContext.fillText('A JS13K Game by Frank Force',mainCanvas.width/2, 210);
+    p > 0 && mainContext.fillText('Developed By Durgesh4993',mainCanvas.width/2, 210);
 
     // check if any enemies left
     let enemiesCount = 0;
