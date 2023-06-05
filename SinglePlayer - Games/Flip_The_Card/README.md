@@ -37,3 +37,7 @@ Just flip the cards to match pair of symbols.If it does match score increases el
 
 <br>
 
+## _Screenshot 📸_
+
+![](../Banner%20-%20image/Flip_The_Card.png)
+
