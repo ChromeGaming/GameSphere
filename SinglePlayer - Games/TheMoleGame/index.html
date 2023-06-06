@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Amazing Mole</title>
+
+  <!-- TOOLS -->
+  <script src="game/tools/requestAnimationFrame.js"></script>
+  <script src="game/tools/EventListenersManager.class.js"></script>
+  <script src="game/tools/DOMHelpers.js"></script>
+  <script src="game/tools/SWInit.js"></script>
+
+  <!-- GENERAL GAME CLASSES -->
+  <script src="game/classes/Tile.class.js"></script>
+  <script src="game/classes/Board.class.js"></script>
+  <script src="game/classes/Game.class.js"></script>
+
+  <!-- HTML ELEMENTS -->
+  <script src="game/classes/MapLoader.class.js"></script>
+  <script src="game/classes/LevelFlow.class.js"></script>
+  <script src="game/classes/HTMLBoard.class.js"></script>
+
+  <link href='css/main.css' rel='stylesheet' type='text/css'/>
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.5, user-scalable=no">
+
+  <meta charset="UTF-8">
+
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+<div id="screen-wrapper">
+  <h1 id="title"></h1>
+
+  <div class="logo"></div>
+  <div class="scroll-wrapper">
+    <div class="boards"></div>
+  </div>
+
+  <button id="reset"></button>
+</div>
+<script src="game/main.js"></script>
+</body>
+</html>
