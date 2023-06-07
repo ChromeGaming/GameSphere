@@ -1,0 +1,5 @@
+** Panda Graphics **
+Author: http://opengameart.org/users/danielmahon
+Source: http://opengameart.org/content/panda-character-32x32
+This Panda image has been cropped and optimized in order to fit our game requirements.
+This Panda image is under license: http://creativecommons.org/licenses/by-sa/3.0/
