@@ -11,9 +11,9 @@ Closes #issue_number
 <!-- Write a brief description of the changes made in the PR. Explain the problem being addressed, or any relevant
 information. -->
 
-## Screenshots
+## Demo Video Section
 
-<!-- Add screenshots to preview the changes  -->
+<!-- Include the demo video to preview the changes done and their proper functionality -->
 
 ## Checklist 
 
