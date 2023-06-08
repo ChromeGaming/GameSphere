@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<!-- 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title>GeekTacToe</title>
+</head>
+<body style="background:#2e426c">
+	<div align="center" width="500" height="500" id="board" /*onclick="javascript: clickHandler(event);"*/>
+		
+	</div>
+</body>
+</html>
+
+
+<script>
+var canvas, ctx, playField=0, playerx=0, player0=0;
+var ct = new Array();
+var gameEnd = false;
+var playWithX = false;
+var turnAI = false, turnHuman = true, humanEnded = false;
+var emptyBox = true;
+var gameSize = 500;
+var size = gameSize / 1.6818/*Math.sqrt(2)*/; // this is the board size
+var lineWidth = size/100;
+var xsize = size/11;
+var playFieldBit = 0;
+var room = 1;
+var transition0, transition1, transition2, transition3, room2, t;
+var image1 = new Image();
+var image2 = new Image();
+var image = new Image();
+var clicable = true;
+var scoreWinn = 0;
+var scoreDraw = 0;
+var scoreLoose = 0;
+var scoreTotal = 0;
+var winn = false;
+var timer = 0; 
+
+window.onload = function main () {
+	
+	canvas = document.createElement("canvas");
+	canvas.width = canvas.height = gameSize;
+	ctx = canvas.getContext("2d");
+	document.getElementById("board").appendChild(canvas);
+
+	canvas0 = document.createElement("canvas");
+	canvas0.width = canvas0.height = size;
+	ct[0] = canvas0.getContext("2d");
+
+	canvas1 = document.createElement("canvas");
+	canvas1.width = canvas1.height = size;
+	ct[1] = canvas1.getContext("2d");
+
+	canvas2 = document.createElement("canvas");
+	canvas2.width = canvas2.height = size;
+	ct[2] = canvas2.getContext("2d");
+
+	ctx.fillStyle="#2e426c";
+	ctx.fillRect(0,0,canvas.width,canvas.height);
+
+	image1.src = canvas0.toDataURL();
+	image2.src = canvas1.toDataURL();
+	image = image1;
+
+	canvas.addEventListener("mousedown", mouseClick);
+	ctx.lineWidth = lineWidth;
+	ctx.lineCap="round";
+	drawBoard();
+	update();
+	flip();
+
+var link = document.createElement('link');
+        link.type = 'image/png';
+        link.rel = 'icon';
+        link.href = canvas0.toDataURL("image/png");
+        document.getElementsByTagName('head')[0].appendChild(link);
+
+
+}
+
+function update(){
+	
+	var clock = setTimeout(update,100);
+	room = 1;
+	image1.src = canvas0.toDataURL();
+	image2.src = canvas2.toDataURL();
+
+	ctx.clearRect(0,0,canvas.width,canvas.height);
+	ctx.drawImage(image,(gameSize-size)/2,(gameSize-size)/2);
+
+	ctx.beginPath();
+	ctx.font = size/7 + "30px Arial";
+	ctx.fillStyle = "white";
+	ctx.textAlign = "center";
+	ctx.fillText("Geek Tac Toe", canvas.width/2, (gameSize-size)/4 + size/12); 	ctx.fillText("Geek: " +scoreWinn + " / ai: " + scoreLoose, canvas.width/2, gameSize-size/4 + size/12); 
+
+}
+
+function flip(){
+
+	var cjh = setTimeout(flip,1000);
+	timer += 1;
+	if (timer == 10){
+		timer = 0;
+		image = (image == image1) ? image2 : image1;
+	}
+}
+
+function reatach(){canvas.addEventListener("mousedown", mouseClick);}
+
+function mouseClick(click){
+	var element = click.target;
+	var posx = click.clientX - element.offsetLeft;
+	var posy = click.clientY - element.offsetTop;
+
+	if (gameEnd == true){
+		drawBoard();
+		playerx = 0;
+		player0 = 0;
+		playWithX = Math.random() >= 0.5;
+		turnAI = Math.random() >= 0.5;
+		turnHuman = false;
+		humanEnded = true;
+		gameEnd = !gameEnd;
+	}
+
+	if (clicable){
+	var margin = (gameSize-size)/2;
+	if (posx>margin && posx<(size+margin) && posy>margin && posy<(size+margin)){
+
+			 if (Math.abs(canvas.width/2 - posx) + Math.abs(canvas.height/2 - posy)<size /4) { playField = 9; }
+		else if (posx<=posy && posx+posy<=canvas.width && posx<=canvas.width/2 && posy<=canvas.height/2) { playField = 1; }
+		else if (posx>=posy && posx+posy<=canvas.width && posx<=canvas.width/2 && posy<=canvas.height/2) { playField = 2; }
+		else if (posx>=posy && posx+posy<=canvas.width && posx>=canvas.width/2 && posy<=canvas.height/2) { playField = 3; }
+		else if (posx>=posy && posx+posy>=canvas.width && posx>=canvas.width/2 && posy<=canvas.height/2) { playField = 4; }
+		else if (posx>=posy && posx+posy>=canvas.width && posx>=canvas.width/2 && posy>=canvas.height/2) { playField = 5; }
+		else if (posx<=posy && posx+posy>=canvas.width && posx>=canvas.width/2 && posy>=canvas.height/2) { playField = 6; }
+		else if (posx<=posy && posx+posy>=canvas.width && posx<=canvas.width/2 && posy>=canvas.height/2) { playField = 7; }
+		else if (posx<=posy && posx+posy<=canvas.width && posx<=canvas.width/2 && posy>=canvas.height/2) { playField = 8; }
+		//else { playField = 0; }
+
+		if (playField > 0 && playField < 9) {
+			playField = (room % 2) * (((room + playField + 6) % 8) + 1) + ((room + 1) % 2) * (((room - playField + 8) % 8) + 1);
+		}
+
+		playFieldBit = Math.pow(2,(playField-1));
+
+
+
+		if (turnAI !== turnHuman){
+			if (turnHuman == true){
+				playHuman();
+				checkWinner(playerx);
+				checkWinner(player0);
+				updateScore();
+				if (gameEnd == false & humanEnded == true){ 
+					playAI();
+					checkWinner(playerx);
+					checkWinner(player0);
+				updateScore();
+				}
+			}
+			else{
+				playAI();
+				checkWinner(playerx);
+				checkWinner(player0);
+				updateScore();
+			}
+		}
+		else{
+			turnHuman = !turnAI;
+		}
+	}
+	}
+
+}
+
+function updateScore(){
+	if (winn){
+		if (!turnHuman){
+			scoreWinn += 1;
+			scoreTotal += 1;
+		}
+		else{
+			scoreLoose += 1;
+			scoreTotal += 1;
+		}
+		winn = false;
+	}
+	else{
+		if (gameEnd){
+
+		scoreTotal += 1;
+		scoreDraw += 1;
+		}
+	}
+}
+
+
+
+function playHuman(){
+	checkEmpty();
+	if (emptyBox == true){
+		switch (playWithX){
+			case true:
+				drawX(playField);
+				playerx = playerx | playFieldBit;
+				break;
+			case false:
+				draw0(playField);
+				player0 = player0 | playFieldBit;
+				break;
+		}
+		turnAI = !turnAI;
+		turnHuman = !turnHuman;
+		playWithX = !playWithX;
+		humanEnded = true;
+	}
+}
+
+function playAI(){
+	getBestField();
+	switch (playWithX){
+		case true:
+			drawX(playField);
+			playerx = playerx | playFieldBit;
+			break;
+		case false:
+			draw0(playField);
+			player0 = player0 | playFieldBit;
+			break;
+	}
+	turnAI = !turnAI;
+	turnHuman = !turnHuman;
+	playWithX = !playWithX;
+	humanEnded = false;
+}
+
+
+function checkEmpty(){
+	if (((playerx & playFieldBit) == false) && ((player0 & playFieldBit) == false)){
+		emptyBox = true;
+	}
+	else {
+		(emptyBox = false);
+	}
+}
+
+/*function getNextField (){
+	for (i=1; i<10; i++) {
+		playField = i;
+		playFieldBit = Math.pow(2,(playField-1));
+		checkEmpty();
+		if (emptyBox == true) {
+			i = 10;
+		}
+	}
+}*/
+
+function getRandomField (){	
+	randomField = 0;
+	randomFieldBit = 0;
+	var a = 1;
+	while (a == 1) {	
+		randomField = Math.floor((Math.random() * 9) + 1);
+		randomFieldBit = Math.pow(2,(randomField-1));
+		if (((playerx & randomFieldBit) == false) && ((player0 & randomFieldBit) == false)) {
+			a = 0;
+		}
+	}
+
+	playField = randomField;
+	playFieldBit = Math.pow(2,(playField-1));
+	checkEmpty();
+}
+
+function getBestField(){
+	playField = 0;
+	if (playWithX == true){
+		search2(playerx);
+	}
+	else {
+		search2(player0);
+	}
+	if (playField == 0){
+		if (playWithX == true){
+			search2(player0);
+		}
+		else {
+			search2(playerx);
+		}
+	}
+	playFieldBit = Math.pow(2,(playField-1));
+	if (playField == 0) {
+		getRandomField();
+	}
+}
+
+function search2(player){
+	switch (player &   7){
+		case   3: if (((playerx | player0) &   4) == false) {playField = 3;} break;
+		case   5: if (((playerx | player0) &   2) == false) {playField = 2;} break;
+		case   6: if (((playerx | player0) &   1) == false) {playField = 1;} break;
+	}
+	switch (player & 392){
+		case 384: if (((playerx | player0) &   8) == false) {playField = 4;} break;
+		case 136: if (((playerx | player0) & 256) == false) {playField = 9;} break;
+		case 264: if (((playerx | player0) & 128) == false) {playField = 8;} break;
+	}
+	switch (player & 112){
+		case  96: if (((playerx | player0) &  16) == false) {playField = 5;} break;
+		case  80: if (((playerx | player0) &  32) == false) {playField = 6;} break;
+		case  48: if (((playerx | player0) &  64) == false) {playField = 7;} break;
+	}
+	switch (player & 193){
+		case 129: if (((playerx | player0) &  64) == false) {playField = 7;} break;
+		case  65: if (((playerx | player0) & 128) == false) {playField = 8;} break;
+		case 192: if (((playerx | player0) &   1) == false) {playField = 1;} break;
+	}
+	switch (player & 290){
+		case 258: if (((playerx | player0) &  32) == false) {playField = 6;} break;
+		case  34: if (((playerx | player0) & 256) == false) {playField = 9;} break;
+		case 288: if (((playerx | player0) &   2) == false) {playField = 2;} break;
+	}
+	switch (player &  28){
+		case  12: if (((playerx | player0) &  16) == false) {playField = 5;} break;
+		case  20: if (((playerx | player0) &   8) == false) {playField = 4;} break;
+		case  24: if (((playerx | player0) &   4) == false) {playField = 3;} break;
+	}
+	switch (player & 324){
+		case 260: if (((playerx | player0) &  64) == false) {playField = 7;} break;
+		case  68: if (((playerx | player0) & 256) == false) {playField = 9;} break;
+		case 320: if (((playerx | player0) &   4) == false) {playField = 3;} break;
+	}
+	switch (player & 273){
+		case  17: if (((playerx | player0) & 256) == false) {playField = 9;} break;
+		case 257: if (((playerx | player0) &  16) == false) {playField = 5;} break;
+		case 272: if (((playerx | player0) &   1) == false) {playField = 1;} break;
+	}
+
+}
+
+
+function drawBoard(){
+	//draw game board
+	for (var i = 0; i < 3; i++) {
+		ct[i].lineWidth = lineWidth;
+		ct[i].lineCap="round";
+
+		ct[i].rect(0,0,size,size);
+		ct[i].fillStyle="white";
+		ct[i].fill();
+
+		ct[i].beginPath();
+		ct[i].moveTo(0,0);
+		ct[i].lineTo(size,size);
+		ct[i].lineTo(size/2,size);
+		ct[i].lineTo(size/2,0);
+		ct[i].lineTo(0,0);
+
+		if (i==2){ct[i].fillStyle = '#3ea';
+		ct[i].fill();}
+
+		ct[i].lineWidth = lineWidth;
+		ct[i].strokeStyle = 'black';
+		ct[i].stroke();
+		ct[i].closePath();
+				
+		ct[i].beginPath();
+		ct[i].moveTo(0,size);
+		ct[i].lineTo(size,0);
+		ct[i].lineTo(size,size/2);
+		ct[i].lineTo(0,size/2);
+		ct[i].lineTo(0,size);
+		
+		if (i==0){ct[i].fillStyle = '#3ea';
+		ct[i].fill();}
+		
+		ct[i].strokeStyle = 'black';
+		ct[i].stroke();
+		ct[i].closePath();
+
+		ct[i].beginPath();
+		ct[i].moveTo(size/2,size/4);
+		ct[i].lineTo(size*0.75,size/2);
+		ct[i].lineTo(size/2,size*0.75);
+		ct[i].lineTo(size/4,size/2);
+		ct[i].lineTo(size/2,size/4);
+		ct[i].fillStyle = '#3ea';
+		ct[i].fill();
+		ct[i].strokeStyle = 'black';
+		ct[i].stroke();
+		ct[i].closePath();
+
+		ct[i].beginPath();
+		ct[i].moveTo(lineWidth/2,lineWidth/2);
+		ct[i].rect(lineWidth/2,lineWidth/2,size - lineWidth, size - lineWidth)
+		ct[i].strokeStyle = 'black';
+	    ct[i].stroke();
+		ct[i].closePath();
+	};
+
+
+}
+	
+var coord1, coord2, coord3, coord4;
+
+function drawX(place){
+
+	getCoord(place);
+	
+	ct[0].beginPath();
+	ct[0].strokeStyle = 'black';
+	ct[0].moveTo(coord1 - xsize,coord2 - xsize);
+	ct[0].lineTo(coord1 + xsize,coord2 + xsize);
+	ct[0].moveTo(coord1 + xsize,coord2 - xsize);
+	ct[0].lineTo(coord1 - xsize,coord2 + xsize);
+	ct[0].stroke();	
+
+	ct[2].beginPath();
+	ct[2].moveTo(coord1 + xsize, coord2);
+	ct[2].arc(coord1, coord2, xsize, 0, 2*Math.PI);
+	ct[2].stroke();
+
+
+
+	ct[1].beginPath();
+	ct[1].moveTo(coord3 + xsize, coord4);
+	ct[1].arc(coord3, coord4, xsize, 0, 2*Math.PI);
+	ct[1].stroke();
+
+}
+
+function draw0(place){
+	
+	getCoord(place);
+
+	ct[0].beginPath();
+	ct[0].moveTo(coord1 + xsize, coord2);
+	ct[0].arc(coord1, coord2, xsize, 0, 2*Math.PI);
+	ct[0].stroke();
+
+	ct[2].beginPath();
+	ct[2].strokeStyle = 'black';
+	ct[2].moveTo(coord1 - xsize,coord2 - xsize);
+	ct[2].lineTo(coord1 + xsize,coord2 + xsize);
+	ct[2].moveTo(coord1 + xsize,coord2 - xsize);
+	ct[2].lineTo(coord1 - xsize,coord2 + xsize);
+	ct[2].stroke();
+
+	ct[1].beginPath();
+	ct[1].strokeStyle = 'black';
+	ct[1].moveTo(coord3 - xsize,coord4 - xsize);
+	ct[1].lineTo(coord3 + xsize,coord4 + xsize);
+	ct[1].moveTo(coord3 + xsize,coord4 - xsize);
+	ct[1].lineTo(coord3 - xsize,coord4 + xsize);
+	ct[1].stroke();
+
+
+}
+
+function getCoord(inputCoord){
+	switch (inputCoord){
+		case 1:
+			coord1 = size/8;
+			coord2 = size*3/8;
+			coord3 = size*7/8
+			coord4 = size*3/8;
+			break;
+		case 2:
+			coord1 = size*3/8;
+			coord2 = size/8;
+			coord3 = size*5/8;
+			coord4 = size/8;
+			break;
+		case 3:
+			coord1 = size*5/8;
+			coord2 = size/8;
+			coord3 = size*3/8;
+			coord4 = size/8;
+			break;
+		case 8:
+			coord1 = size/8;
+			coord2 = size*5/8;
+			coord3 = size*7/8;
+			coord4 = size*5/8;
+			break;
+		case 9:
+			coord1 = size/2;
+			coord2 = size/2;
+			coord3 = size/2;
+			coord4 = size/2;
+			break;
+		case 4:
+			coord1 = size*7/8
+			coord2 = size*3/8;
+			coord3 = size/8;
+			coord4 = size*3/8;
+			break;
+		case 7:
+			coord1 = size*3/8;
+			coord2 = size*7/8;
+			coord3 = size*5/8;
+			coord4 = size*7/8;
+			break;
+		case 6:
+			coord1 = size*5/8;
+			coord2 = size*7/8;
+			coord3 = size*3/8;
+			coord4 = size*7/8;
+			break;
+		case 5:
+			coord1 = size*7/8;
+			coord2 = size*5/8;
+			coord3 = size/8;
+			coord4 = size*5/8;
+			break;
+	}
+}
+
+function checkWinner(onePlayer){
+		
+		ct[0].lineWidth = lineWidth;
+		ct[0].strokeStyle = 'black';
+
+	if ( (onePlayer & 7) == 7){				// line top
+		ct[0].moveTo(0,size*3/8);
+		ct[0].lineTo(size*3/4,0);
+	    ct[0].stroke();
+		ct[1].moveTo(size*1/4,0);
+		ct[1].lineTo(size,size*3/8);
+	    ct[1].stroke();
+	    gameEnd = true;
+	    winn = true;
+	}
+	else if ((onePlayer & 392) == 392){		// line midle
+		ct[0].moveTo(0,size*3/4);
+		ct[0].lineTo(size,size/4);
+	    ct[0].stroke();	
+		ct[1].moveTo(0,size*1/4);
+		ct[1].lineTo(size,size*3/4);
+	    ct[1].stroke();
+	    gameEnd = true;	
+	    winn = true;
+	}
+	else if ((onePlayer & 112) == 112){		// line down
+		ct[0].moveTo(size*1/4,size);
+		ct[0].lineTo(size,size*5/8);
+	    ct[0].stroke();	
+		ct[1].moveTo(0,size*5/8);
+		ct[1].lineTo(size*3/4,size);
+	    ct[1].stroke();
+	    gameEnd = true;	
+	    winn = true;
+	}
+	else if ((onePlayer & 193) == 193){		// column left
+		ct[0].moveTo(0,size*1/4);
+		ct[0].lineTo(size*3/8,size);
+	    ct[0].stroke();
+		ct[1].moveTo(size,size*1/4);
+		ct[1].lineTo(size*5/8,size);
+	    ct[1].stroke();
+	    gameEnd = true;	
+	    winn = true;	
+	}
+	else if ((onePlayer & 290) == 290){		// column midle
+		ct[0].moveTo(size*1/4,0);
+		ct[0].lineTo(size*3/4,size);
+	    ct[0].stroke();	
+		ct[1].moveTo(size*3/4,0);
+		ct[1].lineTo(size*1/4,size);
+	    ct[1].stroke();
+	    gameEnd = true;	
+	    winn = true;
+	}
+	else if ((onePlayer & 28) == 28){		// column right
+		ct[0].moveTo(size*5/8,0);
+		ct[0].lineTo(size,size*3/4);
+	    ct[0].stroke();
+	    ct[1].moveTo(size*3/8,0);
+		ct[1].lineTo(0,size*3/4);
+	    ct[1].stroke();
+	    gameEnd = true;
+	    winn = true;
+	}
+	else if ((onePlayer & 324) == 324){		//diagonal upper right
+		ct[0].moveTo(size*3/4,0);
+		ct[0].lineTo(size*1/4,size);
+	    ct[0].stroke();		
+		ct[1].moveTo(size*1/4,0);
+		ct[1].lineTo(size*3/4,size);
+	    ct[1].stroke();	
+	    gameEnd = true;
+	    winn = true;
+	}
+	else if ((onePlayer & 273) == 273){		// diagonal uuper left
+		ct[0].moveTo(0,size*1/4);
+		ct[0].lineTo(size,size*3/4);
+	    ct[0].stroke();	
+		ct[1].moveTo(size,size*1/4);
+		ct[1].lineTo(0,size*3/4);
+	    ct[1].stroke();	
+	    gameEnd = true;	
+	    winn = true;
+	}
+	else if ((playerx | player0) == 511){
+		gameEnd = true;
+	}	
+
+}
+</script>

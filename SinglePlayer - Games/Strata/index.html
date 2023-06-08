@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>STRATA</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	<link rel="stylesheet" type="text/css" href="elements.css">
+  </head>
+  <body>
+  <div id=levelindicator class=frame> Level <span id=level>14</span></div>
+  <div id=helptext class=frame> Press the air button at the bottom to add air to rising strata</span></div>
+  <div id=startboard class=frame> 
+  <div id=title>STRATA</div>
+  <a href=# onclick="playGame(tutorial)">Play Tutorial</a>
+  <a href=# onclick="playGame(maingame)">Play Game</a>  
+  </div>
+  <div id=endboard class=frame> 
+  <div id=title>GAME OVER</div>
+  <div> You got to Level <span id=finallevel>0</span></div>
+  <a href=# onclick="reset()">Play Again</a>  
+  </div>
+  <div>
+  <canvas id=main class=main></canvas>
+  </div>
+  <div id=controlbar>
+  <canvas id=air class=texture  onclick="rainDownElement(0);"></canvas>
+  <canvas id=fire class=texture  onclick="rainDownElement(1);"></canvas>
+  <canvas id=water class=texture  onclick="rainDownElement(2);"></canvas>
+  <canvas id=earth class=texture  onclick="rainDownElement(3);"></canvas>
+  </div>
+  <canvas id=ice class=texture ></canvas>
+  <canvas id=sand class=texture></canvas>
+  <canvas id=mist class=texture></canvas>
+  <canvas id=lava class=texture></canvas>
+  <canvas id=backdrop class=texture></canvas>
+    <script src="support.js"></script>
+    <script src="backdrop.js"></script>
+    <script src="elements.js"></script>
+    <script src="board.js"></script>
+  </body>
+</html>

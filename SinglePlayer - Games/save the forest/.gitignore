@@ -1,0 +1,4 @@
+node_modules/
+*.zip
+npm-debug.log
+.DS_STORE

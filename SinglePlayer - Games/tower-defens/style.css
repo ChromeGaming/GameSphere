@@ -1,0 +1,57 @@
+body {
+    font-family: arial;
+    color: white; 
+    text-align: center;
+}
+
+.button {
+    background-color: red; 
+    padding: 5px;
+    display: inline-block;
+    vertical-align: top;
+    transition: background-color 1s;
+}
+
+.button:hover {
+    background-color: #f99;
+    cursor: pointer;
+}
+
+#CanvasContainer {
+    position: relative;
+}
+
+canvas {
+    position: absolute;
+    background-color: black;
+    z-index: -1;
+    left: 0px;
+    top: 0px;
+    width: 800px;
+    height: 615px;
+}
+
+#GameMenu {
+    opacity: 1;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    left: 0px;
+    top: 0px;
+    width: 800px;
+    height: 615px;
+    text-align: center;
+    transition: opacity 2s;
+}
+
+#GameMenu.transparent {
+    opacity: 0;
+}
+
+#GameMenu > div {
+    position: relative;
+    top: 200px;
+}
+
+#GameMenu > div > .button {
+    width: 100px;
+}

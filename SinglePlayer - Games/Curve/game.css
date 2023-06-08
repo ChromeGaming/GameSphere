@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+html, body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+}
+
+body {
+    width: 600px;
+    text-align: center;
+    position: relative;
+    font-family: sans-serif;
+}
+
+button {
+    font-size: 3em;
+    padding: 0.1em 0.25em;
+    background-color: gray;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #333;
+    border: 2px solid #222;
+}
+
+#holder {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    height: 100%;
+}
+
+.screen {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fffacd;
+}
+
+.title {
+    margin-top: 4vh;
+    font-size: 6em;
+    color: #222;
+    text-shadow: 0 0 7px #444;
+    font-family: serif;
+    margin-bottom: 15vh;
+    font-weight: bold;
+}
+
+.credits {
+    margin-top: auto;
+    margin-bottom: 1vh;
+    font-size: 1.5em;
+    color: #777;
+}
+
+#start-screen > button {
+    margin-top: 3vh;
+}
+
+.actions > button {
+    margin: 1vh;
+    vertical-align: center;
+}
+
+.actions {
+    margin-top: 6vh;
+}
+
+.stats-info {
+    border-radius: 10px;
+}
+
+.stats-info > div {
+    padding: 0.2em 0.2em;
+    font-size: 1.7em;
+}
+
+.stats-info > div:last-child {
+    border-bottom: none;
+}
+
+.stats {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.setting > label {
+    font-size: 2em;
+    margin-top: 1vh;
+}
+
