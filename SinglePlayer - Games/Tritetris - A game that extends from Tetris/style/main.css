@@ -1,0 +1,194 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  overflow-x:hidden;
+  font-size:18px;
+  background: #f9f6f2;
+}
+body{
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+h1.title{
+  font-size: 60px;
+  color: rgb(200,180,150);
+}
+
+.container{
+  width: 500px;
+  margin: 50px auto;
+}
+.top-area .score-and-best, .landing-interval{
+  float: right;
+  width: 150px;
+  height: 60px;
+  margin: auto 5px;
+  background: #f7b61f;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.pause-or-continue-btn, .deform-btn, .clockwise-btn, .anticlockwise-btn{
+  cursor: pointer;
+}
+
+@keyframes go-up{
+  from{
+    top: -40px;
+    opacity: 1;
+  }
+  to{
+    top: -100px;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes go-up {
+  from {
+    top: -40px;
+    opacity: 1;
+  }
+  to {
+    top: -100px;
+    opacity: 0;
+  } 
+}
+@-moz-keyframes go-up {
+  from {
+    top: -40px;
+    opacity: 1;
+  }
+  to {
+    top: -100px;
+    opacity: 0;
+  } 
+}
+@-o-keyframes go-up {
+  from {
+    top: -40px;
+    opacity: 1;
+  }
+  to {
+    top: -100px;
+    opacity: 0;
+  } 
+}
+.score-and-best .score-addition{ 
+  text-align: center;
+  position: relative;
+  font-size: 28px;
+  -webkit-animation: go-up 600ms ease-in;
+  -moz-animation: go-up 600ms ease-in;
+  animation: go-up 600ms ease-in;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.landing-interval, .score, .best{
+  color: gray;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+canvas{
+  margin: 8px 0;
+  border-radius: 5px;
+}
+.lose-container{
+  display: none;
+  text-align: center;
+  font-size:20pt;
+  color:white;
+  word-wrap:normal;
+  position: absolute;
+  top: 250px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+.lose{
+  width: 400px;
+  height: 270px;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding-top: 130px;
+  background-color:rgba(250,210,150,0.5);
+}
+.lose .replay-btn{
+  background-color: #f7b61f;
+  font-size: 20px;
+  line-height: 30px;
+  cursor: pointer;
+  width: 120px;
+  height: 30px;
+  margin: 20px auto;
+  padding: 10px 5px;
+  border-radius: 3px;
+}
+
+.bottom-area .pause-or-continue-btn, .deform-btn, .clockwise-btn, .anticlockwise-btn{
+  float: left;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  padding: 5px 0;
+  margin: auto 2.5px;
+  background: #f7b61f;
+  text-align: center;
+  border-radius: 3px;
+  color: white;
+}
+
+.introduction{
+  padding-top: 70px;
+  color:gray;
+}
+.how-to-play, .tips, .note{
+  border-bottom: 1px solid #d8d4d0;
+}
+.about{
+  text-align: center;
+}
+
+@media screen and (max-width: 520px){
+  body{
+    font-size: 15px;
+  }
+  h1.title{
+    font-size: 30px;
+  }
+  .container{
+    width: 280px;
+    margin: 30px auto;
+  }
+  .top-area .score-and-best, .landing-interval{
+    width: 120px;
+    height: 40px;
+    margin: auto 2px;
+  }
+  canvas{
+    width: 280px;
+    height: 280px;
+  }
+  .landing-interval, .score, .best{
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .lose-container{
+    top: 150px;
+  }
+  .lose{
+    width: 220px;
+    height: 185px;
+    border-radius: 2px;
+    padding-top: 35px;
+  }
+  .bottom-area .pause-or-continue-btn, .deform-btn, .clockwise-btn, .anticlockwise-btn{
+    width: 136px;
+    margin: 2px 2px;
+    font-size: 12px;
+  }
+  .introduction{
+    padding-top: 110px;
+  }
+}

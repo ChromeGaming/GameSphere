@@ -1,0 +1,151 @@
+ids for mobile keyboard:
+
+kU = k_up
+kD = k_down
+kL = k_left
+kR = k_right
+kT = k_top
+kB = k_bottom
+kw = k_backtrack
+kx = k_reset
+ky = k_camleft 
+kz = k_camright
+
+---
+
+pagenames (corresponds to a LS key + classname!):
+
+px = hub
+py = load
+pz = editor
+1-1: pA
+1-3: pB
+1-4: pC
+2-1: pD
+2-15: pE
+2-2: pF
+2-3: pG
+2-4: pH
+2-5: pI
+3-1: pJ
+3-3: pK
+3-6: pL
+3-7: pM
+3-8: pN
+
+
+---
+
+Localstorage keys:
+
+s = son
+m = mobile
+t = time
+M = moves
+S = snakelength
+T = totalsolved
+x = snakex
+y = snakey
+z = snakez
+p = page
+w = wasd
+b = backtrack
+r = reset
+B = topbottom
+c = camera
+e = editorfull
+u = menu
+a = start
+E = ended
+p+room+puzzleid = puzzle+room+puzzleid
+d+room+puzzleid = door+room+puzzleid 
+a+room+n = appleeaten+room+n
+A+room+n = appleappeared+room+n
+
+---
+
+classnames:
+
+e=emojishadow ok
+p=appleshadow ok
+w=wrapvisible ok
+m=emojimove ok 
+y=realdoor ok
+v=visible ok
+i=mobile ok
+n=animal ok
+k=snake ok
+g=apple ok
+j=emoji ok
+f=front ok
+r=right ok
+l=left ok
+b=back ok
+d=down ok
+s=open ok
+z=cube ok
+x=rock ok
+q=wrap ok
+o=cell ok
+a=mac ok
+u=up ok
+c=fx ok
+t=hint ok
+d+n = door+n ok
+h=treeshadow ok
+tr=tree ok
+ss=snakeshadow ok
+sm=snakecubemove ok
+sr=snakecuberotate ok
+
+---
+
+more ids (or varnames already used)
+
+u=(keyboard flag)
+r=(keyboard flag)
+d=(keyboard flag)
+l=(keyboard flag)
+s=(keyboard flag)
+c=(keyboard flag)
+B=(keyboard flag)
+b=(body's id)
+e=(eyes id)
+
+a=scene ok
+ib=gridsize ok
+ia=snake2 ok
+ie=snake ok
+ig=objects ok
+ih=puzzle ok
+ii=text ok
+ij=share ok
+ik=ground ok
+im=groundlabel ok
+io=wall
+ip=wrap
+iq=snakesize ok
+it=snakeval ok
+iv=perspective ok
+iw=itext ok
+iy=reset ok
+iz=mobilecontrols
+
+gxyz = gx-y-z
+wxyz = wx-y-z
+h+x+y = hint+x+y ok
+as+n = appleshadow+n ok 
+a+n = apple+n ok
+d+x+y = door+x+y ok
+D+p = down+p ok
+B+p = back+p ok
+M+i = snakecubemove+i ok
+R+i = snakecuberotate+i ok
+S+i = snakeshadow+i ok
+T+i = snakecube+i ok
+
+position = $
+index = _
+indexx = AA
+TS = touchstart
+TE = touchend

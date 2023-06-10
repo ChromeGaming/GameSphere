@@ -1,0 +1,40 @@
+L.clear();
+
+
+L[P+"page"]='pF';L[P+"snakelength"]=15;L[P+"totalsolved"]=35
+
+L[P+"snakex"]=0;L[P+"snakey"]=0;L[P+"snakez"]=0;L[P+"page"]="pN";L[P+"son"]=1;L[P+"snakelength"]=20;L[P+"totalsolved"]=75;location=location;
+
+
+L[P+"s"]=0
+L[P+"S"]=21
+L[P+"p"]="pH"
+
+L[P+"s"]=1;
+L[P+"S"]=20;
+L[P+"p"]="pN";
+L[P+"T"]=75
+
+L[P+"x"]=0;
+L[P+"y"]=0;
+L[P+"z"]=0;
+
+localStorage.lossst_s=1;
+localStorage.lossst_S=20;
+localStorage.lossst_p="pN";
+localStorage.lossst_T=75
+
+localStorage.lossst_x=0;
+localStorage.lossst_y=0;
+localStorage.lossst_z=0;
+
+
+localStorage["elems"]=0;localStorage["html"]="";
+
+localStorage["elems"] = +localStorage["elems"] + $$("*").length;
+localStorage["html"] += document.documentElement.outerHTML;console.log(localStorage["elems"]);
+
+7434 elements
+1.26MB
+
+https://www.useloom.com/share/049f2be537214e74bd0380f9195b8090

@@ -1,0 +1,58 @@
+<html>
+<head>
+  <title>ESCAPE FROM MAZE 13</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body onresize="resizeCanvas()">
+<div class="ol"></div> 
+
+<header><h1><div style="font-size:18px;">ESCAPE FROM</div>MAZE 13</h1></header>
+<main>
+ 
+<div id="start" >
+ <p>Things are not stable, glitches in time are warping the mazes</p>
+ <p>Click, tap or use arrow keys to run, find the exit and survive</p>
+ <p>No matter what you must escape<span class="ln">|</span></p>
+ <button class="btn go">Enter The Maze</button>
+</div>
+
+<div id="lvl" class="hdn">
+  <h2>Select size of the challange</h2>
+  <button class="btn lvl" data-mz="10">Small<span data-mz="10" class="pb pb-sm" ></span></button>
+  <button class="btn lvl" data-mz="15">Regular<span data-mz="15" class="pb pb-rg"></span></button>
+  <button class="btn lvl" data-mz="20">Large<span data-mz="20" class="pb pb-lg"></span></button>
+</div>
+
+<div id="end" class="hdn">
+  <p>A true survivor you made it in..</p>
+  <p id="tm" style="font-size:30px;"></p>
+  <p id="toptm" style="padding-top:0"></p>
+  <button id="tw" target="_blank" class="btn">Share Your Time</button>
+  <button class="btn go">Beat Your Time</button>
+</div>
+
+<div id="starting" class="hdn">
+  <p><p>
+</div>
+
+<div id="mz" class="hdn">
+  <canvas id="canvas"></canvas>
+</div>
+
+</main>
+
+<footer class="hdn">
+  <span class="snd"></span>
+  <span class="quit">&#10005;</span>
+  <div class="doc">
+    <span id="min">0</span>m
+    <span id="sec">0</span>s 
+    <span id="ms">0</span>ms
+  </div>
+</footer>
+ 
+<script  type="text/javascript" language="javascript" src="game.min.js"></script>
+
+	</body>
+</html>

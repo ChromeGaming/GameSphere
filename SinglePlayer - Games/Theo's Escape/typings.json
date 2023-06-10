@@ -1,0 +1,9 @@
+{
+  "name": "tower",
+  "dependencies": {
+    "debug": "registry:npm/debug#2.0.0+20160723033700"
+  },
+  "globalDependencies": {
+    "webaudioapi/waa": "registry:dt/webaudioapi/waa#0.0.0+20160328224055"
+  }
+}

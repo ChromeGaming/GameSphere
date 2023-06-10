@@ -1,0 +1,31 @@
+{
+  "name": "js13k2016",
+  "version": "1.0.0",
+  "description": "JS13K Entry 2016",
+  "main": "gulp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blueboxes/JS13K-2016.git"
+  },
+  "author": "John Kilmister",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blueboxes/JS13K-2016/issues"
+  },
+  "homepage": "https://github.com/blueboxes/JS13K-2016#readme",
+  "dependencies": {
+    "babel-preset-babili": "0.0.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-size": "^2.1.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-webserver": "^0.9.1",
+    "gulp-zip": "^3.2.0"
+  }
+}
