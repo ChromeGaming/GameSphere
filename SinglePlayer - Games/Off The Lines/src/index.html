@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Off The Lines</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        
+        <div class="main-menu">
+            <h1><span>O</span><span>F</span><span>F</span>&nbsp;&nbsp;<span>T</span><span>H</span><span>E</span>&nbsp;&nbsp;<span>L</span><span>I</span><span>N</span><span>E</span><span>S</span></h1>
+            <button onclick="game.start()">Start Game</button>
+            <button onclick="document.querySelector('.tutorial').style.display = 'block';">How to Play</button>
+            <button onclick="document.querySelector('.levels').style.display = 'block';">Levels</button>
+            <button onclick="document.querySelector('.credits').style.display = 'block'">About</button>
+            <p class="landscape">(Rotate your device for the best playing experience)</p>
+        </div>
+
+        <p class="plus20">Score 20 points or more to get to the next level</p>
+        
+        <div class="levels"></div>
+        
+        <div class="tutorial">
+            <h2>How to Play</h2>
+            <p>Keep the balls on the lines. If they crash into each other or reach a gap in the line, they will fall OFF THE LINES.</p>
+            <hr/>
+            <p>You have 2 types of controls:</p>
+            <ul>
+                <li>
+                    <div><button class="demo-button orange-border" onclick="event.target.classList.toggle('orange-border')">Wait</button></div>
+                    <p>Select this to stop a ball passing through (until you select it again to release it). It will turn orange when activated.</p>
+                </li>
+                <li>
+                    <div><button class="demo-button purple-border" onclick="event.target.classList.toggle('purple-border')">Switch</button></div>
+                    <p>Select this to switch balls to the alternative line. It will turn purple when activated.</p>
+                </li>
+            </ul>
+            <hr/>
+            <p>Other things to look out for:</p>
+            <ul>
+                <li>
+                    <div><button class="demo-teleporter">Teleporter</button></div>
+                    <p>These teleport the balls from one line to another. You don't have any control over these.</p>
+                </li>
+                <li>
+                    <div></div>
+                    <p>Gaps will sometimes appear due to a line-fault. Make sure the balls avoid any gaps.</p>
+                </li>
+            </ul>
+            <button onclick="document.querySelector('.tutorial').style.display = 'none'">Main Menu</button>
+        </div>
+        
+        <div class="popup"></div>
+
+        <div class="game">
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1920 1080">
+                <defs>
+                    <lineargradient id="path-gradient">
+                        <stop offset="0%" stop-color="#f00">
+                            <animate attributename="stop-color" values="orange; red; blue; purple;" dur="10s" repeatcount="indefinite"></animate>
+                        </stop>
+                        <stop offset="50%" stop-color="#f0f">
+                            <animate attributename="stop-color" values="blue; purple; orange; red; " dur="10s" repeatcount="indefinite"></animate>
+                        </stop>
+                        <stop offset="100%" stop-color="#00f">
+                            <animate attributename="stop-color" values="red; blue; purple; orange;" dur="10s" repeatcount="indefinite"></animate>
+                        </stop>
+                    </lineargradient>
+                    <radialgradient id="radial-red" cx="30%" cy="30%" r="100%"> 
+                        <stop offset="0%" style="stop-color:red;stop-opacity:1"/>
+                        <stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity:1"/>
+                    </radialgradient>
+                    <radialgradient id="radial-blue" cx="30%" cy="30%" r="100%"> 
+                        <stop offset="0%" style="stop-color:blue;stop-opacity:1"/>
+                        <stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity:1"/>
+                    </radialgradient>
+                    <radialgradient id="radial-green" cx="30%" cy="30%" r="100%"> 
+                        <stop offset="0%" style="stop-color:green;stop-opacity:1"/>
+                        <stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity:1"/>
+                    </radialgradient>
+                    <radialgradient id="radial-yellow" cx="30%" cy="30%" r="100%"> 
+                        <stop offset="0%" style="stop-color:yellow;stop-opacity:1"/>
+                        <stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity:1"/>
+                    </radialgradient>
+                </defs>
+                <g class="svg-elements"></g>
+            </svg>
+            
+            <p class="timer">Time: <strong>90</strong></p>
+            <p class="score">Score: <strong>0</strong></p>
+            
+        </div>
+
+        <script src="levels.js"></script>
+        <script src="game.js"></script>
+        <script src="menus.js"></script>
+        <script src="audio.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,663 @@
+
+<!doctype HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<title>OffLine</title>
+<style>
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  canvas {
+    display: block;
+    margin: 0 auto;
+  }
+</style>
+</head>
+<body>
+<div>
+<canvas id="gameArea">
+</canvas>
+<p style="text-align: center;">Hint: As a network specialist, you must close all the gates that mantaint you NetWork not working... and offline! Just tap the screen when both holes of every gate were together, but don't take it too seriously and enjoy!</p>
+</div>
+<script type="text/javascript">
+
+  var gameCanvas=document.getElementById("gameArea");
+  var gameContext=gameCanvas.getContext("2d");
+  
+  var totalWidth;
+  var totalHeight;
+ 
+  var numCols;
+  var numFils;
+  var squareSize;
+  var marginX;
+  var marginY;
+  var sc;
+  
+  var levels=[
+    [5,3,
+    21,0,2,1,
+    21,2,4,1,
+    11,0,1,-1,
+    31,2,1,-1,0,0,1.5,-0.025,0,1.5,0.025,
+    12,4,1,0],
+    [5,3,
+    21,0,1,1,
+    21,1,2,1,
+    21,2,3,1,
+    21,3,4,1,
+    11,0,1,-1,
+    31,1,1,-1,0,0,1.5,-0.025,0,1.5,0.025,
+    12,2,1,0,
+    31,3,1,0,0,0,1.5,-0.05,0,1.5,0.05,
+    12,4,1,1],
+    [5,3,
+    21,0,1,0,
+    21,1,2,0,
+    22,1,0,2,1,
+    21,2,3,1,
+    22,2,1,3,2,
+    21,3,4,2,
+    11,0,0,-1,
+    31,1,0,-1,0,0,1.5,-0.025,0,1.5,0.025,
+    12,2,0,0, 
+    31,2,1,0,0,0,1.5,-0.037,0,1.5,0.037,
+    12,3,1,1,
+    31,3,2,1,0,0,1.5,-0.05,0,1.5,0.05,
+    12,4,2,2],
+    [5,3,
+    21,0,1,0,
+    21,3,4,0,
+    23,1,1,0,2,
+    22,3,1,4,2,
+    24,1,0,1,1,
+    25,3,0,3,1,
+    11,0,0,-1,
+    31,1,0,-1,0,0,1.5,-0.05,0,1.5,0.05,
+    31,3,0,-1,1,0,1.5,0.05,0,1.5,-0.05,
+    11,4,0,-1,
+    31,1,1,0,1,0,1.5,0.05,0,1.5,-0.05,
+    31,3,1,1,0,0,1.5,-0.05,0,1.5,0.05,
+    12,0,2,2,
+    12,4,2,3]
+  ];
+    
+  var numLevels=4;
+  var cLevel;
+  var rTime;
+  var score;
+  var rounds;
+  var endOfLevel;
+  
+  var gates;
+  var openGates;
+  
+  var touchPosition = {
+    x: undefined,
+    y: undefined
+  };
+ 
+  var colors = [
+    "#E23A59",
+    "#738D9C",
+    "#44ADAD"
+  ];
+ 
+  function circleLimits(angle) {
+  
+    if (angle<0) {
+      angle+=Math.PI*2;
+    }
+    else if (angle>Math.PI*2) {
+      angle-=Math.PI*2;
+    }
+    return angle;
+  }
+ 
+  function roundRect(x,y,w,h,r) {
+ 
+    gameContext.beginPath();
+    gameContext.moveTo(x+r,y);
+    gameContext.lineTo(x+w-r,y);
+    gameContext.arc(x+w-r,y+r,r,Math.PI*1.5,0,false);
+    gameContext.lineTo(x+w,y+h-r);
+    gameContext.arc(x+w-r,y+h-r,r,0,Math.PI*0.5,false);
+    gameContext.lineTo(x+r,y+h);
+    gameContext.arc(x+r,y+h-r,r,Math.PI*0.5,Math.PI,false);
+    gameContext.lineTo(x,y+r);
+    gameContext.arc(x+r,y+r,r,Math.PI,Math.PI*1.5,false);
+    gameContext.stroke();
+    gameContext.closePath();
+  }
+ 
+  function circle(x,y,r,f) {
+ 
+    gameContext.beginPath();
+    gameContext.arc(x,y,r,0,Math.PI*2,false);
+    gameContext.fillStyle=f;
+    gameContext.fill();
+    gameContext.stroke();
+    gameContext.closePath();
+  }
+
+  function Gate(posX, posY, parent, fromRight, iniRad1, endRad1, velRad1, iniRad2, endRad2, velRad2) {
+ 
+    this.posX = posX;
+    this.posY = posY;
+    this.parent = parent;
+    this.fromRight = fromRight;
+    this.iniRad1 = iniRad1*Math.PI;
+    this.endRad1 = endRad1*Math.PI;
+    this.velRad1 = velRad1;
+    this.iniRad2 = iniRad2*Math.PI;
+    this.endRad2 = endRad2*Math.PI;
+    this.velRad2 = velRad2;
+    this.state = 1;
+    this.delay = 0;
+    
+    var inicAng = Math.random()*Math.PI*2;
+    this.iniRad1 = circleLimits(this.iniRad1+inicAng);
+    this.endRad1 = circleLimits(this.endRad1+inicAng);
+  
+    this.update = () => {
+    
+      if (this.state===1) {
+        this.iniRad1=circleLimits(this.iniRad1+this.velRad1);
+        this.endRad1=circleLimits(this.endRad1+this.velRad1);
+        this.iniRad2=circleLimits(this.iniRad2+this.velRad2);
+        this.endRad2=circleLimits(this.endRad2+this.velRad2);
+      }
+      else if (this.state===0) {
+        this.delay--;
+        if (this.delay===0) this.state=1;
+      }
+      this.draw();
+    };
+     
+    this.draw = () => {
+  
+      var sc = squareSize/40;
+      var x = this.posX*squareSize+marginX;
+      var y = this.posY*squareSize+marginY;
+      var colorLeft;
+      var colorRight;
+     
+      if (this.state===2) {
+        colorLeft=colors[2];
+        colorRight=colors[2];
+      }
+      else {
+        
+        if (this.fromRight===0) {
+          colorLeft=colors[isParentOpen(parent)];
+          colorRight=colors[0];
+        }
+        else {
+          colorLeft=colors[0];
+          colorRight=colors[isParentOpen(parent)];
+        }
+      }
+      drawIcon(x,y,4,colorLeft,colors[this.state],colorRight);
+      
+      x += squareSize/2;
+      y += squareSize/2-sc*4;
+    
+      gameContext.beginPath();
+      gameContext.arc(x,y,sc*9,this.iniRad1,this.endRad1,false);
+      gameContext.stroke();
+      gameContext.closePath();
+     
+      gameContext.beginPath();
+      gameContext.arc(x,y,sc*6,this.iniRad2,this.endRad2,false);
+      gameContext.stroke();
+      gameContext.closePath();
+    };
+   
+    this.touched = () => {
+     
+      if (this.state===1) {
+     
+        var angleDiff=Math.abs(this.iniRad1-this.iniRad2);
+        if (angleDiff>Math.PI) angleDiff=(Math.PI*2)-angleDiff;
+      
+        if (angleDiff<Math.PI/2) {
+          this.state=2;
+          openGates++;
+        }
+        else {
+          this.state = 0;
+          this.delay = 120;
+        }
+      }
+    };
+  } 
+
+  function isParentOpen(parent) {
+
+    if (parent===-1) return 2;
+   
+    if (gates[parent].state===2) return 2;
+   
+    return 0;
+  }
+  
+  function findGateAt(x,y) {
+
+    var col = Math.floor((x-marginX)/squareSize);
+    var fil = Math.floor((y-marginY)/squareSize);
+    var gateIndex = -1;
+    
+    gates.forEach(function (gate,index) {
+      if((gate.posX===col)&&(gate.posY===fil)) gateIndex=index;
+    });
+   
+    return gateIndex;
+  }
+    
+  function drawIcon(ix,iy,id,fc1,fc2,fc3) {
+ 
+    var mx = ix+squareSize/2;
+    var my = iy+squareSize/2;
+   
+    switch(id) {
+   
+      case 1:
+        roundRect(mx-sc*10,my-sc*13,sc*20,sc*6,sc*1.5);
+        roundRect(mx-sc*10,my-sc*7,sc*20,sc*6,sc*1.5);
+        roundRect(mx-sc*10,my-sc,sc*20,sc*6,sc*1.5);
+        
+        gameContext.beginPath();
+        
+        gameContext.rect(mx-sc*5,my-sc*10,1,1);
+        gameContext.rect(mx-sc*5,my-sc*4,1,1);
+        gameContext.rect(mx-sc*5,my+sc*2,1,1);
+        
+        gameContext.moveTo(mx,my-sc*10);
+        gameContext.lineTo(mx+sc*6,my-sc*10);
+        gameContext.moveTo(mx,my-sc*4);
+        gameContext.lineTo(mx+sc*6,my-sc*4);
+        gameContext.moveTo(mx,my+sc*2);
+        gameContext.lineTo(mx+sc*6,my+sc*2);
+        
+        break;
+       
+      case 2:
+        roundRect(mx-sc*11,my-sc*13,sc*22,sc*15,sc*1.5);
+        
+        gameContext.beginPath();
+        
+        gameContext.moveTo(mx-sc*11,my-sc*2);
+        gameContext.lineTo(mx+sc*11,my-sc*2);
+        gameContext.moveTo(mx,my+sc*2);
+        gameContext.lineTo(mx,my+sc*5);
+        gameContext.moveTo(mx-sc*5,my+sc*5);
+        gameContext.lineTo(mx+sc*5,my+sc*5);
+        
+        break;
+       
+      case 3:
+        roundRect(mx-sc*5,my-sc*13,sc*10,sc*18,sc*1.5);
+        
+        gameContext.beginPath();
+        
+        gameContext.moveTo(mx-sc*5,my-sc*10);
+        gameContext.lineTo(mx+sc*5,my-sc*10);
+        gameContext.moveTo(mx-sc*5,my+sc*2);
+        gameContext.lineTo(mx+sc*5,my+sc*2);
+        
+        break;
+       
+      case 4:
+     
+        gameContext.beginPath();
+        
+        //gameContext.arc(mx,my-sc*4,sc*9,0,Math.PI*2);
+        //gameContext.arc(mx,my-sc*4,sc*6,0,Math.PI*2);
+        
+        break;
+    }
+  
+    gameContext.moveTo(mx,my+sc*7);
+    gameContext.lineTo(mx,my+sc*10);
+    gameContext.moveTo(mx-sc*10,my+sc*10);
+    gameContext.lineTo(mx+sc*10,my+sc*10);
+ 
+    gameContext.stroke();
+    gameContext.closePath();
+ 
+    circle(mx-sc*10,my+sc*10,sc*1.5,fc1);
+    circle(mx,my+sc*10,sc*1.5,fc2);
+    circle(mx+sc*10,my+sc*10,sc*1.5,fc3);
+  }
+
+  function drawBoard() {
+
+    var iLevel;
+    var posX;
+    var posY;
+    var iniX;
+    var iniY;
+    var endX;
+    var endY;
+    var elem;
+    var parent;
+    var fillColor1;
+    var fillColor2;
+    var fillColor3;
+
+    for (var i=0;i<numFils;i++) {
+      for (var j=0;j<numCols;j++) {
+      
+        if ((i+j)%2===0) {
+          gameContext.fillStyle="#999";
+        }
+        else {
+          gameContext.fillStyle="#AAA";
+        }
+        gameContext.fillRect((j*squareSize)+marginX,(i*squareSize)+marginY,squareSize,squareSize);
+      }
+    }
+   
+    iLevel=2;
+ 
+    while (iLevel<levels[cLevel].length) {
+      elem=levels[cLevel][iLevel];
+      if ((elem===11)||(elem===12)) {
+        posX=levels[cLevel][iLevel+1]*squareSize+marginX;
+        posY=levels[cLevel][iLevel+2]*squareSize+marginY;
+        parent=levels[cLevel][iLevel+3];
+        if (parent===-1) {
+          fillColor1=colors[2];
+          fillColor2=colors[1];
+          fillColor3=colors[2];
+        }
+        else if (gates[parent].state===2) {
+          fillColor1=colors[2];
+          fillColor2=colors[1];
+          fillColor3=colors[2];
+        }
+        else {
+          fillColor1=colors[0];
+          fillColor2=colors[1];
+          fillColor3=colors[0];
+        }
+        drawIcon(posX,posY,elem-10,fillColor1,fillColor2,fillColor3);
+        iLevel+=4;
+      }
+      else if (elem===21) {
+     
+        iniX=levels[cLevel][iLevel+1]*squareSize+marginX+squareSize/2+sc*12;
+        endX=levels[cLevel][iLevel+2]*squareSize+marginX+squareSize/2-sc*12;
+        iniY=levels[cLevel][iLevel+3]*squareSize+marginY+squareSize/2+sc*10;
+        endY=iniY;
+      
+        gameContext.beginPath();
+        gameContext.moveTo(iniX,iniY);
+        gameContext.lineTo(endX,endY);
+        gameContext.stroke();
+        gameContext.closePath();
+      
+        iLevel+=4;
+      }
+      else if (elem===22) {
+     
+        iniX=levels[cLevel][iLevel+1]*squareSize+marginX+squareSize/2+sc*10;
+        iniY=levels[cLevel][iLevel+2]*squareSize+marginY+squareSize/2+sc*12;
+        endX=iniX;
+        endY=levels[cLevel][iLevel+4]*squareSize+marginY+squareSize/2+sc*10;
+     
+        gameContext.beginPath();
+        gameContext.moveTo(iniX,iniY);
+        gameContext.lineTo(endX,endY);
+     
+        endX=levels[cLevel][iLevel+3]*squareSize+marginX+squareSize/2-sc*12;
+     
+        gameContext.lineTo(endX,endY);
+        gameContext.stroke();
+        gameContext.closePath();
+      
+        iLevel+=5;
+      }
+      else if (elem===23) {
+     
+        iniX=levels[cLevel][iLevel+1]*squareSize+marginX+squareSize/2-sc*10;
+        iniY=levels[cLevel][iLevel+2]*squareSize+marginY+squareSize/2+sc*12;
+        endX=iniX;
+        endY=levels[cLevel][iLevel+4]*squareSize+marginY+squareSize/2+sc*10;
+     
+        gameContext.beginPath();
+        gameContext.moveTo(iniX,iniY);
+        gameContext.lineTo(endX,endY);
+     
+        endX=levels[cLevel][iLevel+3]*squareSize+marginX+squareSize/2+sc*12;
+     
+        gameContext.lineTo(endX,endY);
+        gameContext.stroke();
+        gameContext.closePath();
+      
+        iLevel+=5;
+      }
+      else if (elem===24) {
+     
+        iniX=levels[cLevel][iLevel+1]*squareSize+marginX+squareSize/2+sc*12;
+        endX=(levels[cLevel][iLevel+3]+1)*squareSize+marginX+squareSize/2-sc*12;
+        iniY=levels[cLevel][iLevel+2]*squareSize+marginY+squareSize/2+sc*10;
+        endY=iniY;
+           
+        gameContext.beginPath();
+        gameContext.moveTo(iniX,iniY);
+        gameContext.lineTo(endX,endY);
+        endY=levels[cLevel][iLevel+4]*squareSize+marginY+squareSize/2+sc*10;
+        gameContext.lineTo(endX,endY);
+        endX=levels[cLevel][iLevel+3]*squareSize+marginX+squareSize/2+sc*12;
+        gameContext.lineTo(endX,endY);
+        gameContext.stroke();
+        gameContext.closePath();
+      
+        iLevel+=5;
+      }
+      else if (elem===25) {
+      
+        iniX=levels[cLevel][iLevel+1]*squareSize+marginX+squareSize/2-sc*12;
+        endX=(levels[cLevel][iLevel+3]-1)*squareSize+marginX+squareSize/2+sc*12;
+        iniY=levels[cLevel][iLevel+2]*squareSize+marginY+squareSize/2+sc*10;
+        endY=iniY;
+        
+        gameContext.beginPath();
+        gameContext.moveTo(iniX,iniY);
+        gameContext.lineTo(endX,endY);
+        endY=levels[cLevel][iLevel+4]*squareSize+marginY+squareSize/2+sc*10;
+        gameContext.lineTo(endX,endY);
+        endX=levels[cLevel][iLevel+3]*squareSize+marginX+squareSize/2-sc*12;
+        gameContext.lineTo(endX,endY);
+        gameContext.stroke();
+        gameContext.closePath();
+        
+        iLevel+=5;
+      }
+      else if (elem===31) {
+   
+        iLevel+=11;
+      }
+    }
+ 
+    gates.forEach(gate=>gate.update());
+  }
+
+  function drawGame() {
+ 
+    gameContext.clearRect(0,0,totalWidth,totalHeight);
+    
+    drawBoard();
+   
+    var txtScore=score+" ";
+    while (txtScore.length<5) txtScore="0"+txtScore;
+    gameContext.fillStyle="#000";
+    gameContext.fillText(txtScore,totalWidth,0);
+    gameContext.fillStyle="#7F0000";
+    gameContext.fillRect(0,totalHeight*0.98,totalWidth*rTime,totalHeight*0.02);
+    
+  }
+
+  function gameLoop() {
+
+    requestAnimationFrame(gameLoop);
+   
+    if (endOfLevel) {
+      if (rTime>0) {
+        rTime-=0.01;
+        score++;
+      }
+      else {
+        cLevel++;
+        if (cLevel===numLevels) {
+          cLevel=0;
+          rounds+=0.5;
+        } 
+        initLevel();
+        initDimensions();
+      }
+    }
+    else {
+      if (openGates===gates.length) {
+        endOfLevel=true;
+      }
+      else {
+        if (rTime>0) {
+          rTime-=0.001;
+        }
+        else {
+          initGame();
+          initLevel();
+          initDimensions();
+        }
+      }
+    }
+    
+    drawGame();
+  }
+ 
+  function initGame() {
+   
+    score = 0;
+    cLevel = 0;
+    rounds = 1;
+  }
+ 
+  function initLevel() {
+   
+    var iLevel;
+    var posX;
+    var posY;
+    var parent;
+    var fromRight;
+    var iniRad1;
+    var endRad1;
+    var velRad1;
+    var iniRad2;
+    var endRad2;
+    var velRad2;
+
+    numCols=levels[cLevel][0];
+    numFils=levels[cLevel][1];
+    iLevel=2;
+   
+    gates=[];
+   
+    while(iLevel<levels[cLevel].length) {
+    
+      elem=levels[cLevel][iLevel];
+      
+      if ((elem===11)||(elem===12)) {
+        iLevel+=4;
+      }
+      else if (elem===21) {
+        iLevel+=4;
+      }
+      else if ((elem===22)||(elem===23)||(elem===24)||(elem===25)) {
+        iLevel+=5;
+      } 
+      else if (elem===31) {
+     
+        posX=levels[cLevel][iLevel+1];
+        posY=levels[cLevel][iLevel+2];
+        parent=levels[cLevel][iLevel+3];
+        fromRight=levels[cLevel][iLevel+4];
+        iniRad1=levels[cLevel][iLevel+5];
+        endRad1=levels[cLevel][iLevel+6];
+        velRad1=levels[cLevel][iLevel+7]*rounds;
+        iniRad2=levels[cLevel][iLevel+8];
+        endRad2=levels[cLevel][iLevel+9];
+        velRad2=levels[cLevel][iLevel+10]*rounds;
+        
+        gates.push(new Gate(posX,posY,parent,fromRight,iniRad1,endRad1,velRad1,iniRad2,endRad2,velRad2));
+        iLevel+=11;
+      }
+    }
+   
+    rTime=1;
+    openGates=0;
+    endOfLevel=false;
+  }
+  
+  function initDimensions() {
+  
+    totalWidth=window.innerWidth;
+    totalHeight=window.innerHeight;
+    gameCanvas.width=totalWidth;
+    gameCanvas.height=totalHeight;
+   
+    if ((totalWidth/numCols)<(totalHeight/numFils)) {
+      squareSize=Math.floor(totalWidth/numCols);
+      marginX=0;
+      marginY=Math.floor((totalHeight-(squareSize*numFils))/2);
+    }
+    else {
+      squareSize=Math.floor(totalHeight/numFils);
+      marginX=Math.floor((totalWidth-(squareSize*numCols))/2);
+      marginY=0;
+    }
+   
+    sc=squareSize/40;
+    
+    gameContext.lineWidth=sc;
+    gameContext.lineCap="round";
+    gameContext.lineJoin="round";
+    gameContext.strokeStyle="#EED069";
+  
+    gameContext.font="48px sans-serif";
+    var txtWidth=gameContext.measureText("0000").width;
+    gameContext.font=""+Math.floor((48*squareSize)/txtWidth)+"px sans-serif";
+    gameContext.textBaseline="top";
+    gameContext.textAlign="right";
+  }
+
+  window.onload = function () {
+  
+    initGame();
+    initLevel();
+    initDimensions();
+    
+    window.addEventListener('resize', () => {
+      initDimensions();
+    });
+    
+    window.addEventListener('touchstart', event => {
+      touchPosition.x=event.changedTouches[0].clientX;
+      touchPosition.y=event.changedTouches[0].clientY;
+      var gateIndex=findGateAt(touchPosition.x,touchPosition.y);
+
+      if (gateIndex>-1) {
+        gates[gateIndex].touched();
+      }
+    });
+    
+    gameLoop();
+  }
+
+</script>
+</body>
+</html>

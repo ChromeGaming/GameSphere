@@ -1,0 +1,16 @@
+{
+  "start": "START",
+  "upload": "UPLOAD",
+  "options": "OPTIONS",
+  "keyboardSpace": "[Spacebar]",
+  "select": "Select",
+  "music": "MUSIC",
+  "uiScale": "UI SCALE",
+  "gameSpeed": "GAME SPEED",
+  "intensity": "INTENSITY",
+  "save": "SAVE",
+  "cancel": "CANCEL",
+  "time": "TIME",
+  "best": "BEST",
+  "tapHold": "Tap or Hold"
+}

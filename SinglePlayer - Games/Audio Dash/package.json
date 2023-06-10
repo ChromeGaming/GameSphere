@@ -1,0 +1,21 @@
+{
+  "name": "js13k2018",
+  "version": "1.0.0",
+  "main": "dist.js",
+  "author": "Steven Lambert",
+  "license": "MIT",
+  "scripts": {
+    "start": "http-server"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-add-src": "^1.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-size": "^3.0.0",
+    "gulp-terser": "^1.0.1",
+    "http-server": "^0.11.1",
+    "kontra": "^4.0.1"
+  }
+}
