@@ -1,25 +1,25 @@
-
 var candies = ["Blue", "Orange", "Green", "Yellow", "Red", "Purple"];
 var board = [];
 var rows = 9;
 var columns = 9;
 var score = 0;
+let music = new Audio("Music.mp3")
+let swap = new Audio("Swap.mp3")
 
 var currTile;
 var otherTile;
 
-
-window.onload = function() {
+window.onload = function() 
+{
     startGame();
-
     //1/10th of a second
     window.setInterval(function(){
+    music.play();
         crushCandy();
         slideCandy();
         generateCandy();
     }, 100);
 }
-
 function randomCandy() {
     return candies[Math.floor(Math.random() * candies.length)]; //0 - 5.99
 }
@@ -40,7 +40,7 @@ function startGame() {
             tile.addEventListener("dragleave", dragLeave); //leave candy over another candy
             tile.addEventListener("drop", dragDrop); //dropping a candy over another candy
             tile.addEventListener("dragend", dragEnd); //after drag process completed, we swap candies
-
+            
             document.getElementById("board").append(tile);
             row.push(tile);
         }
@@ -73,7 +73,7 @@ function dragDrop() {
 }
 
 function dragEnd() {
-
+    swap.play();
     if (currTile.src.includes("blank") || otherTile.src.includes("blank")) {
         return;
     }
@@ -102,6 +102,7 @@ function dragEnd() {
 
         let validMove = checkValid();
         if (!validMove) {
+            swap.pause();
             let currImg = currTile.src;
             let otherImg = otherTile.src;
             currTile.src = otherImg;
