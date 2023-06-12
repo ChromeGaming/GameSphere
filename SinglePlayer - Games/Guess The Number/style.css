@@ -1,16 +1,20 @@
 * {
-  color: white;
+  color: #084298;
 }
 body {
   margin: 0;
   padding: 0;
   background: url("assets/Background.jpg");
+  opacity: 1000; 
+}
+img{
+  opacity: 0.5;
 }
 /* Header Portion */
 #header {
   display: flex;
   flex-direction: column;
-  background-color: rgb(126 81 188);
+  background-color: #cfe2ff;
   color: white;
 }
 #title {
@@ -31,12 +35,14 @@ body {
 .score {
   font-size: 21px;
   float: right;
-  background-color: #d2a4fc;
+  background-color:#cfe2ff;
   display: block;
   width: 154px;
-  padding: 5px;
+  padding: 7px;
   color: black;
   font-weight: 500;
+  margin: 5px;
+  
 }
 .score span {
   color: black;
@@ -73,6 +79,7 @@ body {
 }
 #message {
   text-align: center;
-  font-weight: 550;
+  color:azure;
+  font-weight: 400;
   margin: 40px 0px;
 }
