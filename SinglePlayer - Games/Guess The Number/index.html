@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Guss the Number</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="title" class="display-6 text-center">Guess the Number Game</h1>
+        <p id="author" class="h6 text-center">-Contributed by <a href="https://github.com/vidhimakani74">Vidhi Makani</a></p>
+        
+    </div>
+    <div class="replay">
+        <a href="https://vidhimakani74.github.io/Guess-the-Number-Game/"><button type="button" class="btn btn-danger">Reset Game</button></a>
+    </div>
+    <div class="score">
+        Guess Left: <span id="count">10</span>
+    </div>
+    <div id="box">
+        <div id="banner" class="container-lg text-center alert alert-primary alert-dismissible fade show" role="alert">
+            Guess the Number between <strong style="color: #084298;">1 to 100</strong>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> -->
+        </div>
+        <div id="databox">
+            <div id="inputNum" class="input-group input-group-lg">
+                <input id="inp" type="number" placeholder="Enter Your Number" class="form-control"
+                    aria-describedby="inputGroup-sizing-lg">
+            </div>
+            <button id="check" onclick="checkNumber()" type="button" class="btn btn-primary">Check</button>
+        </div>
+        <div id="message" class="display-4 shadow p-3 mb-5 rounded">
+
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
