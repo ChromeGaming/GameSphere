@@ -1,3 +1,7 @@
+:root{
+  --main-color:red;
+}
+
 .section{
     background-color: black;
 }
@@ -24,7 +28,7 @@
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  background: #2a9d8f;
+  background: var(--main-color);
   animation: loading-bounce 0.5s ease-in-out infinite alternate;
 }
 .bouncingball:after {
@@ -82,7 +86,7 @@
   }
 
   .section h3 span{
-    color: rgb(0 159 157);
+    color: var(--main-color);
   }
   
   .wrapper .icon{
@@ -189,7 +193,7 @@
 
   border: 0;
   cursor: pointer;
-  box-shadow: 0px 0px 10px 1px #2980b9;
+  box-shadow: 0px 0px 10px 1px var(--main-color);
 } 
 
 .container3 {
@@ -210,7 +214,7 @@ margin-top: 10vh;
   gap: 1rem;
 }
 .counter-item {
-  background: rgb(0 159 157);
+  background: var(--main-color);
   padding: 2rem 1.5rem;
   text-align: center;
   border-radius: 1rem;
@@ -270,8 +274,8 @@ height: auto;
   text-transform: uppercase;
   font-weight: bold;
   position: relative;
-  border: 2px solid rgb(0 159 157);
-  color: rgb(0 159 157);
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
   z-index: 10;
   width: 300px;
   height: 34px;
@@ -283,7 +287,7 @@ height: auto;
 }
 
 .join-content .discord-btn:hover{
-  background-color: rgb(0 159 157);
+  background-color: var(--main-color);
     color:white;
     transition: ease-in-out;
     animation-duration: 300;
@@ -294,3 +298,24 @@ height: auto;
   padding: 20px;
   text-align: center;
  }
+
+ .background{
+  background-color: var(--main-color);
+ }
+
+ .border{
+  border: 2px solid var(--main-color);
+ }
+
+ .color{
+  color: var(--main-color);
+ }
+
+ .hover:hover{
+  color: var(--main-color);
+ }
+
+ .background-hover:hover{
+  background-color: var(--main-color);
+ }
+

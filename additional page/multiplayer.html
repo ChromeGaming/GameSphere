@@ -16,6 +16,8 @@
 
     <!-- icon css -->
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/dist/color-theme.css">
+    <script src="/src/color-theme.js"></script>
     <title>MultiPlayerGame</title>
 </head>
 <body>
@@ -59,6 +61,30 @@
             </div>
         </div>
     </nav>
+    
+      <!-- color theme part starts -->
+      <div class="theam-div open ">
+        <div class="button-part">
+            
+            <div class="setting"  onclick="translatex()">
+                <i class="fa-solid fa-gear setting-icon" ></i>
+            </div>
+        </div>
+
+        <div class="theams">
+            <p>Theme Colors</p>
+            <div class="theme-buttons">
+                <div class="red" onclick="redtoggle()"></div>
+                <div class="purple" onclick="purpletoggle()"></div>
+                <div class="green" onclick="greentoggle()"></div>
+                <div class="blue" onclick="bluetoggle()"></div>
+                <div class="pink" onclick="pinktoggle()"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- color theme part end -->
     
 </body>
 </html>
