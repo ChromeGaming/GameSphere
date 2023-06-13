@@ -1541,6 +1541,13 @@ color: var(--main-color);
 .game-card {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.game-card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
 .game-card .game-card-top {
