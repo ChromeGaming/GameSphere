@@ -1,0 +1,255 @@
+body {
+    font-family: Arial;
+    text-align: center;
+}
+
+hr {
+    width: 500px;
+    /* padding: 10px; */
+}
+
+#errors {
+    color: coral;
+}
+
+#timer{
+   color: coral;
+   font-size: 25px;
+   font-weight: bold;
+   margin-right: 350px;
+}
+
+#status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+}
+  
+/* #timer, #errors {
+margin: 10px;
+} */
+
+#board {
+    width: 450px;
+    height: 450px;
+    border: 2px solid black;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    width: 48px; 
+    height: 48px;
+    border: 1px solid  rgb(247, 211, 211);
+
+    /* Text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#digits {
+    width: 450px;
+    height: 50px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.number {
+    width: 44px; 
+    height: 44px;
+    border: 1px solid black;
+    margin: 2px;
+
+    /* Text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-selected {
+    background-color: rgb(250, 219, 219);
+}
+
+.tile-start {
+    background-color: rgb(247, 211, 211);
+}
+
+.horizontal-line {
+    border-bottom: 1px solid rgb(83, 66, 66);
+}
+
+.vertical-line {
+    border-right: 1px solid rgb(83, 66, 66);
+}
+
+#congratulations {
+    position: fixed;
+    top: 50%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+    background-color:rgb(247, 211, 211);
+    /* border: 1px solid rgb(65, 48, 48); */
+    border-radius: 50px;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    animation-name: congratulations;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    width: auto;
+    height: auto;
+    display: none;
+}
+
+#congratulations button {
+    display: inline-block;
+    margin: 10px;
+}
+
+ /* #congratulations, #congratulations * {
+    display: block !important;
+    }  */
+
+
+@keyframes congratulations {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 50;
+    display: none;
+}
+
+.tile:hover, .number:hover {
+    cursor: pointer;
+}
+
+.tile-correct {
+    background-color: rgb(255, 246, 246);
+}
+
+#start-again {
+    background-color: rgb(252, 228, 228);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+
+    /* display: none; */
+}
+
+#start-again:hover {
+    background-color: rgb(247, 191, 191);
+}
+
+
+#celebration {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: none;
+    z-index: 100;
+}
+#celebration img {
+    width: 80%;
+}
+#celebration h2 {
+    font-size: 36px;
+}
+
+#start-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+#start-button {
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px 40px;
+    background-color: rgb(252, 228, 228);
+    border-radius: 20px;
+}
+#start-button:hover {
+    cursor: pointer;
+}
+
+label[for="difficulty"] {
+    font-size: 16px;
+    font-weight: bold;
+    color: coral;
+}
+  
+
+#difficulty {
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(252, 228, 228) ;
+}
+  
+
+#play-again-logo {
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: fixed;
+    top: 70%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 100;
+    border-width: 1cap;
+    border-radius: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    animation-name: congratulations;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+   
