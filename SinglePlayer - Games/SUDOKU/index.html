@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
+        <title>Sudoku</title>
+
+        <link rel="stylesheet" href="sudoku.css">
+        <script src="sudoku.js"></script>
+    </head>
+
+    <body>
+        <h1>SUDOKU</h1>
+        <hr>
+        <div id="start-screen">
+            <label for="difficulty">Select difficulty:</label>
+            <select id="difficulty">
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+              <option value="very-hard">Very Hard</option>
+              <option value="insane">Insane</option>
+              <option value="inhuman">Inhuman</option>
+            </select><br>
+             <!-- Add a line break here -->
+            <button id="start-button">START</button>
+        </div>
+          
+        
+        <div id="status">
+            <div id="timer">00:00</div>
+            <h2 id="errors">0</h2>
+        </div>
+
+        <!-- 9x9 board -->
+        <div id="board"></div>
+        <br>
+        <div id="digits">
+        </div>
+        <div id="congratulations">
+            <div>Congratulations! Your score is: <span id="score"></span></div>
+            <button id="ok-button">OK</button>
+            <button id="play-again-button">Play Again</button>
+        </div>
+        
+        <!-- <div id="celebration">
+            <img src="confetti2.gif" alt="Confetti">
+            <h2>You did it!</h2>
+        </div> -->
+        <img id="play-again-logo" src="play-again-logo.jpg">
+
+        <div id="overlay"></div>
+        
+
+        <button id="start-again" type="button">Start again</button>
+         
+
+    </body>
+
+
+</html>
