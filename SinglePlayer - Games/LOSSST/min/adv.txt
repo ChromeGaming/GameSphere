@@ -1,0 +1,1 @@
+.\advzip.exe -z -4 .\min.zip

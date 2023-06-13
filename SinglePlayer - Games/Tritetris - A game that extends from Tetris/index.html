@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Tritetris</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="./style/main.css" type="text/css">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui"> -->
+    <meta property="og:title" content="Tritetris"/>
+    <meta property="og:site_name" content="Tritetris"/>
+    <meta property="og:description" content="Tritetris is a game that extends from Tetris."/>
+    <meta property="og:url" content="https://enzeberg.github.io/tritetris/">
+    <meta name="keywords" content="Tritetris, Tetris, Elimination game">
+    <meta name="description" content="Tritetris is a game that extends from Tetris."/>
+    <meta name="applicable-device" content="pc, mobile">
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1 class="title">Tritetris</h1>
+      </div>
+      <div class="game-container">
+        <div class="lose-container">
+          <div class="lose">
+            <p>Oops, you lose!</p>
+            <div class="replay-btn">Enjoy Again</div>
+          </div>
+        </div>
+        <div class="top-area">
+          <div class="landing-interval">Landing Interval:     
+            <span class="interval-value"></span>
+          </div>
+          <div class="about-score">
+            <div class="score-and-best">
+              <div class="best"></div>
+              <div class="score"></div>
+            </div>
+          </div>
+        </div>
+        <canvas width="500" height="500" class="game-canvas" style="background-color:rgb(200,180,150)"></canvas>
+        <div class="bottom-area">
+          <div class="pause-or-continue-btn">Pause</div>
+          <div class="deform-btn">Deform</span></div>
+          <div class="clockwise-btn">Clockwise</span></div>
+          <div class="anticlockwise-btn">Anticlockwise</div>
+        </div>     
+      </div>
+      <div class="introduction">
+        <div class="how-to-play">
+          <h3>How to play:</h3>
+          <h4>for Desktop</h4>
+          <ul>
+            <li>Arrow Keys: move the Tetris blocks</li>
+            <li>Up Arrow Key: deform the Tetris blocks</li>
+            <li>A / D: rotate the triangle</li>
+          </ul>
+          <h4>for Mobile</h4>
+          <p>Touch the <strong>canvas</strong> to move the Tetris blocks.</p>
+        </div>
+        <div class="tips">
+          <h3>Tips:</h3>
+          <p>The more squares you clear at once, the higher the score you get!</p>
+        </div>
+        <div class="note">
+          <h3>Note:</h3>
+          <ul>
+            <li>When the falling tetromino is totally under the middle thin line, you can't rotate the triangle.</li>
+            <li>When the falling tetromino hits the squares fixed on the triangle after rotating, the tetromino goes up to avoid covering the still squares.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="./js/vector.js"></script>  
+    <script src="./js/triangle.js"></script>
+    <script src="./js/line.js"></script>
+    <script src="./js/square.js"></script>
+    <script src="./js/block.js"></script>
+    <script src="./js/input_manager.js"></script>
+    <script src="./js/local_storage_manager.js"></script>
+    <script src="./js/ui_manager.js"></script>
+    <script src="./js/game.js"></script>
+    <script>
+      (function(){
+        var cv = document.querySelector("canvas");
+        var squareSide = 0.032*cv.width;
+        var cx = cv.getContext("2d");
+        cx.translate(cv.width/2, cv.height/2);
+        var game = new Game(squareSide, cx);
+      })(); 
+    </script>
+  </body>
+</html>

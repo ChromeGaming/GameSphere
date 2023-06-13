@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=600, user-scalable=0"/>
+    <meta charset="UTF-8">
+    <title>Curve</title>
+    <link href="game.css" rel="stylesheet" />
+    <script src="game.js"> </script>
+    <script src="cordova.js"></script>
+</head>
+<body>
+    <div id="holder">
+        <canvas class="overlay" id="game-canvas"></canvas>
+        <div class="overlay screen" id="start-screen">
+            <div class="title"></div>
+            <button onclick="startGame(true)"> Tutorial </button>
+            <button onclick="startGame(false)"> Play </button>
+            <button onclick="transition(sI('settings-screen'))"> Settings </button>
+            <div class="credits"> By Durgesh4993 </div>
+        </div>
+        <div class="overlay screen" id="settings-screen">
+            <div class="title"> Settings </div>
+            <div class="setting">
+                <label>Sound</label>
+                <input type="checkbox"></input>
+            </div>
+            <div class="setting">
+                <label>Joystick size</label>
+                <input type="range"></input>
+            </div>
+            <div class="actions">
+                <button onclick="backToMenu()"> Menu </button>
+                <button onclick="saveSettings()"> Save </button>
+            </div>
+        </div>
+        <div class="overlay screen" id="end-screen">
+            <div class="title"> Game over </div>
+            <div class="stats-info">
+                <div> Score <span class="stats" id="end-score">0</span> </div>
+                <div> Highscore <span class="stats" id="end-highscore">0</span> </div>
+            </div>
+            <div class="actions">
+                <button onclick="backToMenu()"> Menu </button>
+                <button onclick="restartGame()"> Restart </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

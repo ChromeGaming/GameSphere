@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<title>Scroll Run!</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="mobile-web-app-capable" content="yes" />
+<style>
+  body {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+  }
+  ::-webkit-scrollbar {
+    display: none; /* Webkit */
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0.5rem;
+
+    background-color: #ab3627;
+    /* noise */
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAP2ElEQVR4Xu3dL9RVRRfH8ecWKVikYNGCxROwaIGiBQsWKFKkYNGiRQsEKFC0YMEiRQoWKFigSNGC4VCwSNEiBQsW3/W+a31O+L7r9gnzlLuee8+Z2XPO77f/zOzZs7t48eJy5cqV9YsvvliuXbu2ruu6LMuynjp1avnxxx/Xq1evLl9++eV6/fr15dNPP13v3LmzfPDBB9v1//7777Lb7dbnz58vL7/88vrHH38sr7766nrhwoXl22+/XV966aXln3/+2b6/f//+8t57763Hjh1bfvvtt/X7779fzp07t3744YfLrVu31u+++245f/78enBwsBwcHGzfHz58ePn777+378n7ySefLN98881Kjnv37i3vv//+Ju+JEyeWhw8frm+//fbyyy+/rH/99ddy5MiRrV/yGt/vv/++vP766+trr722PH36dH306NHy1ltvbeMgv+u19+677y4PHjxY/f7VV18tn3/++Xr79u3l7Nmz2zhc9/PPPy/vvPPO9nw9793B/BvqCfz3hfwPiT4h9KOPPlpu3ry5MQZyIN/vEAapT548Wd54440VMou4GzduLB9//PF69OjR5c8//9yQinkvXrxYDh069H9MKKPIcebMmeWHH35Y9QOZ2tef6zFSP5cvX14uXbq0MZrcvtcOpve5GDc5MNnnK6+8sjx79mxj6PHjx5dff/11YyqG0VSTIUPx4+BgBzmQve8NYwIk0410KR0IWRhXZGMg3Uy3063u8z/kQeibb765PH78eLNxEHr69Onl7t272/cYQ6frh3zkdr/xYQi5tVtbRI4yxvjI73liJoZot0ycDBmNIXQpREA6RHijvCi6DqN8j2kQzuuh0yHRdZjGm4E4/fG6eH0QDll0M6Z+9tlny9dff72STz9FNu8MsskB2e4jL2bS9eSDbP2zNa7DQP17Dr43Xs8LgyZDRmMIpHhD3njfrHgEQiCW309XYs5PP/20nDx5cotXMJGuxiDMhDCM8Ol3n+Tlx/se8iBRfxhjPBiB2eQmj+eAgeQwLu2zbRilPbZD/xiJwZjo+RnHjEMGYwZxdhAA+RDvTUMUJEIIHeqNQwLk+B7jtKc/SGQTeEWQRg661veYpH0II5freHEYoj862/WYbPyuZwvIRc56fWxNZxrE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);
+    background-size: 100px 100px;
+  }
+
+  .wrap {
+    margin: 0 auto;
+    max-width: 42rem;
+    position: relative;
+  }
+
+  .track {
+    border-left: .5rem solid rgba(255,255,255,0.9);
+    border-right: .5rem solid rgba(255,255,255,0.9);
+
+    padding: 2rem;
+  }
+
+  .chalk {
+    font-family: monospace;
+    color: #FFF;
+    text-shadow: #FFF 0 0 1px;
+    opacity: 0.9;
+  }
+
+  .track .segment {
+    position: relative;
+    border-bottom: .5rem solid rgba(255,255,255,0.9);
+    display: flex;
+    flex-direction: column;
+    min-height: 5rem;
+  }
+
+  .d10 {
+    height: 10rem;
+  }
+
+  .d100 {
+    height: 100rem;
+  }
+
+  .track .label {
+    font-size: 3rem;
+    margin-left: auto;
+    margin-top: auto;
+  }
+
+  .finish::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4rem;
+    bottom: -4rem;
+
+    background-image: linear-gradient(45deg, #000 25%, transparent 25%), linear-gradient(-45deg, #000 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #000 75%), linear-gradient(-45deg, transparent 75%, #000 75%);
+    background-size: 2rem 2rem;
+    background-position: 0 0, 0 1rem, 1rem 1rem, 1rem 0;
+    background-color: white;
+  }
+
+  .title {
+    font-size: 7rem;
+    text-align: center;
+    margin-top: auto;
+  }
+
+  .menu {
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  button {
+    background: none;
+    border: 0;
+    display: block;
+    width: 100%;
+    align-items: normal;
+  }
+
+  .scoreboard {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.5);
+    font-family: monospace;
+    font-size: 4rem;
+  }
+
+  .score {
+    padding: 0.5rem;
+  }
+
+  .announcement {
+    position: fixed;
+    top: 15rem;
+    right: 0.5rem;
+    left: 0.5rem;
+  }
+
+  .bubble {
+    background: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-family: sans-serif;
+    font-size: 2rem;
+
+    position: absolute;
+    left: 0.25rem;
+    filter: drop-shadow(0px 0px .5rem rgba(0,0,0,0.7));
+    transform: rotate(-1deg);
+    transition: 200ms;
+  }
+
+  .bubble::after {
+    border: 0.75rem solid transparent;
+    content: "";
+    height: 0;
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+
+    border-right-color: #fff;
+    right: 100%;
+
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .bubble.silent {
+    opacity: 0;
+    transform: rotate(30deg) translate(-100%, -100%);
+  }
+
+  .hide {
+    display: none;
+  }
+
+  @media (max-width: 500px) {
+    .title {
+      font-size: 5rem;
+    }
+
+    .bubble {
+      font-size: 1.5rem;
+    }
+
+    .track {
+      padding: 1rem;
+    }
+  }
+</style>
+
+<div class="track wrap"></div>
+<div class="announcement">
+  <div class="wrap"><div class="bubble">Choose your distance</div></div>
+</div>
+
+<div class="scoreboard hide">
+  <div class="wrap score">
+    0
+  </div>
+</div>
+
+<script>
+  // this code is a messy bunch of functions
+  // didn't have time to clean it up before the deadline, sorry ;)
+
+  // helpers
+
+  function debounce(func, wait) {
+    let timeout;
+
+    return function() {
+      clearTimeout(timeout);
+      timeout = setTimeout(func, wait);
+    };
+  }
+
+  function showEl(el) { el.classList.remove("hide"); }
+
+  function hideEl(el) { el.classList.add("hide"); }
+
+  function readTopScore() {
+    if (window.localStorage) {
+      try {
+        const score = JSON.parse(window.localStorage.getItem("SCROLL_RUN_SCORE"));
+        return score || {};
+      } catch(e) {
+        return {};
+      }
+    }
+  }
+
+  function saveTopScore(score) {
+    if (window.localStorage) {
+      window.localStorage.setItem("SCROLL_RUN_SCORE", JSON.stringify(score));
+    }
+  }
+
+  function randInt(max) { return ~~(Math.random() * max); }
+
+  function formatTime(ms) { return `${ms / 1000}s`; }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const topScore = readTopScore();
+
+    // DOM
+    const trackEl = document.querySelector(".track");
+    const bubbleEl = document.querySelector(".bubble");
+    const scoreBoardEl = document.querySelector(".scoreboard");
+    const scoreEl = document.querySelector(".score");
+    const body = document.body;
+    let startEl = null;
+    let titleEl = null;
+
+    // dom helpers
+    function lockScroll() {
+      body.style.overflow = "hidden";
+    }
+
+    function unlockScroll() {
+      body.style.overflow = "";
+    }
+
+    // render functions
+
+    function renderMenu() {
+      trackEl.innerHTML = `
+        <div class="segment">
+          <span class="title chalk">SCROLL RUN</span>
+        </div>
+        <button class="segment d10" data-start="1000">
+          <span class="label chalk">1k</span>
+        </button>
+        <button class="segment d10" data-start="5000">
+          <span class="label chalk">5k</span>
+        </button>
+        <button class="segment d10" data-start="10000">
+          <span class="label chalk">10k</span>
+        </button>
+        <button class="segment d10" data-start="21097">
+          <span class="label chalk">21k</span>
+        </button>
+        <button class="segment d10" data-start="42195">
+          <span class="label chalk">42k</span>
+        </button>
+      `;
+    }
+
+    function renderRun(distance) {
+      let track = `
+        <div class="segment start d10">
+          <span class="title chalk">START</span>
+        </div>
+      `;
+
+      for (i = 0; i < distance / 100; i++) {
+        let segmentDistance = (i + 1) * 100;
+
+        if (segmentDistance > distance) {
+          segmentDistance = distance;
+        }
+
+        track += `
+          <div class="segment d100">
+            <span class="label chalk">${segmentDistance}</span>
+          </div>
+        `;
+      }
+
+      trackEl.innerHTML = track;
+      startEl = trackEl.querySelector(".start");
+      titleEl = trackEl.querySelector(".title");
+    }
+
+    // game state
+
+    let count; // countdown counter
+    let startTime; // start of the run
+    let time; // current time
+    let timeInterval; // time counting setTnterval ref to clear
+    let checkpoint; // reached the scroll checkpoint ?
+    let distance; // distance of current run
+    let finished; // has run finished
+    let silenceOnScroll; // should scroll silence the comment?
+    let silenceTimeout; // comment silence setTimeout reference to clear
+    let commentTimeout; // comment setTimeout ref to clear
+
+    function initMenu() {
+      hideEl(scoreBoardEl);
+      renderMenu();
+      say("Choose your distance");
+      finished = false;
+    }
+
+    function initRun(dist) {
+      distance = dist;
+      checkpoint = false;
+      time = 0;
+      window.scrollTo(0, 1);
+
+      lockScroll();
+      renderRun(distance);
+      initCountdown();
+    }
+
+    function initCountdown() {
+      count = 5;
+
+      function countdown() {
+        if (count) {
+          say(`Start in: ${count}...`);
+          count -= 1;
+          setTimeout(countdown, 1000);
+        } else {
+          startRun();
+        }
+      }
+
+      countdown();
+    }
+
+    // comment bubble
+
+    function say(something) {
+      clearTimeout(silenceTimeout);
+      bubbleEl.classList.remove("silent");
+      bubbleEl.innerHTML = something;
+    }
+
+    function silence(delay) {
+      silenceOnScroll = false;
+      clearTimeout(silenceTimeout);
+
+      if (!delay) {
+        bubbleEl.classList.add("silent");
+      } else {
+        silenceTimeout = setTimeout(function(){
+          bubbleEl.classList.add("silent");
+        }, delay);
+      }
+    }
+
+    const comments = [
+      "Run, Forrest, Run!",
+      "Run like you stole something!",
+      "There will be cake!",
+      "Almost there!",
+      "If only real running was that easy!",
+      "Faster!",
+      "Go! Go! Go!",
+      "You can do it!",
+      "Am I distracting you?",
+      "Lorem ipsum!" // aaa, I need to sumbit it soon and I'm out of ideas ;)
+    ];
+
+    function initComments() {
+      function comment() {
+        say(comments[randInt(comments.length)]);
+        silence(2000 + randInt(3000));
+
+        commentTimeout = setTimeout(comment, 6000 + randInt(5000));
+      }
+      commentTimeout = setTimeout(comment, 7000 + randInt(5000));
+    }
+
+    function startRun() {
+      unlockScroll();
+      showEl(scoreBoardEl);
+      say("Scroll!");
+      silence(5000);
+      silenceOnScroll = true;
+
+      startTime = Date.now();
+      timeInterval = setInterval(timeTick, 1);
+
+      window.addEventListener("scroll", debouncedScroll);
+      initComments();
+    }
+
+    function finishRun() {
+      clearInterval(timeInterval);
+      clearTimeout(commentTimeout);
+
+      if (!topScore[distance] || time < topScore[distance]) {
+        say(`Finished in ${formatTime(time)}!<br/>New record!`);
+        topScore[distance] = time;
+        saveTopScore(topScore);
+      } else {
+        const diff = time - topScore[distance];
+        say(`Finished in ${formatTime(time)}!<br/>${formatTime(diff)} to beat the record.`);
+      }
+
+      window.removeEventListener("scroll", debouncedScroll);
+      finished = true;
+    }
+
+    function timeTick() {
+      const now = Date.now();
+      time = now - startTime;
+      scoreEl.innerHTML = formatTime(time);
+    }
+
+    function checkpointReached() {
+      clearTimeout(commentTimeout);
+      say("Scroll back!");
+      silence(5000);
+      silenceOnScroll = true;
+      initComments();
+
+      checkpoint = true;
+      startEl.classList.add("finish");
+      titleEl.innerHTML = "FINISH";
+    }
+
+    window.addEventListener("click", function(event) {
+      if (finished) {
+        initMenu();
+        return;
+      }
+
+      const target = event.target.closest("[data-start]");
+
+      if (target) {
+        if (target.dataset["start"]) {
+          initRun(+target.dataset["start"]);
+        }
+      }
+    });
+
+    function scrollHandler() {
+      if (silenceOnScroll) {
+        silence();
+        silenceOnScroll = false;
+      }
+
+      if (
+        window.innerHeight + window.pageYOffset >=
+        document.body.offsetHeight
+      ) {
+        checkpointReached();
+      }
+      if (window.pageYOffset <= 0 && checkpoint) {
+        finishRun();
+      }
+    }
+
+    const debouncedScroll = debounce(scrollHandler, 200);
+
+    initMenu();
+  });
+</script>

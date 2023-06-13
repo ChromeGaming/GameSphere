@@ -6,6 +6,8 @@
         <title>GameSphere.</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- favicon --> 
+        <link rel="icon" style="border-radius: 100%;" href="assets/Logo.png">
         <!-- font awesome cdn -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- slick slider css -->
@@ -13,6 +15,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- custom css (tailwind) -->
         <link rel="stylesheet" href="dist/main.css">
+
+        <!-- icon css -->
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
     
@@ -21,7 +26,7 @@
                 <div class = "container w-full">
                     <div class = "navbar-content">
                         <div class = "brand-and-toggler flex items-center justify-between">
-                            <a href = "#" class = "navbar-brand">Game<span class = "text-green-normal">Sphere</span></a>
+                            <a target="_blank" href = "#" class = "navbar-brand">Game<span class = "text-green-normal">Sphere</span></a>
                             <button type = "button" class = "lg:hidden text-white text-2xl" id = "navbar-show-btn">
                                 <i class = "fas fa-bars"></i>
                             </button>
@@ -34,23 +39,21 @@
 
                             <ul class = "navbar-nav">
                                 <li class = "nav-item">
-                                    <a href = "#" class = "nav-link">home</a>
+                                    <a target="_blank" href = "index.html" class = "nav-link">home</a>
                                 </li>
                                 <li class = "nav-item">
-                                    <a href = "#" class = "nav-link">Games</a>
+                                    <a target="_blank" href = "additional page/game.html" class = "nav-link">Games</a>
                                 </li>
                                 <li class = "nav-item">
-                                    <a href = "#" class = "nav-link">Tournament</a>
+                                    <a target="_blank" href = "additional page/multiplayer.html" class = "nav-link">Multiplayer</a>
                                 </li>
                                 <li class = "nav-item">
-                                    <a href = "#" class = "nav-link">Join community</a>
+                                    <a target="_blank" href = "https://discord.gg/dakzwdz4ev" class = "nav-link">Join community</a>
                                 </li>
                                 <li class = "nav-item">
-                                    <a href = "#" class = "nav-link">Blogs</a>
+                                    <a target="_blank" href = "additional page/contact.html" class = "nav-link">Contact Us</a>
                                 </li>
-                                <li class = "nav-item">
-                                    <a href = "#" class = "nav-link">Contact Us</a>
-                                </li>
+                              
                             </ul>
 
                             
@@ -59,7 +62,7 @@
                 </div>
             </nav>
 
-            <div class = "banner-content" >
+            <div class = "banner-content" style="margin-top: 100px;" >
                 <div class = "banner-badge">Hello Gamers</div>
                 <h1 class = "banner-title">Play Games With Your Friends</h1>
                 <p class = "lead-text">In this platform we are  here to play games with our friends at a same time without any interuption Our primary goal is to create a plateform where two or more friends can gather and play games online (such as multiplayer) without having to download any software or tools to their computers or mobile devices.</p>
@@ -67,8 +70,11 @@
                     <span class = "me-4">
                         <img src = "assets/icons/console.svg" alt = "">
                     </span>
-                    <span>play now</span>
+                    <span><a target="_blank" href="SinglePlayer - Games/Formation Absent/index.html">play now</a></span>
                 </button>
+                   <div class="bouncingball-div">
+                <div class="bouncingball"></div>
+            </div>
             </div>
         </header>
 
@@ -82,17 +88,17 @@
                 <div class="game-card-list grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                     <div class = "game-card">
                         <div class = "game-card-top img-fit-cover">
-                            <img src = "assets/images/game-1.png" alt = "">
+                            <img src = "SinglePlayer - Games/Banner - image/Menja.png" alt = "">
                             <div class = "ratings-count">
-                                241
+                                211
                                 <img src = "assets/icons/star-black.svg" alt = "" class = "ms-2">
                             </div>
                         </div>
                         <div class = "game-card-bottom">
                             <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
                                 <div class = "py-1">
-                                    <h4 class = "text-white uppercase game-card-title">Ludo King</h4>
-                                    <p class = "para-text">Roll the Dice and Let the Fun Begin ...</p>
+                                    <h4 class = "text-white uppercase game-card-title">Menja</h4>
+                                    <p class = "para-text">Unleash the power within. Conquer, create, and redefine your gaming destiny with Menja...</p>
                                 </div>
                                 <div class = "star-rating mt-2 sm:mt-0 py-1">
                                     <img src = "assets/icons/star-green.svg">
@@ -107,7 +113,7 @@
                                 <div class = "details-group">
                                     <div class = "flex items-center">
                                         <p class = "font-semibold">Release Date: &nbsp;</p>
-                                        <p>07.12.2015</p>
+                                        <p>28.05.2023</p>
                                     </div>
                                     <div class = "flex items-center">
                                         <p class = "font-semibold">Updated: &nbsp;</p>
@@ -116,7 +122,7 @@
                                 </div>
 
                                 <div class = "flex flex-col items-end justify-between">
-                                    <a href = "#" class = "btn-primary uppercase">Play Now</a>
+                                    <a target="_blank" href = "SinglePlayer - Games/Menja/Menja.html" class = "btn-primary uppercase">Play Now</a>
                                 </div>
                             </div>
                         </div>
@@ -124,17 +130,17 @@
 
                     <div class = "game-card">
                         <div class = "game-card-top img-fit-cover">
-                            <img src = "assets/images/game-2.png" alt = "">
+                            <img src = "SinglePlayer - Games/Banner - image/Sci-Fi Alchemy.png" alt = "">
                             <div class = "ratings-count">
-                                241
+                                41
                                 <img src = "assets/icons/star-black.svg" alt = "" class = "ms-2">
                             </div>
                         </div>
                         <div class = "game-card-bottom">
                             <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
                                 <div class = "py-1">
-                                    <h4 class = "text-white uppercase game-card-title">carrom </h4>
-                                    <p class = "para-text">No boredom on our board games ....</p>
+                                    <h4 class = "text-white uppercase game-card-title">Sci-Fi Alchemy </h4>
+                                    <p class = "para-text">Sci-Fi Alchemy! Experience the addictive fun of Sci-Fi Alchemy and soar to new heights ....</p>
                                 </div>
                                 <div class = "star-rating mt-2 sm:mt-0 py-1">
                                     <img src = "assets/icons/star-green.svg">
@@ -149,7 +155,7 @@
                                 <div class = "details-group">
                                     <div class = "flex items-center">
                                         <p class = "font-semibold">Release Date: &nbsp;</p>
-                                        <p>07.12.2015</p>
+                                        <p>28.05.2023</p>
                                     </div>
                                     <div class = "flex items-center">
                                         <p class = "font-semibold">Updated: &nbsp;</p>
@@ -158,7 +164,7 @@
                                 </div>
 
                                 <div class = "flex flex-col items-end justify-between">
-                                    <a href = "#" class = "btn-primary uppercase">play now</a>
+                                    <a target="_blank" href = "SinglePlayer - Games/Sci-Fi Alchemy/index.html" class = "btn-primary uppercase">play now</a>
                                 </div>
                             </div>
                         </div>
@@ -166,17 +172,17 @@
 
                     <div class = "game-card">
                         <div class = "game-card-top img-fit-cover">
-                            <img src = "assets/images/game-3.png" alt = "">
+                            <img src = "SinglePlayer - Games/Banner - image/HexGL-master.png" alt = "">
                             <div class = "ratings-count">
-                                241
+                                321
                                 <img src = "assets/icons/star-black.svg" alt = "" class = "ms-2">
                             </div>
                         </div>
                         <div class = "game-card-bottom">
                             <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
                                 <div class = "py-1">
-                                    <h4 class = "text-white uppercase game-card-title">tic tac toe</h4>
-                                    <p class = "para-text">Unleash your strategic prowess in the ultimate game of Tic Tac Toe!...</p>
+                                    <h4 class = "text-white uppercase game-card-title">HexGL-master</h4>
+                                    <p class = "para-text">Enter the futuristic realm of speed and precision. Dominate the race virtual world in HexGL Master!"...</p>
                                 </div>
                                 <div class = "star-rating mt-2 sm:mt-0 py-1">
                                     <img src = "assets/icons/star-green.svg">
@@ -191,7 +197,7 @@
                                 <div class = "details-group">
                                     <div class = "flex items-center">
                                         <p class = "font-semibold">Release Date: &nbsp;</p>
-                                        <p>07.12.2015</p>
+                                        <p>28.05.2023</p>
                                     </div>
                                     <div class = "flex items-center">
                                         <p class = "font-semibold">Updated: &nbsp;</p>
@@ -200,7 +206,7 @@
                                 </div>
 
                                 <div class = "flex flex-col items-end justify-between">
-                                    <a href = "#" class = "btn-primary uppercase">Play Now</a>
+                                    <a target="_blank" href = "SinglePlayer - Games/HexGL-master/index.html" class = "btn-primary uppercase">Play Now</a>
                                 </div>
                             </div>
                         </div>
@@ -208,7 +214,7 @@
 
                     <div class = "game-card">
                         <div class = "game-card-top img-fit-cover">
-                            <img src = "assets/images/game-4.png" alt = "">
+                            <img src = "SinglePlayer - Games/Banner - image/JunoJs.png" alt = "">
                             <div class = "ratings-count">
                                 241
                                 <img src = "assets/icons/star-black.svg" alt = "" class = "ms-2">
@@ -217,8 +223,8 @@
                         <div class = "game-card-bottom">
                             <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
                                 <div class = "py-1">
-                                    <h4 class = "text-white uppercase game-card-title">Rock, Paper, Scissors</h4>
-                                    <p class = "para-text">Unleash your hand's destiny in the ultimate battle of wits!...</p>
+                                    <h4 class = "text-white uppercase game-card-title">JUNO </h4>
+                                    <p class = "para-text">Rev up your engines, navigate the chaos! Take control of the streets JUNO!...</p>
                                 </div>
                                 <div class = "star-rating mt-2 sm:mt-0 py-1">
                                     <img src = "assets/icons/star-green.svg">
@@ -233,7 +239,7 @@
                                 <div class = "details-group">
                                     <div class = "flex items-center">
                                         <p class = "font-semibold">Release Date: &nbsp;</p>
-                                        <p>07.12.2015</p>
+                                        <p>30.05.2023</p>
                                     </div>
                                     <div class = "flex items-center">
                                         <p class = "font-semibold">Updated: &nbsp;</p>
@@ -242,7 +248,7 @@
                                 </div>
 
                                 <div class = "flex flex-col items-end justify-between">
-                                    <a href = "#" class = "btn-primary uppercase">play now</a>
+                                    <a target="_blank" href = "SinglePlayer - Games/JunoJs/index.html" class = "btn-primary uppercase">play now</a>
                                 </div>
                             </div>
                         </div>
@@ -250,17 +256,17 @@
 
                     <div class = "game-card">
                         <div class = "game-card-top img-fit-cover">
-                            <img src = "assets/images/game-5.png" alt = "">
+                            <img src = "SinglePlayer - Games/Banner - image/tower.png" alt = "">
                             <div class = "ratings-count">
-                                241
+                                291
                                 <img src = "assets/icons/star-black.svg" alt = "" class = "ms-2">
                             </div>
                         </div>
                         <div class = "game-card-bottom">
                             <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
                                 <div class = "py-1">
-                                    <h4 class = "text-white uppercase game-card-title">snake and Ladders</h4>
-                                    <p class = "para-text"> Embark on an unpredictable journey with Snake and Ladders!...</p>
+                                    <h4 class = "text-white uppercase game-card-title">Tower Build</h4>
+                                    <p class = "para-text"> Reach for the sky of dreams! Build your towering empire in the captivating world of Tower Build...</p>
                                 </div>
                                 <div class = "star-rating mt-2 sm:mt-0 py-1">
                                     <img src = "assets/icons/star-green.svg">
@@ -275,7 +281,7 @@
                                 <div class = "details-group">
                                     <div class = "flex items-center">
                                         <p class = "font-semibold">Release Date: &nbsp;</p>
-                                        <p>07.12.2015</p>
+                                        <p>30.05.2023</p>
                                     </div>
                                     <div class = "flex items-center">
                                         <p class = "font-semibold">Updated: &nbsp;</p>
@@ -284,7 +290,50 @@
                                 </div>
 
                                 <div class = "flex flex-col items-end justify-between">
-                                    <a href = "#" class = "btn-primary uppercase">Play now</a>
+                                    <a target="_blank" href = "SinglePlayer - Games/tower/index.html" class = "btn-primary uppercase">Play now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class = "game-card">
+                        <div class = "game-card-top img-fit-cover">
+                            <img src = "SinglePlayer - Games/Banner - image/hextris-gh-pages.png" alt = "">
+                            <div class = "ratings-count">
+                                420
+                                <img src = "assets/icons/star-black.svg" alt = "" class = "ms-2">
+                            </div>
+                        </div>
+                        <div class = "game-card-bottom">
+                            <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
+                                <div class = "py-1">
+                                    <h4 class = "text-white uppercase game-card-title">hextris</h4>
+                                    <p class = "para-text">Rotate, match, conquer! Experience the challenge of Hextris puzzle-solving prowess...</p>
+                                </div>
+                                <div class = "star-rating mt-2 sm:mt-0 py-1">
+                                    <img src = "assets/icons/star-green.svg">
+                                    <img src = "assets/icons/star-green.svg">
+                                    <img src = "assets/icons/star-green.svg">
+                                    <img src = "assets/icons/star-green.svg">
+                                    <img src = "assets/icons/star-green-half.svg">
+                                </div>
+                            </div>
+
+                            <div class = "block-wrap flex justify-between items-end">
+                                <div class = "details-group">
+                                    <div class = "flex items-center">
+                                        <p class = "font-semibold">Release Date: &nbsp;</p>
+                                        <p>06.06.1984</p>
+                                    </div>
+                                    <div class = "flex items-center">
+                                        <p class = "font-semibold">Updated: &nbsp;</p>
+                                        <p>Action | Desktop</p>
+                                    </div>
+                                </div>
+
+                                <div class = "flex flex-col items-end justify-between">
+                                    <a target="_blank" href = "SinglePlayer - Games/hextris-gh-pages/index.html" class = "btn-primary uppercase">play now</a>
                                 </div>
                             </div>
                         </div>
@@ -292,7 +341,7 @@
 
                     <div class = "game-card">
                         <div class = "game-card-top img-fit-cover">
-                            <img src = "assets/images/game-6.png" alt = "">
+                            <img src = "SinglePlayer - Games/Banner - image/Blanks Detective.png" alt = "">
                             <div class = "ratings-count">
                                 241
                                 <img src = "assets/icons/star-black.svg" alt = "" class = "ms-2">
@@ -301,8 +350,8 @@
                         <div class = "game-card-bottom">
                             <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
                                 <div class = "py-1">
-                                    <h4 class = "text-white uppercase game-card-title">Air Hockey</h4>
-                                    <p class = "para-text">Glide, Strike, and Dominate! Experience the thrill of airborne competition!...</p>
+                                    <h4 class = "text-white uppercase game-card-title">Blanks Detective</h4>
+                                    <p class = "para-text">Blast off into epic battles. Command your starship, defy gravity, world of Space-War!...</p>
                                 </div>
                                 <div class = "star-rating mt-2 sm:mt-0 py-1">
                                     <img src = "assets/icons/star-green.svg">
@@ -326,15 +375,102 @@
                                 </div>
 
                                 <div class = "flex flex-col items-end justify-between">
-                                    <a href = "#" class = "btn-primary uppercase">play now</a>
+                                    <a target="_blank" href = "SinglePlayer - Games/Blanks Detective/index.html" class = "btn-primary uppercase">play now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class = "game-card">
+                        <div class = "game-card-top img-fit-cover">
+                            <img src = "SinglePlayer - Games/Banner - image/PACKABUNCHAS.png" alt = "">
+                            <div class = "ratings-count">
+                                221
+                                <img src = "assets/icons/star-black.svg" alt = "" class = "ms-2">
+                            </div>
+                        </div>
+                        <div class = "game-card-bottom">
+                            <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
+                                <div class = "py-1">
+                                    <h4 class = "text-white uppercase game-card-title">PACKABUNCHAS </h4>
+                                    <p class = "para-text">Beyond the Stars, They Embrace. Space Huggers: Alien Affection Awaits....</p>
+                                </div>
+                                <div class = "star-rating mt-2 sm:mt-0 py-1">
+                                    <img src = "assets/icons/star-green.svg">
+                                    <img src = "assets/icons/star-green.svg">
+                                    <img src = "assets/icons/star-green.svg">
+                                    <img src = "assets/icons/star-green.svg">
+                                    <img src = "assets/icons/star-green-half.svg">
+                                </div>
+                            </div>
+
+                            <div class = "block-wrap flex justify-between items-end">
+                                <div class = "details-group">
+                                    <div class = "flex items-center">
+                                        <p class = "font-semibold">Release Date: &nbsp;</p>
+                                        <p>07.12.2015</p>
+                                    </div>
+                                    <div class = "flex items-center">
+                                        <p class = "font-semibold">Updated: &nbsp;</p>
+                                        <p>Action | Desktop</p>
+                                    </div>
+                                </div>
+
+                                <div class = "flex flex-col items-end justify-between">
+                                    <a target="_blank" href = "SinglePlayer - Games/PACKABUNCHAS/index.html" class = "btn-primary uppercase">play now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class = "game-card">
+                        <div class = "game-card-top img-fit-cover">
+                            <img src = "SinglePlayer - Games/Banner - image/Spaceship Escort.png" alt = "">
+                            <div class = "ratings-count">
+                                341
+                                <img src = "assets/icons/star-black.svg" alt = "" class = "ms-2">
+                            </div>
+                        </div>
+                        <div class = "game-card-bottom">
+                            <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
+                                <div class = "py-1">
+                                    <h4 class = "text-white uppercase game-card-title">SPACESHIP ESCORT </h4>
+                                    <p class = "para-text">Embrace the Darkness. Unleash the Decay. SPACESHIP ESCORT: Masters of survival....</p>
+                                </div>
+                                <div class = "star-rating mt-2 sm:mt-0 py-1">
+                                    <img src = "assets/icons/star-green.svg">
+                                    <img src = "assets/icons/star-green.svg">
+                                    <img src = "assets/icons/star-green.svg">
+                                    <img src = "assets/icons/star-green.svg">
+                                    <img src = "assets/icons/star-green-half.svg">
+                                </div>
+                            </div>
+
+                            <div class = "block-wrap flex justify-between items-end">
+                                <div class = "details-group">
+                                    <div class = "flex items-center">
+                                        <p class = "font-semibold">Release Date: &nbsp;</p>
+                                        <p>07.12.2015</p>
+                                    </div>
+                                    <div class = "flex items-center">
+                                        <p class = "font-semibold">Updated: &nbsp;</p>
+                                        <p>Action | Desktop</p>
+                                    </div>
+                                </div>
+
+                                <div class = "flex flex-col items-end justify-between">
+                                    <a target="_blank" href = "SinglePlayer - Games/Spaceship Escort/index.html" class = "btn-primary uppercase">play now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
 
                 <div class = "flex justify-center mt-[60px]">
-                    <a href = "#" class = "section-btn">see more games</a>
+                    <a target="_blank" href = "additional page/game.html" class = "section-btn">see more games</a>
                 </div>
             </div>
         </section>
@@ -342,25 +478,25 @@
         <div class = "py-16 bg-violet-darker overflow-hidden">
             <div class = "game-slider">
                 <div class = "slider-item img-fit-cover">
-                    <img src = "assets/images/slider_img_1.png" class = "slider-item-img">
+                    <img src = "SinglePlayer - Games/Banner - image/nuclear-safe.png" class = "slider-item-img">
                 </div>
                 <div class = "slider-item img-fit-cover">
-                    <img src = "assets/images/slider_img_2.png" class = "slider-item-img">
+                    <img src = "SinglePlayer - Games/Banner - image/NecroticCommande.png" class = "slider-item-img">
                 </div>
                 <div class = "slider-item img-fit-cover">
-                    <img src = "assets/images/slider_img_3.png" class = "slider-item-img">
+                    <img src = "SinglePlayer - Games/Banner - image/Menja.png" class = "slider-item-img">
                 </div>
                 <div class = "slider-item img-fit-cover">
-                    <img src = "assets/images/slider_img_4.png" class = "slider-item-img">
+                    <img src = "SinglePlayer - Games/Banner - image/HexGL-master.png" class = "slider-item-img">
                 </div>
                 <div class = "slider-item img-fit-cover">
-                    <img src = "assets/images/slider_img_5.png" class = "slider-item-img">
+                    <img src = "SinglePlayer - Games/Banner - image/hextris-gh-pages.png" class = "slider-item-img">
                 </div>
                 <div class = "slider-item img-fit-cover">
-                    <img src = "assets/images/slider_img_6.png" class = "slider-item-img">
+                    <img src = "SinglePlayer - Games/Banner - image/tower.png" class = "slider-item-img">
                 </div>
                 <div class = "slider-item img-fit-cover">
-                    <img src = "assets/images/slider_img_7.png" class = "slider-item-img">
+                    <img src = "SinglePlayer - Games/Banner - image/Squared Lines.png" class = "slider-item-img">
                 </div>
             </div>
         </div>
@@ -368,9 +504,9 @@
         <section class = "py-16 sc-join flex items-center bg-join-image relative after:absolute after:content-[''] after:bg-gradient-to-b after:from-black/50 after:to-black/50 after:bg-center after:bg-cover after:bg-no-repeat">
             <div class = "container w-full">
                 <div class = "join-content">
-                    <h2 class = "join-title uppercase">join the <span>community</span></h2>
+                    <h2 class = "join-title uppercase"><span>join the community</span></h2>
                     <p class = "lead-text py-2">Join our Discord community which is in the making and made by gamers for gamers. All are welcome to join no matter the game you play, we're here to have a good.</p>
-                    <button type = "button" class = "section-btn mt-4">join discord</button>
+                    <button type = "button" class = "mt-4"><a class="discord-btn" target="_blank" href="https://discord.gg/dakzwdz4ev">join discord</a></button>
                 </div>
             </div>
         </section>
@@ -378,7 +514,7 @@
         <section class = "py-16 sc-posts bg-violet-dark-active">
             <div class = "container">
                 <div class = "sc-title">
-                    <h3>latest <span>posts</span></h3>
+                    <h3>latest <span>news</span></h3>
                     <div class="line"></div>
                 </div>
 
@@ -397,7 +533,7 @@
                             <p class = "para-text">The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system, new story content, and lots more, is scheduled to arrive ...</p>
 
                             <div class = "flex items-center justify-between">
-                                <a href = "#" class = "btn-secondary uppercase">read more</a>
+                                <a target="_blank" href = "#" class = "btn-secondary uppercase">read more</a>
                                 <div class = "flex items-center">
                                     <span class = "font-bold text-[13px] flex me-[25px]">
                                         <img src = "assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 23
@@ -424,7 +560,7 @@
                             <p class = "para-text">The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system, new story content, and lots more, is scheduled to arrive ...</p>
 
                             <div class = "flex items-center justify-between">
-                                <a href = "#" class = "btn-secondary uppercase">read more</a>
+                                <a target="_blank" href = "#" class = "btn-secondary uppercase">read more</a>
                                 <div class = "flex items-center">
                                     <span class = "font-bold text-[13px] flex me-[25px]">
                                         <img src = "assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 23
@@ -451,7 +587,7 @@
                             <p class = "para-text">The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system, new story content, and lots more, is scheduled to arrive ...</p>
 
                             <div class = "flex items-center justify-between">
-                                <a href = "#" class = "btn-secondary uppercase">read more</a>
+                                <a target="_blank" href = "#" class = "btn-secondary uppercase">read more</a>
                                 <div class = "flex items-center">
                                     <span class = "font-bold text-[13px] flex me-[25px]">
                                         <img src = "assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 23
@@ -478,7 +614,7 @@
                             <p class = "para-text">The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system, new story content, and lots more, is scheduled to arrive ...</p>
 
                             <div class = "flex items-center justify-between">
-                                <a href = "#" class = "btn-secondary uppercase">read more</a>
+                                <a target="_blank" href = "#" class = "btn-secondary uppercase">read more</a>
                                 <div class = "flex items-center">
                                     <span class = "font-bold text-[13px] flex me-[25px]">
                                         <img src = "assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 23
@@ -505,7 +641,7 @@
                             <p class = "para-text">The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system, new story content, and lots more, is scheduled to arrive ...</p>
 
                             <div class = "flex items-center justify-between">
-                                <a href = "#" class = "btn-secondary uppercase">read more</a>
+                                <a target="_blank" href = "#" class = "btn-secondary uppercase">read more</a>
                                 <div class = "flex items-center">
                                     <span class = "font-bold text-[13px] flex me-[25px]">
                                         <img src = "assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 23
@@ -532,7 +668,7 @@
                             <p class = "para-text">The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system, new story content, and lots more, is scheduled to arrive ...</p>
 
                             <div class = "flex items-center justify-between">
-                                <a href = "#" class = "btn-secondary uppercase">read more</a>
+                                <a target="_blank" href = "#" class = "btn-secondary uppercase">read more</a>
                                 <div class = "flex items-center">
                                     <span class = "font-bold text-[13px] flex me-[25px]">
                                         <img src = "assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 23
@@ -545,188 +681,70 @@
                         </div>
                     </div>
                 </div>
-
-                <div class = "flex justify-center mt-[60px]">
-                    <a href = "#" class = "section-btn">see more blogs</a>
-                </div>
-            </div>
-        </section>
-
-        <section class = "py-16 sc-category">
-            <div class = "container">
-                <div class = "sc-title">
-                    <h3>game <span>category</span></h3>
-                    <div class = "line"></div>
-                </div>
-
-                <div class = "button-group mx-auto filter-button-group flex items-center justify-center flex-wrap">
-                    <button data-filter = "action">action</button>
-                    <button data-filter = "shooter">shooter</button>
-                    <button data-filter = "strategy">strategy</button>
-                    <button data-filter = "arcade">arcade</button>
-                    <button data-filter = "adventure">adventure</button>
-                </div>
-
-                <div class = "mt-16 grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                    <div class = "category-item img-fit-cover shadow-category-item overflow-hidden action shooter">
-                        <img src = "assets/images/action-1.jpg" alt = "">
-                        <div class = "category-item-info">
-                            <div class = "bg-green-normal text-white py-[2px] px-[6px] inline-block uppercase text-xs tracking-widest mb-[6px]">action</div>
-                            <h3 class = "font-medium text-[18px] tracking-[.03em] uppercase text-white mb-2">Grand Theft Auto V</h3>
-                            <ul class = "flex mb-[14px]">
-                                <div class = "flex flex-col items-end justify-between">
-                                    <a href = "#" class = "btn-primary uppercase">play now</a>
-                                </div>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class = "category-item img-fit-cover shadow-category-item overflow-hidden action adventure">
-                        <img src = "assets/images/action-2.jpg" alt = "">
-                        <div class = "category-item-info">
-                            <div class = "bg-green-normal text-white py-[2px] px-[6px] inline-block uppercase text-xs tracking-widest mb-[6px]">action</div>
-                            <h3 class = "font-medium text-[18px] tracking-[.03em] uppercase text-white mb-2">The Witcher 3: Wild Hunt</h3>
-                            <ul class = "flex mb-[14px]">
-                                 <div class = "flex flex-col items-end justify-between">
-                                    <a href = "#" class = "btn-primary uppercase">play now</a>
-                                </div>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class = "category-item img-fit-cover shadow-category-item overflow-hidden action strategy adventure">
-                        <img src = "assets/images/action-3.jpg" alt = "">
-                        <div class = "category-item-info">
-                            <div class = "bg-green-normal text-white py-[2px] px-[6px] inline-block uppercase text-xs tracking-widest mb-[6px]">action</div>
-                            <h3 class = "font-medium text-[18px] tracking-[.03em] uppercase text-white mb-2">Tomb Raider (2013)</h3>
-                            <ul class = "flex mb-[14px]">
-                                 <div class = "flex flex-col items-end justify-between">
-                                    <a href = "#" class = "btn-primary uppercase">play now</a>
-                                </div>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class = "category-item img-fit-cover shadow-category-item overflow-hidden shooter strategy arcade">
-                        <img src = "assets/images/action-4.jpg" alt = "">
-                        <div class = "category-item-info">
-                            <div class = "bg-green-normal text-white py-[2px] px-[6px] inline-block uppercase text-xs tracking-widest mb-[6px]">action</div>
-                            <h3 class = "font-medium text-[18px] tracking-[.03em] uppercase text-white mb-2">Counter-Strike: Global Offensive</h3>
-                            <ul class = "flex mb-[14px]">
-                                 <div class = "flex flex-col items-end justify-between">
-                                    <a href = "#" class = "btn-primary uppercase">play now</a>
-                                </div>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class = "category-item img-fit-cover shadow-category-item overflow-hidden action">
-                        <img src = "assets/images/action-5.jpg" alt = "">
-                        <div class = "category-item-info">
-                            <div class = "bg-green-normal text-white py-[2px] px-[6px] inline-block uppercase text-xs tracking-widest mb-[6px]">action</div>
-                            <h3 class = "font-medium text-[18px] tracking-[.03em] uppercase text-white mb-2">The Elder Scrolls V: Skyrim</h3>
-                            <ul class = "flex mb-[14px]">
-                                 <div class = "flex flex-col items-end justify-between">
-                                    <a href = "#" class = "btn-primary uppercase">play now</a>
-                                </div>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class = "category-item img-fit-cover shadow-category-item overflow-hidden arcade adventure">
-                        <img src = "assets/images/action-6.jpg" alt = "">
-                        <div class = "category-item-info">
-                            <div class = "bg-green-normal text-white py-[2px] px-[6px] inline-block uppercase text-xs tracking-widest mb-[6px]">action</div>
-                            <h3 class = "font-medium text-[18px] tracking-[.03em] uppercase text-white mb-2">Sid Meier's Civilization</h3>
-                            <ul class = "flex mb-[14px]">
-                                 <div class = "flex flex-col items-end justify-between">
-                                    <a href = "#" class = "btn-primary uppercase">play now</a>
-                                </div>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class = "category-item img-fit-cover shadow-category-item overflow-hidden strategy">
-                        <img src = "assets/images/action-7.jpg" alt = "">
-                        <div class = "category-item-info">
-                            <div class = "bg-green-normal text-white py-[2px] px-[6px] inline-block uppercase text-xs tracking-widest mb-[6px]">action</div>
-                            <h3 class = "font-medium text-[18px] tracking-[.03em] uppercase text-white mb-2">Cities: Skylines</h3>
-                            <ul class = "flex mb-[14px]">
-                                 <div class = "flex flex-col items-end justify-between">
-                                    <a href = "#" class = "btn-primary uppercase">play now</a>
-                                </div>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class = "category-item img-fit-cover shadow-category-item overflow-hidden action adventure">
-                        <img src = "assets/images/action-6.jpg" alt = "">
-                        <div class = "category-item-info">
-                            <div class = "bg-green-normal text-white py-[2px] px-[6px] inline-block uppercase text-xs tracking-widest mb-[6px]">action</div>
-                            <h3 class = "font-medium text-[18px] tracking-[.03em] uppercase text-white mb-2">Left 4 Dead 2</h3>
-                            <ul class = "flex mb-[14px]">
-                                 <div class = "flex flex-col items-end justify-between">
-                                    <a href = "#" class = "btn-primary uppercase">play now</a>
-                                </div>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class = "category-item img-fit-cover shadow-category-item overflow-hidden shooter arcade adventure">
-                        <img src = "assets/images/action-9.jpg" alt = "">
-                        <div class = "category-item-info">
-                            <div class = "bg-green-normal text-white py-[2px] px-[6px] inline-block uppercase text-xs tracking-widest mb-[6px]">action</div>
-                            <h3 class = "font-medium text-[18px] tracking-[.03em] uppercase text-white mb-2">Dead Men's Army</h3>
-                            <ul class = "flex mb-[14px]">
-                                 <div class = "flex flex-col items-end justify-between">
-                                    <a href = "#" class = "btn-primary uppercase">play now</a>
-                                </div>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class = "category-item img-fit-cover shadow-category-item overflow-hidden action adventure">
-                        <img src = "assets/images/action-10.jpg" alt = "">
-                        <div class = "category-item-info">
-                            <div class = "bg-green-normal text-white py-[2px] px-[6px] inline-block uppercase text-xs tracking-widest mb-[6px]">action</div>
-                            <h3 class = "font-medium text-[18px] tracking-[.03em] uppercase text-white mb-2">Brutal Legend</h3>
-                            <ul class = "flex mb-[14px]">
-                                 <div class = "flex flex-col items-end justify-between">
-                                    <a href = "#" class = "btn-primary uppercase">play now</a>
-                                </div>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class = "category-item img-fit-cover shadow-category-item overflow-hidden strategy arcade">
-                        <img src = "assets/images/action-11.jpg" alt = "">
-                        <div class = "category-item-info">
-                            <div class = "bg-green-normal text-white py-[2px] px-[6px] inline-block uppercase text-xs tracking-widest mb-[6px]">action</div>
-                            <h3 class = "font-medium text-[18px] tracking-[.03em] uppercase text-white mb-2">Injustice: Gods Among Us Ultimate Edition</h3>
-                            <ul class = "flex mb-[14px]">
-                                 <div class = "flex flex-col items-end justify-between">
-                                    <a href = "#" class = "btn-primary uppercase">play now</a>
-                                </div>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class = "category-item img-fit-cover shadow-category-item overflow-hidden strategy">
-                        <img src = "assets/images/action-12.jpg" alt = "">
-                        <div class = "category-item-info">
-                            <div class = "bg-green-normal text-white py-[2px] px-[6px] inline-block uppercase text-xs tracking-widest mb-[6px]">action</div>
-                            <h3 class = "font-medium text-[18px] tracking-[.03em] uppercase text-white mb-2">Minecraft</h3>
-                            <ul class = "flex mb-[14px]">
-                                 <div class = "flex flex-col items-end justify-between">
-                                    <a href = "#" class = "btn-primary uppercase">play now</a>
-                                </div>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
         
+           <section class = "py-16 sc-popular bg-violet-dark-active">
+<div class="stats" id="stats">
+        <div class = "sc-title">
+                    <h3>Our <span>Stats</span></h3>
+                    <div class="line"></div>
+                </div>
+
+      <div class="container2">
+        <div class="counter-grid">
+          <div class="counter-item">
+              <i class="fa fa-solid fa-user fa-4x"></i>
+            <p>Users</p>
+            <h1 class="counter" data-target="1000">1000+</h1>
+          </div>
+          <div class="counter-item">
+            <i class=" fa fa-solid fa-check fa-4x"></i>
+            <p>Daily Users</p>
+            <h1 class="counter" data-target="100">0</h1>
+          </div>
+
+          <div class="counter-item">
+           <i class=" fa fa-gamepad fa-4x"></i>
+            <p>Games</p>
+            <h1 class="counter" data-target="50">0</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class = "py-16 sc-popular bg-violet-dark-active">
+    <div class="stats" id="stats">
+            <div class = "sc-title">
+                        <h3>Contact <span>Us</span></h3>
+                        <div class="line"></div>
+                    </div>
+        <div class="wrapper">
+            <a target="_blank" href="https://discord.gg/dakzwdz4ev" class="icon facebook">
+              <div class="tooltip">Discord</div>
+              <span><i class="fab fa-discord"></i></span>
+            </a>
+            <a target="_blank" href=" https://www.facebook.com/profile.php?id=100092184203215&mibextid=ZbWKwL" class="icon twitter">
+              <div class="tooltip">Facebook</div>
+              <span><i class="fab fa-facebook"></i></span>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/gam_esphere/?igshid=MmJiY2I4NDBkZg%3D%3D" class="icon instagram">
+              <div class="tooltip">Instagram</div>
+              <span><i class="fab fa-instagram"></i></span>
+            </a>
+            <a target="_blank" href="https://github.com/GameSphere-MultiPlayer" class="icon github">
+              <div class="tooltip">Github</div>
+              <span><i class="fab fa-github"></i></span>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/company/gamesphere-multiplayer/" class="icon linkedin">
+              <div class="tooltip">Linkedin</div>
+              <span><i class="fab fa-linkedin"></i></span>
+            </a>
+          </div>
+          <br>
+        </div>
+    </section>
 
         
         <footer class = "footer">
@@ -734,26 +752,26 @@
                 <div class = "container grid gap-6 lg:grid-cols-[2fr_repeat(3,1fr)] text-center lg:text-start">
                     <div class = "footer-item">
                         <a href = "#" class = "navbar-brand">Game<span>Sphere</span></a>
-                        <p class = "para-text">Lorem ipsum dolor sitamet consectur adipiscing Duis esollici tudin augue euismod. Nulla ullam dolor sitamet consectetur.</p>
+                        <p class = "para-text">In this platform we are here to play games with our friends at a same time without any interuption without download any software or tools to their computers or mobile devices..</p>
                     </div>
 
                     <div class = "footer-item">
                         <h5 class = "footer-item-title">quick link</h5>
                         <ul class = "footer-item-links">
-                            <li><a href = "#">Gaming</a></li>
-                            <li><a href = "#">Product</a></li>
-                            <li><a href = "#">About Us</a></li>
-                            <li><a href = "#">Community</a></li>
+                            <li><a target="_blank" href = "#">Gaming</a></li>
+                            <li><a target="_blank" href = "#">Product</a></li>
+                            <li><a target="_blank" href = "#">About Us</a></li>
+                            <li><a target="_blank" href = "#">Community</a></li>
                         </ul>
                     </div>
 
                     <div class = "footer-item">
                         <h5 class = "footer-item-title">supports</h5>
                         <ul class = "footer-item-links">
-                            <li><a href = "#">Settings & Privacy</a></li>
-                            <li><a href = "#">Help & Support</a></li>
-                            <li><a href = "#">Report</a></li>
-                            <li><a href = "#">Our News</a></li>
+                            <li><a target="_blank" href = "#">Settings & Privacy</a></li>
+                            <li><a target="_blank" href = "#">Help & Support</a></li>
+                            <li><a target="_blank" href = "#">Report</a></li>
+                            <li><a target="_blank" href = "#">Our News</a></li>
                         </ul>
                     </div>
 
@@ -773,12 +791,66 @@
                 </div>
             </div>
         </footer>
-
+        <footer id="footer1">
+            <p>Copyright &nbsp;&copy;&nbsp;&nbsp;[2007] [GAMESPHERE]. All Rights Reserved.</p>
+        </footer>
+          <div class="scrollToTopContainer">
+        <button
+          id="scrollToButton"
+          class="HideElement scrollToTopButton"
+          title="Click to scroll top"
+        >
+          <img src="assets/images/Chevron.png" alt="Scroll-To-Top" />
+        </button>
+      </div>
         <!-- jquery cdn -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- slick slider js -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- custom script js -->
         <script src="src/script.js"></script>
+         <script>
+    let section_counter = document.querySelector('#stats');
+    let counters = document.querySelectorAll('.counter-item .counter');
+
+    // Scroll Animation
+
+    let CounterObserver = new IntersectionObserver(
+      (entries, observer) => {
+        let [entry] = entries;
+        if (!entry.isIntersecting) return;
+
+        let speed = 200;
+        counters.forEach((counter, index) => {
+          function UpdateCounter() {
+            const targetNumber = +counter.dataset.target;
+            const initialNumber = +counter.innerText;
+            const incPerCount = targetNumber / speed;
+            if (initialNumber < targetNumber) {
+              counter.innerText = Math.ceil(initialNumber + incPerCount);
+              setTimeout(UpdateCounter, 40);
+            }
+          }
+          UpdateCounter();
+
+          if (counter.parentElement.style.animation) {
+            counter.parentElement.style.animation = '';
+          } else {
+            counter.parentElement.style.animation = `slide-up 0.3s ease forwards ${
+              index / counters.length + 0.5
+            }s`;
+          }
+        });
+        observer.unobserve(section_counter);
+      },
+      {
+        root: null,
+        threshold: window.innerWidth > 768 ? 0.4 : 0.3,
+      }
+    );
+
+    CounterObserver.observe(section_counter);
+
+    </script>
     </body>
 </html>

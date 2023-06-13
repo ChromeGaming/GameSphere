@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" media="screen">
+        
+        <title>ANTHORITY</title>
+    </head>
+<body>
+    <!-- Menu -->
+
+    <div id="menu" class="screenhidden">
+        <h1><span>ANT</span>HORITY</h1>
+        <a href="javascript:;" id="btnPlay" class="button">Play</a>
+        <footer>ANTHORITY 2017 - by <a href="http://bruno.croci.me">CrociDB</a></footer>
+    </div>
+    
+    <!-- Messenger -->
+
+    <div id="messenger" class="screenhidden">
+        <header>Antherous</header>
+        <section>
+            <ul>
+            </ul>
+        </section>
+        <footer>
+            <a href="javascript:;" id="btnContinue" class="button disabled">Continue</a>
+        </footer>
+    </div>
+    
+    <!-- Game -->
+
+    <div id="game" class="screenhidden">
+        <section id="header">
+            <div><span id="energy">0</span><span>ENERGY</span></div>
+            <div><span id="ants">0</span><span>ANTS</span></div>
+            <div class="end"><span id="defense">100%</span><span>DEFENSE</span></div>
+            <div class="right"><span id="hour">0</span><span>HOUR</span></div>
+            <div class="right-end"><span id="day">0</span><span>DAY</span></div>
+        </section>
+        <div id="columns">
+            <div id="left" class="column">
+                <section id="actions" class="widget actions">
+                    <a href="javascript:;" id="btnScout" class="button">Find Food</a>
+                    <a href="javascript:;" id="btnHatch" class="button">Hatch Eggs</a>
+                    <a href="javascript:;" id="btnBuildRoom" class="button">Build Cell</a>
+                </section>
+            </div>
+            <div id="center" class="column">
+                <section id="map" class="widget">
+                    <div>
+                        <div class="infowidget mapinfo">
+                            <div><span id="avcells">1</span><span>AVAILABLE CELLS</span></div>
+                            <div><span id="cells">1</span><span>BUILT CELLS</span></div>
+                            <div><span id="capacity">0</span><span>ANT CAPACITY</span></div>
+                        </div>
+                        <canvas id="mapcanvas" width="320" height="280"></canvas>
+                    </div>
+                </section>
+            </div>
+            <div id="right" class="column">
+                <section id="status" class="widget widget-clear widget-invisible">
+                    <div>
+                        <ul>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dialog -->
+
+    <div id="dialogDiv" class="dialog-container hidden"></div>
+    <div id="dialogWindow" class="dialog hidden">
+        <header id="dialogTitle">Message</header>
+        <section id="dialogSection">
+            <p>Some things happened here.</p>
+        </section>
+        <div class="button-container">
+            <a href="javascript:dialog.onCancel();" id="dialogCancel" class="button inline-button">Cancel</a>
+            <a href="javascript:dialog.onOk();" id="dialogOk" class="button inline-button">Ok</a>
+        </div>
+    </div>
+    
+    <div id="fadeDiv" class="fadehid"></div>
+
+    <!-- Scripts -->
+    <script src="js/jsfxr.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/gamebalance.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/timeschedule.js"></script>
+    <script src="js/widget.js"></script>
+    <script src="js/progress.js"></script>
+    <script src="js/infowidget.js"></script>
+    <script src="js/range.js"></script>
+    <script src="js/dialog.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/messenger.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+/**********************************************
+*** GENERAL
+**********************************************/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  .clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  body {
+	background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+	background-size: cover;
+	background-position: center;
+	font-family: "Nunito", sans-serif;
+	font-weight: 300;
+	position: relative;
+	height: 100vh;
+	color: #333;
+  }
+  
+  .wrapper {
+	width: 1000px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+  }
+  
+  .player-0-panel,
+  .player-1-panel {
+	width: 50%;
+	float: left;
+	height: 600px;
+	padding: 100px;
+  }
+  
+  /**********************************************
+  *** PLAYERS
+  **********************************************/
+  
+  .player-name {
+	font-size: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 300;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	position: relative;
+  }
+  
+  .player-score {
+	text-align: center;
+	font-size: 80px;
+	font-weight: 100;
+	color: #eb4d4d;
+	margin-bottom: 130px;
+  }
+  
+  .active {
+	background-color: #f7f7f7;
+  }
+  .active .player-name {
+	font-weight: 300;
+  }
+  
+  .active .player-name::after {
+	content: "\2022";
+	font-size: 47px;
+	position: absolute;
+	color: #eb4d4d;
+	top: -7px;
+	right: 10px;
+  }
+  
+  .player-current-box {
+	background-color:  #c7365f;
+	color:#fff;
+  
+	width: 50%;
+	margin: 0 auto;
+	padding: 22px;
+	text-align: center;
+	border-radius: 4rem;
+  }
+  
+  .player-current-label {
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	font-size: 20px;
+	font-weight: bolder;
+	letter-spacing: 0.1em;
+	color: #ddd;
+  }
+  
+  .player-current-score {
+	font-size: 30px;
+  }
+  
+  button {
+	position: absolute;
+	width: 200px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #555;
+	background: none;
+	border: none;
+	font-family: Lato;
+	font-size: 20px;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-weight: 300;
+	transition: background-color 0.3s, color 0.3s;
+  }
+  
+  
+  button:hover {
+	font-weight: 600;
+  }
+  button:hover i {
+	margin-right: 20px;
+  }
+  
+  button:focus {
+	outline:none;
+  }
+  
+  /*i {
+	color: #eb4d4d;
+	display: inline-block;
+	margin-right: 15px;
+	font-size: 25px;
+	line-height: 1;
+	vertical-align: text-top;
+	margin-top: -4px;
+	transition: margin 0.3s;
+  }*/
+  
+  .btn-new {
+	top: 45px;
+  }
+  .btn-roll {
+	top: 403px;
+  }
+  .btn-hold {
+	top: 467px;
+  }
+  
+  button::-moz-focus-inner {
+	border: 0;
+  }
+  
+  .dice1 {
+	position: absolute;
+	left: 50%;
+	top: 120px;
+	transform: translateX(-50%);
+	height: 100px;
+	box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dice2 {
+	position: absolute;
+	left: 50%;
+	top: 250px;
+	transform: translateX(-50%);
+	height: 100px;
+	box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+  }
+  
+  .winner {
+	background-color:#a5959f;
+  }
+  .winner .player-name {
+	font-weight: 300;
+	color:#c7365f;
+  }
+  /********************************
+  * Modal design
+  ************************************/
+  
+  :root {
+	--modla-duration: 1s;
+	--modal-color: hsl(200, 2%, 34%);
+  }
+  .button1 {
+	font-family: Arial, Helvetica, sans-serif;
+	background: #f4f4f4;
+	font-size: 17px;
+	font-weight: 800;
+	border-radius: 8px;
+	line-height: 1.6;
+	display: flex;
+	/* height: 100vh; */
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 0.15em;
+	padding: 4px;
+  }
+  
+  .button1:hover {
+	background: hsl(200, 2%, 34%);
+	color: azure;
+  }
+  
+  .modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.842);
+  }
+  
+  .modal-content {
+	margin: 10% auto;
+	width: 60%;
+	box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+	animation-name: modalopen;
+	animation-duration: var(--modal-duration);
+  }
+  
+  .modla-header h2,
+  .modal-footer h3 {
+	margin: 0;
+  }
+  
+  .modal-header {
+	background: var(--modal-color);
+	padding: 15px;
+	color: #fff;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+  }
+  .modal-body {
+	padding: 10px 20px;
+	background: rgba(247, 241, 241, 0.911);
+	font-size: 20px;
+	font-weight: 600;
+	font-stretch: wider;
+  }
+  
+  .close {
+	color: #ccc;
+	float: right;
+	font-size: 30px;
+  }
+  .close:hover,
+  .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  
+  @keyframes modalopen {
+	from {
+	  opacity: 0;
+	}
+	to {
+	  opacity: 1;
+	}
+  }

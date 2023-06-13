@@ -1,0 +1,489 @@
+// Media query breakpoints.
+$breakpoint-small: 'screen and (max-width: 768px)';
+$breakpoint-large: 'screen and (min-width: 769px)';
+
+// Maximum number of columns in a row.
+$number-of-columns: 12;
+
+$white: #ffffff;
+$black: #000000;
+
+$bk: #151f29;
+$space: #202A33;
+$planet: #FCC166;
+
+$text: rgba($white, 0.75);
+$text-faded: rgba($white, 0.5);
+$text-highlight: $white;
+
+$border: rgba($white, 0.25);
+$border-hover: $text-faded;
+$border-radius: 4px;
+
+
+
+@mixin columns($size) {
+    $i: 1;
+    @while $i <= $number-of-columns {
+        $percentage: unquote((100 / ($number-of-columns / $i)) + "%");
+        &.#{$size}-#{$i} {
+            width: $percentage;
+            margin-left: auto;
+            left: auto;
+            right: auto;
+        }
+        $i: $i + 1;
+    }
+}
+.row {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:before, &:after  {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    .row {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    * {
+        box-sizing: border-box;
+    }
+    .column, .columns {
+        float: left;
+        min-height: 1px;
+        width: 8.33%;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        @media #{$breakpoint-large} {
+            @include columns('small');
+            @include columns('large');
+        }
+        @media #{$breakpoint-small} {
+            &[class*='large-'] {
+                width: 100%;
+                margin: 0;
+                left: auto;
+                right: auto;
+            }
+
+            @include columns('small');
+        }
+    }
+    .hidden-large {
+        display: none;
+        @media #{$breakpoint-small} {
+            display: block;
+        }
+    }
+    .hidden-small {
+        @media #{$breakpoint-small} {
+            display: none;
+        }
+    }
+}
+
+html, body {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    background-color: $space;
+    background-image: url('space.png');
+    overflow: hidden;
+
+    * {
+        box-sizing: border-box;
+    }
+}
+
+h1, h2, h3, p, a, span, li, div, input, select, textarea {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: $text;
+    text-decoration: none;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.canvas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+}
+
+
+/**/
+
+.page {
+    height: 100%;
+
+    &#mainmenu, &#intro, &#about, &#ending {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+    &.game {
+        visibility: hidden;
+
+        &.active {
+            visibility: visible;
+        }
+    }
+
+}
+.main-menu, .text {
+    .button {
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 1px;
+        color: $text;
+        border: 4px dashed $border;
+        border-radius: $border-radius;
+        padding: 10px 15px;
+
+        &:hover {
+            border: 4px dashed $border-hover;
+            cursor: pointer;
+        }
+    }
+}
+.main-menu {
+    position: relative;
+    overflow-y: scroll;
+    padding: 60px 0;
+
+    h1 {
+        text-align: center;
+        font-size: 100px;
+        letter-spacing: 5px;
+
+        @media #{$breakpoint-small} {
+            font-size: 60px;
+        }
+    }
+    .links {
+        padding-top: 100px;
+        p {
+            text-align: center;
+
+            a {
+                font-size: 18px;
+                letter-spacing: 2px;
+            }
+        }
+        .button {
+            display: inline-block;
+
+            &:not(:last-of-type) {
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+.text {
+    max-width: 500px;
+    margin: auto;
+    padding: 60px 0;
+    overflow-y: scroll;
+
+    p {
+        margin-bottom: 15px;
+    }
+    .button {
+        display: block;
+        width: 100%;
+        max-width: 150px;
+        margin: 30px auto 0 auto;
+
+        &.button-wide {
+            max-width: 225px;
+        }
+    }
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    height: 100%;
+    margin: auto;
+}
+
+.view-toggles {
+    flex: 1;
+    align-self: flex-start;
+    font-size: 10px;
+    padding: 30px 20px 0 0;
+
+    p {
+        color: $text-faded;
+    }
+    span {
+        display: inline-block;
+        font-size: 14px;
+        letter-spacing: 1px;
+        color: $text-faded;
+        padding: 5px 10px;
+        margin: 0 10px;
+
+        &:hover {
+            cursor: pointer;
+        }
+        &.active {
+            color: $text-highlight;
+        }
+
+        @media #{$breakpoint-large} {
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.2);
+                border-radius: 4px;
+            }
+        }
+    }
+
+    @media #{$breakpoint-small} {
+        flex-basis: 100%;
+        order: 3;
+        text-align: center;
+        padding: 15px 0;
+    }
+}
+
+.points {
+    flex: 1;
+    align-self: flex-start;
+    padding: 15px 20px 0 20px;
+
+    #points {
+        font-size: 40px;
+        text-align: right;
+        letter-spacing: 2px;
+        color: $text;
+        line-height: 1;
+    }
+    #pps {
+        font-size: 14px;
+        text-align: right;
+        letter-spacing: 1px;
+        color: $text-faded;
+        margin-right: 3px;
+    }
+
+    @media #{$breakpoint-small} {
+        flex-basis: 100%;
+        padding: 15px 15px 0 15px;
+    }
+}
+
+.views {
+    position: relative;
+    flex-basis: 100%;
+    height: calc(100% - 75px);
+    margin: auto;
+
+    @media #{$breakpoint-small} {
+        height: calc(100% - 150px);
+    }
+
+    .view {
+        display: none;
+        height: 100%;
+
+        &.active {
+            display: block;
+        }
+    }
+    .view--ship {
+        position: absolute;
+        width: 100%;
+        z-index: 100;
+        background-color: rgba($space, 0.75);
+
+        &.active + .view--planet {
+            display: block !important;
+            filter: blur(5px);
+        }
+    }
+    .view--planet {
+    }
+    .view--map {
+    }
+
+}
+
+
+.hud {
+    position: relative;
+    height: 100%;
+    padding: 15px;
+    overflow: scroll;
+
+    .items-menu {
+        &.hidden {
+            display: none;
+        }
+
+        .items-group {
+            .items-title {
+                font-size: 18px;
+                text-align: center;
+                letter-spacing: 2px;
+                color: $text;
+                margin-bottom: 15px;
+            }
+            .item-toggles {
+                display: flex;
+                position: relative;
+                flex-wrap: wrap;
+                align-items: center;
+                margin-bottom: 30px;
+                overflow: hidden;
+
+                p {
+                    font-size: 14px;
+                    text-align: center;
+                    letter-spacing: 1px;
+                    color: $text;
+                    border: 4px dashed $border;
+                    border-radius: $border-radius;
+                    flex-basis: calc(33.33% - 10px); // 2 x 15px padding.
+                    padding: 10px 15px;
+                    margin: 0 15px 15px 0;
+
+                    &.hidden {
+                        display: none;
+                        // Display none breaks layout.
+                        visibility: hidden;
+                        width: 0;
+                        height: 0;
+                        padding: 0;
+                        margin: 0;
+                        flex-basis: 0;
+                        border: none;
+                        float: right;
+                    }
+                    &:nth-child(3n) {
+                        // No margin for last child of the row.
+                        margin-right: 0;
+                    }
+                    &:hover {
+                        border: 4px dashed $border-hover;
+                        cursor: pointer;
+                    }
+
+                    @media #{$breakpoint-small} {
+                        flex-basis: calc(50% - 7.5px);
+
+                        &:nth-child(3n) {
+                            // Reset 3n child margin.
+                            margin-right: auto;
+                        }
+                        &:nth-child(2n) {
+                            // No margin for last child of the row.
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .items {
+        .item {
+            display: none;
+            max-width: 350px;
+            margin: auto;
+
+            &.active {
+                display: block;
+            }
+
+            h2 {
+                font-size: 18px;
+                text-align: center;
+                letter-spacing: 2px;
+                color: $text;
+                margin: 0 0 15px 0;
+            }
+            .item--summary {
+                display: inline-block;
+                font-size: 10px;
+                padding: 0 5px;
+                margin-bottom: 15px;
+
+                &.item--summary__right {
+                    float: right;
+                }
+
+                span {
+                    font-size: 18px;
+                    color: $text-faded;
+                    margin-left: 5px;
+                }
+            }
+            .item--unlock, .item--repair {
+                &.hidden {
+                    display: none;
+                }
+                .item--description {
+                    margin-bottom: 15px;
+                }
+                .item--button {
+                    display: block;
+                    padding: 10px 15px;
+                    border: 4px dashed $border;
+                    border-radius: $border-radius;
+
+                    -webkit-touch-callout: none;
+                    -webkit-user-select: none;
+                    -khtml-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+
+                    &:hover {
+                        cursor: pointer;
+                        border: 4px dashed $border-hover;
+                    }
+
+                    span {
+                        float: right;
+                    }
+                }
+            }
+            .ship-view-back {
+                max-width: 75px;
+                font-size: 14px;
+                letter-spacing: 2px;
+                color: $text-faded;
+                text-align: center;
+                padding: 5px 10px;
+                margin: 60px auto 0 auto;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                @media #{$breakpoint-large} {
+                    &:hover {
+                        background-color: rgba(0, 0, 0, 0.2);
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <style>
+            html,body{
+                height: 100%;
+                display: grid;
+                overflow: hidden;
+                background: #000;
+            }
+            #a{
+                border-radius: 10px;
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id=a></canvas>
+    </body>
+    <script>
+const windows = window
+const documents = document
+const math=Math
+const PI = math.PI
+const timer = performance
+const l = windows.localStorage
+
+Rand=a=>math.random()*a
+RandInt=a=>Rand(a)|0;
+RandIntBetween=(a,b)=>a+RandInt(b-a+1);
+Abs=a=>math.abs(a)
+Distance=(a,b)=>math.hypot(a,b);
+CollisionRect=(a,b)=>(a.x+a.w>b.x&&b.x+b.w>a.x&&a.y+a.h>b.y&&b.y+b.h>a.y)?1:0
+Max=(a,b)=>a>b?a:b;
+Min =(a,b)=>(a<b)?a:b;
+IntToString=a=>a.toString()
+Pad=a=>a.padStart(4,"0");
+ToFixed=a=>a.toFixed(2)
+StringToFloat=a=>parseFloat(a)
+SlopeY=(a,b,k=-20)=>a*k+b
+
+localSet=(e,a)=>l.setItem(e,a)
+localGet=e=>l.getItem(e)
+
+// mini same function
+GetCanvas=a=>documents.getElementById(a)
+GetContextAlpha=a=>a.getContext('2d',{
+    alpha: false,
+    desynchronized: true
+})
+GetContext=a=>a.getContext('2d')
+CreateElement=a=>documents.createElement('canvas')
+CanvasToImage=a=>{
+    var imagea = new Image();
+    imagea.src = a.toDataURL();
+    return imagea;
+}
+
+// UI frame size
+let innerWidth,canvasWidth,canvasHeight,mouseCanvas,resizeWindow,tw,th;
+
+//test speed 
+let count =1
+let canvas = GetCanvas('a')
+let ctx = GetContextAlpha(canvas)
+
+let GamePlayObject = [],BackgroundMoveObject=[]
+
+let BadItemImage  = []
+
+//Wall move speed >>
+let wallSpeed = [4,4,4,4,4,4,4,4,8,8,8,8,8,8,16,16,16,16,32]
+// change level up 
+let levelUpMeter = wallSpeed.map((e,i)=>5+20*i)
+// level
+let level= 1
+let SunToMoon = RandInt(3)
+
+
+// inputs controls
+let key= {},key1={},checkButton=[],startButton,returnButton,INKEYIN=0
+let keyStopRestartMute=['r','m','p']
+// initial key dict
+keyStopRestartMute.forEach(e=>key1[e]=0)
+
+InitailLoopDict=(k,initialValue)=>{
+    for (const i in k)k[i]=initialValue
+    return k
+}
+key1.r=1
+
+onblur=e=>{
+    key1.p=1
+    key1.m=0
+}
+onfocus=e=>key1.p=0
+
+onmousedown=e=>{
+    // let as = e.button==0?e.type=="mouseup"?"b":"a":"c"
+    if(!INKEYIN){
+        zzfxX = new(window.AudioContext||webkitAudioContext);
+        Music()
+        INKEYIN=1
+    }
+    if(!e.button){
+        e.pageX>innerWidth/2?key.s=1:key.a=1
+        let x= e.clientX - mouseCanvas.left
+        let y = e.clientY - mouseCanvas.top
+        let h=w=1
+        checkButton.forEach((e,i)=>{
+            if(CollisionRect(e,{x:x/2,y:y/2,w,h})){
+                key1[keyStopRestartMute[i]]=!key1[keyStopRestartMute[i]]
+            }
+        })
+        if(!!startButton){
+            if(CollisionRect(startButton,{x:x/2,y:y/2,w,h})){
+                //console.log(startButton)
+                NewGame()
+                key1.r=0
+            }
+        }
+        if(!!returnButton){
+            if(CollisionRect(returnButton,{x:x/2,y:y/2,w,h})){
+                NewGame()
+                key1.r=1
+            }
+        }
+    }
+}
+onmouseup=e=>{
+    !e.button?key=InitailLoopDict(key,0):0
+    if(INKEYIN&&key1.m)PlaySound(1);
+}
+ontouchstart=e=>{
+    
+    var x = e.changedTouches[0].pageX;
+    let y = e.changedTouches[0].pageY;
+    let h=w=1
+    if(x>innerWidth/2){
+        key.s=1
+    }else{
+        key.a=1
+    }
+    checkButton.forEach((e,i)=>{
+        if(CollisionRect(e,{x:x/2,y:y/2,w,h})){
+            key1[keyStopRestartMute[i]]=!key1[keyStopRestartMute[i]]
+        }
+    })
+    if(!!startButton){
+        if(CollisionRect(startButton,{x:x/2,y:y/2,w,h})){
+            if(!INKEYIN){
+                zzfxX = new(window.AudioContext||webkitAudioContext);
+                Music()
+                INKEYIN=1
+            }
+            NewGame()
+            key1.r=0
+        }
+    }
+    if(!!returnButton){
+        if(CollisionRect(returnButton,{x:x/2,y:y/2,w,h})){
+            NewGame()
+            key1.r=1
+         }
+    }
+}
+
+ontouchend=e=>{
+    if(INKEYIN&&key1.m)PlaySound(1);
+    key=InitailLoopDict(key,0);
+}
+
+// p:pause , R:restart , M:mute sound
+onkeydown=e=>{
+    if(!INKEYIN){
+        zzfxX = new(window.AudioContext||webkitAudioContext);
+        Music()
+        INKEYIN=1
+    }
+    let i = e.key
+    if(i=='r'){NewGame();}
+    if(keyStopRestartMute.includes(i))key1[i]=!key1[i]
+    else key[i]=1;
+}
+onkeyup=e=>{
+    let i = e.key
+    if(i=='a'||i=="s"||i=="z"||i=='x'){
+        if(INKEYIN&&key1.m)PlaySound(1);
+    }
+    key[e.key]=0
+}
+
+// Canvas resizing
+const resize = () => {
+    const unit = 32,iw=windows.innerWidth,ih=windows.innerHeight;
+    const size = Min((Min(iw, ih) / unit)|0, 24);
+    tw = canvasWidth=canvas.width = size * unit;
+    th = canvasHeight=canvas.height = size * unit + size*4;
+    ctx.imageSmoothingEnabled = false;
+    tw = canvasWidth/2
+    th = canvasHeight/2
+    innerWidth=iw
+    mouseCanvas = canvas.getBoundingClientRect();
+    checkButton=[]
+    resizeWindow=0
+};
+onresize=e=>resize()
+resize()
+
+let zzfxX = null
+zzfxV=.3
+zzfxR=44100
+Music=()=>{zzfx=(...t)=>zzfxP(zzfxG(...t))}
+// zzfxP() - the sound player -- returns a AudioBufferSourceNode
+zzfxP=(...t)=>{let e=zzfxX.createBufferSource(),f=zzfxX.createBuffer(t.length,t[0].length,zzfxR);t.map((d,i)=>f.getChannelData(i).set(d)),e.buffer=f,e.connect(zzfxX.destination),e.start();return e}
+// zzfxG() - the sound generator -- returns an array of sample data
+zzfxG=(q=1,k=.05,c=220,e=0,t=0,u=.1,r=0,F=1,v=0,z=0,w=0,A=0,l=0,B=0,x=0,G=0,d=0,y=1,m=0,C=0)=>{let b=2*Math.PI,H=v*=500*b/zzfxR**2,I=(0<x?1:-1)*b/4,D=c*=(1+2*k*Math.random()-k)*b/zzfxR,Z=[],g=0,E=0,a=0,n=1,J=0,K=0,f=0,p,h;e=99+zzfxR*e;m*=zzfxR;t*=zzfxR;u*=zzfxR;d*=zzfxR;z*=500*b/zzfxR**3;x*=b/zzfxR;w*=b/zzfxR;A*=zzfxR;l=zzfxR*l|0;for(h=e+m+t+u+d|0;a<h;Z[a++]=f)++K%(100*G|0)||(f=r?1<r?2<r?3<r?Math.sin((g%b)**3):Math.max(Math.min(Math.tan(g),1),-1):1-(2*g/b%2+2)%2:1-4*Math.abs(Math.round(g/b)-g/b):Math.sin(g),f=(l?1-C+C*Math.sin(2*Math.PI*a/l):1)*(0<f?1:-1)*Math.abs(f)**F*q*zzfxV*(a<e?a/e:a<e+m?1-(a-e)/m*(1-y):a<e+m+t?y:a<h-d?(h-a-d)/u*y:0),f=d?f/2+(d>a?0:(a<h-d?1:(h-a)/d)*Z[a-d|0]/2):f),p=(c+=v+=z)*Math.sin(E*x-I),g+=p-p*B*(1-1E9*(Math.sin(a)+1)%2),E+=p-p*B*(1-1E9*(Math.sin(a)**2+1)%2),n&&++n>A&&(c+=w,D+=w,n=0),!l||++J%l||(c=D,v=H,n=n||1);return Z}
+// zzfxV - global volume
+//zzfxX = new(window.AudioContext||webkitAudioContext);
+zzfxM=(n,f,t,e=125)=>{let l,o,z,r,g,h,x,a,u,c,d,i,m,p,G,M=0,R=[],b=[],j=[],k=0,q=0,s=1,v={},w=zzfxR/e*60>>2;for(;s;k++)R=[s=a=d=m=0],t.map((e,d)=>{for(x=f[e][k]||[0,0,0],s|=!!f[e][k],G=m+(f[e][0].length-2-!a)*w,p=d==t.length-1,o=2,r=m;o<x.length+p;a=++o){for(g=x[o],u=o==x.length+p-1&&p||c!=(x[0]||0)|g|0,z=0;z<w&&a;z++>w-99&&u?i+=(i<1)/99:0)h=(1-i)*R[M++]/2||0,b[r]=(b[r]||0)-h*q+h,j[r]=(j[r++]||0)+h*q+h;g&&(i=g%1,q=x[1]||0,(g|=0)&&(R=v[[c=x[M=0]||0,g]]=v[[c,g]]||(l=[...n[c]],l[2]*=2**((g-12)/12),g>0?zzfxG(...l):[])))}m=G});return[b,j]}
+
+let v = .2
+let Sound={
+  1:[v,,443,,.1,0,1,,-8.7,,,,,.6,,,,0,.03],//move
+  2:[v,,887,.01,.06,.42,3,1.02,,.7,,,,.8,,1,,.36,.12],//hit
+  3:[v,,64,.06,.19,.3,1,.84,.1,-0.5,216,.12,.17,,,.1,,.91,.15],//speed
+  "song1":[[[,0,400]],[[[,-1,5,,,,,,5,,,,,5,,8,,13,13,,,,,6,,10,3,12,,12,,,,5,,8,,13,,13,,,,],[,1,,,8,,12,,8,,,,,,,,,,8,,,,,,,,,,,10,,,,,,,,,,8,,,,],[,-1,,,,,,,12,,,,,,,,,,5,,,,,,,,,,,6,,,,,,,,,,5,,,,]]],[0],,],
+  "song2":[[[,0,150]],[[[,,6,,,,22,,,13,10,,,1,5,,,,24,,,17,10,,,5,8,,,17,,22,,,24,,,18],[,-.1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],[,,27,29,30,32,34,32,30,29,30,32,34,36,36,34,32,34,32,34,36,36,36,34,36,32,32,34,36,34,36,34,36,32,34,36,29,25]]],[0],110,]
+}
+let SoundNode;
+PlaySound=s=>{
+  zzfx(...Sound[s])
+}
+PlaySong=s=>{
+  zzfxV=1
+  var songdata = zzfxM(...Sound[s])
+  if(SoundNode)SoundNode.stop()
+  SoundNode = zzfxP(...songdata)
+  SoundNode.loop=1;
+}
+StopSong=_=>{
+  zzfxV=0
+  SoundNode.stop()
+}
+CanPlaysong=song=>{
+    if(SoundNode)StopSong()
+    INKEYIN&&key1.m?PlaySong(song):0
+}
+
+// draw rect 
+
+// Colour adjustment function
+// Nicked from http://stackoverflow.com/questions/5560248
+
+shadeColor=(color, percent)=>{
+    color = color.substr(1);
+    var num = parseInt(color, 16),
+      amt = Math.round(2.55 * percent),
+      R = (num >> 16) + amt,
+      G = (num >> 8 & 0x00FF) + amt,
+      B = (num & 0x0000FF) + amt;
+    return '#' + (0x1000000 + (R < 255 ? R < 1 ? 0 : R : 255) * 0x10000 + (G < 255 ? G < 1 ? 0 : G : 255) * 0x100 + (B < 255 ? B < 1 ? 0 : B : 255)).toString(16).slice(1);
+}
+rect1=(ctx,x,y,w,h,c="red",r=5,a=0)=>{
+    ctx.save()
+    ctx.fillStyle=c
+    ctx.strokeStyle=c
+    ctx.beginPath()
+    //ctx.miterLimit=30
+    ctx.lineWidth=2
+    ctx.moveTo(x, y)
+    ctx.lineTo(x+w, y)
+    ctx.arcTo(x+w+r, y, x+w+r, y+r, r)
+    ctx.lineTo(x+w+r,y+h+r)
+    ctx.arcTo(x+w+r,y+h+r+r,x+w,y+h+r+r,r)
+    ctx.lineTo(x,y+h+r+r)
+    ctx.arcTo(x-r,y+h+r+r,x-r,y+h+r,r)
+    ctx.lineTo(x-r,y+r)
+    ctx.arcTo(x-r,y,x,y,r)
+    a?ctx.fill():ctx.stroke()
+    ctx.closePath()
+    ctx.restore()
+}
+// Game darw  Wall
+CreateWall=color=>{
+    var fontCanvas = CreateElement()
+    var fontCtx = GetContext(fontCanvas),ww,hh
+    ww=hh=fontCanvas.width=fontCanvas.height=32
+    fontCtx.scale(2,2);
+    fontCtx.fillStyle=shadeColor(color,-10);
+    fontCtx.fillRect(0,0,ww,hh);
+    ww = ww/6,hh=hh/6
+    let x=y=c=0,gap=0
+    for(var i=0;i<9;i++){
+        fontCtx.fillStyle=shadeColor(color,RandInt(3))
+        let appendWidth= RandInt(ww/2)
+        fontCtx.fillRect(x+gap,y,ww+appendWidth,hh)
+        //fontCtx.strokeRect(x+oldWidth,y,ww+tt,hh)
+        gap=appendWidth
+        if(c==2){
+            y+=hh
+            x=c=0
+        }else{
+            x+=ww
+            c++
+        }
+    }
+    return CanvasToImage(fontCanvas)
+}
+CreateItem=(stroke,color,type,angle=0)=>{
+    var fontCanvas = CreateElement()
+    var fontCtx = GetContext(fontCanvas)
+    fontCanvas.width=fontCanvas.height=64
+    let halfh = 32
+    fontCtx.translate(halfh,halfh);
+    fontCtx.rotate(PI*angle);
+    fontCtx.translate(-halfh,-halfh);
+    rect1(fontCtx,type.x,type.y,type.w,type.h,color,type.r,stroke)
+    fontCtx.setTransform(1, 0, 0, 1, 0, 0);
+    return CanvasToImage(fontCanvas)
+}
+CreateItemDraw=(a,frames)=>{
+    //     [1,"#00000",[64,32,-64,-64,30],[.5,,,1],.1]
+    let framesArray = []
+    for(var i=0;i<frames;i++){
+        framesArray.push(CreateItem(a[0],shadeColor(a[1],1),{
+            x:a[2][0]+i*a[3][0],
+            y:a[2][1]+i*a[3][1],
+            w:a[2][2]+i*a[3][2],
+            h:a[2][3]+i*a[3][3],
+            r:a[2][4]+i*a[3][4]},i*a[4]))
+    }
+    return framesArray
+}
+
+CreateCloud=(size,fc)=>{
+    var fontCanvas = CreateElement()
+    var fontCtx = GetContext(fontCanvas)
+    fontCtx.height = 50
+    fontCtx.width = size*18+20
+    fontCtx.beginPath();
+    fontCtx.moveTo(20, 20);
+    fontCtx.fillStyle = fc
+    for(var i=1;i<size;i++){
+        fontCtx.quadraticCurveTo(20+i*10, 10, 20+i*20, 20);
+        //ctx.quadraticCurveTo(20+i*10, 50, 20+i*20, 50);
+    }
+    fontCtx.quadraticCurveTo(20+i*20, 45, 20+(i-1)*18, 40);
+    fontCtx.moveTo(20,20)
+    fontCtx.quadraticCurveTo(10, 30, 30, 40);
+    for(var i=1;i<size;i++){
+        fontCtx.quadraticCurveTo(20+i*10, 40+10, 20+i*18, 40);
+        //ctx.quadraticCurveTo(20+i*10, 50, 20+i*20, 50);
+    }
+    fontCtx.fill()
+    fontCtx.stroke();
+    return CanvasToImage(fontCanvas)
+}
+
+cloudDrawImageFrame=_=>{
+    let temp = {},i,j,a=["#fff","#58B","#BBC"]
+    for(j=0;j<3;j++){
+        temp[j]=[]
+        for(i=3;i<6;i++){
+            temp[j].push(CreateCloud(i,a[j]))
+        }
+    }
+    return temp
+}
+
+
+let cloudDrawImage = cloudDrawImageFrame()
+// {
+//     1:[],//white 
+//     2:[],//blue
+//     3:[],//dark
+// }
+
+class Vector{
+    constructor(x,y,w=32,h=32){
+      this.x = x
+      this.y = y
+      this.h= h
+      this.w= w
+      this.maxWidth=w
+    }
+    set(v){
+      this.x = v.x
+      this.y = v.y
+      return this;
+    }
+    add(v){
+      this.x+=v.x
+      this.y+=v.y
+    }
+    addOne(v){
+      this.x+=v
+      this.y+=v
+    }
+    addX(v){
+        this.x+=v.x
+    }
+    zero(){
+      this.x=this.y=0
+    }
+    substract(v){
+      this.x -= v.x
+      this.y -= v.y
+      return this;
+    }
+    dot(a){
+      this.x*=a
+      this.y*=a
+      return this
+    }
+    clone(){
+      return new Vector(this.x,this.y,this.w,this.h)
+    }
+    norm(v){
+      let tx = v.x-this.x,ty =v.y-this.y
+      let dist = Distance(tx,ty)
+      return new Vector(tx/dist,ty/dist)
+    }
+    size(v,th){
+        this.w =(this.maxWidth-v.w)/(th-v.y)*this.w
+        //return new Vector(this.x,this.y,this.w*this.y,this.h)
+    }
+    less(mw,mh){
+      return this.x<mw||this.y<mh
+    }
+    collisionRect(a){
+        return CollisionRect(this,a)
+    }
+}
+// initial game config
+let PlayerConfig={
+    speed:1,
+    maxSpeed:32,
+    targetPos:new Vector(tw/2,-th,2,2),
+    score:0,
+    meter:0,
+    life:100,
+    maxScore:0,
+    maxMeter:0
+}
+let player = null
+class GameObject{
+    constructor(x,y,o,w=32,h=32){
+      //poisition
+      this.pos = new Vector(x,y,w,h)
+      this.VectorXY = new Vector(0,0,w,h)
+      this.w = w
+      this.h = h
+      this.p = o
+      this.frameTime = 0
+      GamePlayObject.push(this)
+    }
+    render(ms){
+        this.draw()
+        this.update(ms)
+    }
+    draw(){}
+    update(ms){}
+    remove(){
+      GamePlayObject.splice(GamePlayObject.indexOf(this),1);
+    }
+}
+hand=(x,y,w,h,c=0,a=90,lega=250)=>{
+    ctx.save()
+    ctx.translate(x, y);
+	ctx.rotate(PI/360*a);
+	ctx.translate(-x, -y);
+	rect1(ctx,x+2,y+c*2+h*2,1,1,"black",c/5)
+    ctx.fillStyle="#0fa"
+    ctx.fill()
+    rect1(ctx,x,y,w,h+c*2,"black",c/8)
+    ctx.fillStyle="#fff"
+    ctx.fill()
+    ctx.restore()
+    ctx.save()
+    ctx.translate(x, y);
+	ctx.rotate(PI/360*lega);
+	ctx.translate(-x, -y);
+    rect1(ctx,x,y,w+h,h+c*2,"black",c/8)
+    ctx.fillStyle="#fff"
+    ctx.fill()
+    rect1(ctx,x,y+c*2+h*2,w+h,h,"black",c/8)
+    ctx.fillStyle="#0ff"
+    ctx.fill()
+    ctx.restore()
+}
+face=(x,y,w,h,c,a1=230,a2=-20,eyepos=0,tonepos=0)=>{
+    hand(x,y,w,h/4,c,a1,430+a1/10)
+    hand(x,y,w,h/4,c,a2,330+a2/10)
+    ctx.save()
+	ctx.fillStyle="#fff"
+    rect1(ctx,x,y-c*1.5,w,h+c/1.5,"black",c-c/4)
+    rect1(ctx,x,y-c*1.5,w,h+c/1.5,"white",c-c/4,1)
+	rect1(ctx,x,y,w,h,"black",c)
+    rect1(ctx,x,y,w,h,"white",c,1)
+    // eyepos -2~2
+    // tonepos -4 ~ 4
+    eye(x,y,w,h,c,eyepos,tonepos)
+    ctx.restore()
+}
+eye=(x,y,w,h,c,gapx,gapMounth)=>{
+    ctx.save()
+	rect1(ctx,x-c/3,y+c*1.5,2,2,"#111",c/4)
+    rect1(ctx,x-c/3+gapx,y+c*1.7,2,2,"#111",c/8,1)
+    rect1(ctx,x+c/2,y+c*1.5,2,2,"#111",c/4)
+    rect1(ctx,x+c/2+gapx,y+c*1.7,2,2,"#111",c/8,1)
+    
+    ctx.beginPath()
+    ctx.moveTo(x-c/4, y+c/4);
+    ctx.quadraticCurveTo(x-c/4*gapMounth,y+c,x-c/4+w+c/2,y+c/4);
+    ctx.stroke()
+    ctx.fillStyle="#DD404B"
+    ctx.fill()
+    ctx.closePath()
+    rect1(ctx,x-c/4,y+c/4,w+c/2,h+c/4,"#111",1)
+    ctx.restore()
+}
+
+class Faller extends GameObject{
+    constructor(x,y,w,h){
+        super(x,y,1,w,h)
+        this.D = 0 // dierction 0 1 2 ,decide the image
+        this.frameTime = 1
+        this.tw =tw
+        this.life = 100
+        this.score=0
+        // max 0~ 180
+        this.rightAni = 0
+        this.leftAni =0
+        this.rightHandAngle = 90
+        this.leftHandAngle = -90
+        // -4 ~ 4
+        this.toneAni =0
+        this.tonePos = 0
+        // meter
+        this.meter = 0
+        this.oldmeter=0
+    }
+    draw(){
+        //hand(this.pos.x-2,this.pos.y-10,5,this.h,-150)
+        ctx.save()
+        //body(this.pos.x+this.w/2.5,this.pos.y-this.h,10,this.h)
+        if(this.frameTime<1){
+            ctx.globalCompositeOperation = "xor"
+            rect1(ctx,this.pos.x,this.pos.y,this.w,this.h,"#aaa",5,10)
+        }
+        face(this.pos.x+this.w/2.5,this.pos.y-this.w/4,5,5,this.w-this.w/8,this.leftHandAngle,this.rightHandAngle,this.D,this.tonePos)
+        ctx.restore()
+    }
+    move(ms){
+        let move = ms*200
+        this.meter += move
+        this.leftHandAngle+=this.leftAni?2:-2
+        this.rightHandAngle+=this.rightAni?2:-2
+        this.tonePos+= this.toneAni?.6:-.6
+        this.rightAni=this.rightHandAngle>200?0:this.rightAni
+        this.rightAni=this.rightHandAngle<80?1:this.rightAni
+        this.leftAni=this.leftHandAngle>-80?0:this.leftAni
+        this.leftAni=this.leftHandAngle<-200?1:this.leftAni
+        this.toneAni=this.tonePos<-3?1:this.toneAni
+        this.toneAni=this.tonePos>3?0:this.toneAni
+        this.VectorXY.zero()
+        if(this.meter/100>(levelUpMeter[level]||270)){
+            this.oldmeter = this.meter
+            level++
+            INKEYIN&&key1.m?PlaySound(3):0
+        }
+        // keyboard in or mouse in
+        if(key.a||key.A||key.z||key.Z){
+            this.VectorXY.substract(new Vector(move,0))
+            this.rightHandAngle+=this.rightAni?5:-5
+            this.D = -2
+        }//left
+
+        if(key.S||key.s||key.X||key.x){
+            this.VectorXY.add(new Vector(move,0))
+            this.leftHandAngle+=this.leftAni?5:-5
+            this.D = 2
+        }//right
+        this.oldPos = this.pos.clone()
+        this.pos.addX(this.VectorXY)
+        if(this.pos.x>tw-tw/5.5){
+            this.pos = this.oldPos.substract(this.VectorXY)
+        }
+        if(this.pos.x<tw/8.5){
+            this.pos = this.oldPos.substract(this.VectorXY)
+        }
+    }
+    update(ms){
+        this.move(ms)
+        this.frameTime+=ms
+        if(this.frameTime>=1){
+            this.score+=ms*.1*level
+            this.life+=ms*1.5
+            this.life=Min(this.life,100)
+        }
+        GamePlayObject.forEach(e=>{
+            if(e.p>=2){
+                if(e.pos.collisionRect(this.pos)&&this.frameTime>1){
+                    if(e.p==2){
+                        this.life -= 20
+                        this.frameTime=0
+                        this.hurt()
+                    }
+                }
+            }
+        })
+        if(this.life<=0){
+            this.destory()
+        }
+    }
+    destory(){
+        for (var i = 0; i < 30; i++) {
+            new Blood(this.pos.x,this.pos.y,RandIntBetween(5,10),shadeColor("#640D14",RandInt(5)))
+        }
+        PlayerConfig.maxMeter = ToFixed(Max((this.meter/100)|0,parseFloat(PlayerConfig.maxMeter)))
+        PlayerConfig.maxScore = Max(this.score,PlayerConfig.maxScore)|0
+        localSet("M",PlayerConfig.maxMeter)
+        localSet("S",PlayerConfig.maxScore)
+        this.remove()
+    }
+    hurt(){
+        for (var i = 0; i < 20; i++) {
+            new Blood(this.pos.x,this.pos.y,5,shadeColor("#9A2D26",RandInt(20)))
+        }
+        INKEYIN&&key1.m?PlaySound(2):0
+    }
+}
+class Blood extends GameObject{
+    constructor(x,y,w,c){
+        super(x,y,0,w,w)
+        this.dx = (Rand(1)<.5?3:-3)*Rand(3)*.8
+        this.dy = (Rand(1)<.5?3:-3)*Rand(3)*.8
+        this.c = c
+    }
+    draw(){
+        rect1(ctx,this.pos.x,this.pos.y,2,2,this.c,this.pos.w,1)
+    }
+    update(ms){
+        this.frameTime+=ms
+        this.frameTime>3||this.pos.w<.3?this.remove():0
+        this.dy -= ms*0.9
+        this.pos.x -= this.dx
+        this.pos.y -= this.dy
+        this.pos.w -= .05
+        this.pos.w = Max(this.pos.w,1)
+    }
+}
+class Cloud extends GameObject{
+    constructor(x,y,f){
+        super(x,y,0,0,0)
+        this.frames = f
+    }
+    draw(){
+        ctx.drawImage(this.frames,this.pos.x,this.pos.y,this.frames.width,this.frames.height)
+    }   
+    update(ms){
+        this.VectorXY = this.pos.norm(new Vector(this.pos.x,-th))
+        this.VectorXY.dot(level)
+        this.pos.add(this.VectorXY)
+        if(this.pos.less(0,-this.frames.height)){
+            this.destory()
+        }
+    }
+    destory(){
+        let cl = cloudDrawImage[RandInt(2)]
+        new Cloud(this.pos.x,th+Rand(300),cl[RandInt(cl.length)])
+        this.remove()
+    }
+}
+class Item extends GameObject{
+    constructor(x,y,w,h,f,type){
+        super(x,y,type,w,h)
+        this.initialX = this.pos.x
+        //animation
+        this.frameArray = f
+        this.curFrame = f[0]
+        this.frameTime = 0
+        this.th = th
+    }
+    draw(){
+        //rect1(ctx,this.pos.x,this.pos.y,1,1,"#35fa12",this.w,1)
+        ctx.drawImage(this.curFrame,this.pos.x,this.pos.y,this.pos.w,this.pos.h)
+    }
+    update(ms){
+        let l = this.frameArray.length
+        this.frameTime ++
+        this.curFrame = this.frameArray[(this.frameTime%l)|0]
+        let gap = 1
+        let targetX  = this.initialX+gap
+        let targetPosX = this.pos.x>=tw/2?Min(tw-tw/7,this.initialX)-this.w:Max(tw/4,targetX)
+        this.VectorXY = this.pos.norm(new Vector(targetPosX,-this.th))
+        this.VectorXY.dot(level)
+        this.pos.add(this.VectorXY)
+        this.pos.w -= (this.pos.maxWidth)/Distance(0,this.th*2)*Abs(this.VectorXY.y)
+        this.pos.w = Max(this.pos.w,this.pos.maxWidth/2)
+        if(this.pos.less(0,-this.pos.h)){
+            this.destory()
+        }
+        this.frameTime = this.frameTime>l*2?0:this.frameTime
+    }
+    destory(){
+        //new Item(this.initialX,this.th,this.w,this.h,this.frameArray,this.p)
+        this.remove()
+    }
+}
+class BuildingWall{
+    constructor(x,y,w,h,c="#5F6256"){
+        this.pos = new Vector(x,y,w,h)
+        this.VectorXY=this.pos.clone()
+        this.initialX = x
+        this.initialY = canvasHeight/2
+        this.f = CreateWall(c)
+        this.th = th
+        this.frameTime = 0
+        this.meter = 0
+        this.colorCount = 0
+        BackgroundMoveObject.push(this)
+    }
+    render(ms){
+        this.draw()
+        this.update(ms)
+    }
+    draw(){
+        ctx.drawImage(this.f,this.pos.x,this.pos.y,this.pos.w,this.pos.h)
+    }
+    update(ms){
+        this.VectorXY = this.pos.norm(new Vector(this.pos.x,-this.th,1,1))
+        let move = ms*200
+        this.meter += move
+        //this.VectorXY.dot(Min(PlayerConfig.speed,PlayerConfig.maxSpeed))
+        this.VectorXY.dot(wallSpeed[level]||32)
+        PlayerConfig.speed = this.VectorXY.y
+        
+        if(this.pos.less(0,-this.pos.h)){
+            this.loop()
+        }
+        this.pos.add(this.VectorXY)
+    }
+    loop(){
+        this.pos.set({x:this.initialX,y:this.th})
+    }
+}
+//background view 1 ~ 2
+background=_=>{
+    var fontCanvas = CreateElement()
+    var fontCtx = GetContext(fontCanvas)
+    fontCanvas.width=tw
+    fontCanvas.height=th
+    var radialGradient = fontCtx.createRadialGradient(tw,0, 40, tw, 0, th/10);
+    radialGradient.addColorStop(.3, '#FFE261');
+    radialGradient.addColorStop(.7, '#F3CD05');
+    radialGradient.addColorStop(.8, '#F49F05');
+    radialGradient.addColorStop(1, '#FFF8C8');
+    fontCtx.beginPath()
+    fontCtx.fillStyle = radialGradient;
+    fontCtx.fillRect(0, 0, tw, th);
+    //fontCtx.globalCompositeOperation = "screen"
+    //GameObjectTest=[]
+    for(var i=0;i<tw;i+=40){
+        let height = RandIntBetween(th/4,th-th/8)
+        let color = shadeColor("#36688D",RandIntBetween(-20,20))
+        rect1(fontCtx,RandIntBetween(0,tw),th-height,RandInt(64),height,color,8,1)
+    }
+    return CanvasToImage(fontCanvas)
+}
+let back = background()
+
+//building 
+BackgroundView=_=>{
+    ctx.drawImage(back,0,0,tw,th)
+}
+
+BuildingWallInitial=_=>{
+    
+    for(let j =0;j<th/28;j++){
+        for (let i = 0; i < tw/32; i++) {
+            new BuildingWall(32*i,32*j,32,32)
+        }
+    }
+    CloudCreate(0)
+}
+CloudCreate=bc=>{
+    let cl = cloudDrawImage[SunToMoon]
+    for(let i=0;i<10;i++){
+        let a = i%2?RandIntBetween(tw-tw/8,tw):RandIntBetween(0,tw/18)-Rand(10)
+        new Cloud(a,th+Rand(300),cl[RandInt(cl.length)])
+    }
+}
+
+// UI Bar textfield
+TextField=(str,x,y,size,color="#fff",type=1)=>{
+    ctx.save()
+    ctx.fillStyle=color
+    ctx.font=size+"px Impact"
+    ctx.fillText(str,x,y)
+    type?ctx.strokeText(str,x,y):0
+    ctx.restore()
+}
+Bar=(x,y,h,live,ml,str)=>{
+    ctx.save()
+	let cy = h/ml*live,ty=y
+    rect1(ctx,x,y+=(h-cy),5,cy,"#1fc",5,1)
+    rect1(ctx,x,ty,5,h,"#000")
+ 	for(var i=0;i<live;i+=25){
+    	rect1(ctx,x,ty+(h-h/ml*i),8,1,"#a11",1,1)
+    }
+    ctx.fillStyle="#0F0"
+    ctx.font="20px Impact"
+    ctx.fillText(str,x-11,ty+h+10*2)
+    ctx.restore()
+}
+let miniMapY,reachColor = ["#b88","#8b8","#88b","#FFE8D6","#DDBEA9","#5F6256","#7C6354","#F9FBB2","#B5179E"],cur1color=1,cur2color=0
+ScaleLine=(x,y,gh,colors,h=200)=>{
+    ctx.save()
+    ctx.beginPath()
+    ctx.lineWidth = 3
+    for(var i=0,c=0;i<=h;i+=gh*2,c++){
+        ctx.strokeStyle="#fff"
+        if(c==5)rect1(ctx,x-gh/2,y+i,gh,gh,reachColor[colors],5,1)
+        else rect1(ctx,x+gh/2,y+i,-gh,gh)
+        ctx.stroke()
+    }
+    ctx.restore()
+}
+
+GameUIView=ms=>{
+    ctx.save()
+    ctx.beginPath()
+    let ci =1,firstLineY=20,secondLineY=80,sizeW=100
+    for(var k in keyStopRestartMute){
+        ctx.globalAlpha = Max(1-key1[keyStopRestartMute[k]],.5)
+        let x = tw-20*ci-5,y=firstLineY,h=12,w=18
+        resizeWindow?0:checkButton.push({x,y:y-10,w,h})
+        ctx.fillText(ci-1?ci-2?"⏯️":"🎧":"🏠",x,y)
+        ci++
+    }
+    ctx.restore()
+    resizeWindow=1
+    ctx.save()
+    ctx.beginPath()
+    ctx.fillStyle="#fff"
+    ctx.font="30px Impact"
+    let score = Pad(IntToString(Min(player.score|0,9999)))
+
+    TextField(score,tw-firstLineY*3.5,secondLineY-firstLineY,30)
+    TextField("Meter",10,firstLineY+5,15)
+    TextField(ToFixed(player.meter/100)+"  /m",15,firstLineY*2,12)
+    TextField("G-Speed",10,firstLineY*3,15)
+    TextField(ToFixed(level+Rand(ms))+"  /g",15,firstLineY*4,12)
+    ScaleLine(20,th/2,10,cur1color,sizeW)
+    Bar(tw-firstLineY,secondLineY,40,player.life|0,sizeW,"🧡")
+    //bar(tw-firstLineY,secondLineY,40,sizeW,sizeW,"🥶")
+    miniMapY = sizeW/levelUpMeter[level] * (player.meter-player.oldmeter)/sizeW*level
+    rect1(ctx,25,th/2+miniMapY,2,2,reachColor[cur2color],2,1)
+    if(miniMapY>=sizeW-13){
+        cur2color=cur1color
+        cur1color++
+        cur1color=cur1color>=reachColor.length?0:cur1color
+    }
+    ctx.restore()
+}
+let itemColor = "#25315D"
+let iron_ball_shake = CreateItemDraw([1,itemColor,[64,32,-64,-64,30],[0,0,0,0,0],.5],20)
+let long_wall = CreateItemDraw([1,itemColor,[16,16,32,-38,16],[0,0,0,0,0],0],1)
+let iron_ball_rotate = CreateItemDraw([0,itemColor,[64,32,-64,-64,30],[0,0,0,0,0],.5],20)
+let fix_arrow = CreateItemDraw([1,itemColor,[64,32,-64,-64,32],[0,-1,0,0,1],0],30)
+let ciclre = CreateItemDraw([1,itemColor,[64,32,-64,-64,32],[0,-1,0,0,1],.1],30)
+let fansa = CreateItemDraw([1,itemColor,[64,0,-64,-64,64],[0,0,0,0,0],.1],10)
+let adsf = CreateItemDraw([0,itemColor,[64,32,-64,-32,32],[0,-1,0,-1,-.1],.1],30)
+BadItemImage = [iron_ball_shake,long_wall,fansa,fix_arrow,ciclre,iron_ball_rotate,adsf]
+
+AppearArry = _=>{
+    // -----------------|
+    let randomnumbers = new Set, ans;
+    while (randomnumbers.size < 6) {    
+        randomnumbers.add(RandInt(6));
+    }
+    return ans = [...randomnumbers]
+}
+AppearDist=a=>a.join("").replace("0","#0#").split("#").filter(e=>e)
+WallResize=a=>a.map((e)=>e!="0"?e.length*tw/8:tw/6)
+Pause=a=>{
+    ctx.save()
+    ctx.fillStyle="rgba(10,10,10,.5)"
+    ctx.fillRect(0,0,tw,th)
+    TextField("-- PAUSE --",tw/2-tw/4,th/2+th/15,tw/15+th/15)
+    ctx.restore()
+}
+let lightx=scaleOut=0
+Start=a=>{
+    ctx.save()
+    TextField("- FALL　      -",tw/2-tw/4,th/5,tw/15+th/15)
+    TextField("-  DOWN　-",tw/2-tw/4,th/3,tw/15+th/15)
+    TextField("Score:"+Pad(IntToString(PlayerConfig.maxScore)),tw/2-tw/8,th/2+th/6,tw/15,"#b88")
+    TextField("Meter:"+Pad(IntToString(PlayerConfig.maxMeter)),tw/2-tw/8,th/2+th/4,tw/15,"#8b8")
+    TextField("Touch Me",tw/2-tw/7.5,th-th/10,tw/15,shadeColor("#aaaaaa",lightx))
+    rect1(ctx,tw/2-tw/4,th-th/5,tw/2,th/8,shadeColor("#aaaaaa",lightx))
+    startButton = {x:tw/2-tw/4,y:th-th/5,w:tw/2,h:th/8}
+    lightx+=1
+    lightx = lightx>40?0:lightx
+    GamePlayObject.forEach(e=>{if(e instanceof Cloud){e.render()}})
+    ctx.restore()
+}
+End=a=>{
+    ctx.save()
+    ctx.fillStyle="rgba(10,10,10,.5)"
+    ctx.fillRect(0,0,tw,th)
+    rect1(ctx,tw/2-tw/4,th/4,tw/2,th/2,shadeColor("#555555",1),5,1)
+    rect1(ctx,tw/2-tw/4,th/4,tw/2,th/2,shadeColor("#aaaaaa",lightx))
+    rect1(ctx,tw/2-tw/4,th/4+th/9,tw/2,1,shadeColor("#F7DD72",lightx))
+    TextField("Best",tw/2-tw/12,th/4+th/10,tw/10,"#F7DD72")
+    TextField("Score : "+Pad(IntToString(PlayerConfig.maxScore)),tw/4+tw/10,th/4+th/5,tw/16,"#b88")
+    TextField("Meter : "+Pad(IntToString(PlayerConfig.maxMeter)),tw/4+tw/10,th/2,tw/16,"#8b8")
+    //TextField("Score:"+Pad(IntToString(PlayerConfig.score)),tw/2-tw/8,th/2+th/6,tw/15,"#b88")
+    //TextField("Meter:"+Pad(IntToString(PlayerConfig.maxMeter)),tw/2-tw/8,th/2+th/4,tw/15,"#8b8")
+    rect1(ctx,tw/2-tw/9,th/2+th/32,tw/4,th/5,shadeColor("#F7DD72",lightx),5,1)
+    returnButton={x:tw/2-tw/9,y:th/2+th/32,w:tw/4,h:th/5}
+    TextField("AGAIN",tw/2-tw/9.5,th/2+th/5.5,tw/10,shadeColor("#8888bb",lightx))
+    lightx+=1
+    lightx = lightx>40?0:lightx
+    ctx.restore()
+}
+let tutorialTimes=removetutorialTimes=0
+Tutorial=ms=>{
+    ctx.save()
+    let w = tw
+    let h = th
+    let color = "#eeeeee"
+    // give an shadow frame
+    ctx.globalAlpha=0.5
+    ctx.fillStyle='#333'
+    ctx.fillRect(0,0,w,h)
+    ctx.beginPath();
+    ctx.strokeStyle=shadeColor(color,tutorialTimes)
+    ctx.setLineDash([9]);
+    ctx.lineWidth=5
+    ctx.strokeRect(w/2+w/3.5,5,w/5,h/16)
+    ctx.moveTo(w/2,0)
+    ctx.lineTo(w/2,h*ms*tutorialTimes)
+    tutorialTimes+=2
+    removetutorialTimes+=ms
+    tutorialTimes= math.min(h,tutorialTimes)
+    ctx.globalAlpha=tutorialTimes/h
+    ctx.stroke()
+    ctx.fillStyle=shadeColor(color,tutorialTimes)
+    ctx.font=w/20+"px sans-serif"
+    ctx.fillText("Move Left",w/8,h-5)
+    ctx.fillText("Move Right",w/8+w/2,h-5)
+    let x = w/4+w/2,y=h/2+h/4
+    ctx.moveTo(x,y)
+    ctx.bezierCurveTo(x+100, y+100, x-100, y, x,h-w/20);
+    x=w/4
+    ctx.moveTo(x,y)
+    ctx.bezierCurveTo(x+100, y+100, x-100, y, x,h-w/20);
+    ctx.stroke()
+    ctx.closePath()
+    ctx.restore()
+}
+ItemGenerator=l=>{
+    // level linear up
+    // bad item appear 
+    let badIt = [1,2,3,4,5,6]
+    let randAppearNum = Min(RandInt(l),5)
+    let randAppearChance=AppearArry()
+    let maxRandBadImageLength = Min(badIt.length,l)
+    // level 3 6 9
+    if(!(level%3)&&level){
+    // if(1){
+        let curX = 0
+        let appearLength = AppearDist(randAppearChance)
+        WallResize(appearLength).forEach((e,i)=>{
+            if(appearLength[i]!="0"){
+                new Item(curX,th+32,e,32,BadItemImage[1],2)
+            }else{
+                curX+=tw/6
+            }
+            curX+=e
+        })
+    }else{
+    // level 1 2 4 5 7 8
+        randAppearChance.forEach((e,i)=>{
+            if(e&&e<=randAppearNum){
+                let item = RandInt(maxRandBadImageLength)
+                new Item(i*tw/6,th+32,48,48,BadItemImage[item],2)
+            }
+        })
+    }
+}
+GameWorldInit=a=>{
+    BackgroundMoveObject=[]
+    BuildingWallInitial()
+    BadItemImage = [iron_ball_shake,long_wall,iron_ball_rotate,fix_arrow,ciclre,fansa,adsf]
+    GamePlayObject=GamePlayObject.filter(e=>e instanceof Cloud)
+    PlayerConfig.maxScore = StringToFloat(localGet("S"))|| 0
+    PlayerConfig.maxMeter = StringToFloat(localGet("M"))|| 0
+    //INKEYIN&&key1.m?CanPlaysong("song1"):0
+}
+NewGame=_=>{
+    GamePlayObject = []
+    CloudCreate(RandInt(3))
+    player = new Faller(tw/2,th/8,tw/16,th/16,10)
+    returnButton=null
+    startButton=null
+    level = 1
+    key1.p=0
+    key1.m=1
+    removetutorialTimes=0
+    CanPlaysong("song1")
+}
+// speed max 32 
+let lastUpdate = timer.now(),distanceY=soundStop=0,changeSong= 1
+Update=()=>{
+    const now = timer.now();
+    const deltaMs = now - lastUpdate;
+    const delta = deltaMs / 1000;
+    lastUpdate = now;
+    BackgroundView()
+    if(!key1.m&&SoundNode){
+        StopSong()
+        soundStop=1
+    }else{
+        if(soundStop){
+            PlaySong(level<8?"song1":"song2")
+            soundStop=0
+        }
+        if(level>=10&&changeSong){
+            StopSong()
+            PlaySong(level<10?"song1":"song2")
+            changeSong=0
+        }
+    }
+    
+    // if playing >
+    if(key1.r){
+        Start(delta)
+        //End(delta)
+    }else{
+        if(!key1.p){
+            ctx.save()
+            
+            ctx.strokeStyle="#FF1"
+            ctx.fillStyle="#555"
+            ctx.beginPath()
+            ctx.moveTo(tw/8,0)
+            ctx.lineTo(0,th)
+            ctx.lineTo(tw,th)
+            ctx.lineTo(tw-tw/8,0)
+            ctx.fill()
+            ctx.clip()
+            BackgroundMoveObject.forEach(e=>{
+                e.render(delta)
+            })
+            ctx.restore()
+            GamePlayObject.forEach(e=>{
+                if(e.pos.y<=th){
+                    e.render(delta)
+                }else{
+                    e.update(delta)
+                }
+            })
+            distanceY+=level
+            if(distanceY>=128+level*20){
+            ItemGenerator(level)
+            distanceY=0
+            }
+            if(player.life<=0){
+                End(delta)
+            }
+            if(removetutorialTimes<=5){
+                Tutorial(delta)
+            }else{
+                removetutorialTimes=6
+            }
+            GameUIView(delta)
+        }else{
+            Pause()
+            GameUIView(0)
+        }
+    }
+}
+MainLoop=_=>{
+    ctx.clearRect(0,0,canvasWidth,canvasHeight)
+    ctx.save()
+    ctx.scale(2,2)
+    tw = canvasWidth/2
+    th = canvasHeight/2
+    Update()
+    ctx.restore()
+    requestAnimationFrame(MainLoop)
+}
+GameWorldInit(0)
+MainLoop(0)
+</script>
+</html>

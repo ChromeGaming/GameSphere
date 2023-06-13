@@ -1,0 +1,188 @@
+<html>
+  <head>
+    <title>Canvas Tester</title>
+  <style>
+  body {
+    margin:0px;
+    padding:0px;
+    text-align:center;
+	background-color: #000;
+  }
+  
+  @keyframes roll {
+      0% {
+	    transform: rotate(0deg);
+	  }
+	  100% {
+	    transform: rotate(360deg);
+	  }
+  }
+
+  @keyframes throb {
+      0% {
+	    transform: scale(1.1,1.1);
+	  }
+	  100% {
+	    transform: scale(.9,.9);
+	  }
+  }
+  
+  
+  div.ttype {
+    width:4em;
+	height:4em;
+	background-size: 100% 100%;
+	float:left;	
+  }
+
+  div.ttype.roll {
+    animation: roll 1.5s infinite linear;
+  }
+
+  div.ttype.rock {
+    animation: roll 3s infinite ease-in-out alternate;
+  }
+  div.ttype.throb {
+    animation: throb .5s infinite ease-in-out alternate;
+  }
+
+  div.ttype.big {
+    width:12em;
+	height:12em;	
+	animation: none;
+  }
+
+  div.ttype.vbig {
+    width:20em;
+	height:20em;	
+	animation: none;
+  }
+  
+  div.ttype.bullet {
+    width:1em;
+	height:1em;	
+	animation: none;
+  }
+    
+  </style>
+  </head>
+  <body>
+  
+  <script src="sprites.js"></script>
+  
+  <script type="text/javascript">
+  
+  
+  	  prepSprites();
+	  var bullet=createOGO(50).lineStyle('#ffff00').lineWidth(2)
+	           		       .line(0,.4,0,-.4)
+	  bullet
+	      .echo(20,0,0,0.4,0,0,0,1,.1,.8,0)
+		  .rotSym(2)
+		  .addDivSample('bullet');
+	  
+	  
+	  
+	  		
+	  base=createOGO(200).lineGrad('#AAF','#00F').lineWidth(2)
+	           		       .line(0,0,.15,.3).line(0,0,.3,.15)
+	  				       .line(.15,.3,.3,.3).line(.3,.3,.3,.15);
+	  	
+	  base.rotSym(8)
+	      .echo(8,0,0,0,0,0,0,0.2,1,0,1)
+	      .addDivSample('big');
+	  
+	  base=createOGO(200).lineGrad('#F88','#F00').lineWidth(2)
+	           		       .line(0,0,.15,.3).line(0,0,.3,.15)
+	  				       .line(.15,.3,.3,.3).line(.3,.3,.3,.15)
+						   .echo(30,-0.2,-0.2,0,0,0,25,1,1,0,.2)						 
+		   .rotSym(3)
+		   .mirror(false,true)		   
+		   .addDivSample('normal');
+
+	   base=createOGO(200).lineGrad('#F00','#505').lineWidth(3)
+					   .line(0,0,.15,.3).line(0,0,.3,.15)
+					   .line(.15,.3,.3,.3).line(.3,.3,.3,.15)
+	      .echo(10,-.4,.2,-.4,-.5,0,0,1.2,1,0,.8)						 
+		   .rotSym(4)
+		   .addDivSample('big')		   
+		   .addDivSample('normal');
+		
+	  
+      bullet=createOGO(300).lineGrad('#00F','#F08').lineWidth(3)
+	        .line(.2,0,0,.4)
+	        .mirror(true,false)
+	        .echo(10,0,-.4,0,0,0,0,.2,1,.5,1)
+			.echo(5,0,-.1,0,0,0,0,2,1,.1,1)
+			.addDivSample('normal')
+            .addDivSample('vbig');
+  
+      createOGO(100).lineStyle('#DD00DD').lineWidth(3)
+	        .line(.4,0,0,.4)
+	        .echo(5,0,-.4,0,0,0,0,.2,1,.5,1)
+			.rotSym(6)
+	        .echo(5,0,0,0,0,0,0,2,1,0,1)
+			.addDivSample('normal');
+      createOGO(100).lineStyle('#9900FF').lineWidth(3)
+	        .line(.4,0,0,.4)
+	        .echo(5,0,-.4,0,0,0,0,.2,1,.5,1)
+			.rotSym(3)
+	        .echo(5,0,0,0,0,0,0,2,1,0,1)
+			.addDivSample('roll');
+            
+  
+      bullet=createOGO(100).lineStyle('#AAF').lineWidth(2)
+	        .circle(.1,0,.2)
+	        .echo(10,0,-.1,0,-.15,0,45,.2,1,.5,1)
+			.rotSym(3)
+	        .addDivSample('roll');
+      bullet=createOGO(100).lineStyle('#00FF00').lineWidth(2);
+	  bullet.circle(.1,0,.2)
+	        .echo(10,0,-.1,0,-.15,0,180,.2,1,.5,1)
+			.rotSym(3)
+	        .addDivSample('normal');
+      
+	  bullet=createOGO(50).lineStyle('#F00').lineWidth(10)
+	        .circle(.3,0,.05).lineStyle('#F8A').circle(.1,0,.01)
+	        .echo(10,0,0,0,0,90,0,.5,1,.1,.5)
+			.rotSym(3)
+	        .addDivSample('bullet')
+	        .addDivSample('normal');
+      bullet=createOGO(150).lineStyle('#FF5555').lineWidth(2);
+	  bullet.circle(.1,0,.1).lineStyle('#FF0000').circle(.3,0,.1)
+	        .rotSym(4)
+	        .echo(10,0,0,0,0,0,90,1,1,0,1)
+			.addDivSample('bullet')
+	        .addDivSample('normal');
+      bullet=createOGO(150).lineStyle('#55AA00').lineWidth(2);
+	  bullet.circle(.1,.1,.1).lineStyle('#00FF00').circle(.3,0,.1)
+	        .echo(80,0,0,0,0,0,360,1,1,0,.5)
+			.rotSym(2)
+	        .addDivSample('bullet')
+	        .addDivSample('normal');
+      
+	  bullet=createOGO(200).lineStyle('#AAAAFF').lineWidth(3);
+	  bullet.circle(.3,.1,.1).lineStyle('#0000AA').line(0,.1,.3,.2)
+	        .rotSym(8)
+	        .echo(15,0,0,0,0,45,0,1,1,0,.4)
+			.addDivSample('big')
+	        .addDivSample('normal');
+      
+	  createOGO(400)
+	      .fillGrad('#500','#F08').text("\u03A9",-.2,.2,3,true)	       
+		  .echo(40,0,0,0,0,90,0,.5,1,.1,.4)			
+		  .rotSym(4)
+	      .lineStyle('#D00').text("\u03A9",-.2,.2,3.2)	       
+		  .fillStyle('#D00').text("zone",.05,0.2,1.1,true)	       
+		  
+		  .addDivSample('vbig').addDivSample('normal');
+	        
+      	
+	      
+		
+            
+	
+  
+  </script> 
+  </body>
+</html>

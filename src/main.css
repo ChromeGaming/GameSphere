@@ -239,6 +239,7 @@ ul{
     @apply text-white mx-auto text-center max-w-[600px];
 }
 
+
 .join-title{
     text-shadow: 0px 4px 4px 0x #00000040;
     @apply text-[44px] tracking-[.09em] font-bold;

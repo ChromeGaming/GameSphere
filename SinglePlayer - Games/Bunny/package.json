@@ -1,0 +1,30 @@
+{
+  "name": "js13k-bunny",
+  "version": "1.0.0",
+  "description": "An entry for js13kGames.com 2017",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "zip /tmp/bunny.zip index.html style.css game.js && ls -lh /tmp/bunny.zip"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/aurium/js13k-bunny.git"
+  },
+  "keywords": [
+    "js",
+    "13k",
+    "game",
+    "js13k",
+    "js13kgame",
+    "forrest",
+    "bunny",
+    "run"
+  ],
+  "author": "Aurélio A. Heckert",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/aurium/js13k-bunny/issues"
+  },
+  "homepage": "https://github.com/aurium/js13k-bunny#readme"
+}

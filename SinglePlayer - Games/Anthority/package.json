@@ -1,0 +1,26 @@
+{
+  "name": "anthority",
+  "version": "1.0.0",
+  "description": "a game",
+  "main": "index.js",
+  "scripts": {
+    "test": "http-server game/ -p 8081 -c1",
+    "build": "node tools/build.js game/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrociDB/anthority.git"
+  },
+  "author": "Bruno Croci",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CrociDB/anthority/issues"
+  },
+  "homepage": "https://github.com/CrociDB/anthority#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "clean-css": "^4.1.8",
+    "html-minifier": "^3.5.3",
+    "uglify-es": "^3.0.28"
+  }
+}

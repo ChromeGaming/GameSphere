@@ -1,0 +1,338 @@
+body {
+	margin:0px;
+	padding:0px;
+	text-align:center;	
+	background: linear-gradient(to right, #000 10%,#ffa 40%,#ffa 60%,#000 90%);
+	background-color: #400;
+	height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: sans-serif;	
+	overflow:hidden;
+	
+}
+
+#board {
+	background-color: #000;
+	position: absolute;
+	overflow:hidden;
+	display:block;
+	
+	box-sizing: border-box;
+	border: solid 2px #FFA;
+	transition: transform 1s ease-in-out;
+	transform: translateY(-110%);
+	z-index: 190;	
+}
+
+
+#board.active {
+	display:block;	
+	transform: translateY(0);
+}
+
+#levsel {
+	transition: transform 1s ease-in-out;
+	transform: translateY(0);
+}
+
+#levsel.hide{
+	transform: translateY(+110%);	
+}
+
+div.zone {
+	background-color: rgba(0,0,0,.8);
+	box-sizing: border-box;
+	width:10em;
+	height:10em;
+	position:relative;
+	top: 0em;
+	
+	padding-top: 4em;
+	padding-left: .5em;
+	padding-right: .5em;
+	padding-bottom: .5em;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 1em;
+	border-radius: 2em;
+    background-size: 100% 100%;	
+	font-size:14pt;
+	cursor: pointer;	
+	overflow: hidden;
+	transition: all 1s ease-in-out;
+}
+
+div.zone.sel {
+	padding-top: 1em;
+	width: 20em;
+	height: 22em;
+    background-color: #000;
+    
+}
+
+div.zb {
+	border: 2px solid #FF0;
+	background: #000;
+	color: #FF0;
+	cursor: pointer;
+	padding:.5em;
+	margin: 1em;
+	border-radius: .5em;
+}
+
+div.breaker {
+	height: 5em;	
+}
+
+#z0 {
+	color:#AFA;
+	border: solid 3px #0F0
+}
+
+#z1 {
+	color:#88F;
+	border: solid 3px #88F;
+}
+
+#z1.sel {
+	top: -10em;
+}
+
+#z2 {
+	color:#F44;
+	border: solid 3px #F44;
+}
+
+#z2.sel {
+	top: -20em;
+}
+
+
+#logo {
+	position: absolute;
+	left:-4em;
+	top:0;
+	bottom:0;
+	width:  15em;
+	background-size: 100% auto;
+	background-repeat: repeat-y;
+	box-sizing: border-box;
+}
+
+#credits {
+	position: absolute;
+	right:0.25em;
+	top:4em;
+	color:#FFA;
+	z-index: 150;
+	transform:rotate(-90deg);
+	transform-origin: 100% 100%;
+}
+
+#credits a {
+	color: #FFF;
+	text-decoration:none;
+	
+}
+
+
+
+#timer {
+	position: absolute;
+	right:-.1em;
+	top:-.1em;
+	width: 5em;
+	padding: 0.2em 0.2em 0.2em 0em;
+	border-radius: 0em 0em 0em 1.5em;
+	background: rgba(0,0,0,.6);
+	border: #FF0 solid 3px;
+	color: #FF8;
+	font-size: 20pt;
+	font-family: monospace;	
+    display:none;
+	text-align:right;
+	z-index: 200;
+	
+
+}
+
+
+#timer.active {
+	display:block;
+}
+
+
+#board div.glitchtext {
+	color: #FFF;
+	font-size:130%;
+	display: block;
+	text-align:left;
+	font-family: monospace;
+	font-weight: bold;
+	line-height: 2em;
+	
+}
+
+
+@keyframes glitch {
+  0% {
+	transform: scale(1,1);
+	background-color: #880;
+  }
+  10% {
+	transform: scale(1.6,1) rotate(3deg);
+  }
+  20% {
+	transform: scale(1,1.6);
+  }
+  
+  30% {
+	transform: scale(1.2,1.2) rotate(3deg);
+	background-color: #000;
+  }  
+  60% {
+	background-color: #500;
+	transform: scale(1.1,1) rotate(-3deg);
+  }
+  90% {
+	background-color: #050;
+	transform: scale(1,1);
+  }
+  100% {
+	background-color: #000;
+	
+  }
+}
+
+#board.glitch {
+   background-color: #550;
+   animation: glitch 2s 1 linear; 
+   
+}
+
+.boardobject {
+	position: absolute;
+	width: 2em;
+	height: 2em;
+	top: -1em;
+	left: -1em;
+	pointer-events: none;
+}
+
+
+.boardobject div {
+	background-size:100% 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+}
+
+@keyframes roll {
+  0% {
+	transform: rotate(0deg);
+  }
+  100% {
+	transform: rotate(360deg);
+  }
+}
+
+@keyframes roll120 {
+  0% {
+	transform: rotate(0deg);
+  }
+  100% {
+	transform: rotate(120deg);
+  }
+}
+
+
+@keyframes roll90 {
+  0% {
+	transform: rotate(0deg);
+  }
+  100% {
+	transform: rotate(90deg);
+  }
+}
+
+@keyframes diefold {
+  0% {
+	transform: translateY(0) scale(1,1);
+	opacity: .5;
+	
+  }
+  50% {
+	transform: translateY(-50%) scale(.5,.5);
+	opacity: 1;
+	
+  }
+  100% {
+	transform: translateY(0) scale(1,.1);
+	opacity: 0;	
+  }
+}
+
+  @keyframes throb {
+      0% {
+	    transform: scale(1,1);
+		opacity: .5;
+	  }
+	  100% {
+	    transform: scale(.9,.9);
+		opacity: 1;
+	  }
+  }
+  
+ .boardobject div.roll {
+    animation: roll 1.5s infinite linear;
+ }
+ 
+ .boardobject div.roll120 {
+    animation: roll120 .7s infinite ease-in-out;
+ }
+ 
+ .boardobject div.roll90 {
+    animation: roll90 .6s infinite ease-in;
+ }
+ 
+ 
+ .boardobject div.rock {
+    animation: roll120 .7s infinite ease-in-out alternate;
+ }
+
+ .boardobject div.throb {
+    animation: throb .5s infinite ease-in-out alternate;
+ }
+
+ .boardobject.die div {
+	animation: diefold .5s 1 linear;	
+ }
+
+ #badsize {
+	 position:absolute;
+	 top:0;
+	 bottom:0;
+	 left:0;
+	 right:0;
+	 background: #500;
+	 color:white;
+	 z-index:1000;
+	 font-size:300%;
+ }
+ 
+ @media all and (min-height: 25em) {
+	 #badsize {
+		 display:none;
+	 }
+ }
+ 
+ @media all and (max-width: 25em) {
+	 div.zone {
+		 font-size: 10pt;
+	 }
+ }

@@ -1,0 +1,236 @@
+<html>
+  <head>
+    <title>Canvas Tester</title>
+  <style>
+  body {
+    margin:0px;
+    padding:0px;
+    text-align:center;
+	background-color: #000;
+  }
+  
+  @keyframes roll {
+      0% {
+	    transform: rotate(0deg);
+	  }
+	  100% {
+	    transform: rotate(360deg);
+	  }
+  }
+  
+  
+  div.ttype {
+    width:4em;
+	height:4em;
+	background-size: 100% 100%;
+	float:left;
+	animation: roll 10s infinite linear;
+  }
+  div.ttype.big {
+    width:12em;
+	height:12em;	
+	animation: none;
+  }
+  
+  div.ttype.bullet {
+    width:1em;
+	height:1em;	
+	animation: none;
+  }
+    
+  </style>
+  </head>
+  <body>
+  
+  <script type="text/javascript">
+  
+      var OGO={
+	     line: function(x,y,x2,y2) { this.ctx.beginPath(); this.ctx.moveTo(x,y); this.ctx.lineTo(x2,y2); this.ctx.stroke(); return this;},
+		 circle: function(x,y,r) { this.ctx.beginPath(); this.ctx.arc(x, y, r, 0, 2 * Math.PI, false); this.ctx.stroke(); return this;},
+	     lineStyle: function(s) { this.ctx.strokeStyle=s;  return this;},
+	     lineWidth: function(w) { this.ctx.lineWidth=w/100;  return this;},
+		 setBackground: function(elid) {
+		    var el=document.getElementById(elid); 
+			var data=this.canvas.toDataURL();
+			el.style.backgroundImage = 'url('+data+')';
+			return this;
+		 },
+		 setElementBackground: function(el) {
+		 	var data=this.canvas.toDataURL();
+			el.style.backgroundImage = 'url('+data+')';
+			return this;
+		 },
+		 
+		 echo: function(frames,xs,ys,xe,ye,rots,rote,ss,se,alphas,alphae) {
+		    var nogo=createOGO(this.res);    
+			for (var i=0;i<frames;i+=1) {
+			  var re=i/frames;
+			  var rs=1-re;
+	          nogo.ctx.save();
+		      nogo.ctx.rotate((rots*rs+rote*re)*Math.PI/180);
+              nogo.ctx.translate((xs*rs+xe*re),(ys*rs+ye*re));			  
+              nogo.ctx.scale(ss*rs+se*re,ss*rs+se*re);
+			  nogo.ctx.globalAlpha=alphas*rs+alphae*re;
+			  
+			  nogo.ctx.drawImage(this.canvas,-.5,-.5,1,1);
+			  nogo.ctx.restore();
+			}
+	        return nogo;
+		 },
+		 rotSym:function(num) 
+		 {
+		    return this.echo(num,0,0,0,0,0,360,1,1,1,1);
+		 },
+		 mirror: function(x,y) {
+		    var nogo=createOGO(this.res);    
+			nogo.ctx.drawImage(this.canvas,-.5,-.5,1,1);			
+			nogo.ctx.scale(x?-1:1,y?-1:1);
+			nogo.ctx.drawImage(this.canvas,-.5,-.5,1,1);						  
+	        return nogo;
+		 },
+		 addDivSample: function(cls)
+		 {
+		    var d=document.createElement('div');
+			d.classList.add(cls);
+			d.classList.add('ttype');
+			this.setElementBackground(d);
+			document.body.appendChild(d);
+			return this;
+		 },
+		 makeSprite:function(cls,size) {
+		    return {
+			    size: size,
+				displayCls: cls,
+				imgData: this.canvas.toDataURL()				
+			}
+		 }
+		 
+		 
+		 
+	  };
+	  
+      function createOGO(res)
+	  {
+	    var ogo=Object.create(OGO);
+		if (!res) res=100;
+		ogo.res=res;
+	    ogo.canvas = document.createElement("canvas");
+	    ogo.canvas.width=res;
+	    ogo.canvas.height=res;
+		ogo.ctx = ogo.canvas.getContext('2d');
+	    ogo.ctx.translate(+ogo.canvas.width/2,+ogo.canvas.height/2);
+        ogo.ctx.scale(ogo.canvas.width,ogo.canvas.height);      
+		ogo.ctx.lineCap='round';
+		
+        return ogo;
+	  }
+	  
+	  var bullet=createOGO(50).lineStyle('#ffff00').lineWidth(2)
+	           		       .line(0,.4,0,-.4)
+	  bullet
+	      .echo(20,0,0,0.4,0,0,0,1,.1,.8,0)
+		  .rotSym(2)
+		  .addDivSample('bullet');
+	  
+	  bullet=createOGO(50).lineStyle('#ffff00').lineWidth(2)
+	           		       .line(0,0,0,-.4);
+	  bullet
+	      .echo(30,0,0,0,0,0,90,1,.6,.1,.8)
+		  .rotSym(4)
+		  .addDivSample('bullet');
+	  
+	  
+	  var base=createOGO(200).lineStyle('#00aaff').lineWidth(2)
+	           		       .line(0,0,.15,.3).line(0,0,.3,.3).line(0,0,.3,.15)
+	  				       .line(.15,.3,.3,.3).line(.3,.3,.3,.15);
+	  
+	  base.rotSym(3)
+		  .echo(8,0,0,0,0,0,-45,.8,1.2,1,0)
+		  .addDivSample('normal');
+	  base.echo(20,-0.2,-0.2,0,0,0,-70,1,1,0,.5)						 
+		   .rotSym(3)
+		   .addDivSample('normal');
+		   
+	  base=createOGO(200).lineStyle('#00ff00').lineWidth(2)
+	           		       .line(0,0,.15,.3).line(0,0,.3,.15)
+	  				       .line(.15,.3,.3,.3).line(.3,.3,.3,.15);
+	  	
+	  base.rotSym(8)
+	      .echo(8,0,0,0,0,0,0,0.2,1,0,1)
+	      .addDivSample('big');
+	  
+	  base
+	      .echo(10,-.4,.2,-.4,-.5,0,0,1,1,0,.8)						 
+		   .rotSym(4)
+		   .addDivSample('big')		   
+		   .addDivSample('normal');
+	  base.echo(30,-0.2,-0.2,0,0,0,25,1,1,0,.2)						 
+		   .rotSym(3)
+		   .mirror(false,true)		   
+		   .addDivSample('normal');
+      var avatar=createOGO(200).lineStyle('#FFFF00').lineWidth(2);
+	  avatar.line(.4,-.4,0,.5).line(.4,-.4,0,-.2)
+	        .lineStyle('#FFAA00').line(.2,.1,.25,.5)
+			.mirror(true,false)
+	        .echo(10,0,0,0,0,0,0,.1,1,0.5,1)
+            .echo(6,0,0,0,-.2,0,0,1,1,.5,.2)
+            .addDivSample('normal');
+  
+      bullet=createOGO(200).lineStyle('#5555FF').lineWidth(3);
+	  bullet.line(.2,0,0,.4)
+	        .mirror(true,false)
+	        .echo(10,0,-.4,0,0,0,0,.2,1,.5,1)
+			.echo(5,0,0,0,0,0,0,2,1,.1,1)
+			.addDivSample('normal')
+            .addDivSample('big');
+  
+      bullet=createOGO(100).lineStyle('#FFAAAA').lineWidth(2);
+	  bullet.line(.4,0,0,.4)
+	        .echo(5,0,-.4,0,0,0,0,.2,1,.5,1)
+			.rotSym(6)
+	        .echo(5,0,0,0,0,0,0,2,1,0,1)
+			.addDivSample('normal');
+      bullet=createOGO(100).lineStyle('#FF9999').lineWidth(2);
+	  bullet.line(.4,0,0,.4)
+	        .echo(5,0,-.4,0,0,0,0,.2,1,.5,1)
+			.rotSym(3)
+	        .echo(5,0,0,0,0,0,0,2,1,0,1)
+			.addDivSample('normal');
+            
+  
+      bullet=createOGO(100).lineStyle('#FFFF00').lineWidth(2);
+	  bullet.circle(.1,0,.2)
+	        .echo(10,0,-.1,0,-.15,0,45,.2,1,.5,1)
+			.rotSym(3)
+	        .addDivSample('bullet');
+      bullet=createOGO(100).lineStyle('#00FF00').lineWidth(2);
+	  bullet.circle(.1,0,.2)
+	        .echo(10,0,-.1,0,-.15,0,180,.2,1,.5,1)
+			.rotSym(3)
+	        .addDivSample('normal');
+      
+	  bullet=createOGO(50).lineStyle('#AAAAFF').lineWidth(10);
+	  bullet.circle(.3,0,.05).lineStyle('#5555FF').circle(.1,0,.01)
+	        .echo(10,0,0,0,0,90,0,.5,1,.1,.5)
+			.rotSym(3)
+	        .addDivSample('bullet')
+	        .addDivSample('normal');
+      bullet=createOGO(150).lineStyle('#FF5555').lineWidth(2);
+	  bullet.circle(.1,0,.1).lineStyle('#FF0000').circle(.3,0,.1)
+	        .rotSym(4)
+	        .echo(10,0,0,0,0,0,90,1,1,0,1)
+			.addDivSample('bullet')
+	        .addDivSample('normal');
+      bullet=createOGO(150).lineStyle('#55AA00').lineWidth(2);
+	  bullet.circle(.1,.1,.1).lineStyle('#00FF00').circle(.3,0,.1)
+	        .echo(80,0,0,0,0,0,360,1,1,0,.5)
+			.rotSym(2)
+	        .addDivSample('bullet')
+	        .addDivSample('normal');
+      
+  
+  
+  
+  </script> 
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "off-the-line",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "author": "Kevin Etchells",
+  "dependencies": {
+    "gulp-clean": "^0.4.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-size": "^3.0.0",
+    "gulp-uglify": "^3.0.1",
+    "gulp-zip": "^4.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

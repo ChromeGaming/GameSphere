@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+        <meta http-equiv='pragma' content='no-cache'/>
+        <meta name='apple-mobile-web-app-capable' content='yes'/>
+        <meta name="viewport" content="width=device-width, user-scalable=no"/>
+        <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'/>
+        <meta charset='utf-8'/>
+        <link rel="manifest" href="SpaceMenace.webmanifest">
+        <link rel="apple-touch-icon" href="57_icon.png">
+        <link rel="apple-touch-icon" href="72_icon.png">
+        <style>
+            canvas {
+                -webkit-touch-callout: none !important;
+                -webkit-user-select: none !important;
+            }
+        </style>
+    </head>
+    <button style="border-color: blue;" id="bigButton"></button>
+    <button style="border-color: blue;" id="smallButton" onclick="safariSFXstart()">CLICKER</button>
+    <body onload="setup()" style='background: black; margin: 0; padding: 0; overflow: hidden;'>
+        <script type='text/javascript' src='game.js'></script>
+    </body>
+</html>

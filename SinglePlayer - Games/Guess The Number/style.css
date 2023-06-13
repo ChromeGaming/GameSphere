@@ -1,0 +1,85 @@
+* {
+  color: #084298;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: url("assets/Background.jpg");
+  opacity: 1000; 
+}
+img{
+  opacity: 0.5;
+}
+/* Header Portion */
+#header {
+  display: flex;
+  flex-direction: column;
+  background-color: #cfe2ff;
+  color: white;
+}
+#title {
+  margin: 0px 7px;
+  padding: 3px;
+  font-weight: 400;
+}
+#author {
+  margin: 0px 0px;
+  padding: 7px;
+}
+.replay {
+  display: inline;
+}
+.replay button {
+  margin: 5px;
+}
+.score {
+  font-size: 21px;
+  float: right;
+  background-color:#cfe2ff;
+  display: block;
+  width: 154px;
+  padding: 7px;
+  color: black;
+  font-weight: 500;
+  margin: 5px;
+  
+}
+.score span {
+  color: black;
+}
+/* Box Portion */
+#box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #a981c9;
+  border-top: 0px;
+  height: 62vh;
+  width: 70vw;
+  margin: 67px auto;
+  border-radius: 6px;
+}
+#banner {
+  font-size: larger;
+}
+#databox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#inputNum {
+  margin: 66px 0px 21px 0px;
+  width: 30vw;
+  /* display: flex;
+  flex-direction: column; */
+}
+#inputNum ::placeholder {
+  text-align: center;
+}
+#message {
+  text-align: center;
+  color:azure;
+  font-weight: 400;
+  margin: 40px 0px;
+}

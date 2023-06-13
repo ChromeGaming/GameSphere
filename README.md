@@ -10,6 +10,8 @@
     + [First Step 🌱](#first-step-)
     + [Second Step 🌲](#second-step-)
     + [Third Step 🌳](#third-step-)
+- [Available Games 🎮](#available-games)
+    + [Single Player Games 🎮](#list-of-single-player-games)
 - [How to make a PR in a Project 🟢](#how-to-make-a-pr-in-a-project-)
     + [Alternatively Using GitHub Desktop](#alternatively-using-github-desktop)
 
@@ -70,9 +72,6 @@ Create a landing page (Home Page) by using frontend development
 
 _Detail:_ The first phase of a project is the most straightforward because all that is required of the contributor is to copy our designs (this is especially important if their designs are better than our designs) and create a landing page (or home page), which serves as a direct conduit between the user's browser and our website. The initial phase of the project is crucial because if users don't feel at ease using our website, they may quit using it completely, which is negative for our website. All contributions would have been utterly useless if this happened. in order to improve the responsiveness and dynamic experience of our users.
 
-Reference of design:
-                
-https://snowflaketest.my.canva.site/gamesphere
                
                 
  **Note** - You are also free to show your designs at durgeshkumar4993@gmail.com
@@ -84,9 +83,6 @@ Add different types of game be like Snake, Ludo, Carrom, Bubble shoot etc.
 
 _Detail:_ In a second step the developer just be need develop multiple game(be like Ludo, Carrom, Bubble shooter, snake games etc..) and list into the website and also create an special page for a particular game where all instruction are present how to play that game and also collect the users review and their experience with our website if you want to check out the reference of design just copy the link and paste into browser and also if you have any other ideas related to designs please discuss with us.
 
-Also builds game main page Reference of design page is given below:
-                 
-https://snowflaketest.my.canva.site/game-detail
                  
                  
  **Note** - You are also free to show your designs at durgeshkumar4993@gmail.com
@@ -112,6 +108,19 @@ I only want two player to join this room to fix this i will add a variable calle
  
  ______________________________________________________________________________________________________________________________________________________________
  
+# Available Games 🎮
+### List of Single Player Games 
+
+| SNo. | Game | 
+|------|------|
+|  1   |[Memory Card Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Memory%20Game)      |
+|  2   |[Ping Pong](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Ping%20Pong%20Game)  |
+|  3   |[Rock Paper Scissor](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Rock-Paper-Scissors) |
+|  4   |[Bingo Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Bingo%20Game)           |
+|  5   |[Tower](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/tower)           |
+
+
+________________________________________________________________________________________________________________________________________________________________
 # How to make a PR in a Project 🟢
 
 If you are interested to contribute in this project how to start contribute
@@ -193,7 +202,7 @@ ________________________________________________________________________________
 <tr>
     <td align="center">
         <a href="https://www.linkedin.com/in/aman-singh-026141222/">
-            <img src="https://media.licdn.com/dms/image/D4D03AQHLFMc05n4axw/profile-displayphoto-shrink_400_400/0/1680535398297?e=1689206400&v=beta&t=wNTaH-noSJARU_HF-FO60P-ipOMY6EcbjkpJnqe4HuM" width="100;" alt="Aman Kumar Singh"/>
+            <img src="https://media.licdn.com/dms/image/D4D03AQEACXAgCyGEgg/profile-displayphoto-shrink_400_400/0/1685189218997?e=1690416000&v=beta&t=80_I8RpWzwV3EPYU6E-R8CbX_f7V7QGMFKkSQeQe1Kk" width="100;" alt="Aman Kumar Singh"/>
             <br />
             <sub><b>Aman Kr. Singh</b></sub>
         </a>
@@ -209,6 +218,13 @@ ________________________________________________________________________________
 
 <td align="center"><a href="https://github.com/mahamat-abdelkerim-abakar"><img src="https://avatars.githubusercontent.com/u/65360822?v=4" width="100px;" alt=""/><br /><sub><b>Mahamat Abdelkerim Abakar</b></sub></a></td>
 
-<td align="center"><a href="https://github.com/pranjay-poddar"><img src="https://media.licdn.com/dms/image/D4D03AQH2NpsSW66gFg/profile-displayphoto-shrink_400_400/0/1680854214165?e=1690416000&v=beta&t=ChA2RUw_Os30xewunFOTI5zk74Bpn-2dSfmXshaq7po" width="100px;" alt=""/><br /><sub><b> Pranjay Poddar </b></sub></a></td>
 </table>
 
+___________________________________________________________________________________________________________________________________________________________________
+
+<h2 align='center'>Contributors</h2>
+<table align='center'>
+<td align='center'><a href="https://github.com/Aman1-coder/GameSphere/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Aman1-coder/GameSphere" />
+</a>
+</td>

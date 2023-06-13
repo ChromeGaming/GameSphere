@@ -85,3 +85,20 @@ $(document).ready(function(){
         });
     })
 });
+
+  const scrollToTopHandler = () => {
+  let btn = document.getElementById("scrollToButton");
+  if (window.scrollY > 500) {
+    btn.className = "scrollToTopButton";
+  } else {
+    btn.className = "HideElement scrollToTopButton";
+  }
+};
+window.addEventListener("scroll", scrollToTopHandler);
+document.getElementById("scrollToButton").addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+

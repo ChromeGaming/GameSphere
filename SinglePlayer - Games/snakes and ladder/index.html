@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snakes and ladders</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="welcome" class="game">
+    <h1 id="h1">Lets Play Snakes and Ladders!!</h1>
+    <label for="player-num" id="label">Select Number of Players:
+    <input id="player-num" type="number" min="2" max="4" value="2" /></label>
+    <br>
+    <button class="button" onclick="startGame()">Let's Begin</button>
+</div>
+  <div id="gameboard" class="game" hidden>
+      <!-- <h1 class="m-0">Snakes and Ladders</h1> -->
+      <div class="board-container">
+        <div id="board"> </div>
+      </div>
+     
+      <div class="controls">
+        <button id="roll-dice" class="button" onclick="rollDice()">Roll dice</button>
+        <p id="dice-results" class="inline m-0 m-lr"></p>
+        
+        <div id="win" hidden style="float: right">
+          <h3 id="win-text" class="inline m-0 m-lr">You win!</h3>
+          <button class="button" onclick="restart()">Restart the Game</button>
+        </div>
+      </div> <!-- end controls div --> 
+  </div> <!-- end game container -->
+  
+  <button class="drawerBtn" onclick="openDrawer()">Need Help</button>
+  <div id="drawer">
+    <button class="drawerBtn" onclick="closeDrawer()">Here's How to Play</button>
+    <h2>Instructions</h2>
+    <ol>
+      <li>
+        <p>The players will move their pieces according to the number of the dice. If a player rolls a 4, then they
+          would move their piece four
+          places.</p>
+      <li>
+        <p>When a player lands on a top of a snake, their playing piece will slide down to the bottom of the snake.
+          Landing on the bottom of a snake will have no effect.</p>
+      <li>
+        <p>When a player lands at the base of a ladder, it immediately climbs to the top of the ladder. Landing at the
+          top of a ladder will have no effect.</p>
+      <li>
+        <p>The first player that reaches the highest space on the board, 100, wins the game.</p>
+    </ol>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>

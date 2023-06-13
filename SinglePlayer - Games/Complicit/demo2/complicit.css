@@ -1,0 +1,70 @@
+body {
+	margin:0px;
+	padding:0px;
+	text-align:center;
+	background-color: #088;
+}
+
+#board {
+	background-color: #000;
+	position: absolute;
+	overflow:hidden;
+}
+
+.boardobject {
+	position: absolute;
+	width: 2em;
+	height: 2em;
+	top: -1em;
+	left: -1em;
+	pointer-events: none;
+}
+
+
+.boardobject div {
+	background-size:100% 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+}
+
+@keyframes roll {
+  0% {
+	transform: rotate(0deg);
+  }
+  100% {
+	transform: rotate(360deg);
+  }
+}
+
+@keyframes diefold {
+  0% {
+	transform: scale(1,1);
+	opacity: .5;
+  }
+  50% {
+	transform: scale(.5,1.2);
+	opacity: 1;
+	  
+  }
+  100% {
+	transform: scale(1,.1);
+	opacity: 0;
+  }
+}
+  
+  
+ .boardobject div.roll {
+    animation: roll 1.5s infinite linear;
+ }
+ 
+ .boardobject.die div {
+	animation: diefold .5s 1 linear;	
+ }
+
+ .boardobject div.rock {
+    animation: roll 3s infinite ease-in-out alternate;
+ }

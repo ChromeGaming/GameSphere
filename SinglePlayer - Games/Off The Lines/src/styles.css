@@ -1,0 +1,87 @@
+body {background-color: #111; color: #bbb; font-family: 'Arial', sans-serif; margin: 0; overflow-x: hidden;}
+
+.main-menu {margin: 0 auto; max-width: 600px; text-align: center;}
+h1 span {transition: font-size 2s;}
+button {background-color: transparent; color: #bbb; cursor: pointer; display: block; font-size: 3vw; margin: 3vw auto 0 auto; max-width: 500px; padding: 2vw 3vw; width: calc(94vw - 4px);}
+button:focus {outline: 0;}
+.landscape {display: block;}
+
+h2 {font-size: 6vw; margin: 0;}
+p {font-size: 3vw;}
+
+.levels, .credits, .popup, .tutorial {display: none; font-size: 1.2em; left: 0; padding: 4vw 0; position: absolute; text-align: center; top: 0; width: 100vw; z-index: 4;}
+.levels, .credits, .tutorial {background-color: #111;}
+.credits, .popup {height: calc(100vh - 8vw);}
+.level-button {font-size: 3vw; font-weight: bold; padding: 1vw;}
+.top-score {font-size: 0.8em; font-weight: 100; margin-bottom: 0; margin-top: 5px;}
+h3 {font-size: 4.5vw; margin-bottom: 0;}
+.credits p {margin-top: 5px;}
+.social-media {margin-bottom: 0;}
+
+.tutorial {padding: 4vw; text-align: left; width: 92vw;}
+.tutorial h2 {text-align: center;}
+.tutorial ul {list-style-type: none; margin-top: 0; padding: 0;}
+.tutorial li {align-items: center; display: flex; list-style-type: none; margin-bottom: 1vw;}
+.tutorial li div {width: 10vw;}
+.demo-button {border: 1px solid white; font-size: 1.7vw; height: 8vw; margin: 0; padding: 0; width: 8vw;}
+.demo-teleporter {border: 1px solid pink; font-size: 0.8vw; height: 5vw; margin: 0; padding: 0; width: 5vw;}
+.orange-border {border: 3px solid orange;}
+.purple-border {border: 3px solid purple;}
+.tutorial li p {width: 82vw;}
+hr {opacity: 0.3;}
+
+.levels ul {display: flex; flex-wrap: wrap; justify-content: center; list-style-type: none; padding: 0;}
+.levels li {list-style-type: none;}
+.levels svg {max-height: 150px;}
+
+.plus20 {display: none; left: 0; position: absolute; opacity: 0; text-align: center; top: 20vh; transition: opacity 1s; width: 100vw;}
+
+.popup {background-color: rgba(0, 0, 0, 0.8); font-size: 2em;}
+
+.game {overflow: hidden;}
+.game svg {margin-top: 50px;}
+
+.timer, .score {display: none; font-size: 2.4vw; margin: 0; position: absolute; top: 1vw;}
+.timer {left: 75vw;}
+.score {left: 87vw;}
+
+
+@keyframes flash {
+    0% {opacity: 1;}
+    20% {opacity: 0;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    80% {opacity: 1;}
+}
+.stage1 {animation-duration: 4s; animation-name: flash; animation-timing-function: linear;}
+
+@keyframes tilt {
+    0% {transform: rotateX(0deg) rotateY(0deg);}
+    25% {transform: rotateX(20deg) rotateY(20deg);}
+    50% {transform: rotateX(0deg) rotateY(0deg);}
+    67% {transform: rotateX(20deg) rotateY(-20deg);}
+    100% {transform: rotateX(0deg) rotateY(0deg);}
+}
+.game svg {animation-duration: 30s; animation-iteration-count: infinite; animation-name: tilt; animation-timing-function: linear; display: none; max-height: 100vh; max-width: 100vw;}
+path {stroke-width: 3px;}
+.cell {transition: width 5s;}
+
+
+@media screen and (orientation: landscape) {
+    .landscape {display: none;}
+    .level-button {margin: 0.8vw; width: 31vw;}
+    .game svg {margin-top: 0;}
+    .demo-teleporter {border: 4px solid pink;}
+    .orange-border {border: 8px solid orange;}
+    .purple-border {border: 8px solid purple;}
+    .plus20 {top: 40vh;}
+}
+
+@media screen and (min-width: 1000px) {
+    button {font-size: 2vw;}
+    h2 {font-size: 4vw;}
+    h3 {font-size: 2.5vw;}
+    p {font-size: 2vw;}
+    .levels ul {justify-content: flex-start;}
+    .level-button {font-size: 2vw; /*width: 23vw;*/}
+}
