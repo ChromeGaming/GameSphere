@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+.highlight {
+    background-color: yellow;
+  }
+  
+.error {
+    background-color: lightcoral;
+    border: red;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+  background-image: linear-gradient(to left, aqua, pink);
+}
+
+.container {
+    background-color: papayawhip;
+    max-width: 60%;
+    text-align: center;
+    border: 2px solid black ;
+    border-radius: 12px;
+    padding: 2rem;
+    font-family: 'Nunito';
+}
