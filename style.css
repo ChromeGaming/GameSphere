@@ -319,3 +319,18 @@ height: auto;
   background-color: var(--main-color);
  }
 
+video{
+  display:none;
+height: 280px;
+object-fit: cover;
+
+}
+
+.game-card:hover .display-none{
+  display:none;
+
+}
+
+.game-card:hover video{
+  display: block;
+}
