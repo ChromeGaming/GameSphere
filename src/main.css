@@ -12,7 +12,7 @@ body{
     @apply text-base leading-[1.6] font-barlow text-black;
 }
 
-img{
+video{
     @apply w-full block;
 }
 
