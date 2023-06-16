@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- Title of the game -->
+    <title>Movie Guess Game</title>
+
+    <!-- Logo of the game -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css"
+        type="text/css">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Main Heading of the game -->
+    <header>
+        <h1 class="ui header">Movie Guess Game</h1>
+        <p class="author">
+            Created with ❤️ by <a target="_blank" href="https://github.com/Avdhesh-Varshney">Avdhesh Varshney</a>
+        </p>
+    </header>
+
+    <!-- Game Box -->
+    <main>
+        <div class="ui container">
+            <!-- Options & Result container -->
+            <div class="ui segment">
+                <p><strong>Can you name the movie which below GIF is related to?</strong></p>
+                <p>Please select correct answer.</p>
+                <div id="movies"></div>
+                <h2 class="ui header">Correct Guessed <span id="answers">0</span>/10</h2>
+            </div>
+
+            <!-- GIF -->
+            <div class="ui segment">
+                <img id="giphy" src="">
+            </div>
+
+            <!-- Correct Answer pop up -->
+            <div class="ui tiny modal correct">
+                <div class="ui header"><i class="thumbs up icon"></i>That was good guess!</div>
+                <div class="actions">
+                    <div class="ui positive right labeled icon button next">
+                        Next movie
+                        <i class="checkmark icon"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wrong answer pop up -->
+            <div class="ui tiny modal incorrect">
+                <div class="ui header"><i class="thumbs down icon"></i>Better luck next time!</div>
+                <div class="actions">
+                    <div class="ui negative right labeled icon button next">
+                        Next movie
+                        <i class="times icon"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Declaration of the game -->
+            <div class="ui tiny modal end-game">
+                <div class="ui header"><i class="star icon"></i>This is it! Game finished!</div>
+                <div class="description">
+                    <div class="ui header">Here are some stats:</div>
+                    <p>Your achieved score is: <strong><span id="final-score">10</span>/10</strong>!</p>
+                    <p>Press the button to play again.</p>
+                </div>
+                <div class="actions">
+                    <div class="ui approve right labeled icon button" id="restart">
+                        Restart game
+                        <i class="sync icon"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
+    <script src="./script.js" type="text/javascript"></script>
+</body>
+
+</html>
