@@ -16,3 +16,8 @@ span{
 	font-family:sans-serif;
 	opacity:.3;
 }
+#score {
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+  }

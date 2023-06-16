@@ -2,6 +2,9 @@ var svg = document.querySelector("svg");
 var cursor = svg.createSVGPoint();
 var arrows = document.querySelector(".arrows");
 var randomAngle = 0;
+var score = 0;
+
+var scoreElement = document.getElementById("score");
 
 // center of target
 var target = {
@@ -147,20 +150,23 @@ function hitTest(tween) {
 		x2: (Math.cos(radians) * 60) + transform.x,
 		y2: (Math.sin(radians) * 60) + transform.y
 	}
-
+	
 	var intersection = getIntersection(arrowSegment, lineSegment);
 	if (intersection.segment1 && intersection.segment2) {
-		tween.pause();
-		var dx = intersection.x - target.x;
-		var dy = intersection.y - target.y;
-		var distance = Math.sqrt((dx * dx) + (dy * dy));
-		var selector = ".hit";
-		if (distance < 7) {
-			selector = ".bullseye"
-		}
-		showMessage(selector);
+	  tween.pause();
+	  var dx = intersection.x - target.x;
+	  var dy = intersection.y - target.y;
+	  var distance = Math.sqrt((dx * dx) + (dy * dy));
+	  var selector = ".hit";
+	  if (distance < 7) {
+		selector = ".bullseye";
+		score += 10; // Increase score for bullseye
+	  } else {
+		score += 5; // Increase score for hitting the target
+	  }
+	  scoreElement.innerHTML = "Score: " + score; // Update the score on the page
+	  showMessage(selector);
 	}
-
 }
 
 function onMiss() {
