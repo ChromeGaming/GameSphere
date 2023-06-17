@@ -49,11 +49,14 @@
     <body>
     
         <header  class = "header">
+            <!--===== Navigation bar start =====-->
             <nav style="background-color: black;" class = "navbar flex items-center shadow-nav">
                 <div class = "container w-full">
                     <div class = "navbar-content">
                         <div class = "brand-and-toggler flex items-center justify-between">
+                            <!--==== logo name start ====-->
                             <a target="_blank" href = "#" class = "navbar-brand">Game<span class = "text-green-normal ">Sphere</span></a>
+                            <!--==== logo name end ====-->
                             <button type = "button" class = "lg:hidden text-white text-2xl" id = "navbar-show-btn">
                                 <i class = "fas fa-bars"></i>
                             </button>
@@ -63,7 +66,7 @@
                             <button type = "button" class = "lg:hidden" id = "navbar-hide-btn">
                                 <i class = "fa-solid fa-xmark text-2xl"></i>
                             </button>
-
+                            <!--===== navigation tabs start ======-->
                             <ul class = "navbar-nav">
                                 <li class = "nav-item">
                                     <a href = "index.html" class = "nav-link ">home</a>
@@ -79,16 +82,17 @@
                                 </li>
                                 <li class = "nav-item">
                                     <a href = "additionalpage/contact.html" class = "nav-link ">Contact Us</a>
-                                </li>
-                              
+                                </li>  
                             </ul>
-
+                            <!--===== navigation tabs start ======-->
                             
                         </div>
                     </div>
                 </div>
             </nav>
+            <!--===== Navigation bar end =====-->
 
+            <!--===== Intro and signature game section start =====-->
             <div class = "banner-content" style="margin-top: 100px;" >
                 <div class = "banner-badge ">Hello Gamers</div>
                 <h1 class = "banner-title">Play Games With Your Friends</h1>
@@ -99,33 +103,43 @@
                     </span>
                     <span><a target="_blank" href="SinglePlayer - Games/Formation Absent/index.html">play now</a></span>
                 </button>
-                   <div class="bouncingball-div">
+                <!--==== bouncy ball section start ====-->
+                <div class="bouncingball-div">
                 <div class="bouncingball"></div>
+                <!--==== bouncy ball section end ====-->
             </div>
             </div>
+            <!--===== Intro and signature game section end =====-->
         </header>
 
+        <!--==== game section start ====-->
         <section class = "py-16 sc-popular bg-violet-dark-active">
             <div class = "container">
+                <!-- Heading of game start -->
                 <div class = "sc-title  ">
                     <h3>top popular <span >games</span></h3>
                     <div class="line "></div>
                 </div>
+                <!-- Heading of game end -->
 
                 <div class="game-card-list grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Game card- 1 start -->
                     <div class = "game-card">
                         <video src="https://drive.google.com/uc?id=1E0Y2cUaArPQ313GpdCPeFYtFZ32tkRC5" type="video/mp4" muted loop class="clip"  ></video>
                         <div class = "game-card-top display-none img-fit-cover">
+                            <!-- Image section-->
                             <img src = "SinglePlayer - Games/Banner - image/Tindeath.png" alt = "">
                             <div class = "ratings-count">
-                                211
+                                211 <!--Star-->
                                 <img src = "assets/icons/star-black.svg" alt = "" class = "ms-2">
                             </div>
                         </div>
                         <div class = "game-card-bottom">
                             <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
                                 <div class = "py-1">
+                                    <!-- Game name -->
                                     <h4 class = "text-white uppercase game-card-title">Tindeath</h4>
+                                    <!-- Game discription -->
                                     <p class = "para-text">Unleash the power within. Conquer, create, and redefine your gaming destiny with Tindeath...</p>
                                 </div>
                                 <div class = "star-rating mt-2 sm:mt-0 py-1">
@@ -140,35 +154,43 @@
                             <div class = "block-wrap flex justify-between items-end">
                                 <div class = "details-group">
                                     <div class = "flex items-center">
+                                        <!-- Release date -->
                                         <p class = "font-semibold">Release Date: &nbsp;</p>
                                         <p>28.05.2023</p>
                                     </div>
                                     <div class = "flex items-center">
+                                        <!-- update section -->
                                         <p class = "font-semibold">Updated: &nbsp;</p>
                                         <p>Action | Desktop</p>
                                     </div>
                                 </div>
 
                                 <div class = "flex flex-col items-end justify-between " >
+                                    <!-- Play Button -->
                                     <a target="_blank" href = "SinglePlayer - Games/Tindeath/index.html" class = "btn-primary uppercase ">Play Now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Game card- 1 end -->
 
+                    <!-- Game card- 2 start -->
                     <div class = "game-card">
                         <video src="https://drive.google.com/uc?id=10uhSyJZr6cIc5_ONrD1-MgxRnH2XA6wm" type="video/mp4" muted loop class="clip"  ></video>
                         <div class = "game-card-top display-none img-fit-cover">
+                            <!-- Image section-->
                             <img src = "SinglePlayer - Games/Banner - image/Sci-Fi Alchemy.png" alt = "">
                             <div class = "ratings-count">
-                                41
-                                <img src = "assets/icons/star-black.svg" alt = "" class = "ms-2">
+                                41 <!--Star-->
+                                <img src = "assets/icons/star-black.svg" alt = "" class = "ms-2"> 
                             </div>
                         </div>
                         <div class = "game-card-bottom">
                             <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
                                 <div class = "py-1">
+                                    <!-- Game name -->
                                     <h4 class = "text-white uppercase game-card-title">Sci-Fi Alchemy </h4>
+                                    <!-- Game discription -->
                                     <p class = "para-text">Sci-Fi Alchemy! Experience the addictive fun of Sci-Fi Alchemy and soar to new heights ....</p>
                                 </div>
                                 <div class = "star-rating mt-2 sm:mt-0 py-1">
@@ -183,35 +205,43 @@
                             <div class = "block-wrap flex justify-between items-end">
                                 <div class = "details-group">
                                     <div class = "flex items-center">
+                                        <!-- Release date -->
                                         <p class = "font-semibold">Release Date: &nbsp;</p>
                                         <p>28.05.2023</p>
                                     </div>
                                     <div class = "flex items-center">
+                                        <!-- update section -->
                                         <p class = "font-semibold">Updated: &nbsp;</p>
                                         <p>Action | Desktop</p>
                                     </div>
                                 </div>
 
                                 <div class = "flex flex-col items-end justify-between">
+                                    <!-- Play Button -->
                                     <a target="_blank" href = "SinglePlayer - Games/Sci-Fi Alchemy/index.html" class = "btn-primary uppercase">play now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Game card- 2 end -->
 
+                    <!-- Game card- 3 start -->
                     <div class = "game-card">
                         <video src="https://drive.google.com/uc?id=149xMLib-ZklPMRRTqd9Y9N83Pgj-m-fx" type="video/mp4" muted loop class="clip"  ></video>
                         <div class = "game-card-top display-none img-fit-cover">
+                            <!-- Image section-->
                             <img src = "SinglePlayer - Games/Banner - image/HexGL-master.png" alt = "">
                             <div class = "ratings-count">
-                                321
+                                321 <!--Star-->
                                 <img src = "assets/icons/star-black.svg" alt = "" class = "ms-2">
                             </div>
                         </div>
                         <div class = "game-card-bottom">
                             <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
                                 <div class = "py-1">
+                                    <!-- Game name -->
                                     <h4 class = "text-white uppercase game-card-title">HexGL-master</h4>
+                                    <!-- Game discription -->
                                     <p class = "para-text">Enter the futuristic realm of speed and precision. Dominate the race virtual world in HexGL Master!"...</p>
                                 </div>
                                 <div class = "star-rating mt-2 sm:mt-0 py-1">
@@ -226,28 +256,34 @@
                             <div class = "block-wrap flex justify-between items-end">
                                 <div class = "details-group">
                                     <div class = "flex items-center">
+                                        <!-- Release date -->
                                         <p class = "font-semibold">Release Date: &nbsp;</p>
                                         <p>28.05.2023</p>
                                     </div>
                                     <div class = "flex items-center">
+                                        <!-- update section -->
                                         <p class = "font-semibold">Updated: &nbsp;</p>
                                         <p>Action | Desktop</p>
                                     </div>
                                 </div>
 
                                 <div class = "flex flex-col items-end justify-between">
+                                    <!-- Play Button -->
                                     <a target="_blank" href = "SinglePlayer - Games/HexGL-master/index.html" class = "btn-primary uppercase">Play Now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Game card- 3 end -->
 
+                    <!-- Game card- 4 start -->
                     <div class = "game-card">
                         <video src="https://drive.google.com/uc?id=14jtDCyNtlVu3-zFGxLo5He7qGXRvLOts" type="video/mp4" muted loop class="clip"  ></video>
                         <div class = "game-card-top display-none img-fit-cover">
+                            <!-- Image section-->
                             <img src = "SinglePlayer - Games/Banner - image/JunoJs.png" alt = "">
                             <div class = "ratings-count">
-                                241
+                                241<!--Star-->
                                 <img src = "assets/icons/star-black.svg" alt = "" class = "ms-2">
                             </div>
                         </div>
@@ -255,7 +291,9 @@
             
                             <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
                                 <div class = "py-1">
+                                    <!-- Game name -->
                                     <h4 class = "text-white uppercase game-card-title">JUNO </h4>
+                                    <!-- Game discription -->
                                     <p class = "para-text">Rev up your engines, navigate the chaos! Take control of the streets JUNO!...</p>
                                 </div>
                                 <div class = "star-rating mt-2 sm:mt-0 py-1">
@@ -270,35 +308,43 @@
                             <div class = "block-wrap flex justify-between items-end">
                                 <div class = "details-group">
                                     <div class = "flex items-center">
+                                        <!-- Release date -->
                                         <p class = "font-semibold">Release Date: &nbsp;</p>
                                         <p>30.05.2023</p>
                                     </div>
                                     <div class = "flex items-center">
+                                        <!-- update section -->
                                         <p class = "font-semibold">Updated: &nbsp;</p>
                                         <p>Action | Desktop</p>
                                     </div>
                                 </div>
 
                                 <div class = "flex flex-col items-end justify-between">
+                                    <!-- Play Button -->
                                     <a target="_blank" href = "SinglePlayer - Games/JunoJs/index.html" class = "btn-primary uppercase">play now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Game card- 4 end -->
 
+                    <!-- Game card- 5 start -->
                     <div class = "game-card">
                         <video src="https://drive.google.com/uc?id=1vxgalx_dJdnJlnlGc0KGVnXGfZ4DWu2N" type="video/mp4" muted loop class="clip"  ></video>
                         <div class = "game-card-top display-none img-fit-cover">
+                            <!-- Image section-->
                             <img src = "SinglePlayer - Games/Banner - image/tower.png" alt = "">
                             <div class = "ratings-count">
-                                291
+                                291 <!--Star-->
                                 <img src = "assets/icons/star-black.svg" alt = "" class = "ms-2">
                             </div>
                         </div>
                         <div class = "game-card-bottom">
                             <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
                                 <div class = "py-1">
+                                    <!-- Game name -->
                                     <h4 class = "text-white uppercase game-card-title">Tower Build</h4>
+                                    <!-- Game discription -->
                                     <p class = "para-text"> Reach for the sky of dreams! Build your towering empire in the captivating world of Tower Build...</p>
                                 </div>
                                 <div class = "star-rating mt-2 sm:mt-0 py-1">
@@ -313,36 +359,43 @@
                             <div class = "block-wrap flex justify-between items-end">
                                 <div class = "details-group">
                                     <div class = "flex items-center">
+                                        <!-- Release date -->
                                         <p class = "font-semibold">Release Date: &nbsp;</p>
                                         <p>30.05.2023</p>
                                     </div>
                                     <div class = "flex items-center">
+                                        <!-- update section -->
                                         <p class = "font-semibold">Updated: &nbsp;</p>
                                         <p>Action | Desktop</p>
                                     </div>
                                 </div>
 
                                 <div class = "flex flex-col items-end justify-between">
+                                    <!-- Play Button -->
                                     <a target="_blank" href = "SinglePlayer - Games/tower/index.html" class = "btn-primary uppercase">Play now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Game card- 5 end -->
 
-
+                    <!-- Game card- 6 start -->
                     <div class = "game-card">
                         <video src="https://drive.google.com/uc?id=1K50KAAYfmSnBM0_Co8CHNWasiz_CW80x" type="video/mp4" muted loop class="clip" ></video>
                         <div class = "game-card-top display-none img-fit-cover">
+                            <!-- Image section-->
                             <img src = "SinglePlayer - Games/Banner - image/hextris-gh-pages.png" alt = "">
                             <div class = "ratings-count">
-                                420
+                                420 <!--Star-->
                                 <img src = "assets/icons/star-black.svg" alt = "" class = "ms-2">
                             </div>
                         </div>
                         <div class = "game-card-bottom">
                             <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
                                 <div class = "py-1">
+                                    <!-- Game name -->
                                     <h4 class = "text-white uppercase game-card-title">hextris</h4>
+                                    <!-- Game discription -->
                                     <p class = "para-text">Rotate, match, conquer! Experience the challenge of Hextris puzzle-solving prowess...</p>
                                 </div>
                                 <div class = "star-rating mt-2 sm:mt-0 py-1">
@@ -357,35 +410,43 @@
                             <div class = "block-wrap flex justify-between items-end">
                                 <div class = "details-group">
                                     <div class = "flex items-center">
+                                        <!-- Release date -->
                                         <p class = "font-semibold">Release Date: &nbsp;</p>
                                         <p>06.06.1984</p>
                                     </div>
                                     <div class = "flex items-center">
+                                        <!-- update section -->
                                         <p class = "font-semibold">Updated: &nbsp;</p>
                                         <p>Action | Desktop</p>
                                     </div>
                                 </div>
 
                                 <div class = "flex flex-col items-end justify-between">
+                                    <!-- Play Button -->
                                     <a target="_blank" href = "SinglePlayer - Games/hextris-gh-pages/index.html" class = "btn-primary uppercase">play now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Game card- 6 end -->
 
+                    <!-- Game card- 7 start -->
                     <div class = "game-card">
                         <video src="https://drive.google.com/uc?id=1GvmnHn2csFq1Lm5Z4keF22O4YlJFaozX" type="video/mp4" muted loop class="clip"   ></video>
                         <div class = "game-card-top display-none img-fit-cover">
+                            <!-- Image section-->
                             <img src = "SinglePlayer - Games/Banner - image/Blanks Detective.png" alt = "">
                             <div class = "ratings-count">
-                                241
+                                241<!--Star-->
                                 <img src = "assets/icons/star-black.svg" alt = "" class = "ms-2">
                             </div>
                         </div>
                         <div class = "game-card-bottom">
                             <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
                                 <div class = "py-1">
+                                    <!-- Game name -->
                                     <h4 class = "text-white uppercase game-card-title">Blanks Detective</h4>
+                                    <!-- Game discription -->
                                     <p class = "para-text">Blast off into epic battles. Command your starship, defy gravity, world of Space-War!...</p>
                                 </div>
                                 <div class = "star-rating mt-2 sm:mt-0 py-1">
@@ -400,35 +461,43 @@
                             <div class = "block-wrap flex justify-between items-end">
                                 <div class = "details-group">
                                     <div class = "flex items-center">
+                                        <!-- Release date -->
                                         <p class = "font-semibold">Release Date: &nbsp;</p>
                                         <p>07.12.2015</p>
                                     </div>
                                     <div class = "flex items-center">
+                                        <!-- update section -->
                                         <p class = "font-semibold">Updated: &nbsp;</p>
                                         <p>Action | Desktop</p>
                                     </div>
                                 </div>
 
                                 <div class = "flex flex-col items-end justify-between">
+                                    <!-- Play Button -->
                                     <a target="_blank" href = "SinglePlayer - Games/Blanks Detective/index.html" class = "btn-primary uppercase">play now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Game card- 7 end -->
 
+                    <!-- Game card- 8 start -->
                     <div class = "game-card">
                         <video src="https://drive.google.com/uc?id=1GLxdHdcHVO5rHGB_EguCDMV3auk0yrF2" type="video/mp4" muted loop class="clip" ></video>
                         <div class = "game-card-top display-none img-fit-cover">
+                            <!-- Image section-->
                             <img src = "SinglePlayer - Games/Banner - image/PACKABUNCHAS.png" alt = "">
                             <div class = "ratings-count">
-                                221
+                                221<!--Star-->
                                 <img src = "assets/icons/star-black.svg" alt = "" class = "ms-2">
                             </div>
                         </div>
                         <div class = "game-card-bottom">
                             <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
                                 <div class = "py-1">
+                                    <!-- Game name -->
                                     <h4 class = "text-white uppercase game-card-title">PACKABUNCHAS </h4>
+                                    <!-- Game discription -->
                                     <p class = "para-text">Beyond the Stars, They Embrace. Space Huggers: Alien Affection Awaits....</p>
                                 </div>
                                 <div class = "star-rating mt-2 sm:mt-0 py-1">
@@ -443,36 +512,43 @@
                             <div class = "block-wrap flex justify-between items-end">
                                 <div class = "details-group">
                                     <div class = "flex items-center">
+                                        <!-- Release date -->
                                         <p class = "font-semibold">Release Date: &nbsp;</p>
                                         <p>07.12.2015</p>
                                     </div>
                                     <div class = "flex items-center">
+                                        <!-- update section -->
                                         <p class = "font-semibold">Updated: &nbsp;</p>
                                         <p>Action | Desktop</p>
                                     </div>
                                 </div>
 
                                 <div class = "flex flex-col items-end justify-between">
+                                    <!-- Play Button -->
                                     <a target="_blank" href = "SinglePlayer - Games/PACKABUNCHAS/index.html" class = "btn-primary uppercase">play now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Game card- 8 end -->
 
-                    
+                    <!-- Game card- 9 start -->
                     <div class = "game-card">
                         <video src="https://drive.google.com/uc?id=1IifZmdbX3GJQlLkQcmJXKdi6V4R_AB1t" type="video/mp4" muted loop class="clip"  ></video>
                         <div class = "game-card-top display-none img-fit-cover">
+                            <!-- Image section-->
                             <img src = "SinglePlayer - Games/Banner - image/Spaceship Escort.png" alt = "">
                             <div class = "ratings-count">
-                                341
+                                341 <!--Star-->
                                 <img src = "assets/icons/star-black.svg" alt = "" class = "ms-2">
                             </div>
                         </div>
                         <div class = "game-card-bottom">
                             <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
                                 <div class = "py-1">
+                                    <!-- Game name -->
                                     <h4 class = "text-white uppercase game-card-title">SPACESHIP ESCORT </h4>
+                                    <!-- Game discription -->
                                     <p class = "para-text">Embrace the Darkness. Unleash the Decay. SPACESHIP ESCORT: Masters of survival....</p>
                                 </div>
                                 <div class = "star-rating mt-2 sm:mt-0 py-1">
@@ -487,57 +563,69 @@
                             <div class = "block-wrap flex justify-between items-end">
                                 <div class = "details-group">
                                     <div class = "flex items-center">
+                                        <!-- Release date -->
                                         <p class = "font-semibold">Release Date: &nbsp;</p>
                                         <p>07.12.2015</p>
                                     </div>
                                     <div class = "flex items-center">
+                                        <!-- update section -->
                                         <p class = "font-semibold">Updated: &nbsp;</p>
                                         <p>Action | Desktop</p>
                                     </div>
                                 </div>
 
                                 <div class = "flex flex-col items-end justify-between">
+                                    <!-- Play Button -->
                                     <a target="_blank" href = "SinglePlayer - Games/Spaceship Escort/index.html" class = "btn-primary uppercase">play now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
+                    <!-- Game card- 9 end -->
                 </div>
-
                 <div class = "flex justify-center mt-[60px]">
-                    <a target="_blank" href = "additional page/game.html" class = "section-btn">see more games</a>
+                    <a target="_blank" href = "additionalpage/game.html" class = "section-btn">see more games</a>
                 </div>
             </div>
         </section>
+        <!--==== game section end ====-->
 
+        <!--==== Banner section start ====-->
         <div class = "py-16 bg-violet-darker overflow-hidden">
             <div class = "game-slider">
+                <!-- Banner - 1 -->
                 <div class = "slider-item img-fit-cover">
                     <img src = "SinglePlayer - Games/Banner - image/nuclear-safe.png" class = "slider-item-img">
                 </div>
+                <!-- Banner - 2 -->
                 <div class = "slider-item img-fit-cover">
                     <img src = "SinglePlayer - Games/Banner - image/NecroticCommande.png" class = "slider-item-img">
                 </div>
+                <!-- Banner - 3 -->
                 <div class = "slider-item img-fit-cover">
                     <img src = "SinglePlayer - Games/Banner - image/Tindeath.png" class = "slider-item-img">
                 </div>
+                <!-- Banner - 4 -->
                 <div class = "slider-item img-fit-cover">
                     <img src = "SinglePlayer - Games/Banner - image/HexGL-master.png" class = "slider-item-img">
                 </div>
+                <!-- Banner - 5 -->
                 <div class = "slider-item img-fit-cover">
                     <img src = "SinglePlayer - Games/Banner - image/hextris-gh-pages.png" class = "slider-item-img">
                 </div>
+                <!-- Banner - 6 -->
                 <div class = "slider-item img-fit-cover">
                     <img src = "SinglePlayer - Games/Banner - image/tower.png" class = "slider-item-img">
                 </div>
+                <!-- Banner - 7 -->
                 <div class = "slider-item img-fit-cover">
                     <img src = "SinglePlayer - Games/Banner - image/Squared Lines.png" class = "slider-item-img">
                 </div>
             </div>
         </div>
+        <!--==== Banner section end ====-->
 
+        <!--==== Discord community section start ====-->
         <section class = "py-16 sc-join flex items-center bg-join-image relative after:absolute after:content-[''] after:bg-gradient-to-b after:from-black/50 after:to-black/50 after:bg-center after:bg-cover after:bg-no-repeat">
             <div class = "container w-full">
                 <div class = "join-content">
@@ -547,208 +635,270 @@
                 </div>
             </div>
         </section>
+        <!--==== Discord community section end ====-->
 
+        <!--===== News section start ====-->
         <section class = "py-16 sc-posts bg-violet-dark-active">
             <div class = "container">
+                <!-- Title of news start-->
                 <div class = "sc-title">
                     <h3>latest <span>news</span></h3>
                     <div class="line"></div>
                 </div>
+                <!-- Title of news end-->
 
                 <div class = "grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <!--===  News cars - 1 Start ====-->
                     <div class = "game-post">
                         <div class = "game-post-img">
+                            <!-- image -->
                             <img src = "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/06/red-dead-redemption-2-cain-jack-dutch.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5" alt = "">
                         </div>
                         <div class = "game-post-body py-4 px-7">
+                            <!-- heading -->
                             <h3 class = "game-post-title pb-3 border-b-[1px] border-b-violet-dark-">Red Dead Redemption 2 Dog Cain Has Passed Away in Real Life                                .</h3>
 
                             <div class = "flex justify-between items-center mt-[10px]">
+                                <!-- publised -->
                                 <span class = "font-normal text-[13px]">PUBLISHED 1 HOUR AGO</span>
+                                <!-- published by -->
                                 <p class = "text-[13px]">By: <span class = "text-green-normal font-semibold">LUIE MAGBANUA</span> </p>
                             </div>
+                            <!-- discription -->
                             <p class = "para-text">The owner of the dog that played as the animal motion capture actor of Cain in Red Dead Redemption 2 has announced that the canine has recently passed away. Though only a minor character in Red Dead Redemption 2, the game's players, who have a soft spot for animals, likely remember Cain fondly and will probably be saddened by the news....</p>
 
                             <div class = "flex items-center justify-between">
+                                <!-- read more -->
                                 <a target="_blank" href = "https://gamerant.com/red-dead-redemption-2-dog-cain-died/" class = "btn-secondary uppercase">read more</a>
                                 <div class = "flex items-center">
                                     <span class = "font-bold text-[13px] flex me-[25px]">
-                                        <img src = "assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 123
+                                        <img src = "assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 123 <!-- views -->
                                     </span>
                                     <span class = "font-bold text-[13px] flex">
-                                        <img src = "assets/icons/message.svg" alt = "" class = "w-[17px] me-2"> 45
+                                        <img src = "assets/icons/message.svg" alt = "" class = "w-[17px] me-2"> 45<!-- comments -->
                                     </span>
                                 </div>
                             </div>
                         </div>
                     </div>
+                <!--===  News cars - 1 end ====-->
 
+                    <!--===  News cars - 2 Start ====-->
                     <div class = "game-post">
                         <div class = "game-post-img">
+                            <!-- image -->
                             <img src = "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/06/destiny-2-diablo-4-cover.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5" alt = "">
                         </div>
                         <div class = "game-post-body py-4 px-7">
+                            <!-- heading -->
                             <h3 class = "game-post-title pb-3 border-b-[1px] border-b-violet-dark-">Destiny 2 Dev Faces Backlash Due to Negative Diablo 4 Comments                            </h3>
 
                             <div class = "flex justify-between items-center mt-[10px]">
+                                <!-- publised -->
                                 <span class = "font-normal text-[13px]">PUBLISHED 2 HOURS AGO</span>
+                                <!-- published by -->
                                 <p class = "text-[13px]">By: <span class = "text-green-normal font-semibold">MIGUEL LUIS LLADO</span> </p>
                             </div>
+                            <!-- discription -->
                             <p class = "para-text">A Destiny 2 developer is receiving some backlash due to their criticism of Diablo 4. While Destiny and Diablo are two completely different games with unique gameplay mechanics, both share some elements that could be comparable, especially the multi-player and leveling aspects. The title has been out for over a week, but fans have already been quick to form....</p>
 
                             <div class = "flex items-center justify-between">
+                                <!-- read more -->
                                 <a target="_blank" href = "https://gamerant.com/destiny-2-backlash-negative-diablo-4-comments/" class = "btn-secondary uppercase">read more</a>
                                 <div class = "flex items-center">
                                     <span class = "font-bold text-[13px] flex me-[25px]">
-                                        <img src = "assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 124
+                                        <img src = "assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 124<!-- views -->
                                     </span>
                                     <span class = "font-bold text-[13px] flex">
-                                        <img src = "assets/icons/message.svg" alt = "" class = "w-[17px] me-2"> 25
+                                        <img src = "assets/icons/message.svg" alt = "" class = "w-[17px] me-2"> 25<!-- comments -->
                                     </span>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!--===  News cars - 2 end ====-->
 
+                    <!--===  News cars - 3 Start ====-->
                     <div class = "game-post">
                         <div class = "game-post-img">
+                            <!-- image -->
                             <img src = "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/06/dan-houser-over-gta-background.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5" alt = "">
                         </div>
                         <div class = "game-post-body py-4 px-7">
+                            <!-- heading -->
                             <h3 class = "game-post-title pb-3 border-b-[1px] border-b-violet-dark-">Rockstar Co-Founder Reveals His Latest Venture</h3>
                             <div class = "flex justify-between items-center mt-[10px]">
+                                <!-- publised -->
                                 <span class = "font-normal text-[13px]">PUBLISHED 6 HOURS AGO</span>
+                                <!-- published by -->
                                 <p class = "text-[13px]">By: <span class = "text-green-normal font-semibold">Joseph Allen</span> </p>
                             </div>
+                            <!-- discription -->
                             <p class = "para-text">Having already left his mark on the world of gaming through years spent helming franchises like Grand Theft Auto and Red Dead Redemption, Rockstar Games co-founder Dan Houser has announced his latest venture, a cross-media company named Absurd Ventures. One of the driving forces behind some of the largest properties in the industry....</p>
                             <div class = "flex items-center justify-between">
+                                <!-- read more -->
                                 <a target="_blank" href = "https://gamerant.com/rockstar-co-founder-dan-houser-absurd-ventures/" class = "btn-secondary uppercase">read more</a>
                                 <div class = "flex items-center">
                                     <span class = "font-bold text-[13px] flex me-[25px]">
-                                        <img src = "assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 223
+                                        <img src = "assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 223<!-- views -->
                                     </span>
                                     <span class = "font-bold text-[13px] flex">
-                                        <img src = "assets/icons/message.svg" alt = "" class = "w-[17px] me-2"> 145
+                                        <img src = "assets/icons/message.svg" alt = "" class = "w-[17px] me-2"> 145<!-- comments -->
                                     </span>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!--===  News cars - 3 end ====-->
 
+                    <!--===  News cars - 4 Start ====-->
                     <div class = "game-post">
                         <div class = "game-post-img">
+                            <!-- image -->
                             <img src = "assets/images/game-10.png" alt = "">
                         </div>
                         <div class = "game-post-body py-4 px-7">
+                            <!-- heading -->
                             <h3 class = "game-post-title pb-3 border-b-[1px] border-b-violet-dark-">Total War: Warhammer 3 Chaos Dwarfs DLC Shows Zhatan's ...</h3>
 
                             <div class = "flex justify-between items-center mt-[10px]">
+                                <!-- publised -->
                                 <span class = "font-normal text-[13px]">March 31, 2023 7:46 AM</span>
+                                <!-- published by -->
                                 <p class = "text-[13px]">By: <span class = "text-green-normal font-semibold">Joseph Allen</span> </p>
                             </div>
+                            <!-- discription -->
                             <p class = "para-text">The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system, new story content, and lots more, is scheduled to arrive ...</p>
 
                             <div class = "flex items-center justify-between">
+                                <!-- read more -->
                                 <a target="_blank" href = "https://techraptor.net/gaming/news/total-war-warhammer-3-chaos-dwarfs-dlc-shows-zhatans-campaign-in-gameplay-video" class = "btn-secondary uppercase">read more</a>
                                 <div class = "flex items-center">
                                     <span class = "font-bold text-[13px] flex me-[25px]">
-                                        <img src = "assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 119
+                                        <img src = "assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 119<!-- views -->
                                     </span>
                                     <span class = "font-bold text-[13px] flex">
-                                        <img src = "assets/icons/message.svg" alt = "" class = "w-[17px] me-2"> 43
+                                        <img src = "assets/icons/message.svg" alt = "" class = "w-[17px] me-2"> 43<!-- comments -->
                                     </span>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!--===  News cars - 4 end ====-->
 
+                    <!--===  News cars - 5 Start ====-->
                     <div class = "game-post">
                         <div class = "game-post-img">
+                            <!-- image -->
                             <img src = "assets/images/game-11.png" alt = "">
                         </div>
                         <div class = "game-post-body py-4 px-7">
+                            <!-- heading -->
                             <h3 class = "game-post-title pb-3 border-b-[1px] border-b-violet-dark-">Nobunaga's Ambition: Awakening Is Heading West In July</h3>
 
                             <div class = "flex justify-between items-center mt-[10px]">
+                                <!-- publised -->
                                 <span class = "font-normal text-[13px]">March 31, 2023 7:46 AM</span>
+                                <!-- published by -->
                                 <p class = "text-[13px]">By: <span class = "text-green-normal font-semibold">Joseph Allen</span> </p>
                             </div>
+                            <!-- discription -->
                             <p class = "para-text">The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system, new story content, and lots more, is scheduled to arrive ...</p>
 
                             <div class = "flex items-center justify-between">
+                                <!-- read more -->
                                 <a target="_blank" href = "https://techraptor.net/gaming/news/nobunagas-ambition-awakening-is-heading-west-in-july" class = "btn-secondary uppercase">read more</a>
                                 <div class = "flex items-center">
                                     <span class = "font-bold text-[13px] flex me-[25px]">
-                                        <img src = "assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 223
+                                        <img src = "assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 223<!-- views -->
                                     </span>
                                     <span class = "font-bold text-[13px] flex">
-                                        <img src = "assets/icons/message.svg" alt = "" class = "w-[17px] me-2"> 157
+                                        <img src = "assets/icons/message.svg" alt = "" class = "w-[17px] me-2"> 157<!-- comments -->
                                     </span>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!--===  News cars - 5 end ====-->
 
+                    <!--===  News cars - 6 Start ====-->
                     <div class = "game-post">
                         <div class = "game-post-img">
+                            <!-- image -->
                             <img src = "assets/images/game-12.png" alt = "">
                         </div>
                         <div class = "game-post-body py-4 px-7">
+                            <!-- heading -->
                             <h3 class = "game-post-title pb-3 border-b-[1px] border-b-violet-dark-">Cyberpunk 2077 Phantom Liberty Promotion Starts in June as CD</h3>
 
                             <div class = "flex justify-between items-center mt-[10px]">
+                                <!-- publised -->
                                 <span class = "font-normal text-[13px]">june 1, 2023 7:46 AM</span>
+                                <!-- published by -->
                                 <p class = "text-[13px]">By: <span class = "text-green-normal font-semibold">Rahul Chettiyar</span> </p>
                             </div>
+                            <!-- discription -->
                             <p class = "para-text">The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system, new story content, and lots more, is scheduled to arrive ...</p>
 
                             <div class = "flex items-center justify-between">
+                                <!-- read more -->
                                 <a target="_blank" href = "https://www.gadgets360.com/games/news/cyberpunk-2077-phantom-liberty-release-date-pre-order-trailer-gameplay-price-idris-elba-keanu-reeves-cd-projekt-red-4117827" class = "btn-secondary uppercase">read more</a>
                                 <div class = "flex items-center">
                                     <span class = "font-bold text-[13px] flex me-[25px]">
-                                        <img src = "assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 223
+                                        <img src = "assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 223<!-- views -->
                                     </span>
                                     <span class = "font-bold text-[13px] flex">
-                                        <img src = "assets/icons/message.svg" alt = "" class = "w-[17px] me-2"> 36
+                                        <img src = "assets/icons/message.svg" alt = "" class = "w-[17px] me-2"> 36<!-- comments -->
                                     </span>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!--===  News cars - 6 end ====-->
                 </div>
             </div>
         </section>
+        <!--===== News section end ====-->
         
-           <section class = "py-16 sc-popular bg-violet-dark-active">
-<div class="stats" id="stats">
-        <div class = "sc-title">
+
+        <!-- ===== Our stats section start =====-->
+        <section class = "py-16 sc-popular bg-violet-dark-active">
+          <div class="stats" id="stats">
+            <!-- Hesding -->
+                <div class = "sc-title">
                     <h3>Our <span>Stats</span></h3>
                     <div class="line"></div>
                 </div>
 
       <div class="container2">
         <div class="counter-grid">
+        <!-- User -->
           <div class="counter-item">
               <i class="fa fa-solid fa-user fa-4x"></i>
             <p>Users</p>
             <h1 class="counter" data-target="1000">1000+</h1>
           </div>
+
+        <!-- Daily users -->
           <div class="counter-item">
             <i class=" fa fa-solid fa-check fa-4x"></i>
             <p>Daily Users</p>
             <h1 class="counter" data-target="100">0</h1>
           </div>
 
+        <!-- Games -->
           <div class="counter-item">
            <i class=" fa fa-gamepad fa-4x"></i>
             <p>Games</p>
-            <h1 class="counter" data-target="50">0</h1>
+            <h1 class="counter" data-target="90">0</h1>
           </div>
         </div>
       </div>
     </div>
 </section>
+<!-- ===== Our stats section end =====-->
 
+<!--===== Social media section start ====-->
 <section class = "py-16 sc-popular bg-violet-dark-active">
     <div class="stats" id="stats">
             <div class = "sc-title">
@@ -756,22 +906,27 @@
                         <div class="line"></div>
                     </div>
         <div class="wrapper">
+            <!-- discord -->
             <a target="_blank" href="https://discord.gg/dakzwdz4ev" class="icon facebook">
               <div class="tooltip">Discord</div>
               <span><i class="fab fa-discord"></i></span>
             </a>
+            <!-- Facebook -->
             <a target="_blank" href=" https://www.facebook.com/profile.php?id=100092184203215&mibextid=ZbWKwL" class="icon twitter">
               <div class="tooltip">Facebook</div>
               <span><i class="fab fa-facebook"></i></span>
             </a>
+            <!-- Instagram -->
             <a target="_blank" href="https://www.instagram.com/gam_esphere/?igshid=MmJiY2I4NDBkZg%3D%3D" class="icon instagram">
               <div class="tooltip">Instagram</div>
               <span><i class="fab fa-instagram"></i></span>
             </a>
+            <!-- GitHub -->
             <a target="_blank" href="https://github.com/GameSphere-MultiPlayer" class="icon github">
               <div class="tooltip">Github</div>
               <span><i class="fab fa-github"></i></span>
             </a>
+            <!-- Linked In -->
             <a target="_blank" href="https://www.linkedin.com/company/gamesphere-multiplayer/" class="icon linkedin">
               <div class="tooltip">Linkedin</div>
               <span><i class="fab fa-linkedin"></i></span>
@@ -780,8 +935,9 @@
           <br>
         </div>
     </section>
+<!--===== Social media section end ====-->
 
-        
+    <!--====== Footer section start =======-->
         <footer class = "footer">
             <div class = "footer-top">
                 <div class = "container grid gap-6 lg:grid-cols-[2fr_repeat(3,1fr)] text-center lg:text-start">
@@ -826,8 +982,9 @@
                 </div>
             </div>
         </footer>
+        <!--====== Footer section end =======-->
         <footer id="footer1">
-            <p>Copyright &nbsp;&copy;&nbsp;&nbsp;[2007] [GAMESPHERE]. All Rights Reserved.</p>
+            <p>Copyright &nbsp;&copy;&nbsp;&nbsp;[2023] [GAMESPHERE]. All Rights Reserved.</p>
         </footer>
           <div class="scrollToTopContainer">
         <button
