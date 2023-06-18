@@ -1,0 +1,27 @@
+{
+  "name": "js13kgames-parcel-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {},
+  "scripts": {
+    "serve": "yarn parcel index.html --no-hmr",
+    "check-file-size": "yarn node ./scripts/check-file-size.js",
+    "delete-dist": "yarn rimraf ./dist",
+    "create-dist": "yarn mkdirp ./dist/inlined ./dist/zipped",
+    "parcel-build": "yarn parcel build index.html -d ./dist/bundled --no-source-maps",
+    "inline-build": "html-inline -i ./dist/bundled/index.html -o ./dist/inlined/index.html",
+    "build": "yarn run delete-dist && yarn run create-dist && yarn run parcel-build && yarn run inline-build",
+    "build-zipped": "yarn run build && yarn node ./scripts/zip-file.js",
+    "party": "yarn run build-zipped && yarn run check-file-size"
+  },
+  "devDependencies": {
+    "archiver": "^2.1.1",
+    "chalk": "^2.4.1",
+    "cssnano": "^4.0.3",
+    "html-inline": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "parcel-bundler": "^1.9.7",
+    "rimraf": "^2.6.2"
+  }
+}
