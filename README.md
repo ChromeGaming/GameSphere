@@ -118,7 +118,40 @@ I only want two player to join this room to fix this i will add a variable calle
 |  3   |[Rock Paper Scissor](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Rock-Paper-Scissors) |
 |  4   |[Bingo Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Bingo%20Game)           |
 |  5   |[Tower](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/tower)           |
-
+|  6   |[2048game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/2048game)           |
+|  7   |[3d Car Racing Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/3d_car_racing_game)           |
+|  8   |[Anthority](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Anthority)           |
+|  9   |[Anti Virus](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Anti%20Virus)           |
+|  10   |[Audio Dash](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Audio%20Dash)           |
+|  11   |[Back to Space](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Back_To_Space)           |
+|  12   |[Banner Image](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Banner%20-%20image)           |
+|  13   |[Black Jack](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Black_Jack)           |
+|  14   |[Blanks Detective](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Blanks%20Detective)           |
+|  15   |[Block Buster](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Block%20Buster)           |
+|  16   |[Box Slice](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Box_Slice)           |
+|  17   |[Bullseye Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/BullseyeGame)           |
+|  18   |[Bunny](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Bunny)           |
+|  19   |[CHESS](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/CHESS)           |
+|  20   |[Candy Crush](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Candy_Crush)           |
+|  21   |[Card flip Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Card%20flip%20Game)           |
+|  22   |[Code Pong game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Code%20Pong%20game)           |
+|  23   |[Complicit](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Complicit)           |
+|  24   |[Connect4](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Connect4)           |
+|  25   |[Curve](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Curve)           |
+|  26   |[Cycles](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Cycles)           |
+|  27   |[DEEP SPACE](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/DEEP%20SPACE)           |
+|  28   |[Day Of The Glitch](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Day%20Of%20The%20Glitch)           |
+|  29   |[Dinosaur Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Dinosaur_Game)           |
+|  30   |[Dont-Die-To-Ghosts](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Dont-Die-To-Ghosts)      |
+|  31   |[Doremon Puzzle](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Doremon_Puzzle)           |
+|  32   |[Dragon World Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Dragon_World_Game)           |
+|  33   |[Dinosaur Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Dinosaur_Game)           |
+|  34   |[Drum_Kit_Play_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Drum_Kit_Play_Game)           |
+|  35   |[Element Puzzle](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Element%20Puzzle)           |
+|  36   |[Escape from Maze](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Escape%20from%20Maze)           |
+|  37   |[Fall-down](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Fall-down)           |
+|  38   |[Flip The Card](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Flip_The_Card)           |
+|  39   |[Formation Absent](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Formation%20Absent)           |
 
 ________________________________________________________________________________________________________________________________________________________________
 # How to make a PR in a Project 🟢
