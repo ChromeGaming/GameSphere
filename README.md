@@ -152,6 +152,26 @@ I only want two player to join this room to fix this i will add a variable calle
 |  37   |[Fall-down](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Fall-down)           |
 |  38   |[Flip The Card](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Flip_The_Card)           |
 |  39   |[Formation Absent](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Formation%20Absent)           |
+|  40   |[Frantic Run](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Frantic_Run)           |
+|  41   |[Galaxy Rider](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Galaxy_Rider)           |
+|  42   |[GeekTacToe](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/GeekTacToe)           |
+|  43   |[Guess The Number](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Guess%20The%20Number)           |
+|  44   |[Hangman Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Hangman%20Game)           |
+|  45   |[HexGL-master](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/HexGL-master)           |
+|  46   |[Hover_Board_Effect](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Hover_Board_Effect) |
+|  47   |[I_Want_To_Google_The_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/I_Want_To_Google_The_Game) |
+|  48   |[Jumbit](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Jumbit)           |
+|  49   |[JunoJs](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/JunoJs)           |
+|  50   |[LOSSST](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/LOSSST)           |
+|  51   |[Math Puzzle Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Math%20Puzzle%20Game)           |
+|  52   |[Memory Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Memory%20Game)           |
+|  53   |[Mexico Escape](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Mexico%20Escape)           |
+|  54   |[Minesweeper Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Minesweeper%20Game)           |
+|  55   |[Movie Guess Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Movie%20Guess%20Game)           |
+|  56   |[Off The Lines](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Off%20The%20Lines)           |
+|  57   |[Off the line](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Off%20the%20line)           |
+|  58   |[PACKABUNCHAS](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/PACKABUNCHAS)           |
+
 
 ________________________________________________________________________________________________________________________________________________________________
 # How to make a PR in a Project 🟢
