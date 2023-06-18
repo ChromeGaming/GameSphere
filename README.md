@@ -219,8 +219,7 @@ I only want two player to join this room to fix this i will add a variable calle
 |  104   |[sciarra of colors](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/sciarra%20of%20colors)           |
 |  105   |[slide-puzzle-master](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/slide-puzzle-master)           |
 |  106   |[snakes and ladder](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/snakes%20and%20ladder)           |
-|  107   |[space-invaders
-](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/space-invaders/space-invaders-master)           |
+|  107   |[space-invaders](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/space-invaders/space-invaders-master)           |
 |  108   |[space-war](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/space-war)           |
 |  109   |[tower-defens](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/tower-defens)           |
 |  110   |[tower](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/tower)           |
