@@ -1,0 +1,14 @@
+{
+  "name": "BackFlipped",
+  "description": "Fall to bottom to flip to the back, then fall back up on the other side... How long can you keep switching between the back and front of the stage? Game by <b>Tom Hermans (@Auroriax)</b>. Best played in Chrome or Firefox. \n\nHow to play (Arrow keys/WASD/ZQSD/Swipes):🡸 🡺: Flying kick, 🡹 🡻: Slow/fasten fall.\n Touched platforms move to background and increase score. Reach bottom of level to claim to the backside! You lose when time runs out... \n\nCoil subscribers get two extra color palettes! Or should I say... COILor palettes? Hah!",
+  "images" : {
+    "image_large": "img/image-large.png",
+    "image_thumbnail": "img/image-small.png"
+  },
+  "categories": ["Desktop", "Mobile", "Web Monetization" ],
+  "user" : {
+    "name": "Tom Hermans (@Auroriax)",
+    "website": "https://auroriax.com",
+    "twitter": "https://twitter.com/Auroriax"
+  }
+}
