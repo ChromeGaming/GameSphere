@@ -171,6 +171,62 @@ I only want two player to join this room to fix this i will add a variable calle
 |  56   |[Off The Lines](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Off%20The%20Lines)           |
 |  57   |[Off the line](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Off%20the%20line)           |
 |  58   |[PACKABUNCHAS](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/PACKABUNCHAS)           |
+|  59   |[Pac - Man Doodle](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Pac%20-%20Man%20Doodle)           |
+|  60   |[Pacific_Air_Battle](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Pacific_Air_Battle)           |
+|  61   |[Pinball](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Pinball)           |
+|  62   |[Ping Pong Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Ping%20Pong%20Game)           |
+|  63   |[Platform Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Platform_Game)           |
+|  64   |[Rock-Paper-Scissors](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Rock-Paper-Scissors)           |
+|  65   |[Rubik_Cube](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Rubik_Cube)           |
+|  66   |[SHUTTLEDECK](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/SHUTTLEDECK)           |
+|  67   |[SUDOKU](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/SUDOKU)           |
+|  68   |[Sci-Fi Alchemy](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Sci-Fi%20Alchemy)           |
+|  69   |[Scroll Run](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Scroll%20Run)           |
+|  70   |[Short Circuit](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Short%20Circuit)           |
+|  71   |[Snake Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Snake%20Game)           |
+|  72   |[Space Exploration](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Space%20Exploration)           |
+|  73   |[Space Menace](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Space%20Menace)           |
+|  74   |[Space-Gum](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Space-Gum)           |
+|  75   |[SpaceHuggers](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/SpaceHuggers)           |
+|  76   |[Spaceship Escort](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Spaceship%20Escort)           |
+|  77   |[Squared Lines](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Squared%20Lines)           |
+|  78   |[Stack-Game-main](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Stack-Game-main/Stack-Game-main)           |
+|  79   |[Strata](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Strata)           |
+|  80   |[SwimmingWithSharks](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/SwimmingWithSharks)           |
+|  81   |[Tenacity](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Tenacity)           |
+|  82   |[Tetris](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Tetris)           |
+|  83   |[TheMoleGame](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/TheMoleGame)           |
+|  84   |[Theo's Escape](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Theo's%20Escape)           |
+|  85   |[Tindeath](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Tindeath)           |
+|  86   |[Track_Not_Found](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Track_Not_Found)           |
+|  87   |[Traffic_Run](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Traffic_Run)           |
+|  88   |[Tritetris - A game that extends from Tetris](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Tritetris%20-%20A%20game%20that%20extends%20from%20Tetris)  |
+|  89   |[Typing Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Typing%20Game)           |
+|  90   |[Whake_M_Mole_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Whake_M_Mole_Game)           |
+|  91   |[World of Emojis](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/World%20of%20Emojis)           |
+|  92   |[alien-shooting-game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/alien-shooting-game)           |
+|  93   |[back-up-master](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/back-up-master)           |
+|  94   |[back4gone-master](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/back4gone-master)           |
+|  95   |[bit butcher](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/bit%20butcher)           |
+|  96   |[black-jack-game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/black_%20jack_game/black-jack-master)  |
+|  97   |[doodle-jump-game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/doodle-jump-game)           |
+|  98   |[floppybird](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/floppybird)           |
+|  99   |[hextris-gh-pages](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/hextris-gh-pages)           |
+|  100   |[nuclear-safe](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/nuclear-safe)           |
+|  101   |[offline](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/offline)           |
+|  102   |[pig game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/pig%20game)           |
+|  103   |[save the forest](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/save%20the%20forest)           |
+|  104   |[sciarra of colors](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/sciarra%20of%20colors)           |
+|  105   |[slide-puzzle-master](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/slide-puzzle-master)           |
+|  106   |[snakes and ladder](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/snakes%20and%20ladder)           |
+|  107   |[space-invaders
+](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/space-invaders/space-invaders-master)           |
+|  108   |[space-war](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/space-war)           |
+|  109   |[tower-defens](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/tower-defens)           |
+|  110   |[tower](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/tower)           |
+|  111   |[whack-a-mole](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/whack-a-mole)           |
+|  112   |[wordScramble](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/wordScramble)           |
+
 
 
 ________________________________________________________________________________________________________________________________________________________________
