@@ -225,6 +225,7 @@ I only want two player to join this room to fix this i will add a variable calle
 |  110   |[tower](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/tower)           |
 |  111   |[whack-a-mole](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/whack-a-mole)           |
 |  112   |[wordScramble](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/wordScramble)           |
+|  113   |[Dots and Boxes Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/MultiPlayer%20-%20Games/Dots%20and%20Boxes%20Game)           |
 
 
 
