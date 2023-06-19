@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackFlipped - js13k 2019</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon16.png" type="image/png">
+    <meta name="monetization" content="$coil.xrptipbot.com/3mQNkjRsTVid5VZd6XJv4g">
+
+  </head>
+  <body>
+      <canvas class="zdog-canvas" id="game"></canvas>
+        <script src="zdog.dist.js"></script>
+        <script src="jsfxr.js"></script>
+        <script src="game.js"></script>
+
+        <p class="title top" id="l1">Back</p>
+        <p class="title bottom" id="l2">Flipped</p>
+        <p class="title start" id="l3">Press Space or Tap Screen</p>
+        <p class="int remaining" id="i1">Time: ?</p>
+        <p class="int jackpot" id="i2">+? sec</p>
+        <p class="int score" id="i3">Flips: ?</p>
+      <div id="d" class="levelselect">
+        <div class="lvl label" id="d1">Level:</div>
+        <span class="lvl arrowleft" id="d3">←&nbsp;</span>
+        <b><span class="lvl number" id="d2">1</span></b>
+        <span class="lvl arrowright" id="d4">&nbsp;→</span>
+      </div>
+      <div id="k" class="colorselect">
+        <div class="clr label" id="k1">Color Pallete:</div>
+        <div class="clr arrowup" id="k3">↑</div>
+        <b><div class="clr number" id="k2">Default colors</div></b>
+        <div class="clr arrowdown" id="k4">↓</div>
+      </div>
+          <div class="notification" id="not">
+            Game by <b>Tom Hermans (@Auroriax)</b><br>
+            <br>
+            <b>How to play (Keyboard/Swipe):</b><br>
+            🡸 Left 🡺 Right: Kick<br>
+            🡹 Up: Jump<br>
+            🡻 Down: Rush <br>
+            Touched platforms give points<br>
+            and move to background.<br>
+            Reach bottom of level to<br>
+            <b>flip to the backside!</b><br>
+            You lose when time runs out...
+          </div>
+  </body>
+</html>
