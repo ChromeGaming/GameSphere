@@ -17,6 +17,8 @@ There is a total of 30 seconds to play the game and for each correct answer user
 <br>
 
 ## **Screenshots 📸**
+![game1](https://github.com/shruti-2412/GameSphere/assets/99483160/35070c3e-1fdd-442f-b892-a639d3e2ef04)
+![Guess_The_Correct_Logo](https://github.com/shruti-2412/GameSphere/assets/99483160/058fe4da-d8ca-436b-912d-7641539adb1c)
 
 
 <br>
