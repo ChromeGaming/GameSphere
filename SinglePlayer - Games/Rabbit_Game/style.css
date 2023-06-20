@@ -1,0 +1,276 @@
+html{
+	box-sizing:border-box;
+	height:100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+	background: radial-gradient(at 75% 35%, #ffa100 -40%, #81cfe0 80%)no-repeat;
+	margin: 0;
+	padding:0;
+	font-family: 'Dokdo', cursive, sans-serif;
+}
+
+#sun{
+	display:inline-block;
+	right: 20%;
+	top:20%;
+	height:137px;
+	width:137px;
+	background:#e86c48;
+	border-radius:50%;
+	box-sizing: border-box;
+	padding: 5px;
+	border: 10px solid #efa588;
+}
+
+.cloud1{
+	margin-top:100px;
+	position:relative;
+}
+
+.cloud2{
+	margin-top:150px;
+	position:relative;
+}
+
+.cl1{
+	width:50px;
+	height:50px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.cl2{
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	position:absolute;
+	top: -50px;
+	left:25px;
+	background:#fff;
+}
+
+.cl3{
+	width:75px;
+	height:75px;
+	border-radius: 50%;
+	position:absolute;
+	background: #fff;
+	top: -25px;
+	left:100px;
+}
+
+.cl4{
+	width:110px;
+	height:15px;
+	position:absolute;
+	background: #fff;
+	top: 25px;
+	left:35px;
+}
+
+.cloud1{
+	animation:slide 20s linear infinite;
+}
+
+.cloud2{
+	animation:slide 30s linear infinite;
+}
+
+@keyframes slide{
+	from{
+		transform:translateX(-150px);
+	}
+	to{
+		transform:translateX(1366px);
+	}
+}
+
+.title{
+	text-align:center;
+	font-size:30px;
+	margin-top:10px;
+}
+
+.score{
+	display:inline-block;
+	border-radius: 40%;
+	background: #ffff00;
+	width: 55px;
+	height: 55px;
+	text-align:center;
+	font-weight:bold;
+	font-size:45px;
+}
+
+.start{
+	text-align:center;
+	margin: 20px auto 10px;
+	width: 80%;
+}
+
+.startbutton{
+	display:inline-block;
+	text-align:center;
+}
+
+button{
+	display:inline-block;
+	background: #008000;
+	border: 2px solid #000;
+	border-radius: 15px;
+	margin-right:8px;
+	padding: 8px 12px 5px;
+	font-family: 'Dokdo', cursive, sans-serif;
+	cursor: pointer;
+	letter-spacing: 1.5px;
+	font-size:25px;
+}
+
+.timer{
+	font-size:29px;
+	width:fit-content;
+}
+
+.countdown{
+	width:30px;
+}
+
+#countdown , .timer{
+	display:inline-block;
+	text-align:center;
+}
+
+.game{
+	width:600px;
+	height:400px;
+	display:flex;
+	flex-wrap:wrap;
+	margin: 0 auto 20px;
+	background: #99d965;
+}
+
+.hole {
+  flex: 1 0 33.33%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hole:after {
+  display: block;
+  background: url(https://static.wixstatic.com/media/e88944_54f86fda524a4483afaa0801b5995007~mv2.png/v1/fill/w_630,h_213,al_c,lg_1/e88944_54f86fda524a4483afaa0801b5995007~mv2.png) bottom center no-repeat;
+  background-size: contain;
+  content:'';
+  width: 93%;
+  height: 70px;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+}
+
+.bunny {
+  background: url('https://static.wixstatic.com/media/e88944_9e3f3b7a44474537bf6c06d8908be920~mv2.png/v1/fill/w_249,h_560,al_c,lg_1/e88944_9e3f3b7a44474537bf6c06d8908be920~mv2.png') bottom center no-repeat;
+  background-size: 40%;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  transition:all 0.4s;
+}
+
+.hole.up .bunny {
+  top: 0;
+}
+
+footer{
+	height:100px;
+	background-color: #99d965;
+	text-align:center;
+	padding-top: 10px;
+	font-size:20px;
+}
+
+a{
+	text-decoration:none;
+	color: #9932cc;
+}
+a:hover{
+	color: #ff1493;
+}
+
+@media screen and (max-width: 610px) {
+  .title {
+    height: 11vw;
+  }
+  .start {
+    margin: 30px auto 5px;
+  }
+  h1 {
+    font-size: 9vw;
+    padding-left: 3vw;
+  }
+  .score {
+    margin-left: 3vw;
+    border-radius: 3vw;
+    width: 12.5vw;
+    font-size: 8vw;
+  }
+  .game {
+    width: 350px;
+    height: 400px;
+  }
+  .hole {
+    flex: 1 0 50%;
+  }
+  .hole:after {
+    width: 90%;
+  }
+  .bunny {
+    background-size: 33%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .start {
+    margin: 20px auto 5px;
+  }
+  .game {
+    height: 350px;
+    width: auto;
+  }
+  .bunny {
+    background-size: 25%;
+  }
+  .hole {
+    flex: 1 0 50%;
+  }
+  .hole:after {
+    width: 73%;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .game {
+    height: 330px;
+    width: auto;
+  }
+  .bunny {
+    background-size: 26%;
+  }
+  .hole:after {
+    width: 65%;
+    margin-left: 22px;
+  }
+ 
+}
+
+@media screen and (max-width: 340px) {
+  .bunny {
+    background-size: 29%;
+  }
+}
