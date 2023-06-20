@@ -229,7 +229,7 @@ I only want two player to join this room to fix this i will add a variable calle
 |  114   |[RabbitGame](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/MultiPlayer%20-%20Games/Dots%20and%20Rabbit_Game)           |
 |  115   |[Dots and Boxes Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/MultiPlayer%20-%20Games/Dots%20and%20Boxes%20Game)   
 |  116   |[Color_Blast_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Color_Blast_game)         |
-
+|  117   |[Guess the Correct Logo](https://github.com/shruti-2412/GameSphere/tree/main/SinglePlayer%20-%20Games/Guess_the_Correct_Logo)         |
 
 
 ________________________________________________________________________________________________________________________________________________________________
