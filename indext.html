@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel='stylesheet' type='text/css' ' media="screen" href="style.css"/>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <title>Rock Paper Scissor</title>
+  </head>
+
+  <body>
+    <section id="player-login">
+      <div id="intro">
+        <h1>Welcome to RPS Game<br /><span>Let's play Hand game</span></h1>
+      </div>
+      <form>
+        <input type="text" id="player" placeholder="Your name" /><br />
+        <input
+          type="number"
+          id="round-number"
+          max="10"
+          min="3"
+          placeholder="Number of rounds"
+        /><br />
+        <input type="button" id="submit" onclick="login()" value="START" />
+      </form>
+    </section>
+
+    <section id="results-section">
+      <div id="results-screen">
+        <div class="player-results">
+          <div id="final-player-name" class="final-name">Estaban</div>
+          <div id="final-player-score" class="final-score">10</div>
+          <div class="details">
+            <li>Wins: <span id="player-wins">0</span></li>
+            <li>Draws: <span id="draws">0</span></li>
+            <li>Losses: <span id="player-losses">0</span></li>
+          </div>
+        </div>
+        <div class="comp-results">
+          <div id="final-computer-name" class="final-name">John</div>
+          <div id="final-computer-score" class="final-score">10</div>
+          <div class="details">
+            <li>Wins: <span id="computer-wins">0</span></li>
+            <li>Draws: <span id="draws">0</span></li>
+            <li>Losses: <span id="computer-losses">0</span></li>
+          </div>
+        </div>
+        <div id="final-comment">
+          <span id="winner-name">No one</span> Wins😱🥳
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h1>Rules to Play, How?</h1>
+      <p>
+        Our Childhood hand game rock-paper-scissors is a game played by us to
+        enjoy our time. It is stated that it is also <br />
+        used to clear disputes between villagers<br />
+        This game is played in a series of rounds and the person who wins most
+        rounds wins the game.
+      </p>
+      <p>
+        <b
+          >All you need to know is:<br />-Rock(👊) beats scissors(✌)<br />-Scissors(✌)
+          beats paper(🖐)<br />-Paper(🖐) beats rock(👊)</b
+        >
+      </p>
+      <input type="button" onclick="faq()" value="CLOSE" />
+    </section>
+
+    <section id="game">
+      <div id="dashboard">
+        <div id="scores">
+          <div class="score" id="player-score">0</div>
+          <div class="score" id="computer-score">0</div>
+        </div>
+        <div class="name" id="player-name">You</div>
+        <div class="name" id="computer-name">Smith</div>
+        <div id="marker"></div>
+      </div>
+
+      <div id="commentary">Wooohhaaaaa!!</div>
+
+      <div id="playground">
+        <div id="player-zone">
+          <div id="player-choice">🤜</div>
+          <button class="controls" id="rock" onclick="chose('rock')">👊</button>
+          <button class="controls" id="paper" onclick="chose('paper')">
+            🖐
+          </button>
+          <button class="controls" id="scissors" onclick="chose('scissors')">
+            ✌
+          </button>
+        </div>
+        <div id="comp-choice">🤜</div>
+      </div>
+    </section>
+    <div id="guide">Refresh or reload page to restart</div>
+    <script src="script.js"></script>
+  </body>
+  <script src="main.js"></script>
+</html>
