@@ -182,8 +182,11 @@ ________________________________________________________________________________
 |  118   |[Guess the Correct Logo](https://github.com/VSatwika/GameSphere/tree/Air-Balloon-game/SinglePlayer%20-%20Games/Air%20Balloon)         |
 |  119  |[Kill_The_Bird_Game](https://github.com/shruti-2412/GameSphere/tree/main/SinglePlayer%20-%20Games/Kill_The_Bird_Game)         |
 |  120   |[Dots and Boxes Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/MultiPlayer%20-%20Games/Dots%20and%20Boxes%20Game)        |
+|  121   |[Virtual Piano](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Virtual%20Piano)    
+|  122   |[Classic Pool Game](https://github.com/PatilHarshh/GameSphere/blob/main/SinglePlayer%20-%20Games/Classic-Pool-Game)    
 |  121   |[Virtual Piano](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Virtual%20Piano) 
-|  122   |[Virtual Piano](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Virtual%20Pickle_Rick_Maze_Game)      
+|  122   |[Virtual Piano](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Virtual%20Pickle_Rick_Maze_Game)    
+| 123 |[Bad Depot](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Bad_Depot)  
 
 
 ________________________________________________________________________________________________________________________________________________________________
