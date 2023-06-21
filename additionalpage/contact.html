@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../dist/color-theme.css">
     <script src="../src/color-theme.js"></script>
+    <script src="../src/validation.js"></script>
     <script src="https://kit.fontawesome.com/284ffbb2b1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../dist/contact.css">
     
@@ -109,13 +110,27 @@
                <div class="name-email-div">
                    
                    <!-- <label for="name"></label> -->
-                   <input type="text" name="name" id="name" placeholder="Enter Full Name " >
-                   <input type="email" name="email" id="email" placeholder="Enter Email">
+                   <div class="inputDiv">
+                    <input type="text" name="name" id="name" placeholder="Enter Full Name "  onkeyup="handleChange(event)">
+                    <p id="nameError" class="error hidden">Name should be of atleast 6 characters</p>
+                   </div>
+                    <div class="inputDiv">
+                        <input type="email" name="email" id="email" placeholder="Enter Email" onkeyup="handleChange(event)">
+                    <p class="error hidden" id="emailError">Enter Valid Email</p>
+                    </div>
+                  
                </div>
                <!-- <input type="text" name="number" id="number" placeholder="Enter Phone Number"> -->
-               <input type="text" name="subject" id="subject" placeholder="Enter Mail Subject">
-               <input type="text" name="message" id="message" placeholder="Enter Message" class="message">
-               <a href="#"><div class="btn" >
+               <div >
+                <input type="text" name="subject" id="subject" placeholder="Enter Mail Subject" onkeyup="handleChange(event)">
+                <p id="subjectError" class="error hidden">Mail Subject must be within 2 to 6 words</p>
+               </div>
+             <div >
+                <input type="text" name="message" id="message" placeholder="Enter Message" class="message" onkeyup="handleChange(event)">
+                <p id="messageError" class="error hidden">Message must be of within 10 to 100 words</p>
+             </div>
+               
+               <a href="#"><div class="btn" onclick="handleSubmitClick()">
                    Send Message
                    </div></a>
                    
