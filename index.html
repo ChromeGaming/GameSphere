@@ -45,6 +45,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="dist/color-theme.css">
         <script src="https://kit.fontawesome.com/284ffbb2b1.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
     </head>
     <body>
         
@@ -1070,6 +1071,18 @@
     );
 
     CounterObserver.observe(section_counter);
+
+    // revealing effect start
+    ScrollReveal({ reset: true ,
+        distance:'100px',
+        duration:1500,
+        delay:200
+    });
+
+    ScrollReveal().reveal('.sc-title', { delay: 200 });
+    ScrollReveal().reveal('.game-card', { delay: 200 ,origin:'left'});
+    ScrollReveal().reveal('.game-post', { delay: 200,origin:'left' });
+    ScrollReveal().reveal('.wrapper a ', { delay: 200,interval:200 });
 
     </script>
     </body>
