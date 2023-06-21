@@ -930,7 +930,7 @@ video {
 .shadow-nav {
   --tw-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   --tw-shadow-colored: 0px 4px 4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  /* box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow); */
 }
 
 .shadow-nav-collapse {
@@ -1120,7 +1120,7 @@ ul {
 /* header */
 
 .header {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), linear-gradient(248.75deg, rgba(0, 159, 157, 0.41) 0%, rgba(15, 10, 60, 0.41) 38.46%), url("../assets/images/banner_image.png") center/cover no-repeat;
+  /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), linear-gradient(248.75deg, rgba(0, 159, 157, 0.41) 0%, rgba(15, 10, 60, 0.41) 38.46%),  center/cover no-repeat; */
   display: flex;
   min-height: 100vh;
   align-items: center;
@@ -1285,14 +1285,14 @@ ul {
 /* navbar */
 
 .navbar {
-  position: fixed;
+  position: absolute;
   left: 0px;
   top: 0px;
   z-index: 40;
   min-height: 78px;
   width: 100%;
   --tw-bg-opacity: 1;
-  background-color: rgb(9 6 36 / var(--tw-bg-opacity));
+  background-color: transparent !important;
 }
 
 .navbar-brand {
@@ -2373,6 +2373,18 @@ hr {
   border-color: rgba(255, 255, 255, .6);
 }
 
+.hidden{
+  display: none;
+}
+
+.error{
+  color: red;
+  font-size: 15px;
+  margin-bottom: 10px;
+  margin-left: 1.5rem;
+}
+
+.inputDiv{ width: 50%;}
 /* Begin Media Queries*/
 @media screen and (max-width: 850px) {
   .contact-wrapper {

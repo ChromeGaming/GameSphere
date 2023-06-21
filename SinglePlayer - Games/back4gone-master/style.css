@@ -1,0 +1,9 @@
+* {
+	margin  : 0;
+	padding : 0;
+}
+
+html, body {
+    overflow : hidden;
+    font-family: 'Montserrat', sans-serif;
+}
