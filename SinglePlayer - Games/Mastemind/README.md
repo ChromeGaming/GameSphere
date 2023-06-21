@@ -3,6 +3,8 @@
 
 
 ## **Description**
+**Unleash Your Inner Mastermind: Test Your Memory, Match the Pairs!**
+
 The Mastermind game is a classic memory-based game implemented using HTML, CSS, and JavaScript. The objective of the game is to flip over pairs of cards and find matching pairs. The game continues until all cards have been matched.
 
 <br>
@@ -28,13 +30,6 @@ To play the Mastermind game, follow these steps:
 5. The player continues flipping cards until all pairs have been matched.
 6. The player's objective is to complete the game in the fewest number of moves and in the shortest amount of time.
 7. Once all the matches are done, the game is over. 
-
-<br>
-
-## **Installation**
-1. Clone or download the repository.
-2. Open the index.html file in a web browser.
-
 
 <br>
 
