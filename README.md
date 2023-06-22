@@ -1,5 +1,16 @@
 <img style="width:100%" src="https://user-images.githubusercontent.com/98798977/236624352-6f5440bb-1b5a-41e3-a2d2-97b5ef2b7387.png">
 
+# Hello Contributers New Marking System 
+
+-> Bug or singlePlayer game - level1
+
+-> Online Multiplayer Game - level2
+
+-> Enhancement of website - level3
+
+ Note- Level 3 is only provide when someone enhance and change some big functionalities.
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## Table of Contents
 
 - [GSSOC'23 Welcome To All Contributers 🌻](#gssoc23-welcome-to-all-contributers-)
