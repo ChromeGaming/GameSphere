@@ -195,7 +195,12 @@ ________________________________________________________________________________
 |  132 | [Whisker's_Leap](https://github.com/VSatwika/GameSphere/tree/Whisker's_Leap)                             |
 | 133 | [Mastermind](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Mastermind)        |
 | 134 | [1024 moves game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/1024_moves_game)
-| 135 | [Dungeon Crawler](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Dungeon_Crawler)
+| 135 | [1024 moves game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/1024_moves_game) 
+|136 |  [RGB Riddle](https://github.com/VSatwika/GameSphere/tree/RGB_Riddle/SinglePlayer%20-%20Games/RGB_Riddle)               |
+| 137 |[Atlas](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Atlas) 
+| 138 | [Among Us game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Among_Us_Game)
+| 139 | [Dungeon Crawler](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Dungeon_Crawler)
+
 ________________________________________________________________________________________________________________________________________________________________
 # How to make a PR in a Project 🟢
 
