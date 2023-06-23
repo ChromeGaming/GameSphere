@@ -215,7 +215,6 @@ ________________________________________________________________________________
 | 141 | [Falling Blocks](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Falling%20Blocks)
 | 142 |  [MixAndPaint](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/MixAndPaint)        |
 
-
 ________________________________________________________________________________________________________________________________________________________________
 # How to make a PR in a Project 🟢
 
