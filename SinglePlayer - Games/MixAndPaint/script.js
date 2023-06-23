@@ -1,38 +1,3 @@
-var colour;
-function myColour() {
-  var red = document.getElementById('red').value;
-  var green = document.getElementById('green').value;
-  var blue = document.getElementById('blue').value;
-  colour = 'rgb(' + red + ',' + green + ',' + blue + ')';
-  document.body.style.backgroundColor = colour;
-  document.getElementById('box').value = colour;
-
-  // Compare the color with color codes
-  let foundMatch = false;
-  for (const image in imageColorCodes) {
-    const colorCode = imageColorCodes[image];
-    const isMatch = compareColors(colorCode, colour, 5);
-
-    if (isMatch) {
-      foundMatch = true;
-      document.getElementById("response").innerHTML = "Correct Answer"
-      break; // Exit the loop if a match is found
-    }
-    else{
-      foundMatch = false;
-      document.getElementById("response").innerHTML = "Wrong Answer"
-    }
-  }
-
-  if (!foundMatch) {
-    console.log('No match found.');
-  }
-}
-
-document.getElementById('red').addEventListener('input', myColour);
-document.getElementById('green').addEventListener('input', myColour);
-document.getElementById('blue').addEventListener('input', myColour);
-
 const images = [
   "images/unocard.png", //0  rgb(183, 174, 237)
   "images/cocacola.png", //1  rgb(216, 34, 59)
@@ -104,11 +69,42 @@ function compareColors(color1, color2, allowedErrorPercentage) {
 // Object to store color codes
 const imageColorCodes = {};
 
-for (let i = 0; i < images.length; i++) {
+var colour;
+
+function myColour() {
+  var red = document.getElementById('red').value;
+  var green = document.getElementById('green').value;
+  var blue = document.getElementById('blue').value;
+  colour = 'rgb(' + red + ',' + green + ',' + blue + ')';
+  document.body.style.backgroundColor = colour;
+  document.getElementById('box').value = colour;
+
+  let foundMatch = false;
+
   const image = images[i];
   const colorCode = colorCodes[i] || 'rgb(0, 0, 0)'; // Default to black if color code not provided
   imageColorCodes[image] = colorCode;
+
+  // Compare the color with the respective image's color code
+  const isMatch = compareColors(colorCode, colour, 5);
+
+  if (isMatch) {
+    foundMatch = true;
+    document.getElementById("response").innerHTML = "Correct Answer";
+  } else {
+    foundMatch = false;
+    document.getElementById("response").innerHTML = "Wrong Answer";
+  }
+
+  if (!foundMatch) {
+    console.log('No match found.');
+  }
 }
+
+document.getElementById('red').addEventListener('input', myColour);
+document.getElementById('green').addEventListener('input', myColour);
+document.getElementById('blue').addEventListener('input', myColour);
+
 
 let slide = document.getElementById("slide");
 const btn1 = document.getElementById("btn1");
