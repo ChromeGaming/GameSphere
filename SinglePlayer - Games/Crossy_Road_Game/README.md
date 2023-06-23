@@ -17,6 +17,8 @@
 <br>
 
 ## **Screenshots 📸**
+![Crossy_Road_Game](https://github.com/Kalivarapubindusree/GameSphere/assets/114821855/d3a38fb0-b6a8-4277-8f6a-0636f0fd523a)
+
 
 <br>
 
@@ -28,3 +30,7 @@
 
 
 ## **Working video 📹**
+
+
+https://github.com/Kalivarapubindusree/GameSphere/assets/114821855/7138999f-eb4c-441c-8c05-9d716aa78d5f
+
