@@ -46,6 +46,8 @@
         <link rel="stylesheet" href="dist/color-theme.css">
         <script src="https://kit.fontawesome.com/284ffbb2b1.js" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/scrollreveal"></script>
+        <link rel="stylesheet" href="counter.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     </head>
     <body>
         
@@ -871,30 +873,38 @@
                     <div class="line"></div>
                 </div>
 
-      <div class="container2">
-        <div class="counter-grid">
-        <!-- User -->
-          <div class="counter-item">
-              <i class="fa fa-solid fa-user fa-4x"></i>
-            <p>Users</p>
-            <h1 class="counter" data-target="1000">1000+</h1>
-          </div>
-
-        <!-- Daily users -->
-          <div class="counter-item">
-            <i class=" fa fa-solid fa-check fa-4x"></i>
-            <p>Daily Users</p>
-            <h1 class="counter" data-target="100">0</h1>
-          </div>
-
-        <!-- Games -->
-          <div class="counter-item">
-           <i class=" fa fa-gamepad fa-4x"></i>
-            <p>Games</p>
-            <h1 class="counter" data-target="90">0</h1>
-          </div>
-        </div>
-      </div>
+                <div class="counter-container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="counter">
+                                <div class="counter-icon">
+                                    <i class="fa  fa-user "></i>
+                                </div>
+                                <span class="counter-value">1000</span>
+                                <h3>Users</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="counter">
+                                <div class="counter-icon">
+                                    <i class="fa fa-check "></i>
+                                </div>
+                                <span class="counter-value">100</span>
+                                <h3>Daily Users</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="counter">
+                                <div class="counter-icon">
+                                    <i class="fa fa-gamepad"></i>
+                                </div>
+                                <span class="counter-value">90</span>
+                                <h3>Games</h3>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
     </div>
 </section>
 <!-- ===== Our stats section end =====-->
@@ -1036,41 +1046,19 @@
 
     // Scroll Animation
 
-    let CounterObserver = new IntersectionObserver(
-      (entries, observer) => {
-        let [entry] = entries;
-        if (!entry.isIntersecting) return;
-
-        let speed = 200;
-        counters.forEach((counter, index) => {
-          function UpdateCounter() {
-            const targetNumber = +counter.dataset.target;
-            const initialNumber = +counter.innerText;
-            const incPerCount = targetNumber / speed;
-            if (initialNumber < targetNumber) {
-              counter.innerText = Math.ceil(initialNumber + incPerCount);
-              setTimeout(UpdateCounter, 40);
+    $(document).ready(function(){
+    $('.counter-value').each(function(){
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        },{
+            duration: 3500,
+            easing: 'swing',
+            step: function (now){
+                $(this).text(Math.ceil(now));
             }
-          }
-          UpdateCounter();
-
-          if (counter.parentElement.style.animation) {
-            counter.parentElement.style.animation = '';
-          } else {
-            counter.parentElement.style.animation = `slide-up 0.3s ease forwards ${
-              index / counters.length + 0.5
-            }s`;
-          }
         });
-        observer.unobserve(section_counter);
-      },
-      {
-        root: null,
-        threshold: window.innerWidth > 768 ? 0.4 : 0.3,
-      }
-    );
-
-    CounterObserver.observe(section_counter);
+    });
+});
 
     // revealing effect start
     ScrollReveal({ reset: true ,
