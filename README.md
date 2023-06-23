@@ -193,7 +193,6 @@ ________________________________________________________________________________
 |  119  |[Kill_The_Bird_Game](https://github.com/shruti-2412/GameSphere/tree/main/SinglePlayer%20-%20Games/Kill_The_Bird_Game)         |
 |  120   |[Dots and Boxes Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/MultiPlayer%20-%20Games/Dots%20and%20Boxes%20Game)        |
 |  121   |[Virtual Piano](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Virtual%20Piano)    |
-<<<<<<< Updated upstream
 |  122   |[Chill_Lion_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/MultiPlayer%20-%20Games/Dots%20and%20Chill_Lion_Game)           |
 |  123  |[Coloron Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Coloron%20Game)         |
 |  124   |[Guess the Correct Logo](https://github.com/VSatwika/GameSphere/tree/Air-Balloon-game/SinglePlayer%20-%20Games/Air%20Balloon)         |
@@ -213,7 +212,7 @@ ________________________________________________________________________________
 | 138 | [Among Us game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Among_Us_Game)
 | 139 | [Dungeon Crawler](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Dungeon_Crawler)
 | 139 | [ArmorAlley](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/ArmorAlley)
-|  122   |[MixAndPaint](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/MixAndPaint)        |
+|  140   |[MixAndPaint](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/MixAndPaint)        |
 
 
 >>>>>>> Stashed changes
