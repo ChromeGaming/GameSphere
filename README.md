@@ -213,7 +213,8 @@ ________________________________________________________________________________
 | 139 | [Dungeon Crawler](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Dungeon_Crawler)      |
 | 140 | [ArmorAlley](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/ArmorAlley)        |
 | 141 | [Falling Blocks](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Falling%20Blocks)
-| 142 |  [MixAndPaint](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/MixAndPaint)        |
+| 142 | [Stack 'Em Up](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Stack_Em_Up)
+| 143 |  [MixAndPaint](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/MixAndPaint)        |
 
 | 143 |  [Bubble_Blast_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Bubble_Blast_Game)        |
 
