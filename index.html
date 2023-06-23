@@ -40,14 +40,15 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- custom css (tailwind) -->
         <link rel="stylesheet" href="dist/main.css">
-
+        
         <!-- icon css -->
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="dist/color-theme.css">
         <script src="https://kit.fontawesome.com/284ffbb2b1.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
     </head>
     <body>
-    
+        
         <header  class = "header">
             <!--===== Navigation bar start =====-->
             <nav style="background-color: black;" class = "navbar flex items-center shadow-nav">
@@ -61,7 +62,7 @@
                                 <i class = "fas fa-bars"></i>
                             </button>
                         </div>
-
+                        
                         <div  class = "navbar-collapse fixed right-0 top-0 w-full sm:w-[280px] h-full bg-white shadow-nav-collapse pt-[60px] px-5 pb-4 text-center transition ease-in-out duration-300 transform lg:relative lg:p-0 lg:flex lg:items-center lg:justify-end lg:w-full lg:bg-transparent lg:shadow-none translate-x-full lg:translate-x-0">
                             <button type = "button" class = "lg:hidden" id = "navbar-hide-btn">
                                 <i class = "fa-solid fa-xmark text-2xl"></i>
@@ -91,9 +92,12 @@
                 </div>
             </nav>
             <!--===== Navigation bar end =====-->
-
+            
             <!--===== Intro and signature game section start =====-->
             <div class = "banner-content" style="margin-top: 100px;" >
+                <video  autoplay loop play-inline muted class="back-video">
+                    <source src="assets/images/video_games_-_89894 (540p).mp4"  type= "video/mp4" >
+                </video>
                 <div class = "banner-badge ">Hello Gamers</div>
                 <h1 class = "banner-title">Play Games With Your Friends</h1>
                 <p class = "lead-text">In this platform we are  here to play games with our friends at a same time without any interuption Our primary goal is to create a plateform where two or more friends can gather and play games online (such as multiplayer) without having to download any software or tools to their computers or mobile devices.</p>
@@ -104,10 +108,7 @@
                     <span><a target="_blank" href="SinglePlayer - Games/Formation Absent/index.html">play now</a></span>
                 </button>
                 <!--==== bouncy ball section start ====-->
-                <div class="bouncingball-div">
-                <div class="bouncingball"></div>
-                <!--==== bouncy ball section end ====-->
-            </div>
+               
             </div>
             <!--===== Intro and signature game section end =====-->
         </header>
@@ -1017,7 +1018,7 @@
             </div>
         </div>
     </div>
-    <video src="https://drive.google.com/uc?id=1E0Y2cUaArPQ313GpdCPeFYtFZ32tkRC5" type="video/mp4" muted loop class="clip"></video>
+
     
 
     <!-- color theme part end -->
@@ -1070,6 +1071,17 @@
     );
 
     CounterObserver.observe(section_counter);
+
+    // revealing effect start
+    ScrollReveal({ reset: true ,
+        distance:'100px',
+        duration:1500,
+        delay:200
+    });
+
+    ScrollReveal().reveal('.sc-title', { delay: 200 });
+    ScrollReveal().reveal('.game-card', { delay: 200 ,origin:'left'});
+    ScrollReveal().reveal('.game-post', { delay: 200,origin:'left' });
 
     </script>
     </body>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="utf-8">
+    	<title>Mix And Paint</title>
+    	<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+    <div class="wrap">
+        <button class="button1" id="btn1"><</button>  
+            <div class="bodyy">
+            <div class="pics">
+                <img class="image" src="" id="slide">
+            </div>
+            <div class="color_background">
+                <div class="color_palette">
+                <h2>RESULT:</h2><input class="result" type="text" id="box"
+                value="rgb(255,255,255)">
+                    
+                <div class="bars">
+                    <div class="bar">
+                Red:<input type="range" id="red" 
+                    value="255" min="0" max="255">
+                    </div>
+                    <div class="bar">
+                Green:<input type="range" id="green"
+                    value="255" min="0" max="255">
+                    </div>
+                    <div class="bar">
+                Blue:<input type="range" id="blue"
+                    value="255" min="0" max="255">
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="rules">
+                <h2>RULES:</h2>
+                <li> Look closely at the images. Each image has a secret color code! </li>
+                <li> It's time to show off your RGB skills! Adjust the sliders and guess the color code.</li>
+                <li> But here's the twist, you might be close, but not too close!</li>
+                <li> Ta-da! If you crack the code and match the color, You're a color genius!</li>
+                <li> Keep going and see how many colors you can conquer. Remember, it's all about finding the perfect match!</li>
+            </div>
+        </div>
+            <button class="button2" id="btn2">></button>  
+    </div>
+
+    <div class="check" id="response"></div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>

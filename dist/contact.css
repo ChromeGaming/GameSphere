@@ -43,6 +43,7 @@
     color: var(--main-color);
     font-weight: bold;
     margin-top: 10px;
+    width: 225px;
 }
 
 .icon-part{
@@ -83,6 +84,7 @@
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
+    width: 170px;
 }
 
 .contact-form{
@@ -116,7 +118,27 @@
     color: white;
    
   }
-  
+  @media(max-width:1120px){
+    .contact-form{
+        width: 70vw;
+    }
+    .inputDiv{
+        width: 100%;
+    }
+  }
+
+@media(max-width:600px){
+.contact-form{
+    width: 80vw;
+}
+}
+
+/* @media(max-width:500px){
+    .contact-form{
+        width: 80vw;
+    }
+    } */
+
   .message{
     padding: 10px;
     width: 100%;

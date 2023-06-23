@@ -319,7 +319,7 @@ height: auto;
   background-color: var(--main-color);
  }
 
-video{
+.game-card video{
   display:none;
 height: 280px;
 object-fit: cover;
@@ -334,6 +334,7 @@ object-fit: cover;
 .game-card:hover video{
   display: block;
 }
+
 /* Search Bar CSS */
 .sc-popular {
   padding-top: 4rem;
@@ -398,5 +399,17 @@ object-fit: cover;
   .game-card-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+}
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+opacity: 2;
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+ 
 }
 

@@ -1,7 +1,7 @@
 # Guidelines to Add a New Game
 
 Hello there Contributor! Welcome to <b>GameSphere</b> <br>
-Feel free to Create your very own games and share it with the world! <br>
+Feel free to Create your very own games and share it with the world!! <br>
 
 ___
 ## How to add New games to GameSphere
@@ -78,4 +78,4 @@ Check for ideas you can contribute to in the issues.
 #### Step 9: <br> <b> Congratulations :tada::tada: you can now make your pull request </b>
 
 ___
-## Thank you for Contributing to GameSphere. 
+## Thank you for Contributing to GameSphere 😍. 

@@ -1,5 +1,16 @@
 <img style="width:100%" src="https://user-images.githubusercontent.com/98798977/236624352-6f5440bb-1b5a-41e3-a2d2-97b5ef2b7387.png">
 
+# Hello Contributers New Marking System 
+
+-> Bug or singlePlayer game - level1
+
+-> Online Multiplayer Game - level2
+
+-> Enhancement of website - level3
+
+ Note- Level 3 is only provide when someone enhance and change some big functionalities.
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## Table of Contents
 
 - [GSSOC'23 Welcome To All Contributers 🌻](#gssoc23-welcome-to-all-contributers-)
@@ -54,58 +65,6 @@ ________________________________________________________________________________
 **Our Aim** - Our primary goal is to create a website where two or more friends can gather and play games online (such as multiplayer) without having to download any software or tools to their computers or mobile devices.
 
 **Who are able to work with Us** - UI/UX Design, Front-end developer, Back-end developer, *Know about WebSocket etc.. and also if you want to contribute in different fields we welcome you 
-______________________________________________________________________________________________________________________________________________________________
-
-# How to start contributing 🤝
-
-I have distributed this project into three main parts for contributers :
-| steps         | About         | Time  |
-| ------------- |:-------------:| -----:|
-| First step    | Create a home page of a website | 10 - 15 days |
-| second step   | Build a game and add on the website  |  15 - 20 days |
-| Third Step    | Implementation for Multiplayer & Rooms | 30 - 40 days |
-| Final step    | Debugging and basic change if needed | 10 - 15 days |
-
-### First Step 🌱
-
-Create a landing page (Home Page) by using frontend development
-
-_Detail:_ The first phase of a project is the most straightforward because all that is required of the contributor is to copy our designs (this is especially important if their designs are better than our designs) and create a landing page (or home page), which serves as a direct conduit between the user's browser and our website. The initial phase of the project is crucial because if users don't feel at ease using our website, they may quit using it completely, which is negative for our website. All contributions would have been utterly useless if this happened. in order to improve the responsiveness and dynamic experience of our users.
-
-               
-                
- **Note** - You are also free to show your designs at durgeshkumar4993@gmail.com
- ***********************************************************************************************************************************************************
-                
-### Second Step 🌲 
-
-Add different types of game be like Snake, Ludo, Carrom, Bubble shoot etc.
-
-_Detail:_ In a second step the developer just be need develop multiple game(be like Ludo, Carrom, Bubble shooter, snake games etc..) and list into the website and also create an special page for a particular game where all instruction are present how to play that game and also collect the users review and their experience with our website if you want to check out the reference of design just copy the link and paste into browser and also if you have any other ideas related to designs please discuss with us.
-
-                 
-                 
- **Note** - You are also free to show your designs at durgeshkumar4993@gmail.com
-                
-***********************************************************************************************************************************************************
-
-### Third Step 🌳 
-
-Here you are create a room for players where the meat with different players
-
-_Detail:_ Third step is hardest part of project according to me. I have to find one random online user and transfer real -time data between both of them . you all are familiar with whatsapp when we are chatting with our friends under the hood whatsapp will transmit message from one socket to another but when it comes to group chatting transmitting message from socket to socket is not efficient so whatsapp creates a room it has a unique ID and inside that all socket will be there here message transmit from socket to rom I am going to use this room's concept to build this game 
-let's take an example user clicks on play we redirect into game main page where we give two options. 
-
-**play with stranger.** 
-
-**play with friends.** 
-
-when users click on play with stranger button I will send a room create even from the frontend on the backend i will create a room with a unique ID and join the user in that room to join another player in this room  i need room ID so i have to save room detail somewhere.I will save room ID in a array called room if another user clicks on that button first i will check there any room available from that array if the room is available i will make this user to join the room is an issue here.
-
-I only want two player to join this room to fix this i will add a variable called vacant to check if the room is available or not to have a track of player info like socket ID option ,option scora and option lock will save data  in player object now i need to send this detail to the front-end we rea sending a room gate even from the back-end. I hope you understood what i said now talk to play with friend button , sharing a link i will take the room ID from that link and check if is there any room available with a given ID if there a room exit then i will check if its available and vacant then user can join the else i will redirect him to the home page currently any user can join the room if"s awakend .To save this i will current a private room for those who click on a play with the friend button .                  
-
- **Note** - You are also free to talk if you have any better idea
- 
  ______________________________________________________________________________________________________________________________________________________________
  
 # Available Games 🎮
@@ -230,15 +189,31 @@ I only want two player to join this room to fix this i will add a variable calle
 |  115   |[Dots and Boxes Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/MultiPlayer%20-%20Games/Dots%20and%20Boxes%20Game)   
 |  116   |[Color_Blast_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Color_Blast_game)         |
 |  117   |[Guess the Correct Logo](https://github.com/shruti-2412/GameSphere/tree/main/SinglePlayer%20-%20Games/Guess_the_Correct_Logo)         |
-|  118   |[Coloron Game](https://github.com/shruti-2412/GameSphere/tree/main/SinglePlayer-Games/Coloron Game)         |
 |  118   |[Guess the Correct Logo](https://github.com/VSatwika/GameSphere/tree/Air-Balloon-game/SinglePlayer%20-%20Games/Air%20Balloon)         |
 |  119  |[Kill_The_Bird_Game](https://github.com/shruti-2412/GameSphere/tree/main/SinglePlayer%20-%20Games/Kill_The_Bird_Game)         |
 |  120   |[Dots and Boxes Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/MultiPlayer%20-%20Games/Dots%20and%20Boxes%20Game)        |
-|  121   |[Virtual Piano](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Virtual%20Piano)    
-|  122   |[Classic Pool Game](https://github.com/PatilHarshh/GameSphere/blob/main/SinglePlayer%20-%20Games/Classic-Pool-Game)    
-|  121   |[Virtual Piano](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Virtual%20Piano) 
-|  122   |[Virtual Piano](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Virtual%20Pickle_Rick_Maze_Game)      
-
+|  121   |[Virtual Piano](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Virtual%20Piano)    |
+|  122   |[Chill_Lion_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/MultiPlayer%20-%20Games/Dots%20and%20Chill_Lion_Game)           |
+|  123  |[Coloron Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Coloron%20Game)         |
+|  124   |[Guess the Correct Logo](https://github.com/VSatwika/GameSphere/tree/Air-Balloon-game/SinglePlayer%20-%20Games/Air%20Balloon)         |
+|  125  |[Kill_The_Bird_Game](https://github.com/shruti-2412/GameSphere/tree/main/SinglePlayer%20-%20Games/Kill_The_Bird_Game)         |
+|  126   |[Dots and Boxes Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/MultiPlayer%20-%20Games/Dots%20and%20Boxes%20Game)        |
+|  127  |[Virtual Piano](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Virtual%20Piano)         |
+|  128   |[Classic Pool Game](https://github.com/PatilHarshh/GameSphere/blob/main/SinglePlayer%20-%20Games/Classic-Pool-Game)          |
+|  129   |[Virtual Piano](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Virtual%20Piano)         |
+|  130   |[Virtual Piano](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Virtual%20Pickle_Rick_Maze_Game)         |
+| 131 |[Bad Depot](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Bad_Depot)        |
+|  132 | [Whisker's_Leap](https://github.com/VSatwika/GameSphere/tree/Whisker's_Leap)                             |
+| 133 | [Mastermind](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Mastermind)        |
+| 134 | [1024 moves game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/1024_moves_game)         |
+| 135 | [1024 moves game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/1024_moves_game)        |
+|136 |  [RGB Riddle](https://github.com/VSatwika/GameSphere/tree/RGB_Riddle/SinglePlayer%20-%20Games/RGB_Riddle)               |
+| 137 |[Atlas](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Atlas)        |
+| 138 | [Among Us game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Among_Us_Game)         |
+| 139 | [Dungeon Crawler](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Dungeon_Crawler)      |
+| 140 | [ArmorAlley](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/ArmorAlley)        |
+| 141 | [Falling Blocks](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Falling%20Blocks)
+| 142 |  [MixAndPaint](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/MixAndPaint)        |
 
 ________________________________________________________________________________________________________________________________________________________________
 # How to make a PR in a Project 🟢
