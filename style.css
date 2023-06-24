@@ -2,6 +2,85 @@
   --main-color:rgb(0 159 157 );
 }
 
+/* Search Bar CSS */
+.sc-popular {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+#searchForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  /* margin-bottom: 2rem;
+  margin-top: 5rem; */
+  margin : 4rem 2rem 2rem 2rem
+}
+
+#seachForm :hover{
+  background-color: red;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--main-color);
+  box-shadow: 0 10px 40px var(--main-color), 0 0 0 10px #ffffffeb;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.form-control:focus {
+  border-radius: 10px red;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.686);
+}
+
+.form-control::placeholder {
+  color: white
+}
+
+.form-control:hover,
+.form-control:focus {
+  border-radius:50px rgb(0, 255, 229) ;
+}
+
+.container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+@media (min-width: 768px) {
+  .game-card-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .game-card-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+opacity: 2;
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+ 
+}
+
+/* End of the Search Bar */
 .section{
     background-color: black;
 }
