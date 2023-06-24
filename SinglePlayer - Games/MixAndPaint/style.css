@@ -1,0 +1,181 @@
+body {
+	margin: 0;
+	padding: 0;
+	display: grid;
+	place-items: center;
+	height: 100vh;
+  width: 100vw;
+}
+.result{
+  color: white;
+  background-color: #000;
+}
+
+.container{
+    padding: 20px;
+}
+
+#box {
+	height: 40px;
+	width: 80%;
+	border: none;
+	outline: none;
+	outline: none;
+	border-radius: 50px;
+	text-align: center;
+}
+
+
+/* CSS property for slider */
+input[type="range"] {
+	height: 10px;
+	width: 80%;
+	border-radius: 50px;
+	outline: none;
+}
+
+/* CSS property for slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	height: 25px;
+	width: 25px;
+	background: black;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.main #red {
+	background: linear-gradient(90deg, #000, rgb(255, 0, 0));
+}
+.main #green {
+	background: linear-gradient(90deg, #000, rgb(0, 255, 0));
+}
+.main #blue {
+	background: linear-gradient(90deg, #000, rgb(0, 0, 255));
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  width: 100vw;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#radio-wrap {
+  border: solid 2px ;
+}
+.transition {
+  -webkit-animation: transition 0.5s ease-in-out;
+  animation: transition 0.5s ease-in-out;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.pics{
+  /* background-color: rgb(255, 255, 255); */
+  width: 33%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.image{
+  height: 100%;
+  text-align: center;
+}
+.alert {
+  width: 500px;
+  height: 100px;
+  line-height: 100px;
+  /* background-color: rgb(240, 240, 240); */
+  color: black;
+  font-family: verdana;
+  font-size: large;
+  text-align: center;
+}
+.hide {
+  display: none;
+}
+
+.button1, .button2{
+  margin-left: 0%;
+  background: inherit;
+  font-size: 7rem;
+  border: none;
+  padding: 2rem;
+}
+
+
+.wrap{
+  display: flex;
+  justify-content: space-between;
+}
+
+.bodyy{
+  width: 80vw;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.rules{
+  /* background-color: rgb(240, 240, 240); */
+  padding: 30px;
+  padding-top: 90px;
+  width: 300px;
+  font-size: medium;
+  font-family: verdana;
+}
+
+.rules li{
+  margin-bottom: 7px;
+}
+
+.color_background{
+  margin-inline: 10px;
+  justify-content: center;
+  /* height: 488px; */
+  width: 300px;
+	display: grid;
+	place-items: center;
+	color: black;
+	font-family: verdana;
+  padding: 30px;
+  width: 300px;
+  font-size: medium;
+  font-family: verdana;
+}
+
+.color_palette{
+  margin: 10px;
+  justify-content: center;
+  height: 350px;
+	display: grid;
+	place-items: center;
+	color: black;
+	font-family: verdana;
+}
+
+.check{
+  color: black;
+	font-family: verdana;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.bars,.bar{
+  display: flex;
+  flex-direction: column;  
+}
+
+#red,#green,#blue{
+  width: 200px ;
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+

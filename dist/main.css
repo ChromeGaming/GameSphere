@@ -1336,7 +1336,7 @@ ul {
 
 .nav-link:hover {
   --tw-text-opacity: 1;
-  color: rgb(185 25 142 / var(--tw-text-opacity));
+  color: var(--main-color);
 }
 
 @media (min-width: 992px) {

@@ -1,5 +1,16 @@
 <img style="width:100%" src="https://user-images.githubusercontent.com/98798977/236624352-6f5440bb-1b5a-41e3-a2d2-97b5ef2b7387.png">
 
+# Hello Contributers New Marking System 
+
+-> Bug or singlePlayer game - level1
+
+-> Online Multiplayer Game - level2
+
+-> Enhancement of website - level3
+
+ Note- Level 3 is only provide when someone enhance and change some big functionalities.
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## Table of Contents
 
 - [GSSOC'23 Welcome To All Contributers 🌻](#gssoc23-welcome-to-all-contributers-)
@@ -187,15 +198,29 @@ ________________________________________________________________________________
 |  124   |[Guess the Correct Logo](https://github.com/VSatwika/GameSphere/tree/Air-Balloon-game/SinglePlayer%20-%20Games/Air%20Balloon)         |
 |  125  |[Kill_The_Bird_Game](https://github.com/shruti-2412/GameSphere/tree/main/SinglePlayer%20-%20Games/Kill_The_Bird_Game)         |
 |  126   |[Dots and Boxes Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/MultiPlayer%20-%20Games/Dots%20and%20Boxes%20Game)        |
-|  127  |[Virtual Piano](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Virtual%20Piano)    
-|  128   |[Classic Pool Game](https://github.com/PatilHarshh/GameSphere/blob/main/SinglePlayer%20-%20Games/Classic-Pool-Game)    
-|  129   |[Virtual Piano](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Virtual%20Piano) 
-|  130   |[Virtual Piano](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Virtual%20Pickle_Rick_Maze_Game)    
-| 131 |[Bad Depot](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Bad_Depot)  
+|  127  |[Virtual Piano](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Virtual%20Piano)         |
+|  128   |[Classic Pool Game](https://github.com/PatilHarshh/GameSphere/blob/main/SinglePlayer%20-%20Games/Classic-Pool-Game)          |
+|  129   |[Virtual Piano](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Virtual%20Piano)         |
+|  130   |[Virtual Piano](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Virtual%20Pickle_Rick_Maze_Game)         |
+| 131 |[Bad Depot](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Bad_Depot)        |
 |  132 | [Whisker's_Leap](https://github.com/VSatwika/GameSphere/tree/Whisker's_Leap)                             |
 | 133 | [Mastermind](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Mastermind)        |
 | 134 | [1024 moves game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/1024_moves_game)
 | 135 | [AngryBoars](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/AngryBoars)
+| 134 | [1024 moves game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/1024_moves_game)         |
+| 135 | [1024 moves game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/1024_moves_game)        |
+|136 |  [RGB Riddle](https://github.com/VSatwika/GameSphere/tree/RGB_Riddle/SinglePlayer%20-%20Games/RGB_Riddle)               |
+| 137 |[Atlas](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Atlas)        |
+| 138 | [Among Us game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Among_Us_Game)         |
+| 139 | [Dungeon Crawler](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Dungeon_Crawler)      |
+| 140 | [ArmorAlley](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/ArmorAlley)        |
+| 141 | [Falling Blocks](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Falling%20Blocks)
+| 142 | [Stack 'Em Up](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Stack_Em_Up)
+| 143 |  [MixAndPaint](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/MixAndPaint)        |
+| 144 |  [Bubble_Blast_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Bubble_Blast_Game)        |
+| 145 | [Starship Panic](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/StarshipPanic) |
+| 146 | [Hunt Your Card](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Hunt_Your_Card)|
+| 147 | [Cable_Maze](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Cable_Maze)
 
 ________________________________________________________________________________________________________________________________________________________________
 # How to make a PR in a Project 🟢
