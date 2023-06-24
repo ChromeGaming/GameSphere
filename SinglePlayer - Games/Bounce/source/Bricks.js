@@ -2,7 +2,7 @@ import Ball         from "./Ball.js";
 import Brick        from "./Brick.js";
 
 // Utils
-import Utils        from "../../utils/Utils.js";
+import Utils        from "../Utils.js";
 
 
 

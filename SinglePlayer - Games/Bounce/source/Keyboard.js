@@ -2,7 +2,7 @@ import Display      from "./Display.js";
 import HighScores   from "./HighScores.js";
 
 // Utils
-import KeyCode      from "../../utils/KeyCode.js";
+import KeyCode      from "../KeyCode.js";
 
 
 

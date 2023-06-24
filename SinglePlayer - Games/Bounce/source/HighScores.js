@@ -1,5 +1,5 @@
-import Storage      from "../../utils/Storage.js";
-import Utils        from "../../utils/Utils.js";
+import Storage      from "../Storage.js";
+import Utils        from "../Utils.js";
 
 
 

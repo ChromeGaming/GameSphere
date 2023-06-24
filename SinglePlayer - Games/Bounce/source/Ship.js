@@ -1,7 +1,7 @@
 import Board        from "./Board.js";
 
 // Utils
-import Utils        from "../../utils/Utils.js";
+import Utils        from "../Utils.js";
 
 
 
