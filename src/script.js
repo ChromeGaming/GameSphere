@@ -13,6 +13,32 @@ $(document).ready(function(){
         }, 400);
     });
 
+     // Seach Bar
+    // Get the search input element
+    const searchInput = document.getElementById('search');
+
+    // Get all the game card elements
+    const gameCards = document.querySelectorAll('.game-card');
+
+    // Function to filter game cards based on search input
+    const filterGameCards = () => {
+        const searchTerm = searchInput.value.toLowerCase();
+
+        gameCards.forEach((card) => {
+            const title = card.querySelector('.game-card-title').innerText.toLowerCase();
+            const description = card.querySelector('.para-text').innerText.toLowerCase();
+
+            if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    };
+
+    // Add event listener for input changes
+    searchInput.addEventListener('input', filterGameCards);
+
     // game slider
     $('.game-slider').slick({
         className: "center",
