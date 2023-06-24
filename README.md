@@ -215,6 +215,8 @@ ________________________________________________________________________________
 | 141 | [Falling Blocks](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Falling%20Blocks)
 | 142 | [Stack 'Em Up](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Stack_Em_Up)         |
 | 143 |  [MixAndPaint](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/MixAndPaint)        |
+| 144 | [Starship Panic](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/StarshipPanic)
+| 145 | [Guess The Random Shape](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Guess_The_Random_Shape)        |
 | 144 |  [Bubble_Blast_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Bubble_Blast_Game)        |
 | 145 | [Starship Panic](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/StarshipPanic)             |
 | 146 | [Hunt Your Card](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Hunt_Your_Card)               |
@@ -223,6 +225,7 @@ ________________________________________________________________________________
 | 149 | [Starship Panic](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/StarshipPanic) |
 | 150 | [Hunt Your Card](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Hunt_Your_Card)|
 | 151 | [Cable_Maze](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Cable_Maze)
+| 152 |  [Bubble_Blast_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Bubble_Blast_Game)        |
 
 ________________________________________________________________________________________________________________________________________________________________
 # How to make a PR in a Project 🟢
