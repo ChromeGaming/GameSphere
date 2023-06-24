@@ -1,0 +1,517 @@
+/**
+ * Game Fonts
+ */
+@font-face {
+    font-family: "Gill Sans MT Ext Condensed Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Gill Sans MT Ext Condensed Bold"), url("../fonts/glsnecb.ttf") format("truetype");
+}
+
+
+
+/**
+ * Main Styles
+ */
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: transparent;
+    font-size: 15px;
+}
+html, body, input {
+    color: black;
+    font-family: "Gill Sans MT Ext Condensed Bold";
+    text-shadow: #333 0.1em 0.1em 0.1em;
+}
+
+a {
+    color: #333;
+    text-shadow: #666 0.05em 0.05em 0.05em;
+    text-decoration: none;
+    outline: none;
+    font-size: 3em
+}
+a:hover {
+    color: black;
+    text-shadow: #333 0.05em 0.05em 0.05em;
+}
+
+input {
+    color: #333;
+    text-shadow: #666 0.05em 0.05em 0.05em;
+}
+
+
+
+/**
+ * Modes Display
+ */
+.playing .board {
+    cursor: none;
+}
+.playing .messages {
+    display: none;
+}
+
+.playing .board .ship,
+.playing .board .ball,
+.playing .board .tail div,
+.playing .bricks {
+    display: block;
+}
+
+.mainScreen .main,
+.paused     .pause,
+.gameOver   .input,
+.highScores .high,
+.help       .controls {
+    display: block;
+}
+
+
+
+/**
+ * Game Design
+ */
+#container {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    width: 25em;
+    height: 36em;
+    margin-top: -18.2em;
+    margin-left: -12.7em;
+    border: 0.2em solid #121212;
+    box-shadow: inset 1em 0 #272727, inset -1em 0 #272727,
+                inset 0 1em #272727, inset 0 -1em #BEBEBE;
+    background-color: white;
+    z-index: 3;
+}
+
+
+
+/**
+ * Messages Panel
+ */
+.messages {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 100;
+}
+    .messages .bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: black;
+        opacity: 0.2;
+    }
+    .messages .text {
+        position: absolute;
+        top: 4em;
+        left: 0;
+        right: 0;
+        height: 8em;
+        background-color: black;
+        opacity: 0.8;
+    }
+
+    .messages .text h2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        font-size: 6em;
+        font-variant: small-caps;
+        font-weight: normal;
+        text-align: center;
+        color: white;
+    }
+    .messages .text p {
+        position: absolute;
+        top: 5.5em;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: white;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+    }
+
+
+
+/**
+ * Mains Screen / Pause
+ */
+.main {
+    display: none;
+}
+.main ul {
+    top: 14em;
+}
+.pause {
+    display: none;
+    top: 16em;
+}
+
+.main ul, .pause {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+    .main li:nth-last-child(2) { padding-top: 1.5em;  }
+    .main li:last-child        { padding-left: 4.5em; }
+
+
+
+/**
+ * Game Over
+ */
+.input {
+    display: none;
+    position: absolute;
+    top: 18em;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+    .input input {
+        width: 5em;
+        padding-left: 0.2em;
+        border: 0.08em solid #333;
+        background: none;
+        border-radius: 5px;
+        font-size: 3em;
+    }
+    .input input:focus { outline: none; }
+    .input input::-webkit-input-placeholder {
+        color: #666;
+        text-shadow: none;
+    }
+    .input input:-moz-placeholder {
+        color: #666;
+        text-shadow: none;
+    }
+
+.restart {
+    position: absolute;
+    top: 2.5em;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+
+
+/**
+ * High Scores
+ */
+.high { display: none; }
+.high .links {
+    position: absolute;
+    bottom: 0.5em;
+    left: 0;
+    right: 0;
+    height: 4em;
+    text-align: center;
+}
+    .high .links ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .high .links li {
+        display: inline-block;
+        padding-right: 0.6em;
+        padding-left: 0.6em;
+    }
+
+.scores {
+    position: absolute;
+    top: 6.25em;
+    left: 2em;
+    right: 2em;
+    bottom: 2.5em;
+    font-size: 2em;
+}
+.high .highScore {
+    float: left;
+    clear: both;
+    width: 100%;
+}
+    .hsName  { float: left; }
+    .hsScore { float: right; }
+
+.none {
+    position: absolute;
+    display: none;
+    top: 6em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    font-size: 3em
+}
+
+
+
+/**
+ * Help Controls
+ */
+.controls {
+    display: none;
+}
+.controls ol {
+    font-size: 2.2em;
+    margin: 5.4em 0.3em 0 0.8em;
+    text-shadow: none;
+    padding: 0;
+    list-style-position: inside;
+}
+.controls a {
+    position: absolute;
+    top: 10.5em;
+    left: 6.8em;
+}
+
+
+
+/**
+ * Audio Button
+ */
+.audio {
+    position: absolute;
+    bottom: 2.5em;
+    left: 8em;
+    cursor: pointer;
+}
+.audio .triangle {
+    position: absolute;
+    bottom: 0.2em;
+    left: 0.2em;
+    border: 1em solid transparent;
+    border-right-color: #333;
+}
+    .audio .triangle:after {
+        content: "";
+        position: absolute;
+        top: -0.8em;
+        left: -1.2em;
+        border: 1em solid transparent;
+        border-right-color: #666;
+        z-index: -1;
+    }
+    .audio:hover .triangle       { border-right-color: black; }
+    .audio:hover .triangle:after { border-right-color: #333; }
+
+.audio .box {
+    position: absolute;
+    bottom: 0.9em;
+    left: 1.1em;
+    height: 0.6em;
+    width: 0.5em;
+    background-color: #333;
+}
+    .audio .box:after {
+        content: "";
+        position: absolute;
+        top: 0.2em;
+        left: -0.2em;
+        height: 0.6em;
+        width: 0.5em;
+        background-color: #666;
+        z-index: -1;
+    }
+    .audio:hover .box       { background-color: black; }
+    .audio:hover .box:after { background-color: #333; }
+
+.waves {
+    position: absolute;
+    bottom: 0;
+    left: 2em;
+}
+    .waves div {
+        position: absolute;
+        left: 0;
+        background-color: #333;
+        border-radius: 0 20em 20em 0;
+    }
+    .waves div:nth-child(1) {
+        bottom: 0.3em;
+        width:  1.8em;
+        height: 1.8em;
+    }
+    .waves div:nth-child(2) {
+        bottom: 0.5em;
+        width:  1.4em;
+        height: 1.4em;
+    }
+    .waves div:nth-child(3) {
+        bottom: 0.7em;
+        width:  1em;
+        height: 1em;
+    }
+    .waves div:nth-child(4) {
+        bottom: 0.9em;
+        width:  0.6em;
+        height: 0.6em;
+    }
+
+    .audio:hover .waves div {
+        background-color: black;
+    }
+    .waves div:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0.1em;
+        top: 0;
+        background-color: #CCC;
+        border-radius: 0 20em 20em 0;
+    }
+
+
+
+/**
+ * Board Design
+ */
+@keyframes fade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.count {
+    position: absolute;
+    top: 0.16em;
+    left: 0.04em;
+    right: 0.04em;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 25em;
+    text-align: center;
+    line-height: normal;
+    text-shadow: none;
+}
+.bricks {
+    display: none;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    bottom: 1em;
+    right: 1em;
+}
+    .bricks.fade {
+        animation: fade 1s;
+    }
+    .bricks div {
+        position: absolute;
+        height: 2.5em;
+        width: 4.6em;
+        box-shadow: inset 0 0 0 1.5em #121212;
+        border: 0.4em solid transparent;
+        box-sizing: border-box;
+        transition: all .3s;
+    }
+
+.board {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    bottom: 1em;
+    right: 1em;
+}
+    .ship {
+        position: absolute;
+        display: none;
+        width: 5em;
+        height: 1.5em;
+        background-color: #121212;
+        border-radius: 0.5em;
+    }
+
+    .ball, .tail div {
+        position: absolute;
+        display: none;
+        border-radius: 10em;
+        width: 3em;
+        height: 3em;
+        box-shadow: inset 0 0 0 1.5em #121212;
+        box-sizing: border-box;
+    }
+
+    .tail div:nth-child(1) {
+        border: 0.1em solid transparent;
+        opacity: 0.95;
+    }
+    .tail div:nth-child(2) {
+        border: 0.2em solid transparent;
+        opacity: 0.90;
+    }
+    .tail div:nth-child(3) {
+        border: 0.3em solid transparent;
+        opacity: 0.85;
+    }
+    .tail div:nth-child(4) {
+        border: 0.4em solid transparent;
+        opacity: 0.80;
+    }
+    .tail div:nth-child(5) {
+        border: 0.5em solid transparent;
+        opacity: 0.75;
+    }
+    .tail div:nth-child(6) {
+        border: 0.6em solid transparent;
+        opacity: 0.70;
+    }
+    .tail div:nth-child(7) {
+        border: 0.7em solid transparent;
+        opacity: 0.65;
+    }
+    .tail div:nth-child(8) {
+        border: 0.8em solid transparent;
+        opacity: 0.6;
+    }
+    .tail div:nth-child(9) {
+        border: 0.9em solid transparent;
+        opacity: 0.55;
+    }
+    .tail div:nth-child(10) {
+        border: 1em solid transparent;
+        opacity: 0.5;
+    }
+    .tail div:nth-child(11) {
+        border: 1.1em solid transparent;
+        opacity: 0.45;
+    }
+    .tail div:nth-child(12) {
+        border: 1.2em solid transparent;
+        opacity: 0.4;
+    }
+    .tail div:nth-child(13) {
+        border: 1.3em solid transparent;
+        opacity: 0.3;
+    }
+    .tail div:nth-child(14) {
+        border: 1.4em solid transparent;
+        opacity: 0.2;
+    }
+    .tail div:nth-child(15) {
+        border: 1.5em solid transparent;
+        opacity: 0.1;
+    }
