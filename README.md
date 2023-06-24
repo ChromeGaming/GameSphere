@@ -219,6 +219,10 @@ ________________________________________________________________________________
 | 145 | [Starship Panic](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/StarshipPanic)             |
 | 146 | [Hunt Your Card](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Hunt_Your_Card)               |
 | 147 |[Crossy_Road_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/MultiPlayer%20-%20Games/Dots%20and%20Crossy_Road_Game)           
+| 148 |  [Bubble_Blast_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Bubble_Blast_Game)        |
+| 149 | [Starship Panic](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/StarshipPanic) |
+| 150 | [Hunt Your Card](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Hunt_Your_Card)|
+| 151 | [Cable_Maze](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Cable_Maze)
 
 ________________________________________________________________________________________________________________________________________________________________
 # How to make a PR in a Project 🟢
