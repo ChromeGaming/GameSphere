@@ -426,3 +426,10 @@ object-fit: cover;
 
  
 }
+
+
+.share-icon{
+  text-align: right;
+  color: #ffffff;
+}
+
