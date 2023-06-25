@@ -7,7 +7,7 @@ var HUD = function() {
 	
 	// charge bar
 	this.bar = im["a/bar.png"];
-	this.bBs = im["a/bar_base.png"];
+	this.bBs = im["https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/e8dbdf3b-71e3-4a15-9718-ea8536b6f5b6"];
 	this.bS = 0;
 
 	this.help = true;

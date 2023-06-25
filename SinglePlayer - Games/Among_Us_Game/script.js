@@ -60,11 +60,11 @@ window.addEventListener('keydown', function (dets) {
 
     if (distance <= killDistance) {
         overlay.style.display = 'none';
-        impostor.setAttribute('src', "./assets/images/Impostor_Killing.png");
+        impostor.setAttribute('src', "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/854faf8f-cefb-4637-8433-312023ba7833");
         killCrew();
     }
     else {
-        impostor.setAttribute('src', "./assets/images/Impostor_normalWalk.png");
+        impostor.setAttribute('src', "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/2e8ed553-e3dc-4a57-8025-93bcc844752b");
         overlay.style.display = 'initial';
     }
 
@@ -78,12 +78,12 @@ function killCrew() {
     killbtn.addEventListener('click', function () {
         impostor.style.left = `590px`;
         impostor.style.top = `440px`;
-        crewmate.setAttribute('src', "./assets/images/Crewmate_killed.png");
+        crewmate.setAttribute('src', "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/159e053f-bd28-44c1-9778-490115dd594f");
         crewmate.style.top = `500px`;
         posX = 590;
         posY = 440;
         setTimeout(function () {
-            impostor.setAttribute('src', "./assets/images/Impostor_normalWalk.png");
+            impostor.setAttribute('src', "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/2e8ed553-e3dc-4a57-8025-93bcc844752b");
         }, 100);
         killDistance = -1;
         anim.style.height = 60 + '%';

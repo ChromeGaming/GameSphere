@@ -21,7 +21,7 @@ game.score = 0;
 game.hits = 0;
 game.assets = {};
 game.image = new Image();
-game.image.src = "assets.png";
+game.image.src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/dfb04677-4162-406c-b568-6e6b3cb2fb80";
 
 
 game.image.onload = function () {

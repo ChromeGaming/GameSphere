@@ -53,7 +53,7 @@
 
     //Map image
     var tileSheet = new Image();
-    tileSheet.src = 'images/newtileset3.png';
+    tileSheet.src = 'https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/a1afef6a-866f-43c3-808f-34bf62c20806';
 
     //Bugs
     var bugs = [
@@ -105,7 +105,7 @@
 
     //Bugs Images
     var bugImage = new Image();
-    bugImage.src = "images/bug_sprite.png";
+    bugImage.src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/415b856f-5df7-442c-94cf-59b3fd266cf2";
 
     //Hero
     var hero = {
@@ -126,7 +126,7 @@
 
     //Hero Image
     var heroImage = new Image();
-    heroImage.src = "images/heroset.png";
+    heroImage.src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/9b57f861-7000-4f16-b318-e28c74550c7a";
 
     //Ship
     var ship = {
@@ -138,7 +138,7 @@
 
     //Ship Image
     var shipImage = new Image();
-    shipImage.src = "images/ship.png";
+    shipImage.src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/4784cf98-4466-487f-882a-33a342053949";
 
     //Returns the drawing context on the canvas
     var canvas = document.querySelector('canvas');

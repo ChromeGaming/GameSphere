@@ -66,7 +66,7 @@ canvas {
 
 .startScreen {
   position: absolute;
-  background-image: url("../images/startScreen.png");
+  background-image: url("https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/00bcb46f-22a6-4588-8e2b-9fe06e520f4d");
   height: 512px;
   width: 768px;
   margin: 0 auto;
@@ -78,7 +78,7 @@ canvas {
 
 .infoScreen {
   position: absolute;
-  background-image: url("../images/infoScreen.png");
+  background-image: url("https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/606cd624-6cc4-4daf-98b5-ffd601829258");
   height: 512px;
   width: 768px;
   margin: 0 auto;
@@ -90,7 +90,7 @@ canvas {
 
 .gameoverScreen {
   position: absolute;
-  background-image: url("../images/gameOver.png");
+  background-image: url("https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/73139b00-2558-43b3-8588-b360138d937a");
   height: 512px;
   width: 768px;
   margin: 0 auto;
@@ -102,7 +102,7 @@ canvas {
 
 .nextlevelScreen {
   position: absolute;
-  background-image: url("../images/nextLevel.png");
+  background-image: url("https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/e0209678-2ad8-4e49-bc6b-43cc0f6c8d0f");
   height: 512px;
   width: 768px;
   margin: 0 auto;
