@@ -1,13 +1,13 @@
 // all images used
-var sources = [	"a/font.png",
-				"a/bar_base.png",
-				"a/p2.png",
-				"a/leaf.png",
-				"a/plat.png",
-				"a/spr2.png",
-				"a/w.png",
-				"a/shade.png",
-				"a/ray.png"];
+var sources = [	"https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/9cabd6ec-5893-4ec3-aa21-4a7376995d93",
+				"https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/e8dbdf3b-71e3-4a15-9718-ea8536b6f5b6",
+				"https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/72022934-1cd8-41b1-b417-cf0287412f67",
+				"https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/b62cc758-6c7f-402a-870e-c82f795e729f",
+				"https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/b500e731-2fe1-41d8-a62f-df684ff24c74",
+				"https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/97440a9c-34b9-4e07-a9b9-1cc991d848c9",
+				"https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/5d12b590-9b9f-4452-9f1a-0493c6db485a",
+				"https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/b4bb1ccd-18b9-4b2e-99cd-649b1d0da9d2",
+				"https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/b3ad180b-3bdc-431f-8c1f-7562e59b3b5b"];
 
 // storage for all images
 var im = {};
@@ -116,7 +116,7 @@ function print(px, py, text, center, s) {
 	
 	var i = -1;
 	var len = text.length;
-	var image = im["a/font.png"];
+	var image = im["https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/9cabd6ec-5893-4ec3-aa21-4a7376995d93"];
 	
 	var size = s || 1;
 

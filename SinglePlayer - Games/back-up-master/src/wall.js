@@ -21,8 +21,8 @@ var Wall = function(shade) {
 	this.as = 1;
 	if (rnd() < 0.3) this.as = 0;
 
-	this.ft = im["a/w.png"];
-	this.sd = im["a/shade.png"];
+	this.ft = im["https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/5d12b590-9b9f-4452-9f1a-0493c6db485a"];
+	this.sd = im["https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/b4bb1ccd-18b9-4b2e-99cd-649b1d0da9d2"];
 }
 
 Wall.prototype = {
