@@ -56,13 +56,13 @@ window.onload = function() {
 
     //load images
     shipImg = new Image();
-    shipImg.src = "./ship.png";
+    shipImg.src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/97eb6a38-dece-4e10-a714-9a166681fa1d";
     shipImg.onload = function() {
         context.drawImage(shipImg, ship.x, ship.y, ship.width, ship.height);
     }
 
     alienImg = new Image();
-    alienImg.src = "./alien.png";
+    alienImg.src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/9e02270a-3373-464f-8e12-9a6e0b57d16e";
     createAliens();
 
     requestAnimationFrame(update);

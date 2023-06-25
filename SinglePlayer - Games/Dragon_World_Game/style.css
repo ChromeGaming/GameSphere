@@ -18,7 +18,7 @@ body{
 }
 /*Background image styling*/
 .container{
-    background-image: url(./images/cover.png);
+    background-image: url(https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/9ecbe8c6-e1f1-4854-b8e8-8c65c496e861);
     background-size:cover;
     width:100vw;
     height:100vh;
@@ -48,7 +48,7 @@ body{
 }
 /*Obstacle image styling and postioning*/
 .obstacle{
-    background-image: url(./images/obstacle.png);
+    background-image: url(https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/1fd0cb41-69b9-4bcb-8f68-e35c427005e0);
     background-size: cover;
     width:154px;
     height: 117px;
@@ -70,7 +70,7 @@ body{
 }
 /*Dragon's styling*/
 .dragon{
-    background-image: url(./images/dragon.png);
+    background-image: url(https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/ce1b5f73-9cb6-4018-b77c-2c713543ca53);
     background-size: cover;
     width: 194px;
     height: 101px;

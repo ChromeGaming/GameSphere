@@ -137,7 +137,7 @@ Screen - Game
    top: 0;
    width: 100%;
    height: 80%;
-   background-image: url('../assets/sky.png');
+   background-image: url('https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/12475467-601f-4598-b7b9-edbf90c35400');
    background-repeat: repeat-x;
    background-position: 0px 100%;
    background-color: #4ec0ca;
@@ -160,7 +160,7 @@ Screen - Game
    top: -16px;
    height: 16px;
    width: 100%;
-   background-image: url('../assets/ceiling.png');
+   background-image: url('https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/2ee17683-89c5-41ec-a29c-a63c0a7eb95e');
    background-repeat: repeat-x;
 
    -webkit-animation: animCeiling 481ms linear infinite;
@@ -173,7 +173,7 @@ Screen - Game
    bottom: 0;
    width: 100%;
    height: 20%;
-   background-image: url('../assets/land.png');
+   background-image: url('https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/4b84503c-714d-484c-b273-cba56b85c3c2');
    background-repeat: repeat-x;
    background-position: 0px 0px;
    background-color: #ded895;
@@ -204,7 +204,7 @@ Screen - Game
    left: 65px;
    width: 188px;
    height: 170px;
-   background-image: url('../assets/splash.png');
+   background-image: url('https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/86d203af-fecb-4677-88b3-0f07711f81b2');
    background-repeat: no-repeat;
 }
 
@@ -217,7 +217,7 @@ Screen - Game
    left: 43px;
    width: 236px;
    height: 280px;
-   background-image: url('../assets/scoreboard.png');
+   background-image: url('https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/9447b41d-7eee-4291-a1b0-ebc056aea84e');
    background-repeat: no-repeat;
 
    z-index: 1000;
@@ -296,7 +296,7 @@ Screen - Game
    position: absolute;
    width: 34px;
    height: 24px;
-   background-image: url('../assets/bird.png');
+   background-image: url('https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/693f6fda-695d-4fef-9298-ff5620abc338');
 
    -webkit-animation: animBird 300ms steps(4) infinite;
    animation: animBird 300ms steps(4) infinite;
@@ -319,7 +319,7 @@ Screen - Game
    position: absolute;
    top: 0;
    width: 52px;
-   background-image: url('../assets/pipe.png');
+   background-image: url('https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/2ac2a434-d054-43e2-8089-ac272f91c4b0');
    background-repeat: repeat-y;
    background-position: center;
 }
@@ -331,7 +331,7 @@ Screen - Game
    bottom: 0;
    width: 52px;
    height: 26px;
-   background-image: url('../assets/pipe-down.png');
+   background-image: url('https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/8bb69072-5cc4-4a3f-991c-b4203aa22ec3');
 }
 
 .pipe_lower
@@ -339,7 +339,7 @@ Screen - Game
    position: absolute;
    bottom: 0;
    width: 52px;
-   background-image: url('../assets/pipe.png');
+   background-image: url('https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/2ac2a434-d054-43e2-8089-ac272f91c4b0');
    background-repeat: repeat-y;
    background-position: center;
 }
@@ -351,7 +351,7 @@ Screen - Game
    top: 0;
    width: 52px;
    height: 26px;
-   background-image: url('../assets/pipe-up.png');
+   background-image: url('https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/d86d3314-35ea-4e11-be7e-94dfaa89c43c');
 }
 
 #footer

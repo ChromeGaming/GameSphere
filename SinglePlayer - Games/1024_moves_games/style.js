@@ -290,7 +290,7 @@ function initTexture() {
     crate = gl.createTexture();
     crate.image = new Image();
     crate.image.onload = function () { handleLoadedTexture(crate) }
-    crate.image.src = "crate.png";
+    crate.image.src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/0e68f6a1-c187-48af-8ce0-164b5c548792";
 }
 
 function degToRad(d) {

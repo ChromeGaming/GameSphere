@@ -34,7 +34,7 @@ function setMole() {
         currMoleTile.innerHTML = "";
     }
     let mole = document.createElement("img");
-    mole.src = "images/monty-mole.png";
+    mole.src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/bf948406-5fba-4a2e-9779-e1dd2342b846";
 
     let num = getRandomTile();
     if (currPlantTile && currPlantTile.id == num) {
@@ -52,7 +52,7 @@ function setPlant() {
         currPlantTile.innerHTML = "";
     }
     let plant = document.createElement("img");
-    plant.src = "images/piranha-plant.png";
+    plant.src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/34b85033-02a3-400d-8387-3cdfb7187327";
 
     let num = getRandomTile();
     if (currMoleTile && currMoleTile.id == num) {
