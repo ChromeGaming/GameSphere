@@ -234,6 +234,8 @@ ________________________________________________________________________________
 | 152 |  [Bubble_Blast_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Bubble_Blast_Game)        |
 | 153 | [Bounce](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Bounce) |
 | 154 | [Lonely_Phantom](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Lonely_Phantom) |
+| 155 | [Frogger](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Frogger) |
+
 
 
 

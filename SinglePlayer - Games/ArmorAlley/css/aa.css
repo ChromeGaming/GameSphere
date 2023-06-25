@@ -187,7 +187,7 @@ body.game-started {
 
 #aa {
   cursor: crosshair;
-  cursor: url(../image/cursor-cross.png), crosshair;
+  cursor: url(https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/38f60723-c652-4f9e-8b43-0af658f2dc47), crosshair;
   height: 100%;
   left: 0;
   overflow: hidden;
@@ -208,7 +208,7 @@ body.game-started {
 
 #world-overlay {
   background: rgba(27, 107, 27, 0.45);
-  background-image: url(../image/checkerboard-black-mask-50percent.png);
+  background-image: url(https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/e357d108-3372-4331-95f9-fcb3c7b373e3);
   background-size: 64px;
   height: 100%;
   image-rendering: optimizeSpeed;
@@ -836,7 +836,7 @@ body.is_safari:not(.is-mobile) #queue {
 
 #radar-container {
   background: #0e360e;
-  background-image: url(../image/checkerboard-black-mask-50percent.png);
+  background-image: url(https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/e357d108-3372-4331-95f9-fcb3c7b373e3);
   background-size: 64px;
   image-rendering: optimizeQuality;
   image-rendering: -webkit-optimize-contrast;
@@ -888,7 +888,7 @@ body.is_safari:not(.is-mobile) #queue {
 
 #radar-jammed-overlay .noise,
 body.bnb .tv-noise-overlay {
-  background: transparent url(../image/noise-tv.png) 0 0;
+  background: transparent url(https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/cc78fde9-a4da-4bfc-b03f-9d65507fbef8) 0 0;
   background-size: 250px 250px;
   bottom: 0;
   image-rendering: optimizeSpeed;
@@ -935,7 +935,7 @@ body.is-mobile #radar-jammed-overlay .noise {
   animation: noise 0.5s steps(8) infinite both;
   /* tint everything somewhat green. */
   background-color: #060;
-  background-image: url(../image/noise-tv.png);
+  background-image: url(https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/cc78fde9-a4da-4bfc-b03f-9d65507fbef8);
   background-size: 200px 200px;
 }
 
@@ -1110,7 +1110,7 @@ body.is-mobile #top-bar #game-fps {
 }
 
 #fuel-bar {
-  background-image: url(../image/fuel-bar-background.png);
+  background-image: url(https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/2f54f461-a124-45f1-819a-1cdd6b07c346);
   background-size: 2px 2px;
   image-rendering: optimizeQuality;
   image-rendering: -webkit-optimize-contrast;

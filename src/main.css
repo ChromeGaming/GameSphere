@@ -52,7 +52,7 @@ ul{
 
 /* header */
 .header{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), linear-gradient(248.75deg, rgba(0, 159, 157, 0.41) 0%, rgba(15, 10, 60, 0.41) 38.46%), url("../assets/images/banner_image.png") center/cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), linear-gradient(248.75deg, rgba(0, 159, 157, 0.41) 0%, rgba(15, 10, 60, 0.41) 38.46%), url("https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/b4336ce1-13c6-45e3-bd27-d21d92522650") center/cover no-repeat;
     @apply min-h-screen flex items-center justify-start;
 }
 
@@ -268,7 +268,7 @@ ul{
 
 /* category section */
 .sc-category{
-    background: linear-gradient(180deg, rgba(12, 10, 36, 0.73) 0%, rgba(0, 0, 0, 0.73) 72.92%), url("../assets/images/category_image.png") center/cover no-repeat;
+    background: linear-gradient(180deg, rgba(12, 10, 36, 0.73) 0%, rgba(0, 0, 0, 0.73) 72.92%), url("https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/62156f3d-db77-4783-b70e-337c8ab0bdb3") center/cover no-repeat;
 }
 
 .sc-category .sc-title span{
