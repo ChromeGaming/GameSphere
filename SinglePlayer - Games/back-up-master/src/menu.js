@@ -97,7 +97,7 @@ Menu.prototype = {
 				
 				if (map[i][j] == 1 || map[i][j] == 3) {
 					
-					var p = new Platform("a/plat.png");
+					var p = new Platform("https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/b500e731-2fe1-41d8-a62f-df684ff24c74");
 					this.lev.push(p);
 					
 					p.a = a;	

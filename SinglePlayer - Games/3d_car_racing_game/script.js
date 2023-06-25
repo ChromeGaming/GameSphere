@@ -7,32 +7,32 @@ const ASSETS = {
   
     IMAGE: {
       TREE: {
-        src: "images/tree.png",
+        src: "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/5ed15717-6a16-486b-81e0-ff26767fd982",
         width: 132,
         height: 192,
       },
   
       HERO: {
-        src: "images/hero.png",
+        src: "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/2b274b7b-eaf4-4d82-a58d-5a9a0ccb23f6",
         width: 110,
         height: 56,
       },
   
       CAR: {
-        src: "images/car04.png",
+        src: "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/bf94dec9-89da-4019-b30e-259d3c481690",
         width: 50,
         height: 36,
       },
   
       FINISH: {
-        src: "images/finish.png",
+        src: "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/eb64ce90-a696-4435-8295-aa1585ae2956",
         width: 339,
         height: 180,
         offset: -0.5,
       },
   
       SKY: {
-        src: "images/cloud.jpg",
+        src: "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/337ee3a9-2206-4208-9d94-8911c395fd2b",
       },
     },
   

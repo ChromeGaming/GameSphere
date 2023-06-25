@@ -3,7 +3,7 @@ var Beam = function(x, y, w, r) {
 	this.x = x;
     this.y = y;
 	
-    this.img = im["a/ray.png"];
+    this.img = im["https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/7ea18bd4-e80c-45ba-9d11-bc8692bd5db5"];
 
     // scale
     this.sx = w / this.img.width;

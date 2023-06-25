@@ -127,9 +127,9 @@ function crushThree() {
             let candy2 = board[r][c+1];
             let candy3 = board[r][c+2];
             if (candy1.src == candy2.src && candy2.src == candy3.src && !candy1.src.includes("blank")) {
-                candy1.src = "././assets/blank.png";
-                candy2.src = "././assets/blank.png";
-                candy3.src = "././assets/blank.png";
+                candy1.src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/f48d205a-e705-4ee0-b576-7fdf37bd7c23";
+                candy2.src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/f48d205a-e705-4ee0-b576-7fdf37bd7c23";
+                candy3.src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/f48d205a-e705-4ee0-b576-7fdf37bd7c23";
                 score += 30;
             }
         }
@@ -142,9 +142,9 @@ function crushThree() {
             let candy2 = board[r+1][c];
             let candy3 = board[r+2][c];
             if (candy1.src == candy2.src && candy2.src == candy3.src && !candy1.src.includes("blank")) {
-                candy1.src = "././assets/blank.png";
-                candy2.src = "././assets/blank.png";
-                candy3.src = "././assets/blank.png";
+                candy1.src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/f48d205a-e705-4ee0-b576-7fdf37bd7c23";
+                candy2.src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/f48d205a-e705-4ee0-b576-7fdf37bd7c23";
+                candy3.src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/f48d205a-e705-4ee0-b576-7fdf37bd7c23";
                 score += 30;
             }
         }
@@ -191,7 +191,7 @@ function slideCandy() {
         }
 
         for (let r = ind; r >= 0; r--) {
-            board[r][c].src = "././assets/blank.png";
+            board[r][c].src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/f48d205a-e705-4ee0-b576-7fdf37bd7c23";
         }
     }
 }

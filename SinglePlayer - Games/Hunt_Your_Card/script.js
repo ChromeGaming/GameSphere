@@ -1,13 +1,13 @@
 
 const cardObjectDefinitions = [
-    {id:1, imagePath:'/images/card-KingHearts.png'},
-    {id:2, imagePath:'/images/card-JackClubs.png'},
-    {id:3, imagePath:'/images/card-QueenDiamonds.png'},
-    {id:4, imagePath:'/images/card-AceSpades.png'}
+    {id:1, imagePath:'https://github.com/avi-tech-test/git-branching-prac/assets/129321548/49ddbbdd-bf66-4335-b5b7-45715ed26581'},
+    {id:2, imagePath:'https://github.com/avi-tech-test/git-branching-prac/assets/129321548/edfa80d3-b733-4cf4-a073-91aa72cc5c0e'},
+    {id:3, imagePath:'https://github.com/avi-tech-test/git-branching-prac/assets/129321548/b182e619-72e6-4fa7-879a-d3bcaab1ecce'},
+    {id:4, imagePath:'https://github.com/avi-tech-test/git-branching-prac/assets/129321548/e22cf86d-0334-4357-bb9d-07c36eb2aed4'}
 ]
 const aceId = 4
 
-const cardBackImgPath = '/images/card-back-blue.png'
+const cardBackImgPath = 'https://github.com/avi-tech-test/git-branching-prac/assets/129321548/8d4d0673-876d-42eb-abb5-cc8928dcb387'
 
 let cards = []
 

@@ -48,17 +48,17 @@ window.onload = function() {
 
     //load images
     doodlerRightImg = new Image();
-    doodlerRightImg.src = "./doodler-right.png";
+    doodlerRightImg.src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/285a3bc5-b7d7-4434-b7cd-6bf3a66f4cee";
     doodler.img = doodlerRightImg;
     doodlerRightImg.onload = function() {
         context.drawImage(doodler.img, doodler.x, doodler.y, doodler.width, doodler.height);
     }
 
     doodlerLeftImg = new Image();
-    doodlerLeftImg.src = "./doodler-left.png";
+    doodlerLeftImg.src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/165b34dc-ae2a-4279-889b-3bfecd00a681";
 
     platformImg = new Image();
-    platformImg.src = "./platform.png";
+    platformImg.src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/634da07f-7765-4af4-9165-3b807215844b";
 
     velocityY = initialVelocityY;
     placePlatforms();
