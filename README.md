@@ -236,6 +236,7 @@ ________________________________________________________________________________
 | 154 | [Lights Out](https://github.com//GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Lights_Out)|
 | 155 | [Lonely_Phantom](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Lonely_Phantom) |
 | 156 | [Frogger](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Frogger) |
+| 157 | [Slide and Solve](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Slide_and_Solve) |
 
 
 
