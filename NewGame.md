@@ -27,6 +27,16 @@ Check for ideas you can contribute to in the issues.
                         </div>
                     </div>
                     <div class = "game-card-bottom">
+                    <div class="share-icon text-2xl" onclick="copyLink(this)">
+                            <i class="fas fa-share-alt"></i>
+                            <input type="hidden"
+                                value="https://gamesphere-multiplayer.github.io/GameSphere/SinglePlayer%20-%20Games/link_to_the_html_file_for_your_game" /> 
+                                <!--If there are spaces in your naming of folder, put %20 in between, ex:
+                                link%20to%20the%html%file%20for%your&game-->
+                                
+                                <!--The share link will be active only when it is deployed over website-->
+                        </div>
+                        
                         <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
                             <div class = "py-1">
                                 <h4 class = "text-white uppercase game-card-title">Name_of_your_Game</h4>

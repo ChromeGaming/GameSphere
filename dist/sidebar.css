@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;600;700&display=swap');
+
+body {
+	
+	/* background:url("https://img.freepik.com/premium-photo/cyberpunk-gaming-controller-gamepad-joystick-illustration_691560-5812.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed; */
+    
+    background-color: rgb(7 5 27 );;
+   
+}
+
+.card-container a{
+
+    text-decoration: none;
+}
+
+.card-container input {
+
+    display: none;
+}
+
+.card-container {
+	/* width:50%; */
+
+
+  height: 900px;
+    display: flex;
+    transform-style: preserve-3d;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+	/* z-index: -1; */
+	/* background-color: pink; */
+	
+}
+.card-container image{
+	z-index: -1;
+}
+.cards {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+    position: relative;
+    height: 500px;
+    width: 430px;
+    margin-bottom: 20px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+	background-size: cover;
+}
+
+.cards label {
+
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.55s ease;
+}
+
+.cards .card{
+
+    position: relative;
+    height: 100%;
+    background-color: rgb(16 14 43 );;
+
+    border-radius: 10px;
+    padding: 30px 35px;
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+	/* border: 2px solid white; */
+}
+
+.card .image{
+
+    display: flex;
+    justify-content: space-between;
+	margin-left: 40px;
+}
+
+.card .image img{
+
+    border-radius: 5px;
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 50%);
+    margin-top: 23px;
+    width: 86%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card .image .dots{
+
+    text-align: center;
+}
+
+.dots div{
+
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.dots div:nth-child(1){
+
+    background-color: var(--current-color1);
+}
+
+.dots div:nth-child(2){
+
+    background-color: #5B85F9;
+}
+
+.dots div:nth-child(3){
+
+    background-color: #000;
+}
+
+.card .infos{
+
+    display: block;
+    text-align: end;
+    padding-top: 60px;
+}
+.infos{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.infos span{
+
+    display: block;
+}
+
+.infos .name{
+
+    font-size: 30px;
+    color: var(--current-color1);
+    /* letter-spacing: 8px; */
+    margin-bottom: 20px;
+    /* padding-left: 25%; */
+    transition: all .6s ease;
+	text-align: center;
+	font-weight: bold;
+}
+
+.infos .lorem{
+text-align: center;
+    font-size: 15.5px;
+    color: #ECEAED;
+    letter-spacing: 3px;
+}
+
+.card .btn-contact{
+
+    width: 100%;
+    height: 60px;
+    margin: 35px auto;
+    border-radius: 5px;
+    background-color: var(--current-color1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 10px;
+    font-weight: 700;
+    transition: all .7s ease;
+}
+
+.card .socials{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.socials i{
+
+    font-size: 25px;
+    transition: all .7s ease;
+    color: var(--current-color2);
+}
+
+
+
+#s1:checked~.cards #slide4,
+#s2:checked~.cards #slide5,
+#s3:checked~.cards #slide1,
+#s4:checked~.cards #slide2,
+#s5:checked~.cards #slide3 {
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(-70%, 0, -220px);
+    --current-color1: #ECEAED;
+    --current-color2: #404457;
+}
+
+#s1:checked~.cards #slide5,
+#s2:checked~.cards #slide1,
+#s3:checked~.cards #slide2,
+#s4:checked~.cards #slide3,
+#s5:checked~.cards #slide4 {
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(-35%, 0, -120px);
+    --current-color1: #ECEAED;
+    --current-color2: #404457;
+}
+
+#s1:checked~.cards #slide1,
+#s2:checked~.cards #slide2,
+#s3:checked~.cards #slide3,
+#s4:checked~.cards #slide4,
+#s5:checked~.cards #slide5 {
+    box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 50%);
+    transform: translate3d(0, 0, 0);
+    --current-color1: var(--main-color);
+    --current-color2: #ECEAED;
+}
+
+#s1:checked~.cards #slide2,
+#s2:checked~.cards #slide3,
+#s3:checked~.cards #slide4,
+#s4:checked~.cards #slide5,
+#s5:checked~.cards #slide1 {
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(35%, 0, -120px);
+    --current-color1: #ECEAED;
+    --current-color2: #404457;
+}
+
+#s1:checked~.cards #slide3,
+#s2:checked~.cards #slide4,
+#s3:checked~.cards #slide5,
+#s4:checked~.cards #slide1,
+#s5:checked~.cards #slide2 {
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(70%, 0, -220px);
+    --current-color1: #ECEAED;
+    --current-color2: #404457;
+}
+
+@media (max-width:900px){
+	.card-container{
+		display: none;
+	}
+}

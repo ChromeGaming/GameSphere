@@ -1,0 +1,241 @@
+/* CSS Stylesheed for Starship Troppers Game */
+
+body
+{
+  color: #3c3c3c;
+  font-family: 'Courier New', 'Arial', sans-serif;
+  line-height: 25px;
+  background-image: url("../images/background.jpg");
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.one {
+  grid-column: 1 / 5;
+}
+.two { 
+  grid-column: 5 / 13;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+#mainContainer {
+  /* width: 1080px; */
+  text-align: center;
+  padding-top: 8rem;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    width: auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: ' ';
+}
+
+.clearfix:after {
+  clear: both; }
+
+canvas {
+  /* border-color: #2c2c2c;
+  border-style: solid;
+  border-width: 1px; */
+  z-index: -1;
+  display: block;
+}
+
+.infoGame {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+}
+
+/* Start Screen */
+
+.startScreen {
+  position: absolute;
+  background-image: url("https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/00bcb46f-22a6-4588-8e2b-9fe06e520f4d");
+  height: 512px;
+  width: 768px;
+  margin: 0 auto;
+  display: block;
+  z-index: 1;
+  left: 0%;
+  top: 0.2%;
+}
+
+.infoScreen {
+  position: absolute;
+  background-image: url("https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/606cd624-6cc4-4daf-98b5-ffd601829258");
+  height: 512px;
+  width: 768px;
+  margin: 0 auto;
+  display: none;
+  z-index: 1;
+  left: 0%;
+  top: 0.2%;
+}
+
+.gameoverScreen {
+  position: absolute;
+  background-image: url("https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/73139b00-2558-43b3-8588-b360138d937a");
+  height: 512px;
+  width: 768px;
+  margin: 0 auto;
+  display: none;
+  z-index: 1;
+  left: 0%;
+  top: 0.2%;
+}
+
+.nextlevelScreen {
+  position: absolute;
+  background-image: url("https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/e0209678-2ad8-4e49-bc6b-43cc0f6c8d0f");
+  height: 512px;
+  width: 768px;
+  margin: 0 auto;
+  display: none;
+  z-index: 1;
+  left: 0%;
+  top: 0.2%;
+}
+
+.startScreen button {
+  top: 320px;
+}
+
+.backButton {
+  top: 400px;
+}
+
+.restart, 
+.nextLevel {
+  top: 360px;
+}
+
+.startScreen button,
+.infoScreen button,
+.gameoverScreen button,
+.nextlevelScreen button {
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 22px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  border: 0;
+  margin: 30px 10px 10px 0px;
+  font-family: 'Courier New', sans-serif;
+  font-weight: 700;
+  color: #FFF;
+  display: block;
+  margin: 0 auto;
+}
+
+.howTo {
+  margin-top: 20px !important;
+}
+
+.startScreen button,
+.infoScreen button {
+  background-color: #4A5D95;
+  box-shadow: 0px 5px 0px 0px #2e3d69;
+  text-shadow: 0px -2px #2e3d69;
+}
+
+.startScreen button:hover,
+.infoScreen button:hover {
+  background-color: #3c5290;
+}
+
+.gameoverScreen button {
+  background-color: #e74c3c;
+  box-shadow: 0px 5px 0px 0px #CE3323;
+  text-shadow: 0px 5px 0px 0px #CE3323;
+}
+
+.gameoverScreen button:hover {
+  background-color: #B32C1E;
+}
+
+.nextlevelScreen button {
+  background-color: #2ecc71;
+  box-shadow: 0px 5px 0px 0px #15B358;
+  text-shadow: 0px 5px 0px 0px #15B358;
+}
+
+.nextlevelScreen button:hover {
+  background-color: #01933F;
+}
+
+
+button:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+
+
+.infoGame {
+  color: #fff;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+  padding: 2rem 0;
+  width: 60%;
+  margin: 2rem auto;
+}
+
+#scoreboard {
+  padding-top: 4rem;
+  padding-left: 4rem;
+  display: inline-block;
+  vertical-align: middle; 
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 2rem;
+ }
+
+ #scoreboard #logo {
+   width: 60%;
+  }
+
+  .health {
+    padding-top: 1rem;
+  }
+
+  .infoGame h3 {
+    color: #ffde00;
+  }
+
+.music h3 {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+
+#sound {
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  font-size: 2rem;
+}
+
+#sound.on  { background-position:   0   0; }
+#sound.off { background-position: -24px 0; }

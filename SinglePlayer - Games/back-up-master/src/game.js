@@ -63,9 +63,9 @@ Game.prototype = {
 		this.hud.setScore(this.score);
 
 		// leaves
-		this.lf.init(im["a/leaf.png"], 15, 100, 0, -2, 2, 2, 0, 0.2, 50, 0, 0.98);
+		this.lf.init(im["https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/b62cc758-6c7f-402a-870e-c82f795e729f"], 15, 100, 0, -2, 2, 2, 0, 0.2, 50, 0, 0.98);
 
-		this.lf2.init(im["a/leaf.png"], 20, 500, 0, 0, 2, 2, 0, 0.1, 720, 0, 0.995);
+		this.lf2.init(im["https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/b62cc758-6c7f-402a-870e-c82f795e729f"], 20, 500, 0, 0, 2, 2, 0, 0.1, 720, 0, 0.995);
 		this.lf2.x = 240;
 		this.lf2.setSpawnInt(50);
 		this.lf2.start();
@@ -99,7 +99,7 @@ Game.prototype = {
 	
 				if (map[i][j] == 1) {
 					
-					var p = new Platform("a/plat.png");
+					var p = new Platform("https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/b500e731-2fe1-41d8-a62f-df684ff24c74");
 					this.lev.push(p);
 					this.plats.push(p);
 					

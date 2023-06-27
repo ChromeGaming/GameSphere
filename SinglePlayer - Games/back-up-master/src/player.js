@@ -13,7 +13,7 @@ var Player = function(px, py) {
 	// scale
 	this.sx = this.sy = 1;
 	
-	this.img = im["a/p2.png"];
+	this.img = im["https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/72022934-1cd8-41b1-b417-cf0287412f67"];
 	
 	this.isAlive = true;
 	this.v = true;

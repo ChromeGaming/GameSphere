@@ -790,7 +790,7 @@ video {
 }
 
 .bg-join-image {
-  background-image: url("../assets/images/join_image.png");
+  background-image: url("https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/375fad6d-1b72-4f3d-86ab-fb55fa3497e7");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -1336,7 +1336,7 @@ ul {
 
 .nav-link:hover {
   --tw-text-opacity: 1;
-  color: rgb(185 25 142 / var(--tw-text-opacity));
+  color: var(--main-color);
 }
 
 @media (min-width: 992px) {
@@ -1781,7 +1781,7 @@ color: var(--main-color);
 /* category section */
 
 .sc-category {
-  background: linear-gradient(180deg, rgba(12, 10, 36, 0.73) 0%, rgba(0, 0, 0, 0.73) 72.92%), url("../assets/images/category_image.png") center/cover no-repeat;
+  background: linear-gradient(180deg, rgba(12, 10, 36, 0.73) 0%, rgba(0, 0, 0, 0.73) 72.92%), url("https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/4cc72d3d-7e03-4b3d-9e63-70400af51e12") center/cover no-repeat;
 }
 
 .sc-category .sc-title span {
