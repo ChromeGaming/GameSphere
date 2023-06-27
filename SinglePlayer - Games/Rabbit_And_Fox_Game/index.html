@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Rabbit and Fox Game</title>
+	<!-- 
+  Download the game with sounds :
+  http://www.webchinupload.com/f/2019-01/72eb6b2550094b955db4a38b9784118d.zip
+  ____________________________
+		Developed by Kalivarapubindusree
+		
+	-->
+</head>
+<body>
+	<div id="points_loses">
+		<div id="points">Points:<span>0</span></div>
+		<div id="loses">Loses:<span>0/3</span></div>
+	</div>
+
+	<div id="startGameContainer">
+		<div>
+			<h1 onclick="startGame();document.getElementById('startGameContainer').style.display = 'none';">Start</h1>
+		</div>
+	</div>
+
+	<div id="gameOverContainer" style="display: none;">
+		<div>
+			<h2>Game over!</h2>
+			<p id="pointer"></p>
+			<a href="index.html">Play Again</a>
+		</div>
+	</div>
+	
+	<audio id="rabbit" controls style="display: none;">
+	  <source src="rabbit.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio id="fox" controls style="display: none;">
+	  <source src="fox.mp3" type="audio/mpeg">
+	</audio>
+
+	<div id="theGame">
+		
+	</div>
+    
