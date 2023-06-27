@@ -12,7 +12,7 @@ var Platform = function(img) {
 
 	this.img = im[img];
 	
-	this.spr = im["a/spr2.png"];
+	this.spr = im["https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/97440a9c-34b9-4e07-a9b9-1cc991d848c9"];
     
     this.v = true;
 

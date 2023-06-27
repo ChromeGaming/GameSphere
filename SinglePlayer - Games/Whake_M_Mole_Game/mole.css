@@ -14,7 +14,7 @@ body {
     display: flex;
     flex-wrap: wrap;
 
-    background: url("images/soil.png");
+    background: url("https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/064e409c-5298-4344-9f2a-53109303b42e");
     background-size: cover;
     border: 3px solid white;
     border-radius: 25px;
@@ -24,7 +24,7 @@ body {
     /* board = 540 x 540, divide into 3x3 tiles --> 180 x 180 per div */
     width: 180px; 
     height: 180px;
-    background-image: url("images/pipe.png");
+    background-image: url("https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/773ebd2c-556f-410a-903e-a6fa3664d309");
     background-size: cover;
 }
 
