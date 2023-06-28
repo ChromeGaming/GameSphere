@@ -1,0 +1,92 @@
+*{
+    margin: 0;padding: 0;
+}
+.main {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+}
+
+.simon {
+    position: relative;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.buttonContainer {
+    display: inline-grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto;
+    transform: rotate(45deg);
+}
+
+.square {
+    border-radius: 5px;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.square:active,
+.active {
+    filter: brightness(125%);
+}
+
+.red {
+    background-color: #EE6352;
+}
+
+.blue {
+    background-color: #08B2E3;
+}
+
+.green {
+    background-color: #57A773;
+}
+
+.yellow {
+    background-color: #FFDF64;
+}
+
+#startButton {
+    width: 100px;
+    border: none;
+    font-family: 'Merriweather', serif;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #587792;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#startButton:disabled {
+    background-color: #eee;
+}
+
+.title {
+    width: min-content;
+}
+
+.winner {
+    animation: spin 1s ease-in-out;
+}
+
+@keyframes spin { 
+    100% { transform:rotate(180deg) } }
+
+
+ header{
+    width: 100%;
+    height:60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 26px;
+}   
