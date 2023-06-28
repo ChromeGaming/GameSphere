@@ -1,9 +1,6 @@
 :root{
   --main-color:rgb(0 159 157 );
 }
-body{
-  background: rgb(7, 5, 27);
-}
 
 /* Search Bar CSS */
 .search {
@@ -15,7 +12,7 @@ body{
   left: 0;
   width: 40px;
   height: 40px;
-  /* background: crimson; */
+  background: crimson;
   border-radius: 10%;
   transition: all 1s;
   z-index: 3;
@@ -56,7 +53,6 @@ body{
 
 #searchForm {
   position: absolute;
-  width: 5vw;
   top: 8rem;
   left: 2rem;
   display: flex;
@@ -77,10 +73,10 @@ body{
   right: 0;
   bottom: 0;
   left: 0;
-  width: 300px;
+  width: 50px;
   height: 50px;
   outline: none;
-  /* border: none; */
+  border: none;
   /* // border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
   background: crimson;
   color: white;
@@ -90,9 +86,9 @@ body{
   box-shadow: 0 0 25px 0 crimson,
               0 20px 25px 0 rgba(0, 0, 0, 0.2);
   /* // box-shadow: inset 0 0 25px 0 rgba(0, 0, 0, 0.5); */
-  /* transition: all 1s; */
-  opacity: 1;
-  z-index: 999;
+  transition: all 1s;
+  opacity: 0;
+  z-index: 5;
   font-weight: bolder;
   letter-spacing: 0.1em;
   &:hover {
