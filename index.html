@@ -1,1018 +1,1139 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>GameSphere.</title>
-        <!-- Primary Meta Tags -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="title" content="GameSphere" />
-        <meta name="description" content="The main objective is to develop a website that allows friends to come together and engage in online gaming, including multiplayer games, without the need for any software or tools to be installed on their computers or mobile devices.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="language" content="en">
-        <meta name="keywords" content="Online gaming, Multiplayer games, Friends gathering, Browser games, Virtual game room, Memory Card Game, Ping Pong, Rock Paper Scissor, Bingo Game, Tower game, Cross-platform gaming">
-    
-        <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://gamesphere-multiplayer.github.io/GameSphere/" />
-        <meta property="og:title" content="GameSphere" />
-        <meta
-        property="og:description"
-        content="The main objective is to develop a website that allows friends to come together and engage in online gaming, including multiplayer games, without the need for any software or tools to be installed on their computers or mobile devices."
-        />
-        <meta property="og:image" content="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/17f6f52d-8c37-4a0e-a855-37b6a7b06804" />
-    
-        <!-- Twitter -->
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://gamesphere-multiplayer.github.io/GameSphere/" />
-        <meta property="twitter:title" content="GameSphere" />
-        <meta
-        property="twitter:description"
-        content="The main objective is to develop a website that allows friends to come together and engage in online gaming, including multiplayer games, without the need for any software or tools to be installed on their computers or mobile devices."
-        />
-        <meta property="twitter:image" content="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/17f6f52d-8c37-4a0e-a855-37b6a7b06804" />
 
-        <!-- favicon --> 
-        <link rel="icon" style="border-radius: 100%;" href="assets/Logo.png">
-        <!-- font awesome cdn -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- slick slider css -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- custom css (tailwind) -->
-        <link rel="stylesheet" href="dist/main.css">
-        
-        <!-- icon css -->
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="dist/color-theme.css">
-        <script src="https://kit.fontawesome.com/284ffbb2b1.js" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <link rel="stylesheet" href="counter.css">
-        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    </head>
-    <body>
-        
-        <header  class = "header">
-            <!--===== Navigation bar start =====-->
-            <nav style="background-color: black;" class = "navbar flex items-center shadow-nav">
-                <div class = "container w-full">
-                    <div class = "navbar-content">
-                        <div class = "brand-and-toggler flex items-center justify-between">
-                            <!--==== logo name start ====-->
-                            <a target="_blank" href = "#" class = "navbar-brand">Game<span class = "text-green-normal ">Sphere</span></a>
-                            <!--==== logo name end ====-->
-                            <button type = "button" class = "lg:hidden text-white text-2xl" id = "navbar-show-btn">
-                                <i class = "fas fa-bars"></i>
-                            </button>
-                        </div>
-                        
-                        <div  class = "navbar-collapse fixed right-0 top-0 w-full sm:w-[280px] h-full bg-white shadow-nav-collapse pt-[60px] px-5 pb-4 text-center transition ease-in-out duration-300 transform lg:relative lg:p-0 lg:flex lg:items-center lg:justify-end lg:w-full lg:bg-transparent lg:shadow-none translate-x-full lg:translate-x-0">
-                            <button type = "button" class = "lg:hidden" id = "navbar-hide-btn">
-                                <i class = "fa-solid fa-xmark text-2xl"></i>
-                            </button>
-                            <!--===== navigation tabs start ======-->
-                            <ul class = "navbar-nav">
-                                <li class = "nav-item">
-                                    <a href = "index.html" class = "nav-link ">home</a>
-                                </li>
-                                <li class = "nav-item">
-                                    <a href = "additionalpage\game.html" class = "nav-link ">Games</a>
-                                </li>
-                                <li class = "nav-item">
-                                    <a href = "additionalpage/multiplayer.html" class = "nav-link ">Multiplayer</a>
-                                </li>
-                                <li class = "nav-item">
-                                    <a target="_blank" rel="noopener noreferrer" href = "https://discord.gg/dakzwdz4ev" class = "nav-link ">Join community</a>
-                                </li>
-                                <li class = "nav-item">
-                                    <a href = "additionalpage/contact.html" class = "nav-link ">Contact Us</a>
-                                </li>  
-                            </ul>
-                            <!--===== navigation tabs start ======-->
-                            
-                        </div>
+<head>
+    <title>GameSphere.</title>
+    <!-- Primary Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="title" content="GameSphere" />
+    <meta name="description"
+        content="The main objective is to develop a website that allows friends to come together and engage in online gaming, including multiplayer games, without the need for any software or tools to be installed on their computers or mobile devices.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en">
+    <meta name="keywords"
+        content="Online gaming, Multiplayer games, Friends gathering, Browser games, Virtual game room, Memory Card Game, Ping Pong, Rock Paper Scissor, Bingo Game, Tower game, Cross-platform gaming">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gamesphere-multiplayer.github.io/GameSphere/" />
+    <meta property="og:title" content="GameSphere" />
+    <meta property="og:description"
+        content="The main objective is to develop a website that allows friends to come together and engage in online gaming, including multiplayer games, without the need for any software or tools to be installed on their computers or mobile devices." />
+    <meta property="og:image"
+        content="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/17f6f52d-8c37-4a0e-a855-37b6a7b06804" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://gamesphere-multiplayer.github.io/GameSphere/" />
+    <meta property="twitter:title" content="GameSphere" />
+    <meta property="twitter:description"
+        content="The main objective is to develop a website that allows friends to come together and engage in online gaming, including multiplayer games, without the need for any software or tools to be installed on their computers or mobile devices." />
+    <meta property="twitter:image"
+        content="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/17f6f52d-8c37-4a0e-a855-37b6a7b06804" />
+
+    <!-- chatbot -->
+    <link rel="stylesheet" href="./chatBot/style.css">
+
+    <!-- material icons -->
+    <link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!-- favicon -->
+    <link rel="icon" style="border-radius: 100%;" href="assets/Logo.png">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- slick slider css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css (tailwind) -->
+    <link rel="stylesheet" href="dist/main.css">
+
+    <!-- icon css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dist/color-theme.css">
+    <script src="https://kit.fontawesome.com/284ffbb2b1.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="counter.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <!--===== Navigation bar start =====-->
+        <nav style="background-color: black;" class="navbar flex items-center shadow-nav">
+            <div class="container w-full">
+                <div class="navbar-content">
+                    <div class="brand-and-toggler flex items-center justify-between">
+                        <!--==== logo name start ====-->
+                        <a target="_blank" href="#" class="navbar-brand">Game<span
+                                class="text-green-normal ">Sphere</span></a>
+                        <!--==== logo name end ====-->
+                        <button type="button" class="lg:hidden text-white text-2xl" id="navbar-show-btn">
+                            <i class="fas fa-bars"></i>
+                        </button>
                     </div>
-                </div>
-            </nav>
-            <!--===== Navigation bar end =====-->
-            
-            <!--===== Intro and signature game section start =====-->
-            <div class = "banner-content" style="margin-top: 100px;" >
-                <video  autoplay loop play-inline muted class="back-video">
-                    <source src="assets/images/video_games_-_89894 (540p).mp4"  type= "video/mp4" >
-                </video>
-                <div class = "banner-badge ">Hello Gamers</div>
-                <h1 class = "banner-title">Play Games With Your Friends</h1>
-                <p class = "lead-text">In this platform we are  here to play games with our friends at a same time without any interuption Our primary goal is to create a plateform where two or more friends can gather and play games online (such as multiplayer) without having to download any software or tools to their computers or mobile devices.</p>
-                <button type = "button" class = "banner-btn ">
-                    <span class = "me-4">
-                        <img src = "assets/icons/console.svg" alt = "">
-                    </span>
-                    <span><a target="_blank" href="SinglePlayer - Games/Formation Absent/index.html">play now</a></span>
-                </button>
-                <!--==== bouncy ball section start ====-->
-               
-            </div>
-            <!--===== Intro and signature game section end =====-->
-        </header>
 
-        <!--==== game section start ====-->
-        <section class = "py-16 sc-popular bg-violet-dark-active">
-            <div class = "container">
-                <!-- Heading of game start -->
-                <div class = "sc-title  ">
-                    <h3>top popular <span >games</span></h3>
-                    <div class="line "></div>
-                </div>
-                <!-- Heading of game end -->
+                    <div
+                        class="navbar-collapse fixed right-0 top-0 w-full sm:w-[280px] h-full bg-white shadow-nav-collapse pt-[60px] px-5 pb-4 text-center transition ease-in-out duration-300 transform lg:relative lg:p-0 lg:flex lg:items-center lg:justify-end lg:w-full lg:bg-transparent lg:shadow-none translate-x-full lg:translate-x-0">
+                        <button type="button" class="lg:hidden" id="navbar-hide-btn">
+                            <i class="fa-solid fa-xmark text-2xl"></i>
+                        </button>
+                        <!--===== navigation tabs start ======-->
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link ">home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="additionalpage\game.html" class="nav-link ">Games</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="additionalpage/multiplayer.html" class="nav-link ">Multiplayer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/dakzwdz4ev"
+                                    class="nav-link ">Join community</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="additionalpage/contact.html" class="nav-link ">Contact Us</a>
+                            </li>
+                        </ul>
+                        <!--===== navigation tabs start ======-->
 
-                <div class="game-card-list grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                    <!-- Game card- 1 start -->
-                    <div class = "game-card">
-                        <video src="https://drive.google.com/uc?id=1E0Y2cUaArPQ313GpdCPeFYtFZ32tkRC5" type="video/mp4" muted loop class="clip"  ></video>
-                        <div class = "game-card-top display-none img-fit-cover">
-                            <!-- Image section-->
-                            <img src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/4b63ff9d-ef28-4446-b9e5-8cfa13d2a697" alt = "">
-                            <div class = "ratings-count">
-                                211 <!--Star-->
-                                <img src = "assets/icons/star-black.svg" alt = "" class = "ms-2">
-                            </div>
-                        </div>
-                        <div class = "game-card-bottom">
-                            <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
-                                <div class = "py-1">
-                                    <!-- Game name -->
-                                    <h4 class = "text-white uppercase game-card-title">Tindeath</h4>
-                                    <!-- Game discription -->
-                                    <p class = "para-text">Unleash the power within. Conquer, create, and redefine your gaming destiny with Tindeath...</p>
-                                </div>
-                                <div class = "star-rating mt-2 sm:mt-0 py-1">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green-half.svg">
-                                </div>
-                            </div>
-
-                            <div class = "block-wrap flex justify-between items-end">
-                                <div class = "details-group">
-                                    <div class = "flex items-center">
-                                        <!-- Release date -->
-                                        <p class = "font-semibold">Release Date: &nbsp;</p>
-                                        <p>28.05.2023</p>
-                                    </div>
-                                    <div class = "flex items-center">
-                                        <!-- update section -->
-                                        <p class = "font-semibold">Updated: &nbsp;</p>
-                                        <p>Action | Desktop</p>
-                                    </div>
-                                </div>
-
-                                <div class = "flex flex-col items-end justify-between " >
-                                    <!-- Play Button -->
-                                    <a target="_blank" href = "SinglePlayer - Games/Tindeath/index.html" class = "btn-primary uppercase ">Play Now</a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                    <!-- Game card- 1 end -->
-
-                    <!-- Game card- 2 start -->
-                    <div class = "game-card">
-                        <video src="https://drive.google.com/uc?id=10uhSyJZr6cIc5_ONrD1-MgxRnH2XA6wm" type="video/mp4" muted loop class="clip"  ></video>
-                        <div class = "game-card-top display-none img-fit-cover">
-                            <!-- Image section-->
-                            <img src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/b45c4246-16db-4759-951d-0f3904711485" alt = "">
-                            <div class = "ratings-count">
-                                41 <!--Star-->
-                                <img src = "assets/icons/star-black.svg" alt = "" class = "ms-2"> 
-                            </div>
-                        </div>
-                        <div class = "game-card-bottom">
-                            <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
-                                <div class = "py-1">
-                                    <!-- Game name -->
-                                    <h4 class = "text-white uppercase game-card-title">Sci-Fi Alchemy </h4>
-                                    <!-- Game discription -->
-                                    <p class = "para-text">Sci-Fi Alchemy! Experience the addictive fun of Sci-Fi Alchemy and soar to new heights ....</p>
-                                </div>
-                                <div class = "star-rating mt-2 sm:mt-0 py-1">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green-half.svg">
-                                </div>
-                            </div>
-
-                            <div class = "block-wrap flex justify-between items-end">
-                                <div class = "details-group">
-                                    <div class = "flex items-center">
-                                        <!-- Release date -->
-                                        <p class = "font-semibold">Release Date: &nbsp;</p>
-                                        <p>28.05.2023</p>
-                                    </div>
-                                    <div class = "flex items-center">
-                                        <!-- update section -->
-                                        <p class = "font-semibold">Updated: &nbsp;</p>
-                                        <p>Action | Desktop</p>
-                                    </div>
-                                </div>
-
-                                <div class = "flex flex-col items-end justify-between">
-                                    <!-- Play Button -->
-                                    <a target="_blank" href = "SinglePlayer - Games/Sci-Fi Alchemy/index.html" class = "btn-primary uppercase">play now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Game card- 2 end -->
-
-                    <!-- Game card- 3 start -->
-                    <div class = "game-card">
-                        <video src="https://drive.google.com/uc?id=149xMLib-ZklPMRRTqd9Y9N83Pgj-m-fx" type="video/mp4" muted loop class="clip"  ></video>
-                        <div class = "game-card-top display-none img-fit-cover">
-                            <!-- Image section-->
-                            <img src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/b1663649-4175-4921-b4dc-47005426c6e3" alt = "">
-                            <div class = "ratings-count">
-                                321 <!--Star-->
-                                <img src = "assets/icons/star-black.svg" alt = "" class = "ms-2">
-                            </div>
-                        </div>
-                        <div class = "game-card-bottom">
-                            <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
-                                <div class = "py-1">
-                                    <!-- Game name -->
-                                    <h4 class = "text-white uppercase game-card-title">HexGL-master</h4>
-                                    <!-- Game discription -->
-                                    <p class = "para-text">Enter the futuristic realm of speed and precision. Dominate the race virtual world in HexGL Master!"...</p>
-                                </div>
-                                <div class = "star-rating mt-2 sm:mt-0 py-1">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green-half.svg">
-                                </div>
-                            </div>
-
-                            <div class = "block-wrap flex justify-between items-end">
-                                <div class = "details-group">
-                                    <div class = "flex items-center">
-                                        <!-- Release date -->
-                                        <p class = "font-semibold">Release Date: &nbsp;</p>
-                                        <p>28.05.2023</p>
-                                    </div>
-                                    <div class = "flex items-center">
-                                        <!-- update section -->
-                                        <p class = "font-semibold">Updated: &nbsp;</p>
-                                        <p>Action | Desktop</p>
-                                    </div>
-                                </div>
-
-                                <div class = "flex flex-col items-end justify-between">
-                                    <!-- Play Button -->
-                                    <a target="_blank" href = "SinglePlayer - Games/HexGL-master/index.html" class = "btn-primary uppercase">Play Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Game card- 3 end -->
-
-                    <!-- Game card- 4 start -->
-                    <div class = "game-card">
-                        <video src="https://drive.google.com/uc?id=14jtDCyNtlVu3-zFGxLo5He7qGXRvLOts" type="video/mp4" muted loop class="clip"  ></video>
-                        <div class = "game-card-top display-none img-fit-cover">
-                            <!-- Image section-->
-                            <img src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/739154da-c16c-443a-a9e1-dbf5d3717862" alt = "">
-                            <div class = "ratings-count">
-                                241<!--Star-->
-                                <img src = "assets/icons/star-black.svg" alt = "" class = "ms-2">
-                            </div>
-                        </div>
-                        <div class = "game-card-bottom">
-            
-                            <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
-                                <div class = "py-1">
-                                    <!-- Game name -->
-                                    <h4 class = "text-white uppercase game-card-title">JUNO </h4>
-                                    <!-- Game discription -->
-                                    <p class = "para-text">Rev up your engines, navigate the chaos! Take control of the streets JUNO!...</p>
-                                </div>
-                                <div class = "star-rating mt-2 sm:mt-0 py-1">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green-half.svg">
-                                </div>
-                            </div>
-
-                            <div class = "block-wrap flex justify-between items-end">
-                                <div class = "details-group">
-                                    <div class = "flex items-center">
-                                        <!-- Release date -->
-                                        <p class = "font-semibold">Release Date: &nbsp;</p>
-                                        <p>30.05.2023</p>
-                                    </div>
-                                    <div class = "flex items-center">
-                                        <!-- update section -->
-                                        <p class = "font-semibold">Updated: &nbsp;</p>
-                                        <p>Action | Desktop</p>
-                                    </div>
-                                </div>
-
-                                <div class = "flex flex-col items-end justify-between">
-                                    <!-- Play Button -->
-                                    <a target="_blank" href = "SinglePlayer - Games/JunoJs/index.html" class = "btn-primary uppercase">play now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Game card- 4 end -->
-
-                    <!-- Game card- 5 start -->
-                    <div class = "game-card">
-                        <video src="https://drive.google.com/uc?id=1vxgalx_dJdnJlnlGc0KGVnXGfZ4DWu2N" type="video/mp4" muted loop class="clip"  ></video>
-                        <div class = "game-card-top display-none img-fit-cover">
-                            <!-- Image section-->
-                            <img src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/2120a39a-f466-4f6e-80b8-2943444cf13a" alt = "">
-                            <div class = "ratings-count">
-                                291 <!--Star-->
-                                <img src = "assets/icons/star-black.svg" alt = "" class = "ms-2">
-                            </div>
-                        </div>
-                        <div class = "game-card-bottom">
-                            <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
-                                <div class = "py-1">
-                                    <!-- Game name -->
-                                    <h4 class = "text-white uppercase game-card-title">Tower Build</h4>
-                                    <!-- Game discription -->
-                                    <p class = "para-text"> Reach for the sky of dreams! Build your towering empire in the captivating world of Tower Build...</p>
-                                </div>
-                                <div class = "star-rating mt-2 sm:mt-0 py-1">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green-half.svg">
-                                </div>
-                            </div>
-
-                            <div class = "block-wrap flex justify-between items-end">
-                                <div class = "details-group">
-                                    <div class = "flex items-center">
-                                        <!-- Release date -->
-                                        <p class = "font-semibold">Release Date: &nbsp;</p>
-                                        <p>30.05.2023</p>
-                                    </div>
-                                    <div class = "flex items-center">
-                                        <!-- update section -->
-                                        <p class = "font-semibold">Updated: &nbsp;</p>
-                                        <p>Action | Desktop</p>
-                                    </div>
-                                </div>
-
-                                <div class = "flex flex-col items-end justify-between">
-                                    <!-- Play Button -->
-                                    <a target="_blank" href = "SinglePlayer - Games/tower/index.html" class = "btn-primary uppercase">Play now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Game card- 5 end -->
-
-                    <!-- Game card- 6 start -->
-                    <div class = "game-card">
-                        <video src="https://drive.google.com/uc?id=1K50KAAYfmSnBM0_Co8CHNWasiz_CW80x" type="video/mp4" muted loop class="clip" ></video>
-                        <div class = "game-card-top display-none img-fit-cover">
-                            <!-- Image section-->
-                            <img src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/01f2e1fd-8dc4-4546-8d61-2e9c7554bd36" alt = "">
-                            <div class = "ratings-count">
-                                420 <!--Star-->
-                                <img src = "assets/icons/star-black.svg" alt = "" class = "ms-2">
-                            </div>
-                        </div>
-                        <div class = "game-card-bottom">
-                            <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
-                                <div class = "py-1">
-                                    <!-- Game name -->
-                                    <h4 class = "text-white uppercase game-card-title">hextris</h4>
-                                    <!-- Game discription -->
-                                    <p class = "para-text">Rotate, match, conquer! Experience the challenge of Hextris puzzle-solving prowess...</p>
-                                </div>
-                                <div class = "star-rating mt-2 sm:mt-0 py-1">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green-half.svg">
-                                </div>
-                            </div>
-
-                            <div class = "block-wrap flex justify-between items-end">
-                                <div class = "details-group">
-                                    <div class = "flex items-center">
-                                        <!-- Release date -->
-                                        <p class = "font-semibold">Release Date: &nbsp;</p>
-                                        <p>06.06.1984</p>
-                                    </div>
-                                    <div class = "flex items-center">
-                                        <!-- update section -->
-                                        <p class = "font-semibold">Updated: &nbsp;</p>
-                                        <p>Action | Desktop</p>
-                                    </div>
-                                </div>
-
-                                <div class = "flex flex-col items-end justify-between">
-                                    <!-- Play Button -->
-                                    <a target="_blank" href = "SinglePlayer - Games/hextris-gh-pages/index.html" class = "btn-primary uppercase">play now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Game card- 6 end -->
-
-                    <!-- Game card- 7 start -->
-                    <div class = "game-card">
-                        <video src="https://drive.google.com/uc?id=1GvmnHn2csFq1Lm5Z4keF22O4YlJFaozX" type="video/mp4" muted loop class="clip"   ></video>
-                        <div class = "game-card-top display-none img-fit-cover">
-                            <!-- Image section-->
-                            <img src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/1b2b7248-1bb0-422b-81cc-b687618f20f9" alt = "">
-                            <div class = "ratings-count">
-                                241<!--Star-->
-                                <img src = "assets/icons/star-black.svg" alt = "" class = "ms-2">
-                            </div>
-                        </div>
-                        <div class = "game-card-bottom">
-                            <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
-                                <div class = "py-1">
-                                    <!-- Game name -->
-                                    <h4 class = "text-white uppercase game-card-title">Blanks Detective</h4>
-                                    <!-- Game discription -->
-                                    <p class = "para-text">Blast off into epic battles. Command your starship, defy gravity, world of Space-War!...</p>
-                                </div>
-                                <div class = "star-rating mt-2 sm:mt-0 py-1">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green-half.svg">
-                                </div>
-                            </div>
-
-                            <div class = "block-wrap flex justify-between items-end">
-                                <div class = "details-group">
-                                    <div class = "flex items-center">
-                                        <!-- Release date -->
-                                        <p class = "font-semibold">Release Date: &nbsp;</p>
-                                        <p>07.12.2015</p>
-                                    </div>
-                                    <div class = "flex items-center">
-                                        <!-- update section -->
-                                        <p class = "font-semibold">Updated: &nbsp;</p>
-                                        <p>Action | Desktop</p>
-                                    </div>
-                                </div>
-
-                                <div class = "flex flex-col items-end justify-between">
-                                    <!-- Play Button -->
-                                    <a target="_blank" href = "SinglePlayer - Games/Blanks Detective/index.html" class = "btn-primary uppercase">play now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Game card- 7 end -->
-
-                    <!-- Game card- 8 start -->
-                    <div class = "game-card">
-                        <video src="https://drive.google.com/uc?id=1GLxdHdcHVO5rHGB_EguCDMV3auk0yrF2" type="video/mp4" muted loop class="clip" ></video>
-                        <div class = "game-card-top display-none img-fit-cover">
-                            <!-- Image section-->
-                            <img src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/38928018-5275-4096-9c62-7b006517e3da" alt = "">
-                            <div class = "ratings-count">
-                                221<!--Star-->
-                                <img src = "assets/icons/star-black.svg" alt = "" class = "ms-2">
-                            </div>
-                        </div>
-                        <div class = "game-card-bottom">
-                            <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
-                                <div class = "py-1">
-                                    <!-- Game name -->
-                                    <h4 class = "text-white uppercase game-card-title">PACKABUNCHAS </h4>
-                                    <!-- Game discription -->
-                                    <p class = "para-text">Beyond the Stars, They Embrace. Space Huggers: Alien Affection Awaits....</p>
-                                </div>
-                                <div class = "star-rating mt-2 sm:mt-0 py-1">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green-half.svg">
-                                </div>
-                            </div>
-
-                            <div class = "block-wrap flex justify-between items-end">
-                                <div class = "details-group">
-                                    <div class = "flex items-center">
-                                        <!-- Release date -->
-                                        <p class = "font-semibold">Release Date: &nbsp;</p>
-                                        <p>07.12.2015</p>
-                                    </div>
-                                    <div class = "flex items-center">
-                                        <!-- update section -->
-                                        <p class = "font-semibold">Updated: &nbsp;</p>
-                                        <p>Action | Desktop</p>
-                                    </div>
-                                </div>
-
-                                <div class = "flex flex-col items-end justify-between">
-                                    <!-- Play Button -->
-                                    <a target="_blank" href = "SinglePlayer - Games/PACKABUNCHAS/index.html" class = "btn-primary uppercase">play now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Game card- 8 end -->
-
-                    <!-- Game card- 9 start -->
-                    <div class = "game-card">
-                        <video src="https://drive.google.com/uc?id=1IifZmdbX3GJQlLkQcmJXKdi6V4R_AB1t" type="video/mp4" muted loop class="clip"  ></video>
-                        <div class = "game-card-top display-none img-fit-cover">
-                            <!-- Image section-->
-                            <img src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/1413b604-f4fd-432f-a78e-337a4e0739f3" alt = "">
-                            <div class = "ratings-count">
-                                341 <!--Star-->
-                                <img src = "assets/icons/star-black.svg" alt = "" class = "ms-2">
-                            </div>
-                        </div>
-                        <div class = "game-card-bottom">
-                            <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
-                                <div class = "py-1">
-                                    <!-- Game name -->
-                                    <h4 class = "text-white uppercase game-card-title">SPACESHIP ESCORT </h4>
-                                    <!-- Game discription -->
-                                    <p class = "para-text">Embrace the Darkness. Unleash the Decay. SPACESHIP ESCORT: Masters of survival....</p>
-                                </div>
-                                <div class = "star-rating mt-2 sm:mt-0 py-1">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green.svg">
-                                    <img src = "assets/icons/star-green-half.svg">
-                                </div>
-                            </div>
-
-                            <div class = "block-wrap flex justify-between items-end">
-                                <div class = "details-group">
-                                    <div class = "flex items-center">
-                                        <!-- Release date -->
-                                        <p class = "font-semibold">Release Date: &nbsp;</p>
-                                        <p>07.12.2015</p>
-                                    </div>
-                                    <div class = "flex items-center">
-                                        <!-- update section -->
-                                        <p class = "font-semibold">Updated: &nbsp;</p>
-                                        <p>Action | Desktop</p>
-                                    </div>
-                                </div>
-
-                                <div class = "flex flex-col items-end justify-between">
-                                    <!-- Play Button -->
-                                    <a target="_blank" href = "SinglePlayer - Games/Spaceship Escort/index.html" class = "btn-primary uppercase">play now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Game card- 9 end -->
-                </div>
-                <div class = "flex justify-center mt-[60px]">
-                    <a target="_blank" href = "additionalpage/game.html" class = "section-btn">see more games</a>
                 </div>
             </div>
-        </section>
-        <!--==== game section end ====-->
+        </nav>
+        <!--===== Navigation bar end =====-->
 
-        <!--==== Banner section start ====-->
-        <div class = "py-16 bg-violet-darker overflow-hidden">
-            <div class = "game-slider">
-                <!-- Banner - 1 -->
-                <div class = "slider-item img-fit-cover">
-                    <img src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/68c791f4-51b0-473f-8486-f0fa8db4c6cb" class = "slider-item-img">
-                </div>
-                <!-- Banner - 2 -->
-                <div class = "slider-item img-fit-cover">
-                    <img src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/fb5a5094-207d-4930-b6d2-37b72f9c77a1" class = "slider-item-img">
-                </div>
-                <!-- Banner - 3 -->
-                <div class = "slider-item img-fit-cover">
-                    <img src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/4a4ae1d0-8542-4054-99c6-2975801d4724" class = "slider-item-img">
-                </div>
-                <!-- Banner - 4 -->
-                <div class = "slider-item img-fit-cover">
-                    <img src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/33e84ea1-f052-4422-90bc-179692c1832b" class = "slider-item-img">
-                </div>
-                <!-- Banner - 5 -->
-                <div class = "slider-item img-fit-cover">
-                    <img src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/a494243f-9bbb-4446-8472-8d67244f97d4" class = "slider-item-img">
-                </div>
-                <!-- Banner - 6 -->
-                <div class = "slider-item img-fit-cover">
-                    <img src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/001613f2-2412-4880-8b21-974fa357169e" class = "slider-item-img">
-                </div>
-                <!-- Banner - 7 -->
-                <div class = "slider-item img-fit-cover">
-                    <img src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/427316a8-b850-4501-8298-670407636fe3" class = "slider-item-img">
-                </div>
-            </div>
+        <!--===== Intro and signature game section start =====-->
+        <div class="banner-content" style="margin-top: 100px;">
+            <video autoplay loop play-inline muted class="back-video">
+                <source src="assets/images/video_games_-_89894 (540p).mp4" type="video/mp4">
+            </video>
+            <div class="banner-badge ">Hello Gamers</div>
+            <h1 class="banner-title">Play Games With Your Friends</h1>
+            <p class="lead-text">In this platform we are here to play games with our friends at a same time without any
+                interuption Our primary goal is to create a plateform where two or more friends can gather and play
+                games online (such as multiplayer) without having to download any software or tools to their computers
+                or mobile devices.</p>
+            <button type="button" class="banner-btn ">
+                <span class="me-4">
+                    <img src="assets/icons/console.svg" alt="">
+                </span>
+                <span><a target="_blank" href="SinglePlayer - Games/Formation Absent/index.html">play now</a></span>
+            </button>
+            <!--==== bouncy ball section start ====-->
+
         </div>
-        <!--==== Banner section end ====-->
+        <!--===== Intro and signature game section end =====-->
+    </header>
 
-        <!--==== Discord community section start ====-->
-        <section class = "py-16 sc-join flex items-center bg-join-image relative after:absolute after:content-[''] after:bg-gradient-to-b after:from-black/50 after:to-black/50 after:bg-center after:bg-cover after:bg-no-repeat">
-            <div class = "container w-full">
-                <div class = "join-content">
-                    <h2 class = "join-title uppercase"><span>join the community</span></h2>
-                    <p class = "lead-text py-2">Join our Discord community which is in the making and made by gamers for gamers. All are welcome to join no matter the game you play, we're here to have a good.</p>
-                    <button type = "button" class = "mt-4"><a class="discord-btn" target="_blank" href="https://discord.gg/dakzwdz4ev">join discord</a></button>
-                </div>
+    <!--==== game section start ====-->
+    <section class="py-16 sc-popular bg-violet-dark-active">
+        <div class="container">
+            <!-- Heading of game start -->
+            <div class="sc-title  ">
+                <h3>top popular <span>games</span></h3>
+                <div class="line "></div>
             </div>
-        </section>
-        <!--==== Discord community section end ====-->
+            <!-- Heading of game end -->
 
-        <!--===== News section start ====-->
-        <section class = "py-16 sc-posts bg-violet-dark-active">
-            <div class = "container">
-                <!-- Title of news start-->
-                <div class = "sc-title">
-                    <h3>latest <span>news</span></h3>
-                    <div class="line"></div>
+            <div class="game-card-list grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Game card- 1 start -->
+                <div class="game-card">
+                    <video src="https://drive.google.com/uc?id=1E0Y2cUaArPQ313GpdCPeFYtFZ32tkRC5" type="video/mp4" muted
+                        loop class="clip"></video>
+                    <div class="game-card-top display-none img-fit-cover">
+                        <!-- Image section-->
+                        <img src="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/4b63ff9d-ef28-4446-b9e5-8cfa13d2a697"
+                            alt="">
+                        <div class="ratings-count">
+                            211 <!--Star-->
+                            <img src="assets/icons/star-black.svg" alt="" class="ms-2">
+                        </div>
+                    </div>
+                    <div class="game-card-bottom">
+                        <div class="flex flex-col sm:flex-row justify-between items-start flex-wrap">
+                            <div class="py-1">
+                                <!-- Game name -->
+                                <h4 class="text-white uppercase game-card-title">Tindeath</h4>
+                                <!-- Game discription -->
+                                <p class="para-text">Unleash the power within. Conquer, create, and redefine your gaming
+                                    destiny with Tindeath...</p>
+                            </div>
+                            <div class="star-rating mt-2 sm:mt-0 py-1">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green-half.svg">
+                            </div>
+                        </div>
+
+                        <div class="block-wrap flex justify-between items-end">
+                            <div class="details-group">
+                                <div class="flex items-center">
+                                    <!-- Release date -->
+                                    <p class="font-semibold">Release Date: &nbsp;</p>
+                                    <p>28.05.2023</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <!-- update section -->
+                                    <p class="font-semibold">Updated: &nbsp;</p>
+                                    <p>Action | Desktop</p>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col items-end justify-between ">
+                                <!-- Play Button -->
+                                <a target="_blank" href="SinglePlayer - Games/Tindeath/index.html"
+                                    class="btn-primary uppercase ">Play Now</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- Title of news end-->
+                <!-- Game card- 1 end -->
 
-                <div class = "grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                <!--===  News cars - 1 Start ====-->
-                    <div class = "game-post">
-                        <div class = "game-post-img">
-                            <!-- image -->
-                            <img src = "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/06/red-dead-redemption-2-cain-jack-dutch.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5" alt = "">
+                <!-- Game card- 2 start -->
+                <div class="game-card">
+                    <video src="https://drive.google.com/uc?id=10uhSyJZr6cIc5_ONrD1-MgxRnH2XA6wm" type="video/mp4" muted
+                        loop class="clip"></video>
+                    <div class="game-card-top display-none img-fit-cover">
+                        <!-- Image section-->
+                        <img src="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/b45c4246-16db-4759-951d-0f3904711485"
+                            alt="">
+                        <div class="ratings-count">
+                            41 <!--Star-->
+                            <img src="assets/icons/star-black.svg" alt="" class="ms-2">
                         </div>
-                        <div class = "game-post-body py-4 px-7">
-                            <!-- heading -->
-                            <h3 class = "game-post-title pb-3 border-b-[1px] border-b-violet-dark-">Red Dead Redemption 2 Dog Cain Has Passed Away in Real Life                                .</h3>
-
-                            <div class = "flex justify-between items-center mt-[10px]">
-                                <!-- publised -->
-                                <span class = "font-normal text-[13px]">PUBLISHED 1 HOUR AGO</span>
-                                <!-- published by -->
-                                <p class = "text-[13px]">By: <span class = "text-green-normal font-semibold">LUIE MAGBANUA</span> </p>
+                    </div>
+                    <div class="game-card-bottom">
+                        <div class="flex flex-col sm:flex-row justify-between items-start flex-wrap">
+                            <div class="py-1">
+                                <!-- Game name -->
+                                <h4 class="text-white uppercase game-card-title">Sci-Fi Alchemy </h4>
+                                <!-- Game discription -->
+                                <p class="para-text">Sci-Fi Alchemy! Experience the addictive fun of Sci-Fi Alchemy and
+                                    soar to new heights ....</p>
                             </div>
-                            <!-- discription -->
-                            <p class = "para-text">The owner of the dog that played as the animal motion capture actor of Cain in Red Dead Redemption 2 has announced that the canine has recently passed away. Though only a minor character in Red Dead Redemption 2, the game's players, who have a soft spot for animals, likely remember Cain fondly and will probably be saddened by the news....</p>
+                            <div class="star-rating mt-2 sm:mt-0 py-1">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green-half.svg">
+                            </div>
+                        </div>
 
-                            <div class = "flex items-center justify-between">
-                                <!-- read more -->
-                                <a target="_blank" href = "https://gamerant.com/red-dead-redemption-2-dog-cain-died/" class = "btn-secondary uppercase">read more</a>
-                                <div class = "flex items-center">
-                                    <span class = "font-bold text-[13px] flex me-[25px]">
-                                        <img src = "assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 123 <!-- views -->
-                                    </span>
-                                    <span class = "font-bold text-[13px] flex">
-                                        <img src = "assets/icons/message.svg" alt = "" class = "w-[17px] me-2"> 45<!-- comments -->
-                                    </span>
+                        <div class="block-wrap flex justify-between items-end">
+                            <div class="details-group">
+                                <div class="flex items-center">
+                                    <!-- Release date -->
+                                    <p class="font-semibold">Release Date: &nbsp;</p>
+                                    <p>28.05.2023</p>
                                 </div>
+                                <div class="flex items-center">
+                                    <!-- update section -->
+                                    <p class="font-semibold">Updated: &nbsp;</p>
+                                    <p>Action | Desktop</p>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col items-end justify-between">
+                                <!-- Play Button -->
+                                <a target="_blank" href="SinglePlayer - Games/Sci-Fi Alchemy/index.html"
+                                    class="btn-primary uppercase">play now</a>
                             </div>
                         </div>
                     </div>
-                <!--===  News cars - 1 end ====-->
-
-                    <!--===  News cars - 2 Start ====-->
-                    <div class = "game-post">
-                        <div class = "game-post-img">
-                            <!-- image -->
-                            <img src = "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/06/destiny-2-diablo-4-cover.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5" alt = "">
-                        </div>
-                        <div class = "game-post-body py-4 px-7">
-                            <!-- heading -->
-                            <h3 class = "game-post-title pb-3 border-b-[1px] border-b-violet-dark-">Destiny 2 Dev Faces Backlash Due to Negative Diablo 4 Comments                            </h3>
-
-                            <div class = "flex justify-between items-center mt-[10px]">
-                                <!-- publised -->
-                                <span class = "font-normal text-[13px]">PUBLISHED 2 HOURS AGO</span>
-                                <!-- published by -->
-                                <p class = "text-[13px]">By: <span class = "text-green-normal font-semibold">MIGUEL LUIS LLADO</span> </p>
-                            </div>
-                            <!-- discription -->
-                            <p class = "para-text">A Destiny 2 developer is receiving some backlash due to their criticism of Diablo 4. While Destiny and Diablo are two completely different games with unique gameplay mechanics, both share some elements that could be comparable, especially the multi-player and leveling aspects. The title has been out for over a week, but fans have already been quick to form....</p>
-
-                            <div class = "flex items-center justify-between">
-                                <!-- read more -->
-                                <a target="_blank" href = "https://gamerant.com/destiny-2-backlash-negative-diablo-4-comments/" class = "btn-secondary uppercase">read more</a>
-                                <div class = "flex items-center">
-                                    <span class = "font-bold text-[13px] flex me-[25px]">
-                                        <img src = "assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 124<!-- views -->
-                                    </span>
-                                    <span class = "font-bold text-[13px] flex">
-                                        <img src = "assets/icons/message.svg" alt = "" class = "w-[17px] me-2"> 25<!-- comments -->
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--===  News cars - 2 end ====-->
-
-                    <!--===  News cars - 3 Start ====-->
-                    <div class = "game-post">
-                        <div class = "game-post-img">
-                            <!-- image -->
-                            <img src = "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/06/dan-houser-over-gta-background.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5" alt = "">
-                        </div>
-                        <div class = "game-post-body py-4 px-7">
-                            <!-- heading -->
-                            <h3 class = "game-post-title pb-3 border-b-[1px] border-b-violet-dark-">Rockstar Co-Founder Reveals His Latest Venture</h3>
-                            <div class = "flex justify-between items-center mt-[10px]">
-                                <!-- publised -->
-                                <span class = "font-normal text-[13px]">PUBLISHED 6 HOURS AGO</span>
-                                <!-- published by -->
-                                <p class = "text-[13px]">By: <span class = "text-green-normal font-semibold">Joseph Allen</span> </p>
-                            </div>
-                            <!-- discription -->
-                            <p class = "para-text">Having already left his mark on the world of gaming through years spent helming franchises like Grand Theft Auto and Red Dead Redemption, Rockstar Games co-founder Dan Houser has announced his latest venture, a cross-media company named Absurd Ventures. One of the driving forces behind some of the largest properties in the industry....</p>
-                            <div class = "flex items-center justify-between">
-                                <!-- read more -->
-                                <a target="_blank" href = "https://gamerant.com/rockstar-co-founder-dan-houser-absurd-ventures/" class = "btn-secondary uppercase">read more</a>
-                                <div class = "flex items-center">
-                                    <span class = "font-bold text-[13px] flex me-[25px]">
-                                        <img src = "assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 223<!-- views -->
-                                    </span>
-                                    <span class = "font-bold text-[13px] flex">
-                                        <img src = "assets/icons/message.svg" alt = "" class = "w-[17px] me-2"> 145<!-- comments -->
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--===  News cars - 3 end ====-->
-
-                    <!--===  News cars - 4 Start ====-->
-                    <div class = "game-post">
-                        <div class = "game-post-img">
-                            <!-- image -->
-                            <img src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/44e2c040-91ac-4345-b7ab-13695a229019" alt = "">
-                        </div>
-                        <div class = "game-post-body py-4 px-7">
-                            <!-- heading -->
-                            <h3 class = "game-post-title pb-3 border-b-[1px] border-b-violet-dark-">Total War: Warhammer 3 Chaos Dwarfs DLC Shows Zhatan's ...</h3>
-
-                            <div class = "flex justify-between items-center mt-[10px]">
-                                <!-- publised -->
-                                <span class = "font-normal text-[13px]">March 31, 2023 7:46 AM</span>
-                                <!-- published by -->
-                                <p class = "text-[13px]">By: <span class = "text-green-normal font-semibold">Joseph Allen</span> </p>
-                            </div>
-                            <!-- discription -->
-                            <p class = "para-text">The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system, new story content, and lots more, is scheduled to arrive ...</p>
-
-                            <div class = "flex items-center justify-between">
-                                <!-- read more -->
-                                <a target="_blank" href = "https://techraptor.net/gaming/news/total-war-warhammer-3-chaos-dwarfs-dlc-shows-zhatans-campaign-in-gameplay-video" class = "btn-secondary uppercase">read more</a>
-                                <div class = "flex items-center">
-                                    <span class = "font-bold text-[13px] flex me-[25px]">
-                                        <img src = "assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 119<!-- views -->
-                                    </span>
-                                    <span class = "font-bold text-[13px] flex">
-                                        <img src = "assets/icons/message.svg" alt = "" class = "w-[17px] me-2"> 43<!-- comments -->
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--===  News cars - 4 end ====-->
-
-                    <!--===  News cars - 5 Start ====-->
-                    <div class = "game-post">
-                        <div class = "game-post-img">
-                            <!-- image -->
-                            <img src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/c00da120-afa4-41b2-8f14-d49bd77d9826" alt = "">
-                        </div>
-                        <div class = "game-post-body py-4 px-7">
-                            <!-- heading -->
-                            <h3 class = "game-post-title pb-3 border-b-[1px] border-b-violet-dark-">Nobunaga's Ambition: Awakening Is Heading West In July</h3>
-
-                            <div class = "flex justify-between items-center mt-[10px]">
-                                <!-- publised -->
-                                <span class = "font-normal text-[13px]">March 31, 2023 7:46 AM</span>
-                                <!-- published by -->
-                                <p class = "text-[13px]">By: <span class = "text-green-normal font-semibold">Joseph Allen</span> </p>
-                            </div>
-                            <!-- discription -->
-                            <p class = "para-text">The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system, new story content, and lots more, is scheduled to arrive ...</p>
-
-                            <div class = "flex items-center justify-between">
-                                <!-- read more -->
-                                <a target="_blank" href = "https://techraptor.net/gaming/news/nobunagas-ambition-awakening-is-heading-west-in-july" class = "btn-secondary uppercase">read more</a>
-                                <div class = "flex items-center">
-                                    <span class = "font-bold text-[13px] flex me-[25px]">
-                                        <img src = "assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 223<!-- views -->
-                                    </span>
-                                    <span class = "font-bold text-[13px] flex">
-                                        <img src = "assets/icons/message.svg" alt = "" class = "w-[17px] me-2"> 157<!-- comments -->
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--===  News cars - 5 end ====-->
-
-                    <!--===  News cars - 6 Start ====-->
-                    <div class = "game-post">
-                        <div class = "game-post-img">
-                            <!-- image -->
-                            <img src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/6e0fa32c-95a9-42da-acfb-49ea553d7d28" alt = "">
-                        </div>
-                        <div class = "game-post-body py-4 px-7">
-                            <!-- heading -->
-                            <h3 class = "game-post-title pb-3 border-b-[1px] border-b-violet-dark-">Cyberpunk 2077 Phantom Liberty Promotion Starts in June as CD</h3>
-
-                            <div class = "flex justify-between items-center mt-[10px]">
-                                <!-- publised -->
-                                <span class = "font-normal text-[13px]">june 1, 2023 7:46 AM</span>
-                                <!-- published by -->
-                                <p class = "text-[13px]">By: <span class = "text-green-normal font-semibold">Rahul Chettiyar</span> </p>
-                            </div>
-                            <!-- discription -->
-                            <p class = "para-text">The upcoming My Time at Sandrock Knives Out update now has a release date. The update, which adds a marriage system, new story content, and lots more, is scheduled to arrive ...</p>
-
-                            <div class = "flex items-center justify-between">
-                                <!-- read more -->
-                                <a target="_blank" href = "https://www.gadgets360.com/games/news/cyberpunk-2077-phantom-liberty-release-date-pre-order-trailer-gameplay-price-idris-elba-keanu-reeves-cd-projekt-red-4117827" class = "btn-secondary uppercase">read more</a>
-                                <div class = "flex items-center">
-                                    <span class = "font-bold text-[13px] flex me-[25px]">
-                                        <img src = "assets/icons/eye.svg" alt = "" class = "w-[20px] me-2"> 223<!-- views -->
-                                    </span>
-                                    <span class = "font-bold text-[13px] flex">
-                                        <img src = "assets/icons/message.svg" alt = "" class = "w-[17px] me-2"> 36<!-- comments -->
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--===  News cars - 6 end ====-->
                 </div>
+                <!-- Game card- 2 end -->
+
+                <!-- Game card- 3 start -->
+                <div class="game-card">
+                    <video src="https://drive.google.com/uc?id=149xMLib-ZklPMRRTqd9Y9N83Pgj-m-fx" type="video/mp4" muted
+                        loop class="clip"></video>
+                    <div class="game-card-top display-none img-fit-cover">
+                        <!-- Image section-->
+                        <img src="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/b1663649-4175-4921-b4dc-47005426c6e3"
+                            alt="">
+                        <div class="ratings-count">
+                            321 <!--Star-->
+                            <img src="assets/icons/star-black.svg" alt="" class="ms-2">
+                        </div>
+                    </div>
+                    <div class="game-card-bottom">
+                        <div class="flex flex-col sm:flex-row justify-between items-start flex-wrap">
+                            <div class="py-1">
+                                <!-- Game name -->
+                                <h4 class="text-white uppercase game-card-title">HexGL-master</h4>
+                                <!-- Game discription -->
+                                <p class="para-text">Enter the futuristic realm of speed and precision. Dominate the
+                                    race virtual world in HexGL Master!"...</p>
+                            </div>
+                            <div class="star-rating mt-2 sm:mt-0 py-1">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green-half.svg">
+                            </div>
+                        </div>
+
+                        <div class="block-wrap flex justify-between items-end">
+                            <div class="details-group">
+                                <div class="flex items-center">
+                                    <!-- Release date -->
+                                    <p class="font-semibold">Release Date: &nbsp;</p>
+                                    <p>28.05.2023</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <!-- update section -->
+                                    <p class="font-semibold">Updated: &nbsp;</p>
+                                    <p>Action | Desktop</p>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col items-end justify-between">
+                                <!-- Play Button -->
+                                <a target="_blank" href="SinglePlayer - Games/HexGL-master/index.html"
+                                    class="btn-primary uppercase">Play Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Game card- 3 end -->
+
+                <!-- Game card- 4 start -->
+                <div class="game-card">
+                    <video src="https://drive.google.com/uc?id=14jtDCyNtlVu3-zFGxLo5He7qGXRvLOts" type="video/mp4" muted
+                        loop class="clip"></video>
+                    <div class="game-card-top display-none img-fit-cover">
+                        <!-- Image section-->
+                        <img src="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/739154da-c16c-443a-a9e1-dbf5d3717862"
+                            alt="">
+                        <div class="ratings-count">
+                            241<!--Star-->
+                            <img src="assets/icons/star-black.svg" alt="" class="ms-2">
+                        </div>
+                    </div>
+                    <div class="game-card-bottom">
+
+                        <div class="flex flex-col sm:flex-row justify-between items-start flex-wrap">
+                            <div class="py-1">
+                                <!-- Game name -->
+                                <h4 class="text-white uppercase game-card-title">JUNO </h4>
+                                <!-- Game discription -->
+                                <p class="para-text">Rev up your engines, navigate the chaos! Take control of the
+                                    streets JUNO!...</p>
+                            </div>
+                            <div class="star-rating mt-2 sm:mt-0 py-1">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green-half.svg">
+                            </div>
+                        </div>
+
+                        <div class="block-wrap flex justify-between items-end">
+                            <div class="details-group">
+                                <div class="flex items-center">
+                                    <!-- Release date -->
+                                    <p class="font-semibold">Release Date: &nbsp;</p>
+                                    <p>30.05.2023</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <!-- update section -->
+                                    <p class="font-semibold">Updated: &nbsp;</p>
+                                    <p>Action | Desktop</p>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col items-end justify-between">
+                                <!-- Play Button -->
+                                <a target="_blank" href="SinglePlayer - Games/JunoJs/index.html"
+                                    class="btn-primary uppercase">play now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Game card- 4 end -->
+
+                <!-- Game card- 5 start -->
+                <div class="game-card">
+                    <video src="https://drive.google.com/uc?id=1vxgalx_dJdnJlnlGc0KGVnXGfZ4DWu2N" type="video/mp4" muted
+                        loop class="clip"></video>
+                    <div class="game-card-top display-none img-fit-cover">
+                        <!-- Image section-->
+                        <img src="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/2120a39a-f466-4f6e-80b8-2943444cf13a"
+                            alt="">
+                        <div class="ratings-count">
+                            291 <!--Star-->
+                            <img src="assets/icons/star-black.svg" alt="" class="ms-2">
+                        </div>
+                    </div>
+                    <div class="game-card-bottom">
+                        <div class="flex flex-col sm:flex-row justify-between items-start flex-wrap">
+                            <div class="py-1">
+                                <!-- Game name -->
+                                <h4 class="text-white uppercase game-card-title">Tower Build</h4>
+                                <!-- Game discription -->
+                                <p class="para-text"> Reach for the sky of dreams! Build your towering empire in the
+                                    captivating world of Tower Build...</p>
+                            </div>
+                            <div class="star-rating mt-2 sm:mt-0 py-1">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green-half.svg">
+                            </div>
+                        </div>
+
+                        <div class="block-wrap flex justify-between items-end">
+                            <div class="details-group">
+                                <div class="flex items-center">
+                                    <!-- Release date -->
+                                    <p class="font-semibold">Release Date: &nbsp;</p>
+                                    <p>30.05.2023</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <!-- update section -->
+                                    <p class="font-semibold">Updated: &nbsp;</p>
+                                    <p>Action | Desktop</p>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col items-end justify-between">
+                                <!-- Play Button -->
+                                <a target="_blank" href="SinglePlayer - Games/tower/index.html"
+                                    class="btn-primary uppercase">Play now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Game card- 5 end -->
+
+                <!-- Game card- 6 start -->
+                <div class="game-card">
+                    <video src="https://drive.google.com/uc?id=1K50KAAYfmSnBM0_Co8CHNWasiz_CW80x" type="video/mp4" muted
+                        loop class="clip"></video>
+                    <div class="game-card-top display-none img-fit-cover">
+                        <!-- Image section-->
+                        <img src="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/01f2e1fd-8dc4-4546-8d61-2e9c7554bd36"
+                            alt="">
+                        <div class="ratings-count">
+                            420 <!--Star-->
+                            <img src="assets/icons/star-black.svg" alt="" class="ms-2">
+                        </div>
+                    </div>
+                    <div class="game-card-bottom">
+                        <div class="flex flex-col sm:flex-row justify-between items-start flex-wrap">
+                            <div class="py-1">
+                                <!-- Game name -->
+                                <h4 class="text-white uppercase game-card-title">hextris</h4>
+                                <!-- Game discription -->
+                                <p class="para-text">Rotate, match, conquer! Experience the challenge of Hextris
+                                    puzzle-solving prowess...</p>
+                            </div>
+                            <div class="star-rating mt-2 sm:mt-0 py-1">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green-half.svg">
+                            </div>
+                        </div>
+
+                        <div class="block-wrap flex justify-between items-end">
+                            <div class="details-group">
+                                <div class="flex items-center">
+                                    <!-- Release date -->
+                                    <p class="font-semibold">Release Date: &nbsp;</p>
+                                    <p>06.06.1984</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <!-- update section -->
+                                    <p class="font-semibold">Updated: &nbsp;</p>
+                                    <p>Action | Desktop</p>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col items-end justify-between">
+                                <!-- Play Button -->
+                                <a target="_blank" href="SinglePlayer - Games/hextris-gh-pages/index.html"
+                                    class="btn-primary uppercase">play now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Game card- 6 end -->
+
+                <!-- Game card- 7 start -->
+                <div class="game-card">
+                    <video src="https://drive.google.com/uc?id=1GvmnHn2csFq1Lm5Z4keF22O4YlJFaozX" type="video/mp4" muted
+                        loop class="clip"></video>
+                    <div class="game-card-top display-none img-fit-cover">
+                        <!-- Image section-->
+                        <img src="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/1b2b7248-1bb0-422b-81cc-b687618f20f9"
+                            alt="">
+                        <div class="ratings-count">
+                            241<!--Star-->
+                            <img src="assets/icons/star-black.svg" alt="" class="ms-2">
+                        </div>
+                    </div>
+                    <div class="game-card-bottom">
+                        <div class="flex flex-col sm:flex-row justify-between items-start flex-wrap">
+                            <div class="py-1">
+                                <!-- Game name -->
+                                <h4 class="text-white uppercase game-card-title">Blanks Detective</h4>
+                                <!-- Game discription -->
+                                <p class="para-text">Blast off into epic battles. Command your starship, defy gravity,
+                                    world of Space-War!...</p>
+                            </div>
+                            <div class="star-rating mt-2 sm:mt-0 py-1">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green-half.svg">
+                            </div>
+                        </div>
+
+                        <div class="block-wrap flex justify-between items-end">
+                            <div class="details-group">
+                                <div class="flex items-center">
+                                    <!-- Release date -->
+                                    <p class="font-semibold">Release Date: &nbsp;</p>
+                                    <p>07.12.2015</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <!-- update section -->
+                                    <p class="font-semibold">Updated: &nbsp;</p>
+                                    <p>Action | Desktop</p>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col items-end justify-between">
+                                <!-- Play Button -->
+                                <a target="_blank" href="SinglePlayer - Games/Blanks Detective/index.html"
+                                    class="btn-primary uppercase">play now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Game card- 7 end -->
+
+                <!-- Game card- 8 start -->
+                <div class="game-card">
+                    <video src="https://drive.google.com/uc?id=1GLxdHdcHVO5rHGB_EguCDMV3auk0yrF2" type="video/mp4" muted
+                        loop class="clip"></video>
+                    <div class="game-card-top display-none img-fit-cover">
+                        <!-- Image section-->
+                        <img src="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/38928018-5275-4096-9c62-7b006517e3da"
+                            alt="">
+                        <div class="ratings-count">
+                            221<!--Star-->
+                            <img src="assets/icons/star-black.svg" alt="" class="ms-2">
+                        </div>
+                    </div>
+                    <div class="game-card-bottom">
+                        <div class="flex flex-col sm:flex-row justify-between items-start flex-wrap">
+                            <div class="py-1">
+                                <!-- Game name -->
+                                <h4 class="text-white uppercase game-card-title">PACKABUNCHAS </h4>
+                                <!-- Game discription -->
+                                <p class="para-text">Beyond the Stars, They Embrace. Space Huggers: Alien Affection
+                                    Awaits....</p>
+                            </div>
+                            <div class="star-rating mt-2 sm:mt-0 py-1">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green-half.svg">
+                            </div>
+                        </div>
+
+                        <div class="block-wrap flex justify-between items-end">
+                            <div class="details-group">
+                                <div class="flex items-center">
+                                    <!-- Release date -->
+                                    <p class="font-semibold">Release Date: &nbsp;</p>
+                                    <p>07.12.2015</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <!-- update section -->
+                                    <p class="font-semibold">Updated: &nbsp;</p>
+                                    <p>Action | Desktop</p>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col items-end justify-between">
+                                <!-- Play Button -->
+                                <a target="_blank" href="SinglePlayer - Games/PACKABUNCHAS/index.html"
+                                    class="btn-primary uppercase">play now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Game card- 8 end -->
+
+                <!-- Game card- 9 start -->
+                <div class="game-card">
+                    <video src="https://drive.google.com/uc?id=1IifZmdbX3GJQlLkQcmJXKdi6V4R_AB1t" type="video/mp4" muted
+                        loop class="clip"></video>
+                    <div class="game-card-top display-none img-fit-cover">
+                        <!-- Image section-->
+                        <img src="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/1413b604-f4fd-432f-a78e-337a4e0739f3"
+                            alt="">
+                        <div class="ratings-count">
+                            341 <!--Star-->
+                            <img src="assets/icons/star-black.svg" alt="" class="ms-2">
+                        </div>
+                    </div>
+                    <div class="game-card-bottom">
+                        <div class="flex flex-col sm:flex-row justify-between items-start flex-wrap">
+                            <div class="py-1">
+                                <!-- Game name -->
+                                <h4 class="text-white uppercase game-card-title">SPACESHIP ESCORT </h4>
+                                <!-- Game discription -->
+                                <p class="para-text">Embrace the Darkness. Unleash the Decay. SPACESHIP ESCORT: Masters
+                                    of survival....</p>
+                            </div>
+                            <div class="star-rating mt-2 sm:mt-0 py-1">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green.svg">
+                                <img src="assets/icons/star-green-half.svg">
+                            </div>
+                        </div>
+
+                        <div class="block-wrap flex justify-between items-end">
+                            <div class="details-group">
+                                <div class="flex items-center">
+                                    <!-- Release date -->
+                                    <p class="font-semibold">Release Date: &nbsp;</p>
+                                    <p>07.12.2015</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <!-- update section -->
+                                    <p class="font-semibold">Updated: &nbsp;</p>
+                                    <p>Action | Desktop</p>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col items-end justify-between">
+                                <!-- Play Button -->
+                                <a target="_blank" href="SinglePlayer - Games/Spaceship Escort/index.html"
+                                    class="btn-primary uppercase">play now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Game card- 9 end -->
             </div>
-        </section>
-        <!--===== News section end ====-->
-        
-
-        <!-- ===== Our stats section start =====-->
-        <section class = "py-16 sc-popular bg-violet-dark-active">
-          <div class="stats" id="stats">
-            <!-- Hesding -->
-                <div class = "sc-title">
-                    <h3>Our <span>Stats</span></h3>
-                    <div class="line"></div>
-                </div>
-
-                <div class="counter-container">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="counter">
-                                <div class="counter-icon">
-                                    <i class="fa  fa-user "></i>
-                                </div>
-                                <span class="counter-value">1000</span>
-                                <h3>Users</h3>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="counter">
-                                <div class="counter-icon">
-                                    <i class="fa fa-check "></i>
-                                </div>
-                                <span class="counter-value">100</span>
-                                <h3>Daily Users</h3>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="counter">
-                                <div class="counter-icon">
-                                    <i class="fa fa-gamepad"></i>
-                                </div>
-                                <span class="counter-value">90</span>
-                                <h3>Games</h3>
-                            </div>
-                        </div>
-                       
-                    </div>
-                </div>
-    </div>
-</section>
-<!-- ===== Our stats section end =====-->
-
-<!--===== Social media section start ====-->
-<section class = "py-16 sc-popular bg-violet-dark-active">
-    <div class="stats" id="stats">
-            <div class = "sc-title">
-                        <h3>Contact <span>Us</span></h3>
-                        <div class="line"></div>
-                    </div>
-        <div class="wrapper">
-            <!-- discord -->
-            <a target="_blank" href="https://discord.gg/dakzwdz4ev" class="icon facebook">
-              <div class="tooltip">Discord</div>
-              <span><i class="fab fa-discord"></i></span>
-            </a>
-            <!-- Facebook -->
-            <a target="_blank" href=" https://www.facebook.com/profile.php?id=100092184203215&mibextid=ZbWKwL" class="icon twitter">
-              <div class="tooltip">Facebook</div>
-              <span><i class="fab fa-facebook"></i></span>
-            </a>
-            <!-- Instagram -->
-            <a target="_blank" href="https://www.instagram.com/gam_esphere/?igshid=MmJiY2I4NDBkZg%3D%3D" class="icon instagram">
-              <div class="tooltip">Instagram</div>
-              <span><i class="fab fa-instagram"></i></span>
-            </a>
-            <!-- GitHub -->
-            <a target="_blank" href="https://github.com/GameSphere-MultiPlayer" class="icon github">
-              <div class="tooltip">Github</div>
-              <span><i class="fab fa-github"></i></span>
-            </a>
-            <!-- Linked In -->
-            <a target="_blank" href="https://www.linkedin.com/company/gamesphere-multiplayer/" class="icon linkedin">
-              <div class="tooltip">Linkedin</div>
-              <span><i class="fab fa-linkedin"></i></span>
-            </a>
-          </div>
-          <br>
+            <div class="flex justify-center mt-[60px]">
+                <a target="_blank" href="additionalpage/game.html" class="section-btn">see more games</a>
+            </div>
         </div>
     </section>
-<!--===== Social media section end ====-->
+    <!--==== game section end ====-->
 
-    <!--====== Footer section start =======-->
-        <footer class = "footer">
-            <div class = "footer-top">
-                <div class = "container grid gap-6 lg:grid-cols-[2fr_repeat(3,1fr)] text-center lg:text-start">
-                    <div class = "footer-item">
-                        <a href = "#" class = "navbar-brand">Game<span>Sphere</span></a>
-                        <p class = "para-text">In this platform we are here to play games with our friends at a same time without any interuption without download any software or tools to their computers or mobile devices..</p>
+    <!--==== Banner section start ====-->
+    <div class="py-16 bg-violet-darker overflow-hidden">
+        <div class="game-slider">
+            <!-- Banner - 1 -->
+            <div class="slider-item img-fit-cover">
+                <img src="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/68c791f4-51b0-473f-8486-f0fa8db4c6cb"
+                    class="slider-item-img">
+            </div>
+            <!-- Banner - 2 -->
+            <div class="slider-item img-fit-cover">
+                <img src="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/fb5a5094-207d-4930-b6d2-37b72f9c77a1"
+                    class="slider-item-img">
+            </div>
+            <!-- Banner - 3 -->
+            <div class="slider-item img-fit-cover">
+                <img src="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/4a4ae1d0-8542-4054-99c6-2975801d4724"
+                    class="slider-item-img">
+            </div>
+            <!-- Banner - 4 -->
+            <div class="slider-item img-fit-cover">
+                <img src="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/33e84ea1-f052-4422-90bc-179692c1832b"
+                    class="slider-item-img">
+            </div>
+            <!-- Banner - 5 -->
+            <div class="slider-item img-fit-cover">
+                <img src="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/a494243f-9bbb-4446-8472-8d67244f97d4"
+                    class="slider-item-img">
+            </div>
+            <!-- Banner - 6 -->
+            <div class="slider-item img-fit-cover">
+                <img src="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/001613f2-2412-4880-8b21-974fa357169e"
+                    class="slider-item-img">
+            </div>
+            <!-- Banner - 7 -->
+            <div class="slider-item img-fit-cover">
+                <img src="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/427316a8-b850-4501-8298-670407636fe3"
+                    class="slider-item-img">
+            </div>
+        </div>
+    </div>
+    <!--==== Banner section end ====-->
+
+    <!--==== Discord community section start ====-->
+    <section
+        class="py-16 sc-join flex items-center bg-join-image relative after:absolute after:content-[''] after:bg-gradient-to-b after:from-black/50 after:to-black/50 after:bg-center after:bg-cover after:bg-no-repeat">
+        <div class="container w-full">
+            <div class="join-content">
+                <h2 class="join-title uppercase"><span>join the community</span></h2>
+                <p class="lead-text py-2">Join our Discord community which is in the making and made by gamers for
+                    gamers. All are welcome to join no matter the game you play, we're here to have a good.</p>
+                <button type="button" class="mt-4"><a class="discord-btn" target="_blank"
+                        href="https://discord.gg/dakzwdz4ev">join discord</a></button>
+            </div>
+        </div>
+    </section>
+    <!--==== Discord community section end ====-->
+
+    <!--===== News section start ====-->
+    <section class="py-16 sc-posts bg-violet-dark-active">
+        <div class="container">
+            <!-- Title of news start-->
+            <div class="sc-title">
+                <h3>latest <span>news</span></h3>
+                <div class="line"></div>
+            </div>
+            <!-- Title of news end-->
+
+            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <!--===  News cars - 1 Start ====-->
+                <div class="game-post">
+                    <div class="game-post-img">
+                        <!-- image -->
+                        <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/06/red-dead-redemption-2-cain-jack-dutch.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5"
+                            alt="">
                     </div>
+                    <div class="game-post-body py-4 px-7">
+                        <!-- heading -->
+                        <h3 class="game-post-title pb-3 border-b-[1px] border-b-violet-dark-">Red Dead Redemption 2 Dog
+                            Cain Has Passed Away in Real Life .</h3>
 
-                    <div class = "footer-item">
-                        <h5 class = "footer-item-title">quick link</h5>
-                        <ul class = "footer-item-links">
-                            <li><a target="_blank" href = "#">Gaming</a></li>
-                            <li><a target="_blank" href = "#">Product</a></li>
-                            <li><a target="_blank" href = "#">About Us</a></li>
-                            <li><a target="_blank" href = "#">Community</a></li>
-                        </ul>
-                    </div>
+                        <div class="flex justify-between items-center mt-[10px]">
+                            <!-- publised -->
+                            <span class="font-normal text-[13px]">PUBLISHED 1 HOUR AGO</span>
+                            <!-- published by -->
+                            <p class="text-[13px]">By: <span class="text-green-normal font-semibold">LUIE
+                                    MAGBANUA</span> </p>
+                        </div>
+                        <!-- discription -->
+                        <p class="para-text">The owner of the dog that played as the animal motion capture actor of Cain
+                            in Red Dead Redemption 2 has announced that the canine has recently passed away. Though only
+                            a minor character in Red Dead Redemption 2, the game's players, who have a soft spot for
+                            animals, likely remember Cain fondly and will probably be saddened by the news....</p>
 
-                    <div class = "footer-item">
-                        <h5 class = "footer-item-title">supports</h5>
-                        <ul class = "footer-item-links">
-                            <li><a target="_blank" href = "#">Settings & Privacy</a></li>
-                            <li><a target="_blank" href = "#">Help & Support</a></li>
-                            <li><a target="_blank" href = "#">Report</a></li>
-                            <li><a target="_blank" href = "#">Our News</a></li>
-                        </ul>
-                    </div>
-
-                    <div class = "footer-item">
-                        <h5 class = "footer-item-title">newsletter</h5>
-                        <p class = "para-text">Subscribe our newsletter to get our latest update & news consectetur</p>
-
-                        <form class = "newsletter-form mt-4">
-                            <div class = "input-group">
-                                <input type = "text" class = "input-group-field outline-none" placeholder="Your email address" />
-                                <button class = "input-group-btn" type = "button">
-                                    <i class = "fa-solid fa-paper-plane"></i>
-                                </button>
+                        <div class="flex items-center justify-between">
+                            <!-- read more -->
+                            <a target="_blank" href="https://gamerant.com/red-dead-redemption-2-dog-cain-died/"
+                                class="btn-secondary uppercase">read more</a>
+                            <div class="flex items-center">
+                                <span class="font-bold text-[13px] flex me-[25px]">
+                                    <img src="assets/icons/eye.svg" alt="" class="w-[20px] me-2"> 123 <!-- views -->
+                                </span>
+                                <span class="font-bold text-[13px] flex">
+                                    <img src="assets/icons/message.svg" alt="" class="w-[17px] me-2">
+                                    45<!-- comments -->
+                                </span>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-        <!--====== Footer section end =======-->
-        <footer id="footer1">
-            <p>Copyright &nbsp;&copy;&nbsp;&nbsp;[2023] [GAMESPHERE]. All Rights Reserved.</p>
-        </footer>
-          <div class="scrollToTopContainer">
-        <button
-          id="scrollToButton"
-          class="HideElement scrollToTopButton"
-          title="Click to scroll top"
-        >
-          <img src="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/f2be77e8-60c9-4209-8f31-bcea8646f45d" alt="Scroll-To-Top" />
-        </button>
-      </div>
+                <!--===  News cars - 1 end ====-->
 
-      <!-- color theme part starts -->
-      <div class="theam-div open ">
+                <!--===  News cars - 2 Start ====-->
+                <div class="game-post">
+                    <div class="game-post-img">
+                        <!-- image -->
+                        <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/06/destiny-2-diablo-4-cover.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5"
+                            alt="">
+                    </div>
+                    <div class="game-post-body py-4 px-7">
+                        <!-- heading -->
+                        <h3 class="game-post-title pb-3 border-b-[1px] border-b-violet-dark-">Destiny 2 Dev Faces
+                            Backlash Due to Negative Diablo 4 Comments </h3>
+
+                        <div class="flex justify-between items-center mt-[10px]">
+                            <!-- publised -->
+                            <span class="font-normal text-[13px]">PUBLISHED 2 HOURS AGO</span>
+                            <!-- published by -->
+                            <p class="text-[13px]">By: <span class="text-green-normal font-semibold">MIGUEL LUIS
+                                    LLADO</span> </p>
+                        </div>
+                        <!-- discription -->
+                        <p class="para-text">A Destiny 2 developer is receiving some backlash due to their criticism of
+                            Diablo 4. While Destiny and Diablo are two completely different games with unique gameplay
+                            mechanics, both share some elements that could be comparable, especially the multi-player
+                            and leveling aspects. The title has been out for over a week, but fans have already been
+                            quick to form....</p>
+
+                        <div class="flex items-center justify-between">
+                            <!-- read more -->
+                            <a target="_blank"
+                                href="https://gamerant.com/destiny-2-backlash-negative-diablo-4-comments/"
+                                class="btn-secondary uppercase">read more</a>
+                            <div class="flex items-center">
+                                <span class="font-bold text-[13px] flex me-[25px]">
+                                    <img src="assets/icons/eye.svg" alt="" class="w-[20px] me-2"> 124<!-- views -->
+                                </span>
+                                <span class="font-bold text-[13px] flex">
+                                    <img src="assets/icons/message.svg" alt="" class="w-[17px] me-2">
+                                    25<!-- comments -->
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--===  News cars - 2 end ====-->
+
+                <!--===  News cars - 3 Start ====-->
+                <div class="game-post">
+                    <div class="game-post-img">
+                        <!-- image -->
+                        <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/06/dan-houser-over-gta-background.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5"
+                            alt="">
+                    </div>
+                    <div class="game-post-body py-4 px-7">
+                        <!-- heading -->
+                        <h3 class="game-post-title pb-3 border-b-[1px] border-b-violet-dark-">Rockstar Co-Founder
+                            Reveals His Latest Venture</h3>
+                        <div class="flex justify-between items-center mt-[10px]">
+                            <!-- publised -->
+                            <span class="font-normal text-[13px]">PUBLISHED 6 HOURS AGO</span>
+                            <!-- published by -->
+                            <p class="text-[13px]">By: <span class="text-green-normal font-semibold">Joseph Allen</span>
+                            </p>
+                        </div>
+                        <!-- discription -->
+                        <p class="para-text">Having already left his mark on the world of gaming through years spent
+                            helming franchises like Grand Theft Auto and Red Dead Redemption, Rockstar Games co-founder
+                            Dan Houser has announced his latest venture, a cross-media company named Absurd Ventures.
+                            One of the driving forces behind some of the largest properties in the industry....</p>
+                        <div class="flex items-center justify-between">
+                            <!-- read more -->
+                            <a target="_blank"
+                                href="https://gamerant.com/rockstar-co-founder-dan-houser-absurd-ventures/"
+                                class="btn-secondary uppercase">read more</a>
+                            <div class="flex items-center">
+                                <span class="font-bold text-[13px] flex me-[25px]">
+                                    <img src="assets/icons/eye.svg" alt="" class="w-[20px] me-2"> 223<!-- views -->
+                                </span>
+                                <span class="font-bold text-[13px] flex">
+                                    <img src="assets/icons/message.svg" alt="" class="w-[17px] me-2">
+                                    145<!-- comments -->
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--===  News cars - 3 end ====-->
+
+                <!--===  News cars - 4 Start ====-->
+                <div class="game-post">
+                    <div class="game-post-img">
+                        <!-- image -->
+                        <img src="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/44e2c040-91ac-4345-b7ab-13695a229019"
+                            alt="">
+                    </div>
+                    <div class="game-post-body py-4 px-7">
+                        <!-- heading -->
+                        <h3 class="game-post-title pb-3 border-b-[1px] border-b-violet-dark-">Total War: Warhammer 3
+                            Chaos Dwarfs DLC Shows Zhatan's ...</h3>
+
+                        <div class="flex justify-between items-center mt-[10px]">
+                            <!-- publised -->
+                            <span class="font-normal text-[13px]">March 31, 2023 7:46 AM</span>
+                            <!-- published by -->
+                            <p class="text-[13px]">By: <span class="text-green-normal font-semibold">Joseph Allen</span>
+                            </p>
+                        </div>
+                        <!-- discription -->
+                        <p class="para-text">The upcoming My Time at Sandrock Knives Out update now has a release date.
+                            The update, which adds a marriage system, new story content, and lots more, is scheduled to
+                            arrive ...</p>
+
+                        <div class="flex items-center justify-between">
+                            <!-- read more -->
+                            <a target="_blank"
+                                href="https://techraptor.net/gaming/news/total-war-warhammer-3-chaos-dwarfs-dlc-shows-zhatans-campaign-in-gameplay-video"
+                                class="btn-secondary uppercase">read more</a>
+                            <div class="flex items-center">
+                                <span class="font-bold text-[13px] flex me-[25px]">
+                                    <img src="assets/icons/eye.svg" alt="" class="w-[20px] me-2"> 119<!-- views -->
+                                </span>
+                                <span class="font-bold text-[13px] flex">
+                                    <img src="assets/icons/message.svg" alt="" class="w-[17px] me-2">
+                                    43<!-- comments -->
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--===  News cars - 4 end ====-->
+
+                <!--===  News cars - 5 Start ====-->
+                <div class="game-post">
+                    <div class="game-post-img">
+                        <!-- image -->
+                        <img src="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/c00da120-afa4-41b2-8f14-d49bd77d9826"
+                            alt="">
+                    </div>
+                    <div class="game-post-body py-4 px-7">
+                        <!-- heading -->
+                        <h3 class="game-post-title pb-3 border-b-[1px] border-b-violet-dark-">Nobunaga's Ambition:
+                            Awakening Is Heading West In July</h3>
+
+                        <div class="flex justify-between items-center mt-[10px]">
+                            <!-- publised -->
+                            <span class="font-normal text-[13px]">March 31, 2023 7:46 AM</span>
+                            <!-- published by -->
+                            <p class="text-[13px]">By: <span class="text-green-normal font-semibold">Joseph Allen</span>
+                            </p>
+                        </div>
+                        <!-- discription -->
+                        <p class="para-text">The upcoming My Time at Sandrock Knives Out update now has a release date.
+                            The update, which adds a marriage system, new story content, and lots more, is scheduled to
+                            arrive ...</p>
+
+                        <div class="flex items-center justify-between">
+                            <!-- read more -->
+                            <a target="_blank"
+                                href="https://techraptor.net/gaming/news/nobunagas-ambition-awakening-is-heading-west-in-july"
+                                class="btn-secondary uppercase">read more</a>
+                            <div class="flex items-center">
+                                <span class="font-bold text-[13px] flex me-[25px]">
+                                    <img src="assets/icons/eye.svg" alt="" class="w-[20px] me-2"> 223<!-- views -->
+                                </span>
+                                <span class="font-bold text-[13px] flex">
+                                    <img src="assets/icons/message.svg" alt="" class="w-[17px] me-2">
+                                    157<!-- comments -->
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--===  News cars - 5 end ====-->
+
+                <!--===  News cars - 6 Start ====-->
+                <div class="game-post">
+                    <div class="game-post-img">
+                        <!-- image -->
+                        <img src="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/6e0fa32c-95a9-42da-acfb-49ea553d7d28"
+                            alt="">
+                    </div>
+                    <div class="game-post-body py-4 px-7">
+                        <!-- heading -->
+                        <h3 class="game-post-title pb-3 border-b-[1px] border-b-violet-dark-">Cyberpunk 2077 Phantom
+                            Liberty Promotion Starts in June as CD</h3>
+
+                        <div class="flex justify-between items-center mt-[10px]">
+                            <!-- publised -->
+                            <span class="font-normal text-[13px]">june 1, 2023 7:46 AM</span>
+                            <!-- published by -->
+                            <p class="text-[13px]">By: <span class="text-green-normal font-semibold">Rahul
+                                    Chettiyar</span> </p>
+                        </div>
+                        <!-- discription -->
+                        <p class="para-text">The upcoming My Time at Sandrock Knives Out update now has a release date.
+                            The update, which adds a marriage system, new story content, and lots more, is scheduled to
+                            arrive ...</p>
+
+                        <div class="flex items-center justify-between">
+                            <!-- read more -->
+                            <a target="_blank"
+                                href="https://www.gadgets360.com/games/news/cyberpunk-2077-phantom-liberty-release-date-pre-order-trailer-gameplay-price-idris-elba-keanu-reeves-cd-projekt-red-4117827"
+                                class="btn-secondary uppercase">read more</a>
+                            <div class="flex items-center">
+                                <span class="font-bold text-[13px] flex me-[25px]">
+                                    <img src="assets/icons/eye.svg" alt="" class="w-[20px] me-2"> 223<!-- views -->
+                                </span>
+                                <span class="font-bold text-[13px] flex">
+                                    <img src="assets/icons/message.svg" alt="" class="w-[17px] me-2">
+                                    36<!-- comments -->
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--===  News cars - 6 end ====-->
+            </div>
+        </div>
+    </section>
+    <!--===== News section end ====-->
+
+
+    <!-- ===== Our stats section start =====-->
+    <section class="py-16 sc-popular bg-violet-dark-active">
+        <div class="stats" id="stats">
+            <!-- Hesding -->
+            <div class="sc-title">
+                <h3>Our <span>Stats</span></h3>
+                <div class="line"></div>
+            </div>
+
+            <div class="counter-container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="counter">
+                            <div class="counter-icon">
+                                <i class="fa  fa-user "></i>
+                            </div>
+                            <span class="counter-value">1000</span>
+                            <h3>Users</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="counter">
+                            <div class="counter-icon">
+                                <i class="fa fa-check "></i>
+                            </div>
+                            <span class="counter-value">100</span>
+                            <h3>Daily Users</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="counter">
+                            <div class="counter-icon">
+                                <i class="fa fa-gamepad"></i>
+                            </div>
+                            <span class="counter-value">90</span>
+                            <h3>Games</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== Our stats section end =====-->
+
+    <!--===== Social media section start ====-->
+    <section class="py-16 sc-popular bg-violet-dark-active">
+        <div class="stats" id="stats">
+            <div class="sc-title">
+                <h3>Contact <span>Us</span></h3>
+                <div class="line"></div>
+            </div>
+            <div class="wrapper">
+                <!-- discord -->
+                <a target="_blank" href="https://discord.gg/dakzwdz4ev" class="icon facebook">
+                    <div class="tooltip">Discord</div>
+                    <span><i class="fab fa-discord"></i></span>
+                </a>
+                <!-- Facebook -->
+                <a target="_blank" href=" https://www.facebook.com/profile.php?id=100092184203215&mibextid=ZbWKwL"
+                    class="icon twitter">
+                    <div class="tooltip">Facebook</div>
+                    <span><i class="fab fa-facebook"></i></span>
+                </a>
+                <!-- Instagram -->
+                <a target="_blank" href="https://www.instagram.com/gam_esphere/?igshid=MmJiY2I4NDBkZg%3D%3D"
+                    class="icon instagram">
+                    <div class="tooltip">Instagram</div>
+                    <span><i class="fab fa-instagram"></i></span>
+                </a>
+                <!-- GitHub -->
+                <a target="_blank" href="https://github.com/GameSphere-MultiPlayer" class="icon github">
+                    <div class="tooltip">Github</div>
+                    <span><i class="fab fa-github"></i></span>
+                </a>
+                <!-- Linked In -->
+                <a target="_blank" href="https://www.linkedin.com/company/gamesphere-multiplayer/"
+                    class="icon linkedin">
+                    <div class="tooltip">Linkedin</div>
+                    <span><i class="fab fa-linkedin"></i></span>
+                </a>
+            </div>
+            <br>
+        </div>
+    </section>
+    <!--===== Social media section end ====-->
+
+    <!--====== Footer section start =======-->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container grid gap-6 lg:grid-cols-[2fr_repeat(3,1fr)] text-center lg:text-start">
+                <div class="footer-item">
+                    <a href="#" class="navbar-brand">Game<span>Sphere</span></a>
+                    <p class="para-text">In this platform we are here to play games with our friends at a same time
+                        without any interuption without download any software or tools to their computers or mobile
+                        devices..</p>
+                </div>
+
+                <div class="footer-item">
+                    <h5 class="footer-item-title">quick link</h5>
+                    <ul class="footer-item-links">
+                        <li><a target="_blank" href="#">Gaming</a></li>
+                        <li><a target="_blank" href="#">Product</a></li>
+                        <li><a target="_blank" href="#">About Us</a></li>
+                        <li><a target="_blank" href="#">Community</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-item">
+                    <h5 class="footer-item-title">supports</h5>
+                    <ul class="footer-item-links">
+                        <li><a target="_blank" href="#">Settings & Privacy</a></li>
+                        <li><a target="_blank" href="#">Help & Support</a></li>
+                        <li><a target="_blank" href="#">Report</a></li>
+                        <li><a target="_blank" href="#">Our News</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-item">
+                    <h5 class="footer-item-title">newsletter</h5>
+                    <p class="para-text">Subscribe our newsletter to get our latest update & news consectetur</p>
+
+                    <form class="newsletter-form mt-4">
+                        <div class="input-group">
+                            <input type="text" class="input-group-field outline-none"
+                                placeholder="Your email address" />
+                            <button class="input-group-btn" type="button">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--====== Footer section end =======-->
+    <footer id="footer1">
+        <p>Copyright &nbsp;&copy;&nbsp;&nbsp;[2023] [GAMESPHERE]. All Rights Reserved.</p>
+    </footer>
+    <div class="scrollToTopContainer">
+        <button id="scrollToButton" class="HideElement scrollToTopButton" title="Click to scroll top">
+            <img src="./assets/images/pngegg(3).png" style="scale: 1.4; border-radius: 50%;"
+                alt="Scroll-To-Top" />
+        </button>
+    </div>
+
+    <!-- color theme part starts -->
+    <div class="theam-div open ">
         <div class="button-part">
-            
-            <div class="setting"  onclick="translatex()">
-                <i class="fa-solid fa-gear setting-icon" ></i>
+
+            <div class="setting" onclick="translatex()">
+                <i class="fa-solid fa-gear setting-icon"></i>
             </div>
         </div>
 
@@ -1029,48 +1150,83 @@
         </div>
     </div>
 
-    
+
+    <!-- Chat GPT BOT -->
+	<button class="chatbot__button">
+		<span class="material-symbols-outlined">mode_comment</span>
+		<span class="material-symbols-outlined">close</span>
+	</button>
+	<div class="chatbot">
+		<div class="chatbot__header">
+			<h3 class="chatbox__title"><b>GameSphere 24/7</b>
+            </h3>
+			<span class="material-symbols-outlined">close</span>
+		</div>
+		<ul class="chatbot__box">
+			<li class="chatbot__chat incoming">
+				<span class="material-symbols-outlined">smart_toy</span>
+				<p>Welcome !</p>
+			</li>
+			<li class="chatbot__chat outgoing">
+				<p>...</p>
+			</li>
+		</ul>
+		<div class="chatbot__input-box">
+			<textarea class="chatbot__textarea" placeholder="Enter a message..." required></textarea>
+			<span id="send-btn" class="material-symbols-outlined">send</span>
+		</div>
+	</div>
+	<!--  chat bot finish  -->
+
+    <!-- js chatbot -->
+    <script src="./chatBot/script.js"></script>
 
     <!-- color theme part end -->
-        <!-- jquery cdn -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <!-- slick slider js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <!-- custom script js -->
-        <script src="src/script.js"></script>
-        <script src="src/color-theme.js"></script>
-        <script src="src/video.js"></script>
-         <script>
-    let section_counter = document.querySelector('#stats');
-    let counters = document.querySelectorAll('.counter-item .counter');
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- slick slider js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- custom script js -->
+    <script src="src/script.js"></script>
+    <script src="src/color-theme.js"></script>
+    <script src="src/video.js"></script>
+    <script>
+        let section_counter = document.querySelector('#stats');
+        let counters = document.querySelectorAll('.counter-item .counter');
 
-    // Scroll Animation
+        // Scroll Animation
 
-    $(document).ready(function(){
-    $('.counter-value').each(function(){
-        $(this).prop('Counter',0).animate({
-            Counter: $(this).text()
-        },{
-            duration: 3500,
-            easing: 'swing',
-            step: function (now){
-                $(this).text(Math.ceil(now));
-            }
+        $(document).ready(function () {
+            $('.counter-value').each(function () {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 3500,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
         });
-    });
-});
 
-    // revealing effect start
-    ScrollReveal({ reset: true ,
-        distance:'100px',
-        duration:1500,
-        delay:200
-    });
+        // revealing effect start
+        ScrollReveal({
+            reset: true,
+            distance: '100px',
+            duration: 1500,
+            delay: 200
+        });
 
-    ScrollReveal().reveal('.sc-title', { delay: 200 });
-    ScrollReveal().reveal('.game-card', { delay: 200 ,origin:'left'});
-    ScrollReveal().reveal('.game-post', { delay: 200,origin:'left' });
+        ScrollReveal().reveal('.sc-title', { delay: 200 });
+        ScrollReveal().reveal('.game-card', { delay: 200, origin: 'left' });
+        ScrollReveal().reveal('.game-post', { delay: 200, origin: 'left' });
 
     </script>
-    </body>
+</body>
+
 </html>
