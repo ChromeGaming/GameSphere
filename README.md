@@ -239,7 +239,8 @@ ________________________________________________________________________________
 | 156 | [Frogger](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Frogger) |
 | 157 | [Spider Man Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Spider_Man_Go) |
 | 158 | [Slide and Solve](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Slide_and_Solve) |
-| 158 | [3D Snake](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/3d_Snake) |
+| 159 | [3D Snake](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/3d_Snake) |
+| 160 | [Escape_Room](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Escape_Room) |
 
 
 
