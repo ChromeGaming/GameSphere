@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
     // sidebar toggle
     $("#navbar-show-btn").click(() => $('.navbar-collapse').removeClass('translate-x-full'));
     $('#navbar-hide-btn').click(() => $('.navbar-collapse').addClass('translate-x-full'));
@@ -13,7 +13,7 @@ $(document).ready(function(){
         }, 400);
     });
 
-     // Seach Bar
+    // Seach Bar
     // Get the search input element
     const searchInput = document.getElementById('search');
 
@@ -21,8 +21,10 @@ $(document).ready(function(){
     const gameCards = document.querySelectorAll('.game-card');
 
     // Function to filter game cards based on search input
+    // Function to filter game cards based on search input
     const filterGameCards = () => {
         const searchTerm = searchInput.value.toLowerCase();
+        let hasResults = false; // Flag to check if any results were found
 
         gameCards.forEach((card) => {
             const title = card.querySelector('.game-card-title').innerText.toLowerCase();
@@ -30,11 +32,21 @@ $(document).ready(function(){
 
             if (title.includes(searchTerm) || description.includes(searchTerm)) {
                 card.style.display = 'block';
+                hasResults = true;
             } else {
                 card.style.display = 'none';
             }
         });
+
+        if (!hasResults) {
+            // Show random game suggestions
+            const randomCards = Array.from(gameCards).sort(() => 0.5 - Math.random()).slice(0, 3);
+            randomCards.forEach((card) => {
+                card.style.display = 'block';
+            });
+        }
     };
+
 
     // Add event listener for input changes
     searchInput.addEventListener('input', filterGameCards);
@@ -81,8 +93,8 @@ $(document).ready(function(){
     let initialActiveCategory = $($(buttonGroup)[0]).data('filter');
 
     const setActiveButton = (categoryName) => {
-        jQuery.each(buttonGroup, function(index, buttonItem){
-            if($(buttonItem).data('filter') == categoryName){
+        jQuery.each(buttonGroup, function (index, buttonItem) {
+            if ($(buttonItem).data('filter') == categoryName) {
                 $(buttonItem).addClass('active-filter-button');
             } else {
                 $(buttonItem).removeClass('active-filter-button');
@@ -91,8 +103,8 @@ $(document).ready(function(){
     }
 
     const filterItems = (categoryName) => {
-        jQuery.each(categoryItemsList, function(index, categoryItem){
-            if($(categoryItem).hasClass(categoryName)){
+        jQuery.each(categoryItemsList, function (index, categoryItem) {
+            if ($(categoryItem).hasClass(categoryName)) {
                 $(categoryItem).css('display', 'block');
             } else {
                 $(categoryItem).css('display', 'none');
@@ -103,8 +115,8 @@ $(document).ready(function(){
     setActiveButton(initialActiveCategory);
     filterItems(initialActiveCategory);
 
-    jQuery.each(buttonGroup, function(index, buttonItem){
-        $(buttonItem).click(function(){
+    jQuery.each(buttonGroup, function (index, buttonItem) {
+        $(buttonItem).click(function () {
             let categoryName = $(buttonItem).data('filter');
             setActiveButton(categoryName);
             filterItems(categoryName);
@@ -112,19 +124,19 @@ $(document).ready(function(){
     })
 });
 
-  const scrollToTopHandler = () => {
-  let btn = document.getElementById("scrollToButton");
-  if (window.scrollY > 500) {
-    btn.className = "scrollToTopButton";
-  } else {
-    btn.className = "HideElement scrollToTopButton";
-  }
+const scrollToTopHandler = () => {
+    let btn = document.getElementById("scrollToButton");
+    if (window.scrollY > 500) {
+        btn.className = "scrollToTopButton";
+    } else {
+        btn.className = "HideElement scrollToTopButton";
+    }
 };
 window.addEventListener("scroll", scrollToTopHandler);
 document.getElementById("scrollToButton").addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
 });
 
