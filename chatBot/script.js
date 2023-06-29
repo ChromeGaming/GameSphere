@@ -7,7 +7,7 @@ const chatbotCloseBtn = document.querySelector(".chatbot__header span");
 let userMessage;
 // Need GPT key
 const inputInitHeight = chatInput.scrollHeight;
-const API_KEY = "Enter Your API"; // ! IMPORTANT !
+const API_KEY = "e854053592msh219dcc2e1217963p15e67cjsn622b853e9457"; // ! IMPORTANT !
 
 const createChatLi = (message, className) => {
   const chatLi = document.createElement("li");
