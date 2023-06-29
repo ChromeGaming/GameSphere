@@ -105,6 +105,9 @@
   justify-content: flex-end;
   margin: 20px 0;
 }
+.outgoing p{
+  color: white;
+}
 .incoming {
   margin: 20px 0;
 }
