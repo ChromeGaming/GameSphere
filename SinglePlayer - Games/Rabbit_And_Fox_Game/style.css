@@ -1,0 +1,101 @@
+* {
+			font-family: arial;
+		}
+		#theGame {
+			width: 100%;
+			border-left: 1px solid lightblue;
+			border-right: 1px solid lightblue;
+			border-bottom: 2px solid #e65189;
+			margin: auto;
+			position: relative;
+			overflow: hidden;
+
+		}
+		#theGame img {
+			position: absolute;
+			display: table;
+			width: 60px;
+			height: 100px;
+			top: 0%;
+		}
+		#points_loses {
+			position: relative;
+
+		}
+		#points  {
+			float: left;
+			margin-left: 35%;
+			font-size: 13px;
+		}
+		#points span {
+			font-size: 25px;
+			color: #e65189;
+		}
+		#loses {
+			float: right;
+			margin-right: 5px;
+			font-size: 13px;
+		}
+		#loses span {
+			font-size: 25px;
+			color: #e65189;
+		}
+
+
+		#gameOverContainer {
+
+			width: 96%;
+			height: 500px;
+			background-color: silver;
+			position: absolute;
+			top: 0%;
+			display: none;
+			z-index: 100;
+
+		}
+		#gameOverContainer div {
+			
+			margin: auto;
+			margin-top: 10%;
+			width: 70%;
+			height: 200px;
+			text-align: center;
+			background-color: #e65189;
+			padding-top: 20px;
+
+		}
+		#gameOverContainer div h2 {
+			color: white;
+		}
+		#gameOverContainer div a {
+			color: white;
+			border: 1px solid white;
+			padding: 5px 5px;
+			text-decoration: none;
+
+		}
+		#startGameContainer {
+			width: 96%;
+			height: 500px;
+			background-color: silver;
+			position: absolute;
+			top: 0%;
+			z-index: 100;
+		}
+		#startGameContainer div {
+			margin: auto;
+			margin-top: 10%;
+			width: 70%;
+			height: 200px;
+			text-align: center;
+			background-color: #e65189;
+			padding-top: 20px;
+		}
+		#startGameContainer div h1 {
+			color: white;
+			border: 1px solid white;
+			padding: 5px 5px;
+			width: 100px;
+			margin: auto;
+			margin-top: 20%;
+		}
