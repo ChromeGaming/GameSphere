@@ -2,10 +2,10 @@
 
 .chatbot__button {
   position: fixed;
-  bottom: 27px;
+  bottom: 25px;
   right: 90px;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,7 @@
   position: fixed;
   bottom: 100px;
   right: 40px;
-  width: 380px;
+  width: 400px;
   background-color: #f3f7f8;
   border-radius: 15px;
   box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1) 0 32px 64px -48px rgba(0, 0, 0, 0.5);
