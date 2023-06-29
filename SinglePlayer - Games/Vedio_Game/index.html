@@ -1,0 +1,73 @@
+<html>
+<head>
+<link rel=¨stylesheet¨ type=¨text/css¨ href=¨style.css¨>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Inconsolata:wght@200&family=Kablammo&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<!---game --->
+<div class="game-body">
+   <!--sounds effects--->
+  <audio id="jump-sound" src="https://github.com/Short-Zed/Movie-Responsive-Site/raw/main/X2Download.app%20-%20Videogame%20Jump%20Sound%20Effect%20HD%20_%20No%20Copyright%20(128%20kbps).mp3" type="audio/mp3" preload="auto"></audio>
+   <audio id="background-sound" src="https://github.com/Short-Zed/Movie-Responsive-Site/raw/main/X2Download.app%20-%20Dimitri%20Vegas%20%26%20Like%20Mike%20vs%20W%26W%20-%20Arcade%20(Official%20Video)%20(128%20kbps).mp3" type="audio/mp3" preload="auto" loop></audio>
+  <audio id="level-up-sound" src="https://github.com/Short-Zed/Movie-Responsive-Site/raw/main/X2Download.app%20-%20Level%20Up%20Sound%20Effect%20(128%20kbps).mp3" type="audio/mp3" preload="auto"></audio>
+  <audio id="game-sound" src="https://github.com/Short-Zed/Movie-Responsive-Site/raw/main/X2Download.app%20-%20Arcade%20retro%20game%20over%20sound%20effect%20(FREE)%20(128%20kbps).mp3" type="audio/mp3" preload="auto"></audio>
+  <audio id="switch-sound" src="https://github.com/Short-Zed/Movie-Responsive-Site/raw/main/X2Download.app%20-%20Mouse%20Click%20-%20SFX%20(128%20kbps).mp3" type="audio/mp3" preload="auto"></audio>
+  
+  
+  <div class="sensor left"></div>
+  <div class="sensor right"></div>
+  
+  <div class="screen">
+    <div class="hero"></div>
+    <div class="villain"></div>
+    <div class="road"></div>
+    
+    <div class="mountain"></div>
+    <div class="mountainTwo"></div>
+    
+    <div class="sky"></div>
+    <div class="sun"></div>
+    
+    <div class="level">Level : 1</div>
+    
+  </div>
+  <!---screen--->
+  
+  <div class="score">
+    score: <span id="score">00</span>
+  </div>
+  
+  <div class="on"></div>
+  
+  <div class="btn left" onclick="start()">start</div>
+  <div class="btn right jumpBtn">jump</div>
+  
+  <div class="heros">
+    <span onclick="changeHero('https://cdnb.artstation.com/p/assets/images/images/014/340/567/original/melissa-lam-hero-run-new-gif.gif?1543555791')"></span>
+    <span onclick="changeHero('https://i.gifer.com/XYik.gif')"></span>
+    <span onclick="changeHero('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a3d9ec53-e18f-4dc6-b26f-8e27f9dc28ff/d6t6090-74d8e85b-bfa6-45a8-869b-254fc3e7ff64.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2EzZDllYzUzLWUxOGYtNGRjNi1iMjZmLThlMjdmOWRjMjhmZlwvZDZ0NjA5MC03NGQ4ZTg1Yi1iZmE2LTQ1YTgtODY5Yi0yNTRmYzNlN2ZmNjQuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.hQR2DuHaC1HVOmvo0qPUXinr_vOj34t1HQTAVRatDZ4')"></span>
+  </div>
+  
+  <div class="wire"></div>
+  
+  <div class="game-over">game over<br>
+<i class="fa fa-refresh"></i></div>
+</div>
+<!---game-body--->
+
+<!---msg---->
+<div class="msg">please <span>turn</span> on <span>landscape</span> mode</div>
+
+<!----note---->
+<div class="note">
+ press space <span>button</span> to jump
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,411 @@
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  transition:all .3s;
+  font-family: 'Roboto', sans-serif;
+  user-select:none;
+}
+
+
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  background:#ccc;
+}
+
+
+.note{
+  position:absolute;
+  top:10px;
+  left:10px;
+  text-transform:uppercase;
+  color:#555;
+  font-weight:700;
+}
+
+.note span{
+  color:#C40900;
+}
+
+
+.game-body{
+  width:650px;
+  height:300px;
+  background:#302F30;
+  border-radius:500px;
+  position:relative;
+  box-shadow:0 0 0 4px #000,
+             inset 0 0 5px #1C1C1C;
+}
+
+
+.game-body .screen{
+  background:#87CEEB;
+  box-shadow:0 0 0 2px #000;
+  width:300px;
+  height:250px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  overflow:hidden;
+}
+
+
+.game-body .sensor{
+  width:80px;
+  height:12px;
+  background:#000;
+  position:absolute;
+  left:170px;
+  top:-15px;
+  border-top-left-radius:20px;
+  border-top-right-radius:20px;
+}
+
+
+.game-body .sensor.right{
+  left:400px;
+}
+
+
+
+.game-body .btn{
+  width:80px;
+  height:80px;
+  background:#C10808;
+  border-radius:50%;
+  position:absolute;
+  top:60%;
+  left:50px;
+  transform:translate(0,-50%);
+  cursor:pointer;
+  box-shadow:0 0 5px 2px #000,
+             inset 0 0 8px #000;
+  color:#eee;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-transform:uppercase;
+}
+
+.game-body .btn.right{
+  left:520px;
+  background:#227904;
+}
+
+
+.game-body .btn:hover{
+   font-size:.95em;
+   box-shadow:inset 0 0 5px 2px #000,
+             inset 0 0 8px #000;
+}
+
+
+.game-body .wire{
+  width:5px;
+  height:200px;
+  background:#000;
+  position:absolute;
+  top:-200px;
+  left:50%;
+  transform:translate(-50%,0);
+  border-radius:20px;
+}
+
+
+.game-body .score{
+  width:80px;
+  height:50px;
+  background:#98E52A;
+  color:#C21111;
+  text-transform:uppercase;
+  padding:5px;
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  position:absolute;
+  left:80px;
+  top:25px;
+  font-family: 'Chakra Petch', sans-serif;
+  border-radius:5px;
+  box-shadow:inset 0 0 45px #000,
+             inset 0 0 0 1.2px #000;
+}
+
+.game-body .score span{
+  color:#eee;
+}
+
+
+.game-body .on{
+  width:8px;
+  height:8px;
+  background:#000000;
+  border-radius:50%;
+  position:absolute;
+  top:110px;
+  left:150px;
+  box-shadow:0 0 8px #000000;
+}
+
+
+
+.game-body .heros{
+  width:100px;
+  height:50px;
+  position:absolute;
+  right:48px;
+  top:60px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
+}
+
+.game-body .heros span{
+  width:25px;
+  height:25px;
+  display:block;
+  background:#000;
+  border-radius:50%;
+  cursor:pointer;
+  box-shadow:0 0 4px #000,
+             inset 0 0 2px #000;
+}
+
+
+.game-body .heros span:hover{
+    box-shadow:inset 0 0 4px #000,
+             inset 0 0 2px #000;
+}
+
+.game-body .heros span:nth-child(1){
+  background:url('https://cdnb.artstation.com/p/assets/images/images/018/039/341/smaller_square/melissa-lam-hero-evil-concept.jpg?1558234902');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:100%;
+}
+
+.game-body .heros span:nth-child(2){
+  background:url('https://www.freeonlinegames.com/games/151043/medium.jpg?1571841764');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+.game-body .heros span:nth-child(3){
+  background:url('https://i.gifer.com/fetch/w300-preview/77/770290669c602566eb77478020ad347f.gif');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+
+.game-body .screen .road{
+  width:300px;
+  height:150px;
+  background:url('https://media2.giphy.com/media/vbGLQXbaOoi2WXBNaF/giphy.gif');
+  background-size:cover;
+  position:absolute;
+  bottom:-30px;
+}
+
+
+.game-body .screen .hero{
+  width:60px;
+  height:60px;
+  background:url('https://cdnb.artstation.com/p/assets/images/images/014/340/567/original/melissa-lam-hero-run-new-gif.gif?1543555791');
+  background-size:contain;
+  background-repeat:no-repeat;
+  position:absolute;
+  top:180px;
+  left:0;
+  z-index:2;
+}
+
+.animate{
+   animation:heroJump .5s linear infinite;
+}
+
+
+
+@keyframes heroJump{
+  0%{
+    top:180px;
+  }
+  
+  30%{
+    top:100px;
+  }
+  
+  70%{
+    top:100px;
+  }
+  
+  100%{
+    top:180px;
+  }
+}
+
+
+.game-body .screen .villain{
+  width:60px;
+  height:60px;
+  background:url('https://media.tenor.com/3j0fIKiw2LsAAAAj/sabretooth-x-men.gif');
+  background-size:contain;
+  background-repeat:no-repeat;
+  position:absolute;
+  top:180px;
+  left:200px;
+  transform:rotateY(180deg);
+  z-index:2;
+  animation:villainMove 1.2s linear infinite;
+}
+
+
+@keyframes villainMove{
+  0%{
+    left:300px;
+  }
+  
+  100%{
+    left:-60px;
+  }
+}
+
+
+.game-body .game-over{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align:center;
+  text-transform:uppercase;
+  color:#555;
+  font-family: 'Chakra Petch', sans-serif;
+  display:none;
+}
+
+
+
+.game-body .screen .mountain{
+  width:220px;
+  height:220px;
+  background:#977c53;
+  clip-path: polygon(25% 0%, 83% 45%, 100% 100%, 0% 100%);
+  position:absolute;
+  bottom:0;
+  left:-250px;
+  z-index:-1;
+  animation:mountainMove 5s linear infinite;
+  animation-delay:1s;
+}
+
+.game-body .screen .mountainTwo{
+  width:220px;
+  height:220px;
+  background:#977c53;
+  clip-path: polygon(50% 0%, 87% 52%, 100% 100%, 0 100%, 19% 44%);
+  position:absolute;
+  bottom:0;
+  z-index:-1;
+  animation:mountainMove 6.5s linear infinite;
+}
+
+
+@keyframes mountainMove{
+  0%{
+    left:280px;
+  }
+  
+  100%{
+    left:-250px;
+  }
+}
+
+
+
+.game-body .screen .sky{
+  width:100px;
+  height:50px;
+  background:#eee;
+  filter:blur(25px);
+  position:absolute;
+  top:60px;
+  animation:mountainMove 25s linear infinite;
+}
+
+
+
+.game-body .screen .sun{
+  width:220px;
+  height:220px;
+  border-radius:50%;
+  background:#FDB813;
+  position:absolute;
+  bottom:-100px;
+  left:50%;
+  transform:translate(-50%,0);
+  z-index:-2;
+}
+
+
+
+.game-body .screen .level{
+  position:absolute;
+  top:5px;
+  right:5px;
+  color:#C80B02;
+  text-transform:uppercase;
+  font-size:.75em;
+  font-family: 'Chakra Petch', sans-serif;
+  display:none;
+}
+
+
+.msg{
+  display:none;
+}
+
+
+@media (min-width: 0px) and (max-width: 617px) {
+
+  
+  .game-body{
+    display:none;
+  }
+  
+  .msg{
+    display:block;
+    text-transform:capitalize;
+    text-align:center;
+    font-weight:700;
+  }
+  
+  .msg span{
+    color:#C40900;
+  }
+  
+  .note{
+    display:none;
+  }
+  
+  @media only screen and (orientation: landscape) {
+
+    
+    .game-body{
+      transform:rotate(90deg);
+      display:block;
+    }
+    
+    .msg{
+  display:none;
+    }
+    
+  }
+}
