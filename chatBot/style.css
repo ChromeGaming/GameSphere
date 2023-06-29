@@ -2,8 +2,8 @@
 
 .chatbot__button {
   position: fixed;
-  bottom: 27px;
-  right: 90px;
+  bottom: 100px;
+  right: 25px;
   width: 60px;
   height: 60px;
   display: flex;
