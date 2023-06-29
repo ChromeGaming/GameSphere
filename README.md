@@ -206,7 +206,13 @@ ________________________________________________________________________________
 |  132 | [Whisker's_Leap](https://github.com/VSatwika/GameSphere/tree/Whisker's_Leap)                             |
 | 133 | [Mastermind](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Mastermind)        |
 | 134 | [1024 moves game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/1024_moves_game)
+
+
+| 135 | [Anime-Clicker](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Anime-Clicker)
+
+
 | 134 | [TheFlyingBlock](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/TheFlyingBlock)
+
 | 135 | [AngryBoars](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/AngryBoars)
 | 134 | [1024 moves game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/1024_moves_game)         |
 | 135 | [1024 moves game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/1024_moves_game)        |
@@ -239,9 +245,21 @@ ________________________________________________________________________________
 | 156 | [Frogger](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Frogger) |
 | 157 | [Spider Man Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Spider_Man_Go) |
 | 158 | [Slingshot_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Slingshot_Game) |
-| 159 | [Rabbit_And_Fox_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Rabbit_And_Fox_Game) |
-| 160 | [Vedio_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Vedio_Game) |
-| 165 | [Color_Crush_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Color_Crush_Game) |
+| 159 | [Slide and Solve](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Slide_and_Solve) |
+| 160 | [3D Snake](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/3d_Snake) |
+| 161 | [Escape_Room](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Escape_Room) |
+| 162 |  [simon-says](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/simon-says) |
+| 163 | [Slingshot_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Slingshot_Game) |
+| 164 | [Rabbit_And_Fox_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Rabbit_And_Fox_Game) |
+| 165 | [Vedio_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Vedio_Game) |
+| 166 | [Color_Crush_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Color_Crush_Game) |
+
+
+
+
+
+
+
 
 
 ________________________________________________________________________________________________________________________________________________________________
