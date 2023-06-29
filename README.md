@@ -241,6 +241,7 @@ ________________________________________________________________________________
 | 158 | [Slingshot_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Slingshot_Game) |
 | 159 | [Rabbit_And_Fox_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Rabbit_And_Fox_Game) |
 | 160 | [Vedio_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Vedio_Game) |
+| 165 | [Color_Crush_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Color_Crush_Game) |
 
 
 ________________________________________________________________________________________________________________________________________________________________
