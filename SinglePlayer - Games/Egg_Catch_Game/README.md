@@ -1,0 +1,1 @@
+Eggs Catcher is a classic game where the goal is to catch as many eggs as possible. In this game, every egg you catch will increase your score and if you miss 5 eggs you will lose the game.
