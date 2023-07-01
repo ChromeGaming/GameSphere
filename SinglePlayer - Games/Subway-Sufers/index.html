@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+<!--     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"> -->
+    <title>Subway Surfers</title>
+    <link rel="stylesheet" href="game.css" type="text/css">
+  </head>
+
+  <body>
+    <div id="game">
+        <div id="overlay">
+          <div>Score:
+            <span id="score"></span>
+          </div>
+          <div>Speed:
+            <span id="speed"></span>
+          </div>
+        </div>
+        <div id ="death">
+          <span id="life"></span>
+        </div>
+        <canvas id="glcanvas" width="1900" height="960"></canvas>
+    </div>
+  </body>
+
+  <script src="gl-matrix.js"></script>
+  <script src="mousetrap.js"></script>
+  <script src="hammer.js"></script>
+  <script src="sound.js"></script>
+  <script src="coin.js"></script>
+  <script src="path.js"></script>
+  <script src="surfer.js"></script>
+  <script src="barriers.js"></script>
+  <script src="train.js"></script>
+  <script src="powerups.js"></script>
+  <script src="main.js"></script>
+
+</html>
