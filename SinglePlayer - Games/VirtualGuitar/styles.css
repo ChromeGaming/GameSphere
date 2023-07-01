@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
+
+:root {
+    --fretboard-height: 300;
+    --number-of-strings: 6;
+    --string-height: 10;
+    --half-string-height: calc(var(--string-height) / 2);
+    --string-top-position: calc(var(--fretboard-height) / var(--number-of-strings) / 2 - var(--half-string-height));
+    --double-fretmark-position-1: calc(var(--fretboard-height) * 0.25);
+    --double-fretmark-position-2: calc(var(--fretboard-height) * 0.75);
+    --noteDotOpacity: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-top: 5rem;
+    background: url("images/p.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Lato, sans-serif;
+}
+
+.heading{
+    font-size: 3rem;
+    justify-content: center;
+    margin-right: 5rem;
+}
+.settings {
+    display: flex;
+    color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #444;
+    background: #0a0a0b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.accidental-selector {
+    margin-left: 20px;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {  
+    opacity: 1;
+}
+label {
+    margin: 0 10px;
+}
+.fretboard {
+    display: flex;
+    flex-direction: column;
+    background: #ce9f59;
+    width: 100%;
+    min-width: 1500px;
+    height: calc(var(--fretboard-height) * 1px);
+    margin-top: 50px;
+}
+.string {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+.string:before {
+    content: '';
+    width: 100%;
+    height: calc(var(--string-height) * 1px);
+    background: linear-gradient(#eee, #999);
+    box-shadow: 76px 3px 10px #806233;
+    z-index: 1;
+    position: absolute;
+    top: 22px;
+    top: calc(var(--string-top-position) * 1px);
+}
+.note-fret {
+    display: flex;
+    flex: 1;
+    border-right: 10px solid;
+    border-image: linear-gradient(to left, #777, #bbb, #777) 1 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.note-fret:first-child {
+    background: #161717;
+    min-width: 76px;
+    border-right: 12px solid;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-image: linear-gradient(to left, #bbb, #fff, #bbb) 1 100%;
+}
+.note-fret:before {
+    content: attr(data-note);
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    line-height: 33px;
+    text-align:  center;
+    background: teal;
+    z-index: 2;
+    color: #eee;
+    opacity: var(--noteDotOpacity);
+}
+
+.single-fretmark:after, .double-fretmark:before, .double-fretmark:after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #806233;
+}
+
+.single-fretmark:after {
+    top: calc(var(--fretboard-height) / 2 * 1px);
+    transform: translate(0, -50%);
+}
+
+.double-fretmark:before {
+    top: calc(var(--double-fretmark-position-1) * 1px);
+    transform: translate(-140%, -50%);
+}
+.double-fretmark:after {
+    top: calc(var(--double-fretmark-position-2) * 1px);
+    transform: translate(-140%, -50%);
+}
+
+.note-name-section {
+    width: 100%;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    hover: auto;
+}
+.note-name-section span {
+    padding: 10px;
+    cursor: pointer;
+}
+.note-name-section span:hover {
+    color: #00baba;
+}
