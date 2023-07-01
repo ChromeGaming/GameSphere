@@ -1,52 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News App</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+const cardsContainer = document.getElementById("cards-container");
 
-    <nav>
-        <div class="main-nav container flex">
-            <a href="#" onclick="reload()" class="company-logo">
-                <img src="../assets/Logo.png" style="width: 10%;" alt="company logo">
-            </a>
-            <div class="nav-links">
-                <ul class="flex">
-                    <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">Esports News</li>
-                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Upcoming Games</li>
-                </ul>
-            </div>
-            <div class="search-bar flex">
-                <input id="search-text" type="text" class="news-input" placeholder="e.g. Bgmi">
-                <button id="search-button" class="search-button">Search</button>
-            </div>
-        </div>
-    </nav>
-    
+async function fetchDataFromRapidAPI() {
+  const url =
+    "https://videogames-news2.p.rapidapi.com/videogames_news/search_news?query=GTA";
+  const options = {
+    method: "GET",
+    headers: {
+      "X-RapidAPI-Key": "f97024702bmshb016fffd40e7facp1da35ajsnb56b28aa0bdd",
+      "X-RapidAPI-Host": "videogames-news2.p.rapidapi.com",
+    },
+  };
 
-    <main>
-        <div class="cards-container container flex" id="cards-container">
-            
-        </div>
-    </main>
+  try {
+    const response = await fetch(url, options);
+    const data = await response.json();
+    console.log(data);
+    displayNewsCards(data); // Call the function to display news cards with the fetched data
+  } catch (error) {
+    console.error(error);
+  }
+}
 
-    <template id="template-news-card">
-        <div class="card">
-            <div class="card-header">
-                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
-            </div>
-            <div class="card-content">
-                <h3 id="news-title">This is the Title</h3>
-                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
-                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
-            </div>
-        </div>
-    </template>
+function displayNewsCards(newsData) {
+  // Clear the existing cards in the container
+  cardsContainer.innerHTML = "";
 
-    <script src="script.js"></script>
-</body>
-</html> 
+  // Loop through the news data and create a card for each news item
+  newsData.forEach((newsItem) => {
+    // Clone the template for each news item
+    const template = document.getElementById("template-news-card");
+    const card = template.content.cloneNode(true);
+
+    // Update the content of the card with the news data
+    const cardImage = card.querySelector("#news-img");
+    const cardTitle = card.querySelector("#news-title");
+    const cardSource = card.querySelector("#news-source");
+    const cardDesc = card.querySelector("#news-desc");
+
+    // Redirect news
+    card.firstElementChild.addEventListener("click", () => {
+      window.open(linkUrl, "_blank"); // Open the link in a new tab when the card is clicked
+    });
+
+    // Set the image URL from the API response
+    const imageUrl = newsItem.image || "https://via.placeholder.com/400x200"; // Use fallback image if image URL is not provided
+
+    // Set the link URL from the API response
+    const linkUrl = newsItem.link || "#"; // Use a placeholder link if link URL is not provided
+
+    cardImage.src = imageUrl;
+    cardTitle.textContent = newsItem.title;
+    cardSource.textContent = newsItem.date;
+    cardDesc.textContent = newsItem.description;
+
+    // Set the link for the entire card
+    card.addEventListener("click", () => {
+      window.open(linkUrl, "_blank"); // Open the link in a new tab when the card is clicked
+    });
+
+    // Append the card to the cards container
+    cardsContainer.appendChild(card);
+  });
+}
+
+// Call the function to fetch data from Rapid API and display news cards when the page loads.
+fetchDataFromRapidAPI();
