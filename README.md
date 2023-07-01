@@ -248,6 +248,16 @@ ________________________________________________________________________________
 | 164 | [Rabbit_And_Fox_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Rabbit_And_Fox_Game) |
 | 165 | [Vedio_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Vedio_Game) |
 | 166 | [Color_Crush_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Color_Crush_Game) |
+| 167 | [Slide and Solve](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Slide_and_Solve) |
+| 168 | [3D Snake](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/3d_Snake) |
+| 169 | [Escape_Room](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Escape_Room) |
+| 170 |  [simon-says](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/simon-says) |
+| 171 | [Slingshot_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Slingshot_Game) |
+| 172 | [Rabbit_And_Fox_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Rabbit_And_Fox_Game) |
+| 173 | [Astray](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Astray) |
+| 164 | [AI CHESS](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/AI-Chess) |
+
+
 
 | 158 | [Slide and Solve](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Slide_and_Solve) |
 | 159 | [3D Snake](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/3d_Snake) |
@@ -260,6 +270,7 @@ ________________________________________________________________________________
 | 166 | [Circus Charley](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Circus_Charly) |
 | 167 | [VirtualGuitar](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/VirtualGuitar)|
 | 168 | [Subway Sufers](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Subway-Sufers) |
+
 
 
 
