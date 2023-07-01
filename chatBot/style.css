@@ -2,10 +2,10 @@
 
 .chatbot__button {
   position: fixed;
-  bottom: 25px;
-  right: 90px;
-  width: 35px;
-  height: 35px;
+  bottom: 100px;
+  right: 30px;
+  width: 43px;
+  height: 43px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,9 +28,9 @@
 }
 .chatbot {
   position: fixed;
-  bottom: 90px;
+  bottom: 175px;
   right: 40px;
-  width: 430px;
+  width: 320px;
   background-color: #f3f7f8;
   border-radius: 15px;
   box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1) 0 32px 64px -48px rgba(0, 0, 0, 0.5);
@@ -104,6 +104,9 @@
 .outgoing {
   justify-content: flex-end;
   margin: 20px 0;
+}
+.outgoing p{
+  color: white;
 }
 .incoming {
   margin: 20px 0;

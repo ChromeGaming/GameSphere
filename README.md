@@ -178,7 +178,7 @@ ________________________________________________________________________________
 |  104   |[sciarra of colors](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/sciarra%20of%20colors)           |
 |  105   |[slide-puzzle-master](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/slide-puzzle-master)           |
 |  106   |[snakes and ladder](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/snakes%20and%20ladder)           |
-|  107   |[space-invaders](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/space-invaders/space-invaders-master)           |
+|  107   |[space-invaders](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/space-invaders/space-invaders-master)     |
 |  108   |[space-war](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/space-war)           |
 |  109   |[tower-defens](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/tower-defens)           |
 |  110   |[tower](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/tower)           |
@@ -205,18 +205,13 @@ ________________________________________________________________________________
 | 131 |[Bad Depot](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Bad_Depot)        |
 |  132 | [Whisker's_Leap](https://github.com/VSatwika/GameSphere/tree/Whisker's_Leap)                             |
 | 133 | [Mastermind](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Mastermind)        |
-| 134 | [1024 moves game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/1024_moves_game)
-
-
-| 135 | [Anime-Clicker](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Anime-Clicker)
-
-
+| 134 | [1024 moves game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/1024_moves_game)  |
+| 135 | [Anime-Clicker](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Anime-Clicker) |
 | 134 | [TheFlyingBlock](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/TheFlyingBlock)
-
 | 135 | [AngryBoars](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/AngryBoars)
 | 134 | [1024 moves game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/1024_moves_game)         |
 | 135 | [1024 moves game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/1024_moves_game)        |
-|136 |  [RGB Riddle](https://github.com/VSatwika/GameSphere/tree/RGB_Riddle/SinglePlayer%20-%20Games/RGB_Riddle)               |
+| 136 |  [RGB Riddle](https://github.com/VSatwika/GameSphere/tree/RGB_Riddle/SinglePlayer%20-%20Games/RGB_Riddle)               |
 | 137 |[Atlas](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Atlas)        |
 | 138 | [Among Us game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Among_Us_Game)         |
 | 139 | [Dungeon Crawler](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Dungeon_Crawler)      |
@@ -252,6 +247,16 @@ ________________________________________________________________________________
 | 163 | [Slingshot_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Slingshot_Game) |
 | 164 | [Rabbit_And_Fox_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Rabbit_And_Fox_Game) |
 | 165 | [Vedio_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Vedio_Game) |
+
+| 158 | [Slide and Solve](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Slide_and_Solve) |
+| 159 | [3D Snake](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/3d_Snake) |
+| 160 | [Escape_Room](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Escape_Room) |
+| 161 |  [simon-says](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/simon-says) |
+| 162 | [Slingshot_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Slingshot_Game) |
+| 163 | [Rabbit_And_Fox_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Rabbit_And_Fox_Game) |
+| 164 | [Astray](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Astray) |
+| 165 | [AI CHESS](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/AI-Chess) |
+
 
 
 
