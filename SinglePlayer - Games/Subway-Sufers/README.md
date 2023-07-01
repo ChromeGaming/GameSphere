@@ -9,6 +9,7 @@ A WebGL version of Subway Surfers.
 - Right Arrow Key : Going Right
 - Left Arrow Key : Going Left
 
-## Mobile support added 
+## Responsive Mobile support added 
 - Works best on chrome. 
 - Swipe up, down, left, right to play on mobile.
+
