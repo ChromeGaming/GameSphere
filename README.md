@@ -260,7 +260,7 @@ ________________________________________________________________________________
 | 166 | [Circus Charley](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Circus_Charly) |
 | 167 | [VirtualGuitar](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/VirtualGuitar)|
 | 168 | [Subway Sufers](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Subway-Sufers) |
-| 169 | [Car Racer](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Car-Racer) |
+| 169 | [Car Racer](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Car-Racer/Car-Racer-Vanilla-JS-main/index.html) |
 
 
 
