@@ -1,23 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-:root {
-    --primary-text-color: #183b56;
-    --secondary-text-color: #577592;
-    --accent-color: #2294ed;
-    --accent-color-dark: #1d69a3;
-}
-
-body {
-    font-family: "Poppins", sans-serif;
-    background-color: #0c052e;
-    color: white
-}
 
 p {
     font-family: "Roboto", sans-serif;
@@ -129,19 +112,13 @@ main {
 
 .card {
     width: 360px;
-    height: 450px;
-    overflow: scroll;
-    box-shadow: 0 0 4px #d4ecff;
+    height: 380px;
+    box-shadow: 0 0 3px gray;
     border-radius: 4px;
     cursor: pointer;
     background-color: #170631;
     overflow: hidden;
     transition: all 0.3s ease;
-}
-
-.card:hover {
-    box-shadow: 1px 1px 8px #d4ecff;
-    transform: translateY(-2px);
 }
 
 .card-header img {
@@ -151,9 +128,14 @@ main {
 }
 
 .card-content {
+    color: white;
     padding: 12px;
 }
 
 .news-source {
     margin-block: 12px;
+}
+
+.news-desc{
+    white-space: nowrap;
 }
