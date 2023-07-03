@@ -27,6 +27,7 @@
   opacity: 1;
 }
 .chatbot {
+  z-index: 1000;
   position: fixed;
   bottom: 175px;
   right: 40px;
