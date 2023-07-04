@@ -6,9 +6,17 @@ var otherTile;
 
 var turns = 0; 
 let order=['9', '8', '7', '6', '5', '4', '3', '2', '1'];
+
 window.onload = function() {
-    
-    
+    let level=localStorage.getItem('level');
+    console.log(level);
+    let l=1;
+    if(level=="Level 2"){
+            l=2;
+    }
+    if(level=="Level 3"){
+        l=3;
+    }
     let t=1;
     
     for (let r = 0; r < rows; r++) {
@@ -16,7 +24,7 @@ window.onload = function() {
            
             let tile = document.createElement("img");
             tile.id="bkatile"+t;
-            tile.src = "Assets/blank.jpg";
+            tile.src = "Assets1/blank.jpg";
             t++;
            
             tile.addEventListener("dragstart", dragStart); 
@@ -50,7 +58,7 @@ window.onload = function() {
     for (let i = 0; i < pieces.length; i++) {
         let tile = document.createElement("img");
        
-        tile.src = "Assets/" + pieces[i] + ".jpg";
+        tile.src = "Assets"+l+"/" + pieces[i] + ".jpg";
 
         tile.addEventListener("dragstart", dragStart); 
         tile.addEventListener("dragover", dragOver);  
@@ -60,12 +68,11 @@ window.onload = function() {
         tile.addEventListener("dragend", dragEnd);      
 
 
-        document.getElementById("pieces").append(tile); 
-        let butt=document.getElementById("but");
-        butt.addEventListener("func",butfunc);
-        
+        document.getElementById("pieces").append(tile);     
        
     }
+    let butt=document.getElementById("but");
+    butt.addEventListener("func",butfunc);
 }
 
 
