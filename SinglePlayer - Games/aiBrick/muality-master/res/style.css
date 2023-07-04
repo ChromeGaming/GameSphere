@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+html, body {
+    overflow: hidden;
+    background: #191919;
+    -webkit-touch-callout: none;
+    -ms-touch-action: none;
+    font-family: 'blackoutmidnight';
+}
+
+button {
+    font-family: 'blackoutmidnight';
+}
+
+#wrapper {
+    position: absolute;
+}
+
+@font-face {
+    font-family: 'blackoutmidnight';
+    src: url('fonts/blackout-nor-webfont.eot');
+    src: url('fonts/blackout-nor-webfont.eot') format('embedded-opentype'), url('fonts/blackout-nor-webfont.woff') format('woff'), url('fonts/blackout-nor-webfont.ttf') format('truetype'), url('fonts/blackout-nor-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#overlay {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+    -webkit-transition: opacity 1s linear;
+    opacity: 0;
+}
+
+input {
+    cursor: text;
+}
