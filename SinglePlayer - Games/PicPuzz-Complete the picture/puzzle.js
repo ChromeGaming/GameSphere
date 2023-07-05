@@ -37,8 +37,6 @@ window.onload = function() {
             document.getElementById("board").append(tile);
         }
     }
-
- 
     
     let pieces = [];
     for (let i=1; i <= rows*columns; i++) {
@@ -67,14 +65,12 @@ window.onload = function() {
         tile.addEventListener("drop", dragDrop);       
         tile.addEventListener("dragend", dragEnd);      
 
-
         document.getElementById("pieces").append(tile);     
        
     }
     let butt=document.getElementById("but");
     butt.addEventListener("func",butfunc);
 }
-
 
 function dragStart() {
     currTile = this; 
@@ -128,7 +124,6 @@ function func_open(check){
     }
 }
 
-
 function butfunc(){
     
     let get_order=[];
@@ -166,5 +161,3 @@ function butfunc(){
     }
     
 }
-
-
