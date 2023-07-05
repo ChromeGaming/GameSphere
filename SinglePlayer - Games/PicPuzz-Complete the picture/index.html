@@ -8,7 +8,6 @@
         <script src="index.js"></script>
         
     </head>
-
     <body>
         <div id="menu">
             <div id="magic">
@@ -25,13 +24,15 @@
             </div>
             <script>
             
+            //Button directs to other page along with the level number which is passed to the next page
+            
                 function lvl(clicked){
                     console.log(clicked);
                     window.location='puzzle.html';
-                    localStorage.setItem('level',clicked);
+                    localStorage.setItem('level',clicked);  
                 }
                 
             </script>
-                   
+
     </body>
 </html>

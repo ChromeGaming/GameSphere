@@ -5,9 +5,15 @@ var currTile;
 var otherTile;
 
 var turns = 0; 
+
+//The actual correct order of the pieces
 let order=['9', '8', '7', '6', '5', '4', '3', '2', '1'];
 
+
 window.onload = function() {
+
+    // retrieves which level player has clicked to play and loads it 
+
     let level=localStorage.getItem('level');
     console.log(level);
     let l=1;
@@ -43,6 +49,7 @@ window.onload = function() {
         pieces.push(i.toString()); 
     }
     
+    // to shuffle the pieces
     pieces.reverse();
     for (let i =0; i < pieces.length; i++) {
         let j = Math.floor(Math.random() * pieces.length);
@@ -105,6 +112,8 @@ function dragEnd() {
     turns += 1;
     document.getElementById("turns").innerText = turns;
 }
+
+// To close popup after submit
 function func_close(check){ 
     if(check==1){ 
         let pp=document.getElementById("popup");
@@ -115,6 +124,7 @@ function func_close(check){
     
 }
 
+// To open popup after submit
 function func_open(check){ 
     if(check==1){ let pp=document.getElementById("popup");
     pp.classList.add('popup_opened');
@@ -147,7 +157,9 @@ function butfunc(){
     else {
         func_open(2);
     }
-
+    
+    //Function to check if all pieces are arranged correctly or not 
+    
    function arraysAreIdentical(order, get_order){
     
         for (var i = 0;i < 9; i++){
