@@ -6,8 +6,8 @@ async function fetchDataFromRapidAPI() {
   const options = {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": "f97024702bmshb016fffd40e7facp1da35ajsnb56b28aa0bdd",
-      "X-RapidAPI-Host": "videogames-news2.p.rapidapi.com",
+      "X-RapidAPI-Key": "5a41c70684mshc0570dac878381ap1af50ejsnb8654c76cec7",
+      "X-RapidAPI-Host": "videogames-news2.p.rapidapi.com"
     },
   };
 

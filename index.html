@@ -1020,7 +1020,8 @@
         </div>
     </div>
     <!--  chat bot finish  -->
-
+    
+    <script src="./gamenews/script.js"></script>
     <!-- color theme part end -->
     <!-- GPT chatbot script -->
     <script src="./chatBot/script.js"></script>
@@ -1036,7 +1037,6 @@
     <script src="src/script.js"></script>
     <script src="src/color-theme.js"></script>
     <script src="src/video.js"></script>
-    <script src="./gamenews/script.js"></script>
     <script>
         let section_counter = document.querySelector('#stats');
         let counters = document.querySelectorAll('.counter-item .counter');
@@ -1062,12 +1062,12 @@
             reset: true,
             distance: '100px',
             duration: 1500,
-            delay: 200
+            delay: 100
         });
 
         ScrollReveal().reveal('.sc-title', { delay: 200 });
-        ScrollReveal().reveal('.game-card', { delay: 200, origin: 'left' });
-        ScrollReveal().reveal('.game-post', { delay: 200, origin: 'left' });
+        ScrollReveal().reveal('.game-card', { delay: 200 });
+        ScrollReveal().reveal('.game-post', { delay: 200 });
 
     </script>
 </body>
