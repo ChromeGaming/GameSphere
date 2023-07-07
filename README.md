@@ -264,7 +264,7 @@ ________________________________________________________________________________
 | 170 | [Car Racer](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Car-Racer/Car-Racer-Vanilla-JS-main/index.html) |
 | 171 | [Chinese_Checkers](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Chinese_Checkers) |
 |172| [PicPuzz](https://github.com/Shuchita33/GameSphere/tree/main/SinglePlayer%20-%20Games/PicPuzz)|
-
+|173| [Othello](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/othello)|
 
 
 
