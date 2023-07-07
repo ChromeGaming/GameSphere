@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Puzz--le</title>
+        <link rel="stylesheet" href="puzzle.css">
+        <script src="puzzle.js"></script>
+        
+    </head>
+
+    <body>
+        
+        <div id="game" >
+            <div id="board"></div>
+            <h2 style="color: aliceblue;">Turns : <span id="turns">0</span></h2>
+            <div id="pieces"></div>
+            <br>
+            <div id="buttonss">
+                <input type="submit" id="but" value="Submit" onclick="butfunc()">
+                   
+                <input type="submit" id="resetbut" value="Reset" onclick="window.location.reload()">
+            </div>
+           
+            <div class="popup" id="popup">
+                <img id="tick" src="tick.png" alt="">
+                <h2 >Congratulations!!</h2>
+                <p style="font-size: large;font-weight: 600;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">You've fixed everything :) Try More Puzzles !</p>
+                <button id="sec_button" type="button" onclick="func_close(1)"> OK </button>
+            </div>
+
+            <div class="popup2" id="popup2">
+                <img id="tick" src="cross.png" alt="">
+                <h2 >Sorry!!</h2>
+                <p style="font-size: large;font-weight: 600;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">You've missed something :)<br>
+                 Try Again ... All the Best !</p>
+                <button id="sec_button2" type="button" onclick="func_close(2)"> OK </button>
+            </div>
+        </div>
+            
+        
+    </body>
+</html>
