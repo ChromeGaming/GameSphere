@@ -9,7 +9,7 @@
     position: fixed;
     justify-content: center;
     /* align-items: center; */
-    top: 90px;
+    top: 50px;
     right: 10px;
     padding: 10px;
     gap: 10px;
@@ -64,7 +64,7 @@
     
     text-align: center;
     border-radius: 50%;
-    margin-top: 10px;
+    margin-top: -38px;
     cursor: pointer;
   }
   
