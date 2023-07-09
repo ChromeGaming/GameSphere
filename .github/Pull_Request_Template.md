@@ -24,14 +24,32 @@ information. -->
 <!-- [x] - To mark checked, put 'x' in place of ' '(space)  -->
 <!-- [ ] - Keep unchecked using ' '(space)  -->
 
-- [ ] Follow Us On social media -
-      <a href="https://github.com/GameSphere-MultiPlayer" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/company/gamesphere-multiplayer/" target="_blank">LinkedIn</a>
-      <a href="https://www.youtube.com/@durgesh4993/channels" target="_blank">YouTube</a>
-      <a href="https://discord.com/invite/dakzwdz4ev" target="_blank">Discord</a>
 - [ ] I have added image into screensort in "SinglePlayer - Games/Banner - image" in this section*
 - [ ] I have added game into "additionalpage/game.html"*
 - [ ] I have added Update main README.md file*
+
+
+## Task
+
+- [ ] Follow Us On social media -
+- [ ]      <a href="https://github.com/GameSphere-MultiPlayer" target="_blank">GitHub</a>
+- [ ]      <a href="https://www.linkedin.com/company/gamesphere-multiplayer/" target="_blank">LinkedIn</a>
+- [ ]     <a href="https://www.youtube.com/@durgesh4993/channels" target="_blank">YouTube</a>
+- [ ]      <a href="https://discord.com/invite/dakzwdz4ev" target="_blank">Discord</a>
+
+## Enter you User Id's:
+LinkedIn:
+<br>GitHub: 
+<br>YouTube:
+<br>Discord:
+
+If you Follow us in both social medias we provide 'level2' 
+
+
+
+
+
+
 
 
 
