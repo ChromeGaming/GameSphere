@@ -24,11 +24,14 @@ information. -->
 <!-- [x] - To mark checked, put 'x' in place of ' '(space)  -->
 <!-- [ ] - Keep unchecked using ' '(space)  -->
 
+- [ ] Follow Us On social media -
+      <a href="https://github.com/GameSphere-MultiPlayer" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/company/gamesphere-multiplayer/" target="_blank">LinkedIn</a>
+      <a href="https://www.youtube.com/@durgesh4993/channels" target="_blank">YouTube</a>
+      <a href="https://discord.com/invite/dakzwdz4ev" target="_blank">Discord</a>
 - [ ] I have added image into screensort in "SinglePlayer - Games/Banner - image" in this section*
 - [ ] I have added game into "additionalpage/game.html"*
 - [ ] I have added Update main README.md file*
-- [ ] I have included comments in areas that may be difficult to understand.
-- [ ] My changes have not introduced any new warnings.
-- [ ] I have conducted a self-review of my code.
+
 
 
