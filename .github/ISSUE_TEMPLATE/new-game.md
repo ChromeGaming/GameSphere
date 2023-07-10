@@ -1,10 +1,13 @@
-<!-- Pull Request Template -->
+---
+name: New Game
+about: Description of game
+title: ''
+labels: ''
+assignees: ''
 
-## Related Issue*
+---
 
-Closes #issue_number
-
-<!-- If there is no issue number, the PR will not be merged. Therefore, please ensure that the issue number is added -->
+## Game Name
 
 ## Description
 
@@ -19,16 +22,6 @@ information. -->
 
 <!-- Include the demo video to preview the changes done and their proper functionality -->
 
-## Checklist 
-
-<!-- [x] - To mark checked, put 'x' in place of ' '(space)  -->
-<!-- [ ] - Keep unchecked using ' '(space)  -->
-
-- [ ] I have added image into screensort in "SinglePlayer - Games/Banner - image" in this section*
-- [ ] I have added game into "additionalpage/game.html"*
-- [ ] I have added Update main README.md file*
-
-
 ## Task
 
 - [ ] Follow Us On social media -
@@ -36,20 +29,3 @@ information. -->
 - [ ]      <a href="https://www.linkedin.com/company/gamesphere-multiplayer/" target="_blank">LinkedIn</a>
 - [ ]     <a href="https://www.youtube.com/@durgesh4993/channels" target="_blank">YouTube</a>
 - [ ]      <a href="https://discord.com/invite/dakzwdz4ev" target="_blank">Discord</a>
-
-## Enter you User Id's:
-LinkedIn:
-<br>GitHub: 
-<br>YouTube:
-<br>Discord:
-
-If you Follow us in both social medias we provide 'level2' 
-
-
-
-
-
-
-
-
-

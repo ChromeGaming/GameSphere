@@ -1,14 +1,5 @@
 <img style="width:100%" src="https://user-images.githubusercontent.com/98798977/236624352-6f5440bb-1b5a-41e3-a2d2-97b5ef2b7387.png">
 
-# Hello Contributers New Marking System 
-
--> Bug or singlePlayer game - level1
-
--> Online Multiplayer Game - level2
-
--> Enhancement of website - level3
-
- Note- Level 3 is only provide when someone enhance and change some big functionalities.
  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Table of Contents
@@ -263,10 +254,17 @@ ________________________________________________________________________________
 | 169 | [RavoucsRavenRun](https://github.com/Nishitbaria/GameSphere/tree/f6eb21a7a72b0fbdd61ea025d931177610192853/SinglePlayer%20-%20Games/Ravoucs%20Raven%20Run) |
 | 170 | [Car Racer](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Car-Racer/Car-Racer-Vanilla-JS-main/index.html) |
 | 171 | [Chinese_Checkers](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Chinese_Checkers) |
+
 | 172 | [PicPuzz](https://github.com/Shuchita33/GameSphere/tree/main/SinglePlayer%20-%20Games/PicPuzz)|
 | 173 | [Highway Race](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Highway_Race) |
 | 174 | [Stacker](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Stacker) |
 | 176 | [Platform_Game_Engine](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Platform_Game_Engine) |
+
+| 172 | [Chinese_Checkers](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Chinese_Checkers) |
+|173| [PicPuzz](https://github.com/Shuchita33/GameSphere/tree/main/SinglePlayer%20-%20Games/PicPuzz)|
+| 174 | [Highway Race](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Highway_Race) |
+| 175 | [Stacker](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Stacker) |
+
 
 
 
