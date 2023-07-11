@@ -2465,3 +2465,21 @@ hr {
     width: 99%;
   }
 }
+
+@media (max-width: 768px) {
+  .game-card {
+    margin: 0 5rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .game-card {
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 515px) {
+  .game-card {
+    margin: 0 auto;
+  }
+}
