@@ -258,7 +258,7 @@ ________________________________________________________________________________
 |173| [PicPuzz](https://github.com/Shuchita33/GameSphere/tree/main/SinglePlayer%20-%20Games/PicPuzz)|
 | 174 | [Highway Race](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Highway_Race) |
 | 175 | [Stacker](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Stacker) |
-
+| 176 | [StickmanGame](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/StickmanGame) |
 
 
 
