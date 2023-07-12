@@ -24,6 +24,7 @@
 
 <br>
 
+![Chinese_Checkers](https://github.com/Kalivarapubindusree/GameSphere/assets/114821855/5f689070-7cdf-415e-b566-d2b447e86f25)
 
 
 
@@ -32,5 +33,9 @@
 <br>
 
 ## **Working video 📹**
+
+
+
+https://github.com/Kalivarapubindusree/GameSphere/assets/114821855/1bff8237-93fd-4e15-973a-6c9bbbcafa82
 
 
