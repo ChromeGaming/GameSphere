@@ -60,7 +60,6 @@ ________________________________________________________________________________
  
 # Available Games 🎮
 ### List of Single Player Games 
-
 | SNo. | Game | 
 |------|------|
 |  1   |[Memory Card Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Memory%20Game)      |
@@ -175,102 +174,70 @@ ________________________________________________________________________________
 |  110   |[tower](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/tower)           |
 |  111   |[whack-a-mole](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/whack-a-mole)           |
 |  112   |[wordScramble](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/wordScramble)           |       |  
-|  113   |[Dots and Boxes Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/MultiPlayer%20-%20Games/Dots%20and%20Boxes%20Game)           |
-|  114   |[RabbitGame](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/MultiPlayer%20-%20Games/Dots%20and%20Rabbit_Game)           |
-|  115   |[Dots and Boxes Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/MultiPlayer%20-%20Games/Dots%20and%20Boxes%20Game)   
-|  116   |[Color_Blast_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Color_Blast_game)         |
-|  117   |[Guess the Correct Logo](https://github.com/shruti-2412/GameSphere/tree/main/SinglePlayer%20-%20Games/Guess_the_Correct_Logo)         |
-|  118   |[Guess the Correct Logo](https://github.com/VSatwika/GameSphere/tree/Air-Balloon-game/SinglePlayer%20-%20Games/Air%20Balloon)         |
-|  119  |[Kill_The_Bird_Game](https://github.com/shruti-2412/GameSphere/tree/main/SinglePlayer%20-%20Games/Kill_The_Bird_Game)         |
-|  120   |[Dots and Boxes Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/MultiPlayer%20-%20Games/Dots%20and%20Boxes%20Game)        |
-|  121   |[Virtual Piano](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Virtual%20Piano)    |
-|  122   |[Chill_Lion_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/MultiPlayer%20-%20Games/Dots%20and%20Chill_Lion_Game)           |
-|  123  |[Coloron Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Coloron%20Game)         |
-|  124   |[Guess the Correct Logo](https://github.com/VSatwika/GameSphere/tree/Air-Balloon-game/SinglePlayer%20-%20Games/Air%20Balloon)         |
-|  125  |[Kill_The_Bird_Game](https://github.com/shruti-2412/GameSphere/tree/main/SinglePlayer%20-%20Games/Kill_The_Bird_Game)         |
-|  126   |[Dots and Boxes Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/MultiPlayer%20-%20Games/Dots%20and%20Boxes%20Game)        |
-|  127  |[Virtual Piano](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Virtual%20Piano)         |
-|  128   |[Classic Pool Game](https://github.com/PatilHarshh/GameSphere/blob/main/SinglePlayer%20-%20Games/Classic-Pool-Game)          |
-|  129   |[Virtual Piano](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Virtual%20Piano)         |
-|  130   |[Virtual Piano](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Virtual%20Pickle_Rick_Maze_Game)         |
-| 131 |[Bad Depot](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Bad_Depot)        |
-|  132 | [Whisker's_Leap](https://github.com/VSatwika/GameSphere/tree/Whisker's_Leap)                             |
-| 133 | [Mastermind](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Mastermind)        |
-| 134 | [1024 moves game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/1024_moves_game)  |
-| 135 | [Anime-Clicker](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Anime-Clicker) |
-| 134 | [TheFlyingBlock](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/TheFlyingBlock)
-| 135 | [AngryBoars](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/AngryBoars)
-| 134 | [1024 moves game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/1024_moves_game)         |
-| 135 | [1024 moves game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/1024_moves_game)        |
-| 136 |  [RGB Riddle](https://github.com/VSatwika/GameSphere/tree/RGB_Riddle/SinglePlayer%20-%20Games/RGB_Riddle)               |
-| 137 |[Atlas](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Atlas)        |
-| 138 | [Among Us game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Among_Us_Game)         |
-| 139 | [Dungeon Crawler](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Dungeon_Crawler)      |
-| 140 | [ArmorAlley](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/ArmorAlley)        |
-| 141 | [Falling Blocks](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Falling%20Blocks)
-| 142 | [Stack 'Em Up](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Stack_Em_Up)         |
-| 143 |  [MixAndPaint](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/MixAndPaint)        |
-| 144 |  [Bubble_Blast_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Bubble_Blast_Game)        |
-| 145 | [Starship Panic](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/StarshipPanic) |
-| 146 | [Hunt Your Card](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Hunt_Your_Card)|
-| 147 | [Cable_Maze](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Cable_Maze)
-| 144 | [Starship Panic](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/StarshipPanic)
-| 145 | [Guess The Random Shape](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Guess_The_Random_Shape)        |
-| 144 |  [Bubble_Blast_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Bubble_Blast_Game)        |
-| 145 | [Starship Panic](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/StarshipPanic)             |
-| 146 | [Hunt Your Card](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Hunt_Your_Card)               |
-| 147 |[Crossy_Road_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/MultiPlayer%20-%20Games/Dots%20and%20Crossy_Road_Game)           
-| 148 |  [Bubble_Blast_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Bubble_Blast_Game)        |
-| 149 | [Starship Panic](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/StarshipPanic) |
-| 150 | [Hunt Your Card](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Hunt_Your_Card)|
-| 151 | [Cable_Maze](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Cable_Maze)
-| 152 |  [Bubble_Blast_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Bubble_Blast_Game)        |
-| 153 | [Bounce](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Bounce) |
-| 154 | [Lights Out](https://github.com//GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Lights_Out)|
-| 155 | [Lonely_Phantom](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Lonely_Phantom) |
-| 156 | [Frogger](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Frogger) |
-| 157 | [Spider Man Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Spider_Man_Go) |
-| 158 | [Slingshot_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Slingshot_Game) |
-| 159 | [Slide and Solve](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Slide_and_Solve) |
-| 160 | [3D Snake](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/3d_Snake) |
-| 161 | [Escape_Room](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Escape_Room) |
-| 162 |  [simon-says](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/simon-says) |
-| 163 | [Slingshot_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Slingshot_Game) |
-| 164 | [Rabbit_And_Fox_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Rabbit_And_Fox_Game) |
-| 165 | [Vedio_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Vedio_Game) |
-| 166 | [Color_Crush_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Color_Crush_Game) |
-
-| 158 | [Slide and Solve](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Slide_and_Solve) |
-| 159 | [3D Snake](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/3d_Snake) |
-| 160 | [Escape_Room](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Escape_Room) |
-| 161 |  [simon-says](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/simon-says) |
-| 162 | [Slingshot_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Slingshot_Game) |
-| 163 | [Rabbit_And_Fox_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Rabbit_And_Fox_Game) |
-| 164 | [Astray](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Astray) |
-| 165 | [AI CHESS](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/AI-Chess) |
-| 166 | [Circus Charley](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Circus_Charly) |
-| 167 | [VirtualGuitar](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/VirtualGuitar)|
-| 168 | [Subway Sufers](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Subway-Sufers) |
-| 169 | [RavoucsRavenRun](https://github.com/Nishitbaria/GameSphere/tree/f6eb21a7a72b0fbdd61ea025d931177610192853/SinglePlayer%20-%20Games/Ravoucs%20Raven%20Run) |
-| 170 | [Car Racer](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Car-Racer/Car-Racer-Vanilla-JS-main/index.html) |
-
-
-| 171 | [Chinese_Checkers](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Chinese_Checkers) |
-
-
-| 172 | [PicPuzz](https://github.com/Shuchita33/GameSphere/tree/main/SinglePlayer%20-%20Games/PicPuzz)|
-| 173 | [Highway Race](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Highway_Race) |
-| 174 | [Stacker](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Stacker) |
-| 175 | [Stacker](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Stacker) |
-| 176 | [Platform_Game_Engine](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Platform_Game_Engine) |
-| 177 | [Castle_Escape_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Castle_Escape_Game) |
-
-| 172 | [Chinese_Checkers](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Chinese_Checkers) |
-|173| [PicPuzz](https://github.com/Shuchita33/GameSphere/tree/main/SinglePlayer%20-%20Games/PicPuzz)|
-| 174 | [Highway Race](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Highway_Race) |
-| 175 | [Stacker](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Stacker) |
-| 176 | [Little Red Riding Hood](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Little_Red) |
-| 178 | [Bejeweled](https://github.com/akankshachanana1/GameSphere/tree/Game/SinglePlayer%20-%20Games/Bejeweled) |
+|  113  |[RabbitGame](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/MultiPlayer%20-%20Games/Dots%20and%20Rabbit_Game)           |
+|  114   |[Color_Blast_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Color_Blast_game)         |
+|  115  |[Guess the Correct Logo](https://github.com/shruti-2412/GameSphere/tree/main/SinglePlayer%20-%20Games/Guess_the_Correct_Logo)         |
+|  116   |[Guess the Correct Logo](https://github.com/VSatwika/GameSphere/tree/Air-Balloon-game/SinglePlayer%20-%20Games/Air%20Balloon)         |
+|  117  |[Kill_The_Bird_Game](https://github.com/shruti-2412/GameSphere/tree/main/SinglePlayer%20-%20Games/Kill_The_Bird_Game)         |
+|  118   |[Virtual Piano](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Virtual%20Piano)    |
+|  119   |[Chill_Lion_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/MultiPlayer%20-%20Games/Dots%20and%20Chill_Lion_Game)           |
+|  120  |[Coloron Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Coloron%20Game)         |
+|  121   |[Guess the Correct Logo](https://github.com/VSatwika/GameSphere/tree/Air-Balloon-game/SinglePlayer%20-%20Games/Air%20Balloon)         |
+|  122   |[Dots and Boxes Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/MultiPlayer%20-%20Games/Dots%20and%20Boxes%20Game)        |
+|  123   |[Classic Pool Game](https://github.com/PatilHarshh/GameSphere/blob/main/SinglePlayer%20-%20Games/Classic-Pool-Game)          |
+|  124   |[Virtual Piano](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Virtual%20Pickle_Rick_Maze_Game)         |
+| 125 |[Bad Depot](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Bad_Depot)        |
+|  126 | [Whisker's_Leap](https://github.com/VSatwika/GameSphere/tree/Whisker's_Leap)                             |
+| 127 | [Mastermind](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Mastermind)        |
+| 128 | [Anime-Clicker](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Anime-Clicker) |
+| 129 | [TheFlyingBlock](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/TheFlyingBlock)
+| 130 | [AngryBoars](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/AngryBoars)
+| 131 | [1024 moves game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/1024_moves_game)        |
+| 132 |  [RGB Riddle](https://github.com/VSatwika/GameSphere/tree/RGB_Riddle/SinglePlayer%20-%20Games/RGB_Riddle)               |
+| 133 |[Atlas](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Atlas)        |
+| 134 | [Among Us game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Among_Us_Game)         |
+| 135 | [Dungeon Crawler](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Dungeon_Crawler)      |
+| 136 | [ArmorAlley](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/ArmorAlley)        |
+| 137 | [Falling Blocks](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Falling%20Blocks)
+| 138 | [Stack 'Em Up](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Stack_Em_Up)         |
+| 139 |  [MixAndPaint](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/MixAndPaint)        |
+| 140 |  [Bubble_Blast_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Bubble_Blast_Game)        |
+| 141 | [Starship Panic](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/StarshipPanic) |
+| 142 | [Hunt Your Card](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Hunt_Your_Card)|
+| 143 | [Cable_Maze](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Cable_Maze)
+| 144 | [Guess The Random Shape](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Guess_The_Random_Shape)        |
+| 145 |[Crossy_Road_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/MultiPlayer%20-%20Games/Dots%20and%20Crossy_Road_Game)           
+| 146 | [Cable_Maze](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Cable_Maze)
+| 147 | [Bounce](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Bounce) |
+| 148 | [Lights Out](https://github.com//GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Lights_Out)|
+| 149 | [Lonely_Phantom](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Lonely_Phantom) |
+| 150 | [Frogger](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Frogger) |
+| 151 | [Spider Man Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Spider_Man_Go) |
+| 152 | [Slingshot_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Slingshot_Game) |
+| 153 | [Slide and Solve](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Slide_and_Solve) |
+| 154 | [3D Snake](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/3d_Snake) |
+| 155 | [Escape_Room](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Escape_Room) |
+| 156 |  [simon-says](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/simon-says) |
+| 157 | [Slingshot_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Slingshot_Game) |
+| 158 | [Rabbit_And_Fox_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Rabbit_And_Fox_Game) |
+| 159 | [Vedio_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Vedio_Game) |
+| 160 | [Color_Crush_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Color_Crush_Game) |
+| 161 | [Astray](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Astray) |
+| 162 | [AI CHESS](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/AI-Chess) |
+| 163 | [Circus Charley](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Circus_Charly) |
+| 164 | [VirtualGuitar](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/VirtualGuitar)|
+| 166 | [Subway Sufers](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Subway-Sufers) |
+| 165 | [RavoucsRavenRun](https://github.com/Nishitbaria/GameSphere/tree/f6eb21a7a72b0fbdd61ea025d931177610192853/SinglePlayer%20-%20Games/Ravoucs%20Raven%20Run) |
+| 167 | [Car Racer](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Car-Racer/Car-Racer-Vanilla-JS-main/index.html) |
+| 168 | [Chinese_Checkers](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Chinese_Checkers) |
+| 169 | [PicPuzz](https://github.com/Shuchita33/GameSphere/tree/main/SinglePlayer%20-%20Games/PicPuzz)|
+| 170 | [Highway Race](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Highway_Race) |
+| 171 | [Stacker](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Stacker) |
+| 172 | [Platform_Game_Engine](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Platform_Game_Engine) |
+| 173 | [Castle_Escape_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Castle_Escape_Game) |
+|174| [PicPuzz](https://github.com/Shuchita33/GameSphere/tree/main/SinglePlayer%20-%20Games/PicPuzz)|
+| 175 | [Little Red Riding Hood](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Little_Red) |
+| 176 | [Bejeweled](https://github.com/akankshachanana1/GameSphere/tree/Game/SinglePlayer%20-%20Games/Bejeweled) |
 
 
 
