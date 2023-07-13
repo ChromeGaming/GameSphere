@@ -44,6 +44,7 @@ LinkedIn:
 <br>Discord:
 
 If you Follow us in both social medias we provide 'level2' 
+*Only First time
 
 
 
