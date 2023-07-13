@@ -270,6 +270,7 @@ ________________________________________________________________________________
 | 174 | [Highway Race](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Highway_Race) |
 | 175 | [Stacker](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Stacker) |
 | 176 | [Little Red Riding Hood](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Little_Red) |
+| 178 | [Bejeweled](https://github.com/akankshachanana1/GameSphere/tree/Game/SinglePlayer%20-%20Games/Bejeweled) |
 
 
 
