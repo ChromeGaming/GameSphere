@@ -340,7 +340,7 @@ ________________________________________________________________________________
 |174| [PicPuzz](https://github.com/Shuchita33/GameSphere/tree/main/SinglePlayer%20-%20Games/PicPuzz)|
 | 175 | [Little Red Riding Hood](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Little_Red) |
 | 176 | [Bejeweled](https://github.com/akankshachanana1/GameSphere/tree/Game) |
-| 177 | [StickmanGame](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/StickmanGame) |
+| 177 | [StickmanGame](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/StickmanGame) | 178 | [Magic_Match](htpps://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Magic_Match)
 
 
 ]
