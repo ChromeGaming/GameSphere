@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess the number Game</title>
+</head>
+
+<!-- yha body load hote hi hum randomNumber() function run krenge so that wait na ho instantly number generate ho jaye -->
+
+<body onload="randomNumber()">
+    <main>
+
+        <!-- First screen landing page -->
+        <div class="landingPage" id="landing-page">
+            <h3>Guess The Random Number <br> Between 1 - 100</h3>
+            <img src="images/Wavy_Tech-02_Single-11.jpg" alt="logo" class="image">
+
+            <div class="events">
+                <p>Select The Difficulty</p>
+                <div class="buttonContainer">
+                    <button onclick="easyMode()">Easy: 10 Attempts</button>
+                    <button onclick="hardMode()">Hard: 5 Attempts</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Second game area screen -->
+        <div class="landingPage" id="gameArea">
+
+            <div id="newGameButton">
+                <button onClick = newGame()>New Game</button>
+            </div>
+
+            <div>
+                <h3 id="textTitle">Your Guess</h3>
+                <input type="number" id="inputBox" placeholder="Enter Your Guess" min="1" max="100" 
+                onchange="guesses()">
+
+            </div>
+
+            <div class="stats">
+                <div class="info">
+                    <p>Number of Previous Attempts</p>
+                    <span id="attempts">0</span>
+                </div>
+
+                <div class="info">
+                    <p>Number of Previous Guesses</p>
+                    <span id="guesses">-</span>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
