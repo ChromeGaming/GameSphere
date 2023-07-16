@@ -268,6 +268,7 @@ ________________________________________________________________________________
 | 175 | [Stacker](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Stacker) |
 | 176 | [Platform_Game_Engine](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Platform_Game_Engine) |
 | 177 | [Castle_Escape_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Castle_Escape_Game) |
+| 177 | [Shadow_Poke_Guessing_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Shadow_Poke_Guessing_Game) |
 
 
 
