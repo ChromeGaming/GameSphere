@@ -344,7 +344,7 @@ ________________________________________________________________________________
 | 177 | [StickmanGame](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/StickmanGame) |
 | 178 | [Magic_Match](htpps://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Magic_Match) |
 | 179 | [Glitch Buster](htpps://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Glitch_Buster) |
-
+| 179 | [Glitch_Buster](htpps://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Glitch_Buster) |
 ]
 
 
