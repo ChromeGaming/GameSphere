@@ -343,6 +343,7 @@ ________________________________________________________________________________
 | 176 | [Bejeweled](https://github.com/akankshachanana1/GameSphere/tree/Game) |
 | 177 | [StickmanGame](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/StickmanGame) |
 | 178 | [Magic_Match](htpps://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Magic_Match) |
+| 179 | [Digit Dilemma](htpps://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Digit_Dilemma) |
 
 
 ]
