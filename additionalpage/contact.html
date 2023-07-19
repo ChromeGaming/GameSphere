@@ -109,10 +109,12 @@
            <div class="contact-form" role="form">
                <div class="name-email-div">
                    <div class="inputDiv">
+                    <label for="name">Enter your Full Name: </label>
                     <input type="text" name="name" id="name" placeholder="Enter Full Name "  onkeyup="handleChange(event)" aria-required="true" aria-describedby="nameError" aria-label="Full Name">
                     <p id="nameError" class="error hidden" role="alert">Name should be of atleast 6 characters</p>
                    </div>
                     <div class="inputDiv">
+                        <label for="email">Enter your Email: </label>
                         <input type="email" name="email" id="email" placeholder="Enter Email" onkeyup="handleChange(event)" aria-required="true" aria-describedby="emailError" aria-label="Email">
                     <p class="error hidden" id="emailError" role="alert">Enter Valid Email</p>
                     </div>
@@ -120,18 +122,20 @@
                </div>
                <!-- <input type="text" name="number" id="number" placeholder="Enter Phone Number"> -->
                <div >
+                <label for="subject">Enter your Mail Subject: </label>
                 <input type="text" name="subject" id="subject" placeholder="Enter Mail Subject" onkeyup="handleChange(event)" aria-required="true" aria-describedby="subjectError" aria-label="Subject">
                 <p id="subjectError" class="error hidden" role="alert">Mail Subject must be within 2 to 6 words</p>
                </div>
              <div >
+                <label for="message">Enter your Message: </label>
                 <input type="text" name="message" id="message" placeholder="Enter Message" class="message" onkeyup="handleChange(event)" aria-required="true" aria-describedby="messageError" aria-label="Message">
                 <p id="messageError" class="error hidden" role="alert">Message must be of within 10 to 100 words</p>
              </div>
-               
-               <a href="#"><div class="btn" onclick="handleSubmitClick()" role="button" aria-pressed="false">
+               <a href="#">
+                <div class="btn" onclick="handleSubmitClick()" role="button" aria-pressed="false">
                    Send Message
-                   </div></a>
-                   
+                </div>
+               </a>
            </div>
        </div>
         </div>
