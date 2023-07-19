@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PicPuzz</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+        
+    </head>
+    <body>
+        <div id="menu">
+            <div id="magic">
+                Play  PicPuzz
+            </div>
+            <h3 style="color: rgb(197, 213, 227); font-size: 2vw">Complete the picture using its pieces from the box</h3>
+        </div>
+            <div id="contains_buttons">
+
+                <input id="menubuts" type="button" value="Level 1" onclick="lvl(this.value)" />
+                <input id="menubuts" type="button"  value="Level 2" onclick="lvl(this.value)"/>
+                <input id="menubuts" type="button"  value="Level 3" onclick="lvl(this.value)"/>
+
+            </div>
+            <script>
+            
+            //Button directs to other page along with the level number which is passed to the next page
+            
+                function lvl(clicked){
+                    console.log(clicked);
+                    window.location='puzzle.html';
+                    localStorage.setItem('level',clicked);  
+                }
+                
+            </script>
+
+    </body>
+</html>

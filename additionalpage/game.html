@@ -46,6 +46,15 @@
 
                     <ul class="navbar-nav">
                         <li class="nav-item">
+                            <!-- SEARCH BAR -->
+                            <form method="get" id="searchForm" class="mb-8 nav-link">
+                                <input type="search" name="search" id="search" placeholder="Search Game...."
+                                    class="form-control">
+                                <div class="search"></div>
+                            </form>
+                            <!-- END OF SEARCH BAR         -->
+                        </li>
+                        <li class="nav-item">
                             <a target="_blank" href="../index.html" class="nav-link">home</a>
                         </li>
                         <li class="nav-item">
@@ -64,12 +73,6 @@
     </nav>
 
     <section class="py-16 sc-popular bg-violet-dark-active">
-        <!-- SEARCH BAR -->
-        <form method="get" id="searchForm" class="mb-8">
-            <input type="search" name="search" id="search" placeholder="Search Game...." class="form-control">
-            <div class="search"></div>
-        </form>
-        <!-- END OF SEARCH BAR         -->
         <div class="container"><br><br>
             <div class="game-card-list grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
@@ -186,6 +189,53 @@
                     </div>
                 </div>
                 <!--card end-->
+
+
+                <!-- ------------- -->
+                <!-- Highway Race -->
+                <!-- ------------- -->
+                <div class="game-card">
+                    <div class="game-card-top img-fit-cover">
+                        <img src="../SinglePlayer - Games/Banner - image/Highway_Race.png" alt="">
+                        <div class="ratings-count">
+                            41
+                            <img src="../assets/icons/star-black.svg" alt="" class="ms-2">
+                        </div>
+                    </div>
+                    <div class="game-card-bottom">
+                        <div class="flex flex-col sm:flex-row justify-between items-start flex-wrap">
+                            <div class="py-1">
+                                <h4 class="text-white uppercase game-card-title">HIghway Race</h4>
+                                <p class="para-text">Highway Race: Barrel Dodge is an exciting racing game where you
+                                    control a car speeding along a highway, and your goal is to avoid barrels that
+                                    appear on the road. Test your reflexes and see how far you can go!</p>
+                            </div>
+                            <div class="star-rating mt-2 sm:mt-0 py-1">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green-half.svg">
+                            </div>
+                        </div>
+                        <div class="block-wrap flex justify-between items-end">
+                            <div class="details-group">
+                                <div class="flex items-center">
+                                    <p class="font-semibold">Release Date: &nbsp;</p>
+                                    <p>02.07.2023</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <p class="font-semibold">Updated: &nbsp;</p>
+                                    <p>Action | Desktop</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-end justify-between">
+                                <a target="_blank" href="../SinglePlayer - Games/Highway_Race/index.html"
+                                    class="btn-primary uppercase">Play Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- ------------- -->
                 <!-- Slide and Solve -->
@@ -509,6 +559,67 @@
                 <!--card end-->
 
 
+                <!-- ----------------------- -->
+                <!-- ---Guess- IT---------- -->
+                <!-- ----------------------- -->
+                <!--Card start-->
+                <div class="game-card">
+                    <div class="game-card-top img-fit-cover">
+                        <img src="../SinglePlayer - Games/Banner - image/Guess-it.png" alt="">
+                        <div class="ratings-count">
+                            45
+                            <img src="../assets/icons/star-black.svg" alt="" class="ms-2">
+                        </div>
+                    </div>
+                    <div class="game-card-bottom">
+                        <div class="share-icon text-2xl" onclick="copyLink(this)">
+                            <i class="fas fa-share-alt"></i>
+                            <input type="hidden"
+                                value="https://gamesphere-multiplayer.github.io/GameSphere/SinglePlayer%20-%20Games/link_to_the_html_file_for_your_game" />
+                            <!--If there are spaces in your naming of folder, put %20 in between, ex:
+                                link%20to%20the%html%file%20for%your&game-->
+
+                            <!--The share link will be active only when it is deployed over website-->
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row justify-between items-start flex-wrap">
+                            <div class="py-1">
+                                <h4 class="text-white uppercase game-card-title">Unlock the Mystery, Embrace the
+                                    Numbers!</h4>
+                                <p class="para-text">In this captivating guessing game, immerse yourself in the thrill
+                                    of anticipation as you navigate through the infinite possibilities. With each
+                                    calculated guess, you inch closer to the ultimate revelation, where victory awaits
+                                    those with sharp minds and an unwavering determination.</p>
+                            </div>
+                            <div class="star-rating mt-2 sm:mt-0 py-1">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green-half.svg">
+                            </div>
+                        </div>
+                        <div class="block-wrap flex justify-between items-end">
+                            <div class="details-group">
+                                <div class="flex items-center">
+                                    <p class="font-semibold">Release Date: &nbsp;</p>
+                                    <p>20.06.2023</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <p class="font-semibold">Updated: &nbsp;</p>
+                                    <p>Action | Desktop</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-end justify-between">
+                                <a target="_blank" href="../SinglePlayer - Games/Guess-it/index.html"
+                                    class="btn-primary uppercase">Play Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Card end-->
+
+
                 <!--Card start 2-->
 
                 <!-- ----- -->
@@ -612,6 +723,55 @@
                             </div>
                             <div class="flex flex-col items-end justify-between">
                                 <a target="_blank" href="../SinglePlayer - Games/bit butcher/index.html"
+                                    class="btn-primary uppercase">Play Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--card end-->
+
+                <!--Card start -->
+                <!-- PicPuzz -->
+
+                <div class="game-card">
+                    <div class="game-card-top img-fit-cover">
+                        <img src="../SinglePlayer - Games/Banner - image/PicPuzz-Complete the picture.jpg" alt="">
+                        <div class="ratings-count">
+                            321
+                            <img src="../assets/icons/star-black.svg" alt="" class="ms-2">
+                        </div>
+                    </div>
+                    <div class="game-card-bottom">
+                        <div class="share-icon text-2xl" onclick="">
+                            <i class="fas fa-share-alt"></i>
+                            <input type="hidden" value="" />
+                        </div>
+                        <div class="flex flex-col sm:flex-row justify-between items-start flex-wrap">
+                            <div class="py-1">
+                                <h4 class="text-white uppercase game-card-title">PicPuzz</h4>
+                                <p class="para-text">Complete the picture using its pieces</p>
+                            </div>
+                            <div class="star-rating mt-2 sm:mt-0 py-1">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green-half.svg">
+                            </div>
+                        </div>
+                        <div class="block-wrap flex justify-between items-end">
+                            <div class="details-group">
+                                <div class="flex items-center">
+                                    <p class="font-semibold">Release Date: &nbsp;</p>
+                                    <p>07.07.2023</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <p class="font-semibold">Updated: &nbsp;</p>
+                                    <p>Action | Desktop</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-end justify-between">
+                                <a target="_blank" href="../SinglePlayer - Games/PicPuzz/index.html"
                                     class="btn-primary uppercase">Play Now</a>
                             </div>
                         </div>
@@ -3534,59 +3694,7 @@
 
                 <!--Card start-->
 
-                <!-- ----------------- -->
-                <!-- Rock Paper Scissor -->
-                <!-- ----------------- -->
-                <div class="game-card">
-                    <div class="game-card-top img-fit-cover">
-                        <img src="https://github.com/avi-tech-test/git-branching-prac/assets/129321548/339c6da9-d2f3-48da-a04a-315ad3685eb6"
-                            alt="">
-                        <div class="ratings-count">
-                            241
-                            <img src="../assets/icons/star-black.svg" alt="" class="ms-2">
-                        </div>
-                    </div>
-                    <div class="game-card-bottom">
-                        <div class="share-icon text-2xl" onclick="copyLink(this)">
-                            <i class="fas fa-share-alt"></i>
-                            <input type="hidden"
-                                value="https://gamesphere-multiplayer.github.io/GameSphere/SinglePlayer%20-%20Games/Rock-Paper-Scissors/index.html" />
-                        </div>
-                        <div class="flex flex-col sm:flex-row justify-between items-start flex-wrap">
-                            <div class="py-1">
-                                <h4 class="text-white uppercase game-card-title">Rock Paper Scissor</h4>
-                                <p class="para-text">Get ready to funk it out and settle it in style with "Rock, Paper,
-                                    Scissors Groove"! It's a funky twist on the classic hand game that will have you
-                                    jamming to the rhythm as you make your moves. Choose your groove - rock, paper, or
-                                    scissors - and go head-to-head against funky opponents....</p>
-                            </div>
-                            <div class="star-rating mt-2 sm:mt-0 py-1">
-                                <img src="../assets/icons/star-green.svg">
-                                <img src="../assets/icons/star-green.svg">
-                                <img src="../assets/icons/star-green.svg">
-                                <img src="../assets/icons/star-green.svg">
-                                <img src="../assets/icons/star-green-half.svg">
-                            </div>
-                        </div>
-                        <div class="block-wrap flex justify-between items-end">
-                            <div class="details-group">
-                                <div class="flex items-center">
-                                    <p class="font-semibold">Release Date: &nbsp;</p>
-                                    <p>07.12.2015</p>
-                                </div>
-                                <div class="flex items-center">
-                                    <p class="font-semibold">Updated: &nbsp;</p>
-                                    <p>Action | Desktop</p>
-                                </div>
-                            </div>
-                            <div class="flex flex-col items-end justify-between">
-                                <a target="_blank" href="../SinglePlayer - Games/Rock-Paper-Scissors/index.html"
-                                    class="btn-primary uppercase">play now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--card end-->
+
 
                 <!-- ------------------------ -->
                 <!-- ----Save the forest----- -->
@@ -5806,54 +5914,7 @@
                 </div>
                 <!--card end-->
 
-                <!--Card start-->
-                <div class="game-car
-                    <div class="game-card-top display-none img-fit-cover">
-                        <img src="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/56786344/f9b22596-57f1-4228-9b1e-e68e14a3b08f"
-                            alt="">
-                        <div class="ratings-count">
-                            450
-                            <img src="../assets/icons/star-black.svg" alt="" class="ms-2">
-                        </div>
-                    </div>
-                    <div class="game-card-bottom">
-                        <div class="share-icon text-2xl" onclick="copyLink(this)">
-                            <i class="fas fa-share-alt"></i>
-                            <input type="hidden"
-                                value="https://gamesphere-multiplayer.github.io/GameSphere/SinglePlayer%20-%20Games/Color_Blast_game/index.html" />
-                        </div>
-                        <div class="flex flex-col sm:flex-row justify-between items-start flex-wrap">
-                            <div class="py-1">
-                                <h4 class="text-white uppercase game-card-title">Virtual Guitar</h4>
-                                <p class="para-text">It is a virtual instrument which you can turn into guitar, Bass, and Ukulele. You can play with the notes and the frets. </p>
-                            </div>
-                            <div class="star-rating mt-2 sm:mt-0 py-1">
-                                <img src="../assets/icons/star-green.svg">
-                                <img src="../assets/icons/star-green.svg">
-                                <img src="../assets/icons/star-green.svg">
-                                <img src="../assets/icons/star-green.svg">
-                                <img src="../assets/icons/star-green-half.svg">
-                            </div>
-                        </div>
-                        <div class="block-wrap flex justify-between items-end">
-                            <div class="details-group">
-                                <div class="flex items-center">
-                                    <p class="font-semibold">Release Date: &nbsp;</p>
-                                    <p>01.07.2023</p>
-                                </div>
-                                <div class="flex items-center">
-                                    <p class="font-semibold">Updated: &nbsp;</p>
-                                    <p>Action | Desktop</p>
-                                </div>
-                            </div>
-                            <div class="flex flex-col items-end justify-between">
-                                <a target="_blank" href="../SinglePlayer - Games/Color_Blast_game/index.html"
-                                    class="btn-primary uppercase">play now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--card end-->
+
 
                 <!--Card start-->
                 <div class="game-card">
@@ -7860,62 +7921,7 @@
                             <!--If there are spaces in your naming of folder, put %20 in between, ex:
                             link%20to%20the%html%file%20for%your&game-->
 
-                            <!--Card start-->
-                            <div class="game-card">
-                                <div class="game-card-top img-fit-cover">
-                                    <video
-                                        src="https://drive.google.com/file/d/1iTOBNpi3y8wdYJ0Qz0bGO9ny770-7wue/view?usp=sharing"
-                                        link " type=" video/mp4" muted loop class="clip"></video>
-                                    <img src="../SinglePlayer - Games/Banner - image/Slingshot_Game.gif" alt="">
-                                    <div class="ratings-count">
-                                        45
-                                        <img src="../SinglePlayer - Games/Banner - image/Slingshot_Game.gif" alt=""
-                                            class="ms-2">
-                                    </div>
-                                </div>
-                                <div class="game-card-bottom">
-                                    <div class="share-icon text-2xl" onclick="copyLink(this)">
-                                        <i class="fas fa-share-alt"></i>
-                                        <input type="hidden"
-                                            value="https://gamesphere-multiplayer.github.io/GameSphere/SinglePlayer%20-%20Games/Slingshot_Game/index.html" />
-                                        <!--If there are spaces in your naming of folder, put %20 in between, ex:
-                                link%20to%20the%html%file%20for%your&game-->
 
-                                        <!--The share link will be active only when it is deployed over website-->
-                                    </div>
-
-                                    <div class="flex flex-col sm:flex-row justify-between items-start flex-wrap">
-                                        <div class="py-1">
-                                            <h4 class="text-white uppercase game-card-title">Name_of_your_Game</h4>
-                                            <p class="para-text">Slingshot game...</p>
-                                        </div>
-                                        <div class="star-rating mt-2 sm:mt-0 py-1">
-                                            <img src="../assets/icons/star-green.svg">
-                                            <img src="../assets/icons/star-green.svg">
-                                            <img src="../assets/icons/star-green.svg">
-                                            <img src="../assets/icons/star-green.svg">
-                                            <img src="../assets/icons/star-green-half.svg">
-                                        </div>
-                                    </div>
-                                    <div class="block-wrap flex justify-between items-end">
-                                        <div class="details-group">
-                                            <div class="flex items-center">
-                                                <p class="font-semibold">Release Date: &nbsp;</p>
-                                                <p>20.06.2023</p>
-                                            </div>
-                                            <div class="flex items-center">
-                                                <p class="font-semibold">Updated: &nbsp;</p>
-                                                <p>Action | Desktop</p>
-                                            </div>
-                                        </div>
-                                        <div class="flex flex-col items-end justify-between">
-                                            <a target="_blank" href="../SinglePlayer - Games/Slingshot_Game/index.html"
-                                                class="btn-primary uppercase">Play Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--Card end-->
 
 
 
@@ -8015,27 +8021,35 @@
                     </div>
                 </div>
                 <!-- card end -->
+                <!--  card start -->
 
-                <!-- Subway Sufers -->
+                <!-- ------------- -->
+                <!-- Ravoucs Raven Run -->
+                <!-- ------------- -->
+
                 <div class="game-card">
                     <div class="game-card-top img-fit-cover">
-                        <img src="../SinglePlayer - Games/Banner - images/sufer.jpg" alt="">
-                        <div class="ratings-count">
-                            56
-                            <img src="../assets/icons/star-black.svg" alt="" class="ms-2">
+                        <video src="https://drive.google.com/file/d/1lmKAyNjtGaFUbC7hOTqnfyF917cK_Nue/view?usp=sharing"
+                            link " type=" video/mp4" muted loop class="clip"></video>
+                        <img src="../assets/images/Ravoucs_Raven_Run.jpeg" alt="">
+                        <div class="ratings-count" 45 <img src="../assets/icons/star-black.svg" alt="" class="ms-2">
                         </div>
                     </div>
                     <div class="game-card-bottom">
                         <div class="share-icon text-2xl" onclick="copyLink(this)">
                             <i class="fas fa-share-alt"></i>
                             <input type="hidden"
-                                value="https://gamesphere-multiplayer.github.io/GameSphere/SinglePlayer%20-%20Games/Subway-Sufers/index.html" />
+                                value="https://gamesphere-multiplayer.github.io/GameSphere/SinglePlayer%20-%20Games/Ravoucs_Raven_Run/index.html" />
                         </div>
 
                         <div class="flex flex-col sm:flex-row justify-between items-start flex-wrap">
                             <div class="py-1">
-                                <h4 class="text-white uppercase game-card-title">Simon Says</h4>
-                                <p class="para-text">It is game which is inspired by subway sufers</p>
+                                <h4 class="text-white uppercase game-card-title">Ravoucs Raven Run </h4>
+                                <p class="para-text">Take flight as a fearless firedog battling vibrant,
+                                    mischievous ravens ablaze with color. Navigate the skies, dodging and
+                                    diving through their dazzling trails of sparks to score big. Show your
+                                    agility as you soar, surpassing challenges and aiming for the highest
+                                    score in this exhilarating game. </p>
                             </div>
                             <div class="star-rating mt-2 sm:mt-0 py-1">
                                 <img src="../assets/icons/star-green.svg">
@@ -8049,57 +8063,7 @@
                             <div class="details-group">
                                 <div class="flex items-center">
                                     <p class="font-semibold">Release Date: &nbsp;</p>
-                                    <p>01.07.2023</p>
-                                </div>
-                                <div class="flex items-center">
-                                    <p class="font-semibold">Updated: &nbsp;</p>
-                                    <p>Casua. | Desktop</p>
-                                </div>
-                            </div>
-                            <div class="flex flex-col items-end justify-between">
-                                <a target="_blank" href="../SinglePlayer - Games/simon-says/index.html"
-                                    class="btn-primary uppercase">Play Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="game-card">
-                    <div class="game-card-top img-fit-cover">
-                        <!-- <video src="https://drive.google.com/file/d/1lmKAyNjtGaFUbC7hOTqnfyF917cK_Nue/view?usp=sharing" -->
-                            link type=" video/mp4" muted loop class="clip"></video>
-                        <img src="../SinglePlayer - Games/Banner - images/car.png" alt="">
-                        <div class="ratings-count">
-                            45
-                            <img src="../assets/icons/star-black.svg" alt="" class="ms-2">
-                        </div>
-                    </div>
-                    <div class="game-card-bottom">
-                        <div class="share-icon text-2xl" onclick="copyLink(this)">
-                            <i class="fas fa-share-alt"></i>
-                            <input type="hidden"
-                                value="https://gamesphere-multiplayer.github.io/GameSphere/SinglePlayer%20-%20Games/Car-Racer/Car-Racer-Vanilla-JS-main/index.html" />
-                        </div>
-
-                        <div class="flex flex-col sm:flex-row justify-between items-start flex-wrap">
-                            <div class="py-1">
-                                <h4 class="text-white uppercase game-card-title">Car Racer</h4>
-                                <p class="para-text">It is a fun game which you can play on free time.
-                                </p>
-                            </div>
-                            <div class="star-rating mt-2 sm:mt-0 py-1">
-                                <img src="../assets/icons/star-green.svg">
-                                <img src="../assets/icons/star-green.svg">
-                                <img src="../assets/icons/star-green.svg">
-                                <img src="../assets/icons/star-green.svg">
-                                <img src="../assets/icons/star-green-half.svg">
-                            </div>
-                        </div>
-                        <div class="block-wrap flex justify-between items-end">
-                            <div class="details-group">
-                                <div class="flex items-center">
-                                    <p class="font-semibold">Release Date: &nbsp;</p>
-                                    <p>01.07.2023</p>
+                                    <p>27.06.2023</p>
                                 </div>
                                 <div class="flex items-center">
                                     <p class="font-semibold">Updated: &nbsp;</p>
@@ -8107,175 +8071,129 @@
                                 </div>
                             </div>
                             <div class="flex flex-col items-end justify-between">
-                                <a target="_blank" href="../SinglePlayer - Games/Car-Racer/Car-Racer-Vanilla-JS-main/index.html"
+                                <a target="_blank" href="../SinglePlayer - Games/Ravoucs_Raven_Run/index.html"
                                     class="btn-primary uppercase">Play Now</a>
-                                                                 
-            <!-- card end -->
-
-
-<!--Card start-->
-                <div class = "game-card">
-                    <div class = "game-card-top img-fit-cover">
-                     <video src="https://drive.google.com/file/d/1SaklU2_IwSCnLlAL7ab2wNI4sJ736O69/view?usp=sharing" link " type="video/mp4" muted loop class="clip"  ></video>
-                        <img src = "../SinglePlayer - Games/Banner - images/Chinese_Checkers.png" alt = "">
-                        <div class = "ratings-count">
-                            45
-                            <img src = "../SinglePlayer - Games/Banner - images/Chinese_Checkers.png" alt = "" class = "ms-2">
-                        </div>
-                    </div>
-                    <div class = "game-card-bottom">
-                    <div class="share-icon text-2xl" onclick="copyLink(this)">
-                            <i class="fas fa-share-alt"></i>
-                            <input type="hidden"
-                                value="https://gamesphere-multiplayer.github.io/GameSphere/SinglePlayer%20-%20Games/Chinese_Checkers/index.html" /> 
-                                <!--If there are spaces in your naming of folder, put %20 in between, ex:
-                                link%20to%20the%html%file%20for%your&game-->
-                                
-                                <!--The share link will be active only when it is deployed over website-->
-                        </div>
-                        
-                        <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
-                            <div class = "py-1">
-                                <h4 class = "text-white uppercase game-card-title">Chinese_Checkers</h4>
-                                <p class = "para-text">Chinese_Checkers</p>
-                            </div>
-                            <div class = "star-rating mt-2 sm:mt-0 py-1">
-                                <img src = "../assets/icons/star-green.svg">
-                                <img src = "../assets/icons/star-green.svg">
-                                <img src = "../assets/icons/star-green.svg">
-                                <img src = "../assets/icons/star-green.svg">
-                                <img src = "../assets/icons/star-green-half.svg">
-                            </div>
-                        </div>
-                        <div class = "block-wrap flex justify-between items-end">
-                            <div class = "details-group">
-                                <div class = "flex items-center">
-                                    <p class = "font-semibold">Release Date: &nbsp;</p>
-                                    <p>20.06.2023</p>
-                                </div>
-                                <div class = "flex items-center">
-                                    <p class = "font-semibold">Updated: &nbsp;</p>
-                                    <p>Action | Desktop</p>
-                                </div>
-                            </div>
-                            <div class = "flex flex-col items-end justify-between">
-                                <a target="_blank" href = "../SinglePlayer - Games/Chinese_Checkers/index.html" class = "btn-primary uppercase">Play Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
-<!--Card end-->
 
+                <!--  card start -->
 
-
-<!--Card start-->
-                <div class = "game-card">
-                    <div class = "game-card-top img-fit-cover">
-                     <video src="https://drive.google.com/file/d/1xh9IgK4SDjiCwHRU4fyCAQi2iSKL1NCI/view?usp=sharing" link " type="video/mp4" muted loop class="clip"  ></video>
-                        <img src = "../SinglePlayer - Games/Banner - images/Chinese_Checkers.png" alt = "">
-                        <div class = "ratings-count">
+                <div class="game-card">
+                    <div class="game-card-top img-fit-cover">
+                        <video src="https://drive.google.com/file/d/1lmKAyNjtGaFUbC7hOTqnfyF917cK_Nue/view?usp=sharing"
+                            link " type=" video/mp4" muted loop class="clip"></video>
+                        <img src="../SinglePlayer - Games/Banner - images/simon-says.png" alt="">
+                        <div class="ratings-count">
                             45
-                            <img src = "../SinglePlayer - Games/Banner - images/Chinese_Checkers.png" alt = "" class = "ms-2">
+                            <img src="../assets/icons/star-black.svg" alt="" class="ms-2">
                         </div>
                     </div>
-                    <div class = "game-card-bottom">
-                    <div class="share-icon text-2xl" onclick="copyLink(this)">
+                    <div class="game-card-bottom">
+                        <div class="share-icon text-2xl" onclick="copyLink(this)">
                             <i class="fas fa-share-alt"></i>
                             <input type="hidden"
-                                value="https://gamesphere-multiplayer.github.io/GameSphere/SinglePlayer%20-%20Games/Castle_Escape_Game/src/index.html" /> 
-                                <!--If there are spaces in your naming of folder, put %20 in between, ex:
-                                link%20to%20the%html%file%20for%your&game-->
-                                
-                                <!--The share link will be active only when it is deployed over website-->
+                                value="https://gamesphere-multiplayer.github.io/GameSphere/SinglePlayer%20-%20Games/simon-says/index.html" />
                         </div>
-                        
-                        <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
-                            <div class = "py-1">
-                                <h4 class = "text-white uppercase game-card-title">Castle_Escape_Game</h4>
-                                <p class = "para-text">Castle_Escape_Game</p>
+
+                        <div class="flex flex-col sm:flex-row justify-between items-start flex-wrap">
+                            <div class="py-1">
+                                <h4 class="text-white uppercase game-card-title">Egg Catch Game</h4>
+                                <p class="para-text">Eggs Catcher is a classic game where the goal is to
+                                    catch as many eggs as possible. In this game, every egg you catch will
+                                    increase your score and if you miss 5 eggs you will lose the game.</p>
                             </div>
-                            <div class = "star-rating mt-2 sm:mt-0 py-1">
-                                <img src = "../assets/icons/star-green.svg">
-                                <img src = "../assets/icons/star-green.svg">
-                                <img src = "../assets/icons/star-green.svg">
-                                <img src = "../assets/icons/star-green.svg">
-                                <img src = "../assets/icons/star-green-half.svg">
+                            <div class="star-rating mt-2 sm:mt-0 py-1">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green-half.svg">
                             </div>
                         </div>
-                        <div class = "block-wrap flex justify-between items-end">
-                            <div class = "details-group">
-                                <div class = "flex items-center">
-                                    <p class = "font-semibold">Release Date: &nbsp;</p>
-                                    <p>20.06.2023</p>
+                        <div class="block-wrap flex justify-between items-end">
+                            <div class="details-group">
+                                <div class="flex items-center">
+                                    <p class="font-semibold">Release Date: &nbsp;</p>
+                                    <p>1.07.2023</p>
                                 </div>
-                                <div class = "flex items-center">
-                                    <p class = "font-semibold">Updated: &nbsp;</p>
-                                    <p>Action | Desktop</p>
+                                <div class="flex items-center">
+                                    <p class="font-semibold">Updated: &nbsp;</p>
+                                    <p>Memory | Desktop</p>
                                 </div>
                             </div>
-                            <div class = "flex flex-col items-end justify-between">
-                                <a target="_blank" href = "../SinglePlayer - Games/Castle_Escape_Game/src/index.html" class = "btn-primary uppercase">Play Now</a>
+                            <div class="flex flex-col items-end justify-between">
+                                <a target="_blank" href="../SinglePlayer - Games/simon-says/index.html"
+                                    class="btn-primary uppercase">Play Now</a>
+
                             </div>
                         </div>
                     </div>
                 </div>
-<!--Card end-->
 
+                <!-- card end -->
 
+                <!-- card starts -->
 
+                <!-- ------------- -->
+                <!--  Stacker  -->
+                <!-- ------------- -->
 
-<!--Card start-->
-                <div class = "game-card">
-                    <div class = "game-card-top img-fit-cover">
-                     <video src="https://drive.google.com/file/d/1sqgigdYRSGsaKiZrD4H1T5doDj9hXfhq/view?usp=sharing" link " type="video/mp4" muted loop class="clip"  ></video>
-                        <div class = "ratings-count">
+                <div class="game-card">
+                    <div class="game-card-top img-fit-cover">
+                        <video src="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/100849696/c1052e12-b1dc-4fb0-bf68-bd30d24c6e30
+                 " link " type=" video/mp4" muted loop class="clip"></video>
+                        <img src="../SinglePlayer - Games/Banner - image/Stacker.png" alt="">
+                        <div class="ratings-count">
                             45
-                            <img src = "../SinglePlayer - Games/Banner - images/Platform_Game_Engine.png" alt = "" class = "ms-2">
+                            <img src="../assets/icons/star-black.svg" alt="" class="ms-2">
                         </div>
                     </div>
-                    <div class = "game-card-bottom">
-                    <div class="share-icon text-2xl" onclick="copyLink(this)">
+                    <div class="game-card-bottom">
+                        <div class="share-icon text-2xl" onclick="copyLink(this)">
                             <i class="fas fa-share-alt"></i>
                             <input type="hidden"
-                                value="https://gamesphere-multiplayer.github.io/GameSphere/SinglePlayer%20-%20Games/Platform_Game_Engine/index.html" /> 
-                                <!--If there are spaces in your naming of folder, put %20 in between, ex:
-                                link%20to%20the%html%file%20for%your&game-->
-                                
-                                <!--The share link will be active only when it is deployed over website-->
+                                value="https://gamesphere-multiplayer.github.io/GameSphere/SinglePlayer%20-%20Games/link_to_the_html_file_for_your_game" />
+                            <!--If there are spaces in your naming of folder, put %20 in between, ex:
+                            link%20to%20the%html%file%20for%your&game-->
+
+                            <!--The share link will be active only when it is deployed over website-->
                         </div>
-                        
-                        <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
-                            <div class = "py-1">
-                                <h4 class = "text-white uppercase game-card-title">Platform_Game_Engine</h4>
-                                <p class = "para-text">Platform_Game_Engine</p>
+
+                        <div class="flex flex-col sm:flex-row justify-between items-start flex-wrap">
+                            <div class="py-1">
+                                <h4 class="text-white uppercase game-card-title">Stacker</h4>
+                                <p class="para-text">Have to catch the speed of the boxes which are moving
+                                    and have to freeze them at our desired place.</p>
                             </div>
-                            <div class = "star-rating mt-2 sm:mt-0 py-1">
-                                <img src = "../assets/icons/star-green.svg">
-                                <img src = "../assets/icons/star-green.svg">
-                                <img src = "../assets/icons/star-green.svg">
-                                <img src = "../assets/icons/star-green.svg">
-                                <img src = "../assets/icons/star-green-half.svg">
+                            <div class="star-rating mt-2 sm:mt-0 py-1">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green-half.svg">
                             </div>
                         </div>
-                        <div class = "block-wrap flex justify-between items-end">
-                            <div class = "details-group">
-                                <div class = "flex items-center">
-                                    <p class = "font-semibold">Release Date: &nbsp;</p>
+                        <div class="block-wrap flex justify-between items-end">
+                            <div class="details-group">
+                                <div class="flex items-center">
+                                    <p class="font-semibold">Release Date: &nbsp;</p>
                                     <p>20.06.2023</p>
                                 </div>
-                                <div class = "flex items-center">
-                                    <p class = "font-semibold">Updated: &nbsp;</p>
-                                    <p>Action | Desktop</p>
+                                <div class="flex items-center">
+                                    <p class="font-semibold">Updated: &nbsp;</p>
+                                    <p>Puzzle | Desktop</p>
                                 </div>
                             </div>
-                            <div class = "flex flex-col items-end justify-between">
-                                <a target="_blank" href = "../SinglePlayer - Games/Platform_Game_Engine/index.html" class = "btn-primary uppercase">Play Now</a>
+                            <div class="flex flex-col items-end justify-between">
+                                <a target="_blank" href="../SinglePlayer - Games/Stacker/index.html"
+                                    class="btn-primary uppercase">Play Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
-<!--Card end-->
-
+                <!-- card end -->
 
 
 <!--Card start-->
@@ -8390,33 +8308,150 @@
 
 
 
-            <!--  card start -->
-                
-                <!-- ------------- -->
-                <!-- Ravoucs Raven Run -->
-                <!-- ------------- -->
-                
-                <div class = "game-card">
-                    <div class = "game-card-top img-fit-cover">
-                         <video src="https://drive.google.com/file/d/1lmKAyNjtGaFUbC7hOTqnfyF917cK_Nue/view?usp=sharing"
-                                link " type=" video/mp4" muted loop class="clip"></video>
-                        <img src = "../assets/images/Ravoucs_Raven_Run.jpeg" alt = "">
-                        <div class = "ratings-count"
+                <!--Card start-->
+                <div class="game-card">
+                    <div class="game-card-top img-fit-cover">
+                        <video src="https://drive.google.com/file/d/1xh9IgK4SDjiCwHRU4fyCAQi2iSKL1NCI/view?usp=sharing"
+                            link " type=" video/mp4" muted loop class="clip"></video>
+                        <img src="../SinglePlayer - Games/Banner - images/Chinese_Checkers.png" alt="">
+                        <div class="ratings-count">
                             45
-                            <img src = "../assets/icons/star-black.svg" alt = "" class = "ms-2">
+                            <img src="../SinglePlayer - Games/Banner - images/Chinese_Checkers.png" alt="" class="ms-2">
                         </div>
                     </div>
-                    <div class = "game-card-bottom">
-                    <div class="share-icon text-2xl" onclick="copyLink(this)">
+                    <div class="game-card-bottom">
+                        <div class="share-icon text-2xl" onclick="copyLink(this)">
                             <i class="fas fa-share-alt"></i>
                             <input type="hidden"
-                                value="https://gamesphere-multiplayer.github.io/GameSphere/SinglePlayer%20-%20Games/Ravoucs_Raven_Run/index.html" /> 
+                                value="https://gamesphere-multiplayer.github.io/GameSphere/SinglePlayer%20-%20Games/Castle_Escape_Game/src/index.html" />
+                            <!--If there are spaces in your naming of folder, put %20 in between, ex:
+                                link%20to%20the%html%file%20for%your&game-->
+
+                            <!--The share link will be active only when it is deployed over website-->
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row justify-between items-start flex-wrap">
+                            <div class="py-1">
+                                <h4 class="text-white uppercase game-card-title">Castle_Escape_Game</h4>
+                                <p class="para-text">Castle_Escape_Game</p>
+                            </div>
+                            <div class="star-rating mt-2 sm:mt-0 py-1">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green-half.svg">
+                            </div>
+                        </div>
+                        <div class="block-wrap flex justify-between items-end">
+                            <div class="details-group">
+                                <div class="flex items-center">
+                                    <p class="font-semibold">Release Date: &nbsp;</p>
+                                    <p>20.06.2023</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <p class="font-semibold">Updated: &nbsp;</p>
+                                    <p>Action | Desktop</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-end justify-between">
+                                <a target="_blank" href="../SinglePlayer - Games/Castle_Escape_Game/src/index.html"
+                                    class="btn-primary uppercase">Play Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Card end-->
+
+
+
+
+                <!--Card start-->
+                <div class="game-card">
+                    <div class="game-card-top img-fit-cover">
+                        <video src="https://drive.google.com/file/d/1sqgigdYRSGsaKiZrD4H1T5doDj9hXfhq/view?usp=sharing"
+                            link " type=" video/mp4" muted loop class="clip"></video>
+                            
+                            <div class="ratings-count">
+                                45
+                               <img src="../SinglePlayer - Games/Banner - images/Platform_Game_Engine.png" alt=""
+                                class="ms-2">
+                            </div>
+                        </div>
+                        <div class="game-card-bottom">
+                        <div class="share-icon text-2xl" onclick="copyLink(this)">
+                            <i class="fas fa-share-alt"></i>
+                            <input type="hidden"
+                                value="https://gamesphere-multiplayer.github.io/GameSphere/SinglePlayer%20-%20Games/Platform_Game_Engine/index.html" />
+                            <!--If there are spaces in your naming of folder, put %20 in between, ex:
+                                link%20to%20the%html%file%20for%your&game-->
+
+                            <!--The share link will be active only when it is deployed over website-->
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row justify-between items-start flex-wrap">
+                            <div class="py-1">
+                                <h4 class="text-white uppercase game-card-title">Platform_Game_Engine</h4>
+                                <p class="para-text">Platform_Game_Engine</p>
+                            </div>
+                            <div class="star-rating mt-2 sm:mt-0 py-1">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green-half.svg">
+                            </div>
+                        </div>
+                        <div class="block-wrap flex justify-between items-end">
+                            <div class="details-group">
+                                <div class="flex items-center">
+                                    <p class="font-semibold">Release Date: &nbsp;</p>
+                                    <p>20.06.2023</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <p class="font-semibold">Updated: &nbsp;</p>
+                                    <p>Action | Desktop</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-end justify-between">
+                                <a target="_blank" href="../SinglePlayer - Games/Platform_Game_Engine/index.html"
+                                    class="btn-primary uppercase">Play Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card end -->
+
+
+
+                <!-- Magic-Match Game-->
+
+                <!--Card start-->
+                <div class = "game-card">
+                    <div class = "game-card-top img-fit-cover">
+                        <video src="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/80768852/41b23d7b-ede7-4564-87f5-9d546288d42a" link " type="video/mp4" muted loop class="clip"  ></video>
+                            <img src = "https://github.com/GameSphere-MultiPlayer/GameSphere/assets/80768852/c371810e-b480-41a1-ac79-1809a074bb3f" alt = "">
+                            <div class = "ratings-count">
+                                45
+                                <img src = "../assets/icons/star-black.svg" alt = "" class = "ms-2">
+                            </div>
+                        </div>
+                        <div class = "game-card-bottom">
+                        <div class="share-icon text-2xl" onclick="copyLink(this)">
+                            <i class="fas fa-share-alt"></i>
+                            <input type="hidden"
+                                value="https://gamesphere-multiplayer.github.io/GameSphere/SinglePlayer%20-%20Games/Magic-match/magic-match-memory/public/index.html" /> 
+                                <!--GameSphere\SinglePlayer - Games\Magic-match\magic-match-memory\public\index.html-->
+                                <!--If there are spaces in your naming of folder, put %20 in between, ex:
+                                link%20to%20the%html%file%20for%your&game-->
+                              
+                                <!--The share link will be active only when it is deployed over website-->
                         </div>
                         
                         <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
                             <div class = "py-1">
-                                <h4 class = "text-white uppercase game-card-title">Ravoucs Raven Run </h4>
-                                <p class = "para-text">Take flight as a fearless firedog battling vibrant, mischievous ravens ablaze with color. Navigate the skies, dodging and diving through their dazzling trails of sparks to score big. Show your agility as you soar, surpassing challenges and aiming for the highest score in this exhilarating game. </p>
+                                <h4 class = "text-white uppercase game-card-title">Magic Match</h4>
+                                <p class = "para-text">"Unleash your mind's magic with every match!"</p>
                             </div>
                             <div class = "star-rating mt-2 sm:mt-0 py-1">
                                 <img src = "../assets/icons/star-green.svg">
@@ -8430,82 +8465,23 @@
                             <div class = "details-group">
                                 <div class = "flex items-center">
                                     <p class = "font-semibold">Release Date: &nbsp;</p>
-                                    <p>27.06.2023</p>
+                                    <p>15.07.2023</p>
                                 </div>
                                 <div class = "flex items-center">
-                                    <p class = "font-semibold">Updated: &nbsp;</p>
-                                    <p>Memory | Desktop</p>
+                                    <p class = "font-semibold">Updated: &nbsp;</>
+                                    <p>Action | Desktop</p>
                                 </div>
                             </div>
                             <div class = "flex flex-col items-end justify-between">
-                                <a target="_blank"
-                     href = "../SinglePlayer - Games/Ravoucs_Raven_Run/index.html" 
-                        class = "btn-primary uppercase">Play Now</a>
+                                <a target="_blank" href = "GameSphere\SinglePlayer%20-%20Games\Magic-match\magic-match-memory\public\index.html" class = "btn-primary uppercase">Play Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-            <!--  card start -->
-                
-                <div class = "game-card">
-                    <div class = "game-card-top img-fit-cover">
-                         <video src="https://drive.google.com/file/d/1lmKAyNjtGaFUbC7hOTqnfyF917cK_Nue/view?usp=sharing"
-                                link " type=" video/mp4" muted loop class="clip"></video>
-                        <img src = "../SinglePlayer - Games/Banner - images/simon-says.png" alt = "">
-                        <div class = "ratings-count">
-                            45
-                            <img src = "../assets/icons/star-black.svg" alt = "" class = "ms-2">
-                        </div>
-                    </div>
-                    <div class = "game-card-bottom">
-                    <div class="share-icon text-2xl" onclick="copyLink(this)">
-                            <i class="fas fa-share-alt"></i>
-                            <input type="hidden"
-                                value="https://gamesphere-multiplayer.github.io/GameSphere/SinglePlayer%20-%20Games/simon-says/index.html" /> 
-                        </div>
-                        
-                        <div class = "flex flex-col sm:flex-row justify-between items-start flex-wrap">
-                            <div class = "py-1">
-                                <h4 class = "text-white uppercase game-card-title">Egg Catch Game</h4>
-                                <p class = "para-text">Eggs Catcher is a classic game where the goal is to catch as many eggs as possible. In this game, every egg you catch will increase your score and if you miss 5 eggs you will lose the game.</p>
-                            </div>
-                            <div class = "star-rating mt-2 sm:mt-0 py-1">
-                                <img src = "../assets/icons/star-green.svg">
-                                <img src = "../assets/icons/star-green.svg">
-                                <img src = "../assets/icons/star-green.svg">
-                                <img src = "../assets/icons/star-green.svg">
-                                <img src = "../assets/icons/star-green-half.svg">
-                            </div>
-                        </div>
-                        <div class = "block-wrap flex justify-between items-end">
-                            <div class = "details-group">
-                                <div class = "flex items-center">
-                                    <p class = "font-semibold">Release Date: &nbsp;</p>
-                                    <p>1.07.2023</p>
-                                </div>
-                                <div class = "flex items-center">
-                                    <p class = "font-semibold">Updated: &nbsp;</p>
-                                    <p>Memory | Desktop</p>
-                                </div>
-                            </div>
-                            <div class = "flex flex-col items-end justify-between">
-                                <a target="_blank"
-                     href = "../SinglePlayer - Games/simon-says/index.html" 
-                        class = "btn-primary uppercase">Play Now</a>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!--Card end-->
 
 
             </div>
-
-
-
-
-        </div>
         </div>
     </section>
 
@@ -8556,8 +8532,122 @@
     <!-- custom script js -->
     <script src="../src/script.js"></script>
 
-    
+            
 
+    <!-- card starts -->
+
+    <!-- ------------- -->
+    <!--  Bejeweled  -->
+    <!-- ------------- -->
+
+    <div class="game-card">
+        <div class="game-card-top img-fit-cover">
+            <img src="SinglePlayer - Games\Bejeweled\assets\Bejeweled.png" alt="">
+            <div class="ratings-count">
+                41
+                <img src="SinglePlayer - Games\Bejeweled\assets\Bejeweled.png" alt="" class="ms-2">
+            </div>
+        </div>
+        <div class="game-card-bottom">
+            <div class="share-icon text-2xl" onclick="copyLink(this)">
+                <i class="fas fa-share-alt"></i>
+                <input type="hidden"
+                    value="https://gamesphere-singleplayer.github.io/GameSphere/SinglePlayer%20-%20Games/Bejeweled/index.html" />
+            </div>
+            <div class="flex flex-col sm:flex-row justify-between items-start flex-wrap">
+                <div class="py-1">
+                    <h4 class="text-white uppercase game-card-title">Bejeweled</h4>
+                    <p class="para-text">Bejeweled is a puzzle game where the player's objective is to swap adjacent
+                        gems in a grid to create matches of three or more identical gems. When a match is made, those
+                        gems are removed from the grid, and new gems fall from the top to fill the empty spaces.</p>
+                </div>
+                <div class="star-rating mt-2 sm:mt-0 py-1">
+                    <img src="../assets/icons/star-green.svg">
+                    <img src="../assets/icons/star-green.svg">
+                    <img src="../assets/icons/star-green.svg">
+                    <img src="../assets/icons/star-green.svg">
+                    <img src="../assets/icons/star-green-half.svg">
+                </div>
+            </div>
+            <div class="block-wrap flex justify-between items-end">
+                <div class="details-group">
+                    <div class="flex items-center">
+                        <p class="font-semibold">Release Date: &nbsp;</p>
+                        <p>13.07.2023</p>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="font-semibold">Updated: &nbsp;</p>
+                        <p>Action | Desktop</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-end justify-between">
+                    <a target="_blank" href="../SinglePlayer - Games/Bejeweled/index.html"
+                        class="btn-primary uppercase">Play Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--card end-->
+      
+      
+      <!-- card starts -->
+
+            <!-- ------------- -->
+            <!--  StickmanGame  -->
+            <!-- ------------- -->
+
+<div class="game-card">
+                    <div class="game-card-top img-fit-cover">
+                        <img src="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/stickman.png"
+                            alt="">
+                        <div class="ratings-count">
+                            41
+                            <img src="../assets/icons/star-black.svg" alt="" class="ms-2">
+                        </div>
+                    </div>
+                    <div class="game-card-bottom">
+                        <div class="share-icon text-2xl" onclick="copyLink(this)">
+                            <i class="fas fa-share-alt"></i>
+                            <input type="hidden"
+                                value="https://gamesphere-multiplayer.github.io/GameSphere/SinglePlayer%20-%20Games/StickmanGame/index.html" />
+                        </div>
+                        <div class="flex flex-col sm:flex-row justify-between items-start flex-wrap">
+                            <div class="py-1">
+                                <h4 class="text-white uppercase game-card-title">2048 Games</h4>
+                                <p class="para-text">Prepare to be addicted to the stickman game!
+                                    run and kill the enemies by using knife and stick and win the game.
+                                     With simple controls and endless possibilities, this game will keep 
+                                     your brain engaged and your fingers swiping for hours on end....</p>
+                            </div>
+                            <div class="star-rating mt-2 sm:mt-0 py-1">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green.svg">
+                                <img src="../assets/icons/star-green-half.svg">
+                            </div>
+                        </div>
+                        <div class="block-wrap flex justify-between items-end">
+                            <div class="details-group">
+                                <div class="flex items-center">
+                                    <p class="font-semibold">Release Date: &nbsp;</p>
+                                    <p>28.05.2023</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <p class="font-semibold">Updated: &nbsp;</p>
+                                    <p>Action | Desktop</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-end justify-between">
+                                <a target="_blank" href="../SinglePlayer - Games/StickmanGame/index.html"
+                                    class="btn-primary uppercase">Play Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--card end-->
+
+                
 
 
 
