@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+	<head>
+
+		<meta charset="UTF-8">
+	 	<title>Marvel : RPG </title>
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Favicon for the webpage -->
+	 	<link rel="icon" href="assets/images/avengers.jpg" type="image/jpeg" sizes="16x16">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		
+<link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+
+		<!-- Font Awesome icon library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+	<body id="body">
+
+		<div class="container text-center">
+
+			<div id="game-title" class="row mt-2">
+				<div class="col-md-8 offset-md-2 offset-md-right-2">
+					<h1>Marvel: RPG GAME</h1>
+				</div>
+			</div>
+
+			<div id="game-instructions" class="row mt-2">
+				<div class="col-md-8 offset-md-2 offset-md-right-2">
+				</div>
+			</div>
+
+				<!-- this div is populated with marvel characters when the webpage loads -->
+
+				<!-- <div class="character col-md-2" id="0">
+    				<button type="button" class="btn btn-default m-3 p-2">
+	        			<p>Iron Man</p>
+	        			<img src="assets/images/Iron_Man.png" class="character-image">
+	        			<p>141</p>
+		    		</button>
+				</div> -->
+
+			<div id="characters" class="row mt-2"></div>
+
+
+			<div class="row mt-2">
+
+					<!-- 
+					<button type="button" class="btn btn-default m-3 p-2">
+						<p>Iron Man</p>
+						<img src="assets/images/Iron_Man.png" class="character-image">
+						<p>271</p>
+					</button> 
+					-->
+				<div class="col-md-2" id="player-character">YOUR CHARACTER</div>
+
+				<div class="col-md-2 offset-md-3">
+					<div class="row">
+						<div class="col-md-12">
+							<button type="button" id="attack-button" class="btn btn-primary">Attack</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12" id="game-feedback">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-2 offset-md-2" id="enemy-character">ENEMY CHARACTER</div>
+
+			</div>
+
+			<div class="row mt-3">
+			</div>
+
+			<!--  Video is muted & autoplays, placed after major DOM elements for performance & has an image fallback  -->
+		<!-- 	<video autoplay loop id="video-background" muted plays-inline>
+	  			<source src="assets/videos/blue motion background.mp4" type="video/mp4">
+			</video> -->
+
+		</div>
+
+		<!-- Load the associated JavaScript files -->
+		<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+	</body>
+
+</html>
