@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=utf-8>
+        <meta name="description" content="Muality">
+        <meta name="keywords" content="game,jam">
+        <meta name="author" content="Iver Jordal">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <title>Muality</title>
+
+        <link rel=stylesheet href=res/style.css />
+
+        <!-- lib files -->
+        <script src="lib/modernizr-custom.js"></script>
+        <script src="lib/mobile-detect.min.js"></script>
+        <script src="lib/mobile-detect-modernizr.js"></script>
+        <script src=lib/jquery.min.js></script>
+        <script src=lib/StateManager.js></script>
+        <script src=lib/soundjs-0.6.2.min.js></script>
+
+        <script>
+            if (Modernizr.mobile || Modernizr.tablet || Modernizr.phone) {
+                alert(
+                    'Warning: This game is designed to work only on computers with keyboard' +
+                    ' and mouse control. Quick, go find your laptop/desktop computer!'
+                )
+            }
+        </script>
+        <!-- bootstrap -->
+        <script src=src/bootstrap.js></script>
+
+        <!-- src files -->
+        <script src="src/sounds.js"></script>
+        <script src=src/GameState.js></script>
+        <script src=src/MenuState.js></script>
+        <script src=src/MusicManager.js></script>
+        <script src=src/ParticleSystem.js></script>
+        <script src=src/Player.js></script>
+        <script src=src/Spawner.js></script>
+        <script src=src/Projectile.js></script>
+        <script src=src/AudioButton.js></script>
+    </head>
+    <body onload="bootstrap()">
+    <div id=wrapper></div>
+    </body>
+</html>
