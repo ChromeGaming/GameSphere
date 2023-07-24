@@ -262,7 +262,6 @@ ________________________________________________________________________________
 | 177 | [Castle_Escape_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Castle_Escape_Game) |
 | 178 | [Shadow_Poke_Guessing_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Shadow_Poke_Guessing_Game) |
 | 180 | [Animal_Name_Guessing_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Animal_Name_Guessing_Game) |
-| 181 | [Marvel_Role_Playing_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Marvel_Role_Playing_Game) |
 
 
 
