@@ -264,7 +264,7 @@ ________________________________________________________________________________
 | 179 | [Marvel_Role_Playing_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Marvel_Role_Playing_Game) |
 | 180 | [Animal_Name_Guessing_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Animal_Name_Guessing_Game) |
 | 181 | [Basketball_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Basketball_Game) |
-
+| 182 | [Basketball_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/QuickType) |
 
 
 
