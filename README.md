@@ -412,6 +412,7 @@ ________________________________________________________________________________
 |  170  |[StickmanGame](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/StickmanGame) |
 |  171  |[Magic_Match](htpps://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Magic_Match) |
 |  172  |[Digit Dilemma](htpps://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Digit_Dilemma) |
+|  173  |[Digit Dilemma](htpps://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/puzzel_GAME-main) |
 
 
 
