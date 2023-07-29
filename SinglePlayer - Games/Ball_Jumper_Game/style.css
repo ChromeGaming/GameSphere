@@ -1,0 +1,58 @@
+body { 
+	margin: 0;
+	overflow: hidden;
+ }
+
+.container {
+    position: relative;
+}
+
+.top {    
+	position: absolute;
+    left: 45%;
+    font-size: 36px;
+    color: yellow;
+    visibility: hidden;
+}
+
+.topright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 36px;
+}
+
+.toplowerright {
+    position: absolute;
+    top: 45px;
+    right: 16px;
+    font-size: 36px;
+}
+
+#maincontent {
+	margin: 0px;
+	color: #ffffff;
+	font-family:Monospace;
+	/*text-align: center;*/
+	font-size: 15px;
+	line-height: 30px;
+	width: 100%;
+  	height: 100% 
+}
+
+#info {
+	position: absolute;
+	color: white;
+	bottom: 0px; width: 100%;
+	padding: 15px;
+	z-index:100;
+}
+
+
+#stats {
+	position: absolute;
+	color: black;
+	padding: 15px;
+	float: left;
+	z-index:100;
+}
