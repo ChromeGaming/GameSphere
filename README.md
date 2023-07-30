@@ -264,13 +264,14 @@ ________________________________________________________________________________
 | 179 | [Marvel_Role_Playing_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Marvel_Role_Playing_Game) |
 | 180 | [Animal_Name_Guessing_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Animal_Name_Guessing_Game) |
 | 181 | [Basketball_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Basketball_Game) |
-| 182 | [QuickType](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/QuickType) |
+| 181 | [Ball_Jumper_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Ball_Jumper_Game) |
+| 183 | [Math_Sprint_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Math_Sprint_Game) |
+| 184 | [QuickType](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/QuickType) |
 
 
 
 
 
-=======
 |  33   |[Drum_Kit_Play_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Drum_Kit_Play_Game)           |
 |  34   |[Element Puzzle](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Element%20Puzzle)           |
 |  35   |[Escape from Maze](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Escape%20from%20Maze)           |
