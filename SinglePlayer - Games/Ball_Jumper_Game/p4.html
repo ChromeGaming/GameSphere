@@ -1,0 +1,48 @@
+<!doctype html> 
+<html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CPSC 314 Project 4 January 2016</title>
+    <style>
+      body { margin: 0; } canvas { width: 100%;
+      height: 100% }
+    </style>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="maincontent">
+		<div id="info">
+			How high can you go? <br/>
+			WASD to Move. Space to Jump/Double-Jump. Drag to rotate camera.
+		</div>	
+		<div id="stats">
+            <li><p id="current">Current Height</p></li>
+            <li><p id="highest">Best Height</p></li>
+            <li><p id="fps">FPS</p></li>
+		</div>
+    <div class="topright">
+        <input type="button" value="Toggle Detail" id="snow">
+        <input type="button" value="Toggle Lights" id="light">
+        <input type="button" value="Reset H-Score" id="resetHS">
+    </div>
+    <div class="toplowerright">
+        <input type="button" value="Restart Game" id="restart">
+    </div>
+    <div class="top"><p id="cheats">CHEATS ENABLED</p></div>
+
+	    <script src="js/three.js"></script>
+	    <script src="js/OBJLoader.js"></script>
+	    <script src="js/SourceLoader.js"></script>
+	    <script src="js/OrbitControls.js"></script>
+	    <script src="js/Stats.js"></script>
+	    <script src="js/KeyboardState.js"></script> <!-- By Jerome Etienne: http://jetienne.com/ -->
+
+	    <script src="PlayerMesh.js"></script>
+	    <script src="PlatformMesh.js"></script>
+	    <script src="ParticleMesh.js"></script>
+	   
+		<script src="P4.js"></script>
+    </div>
+</body>
+</html>
