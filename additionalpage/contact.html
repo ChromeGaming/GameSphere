@@ -109,13 +109,20 @@
            <div class="contact-form" role="form">
                <div class="name-email-div">
                    <div class="inputDiv">
+
+                    <input type="text" name="name" id="name" placeholder="Enter Full Name " autocomplete="off" onkeyup="handleChange(event)" aria-required="true" aria-describedby="nameError" aria-label="Full Name">
+                    <p id="nameError" class="error hidden" role="alert">Name should be of atleast 6 characters</p>
+                   </div>
+                    <div class="inputDiv">
+                        <input type="email" name="email" id="email" placeholder="Enter Email" autocomplete="off" onkeyup="handleChange(event)" aria-required="true" aria-describedby="emailError" aria-label="Email">
+
                     <label for="name" class="sr-only-label">Enter your Full Name: </label>
                     <input type="text" name="name" id="name" placeholder="Enter Full Name "  onkeyup="handleChange(event)" aria-required="true" aria-describedby="nameError" aria-label="Full Name">
                     <p id="nameError" class="error hidden" role="alert">Name should be of atleast 6 characters</p>
                    </div>
                     <div class="inputDiv">
                         <label for="email" class="sr-only-label">Enter your Email: </label>
-                        <input type="email" name="email" id="email" placeholder="Enter Email" onkeyup="handleChange(event)" aria-required="true" aria-describedby="emailError" aria-label="Email">
+                        <input type="email" name="email" id="email" placeholder="Enter Email" onkeyup="handleChange(event)" aria-required="true" aria-describedby="emailError" aria-label="Email
                     <p class="error hidden" id="emailError" role="alert">Enter Valid Email</p>
                     </div>
                   
