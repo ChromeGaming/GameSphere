@@ -266,9 +266,7 @@ ________________________________________________________________________________
 | 181 | [Basketball_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Basketball_Game) |
 | 181 | [Ball_Jumper_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Ball_Jumper_Game) |
 | 183 | [Math_Sprint_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Math_Sprint_Game) |
-| 184 | [Simon_Game](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/Simon_Game) |
-
-| 185 | [QuickType](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/QuickType) |
+| 184 | [QuickType](https://github.com/GameSphere-MultiPlayer/GameSphere/tree/main/SinglePlayer%20-%20Games/QuickType) |
 
 
 
