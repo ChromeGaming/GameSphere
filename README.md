@@ -125,12 +125,12 @@ ________________________________________________________________________________
 |  58   | [PACKABUNCHAS](./SinglePlayer%20-%20Games/PACKABUNCHAS)   |
 |  59   | [Pac - Man Doodle](./SinglePlayer%20-%20Games/Pac%20-%20Man%20Doodle)   |
 |  60   | [Pacific Air Battle](./SinglePlayer%20-%20Games/Pacific_Air_Battle)   |
-|  61   | [Pinball](./SinglePlayer%20-%20Games/Pinball)   |
+|  61   | [Pin ball](./SinglePlayer%20-%20Games/Pinball)   |
 |  62   | [Ping Pong Game](./SinglePlayer%20-%20Games/Ping%20Pong%20Game)   |
 |  63   | [Platform Game](./SinglePlayer%20-%20Games/Platform_Game)   |
 |  64   | [Rock-Paper Scissors](./SinglePlayer%20-%20Games/Rock-Paper-Scissors)   |
 |  65   | [Rubik Cube](./SinglePlayer%20-%20Games/Rubik_Cube)   |
-|  66   | [SHUTTLEDECK](./SinglePlayer%20-%20Games/SHUTTLEDECK)   |
+|  66   | [SHUTTLE DECK](./SinglePlayer%20-%20Games/SHUTTLEDECK)   |
 |  67   | [SUDOKU](./SinglePlayer%20-%20Games/SUDOKU)   |
 |  68   | [Sci-Fi Alchemy](./SinglePlayer%20-%20Games/Sci-Fi%20Alchemy)   |
 |  69   | [Scroll Run](./SinglePlayer%20-%20Games/Scroll%20Run)   |
@@ -187,7 +187,7 @@ ________________________________________________________________________________
 |  120   | [Chill Lion Game](./MultiPlayer%20-%20Games/Dots%20and%20Chill_Lion_Game) |
 |  121   | [Coloron Game](./SinglePlayer%20-%20Games/Coloron%20Game) |
 |  122   | [Guess the Correct Logo](./SinglePlayer%20-%20Games/Air%20Balloon) |
-|  123   | [Kill_The_Bird_Game](./SinglePlayer%20-%20Games/Kill_The_Bird_Game) |
+|  123   | [Kill The Bird Game](./SinglePlayer%20-%20Games/Kill_The_Bird_Game) |
 |  124   | [Classic Pool Game](./SinglePlayer%20-%20Games/Classic-Pool-Game) |
 |  125   | [Virtual Pickle Rick Maze Game](./SinglePlayer%20-%20Games/Virtual%20Pickle_Rick_Maze_Game) |
 |  126   | [Bad Depot](./SinglePlayer%20-%20Games/Bad_Depot) |
@@ -232,14 +232,23 @@ ________________________________________________________________________________
 |  167   | [Astray](./SinglePlayer%20-%20Games/Astray) |
 |  168   | [AI CHESS](./SinglePlayer%20-%20Games/AI-Chess) |
 |  169   | [Circus Charley](./SinglePlayer%20-%20Games/Circus_Charly) |
-|  170   | [VirtualGuitar](./SinglePlayer%20-%20Games/VirtualGuitar)|
+|  170   | [Virtual Guitar](./SinglePlayer%20-%20Games/VirtualGuitar)|
 |  171   | [Subway Sufers](./SinglePlayer%20-%20Games/Subway-Sufers) |
-|  172   | [RavoucsRavenRun](./SinglePlayer%20-%20Games/Ravoucs%20Raven%20Run) |
+|  172   | [Ravoucs Raven Run](./SinglePlayer%20-%20Games/Ravoucs%20Raven%20Run) |
 |  173   | [Car Racer](./SinglePlayer%20-%20Games/Car-Racer/Car-Racer-Vanilla-JS-main/index.html) |
 |  174   | [Chinese Checkers](./SinglePlayer%20-%20Games/Chinese_Checkers) |
-|  175   | [PicPuzz](./SinglePlayer%20-%20Games/PicPuzz) |
+|  175   | [Pic Puzz](./SinglePlayer%20-%20Games/PicPuzz) |
 |  176   | [Highway Race](./SinglePlayer%20-%20Games/Highway_Race) |
 |  177   | [Stacker](./SinglePlayer%20-%20Games/Stacker) |
+|  178   | [Platform Game Engine](./SinglePlayer%20-%20Games/Platform_Game_Engine) |
+|  179   | [Castle Escape Game](.SinglePlayer%20-%20Games/Castle_Escape_Game) |
+|  180   | [Shadow Poke Guessing Game](.SinglePlayer%20-%20Games/Shadow_Poke_Guessing_Game) |
+|  181   | [Marvel Role Playing Game](.SinglePlayer%20-%20Games/Marvel_Role_Playing_Game) |
+|  182   | [Animal Name Guessing Game](.SinglePlayer%20-%20Games/Animal_Name_Guessing_Game) |
+|  183   | [Basketball Game](.SinglePlayer%20-%20Games/Basketball_Game) |
+|  184   | [Ball Jumper Game](.SinglePlayer%20-%20Games/Ball_Jumper_Game) |
+|  185   | [Math Sprint Game](.SinglePlayer%20-%20Games/Math_Sprint_Game) |
+|  186   | [Quick Type](.SinglePlayer%20-%20Games/QuickType) |
 
 
 
