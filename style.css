@@ -1,5 +1,5 @@
-:root{
-  --main-color:rgb(0 159 157 );
+:root {
+  --main-color: rgb(0 159 157);
 }
 
 /* Search Bar CSS */
@@ -32,7 +32,7 @@
     height: 2px;
     background: white;
     transform: rotate(45deg);
-    transition: all .5s;
+    transition: all 0.5s;
   }
   &::after {
     content: "";
@@ -46,7 +46,7 @@
     height: 25px;
     border-radius: 50%;
     border: 2px solid white;
-    transition: all .5s;
+    transition: all 0.5s;
   }
 }
 
@@ -62,7 +62,7 @@
 }
 
 .form-control {
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   position: absolute;
   margin: auto;
   top: 0;
@@ -78,8 +78,7 @@
   text-shadow: 0 0 15px rgb(20, 20, 50);
   padding: 0 42px 0 20px;
   border-radius: 30px;
-  box-shadow: 0 0 25px 0 rgb(20, 20, 50),
-              0 20px 25px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 25px 0 rgb(20, 20, 50), 0 20px 25px 0 rgba(0, 0, 0, 0.2);
   transition: all 1s;
   opacity: 0;
   z-index: 5;
@@ -176,20 +175,20 @@
   object-fit: cover;
 }
 /* End of the Search Bar */
-.section{
-    background-color: black;
+.section {
+  background-color: black;
 }
-.bouncingball-div{
+.bouncingball-div {
   display: flex;
   justify-content: flex-end;
-  width :100% ;
- height:40% ;
+  width: 100%;
+  height: 40%;
 }
 .bouncingball {
   position: relative;
   width: 100%;
   height: 90px;
-  bottom: 210px ;
+  bottom: 210px;
   margin: 0 auto;
   justify-content: space-between;
   margin-left: auto;
@@ -235,19 +234,19 @@
   }
 }
 @media (max-width: 800px) {
-  .bouncingball{
+  .bouncingball {
     display: none;
   }
 }
 
-.wrapper{
-    text-align: center;
-   }
+.wrapper {
+  text-align: center;
+}
 
-  .section h3{
-    color: #ffffff;
-   text-align: center;
-   margin-bottom: 2.5rem;
+.section h3 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 2.5rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   padding-left: 0px;
@@ -256,98 +255,98 @@
   font-family: Poppins, sans-serif;
   font-size: 32px;
   font-weight: 800;
-  letter-spacing: .1em;
-  }
+  letter-spacing: 0.1em;
+}
 
-  .section h3 span{
-    color: var(--main-color);
-  }
-  
-  .wrapper .icon{
-      position: relative;
-      background-color:  #ffffff;
-      border-radius: 50%;
-      margin: 10px;
-      width: 50px;
-      height: 50px;
-      line-height: 50px;
-      font-size: 22px;
-      text-align:center ;
-      display: inline-flex;
-     flex-direction: column;
-      align-items: center;
-      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-      cursor: pointer;
-      transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-      color: #333;
-      text-decoration: none;
-    }
-    .wrapper .tooltip {
-      position: absolute;
-      top: 0;
-      line-height: 1.5;
-      font-size: 14px;
-      background-color: #ffffff;
-      color: #ffffff;
-     padding: 10px 18px;
-      border-radius: 25px;
-      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-      opacity: 0;
-      pointer-events: none;
-      transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-    .wrapper .tooltip::before {
-      position: absolute;
-      content: "";
-      height: 8px;
-      width: 8px;
-      background-color: #ffffff;
-      bottom: -3px;
-      left: 50%;
-      transform: translate(-50%) rotate(45deg);
-      transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-    .wrapper .icon:hover .tooltip {
-      top: -45px;
-      opacity: 1;
-      visibility: visible;
-      pointer-events: auto;
-    }
-    .wrapper .icon:hover span,
-    .wrapper .icon:hover .tooltip {
-      text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-    }
-    .wrapper .facebook:hover,
-    .wrapper .facebook:hover .tooltip,
-    .wrapper .facebook:hover .tooltip::before {
-      background-color: #7289da;
-      color: #ffffff;
-    }
-    .wrapper .twitter:hover,
-    .wrapper .twitter:hover .tooltip,
-    .wrapper .twitter:hover .tooltip::before {
-      background-color: #3b5998;
-      color: #ffffff;
-    }
-    .wrapper .instagram:hover,
-    .wrapper .instagram:hover .tooltip,
-    .wrapper .instagram:hover .tooltip::before {
-      background-color: #e1306c;
-      color: #ffffff;
-    }
-    .wrapper .github:hover,
-    .wrapper .github:hover .tooltip,
-    .wrapper .github:hover .tooltip::before {
-      background-color: #333333;
-      color: #ffffff;
-    }
-    .wrapper .linkedin:hover,
-    .wrapper .linkedin:hover .tooltip,
-    .wrapper .linkedin:hover .tooltip::before {
-      background-color: #003288;
-      color: #ffffff;
-    }
-    
+.section h3 span {
+  color: var(--main-color);
+}
+
+.wrapper .icon {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #333;
+  text-decoration: none;
+}
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  line-height: 1.5;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 25px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background-color: #7289da;
+  color: #ffffff;
+}
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background-color: #3b5998;
+  color: #ffffff;
+}
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background-color: #333333;
+  color: #ffffff;
+}
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+  background-color: #003288;
+  color: #ffffff;
+}
+
 .scrollToTopContainer {
   position: fixed;
   bottom: 0;
@@ -368,19 +367,16 @@
   border: 0;
   cursor: pointer;
   box-shadow: 0px 0px 10px 1px var(--main-color);
-} 
+}
 
 .container3 {
-
   margin: auto;
   text-align: center;
   width: 90%;
   padding: 0 1rem;
   height: 40vh;
-margin-top: 10vh;
-
+  margin-top: 10vh;
 }
-
 
 .counter-grid {
   display: grid;
@@ -394,14 +390,14 @@ margin-top: 10vh;
   border-radius: 1rem;
   transition: all 0.5s ease-in-out;
   transform: translateY(6rem);
-  
-height: auto;
+
+  height: auto;
 }
 
-.counter-item p{
-  font-weight:500;
-  font-size:20px;
-  padding:5px;
+.counter-item p {
+  font-weight: 500;
+  font-size: 20px;
+  padding: 5px;
 }
 .counter-img {
   width: 1rem;
@@ -430,9 +426,9 @@ height: auto;
   -ms-text-stroke-width: 0.15rem;
   -o-text-stroke-width: 0.15rem;
   -webkit-text-stroke-color: #fff;
-  -moz-text-stroke-color:#fff;
+  -moz-text-stroke-color: #fff;
   -ms-text-stroke-color: #fff;
-  -o-text-stroke-color:#fff;
+  -o-text-stroke-color: #fff;
 }
 
 @keyframes slide-up {
@@ -444,7 +440,7 @@ height: auto;
   }
 }
 
-.join-content .discord-btn{
+.join-content .discord-btn {
   text-transform: uppercase;
   font-weight: bold;
   position: relative;
@@ -453,77 +449,71 @@ height: auto;
   z-index: 10;
   width: 300px;
   height: 34px;
- padding: 10px 18px;
- font-size: large;
- letter-spacing: .1em;
- line-height: 1.75rem;
- 
+  padding: 10px 18px;
+  font-size: large;
+  letter-spacing: 0.1em;
+  line-height: 1.75rem;
 }
 
-.join-content .discord-btn:hover{
+.join-content .discord-btn:hover {
   background-color: var(--main-color);
-    color:white;
-    transition: ease-in-out;
-    animation-duration: 300;
+  color: white;
+  transition: ease-in-out;
+  animation-duration: 300;
 }
-#footer1{
-  background-color:black;
+#footer1 {
+  background-color: black;
   color: #fff;
   padding: 20px;
   text-align: center;
- }
+}
 
- .background{
+.background {
   background-color: var(--main-color);
- }
+}
 
- .border{
+.border {
   border: 2px solid var(--main-color);
- }
+}
 
- .color{
+.color {
   color: var(--main-color);
- }
+}
 
- .hover:hover{
+.hover:hover {
   color: var(--main-color);
- }
+}
 
- .background-hover:hover{
+.background-hover:hover {
   background-color: var(--main-color);
- }
-
-.game-card video{
-  display:none;
-height: 280px;
-object-fit: cover;
-
 }
 
-.game-card:hover .display-none{
-  display:none;
-
+.game-card video {
+  display: none;
+  height: 280px;
+  object-fit: cover;
 }
 
-.game-card:hover video{
+.game-card:hover .display-none {
+  display: none;
+}
+
+.game-card:hover video {
   display: block;
 }
 
-.back-video{
+.back-video {
   position: absolute;
   right: 0;
   bottom: 0;
   z-index: -1;
-opacity: 2;
-width: 100%;
-height: 100%;
-object-fit: cover;
-
- 
+  opacity: 2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-
-.share-icon{
+.share-icon {
   text-align: right;
   color: #ffffff;
 }
@@ -536,15 +526,34 @@ object-fit: cover;
 }
 
 @keyframes shake {
-  0% { transform: translate(0, 0) rotate(0deg); }
-  25% { transform: translate(5px, 5px) rotate(5deg); }
-  50% { transform: translate(0, 0) rotate(0eg); }
-  75% { transform: translate(-5px, 5px) rotate(-5deg); }
-  100% { transform: translate(0, 0) rotate(0deg); }
-
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
+  50% {
+    transform: translate(0, 0) rotate(0eg);
+  }
+  75% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
 }
-@media(max-width:500px){
-  .Console{
+@media (max-width: 500px) {
+  .Console {
     display: none;
   }
+}
+
+/* preloader */
+#preloader {
+  background: #000 url(assets/images/preloader.gif) no-repeat center center;
+  background-size: 55%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
 }
