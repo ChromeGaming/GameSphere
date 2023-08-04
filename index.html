@@ -63,7 +63,7 @@
 </head>
 
 <body>
-
+    <div id="preloader"></div>
     <header class="header">
         <!--===== Navigation bar start =====-->
         <nav style="background-color: black;" class="navbar flex items-center shadow-nav">
@@ -1330,6 +1330,17 @@
         ScrollReveal().reveal('.game-post', { delay: 200 });
 
     </script>
+
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+         })
+    </script>
+   
+
+
+
 </body>
 
 </html>
