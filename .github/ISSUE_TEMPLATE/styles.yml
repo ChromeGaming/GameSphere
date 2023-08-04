@@ -19,6 +19,17 @@ body:
     id: screenshots
     attributes:
       label: Add screenshots
+          required: true
+
+        - label: I have read the [Contributing Guidelines](https://github.com/priyankarpal/ProjectsHut/blob/main/contributing.md)
+          required: true
+
+        - label: I agree to follow this project's [Code of Conduct](https://github.com/priyankarpal/ProjectsHut/blob/main/CODE_OF_CONDUCT.md)
+          required: true
+
+        - label: I'm a GSSoC'23 contributor
+
+        - label: I want to work on this issue
       description: Add screenshots to see the demo
       placeholder: Add screenshots
       value: 'Add screenshots'
@@ -29,3 +40,14 @@ body:
       description: By submitting this issue, you agree to follow our Code of Conduct
       options:
         - label: I agree to follow this project's Code of Conduct
+          required: true
+
+        - label: I have read the [Contributing Guidelines](https://github.com/GameSphere-MultiPlayer/GameSphere/blob/main/.github/Contributor.md)
+          required: true
+
+        - label: I agree to follow this project's [Code of Conduct](https://github.com/GameSphere-MultiPlayer/GameSphere/blob/main/.github/CODE_OF_CONDUCT.md)
+          required: true
+
+        - label: I'm a GSSoC'23 contributor
+
+        - label: I want to work on this issue
