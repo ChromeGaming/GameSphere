@@ -1,6 +1,7 @@
 # chess-ai
 A chess engine by someone who doesn't know how to play chess.
 
+
 ## About
 chess-ai is a simple chess AI in JavaScript. 
 
@@ -13,6 +14,7 @@ The AI uses the [minimax algorithm](https://en.wikipedia.org/wiki/Minimax), whic
 The evaluation function uses [piece square tables](https://www.chessprogramming.org/Piece-Square_Tables) adapted from Sunfish.py, and eliminates the need for nested loops by updating the sum based on each move instead of re-computing the sum of individual pieces at each leaf node.
 
 A global sum is used to keep track of black's evaluation score after each move, which is used to display the 'advantage' bar. 
+
 
 ## How to Play?.
 
