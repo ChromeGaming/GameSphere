@@ -17,6 +17,13 @@
     <!-- icon css -->
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../dist/color-theme.css">
+    <style>
+        .alanBtn-root{
+  /* bottom:20px !important; */
+  right:26px !important;
+  bottom:100px !important;
+}
+    </style>
     <script src="../src/color-theme.js"></script>
     <title>MultiPlayerGame</title>
 </head>
@@ -182,6 +189,25 @@
             </div>
         </div>
     </section>
+    <div class="alan-btn"></div>
+    <script type="text/javascript"
+ src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+<script>
+  var alanBtnInstance = alanBtn({
+    key: "7d22343f6d9095d364a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage",
     
+    onCommand: function (commandData) {
+        if (commandData && commandData.command === 'openURL') {
+            if (commandData.target === '_blank') {
+                window.open(commandData.url, '_newtab' + Math.floor(Math.random() * 999999));
+            } else {
+                window.location.href = commandData.url;
+            }
+        }
+
+    },
+    rootEl: document.getElementById("alan-btn"),
+  });
+</script>
 </body>
 </html>

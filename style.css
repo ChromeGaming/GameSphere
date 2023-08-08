@@ -2,6 +2,13 @@
   --main-color: rgb(0 159 157);
 }
 
+
+.alanBtn-root{
+  /* bottom:20px !important; */
+  right:26px !important;
+  bottom:100px !important;
+}
+
 /* Search Bar CSS */
 .search {
   position: absolute;
