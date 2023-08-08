@@ -1,6 +1,7 @@
 # Use a base image with the desired environment
 FROM nginx:latest
 
+
 # Set the working directory in the container
 WORKDIR /usr/share/nginx/html
 
