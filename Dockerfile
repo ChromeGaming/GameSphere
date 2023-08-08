@@ -10,6 +10,7 @@ WORKDIR /usr/share/nginx/html
 COPY index.html .
 COPY static /usr/share/nginx/html/static
 
+
 # Expose the desired port
 EXPOSE 80
 
