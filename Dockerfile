@@ -14,5 +14,6 @@ COPY static /usr/share/nginx/html/static
 # Expose the desired port
 EXPOSE 80
 
+
 # Start the nginx server when the container starts
 CMD ["nginx", "-g", "daemon off;"]
