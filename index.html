@@ -791,7 +791,7 @@
     
 
     <!--==== Discord community section start ====-->
-    <section
+    <section 
         class="py-16 sc-join flex items-center bg-join-image relative after:absolute after:content-[''] after:bg-gradient-to-b after:from-black/50 after:to-black/50 after:bg-center after:bg-cover after:bg-no-repeat">
         <div class="container w-full">
             <div class="join-content">
@@ -806,7 +806,7 @@
     <!--==== Discord community section end ====-->
 
     <!--===== News section start ====-->
-    <section class="py-16 sc-posts bg-violet-dark-active">
+    <section class="py-16 sc-posts bg-violet-dark-active"  id="news">
         <div class="container">
             <!-- Title of news start-->
             <div class="sc-title">
@@ -1284,6 +1284,26 @@
 
     <!-- color theme part end -->
     <!-- GPT chatbot script -->
+    <div class="alan-btn"></div>
+    <script type="text/javascript"
+ src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+<script>
+  var alanBtnInstance = alanBtn({
+    key: "7d22343f6d9095d364a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage",
+    
+    onCommand: function (commandData) {
+        if (commandData && commandData.command === 'openURL') {
+            if (commandData.target === '_blank') {
+                window.open(commandData.url, '_newtab' + Math.floor(Math.random() * 999999));
+            } else {
+                window.location.href = commandData.url;
+            }
+        }
+
+    },
+    rootEl: document.getElementById("alan-btn"),
+  });
+</script>
     <script src="./chatBot/script.js"></script>
     <!-- jquery cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
