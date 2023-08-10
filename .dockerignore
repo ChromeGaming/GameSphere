@@ -1,7 +1,0 @@
-node_modules
-npm-debug.log*
-build
-.github
-*.md
-.gitignore
-LICENSE
