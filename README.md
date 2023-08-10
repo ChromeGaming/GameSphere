@@ -249,7 +249,6 @@ ________________________________________________________________________________
 |  184   | [Ball Jumper Game](.SinglePlayer%20-%20Games/Ball_Jumper_Game) |
 |  185   | [Math Sprint Game](.SinglePlayer%20-%20Games/Math_Sprint_Game) |
 |  186   | [Quick Type](.SinglePlayer%20-%20Games/QuickType) |
-|  186   | [Dropkick Odyssey](.SinglePlayer%20-%20Games/Dropkick_Odyssey) |
 
 
 
