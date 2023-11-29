@@ -336,16 +336,6 @@ ________________________________________________________________________________
 </table>
 
 ___________________________________________________________________________________________________________________________________________________________________
-
-<h2 align='center'> Project Mentors </h2>
-<table align='center'>
-<td align="center"><a href="https://github.com/Durgesh4993"><img src="https://avatars.githubusercontent.com/u/98798977?v=4" width="100px;" alt=""/><br /><sub><b> Durgesh Kumar Prajapati</b></sub></a></td>
-
-<td align="center"><a href="https://github.com/mahamat-abdelkerim-abakar"><img src="https://avatars.githubusercontent.com/u/65360822?v=4" width="100px;" alt=""/><br /><sub><b>Mahamat Abdelkerim Abakar</b></sub></a></td>
-
-</table>
-
-___________________________________________________________________________________________________________________________________________________________________
 ##  ✨ Thank You for Your Contribution!
 
 Thanks a lot for spending your time helping GameSphere. Thanks a lot! Keep rocking 🍻
