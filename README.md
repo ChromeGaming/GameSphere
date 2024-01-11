@@ -6,7 +6,7 @@
 
 ## About IWOC 
 
-IWOC is a month-long Open Source Contribution event held in February 2023, in this program they have facilitated 30+ impactful projects, hosted 4 engaging speaker sessions comprising of speaker like Unnati Chhabra - SDE @zomato, Shashank Srivastava - India Business @Google, and others with garnered registrations from a 350+ students, and actively involved 150+ contributors. Hope you are also taking part in IWOC 
+IWOC is a month-long Open Source Contribution event held in February 2023, in this program they have facilitated 30+ impactful projects, hosted 4 engaging speaker sessions comprising of speaker like Unnati Chhabra - SDE @zomato, Shashank Srivastava - India Business @Google, and others with garnered registrations from a 350+ students, and actively involved 150+ contributors. Hope you are also taking part in IWOC.
 
 ## Table of Contents
 
