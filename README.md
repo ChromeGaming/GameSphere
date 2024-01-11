@@ -1,5 +1,12 @@
+# This year Gamespare taking park in IWOC season- 2
 
-<img src="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/98798977/918d4594-bb5c-4629-be4c-97dfcf35d5a5">
+<p align="center">
+  <img src="https://github.com/GameSphere-MultiPlayer/GameSphere/assets/98798977/918d4594-bb5c-4629-be4c-97dfcf35d5a5" />
+</p>
+
+## About IWOC 
+
+IWOC is a month-long Open Source Contribution event held in February 2023, in this program they have facilitated 30+ impactful projects, hosted 4 engaging speaker sessions comprising of speaker like Unnati Chhabra - SDE @zomato, Shashank Srivastava - India Business @Google, and others with garnered registrations from a 350+ students, and actively involved 150+ contributors. Hope you are also taking part in IWOC 
 
 ## Table of Contents
 
