@@ -1,8 +1,8 @@
 ---
 name: New Game
 about: Description of game
-title: ''
-labels: ''
+title: "[Game]: "
+labels: IWOC2024, Medium
 assignees: ''
 
 ---
@@ -18,14 +18,15 @@ information. -->
 
 <!-- Include the screenshot to preview the changes done and their proper functionality -->
 
-## Demo Video Section*
+## Demo Video Section
 
 <!-- Include the demo video to preview the changes done and their proper functionality -->
 
-## Task
+### Connect Us On Social Media -
+- [ ]  Star the repositry
+- [ ]  <a href="https://github.com/GameSphere-MultiPlayer" target="_blank">GitHub</a>
+- [ ]   <a href="https://www.linkedin.com/company/gamesphere-multiplayer/" target="_blank">LinkedIn</a>
+- [ ]   <a href="https://www.youtube.com/@durgesh4993/channels" target="_blank">YouTube</a>
+- [ ]    <a href="https://discord.com/invite/dakzwdz4ev" target="_blank">Discord</a>
 
-- [ ] Follow Us On social media -
-- [ ]      <a href="https://github.com/GameSphere-MultiPlayer" target="_blank">GitHub</a>
-- [ ]      <a href="https://www.linkedin.com/company/gamesphere-multiplayer/" target="_blank">LinkedIn</a>
-- [ ]     <a href="https://www.youtube.com/@durgesh4993/channels" target="_blank">YouTube</a>
-- [ ]      <a href="https://discord.com/invite/dakzwdz4ev" target="_blank">Discord</a>
+### Thank you for raising issue in GameSpher 3.0
