@@ -2,6 +2,8 @@
 name: Feature Request
 about: Suggest a new feature or enhancement for the project
 title: "[Feature Request] "
+labels: ''
+assignees: ''
 
 ---
 

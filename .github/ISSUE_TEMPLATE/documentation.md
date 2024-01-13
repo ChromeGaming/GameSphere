@@ -1,65 +1,32 @@
 ---
 name: Documentation Issue
 about: Report an issue with the project documentation
-title: "[Documentation] "
+title: "[Documentation] :"
+labels: Easy, IWOC2024
+assignees: ''
 
 ---
 
-<!--
-Please follow the guidelines below to report documentation issues effectively.
--->
+## About Documentation
 
-### Issue Summary
+## Description
 
-**Description:**
-A clear and concise description of the problem with the documentation or the improvement you'd like to suggest.
+## Affected Documentation Section
 
-**Severity:**
-[ ] Low
-[ ] Medium
-[ ] High
-[ ] Critical
+## Expected Documentation
 
-**Affected Documentation Section:**
-Specify the relevant section(s) or page(s) of the documentation where you encountered the issue.
+## Severity
+- [ ] Low
+- [ ] Medium
+- [ ] High
+- [ ] Critical
 
-### Expected Documentation
 
-**Describe the expected content:**
-If applicable, describe how you expected the documentation to be, or provide examples of how it could be improved.
+## Connect Us On social media -
+- [ ]  Star the repositry
+- [ ]  <a href="https://github.com/GameSphere-MultiPlayer" target="_blank">GitHub</a>
+- [ ]   <a href="https://www.linkedin.com/company/gamesphere-multiplayer/" target="_blank">LinkedIn</a>
+- [ ]   <a href="https://www.youtube.com/@durgesh4993/channels" target="_blank">YouTube</a>
+- [ ]    <a href="https://discord.com/invite/dakzwdz4ev" target="_blank">Discord</a>
 
-**Proposed Solution:**
-Share your ideas for improving the documentation or propose a solution if you have one.
-
-### Reproduction Steps
-
-**Steps to Reproduce:**
-If the issue is related to inaccuracies or unclear instructions, provide the steps to reproduce the problem.
-
-**Screenshots or Code Snippets:**
-Attach any relevant screenshots or code snippets that illustrate the problem.
-
-### Environment Information
-
-**Your Environment:**
-- OS: [e.g., Windows, macOS, Linux]
-- Browser: [e.g., Chrome, Firefox, Safari]
-- Version: [e.g., 1.0.0]
-
-**Additional Context:**
-Add any other context or details that might be helpful for understanding the issue.
-
-### Related Documentation URLs
-
-**Links:**
-If relevant, provide any specific URLs or links to the documentation in question.
-
-### Additional Notes
-
-**Notes:**
-Add any other notes or comments related to this documentation issue.
-
-<!-- 
-Thank you for contributing to our project's documentation! 
-Please make sure to review our CONTRIBUTING guidelines before submitting your issue.
--->
+### Thank you for raising issue in GameSpher 3.0
