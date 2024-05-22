@@ -239,6 +239,9 @@ ________________________________________________________________________________
 |  185   | [Math Sprint Game](.SinglePlayer%20-%20Games/Math_Sprint_Game) |
 |  186   | [Quick Type](.SinglePlayer%20-%20Games/QuickType) |
 |  187   | [Hand_Cricket_Champ](./SinglePlayer%20-%20Games/Hand_Cricket_Champ) |
+|  188   | [SnakeBites Game](./SinglePlayer%20-%20Games/SnakeBites) |
+
+
 
 
 
