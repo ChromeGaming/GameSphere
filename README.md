@@ -238,9 +238,14 @@ ________________________________________________________________________________
 |  184   | [Ball Jumper Game](.SinglePlayer%20-%20Games/Ball_Jumper_Game) |
 |  185   | [Math Sprint Game](.SinglePlayer%20-%20Games/Math_Sprint_Game) |
 |  186   | [Quick Type](.SinglePlayer%20-%20Games/QuickType) |
-|  187   | [SIMON_GAME](.SinglePlayer%20-%20Games/SIMON_GAME) |
-|  188  | [Cubula_Game](.SinglePlayer%20-%20Games/Cubula_Game) |
-|  189  | [Ball_Shooting_Game](.SinglePlayer%20-%20Games/Ball_Shooting_Game) |
+
+
+
+|  187   | [Hand_Cricket_Champ](./SinglePlayer%20-%20Games/Hand_Cricket_Champ) |
+|  188   | [SIMON_GAME](.SinglePlayer%20-%20Games/SIMON_GAME) |
+|  189  | [Cubula_Game](.SinglePlayer%20-%20Games/Cubula_Game) |
+|  190  | [Ball_Shooting_Game](.SinglePlayer%20-%20Games/Ball_Shooting_Game) |
+
 
 
 
