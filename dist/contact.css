@@ -10,6 +10,31 @@
     justify-content: center;
     align-items: center;
 }
+.inputDiv{
+    position: relative;
+}
+.inDiv{
+    position: relative;
+}
+.icon1{
+    position: absolute;
+    top:calc(15%);
+    left:1.8%;
+}
+.icon2{
+    position: absolute;
+    top:calc(15%);
+    left:2.0%;
+    
+}
+.icon3{
+    position: absolute;
+    top:calc(18%);
+    left:1.6%;
+}
+.contact-form input{
+    border:2px solid var(--main-color);
+}
 .main-div{
     width: 100%;
     /* background-color: rgb(16 14 43 );; */
