@@ -15,6 +15,12 @@
     margin-top: 50px;
     padding: 10px;
     border-radius: 5px;
+    width:500px;
+}
+
+#round{
+    position:relative;
+    left:100px;
 }
 
 .buttonContainer {
@@ -22,6 +28,7 @@
     grid-gap: 10px;
     grid-template-columns: auto auto;
     transform: rotate(45deg);
+    margin-left:25%;
 }
 
 .square {
