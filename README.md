@@ -242,10 +242,10 @@ ________________________________________________________________________________
 |  185   | [Math Sprint Game](.SinglePlayer%20-%20Games/Math_Sprint_Game) |
 |  186   | [Quick Type](.SinglePlayer%20-%20Games/QuickType) |
 |  187   | [SIMON_GAME](.SinglePlayer%20-%20Games/SIMON_GAME) |
-|  188   | [Doraemon Run](.SinglePlayer%20-%20Games/DoraemonRun) |
+|  188  | [Cubula_Game](.SinglePlayer%20-%20Games/Cubula_Game) |
 |  189   | [Hand_Cricket_Champ](./SinglePlayer%20-%20Games/Hand_Cricket_Champ) |
 |  190   | [Pop My Balloon](<MultiPlayer - Games/Pop_My_Balloon>) |
-
+|  191   | [Doraemon Run](.SinglePlayer%20-%20Games/DoraemonRun) |
 
 
 
