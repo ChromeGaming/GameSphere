@@ -1,3 +1,6 @@
+![image](https://camo.githubusercontent.com/baebe7bd53cddccd8bb2181cba613bca938163bb9451dea6dd3db58aa42137ba/68747470733a2f2f696d6775722e636f6d2f7775694a5871722e706e67)
+-------------------------------
+
 ![Community](https://github.com/GameSphere-MultiPlayer/Physi-c-Tech/assets/98798977/e79af9da-814e-487e-8a9a-85947384d3b2)
 
 ## Table of Contents
@@ -238,11 +241,13 @@ ________________________________________________________________________________
 |  184   | [Ball Jumper Game](.SinglePlayer%20-%20Games/Ball_Jumper_Game) |
 |  185   | [Math Sprint Game](.SinglePlayer%20-%20Games/Math_Sprint_Game) |
 |  186   | [Quick Type](.SinglePlayer%20-%20Games/QuickType) |
-|  187   | [Hand_Cricket_Champ](./SinglePlayer%20-%20Games/Hand_Cricket_Champ) |
-|  188   | [SnakeBites Game](./SinglePlayer%20-%20Games/SnakeBites) |
-
-
-
+|  187   | [SIMON_GAME](.SinglePlayer%20-%20Games/SIMON_GAME) |
+|  188  | [Cubula_Game](.SinglePlayer%20-%20Games/Cubula_Game) |
+|  189   | [Hand_Cricket_Champ](./SinglePlayer%20-%20Games/Hand_Cricket_Champ) |
+|  190   | [Pop My Balloon](<MultiPlayer - Games/Pop_My_Balloon>) |
+|  191   | [Doraemon Run](.SinglePlayer%20-%20Games/DoraemonRun) |
+|  192   | [Hand_Cricket_Champ](./SinglePlayer%20-%20Games/Hand_Cricket_Champ) |
+|  193   | [SnakeBites Game](./SinglePlayer%20-%20Games/SnakeBites) |
 
 
 
