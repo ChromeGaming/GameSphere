@@ -246,6 +246,7 @@ ________________________________________________________________________________
 |  189   | [Hand_Cricket_Champ](./SinglePlayer%20-%20Games/Hand_Cricket_Champ) |
 |  190   | [Pop My Balloon](<MultiPlayer - Games/Pop_My_Balloon>) |
 |  191   | [Doraemon Run](.SinglePlayer%20-%20Games/DoraemonRun) |
+|  192   | [Touch-No-Fire-Game](.SinglePlayer%20-%20Games/Touch-No-Fire-Game)
 
 
 
