@@ -100,6 +100,7 @@ ________________________________________________________________________________
 |  41   | [Galaxy Rider](./SinglePlayer%20-%20Games/Galaxy_Rider) |
 |  42   | [Geek Tac Toe](./SinglePlayer%20-%20Games/GeekTacToe) |
 |  43   | [Guess The Number](./SinglePlayer%20-%20Games/Guess%20The%20Number) |
+|  43   | [Guess The Sequence](./SinglePlayer%20-%20Games/Guess%20The%Sequence) |
 |  44   | [Hangman Game](./SinglePlayer%20-%20Games/Hangman%20Game)   |
 |  45   | [HexGL Master](./SinglePlayer%20-%20Games/HexGL-master)   |
 |  46   | [Hover Board Effect](./SinglePlayer%20-%20Games/Hover_Board_Effect) |

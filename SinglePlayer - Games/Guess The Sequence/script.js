@@ -17,7 +17,6 @@ function GenerateSequence()
         randomColor = Math.floor(Math.random()*numberOfColors)
         sequence.push(colors[randomColor])
     }
-    console.log("Sequence: ",sequence)
 }
 
 function createGuessColors()
@@ -138,7 +137,6 @@ function checkAnswer()
     else
     {
         document.getElementById("confetti-container").style.visibility = "visible"
-        console.log("you won!")
         confettiInterval =  setInterval(() => {
             showConfetti();
           }, 400);
