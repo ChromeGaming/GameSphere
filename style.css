@@ -502,11 +502,11 @@
 }
 
 .game-card:hover .display-none {
-  display: none;
+  /* display: none; */
 }
 
 .game-card:hover video {
-  display: block;
+  /* display: block; */
 }
 
 .back-video {
