@@ -92,16 +92,24 @@
     color: var(--main-color);
 }
 
-.icon-div h3{
+.icon-div a{
     color: white;
     font-weight: bold;
+    margin-top: 5px;
     margin: 10px;
+}
+.icon-div a:hover{
+    color: cyan;
+    font-weight: 400;
 }
 
 .icon-div p{
     color: rgb(224, 224, 224);
 }
-
+.color{
+    margin-top: 20px;
+    font-size: 1.2vw;
+}
 .form-above-heading{
     color: var(--main-color);
     text-align: center;
