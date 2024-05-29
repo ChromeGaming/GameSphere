@@ -100,6 +100,7 @@ ________________________________________________________________________________
 |  41   | [Galaxy Rider](./SinglePlayer%20-%20Games/Galaxy_Rider) |
 |  42   | [Geek Tac Toe](./SinglePlayer%20-%20Games/GeekTacToe) |
 |  43   | [Guess The Number](./SinglePlayer%20-%20Games/Guess%20The%20Number) |
+|  43   | [Guess The Sequence](./SinglePlayer%20-%20Games/Guess%20The%20Sequence) |
 |  44   | [Hangman Game](./SinglePlayer%20-%20Games/Hangman%20Game)   |
 |  45   | [HexGL Master](./SinglePlayer%20-%20Games/HexGL-master)   |
 |  46   | [Hover Board Effect](./SinglePlayer%20-%20Games/Hover_Board_Effect) |
@@ -246,7 +247,7 @@ ________________________________________________________________________________
 |  189   | [Hand_Cricket_Champ](./SinglePlayer%20-%20Games/Hand_Cricket_Champ) |
 |  190   | [Pop My Balloon](<MultiPlayer - Games/Pop_My_Balloon>) |
 |  191   | [Doraemon Run](.SinglePlayer%20-%20Games/DoraemonRun) |
-|  192   | [Touch-No-Fire-Game](.SinglePlayer%20-%20Games/Touch-No-Fire-Game)
+
 
 
 
