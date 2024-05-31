@@ -1,0 +1,155 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: #37474F;
+    box-sizing: content-box;
+    overflow: hidden;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+
+.dot {
+    height: 50px;
+    width: 50px;
+    background-color: #313b4b;
+    border-radius: 100%;
+    display: inline-block;
+    outline: solid 5px #757575;
+    margin: 10px;
+    
+  }
+  
+#game{
+      width: 1000px;
+      height: 600px;
+      display: flex;
+      flex-direction: row;
+  }
+
+#guesses
+{
+    width: 500px;
+    display:block;
+}
+
+.guess
+  {
+    width:100;
+    height: 100;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    display:flex;
+  }
+  
+#colors
+  {
+      width:40;
+      justify-content:left;
+      text-align:center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+  }
+
+#results
+{
+  width: 500px;
+  display:block;
+}
+
+.result
+{
+  width:100;
+  height: 100;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    display:flex;
+}
+
+#check
+{
+  width: 1000px;
+  display:flex;
+  padding: 0.5%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+#confetti-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #90A4AE;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+}
+
+.card p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.confetti {
+  position: absolute;
+  top: 0;
+  font-size: 1.6rem;
+  animation: confetti-fall linear 5s infinite;
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-100%) rotate(0);
+  }
+  100% {
+    transform: translateY(100vh) rotate(180deg);
+  }
+}
+
+.button
+{
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  background-color: #01579B;
+  padding: 0.5rem 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.0rem;
+  outline: 0;
+  border: 0;
+  margin: 10px;
+  border-radius: 0.20rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
