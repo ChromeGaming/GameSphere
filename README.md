@@ -241,8 +241,13 @@ ________________________________________________________________________________
 |  183   | [Basketball Game](.SinglePlayer%20-%20Games/Basketball_Game) |
 |  184   | [Ball Jumper Game](.SinglePlayer%20-%20Games/Ball_Jumper_Game) |
 |  185   | [Math Sprint Game](.SinglePlayer%20-%20Games/Math_Sprint_Game) |
+ main
 |  186   | [Quick Type](.SinglePlayer%20-%20Games/QuickType)    |
 |  187   | [SIMON_GAME](.SinglePlayer%20-%20Games/SIMON_GAME)   |
+
+|  186   | [Quick Type](.SinglePlayer%20-%20Games/QuickType) |
+|  187   | [SIMON_GAME](.SinglePlayer%20-%20Games/SIMON_GAME) |
+ main
 |  188   | [Cubula_Game](.SinglePlayer%20-%20Games/Cubula_Game) |
 |  189   | [Hand_Cricket_Champ](./SinglePlayer%20-%20Games/Hand_Cricket_Champ) |
 |  190   | [Pop My Balloon](<MultiPlayer - Games/Pop_My_Balloon>) |
@@ -252,6 +257,12 @@ ________________________________________________________________________________
 |  191   | [Doraemon Run](.SinglePlayer%20-%20Games/DoraemonRun) |
 |  192   | [Hand_Cricket_Champ](./SinglePlayer%20-%20Games/Hand_Cricket_Champ) |
 |  193   | [SnakeBites Game](./SinglePlayer%20-%20Games/SnakeBites) |
+ main
+ main
+
+|  194   | [Ball_Shooting_Game](.SinglePlayer%20-%20Games/Ball_Shooting_Game) |
+
+
  main
 
 
