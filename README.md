@@ -244,7 +244,6 @@ ________________________________________________________________________________
 |  186   | [Quick Type](.SinglePlayer%20-%20Games/QuickType) |
 |  187   | [SIMON_GAME](.SinglePlayer%20-%20Games/SIMON_GAME) |
 |  188   | [Cubula_Game](.SinglePlayer%20-%20Games/Cubula_Game) |
-
 |  189   | [Ball_Shooting_Game](.SinglePlayer%20-%20Games/Ball_Shooting_Game) |
 |  190   | [Baseball_Game](.SinglePlayer%20-%20Games/Baseball_Game) |
 |  189   | [Hand_Cricket_Champ](./SinglePlayer%20-%20Games/Hand_Cricket_Champ) |
