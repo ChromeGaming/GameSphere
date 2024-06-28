@@ -117,6 +117,7 @@ class Simon {
         this.errorSound.play();
         this.display.startButton.disabled = false; 
         this.blockedButtons = true;
+        round.innerHTML=`You Lost.<br>Your score : ${this.round}`;
     }
 
    
@@ -126,7 +127,7 @@ class Simon {
         this.buttons.forEach(element =>{
             element.classList.add('winner');
         });
-        this.updateRound('you win 🏆');
+        round.innerHTML=`You Win 🏆<br>Your score : ${this.round}`;
     }
 }
 
