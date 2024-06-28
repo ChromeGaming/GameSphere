@@ -1,3 +1,6 @@
+![image](https://camo.githubusercontent.com/baebe7bd53cddccd8bb2181cba613bca938163bb9451dea6dd3db58aa42137ba/68747470733a2f2f696d6775722e636f6d2f7775694a5871722e706e67)
+-------------------------------
+
 ![Community](https://github.com/GameSphere-MultiPlayer/Physi-c-Tech/assets/98798977/e79af9da-814e-487e-8a9a-85947384d3b2)
 
 ## Table of Contents
@@ -97,6 +100,7 @@ ________________________________________________________________________________
 |  41   | [Galaxy Rider](./SinglePlayer%20-%20Games/Galaxy_Rider) |
 |  42   | [Geek Tac Toe](./SinglePlayer%20-%20Games/GeekTacToe) |
 |  43   | [Guess The Number](./SinglePlayer%20-%20Games/Guess%20The%20Number) |
+|  43   | [Guess The Sequence](./SinglePlayer%20-%20Games/Guess%20The%20Sequence) |
 |  44   | [Hangman Game](./SinglePlayer%20-%20Games/Hangman%20Game)   |
 |  45   | [HexGL Master](./SinglePlayer%20-%20Games/HexGL-master)   |
 |  46   | [Hover Board Effect](./SinglePlayer%20-%20Games/Hover_Board_Effect) |
@@ -232,18 +236,26 @@ ________________________________________________________________________________
 |  178   | [Platform Game Engine](./SinglePlayer%20-%20Games/Platform_Game_Engine) |
 |  179   | [Castle Escape Game](.SinglePlayer%20-%20Games/Castle_Escape_Game) |
 |  180   | [Shadow Poke Guessing Game](.SinglePlayer%20-%20Games/Shadow_Poke_Guessing_Game) |
-|  181   | [Marvel Role Playing Game](.SinglePlayer%20-%20Games/Marvel_Role_Playing_Game) |
+|  181   | [Marvel Role Playing Game](.SinglePlayer%20-%20Games/Marvel_Role_Playing_Game)   |
 |  182   | [Animal Name Guessing Game](.SinglePlayer%20-%20Games/Animal_Name_Guessing_Game) |
 |  183   | [Basketball Game](.SinglePlayer%20-%20Games/Basketball_Game) |
 |  184   | [Ball Jumper Game](.SinglePlayer%20-%20Games/Ball_Jumper_Game) |
 |  185   | [Math Sprint Game](.SinglePlayer%20-%20Games/Math_Sprint_Game) |
-|  186   | [Quick Type](.SinglePlayer%20-%20Games/QuickType) |
-|  187   | [SIMON_GAME](.SinglePlayer%20-%20Games/SIMON_GAME) |
-|  188  | [Cubula_Game](.SinglePlayer%20-%20Games/Cubula_Game) |
-|  189  | [Ball_Shooting_Game](.SinglePlayer%20-%20Games/Ball_Shooting_Game) |
-|  190  | [Baseball_Game](.SinglePlayer%20-%20Games/Baseball_Game) |
-|  198  | [Ball_Fall_Game](.SinglePlayer%20-%20Games/Ball_Fall_Game) |
-|  199  | [City_Builder_Game](.SinglePlayer%20-%20Games/City_Builder_Game) |
+|  186   | [Quick Type](.SinglePlayer%20-%20Games/QuickType)    |
+|  187   | [SIMON_GAME](.SinglePlayer%20-%20Games/SIMON_GAME)   |
+|  188   | [Cubula_Game](.SinglePlayer%20-%20Games/Cubula_Game) |
+|  189   | [Ball_Shooting_Game](.SinglePlayer%20-%20Games/Ball_Shooting_Game) |
+|  190   | [Baseball_Game](.SinglePlayer%20-%20Games/Baseball_Game) |
+|  191   | [Doraemon Run](.SinglePlayer%20-%20Games/DoraemonRun) |
+|  192   | [Hand_Cricket_Champ](./SinglePlayer%20-%20Games/Hand_Cricket_Champ) |
+|  193   | [SnakeBites Game](./SinglePlayer%20-%20Games/SnakeBites) |
+|  194   | [Earth_Guardian](./SinglePlayer%20-%20Games/Earth_Guardian) |
+|  195   | [Hand_Cricket_Champ](./SinglePlayer%20-%20Games/Hand_Cricket_Champ) |
+|  196   | [SnakeBites Game](./SinglePlayer%20-%20Games/SnakeBites) |
+|  197   | [Flames_Game](../MultiPlayer%20-%20Games/Flames_Game) |
+|  198  | [Ball_Fall_Game](.SinglePlayer%20-%20Games/Ball_Fall_Game) |  
+|  199   | [City_Builder_Game](.SinglePlayer%20-%20Games/City_Builder_Game) |
+
 
 
 
