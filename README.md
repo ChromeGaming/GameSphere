@@ -241,28 +241,20 @@ ________________________________________________________________________________
 |  183   | [Basketball Game](.SinglePlayer%20-%20Games/Basketball_Game) |
 |  184   | [Ball Jumper Game](.SinglePlayer%20-%20Games/Ball_Jumper_Game) |
 |  185   | [Math Sprint Game](.SinglePlayer%20-%20Games/Math_Sprint_Game) |
- main
 |  186   | [Quick Type](.SinglePlayer%20-%20Games/QuickType)    |
 |  187   | [SIMON_GAME](.SinglePlayer%20-%20Games/SIMON_GAME)   |
-
-|  186   | [Quick Type](.SinglePlayer%20-%20Games/QuickType) |
-|  187   | [SIMON_GAME](.SinglePlayer%20-%20Games/SIMON_GAME) |
- main
 |  188   | [Cubula_Game](.SinglePlayer%20-%20Games/Cubula_Game) |
 |  189   | [Ball_Shooting_Game](.SinglePlayer%20-%20Games/Ball_Shooting_Game) |
 |  190   | [Baseball_Game](.SinglePlayer%20-%20Games/Baseball_Game) |
-|  189   | [Hand_Cricket_Champ](./SinglePlayer%20-%20Games/Hand_Cricket_Champ) |
-|  190   | [Pop My Balloon](<MultiPlayer - Games/Pop_My_Balloon>) |
- main
-|  191   | [Doraemon Run](.SinglePlayer%20-%20Games/DoraemonRun)  |
-|  192   | [Earth_Guardian](./SinglePlayer%20-%20Games/Earth_Guardian) |
-|  191   | [Doraemon Run](.SinglePlayer%20-%20Games/DoraemonRun) |
-|  192   | [Hand_Cricket_Champ](./SinglePlayer%20-%20Games/Hand_Cricket_Champ) |
-|  193   | [SnakeBites Game](./SinglePlayer%20-%20Games/SnakeBites) |
+|  191   | [Hand_Cricket_Champ](./SinglePlayer%20-%20Games/Hand_Cricket_Champ) |
+|  192   | [Pop My Balloon](<MultiPlayer - Games/Pop_My_Balloon>) | 
+|  193   | [Doraemon Run](.SinglePlayer%20-%20Games/DoraemonRun)  |
+|  194   | [Earth_Guardian](./SinglePlayer%20-%20Games/Earth_Guardian) |
+|  195   | [Hand_Cricket_Champ](./SinglePlayer%20-%20Games/Hand_Cricket_Champ) |
+|  196   | [SnakeBites Game](./SinglePlayer%20-%20Games/SnakeBites) |
+|  197   | [Flames_Game](../MultiPlayer%20-%20Games/Flames_Game) |
+|  198  | [Ball_Fall_Game](.SinglePlayer%20-%20Games/Ball_Fall_Game) |
 
-|  194   | [Ball_Shooting_Game](.SinglePlayer%20-%20Games/Ball_Shooting_Game) |
-|  195   | [Baseball_Game](.SinglePlayer%20-%20Games/Baseball_Game) |
-|  196   | [Flames_Game](../MultiPlayer%20-%20Games/Flames_Game) |
 
 
 
