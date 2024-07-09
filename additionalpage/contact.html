@@ -21,7 +21,7 @@
     <script src="../src/validation.js"></script>
     <script src="https://kit.fontawesome.com/284ffbb2b1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../dist/contact.css">
-    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>contact</title>
 </head>
 <body>
@@ -77,30 +77,49 @@
 
            <div class="contact-part">
 
+
+
                <div class="contact-main-heading">Have You Any Questions?</div>
+               <p class="color">Contact us at ...</p>
                <div class="icon-part">
                    <div class="icon-div">
-                       <i class="fa-solid fa-phone"></i>
-                   <h3>Call Us </h3>
-                   <p>xxxxxxxxxxx</p>
+                    <a target="_blank" href="https://discord.gg/dakzwdz4ev" class="icon facebook">
+                        <span><i class="fab fa-discord"></i></span> </a>
+                        <a target="_blank" href="https://discord.gg/dakzwdz4ev" >
+                           Discord </a>
+                          
 
                </div>
                <div class="icon-div">
-                   <i class="fa-solid fa-location-dot"></i>
-                   <h3>Office</h3>
-                   <p>xxxxxxxxxxx</p>
+                <a target="_blank" href="https://www.linkedin.com/company/gamesphere-multiplayer/"
+                class="icon linkedin">
+                <span><i class="fab fa-linkedin"></i></span>  </a>
+                <a target="_blank" href="https://www.linkedin.com/company/gamesphere-multiplayer/">
+                Linkedin  </a>
+                
+           
 
                </div>
                <div class="icon-div">
-                   <i class="fa-solid fa-envelope"></i>
-                   <h3>Email</h3>
-                   <p>xxxxxxxxxxx</p>
+                <a target="_blank" href="https://github.com/GameSphere-MultiPlayer" class="icon github">
+                    <span><i class="fab fa-github"></i></span>
+                </a>
+                <a target="_blank" href="https://github.com/GameSphere-MultiPlayer" >
+                    Github
+                </a>
+                
                    
                </div>
                <div class="icon-div">
-                   <i class="fa-solid fa-earth-americas"></i>
-                   <h3>Website</h3>
-                   <p>xxxxxxxxxxx</p>
+                <a target="_blank" href=" https://www.facebook.com/profile.php?id=100092184203215&mibextid=ZbWKwL"
+                class="icon twitter">
+                <span><i class="fab fa-facebook"></i></span>  </a>
+                <a target="_blank" href=" https://www.facebook.com/profile.php?id=100092184203215&mibextid=ZbWKwL">
+                Facebook</a>
+                
+                
+                
+           
                    
                </div>
            </div>
@@ -109,12 +128,17 @@
            <div class="contact-form" role="form">
                <div class="name-email-div">
                    <div class="inputDiv">
-                    <input type="text" name="name" id="name" placeholder="Enter Full Name " autocomplete="off" onkeyup="handleChange(event)" aria-required="true" aria-describedby="nameError" aria-label="Full Name">
-                    <p id="nameError" class="error hidden" role="alert">Name should be of atleast 6 characters</p>
+                        <div  class="inDiv">
+                            <i class='icon1 bx bxs-user' style="font-size:32px;color: var(--main-color);"></i>
+                            <input type="text" name="name" id="name" placeholder="Enter Full Name " autocomplete="off" onkeyup="handleChange(event)" aria-required="true" aria-describedby="nameError" aria-label="Full Name" style="padding-left:15%;">
+                        </div>
+                        <p id="nameError" class="error hidden" role="alert">Name should be of atleast 6 characters</p>
                    </div>
                     <div class="inputDiv">
-                        <input type="email" name="email" id="email" placeholder="Enter Email" autocomplete="off" onkeyup="handleChange(event)" aria-required="true" aria-describedby="emailError" aria-label="Email">
-
+                        <div class="inDiv">
+                            <i class='icon2 bx bxl-gmail' style="font-size:32px;color: var(--main-color);"></i>
+                            <input type="email" name="email" id="email" placeholder="Enter Email" autocomplete="off" onkeyup="handleChange(event)" aria-required="true" aria-describedby="emailError" aria-label="Email" style="padding-left:15%;">
+                        </div>
 <!--                     <label for="name" class="sr-only-label">Enter your Full Name: </label>
                     <input type="text" name="name" id="name" placeholder="Enter Full Name "  onkeyup="handleChange(event)" aria-required="true" aria-describedby="nameError" aria-label="Full Name">
                     <p id="nameError" class="error hidden" role="alert">Name should be of atleast 6 characters</p> -->
@@ -127,20 +151,25 @@
                   
                </div>
                <!-- <input type="text" name="number" id="number" placeholder="Enter Phone Number"> -->
-               <div >
-                <label for="subject" class="sr-only-label">Enter your Mail Subject: </label>
-                <input type="text" name="subject" id="subject" placeholder="Enter Mail Subject" onkeyup="handleChange(event)" aria-required="true" aria-describedby="subjectError" aria-label="Subject">
-                <p id="subjectError" class="error hidden" role="alert">Mail Subject must be within 2 to 6 words</p>
+                <div>
+                    <div class="inDiv">
+                        <label for="subject" class="sr-only-label">Enter your Mail Subject: </label>
+                        <i class='icon3 bx bxs-envelope' style="font-size: 32px;color: var(--main-color);"></i>
+                        <input type="text" name="subject" id="subject" placeholder="Enter Mail Subject" onkeyup="handleChange(event)" aria-required="true" aria-describedby="subjectError" aria-label="Subject" style="padding-left: 7.8%;">
+                    </div>
+                    <p id="subjectError" class="error hidden" role="alert">Mail Subject must be within 2 to 6 words</p>
                </div>
-             <div >
-                <label for="message" class="sr-only-label">Enter your Message: </label>
-                <input type="text" name="message" id="message" placeholder="Enter Message" class="message" onkeyup="handleChange(event)" aria-required="true" aria-describedby="messageError" aria-label="Message">
-                <p id="messageError" class="error hidden" role="alert">Message must be of within 10 to 100 words</p>
-             </div>
-               <a href="#">
-                <div class="btn" onclick="handleSubmitClick()" role="button" aria-pressed="false">
-                   Send Message
+                <div>
+                    <div class="inDiv">
+                        <label for="message" class="sr-only-label">Enter your Message: </label>
+                        <input type="text" name="message" id="message" placeholder="Enter Message" class="message" onkeyup="handleChange(event)" aria-required="true" aria-describedby="messageError" aria-label="Message">
+                    </div>
+                    <p id="messageError" class="error hidden" role="alert">Message must be of within 10 to 100 words</p>
                 </div>
+                <a href="#">
+                    <div class="btn" onclick="handleSubmitClick()" role="button" aria-pressed="false">
+                    Send Message
+                    </div>
                </a>
            </div>
        </div>
@@ -159,10 +188,10 @@
                    <div class = "footer-item">
                        <h5 class = "footer-item-title">quick link</h5>
                        <ul class = "footer-item-links">
-                           <li><a target="_blank" href = "#">Gaming</a></li>
+                           <li><a target="_blank" href = "/additionalpage/game.html">Gaming</a></li>
                            <li><a target="_blank" href = "#">Product</a></li>
                            <li><a target="_blank" href = "#">About Us</a></li>
-                           <li><a target="_blank" href = "#">Community</a></li>
+                           <li><a target="_blank" href = "https://discord.gg/dakzwdz4ev">Community</a></li>
                        </ul>
                    </div>
 

@@ -1,0 +1,44 @@
+body{
+    background-image: url(Banner-image/bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+   
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color:#F2ACB9; */
+    background-color: aliceblue;
+    padding: 50px;
+}
+input{
+    border: 5px solid #D2042D;
+    padding: 5px;
+    width: 500px;
+    margin: 5px;
+}
+h3{
+    margin: 10px;
+    font-family: cursive;
+    color: #D2042D;
+    font-size:2.5rem;
+}
+.btn{
+    border: 5px solid  black;
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold;
+}
+.btn:hover{
+    border: 5px solid  black;
+    background-color: grey;
+    color: black;
+    font-weight: bold;
+}

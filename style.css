@@ -1,5 +1,6 @@
 :root {
   --main-color: rgb(0 159 157);
+  overflow-x: hidden;
 }
 
 
@@ -502,11 +503,11 @@
 }
 
 .game-card:hover .display-none {
-  display: none;
+  /* display: none; */
 }
 
 .game-card:hover video {
-  display: block;
+  /* display: block; */
 }
 
 .back-video {
