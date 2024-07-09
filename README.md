@@ -246,6 +246,7 @@ ________________________________________________________________________________
 |  199  | [City_Builder_Game](.SinglePlayer%20-%20Games/City_Builder_Game) |
 |  202  | [Cooking_Challenge Game](.SinglePlayer%20-%20Games/Cooking_Challenge Game) |
 |  203  | [Doodling_Game](.SinglePlayer%20-%20Games/Doodling_Game) |
+|  203  | [Duck_Hunt_Game](.SinglePlayer%20-%20Games/Duck_Hunt_Game) |
 
 
 
