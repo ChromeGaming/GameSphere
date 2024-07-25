@@ -258,9 +258,8 @@ ________________________________________________________________________________
 |  201   | [Cooking_Challenge Game](.SinglePlayer%20-%20Games/Cooking_Challenge Game) |
 |  202   | [Doodling_Game](.SinglePlayer%20-%20Games/Doodling_Game) |
 |  203   | [Duck_Hunt_Game](.SinglePlayer%20-%20Games/Duck_Hunt_Game) |
-|  203   | [Breakout_Game](.SinglePlayer%20-%20Games/BreakOut_Game) |
-
-
+|  204   | [Breakout_Game](.SinglePlayer%20-%20Games/BreakOut_Game) |
+|  205  | [Breakout_Game](.SinglePlayer%20-%20Games/Maze_Game) |
 
 
 
