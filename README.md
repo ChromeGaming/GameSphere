@@ -1,22 +1,5 @@
-![image](https://camo.githubusercontent.com/baebe7bd53cddccd8bb2181cba613bca938163bb9451dea6dd3db58aa42137ba/68747470733a2f2f696d6775722e636f6d2f7775694a5871722e706e67)
--------------------------------
 
 ![Community](https://github.com/GameSphere-MultiPlayer/Physi-c-Tech/assets/98798977/e79af9da-814e-487e-8a9a-85947384d3b2)
-
-## Table of Contents
-
-- [About Our Project 💻](#about-our-project-)
-- [How to start contributing 🤝](#how-to-start-contributing-)
-    + [First Step 🌱](#first-step-)
-    + [Second Step 🌲](#second-step-)
-    + [Third Step 🌳](#third-step-)
-- [Available Games 🎮](#available-games)
-    + [Single Player Games 🎮](#list-of-single-player-games)
-- [How to make a PR in a Project 🟢](#how-to-make-a-pr-in-a-project-)
-    + [Alternatively Using GitHub Desktop](#alternatively-using-github-desktop)
-
-
-
 ______________________________________________________________________________________________________________________________________________________________
 
 # About Our Project 💻
@@ -49,8 +32,26 @@ ________________________________________________________________________________
 
 **Who are able to work with Us** - UI/UX Design, Front-end developer, Back-end developer, *Know about WebSocket etc.. and also if you want to contribute in different fields we welcome you 
  ______________________________________________________________________________________________________________________________________________________________
+<!-- Open Source Programs -->
+  <div>
+    <h2> Open Source Programs</h2>
+  </div>
 
-<div align="center">
+  <table border="1" cellpadding="10">
+        <tr>
+            <td rowspan="2">
+                <img src="https://github.com/user-attachments/assets/7c41750b-293b-4fd0-a00b-4fee4feade7b" alt="GSSOC Logo" width="100" height="55">
+            </td>
+            <td>
+                <strong>GSSOC 2024</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                This project is part of GirlScript Summer of Code. We welcome contributions from the community.
+            </td>
+        </tr>
+    </table>
  
 # Available Games 🎮
 ### List of Single Player Games 
@@ -261,94 +262,22 @@ ________________________________________________________________________________
 |  204   | [Breakout_Game](.SinglePlayer%20-%20Games/BreakOut_Game) |
 |  205  | [Breakout_Game](.SinglePlayer%20-%20Games/Maze_Game) |
 
-
-
-
-
-
-
 </div>
-________________________________________________________________________________________________________________________________________________________________
-# How to make a PR in a Project 🟢
 
-If you are interested to contribute in this project how to start contribute
-<!-- in detail -->
+<div>
+  <h2><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f31f/512.webp" width="35" height="35"> Ready to Contribute?</h2>
+</div>
 
-1. Fork the repo.
+Kindly go through [CONTRIBUTING.md](https://github.com/ChromeGaming/GameSphere/blob/main/.github/Contributor.md) to understand everything from setup to contributing guidelines.
 
-2. After forking, clone the repo to your local machine.
-To clone the repo to your local machine, run the following command in your terminal:
-    
-    ```bash
-    git clone https://github.com/<your-github-username>/GameSphere
-    ```
+If you would like to contribute to the project, please follow our contribution guidelines.
 
-3. Add a remote upstream to the original repo.
-To add a remote upstream, run the following command in your terminal:
-    
-    ```bash
-    git remote add upstream https://github.com/Durgesh4993/GameSphere/
-    ```
+<hr>
 
-4. Create a new branch.
-To create a new branch, run the following command in your terminal:
-    
-    ```bash
-    git checkout -b <your-branch-name>
-    ```
-
-5. Make changes in source code.
-
-6. Add your changes
-To add your changes, run the following command in your terminal:
-    
-    ```bash
-    git add <File1 changed> <File2 changed> ...
-    ```
-7. Commit your changes.
-To commit your changes, run the following command in your terminal:
-    
-    ```bash
-    git commit -m "<your-commit-message>"
-    ```
-
-8. Push your changes.
-To push your changes, run the following command in your terminal:
-    
-    ```bash
-    git push origin <your-branch-name>
-    ```
-
-9. Create a PR.
-
-__________________________________________________________________________________________________________________________________________________________________
-
-## Alternatively Using GitHub Desktop
-
-1. Open GitHub Desktop and log in to your GitHub account.
-
-2. Make sure you are on the "Current Repository" view. If not, go to "File" and select "Add Local Repository" to add your repository.
-
-3. In the "Current Repository" view, ensure you are on the branch that you want to submit a pull request for. If you're not on the correct branch, use the "Branch" menu to switch to the correct branch.
-
-4. Once you're on the correct branch, make your changes and commit them to the branch. You can do this by clicking the "+" button in the upper-left corner of the GitHub Desktop window, making your changes, and then entering a commit message.
-
-5. After you've made your changes and committed them, click the "Push origin" button in the top-right corner of the GitHub Desktop window. This will push your changes to the remote repository on GitHub.
-
-6. Now, go to the GitHub website, navigate to your fork of the repository, and you should see a button to "Compare & pull request" between your fork and the original repository, click on it.
-
-7. On the pull request page, you can review your changes and add any additional information, such as a title and a description, that you want to include with your pull request.
-
-8. Once you're satisfied with your pull request, click the "Create pull request" button to submit it.
-
-**Note:** In order to create a pull request, you must have a fork of the original repository in your GitHub account and you must have made the changes in that forked repository.
-
-___________________________________________________________________________________________________________________________________________________________________________
-
-<h2 align='center'> Project Admin </h2>
-<table align='center'>
+<h2 > Project Admin </h2>
+<table >
 <tr>
-    <td align="center">
+    <td >
         <a href="https://www.linkedin.com/in/aman-singh-026141222/">
             <img src="https://media.licdn.com/dms/image/D4D03AQEACXAgCyGEgg/profile-displayphoto-shrink_400_400/0/1685189218997?e=1690416000&v=beta&t=80_I8RpWzwV3EPYU6E-R8CbX_f7V7QGMFKkSQeQe1Kk" width="100;" alt="Aman Kumar Singh"/>
             <br />
@@ -364,10 +293,14 @@ ________________________________________________________________________________
 Thanks a lot for spending your time helping GameSphere. Thanks a lot! Keep rocking 🍻
 <p>
   <img src="https://api.vaunt.dev/v1/github/entities/GameSphere-MultiPlayer/repositories/GameSphere/contributors?format=svg&limit=54" width="600" height"250" />
-</p>
-<h2 align='center'>Contributors</h2>
-<table align='center'>
-<td align='center'><a href="https://github.com/Aman1-coder/GameSphere/graphs/contributors">
+
+ <!-- Cotributors -->
+<div>
+  <h2><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2764_fe0f/512.webp" width="40" height="40"> Contributors</h2>
+</div>
+
+We extend our heartfelt gratitude for your invaluable contribution to our project! 😊
+
+<a href="https://github.com/Aman1-coder/GameSphere/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Aman1-coder/GameSphere" />
 </a>
-</td>
