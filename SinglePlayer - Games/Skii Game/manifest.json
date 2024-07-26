@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Skii Game",
+    "version": "1.0",
+    "description": "Ride Safe.",
+    "permissions": [],
+    "action": {
+        "default_popup": "index.html"
+    }
+}
