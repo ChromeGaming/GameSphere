@@ -1,0 +1,88 @@
+body {
+    margin: 40;
+    padding: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #222;
+    font-family: Arial, sans-serif;
+    color: #fff;
+  }
+  
+  .game-container {
+    text-align: center;
+  }
+  
+  .game-header {
+    margin-bottom: 0px;
+  }
+  
+  .score-board {
+    font-size: 1.5em;
+  }
+  
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(10, 50px);
+    gap: 5px;
+    margin: 0 auto;
+  }
+  
+  .grid-cell {
+    width: 50px;
+    height: 50px;
+    background: #444;
+    border: 2px solid #666;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .player {
+    width: 80%;
+    height: 80%;
+    background: #4caf50;
+    border-radius: 50%;
+  }
+  
+  .bomb {
+    width: 80%;
+    height: 80%;
+    background: #f44336;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  }
+  
+  .explosion {
+    width: 100%;
+    height: 100%;
+    background: orange;
+  }
+  
+  .obstacle {
+    width: 100%;
+    height: 100%;
+    background: #888;
+  }
+  
+  .reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #4caf50;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .reset-button:hover {
+    background: #45a049;
+  }
+  
