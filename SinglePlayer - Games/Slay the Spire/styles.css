@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#player, #enemy {
+    margin: 20px 0;
+}
+
+#playerDeck {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #f0f0f0;
+}

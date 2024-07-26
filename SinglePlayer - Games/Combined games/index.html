@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Games</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>Combined Games</header>
+    <nav>
+        <button onclick="showGame(1)">Maze Game</button>
+        <button onclick="showGame(2)">Shooting Game</button>
+        <button onclick="showGame(3)">Matching Game</button>
+        <button onclick="showGame(4)">Racing Game</button>
+        <button onclick="showGame(5)">Puzzle Game</button>
+    </nav>
+    <div class="game" id="mazeGame">
+        <h2>Maze Game</h2>
+        <p>Navigate through the maze to reach the goal.</p>
+        <canvas id="mazeCanvas" width="400" height="400"></canvas>
+    </div>
+    <div class="game" id="shootingGame">
+        <h2>Shooting Game</h2>
+        <p>Shoot the targets to score points.</p>
+        <canvas id="shootingCanvas" width="400" height="400"></canvas>
+    </div>
+    <div class="game" id="matchingGame">
+        <h2>Matching Game</h2>
+        <p>Match the cards to win.</p>
+        <div id="matchingCards"></div>
+    </div>
+    <div class="game" id="racingGame">
+        <h2>Racing Game</h2>
+        <p>Move the car to avoid obstacles.</p>
+        <canvas id="racingCanvas" width="400" height="400"></canvas>
+    </div>
+    <div class="game" id="puzzleGame">
+        <h2>Puzzle Game</h2>
+        <p>Arrange the pieces to complete the puzzle.</p>
+        <div id="puzzlePieces"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
