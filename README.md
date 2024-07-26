@@ -250,7 +250,7 @@ ________________________________________________________________________________
 |  192   | [Hand_Cricket_Champ](./SinglePlayer%20-%20Games/Hand_Cricket_Champ) |
 |  193   | [SnakeBites Game](./SinglePlayer%20-%20Games/SnakeBites) |
 |  194   | [Ball_Shooting_Game](.SinglePlayer%20-%20Games/Ball_Shooting_Game) |
-
+|  195   | [Ball_Shooting_Game](.SinglePlayer%20-%20Games/Skii&Game) |
 
 
 
