@@ -260,9 +260,9 @@ ________________________________________________________________________________
 |  202   | [Doodling_Game](.SinglePlayer%20-%20Games/Doodling_Game) |
 |  203   | [Duck_Hunt_Game](.SinglePlayer%20-%20Games/Duck_Hunt_Game) |
 |  204   | [Breakout_Game](.SinglePlayer%20-%20Games/BreakOut_Game) |
-|  205  | [Breakout_Game](.SinglePlayer%20-%20Games/Maze_Game) |
-|  206  | [Breakout_Game](.SinglePlayer%20-%20Games/Bomber_Game) |
-
+|  205  | [Maze_Game](.SinglePlayer%20-%20Games/Maze_Game) |
+|  206  | [Bomber_Game](.SinglePlayer%20-%20Games/Bomber_Game) |
+|  207 | [Tug of War ](.SinglePlayer%20-%20Games/Tug_of_war) |
 </div>
 
 <div>
