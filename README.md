@@ -261,7 +261,8 @@ ________________________________________________________________________________
 |  203   | [Duck_Hunt_Game](.SinglePlayer%20-%20Games/Duck_Hunt_Game) |
 |  204   | [Breakout_Game](.SinglePlayer%20-%20Games/BreakOut_Game) |
 |  205  | [Breakout_Game](.SinglePlayer%20-%20Games/Maze_Game) |
-|  206   | [Plankman](.SinglePlayer%20-%20Games/Plankman) |
+|  207   | [Plankman](.SinglePlayer%20-%20Games/Plankman) |
+|  206  | [Breakout_Game](.SinglePlayer%20-%20Games/Bomber_Game) |
 
 </div>
 
