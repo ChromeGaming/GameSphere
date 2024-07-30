@@ -262,6 +262,7 @@ ________________________________________________________________________________
 |  204   | [Breakout_Game](.SinglePlayer%20-%20Games/BreakOut_Game) |
 |  205  | [Breakout_Game](.SinglePlayer%20-%20Games/Maze_Game) |
 |  206  | [Breakout_Game](.SinglePlayer%20-%20Games/Bomber_Game) |
+|  207  | [Arkanoid_Game](.SinglePlayer%20-%20Games/Arkanoid_Game) |
 
 </div>
 
