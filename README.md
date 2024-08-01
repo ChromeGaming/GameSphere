@@ -263,6 +263,7 @@ ________________________________________________________________________________
 |  205  | [Maze_Game](.SinglePlayer%20-%20Games/Maze_Game) |
 |  206  | [Bomber_Game](.SinglePlayer%20-%20Games/Bomber_Game) |
 |  207 | [Tug of War ](.SinglePlayer%20-%20Games/Tug_of_war) |
+|  208 | [Shape_Clicker_Game](.SinglePlayer%20-%20Games/Shape_Clicker_Game) |
 </div>
 
 <div>

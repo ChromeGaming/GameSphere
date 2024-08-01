@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="./hero-static.webp">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mona's Aquatic Escape</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        #game-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        #banner {
+            width: 100%;
+            height: 20%;
+            background: url('visual.webp') no-repeat center center;
+            background-size: cover;
+        }
+        #game-area {
+            width: 100%;
+            height: 80%;
+            background: url('hero-static.webp') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            filter: blur(5px);
+        }
+        #start-screen {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(108, 202, 41);
+            background-image: url('./visual.webp');
+            background-blend-mode: normal;
+            background-attachment: fixed;
+        }
+        #start-button, #restart-button {
+            font-size: 24px;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: rgba(224, 62, 62, 0.5);
+            color: white;
+            font-weight: 200;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        #start-button:hover, #restart-button:hover {
+            background-color: rgba(224, 62, 62, 0.912);
+            letter-spacing: 5px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border: 5px black;
+            font-weight: 500;
+            padding: 30px 50px;
+        }
+        #game-over {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            color: red;
+            display: none;
+        }
+        #restart-button {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: none;
+        }
+        .game-character {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #mona {
+            background-image: url('mascot-mona.webp');
+        }
+        #ducky {
+            background-image: url('mascot-ducky.webp');
+        }
+        #copilot {
+            background-image: url('mascot-copilot.webp');
+        }
+        #footer {
+            position: fixed;
+            bottom: 10px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            z-index: 1000;
+            transition: bottom 0.5s ease;
+            animation: bounce 0.5s ease infinite alternate;
+        }
+
+        #footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #footer a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes bounce {
+            from {
+                transform: translateY(0px);
+            }
+            to {
+                transform: translateY(-10px);
+            }
+        }
+        #footer.game-active {
+           bottom: calc(100% - 40px);
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <div id="banner"></div>
+        <div id="game-area">
+            <div id="mona" class="game-character"></div>
+            <div id="ducky" class="game-character"></div>
+            <div id="copilot" class="game-character"></div>
+        </div>
+        <div id="start-screen">
+            <button id="start-button">Start Game</button>
+        </div>
+        <div id="game-over">Game Over</div>
+        <button id="restart-button">Restart</button>
+    </div>
+    <div id="footer">
+        Made With ❤️ by <a href="https://github.com/Anjaliavv51">Anjali</a>
+    </div>
+
+    <script>
+        const gameArea = document.getElementById('game-area');
+        const startScreen = document.getElementById('start-screen');
+        const startButton = document.getElementById('start-button');
+        const restartButton = document.getElementById('restart-button');
+        const gameOver = document.getElementById('game-over');
+        const mona = document.getElementById('mona');
+        const ducky = document.getElementById('ducky');
+        const copilot = document.getElementById('copilot');
+
+        let gameActive = false;
+
+        function startGame() {
+            gameActive = true;
+            startScreen.style.display = 'none';
+            gameArea.style.filter = 'none';
+            positionCharacters();
+            gameLoop();
+            footer.classList.add('game-active');
+        }
+
+        function endGame() {
+            gameActive = false;
+            gameOver.style.display = 'block';
+            restartButton.style.display = 'block';
+        }
+
+        function restartGame() {
+            gameOver.style.display = 'none';
+            restartButton.style.display = 'none';
+            startGame();
+        }
+
+        function positionCharacters() {
+            mona.style.left = '10%';
+            mona.style.top = '50%';
+            ducky.style.left = '50%';
+            ducky.style.top = '50%';
+            copilot.style.left = '90%';
+            copilot.style.top = '50%';
+        }
+
+        function moveCharacter(character, dx, dy) {
+            let rect = character.getBoundingClientRect();
+            let newX = rect.left + dx;
+            let newY = rect.top + dy;
+            
+            if (newX >= 0 && newX + rect.width <= gameArea.clientWidth) {
+                character.style.left = newX + 'px';
+            }
+            if (newY >= 0 && newY + rect.height <= gameArea.clientHeight) {
+                character.style.top = newY + 'px';
+            }
+        }
+
+        function checkCollision(rect1, rect2) {
+            return !(rect1.right < rect2.left || 
+                     rect1.left > rect2.right || 
+                     rect1.bottom < rect2.top || 
+                     rect1.top > rect2.bottom);
+        }
+
+        function gameLoop() {
+            if (!gameActive) return;
+
+            let monaRect = mona.getBoundingClientRect();
+            let duckyRect = ducky.getBoundingClientRect();
+            let copilotRect = copilot.getBoundingClientRect();
+
+            if (checkCollision(monaRect, duckyRect) || checkCollision(monaRect, copilotRect)) {
+                endGame();
+                return;
+            }
+
+            // Move copilot towards mona
+            let dx = monaRect.left - copilotRect.left;
+            let dy = monaRect.top - copilotRect.top;
+            let distance = Math.sqrt(dx*dx + dy*dy);
+            moveCharacter(copilot, dx/distance, dy/distance);
+
+            requestAnimationFrame(gameLoop);
+        }
+
+        startButton.addEventListener('click', startGame);
+        restartButton.addEventListener('click', restartGame);
+
+        document.addEventListener('keydown', (e) => {
+            if (!gameActive) return;
+            switch(e.key) {
+                case 'ArrowLeft':
+                case 'a':
+                case 'A':
+                    moveCharacter(mona, -5, 0);
+                    break;
+                case 'ArrowRight':
+                case 'd':
+                case 'D':
+                    moveCharacter(mona, 5, 0);
+                    break;
+                case 'ArrowUp':
+                case 'w':
+                case 'W':
+                    moveCharacter(mona, 0, -5);
+                    break;
+                case 'ArrowDown':
+                case 's':
+                case 'S':
+                    moveCharacter(mona, 0, 5);
+                    break;
+            }
+        });
+
+        gameArea.addEventListener('mousemove', (e) => {
+            if (!gameActive) return;
+            let rect = gameArea.getBoundingClientRect();
+            mona.style.left = (e.clientX - rect.left - 25) + 'px';
+            mona.style.top = (e.clientY - rect.top - 25) + 'px';
+        });
+    </script>
+</body>
+</html>
