@@ -261,8 +261,13 @@ ________________________________________________________________________________
 |  203   | [Duck_Hunt_Game](.SinglePlayer%20-%20Games/Duck_Hunt_Game) |
 |  204   | [Breakout_Game](.SinglePlayer%20-%20Games/BreakOut_Game) |
 |  205  | [Breakout_Game](.SinglePlayer%20-%20Games/Maze_Game) |
-|  206  | [Pixel Painter](.SinglePlayer%20-%20Games/Pixel%20Painter) |
+
+|  208  | [Pixel Painter](.SinglePlayer%20-%20Games/Pixel%20Painter) |
 |  206  | [Breakout_Game](.SinglePlayer%20-%20Games/Bomber_Game) |
+
+|  206  | [Bomber_Game](.SinglePlayer%20-%20Games/Bomber_Game) |
+|  207  | [Shape_Clicker_Game](.SinglePlayer%20-%20Games/Shape_Clicker_Game) |
+
 
 </div>
 
