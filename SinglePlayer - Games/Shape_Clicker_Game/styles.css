@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#game-container {
+    position: relative;
+    width: 80vw;
+    height: 60vh;
+    margin: 0 auto;
+    border: 2px solid #333;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.shape {
+    position: absolute;
+    cursor: pointer;
+}
+
+#score {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+#start-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
