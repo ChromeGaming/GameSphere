@@ -1,0 +1,107 @@
+/* styles.css */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+#login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+#login-form h2 {
+    color: #61dafb;
+    margin-bottom: 20px;
+}
+
+#login-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#login-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #61dafb;
+    color: #20232a;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login-form button:hover {
+    background-color: #21a1f1;
+}
+
+#game-container {
+    position: relative;
+    border: 5px solid #61dafb;
+    background-color: #20232a;
+    width: 800px;
+    height: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: glow 2s infinite;
+}
+
+#gameCanvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#score-board, #level-board, #missed-board {
+    position: absolute;
+    top: 10px;
+    color: #61dafb;
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#score-board {
+    left: 10px;
+}
+
+#level-board {
+    right: 10px;
+}
+
+#missed-board {
+    right: 10px;
+    top: 50px;
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 5px #61dafb; }
+    50% { box-shadow: 0 0 20px #61dafb; }
+    100% { box-shadow: 0 0 5px #61dafb; }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
