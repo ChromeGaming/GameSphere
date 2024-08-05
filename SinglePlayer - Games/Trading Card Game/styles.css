@@ -1,0 +1,54 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-container {
+    text-align: center;
+    color: white;
+}
+
+.hand {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.card {
+    width: 50px;
+    height: 70px;
+    background-color: #eee;
+    border: 1px solid #000;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #000;
+}
+
+#draw-card {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#score {
+    font-size: 20px;
+    margin: 10px;
+}
+
+#game-over {
+    font-size: 24px;
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
