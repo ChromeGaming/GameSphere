@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Multi-Level Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-container">
+        <form id="login-form">
+            <h2>Welcome to the Game</h2>
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Start Game</button>
+        </form>
+    </div>
+    <div id="game-container" style="display:none;">
+        <canvas id="gameCanvas"></canvas>
+        <div id="score-board">Score: <span id="score">0</span></div>
+        <div id="level-board">Level: <span id="level">1</span></div>
+        <div id="missed-board">Missed: <span id="missed">0</span></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
