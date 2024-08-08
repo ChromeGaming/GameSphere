@@ -264,6 +264,7 @@ ________________________________________________________________________________
 |  206  | [Bomber_Game](.SinglePlayer%20-%20Games/Bomber_Game) |
 |  207  | [Shape_Clicker_Game](.SinglePlayer%20-%20Games/Shape_Clicker_Game) |
 |  208  | [Brick_Breaker_Game](.SinglePlayer%20-%20Games/Brick_Breaker_Game) |
+|  209  | [Bash_Mole_Game](.SinglePlayer%20-%20Games/Bash_Mole_Game) |
 
 </div>
 
