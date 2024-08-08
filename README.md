@@ -265,6 +265,7 @@ ________________________________________________________________________________
 |  206  | [Breakout_Game](.SinglePlayer%20-%20Games/Bomber_Game) 
 |  206  | [Bomber_Game](.SinglePlayer%20-%20Games/Bomber_Game) |
 |  207  | [Shape_Clicker_Game](.SinglePlayer%20-%20Games/Shape_Clicker_Game) |
+|  208  | [Arkanoid_Game](.SinglePlayer%20-%20Games/Arkanoid_Game) |
 
 </div>
 

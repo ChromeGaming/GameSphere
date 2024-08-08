@@ -1,0 +1,53 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    background-color: #000;
+}
+
+#game-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#player {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 50%;
+    bottom: 50px;
+    left: calc(50% - 25px);
+}
+
+.bullet, .zombie {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 24px;
+}
+
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-size: 36px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
