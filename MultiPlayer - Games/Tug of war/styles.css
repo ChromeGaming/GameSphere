@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.score {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.game-area {
+    position: relative;
+    height: 100px;
+    background: #fff3e0;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.rope {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 5px;
+    background: #d32f2f;
+    transform: translate(-50%, -50%);
+}
+
+.marker {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background: #1976d2;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.instructions {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.result {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #388e3c;
+    display: none;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1976d2;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btn:hover {
+    background-color: #0d47a1;
+}
+
+.countdown {
+    font-size: 2em;
+    color: #d32f2f;
+    margin-top: 20px;
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .game-area {
+        height: 80px;
+    }
+
+    .rope {
+        width: 200px;
+    }
+
+    .instructions p {
+        font-size: 0.9em;
+    }
+}
