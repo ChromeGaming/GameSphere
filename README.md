@@ -266,6 +266,14 @@ ________________________________________________________________________________
 |  208 | [Shape_Clicker_Game](.SinglePlayer%20-%20Games/Shape_Clicker_Game) |
 |  209 | [Shape_Clicker_Game](.SinglePlayer%20-%20Games/Shape_Clicker_Game) |
 |  210  | [Arkanoid_Game](.SinglePlayer%20-%20Games/Arkanoid_Game) |
+|  211 | [Breakout_Game](.SinglePlayer%20-%20Games/Maze_Game) |
+|  212   | [Plankman](.SinglePlayer%20-%20Games/Plankman) |
+|  213  | [Breakout_Game](.SinglePlayer%20-%20Games/Bomber_Game) 
+|  214  | [Bomber_Game](.SinglePlayer%20-%20Games/Bomber_Game) |
+|  215 | [Shape_Clicker_Game](.SinglePlayer%20-%20Games/Shape_Clicker_Game) |
+|  216  | [Arkanoid_Game](.SinglePlayer%20-%20Games/Arkanoid_Game) |
+|  217  | [Brick_Breaker_Game](.SinglePlayer%20-%20Games/Brick_Breaker_Game) |
+|  218 | [Bash_Mole_Game](.SinglePlayer%20-%20Games/Bash_Mole_Game) |
 
 </div>
 

@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #282c34;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: #444;
+    border: 2px solid #fff;
+    margin-top: 20px;
+}
+
+#player, .clone {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #61dafb;
+}
+
+#clone-button, #reset-button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#clone-button {
+    background-color: #61dafb;
+    border: none;
+    color: #282c34;
+}
+
+#reset-button {
+    background-color: #ff6f61;
+    border: none;
+    color: #fff;
+}
