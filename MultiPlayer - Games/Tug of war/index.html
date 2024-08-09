@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tug of War Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="scoreboard">
+            <div id="player1-score" class="score">Player 1: 0</div>
+            <div id="player2-score" class="score">Player 2: 0</div>
+        </div>
+        <div class="game-area">
+            <div id="rope" class="rope"></div>
+            <div id="marker" class="marker"></div>
+        </div>
+        <div class="instructions">
+            <p>Player 1: Press "A"</p>
+            <p>Player 2: Press "L"</p>
+        </div>
+        <div id="result" class="result"></div>
+        <button id="start-btn" class="btn">Start Game</button>
+        <button id="reset-btn" class="btn">Reset Game</button>
+        <div id="countdown" class="countdown"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
