@@ -279,6 +279,7 @@ ________________________________________________________________________________
 |  216  | [Arkanoid_Game](.SinglePlayer%20-%20Games/Arkanoid_Game) |
 |  217  | [Brick_Breaker_Game](.SinglePlayer%20-%20Games/Brick_Breaker_Game) |
 |  218 | [Bash_Mole_Game](.SinglePlayer%20-%20Games/Bash_Mole_Game) |
+|  219 | [Number_Recall_Game](.SinglePlayer%20-%20Games/Number_Recall_Game) |
 
 
 </div>
