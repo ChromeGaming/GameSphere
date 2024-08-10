@@ -279,6 +279,7 @@ ________________________________________________________________________________
 |  216  | [Arkanoid_Game](.SinglePlayer%20-%20Games/Arkanoid_Game) |
 |  217  | [Brick_Breaker_Game](.SinglePlayer%20-%20Games/Brick_Breaker_Game) |
 |  218 | [Bash_Mole_Game](.SinglePlayer%20-%20Games/Bash_Mole_Game) |
+|  220 | [Jigsaw_Sudoku_Game](.SinglePlayer%20-%20Games/Jigsaw_Sudoku_Game) |
 
 
 </div>
