@@ -1,7 +1,6 @@
 .display {
   display: none;
 }
-
 .theam-div {
   display: flex;
   position: fixed;
@@ -14,7 +13,6 @@
   transition: all 0.4s ease;
   color: black;
 }
-
 .button-part {
   display: flex;
   justify-content: center;
@@ -25,37 +23,29 @@
     background-color: var(--bg-black-1000);
     border-radius: 5px; */
 }
-
 .button-part i {
   cursor: pointer;
-
   color: black;
-  /* margin-bottom: 10px; */
 }
 
 .dark-light {
   background-color: white;
-
   width: 30px;
   height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-
   text-align: center;
   border-radius: 50%;
-  /* margin-top: 5px; */
   cursor: pointer;
 }
 .setting {
   background-color: white;
-
   width: 30px;
   height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-
   text-align: center;
   border-radius: 50%;
   margin-top: -38px;
@@ -67,6 +57,7 @@
   background-color: white;
   border-radius: 5px;
 }
+
 .theme-buttons {
   display: flex;
 }
@@ -74,13 +65,11 @@
 .theme-buttons div {
   width: 25px;
   height: 25px;
-  /* border: 2px solid var(--bg-black-1200); */
   border-radius: 50%;
   margin-right: 5px;
   margin-top: 5px;
   cursor: pointer;
 }
-
 .red {
   background-color: #e90064;
 }
